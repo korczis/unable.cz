@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
-{% block title %}{{ section.title }}{% endblock title %}
+{#- No metadata blocks here on purpose. Title, description, canonical, Open
+    Graph and JSON-LD all come from front matter via base.html. -#}
 
 {% block content %}
 <main class="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-black">
@@ -10,10 +11,23 @@
   ></div>
   <div class="absolute inset-0 bg-black/50"></div>
 
-  <div class="relative z-10 flex w-full flex-col items-center gap-[clamp(0.5rem,2vw,2rem)] px-4 py-16 text-center [text-shadow:0_4px_24px_rgb(0_0_0_/_85%)]">
-    <p class="hero-l1 font-sans font-black text-white">We are <strong class="hero-emphasis">UNABLE</strong></p>
-    <p class="hero-l2 font-serif font-black text-white">To <strong class="hero-emphasis">PAY</strong> U</p>
-    <p class="hero-l3 font-serif italic font-bold text-[#d4af37]">Just Because We <strong class="hero-emphasis">CAN</strong></p>
-  </div>
+  {#- The three lines are one headline, so they are one <h1>. Each line is a
+      block-level <span> rather than a <p>, because <p> is flow content and is
+      not valid inside a heading; the flex layout and the type scale are
+      unchanged. -#}
+  <h1 class="relative z-10 flex w-full flex-col items-center gap-[clamp(0.5rem,2vw,2rem)] px-4 py-16 text-center [text-shadow:0_4px_24px_rgb(0_0_0_/_85%)]">
+    {#- The word is a link. It keeps .hero-emphasis so it matches the PAY / CAN
+        emphasis step exactly; only the champagne tone sets it apart. Nothing
+        announces it as a link — that is the point — but it is a real anchor,
+        keyboard reachable, with an accessible name that contains its visible
+        text (WCAG 2.5.3). -#}
+    <span class="hero-l1 block font-sans font-black text-white">We are <a
+        href="{{ get_url(path='@/dossier.md') | safe }}"
+        aria-label="UNABLE — read the self-assessment"
+        class="hero-emphasis text-[#f3e5c0] no-underline transition-colors hover:text-[#f3e5c0]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
+      >UNABLE</a></span>
+    <span class="hero-l2 block font-serif font-black text-white">To <strong class="hero-emphasis">PAY</strong> U</span>
+    <span class="hero-l3 block font-serif italic font-bold text-[#d4af37]">Just Because We <strong class="hero-emphasis">CAN</strong></span>
+  </h1>
 </main>
 {% endblock content %}

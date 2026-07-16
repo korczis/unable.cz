@@ -14,3 +14,33 @@ build_search_index = false
 generate_robots_txt = true
 
 taxonomies = []
+
+# ---------------------------------------------------------------------------
+# SEO defaults.
+#
+# This table is the fallback layer for every page's `[extra]`. A page overrides
+# a value by setting the same key in its own front matter; anything it does not
+# set resolves here. `templates/base.html` is the only consumer.
+#
+# Do not add metadata to a template. See docs/seo.md.
+# ---------------------------------------------------------------------------
+[extra]
+locale = "en_US"
+lang = "en"
+
+# Default social card. Paths are relative to `static/` and resolved via get_url,
+# so they inherit base_url and must never be written as absolute URLs.
+og_image = "images/og-image.jpg"
+og_image_width = 1200
+og_image_height = 630
+og_image_type = "image/jpeg"
+
+# Schema.org type for pages that do not declare one.
+seo_type = "WebPage"
+og_type = "website"
+
+# Publisher identity, used by JSON-LD.
+publisher = "unable.cz"
+
+# Default discoverability. A page sets `index = false` to opt out.
+index = true

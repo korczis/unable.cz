@@ -12,16 +12,40 @@ Minimalist static site built with **[Zola](https://www.getzola.org/)**, styled w
 ## Project layout
 
 ```
-config.toml              # Zola configuration
+config.toml              # Zola configuration + [extra] SEO defaults
 content/_index.md        # Homepage content (front matter)
+content/dossier.md       # /dossier/ — self-assessment page, linked from the hero
 templates/
-  base.html              # Base layout (head, styles, scripts)
+  base.html              # Base layout + all SEO metadata (title/OG/JSON-LD) — the only place it's rendered
   index.html             # Homepage
+  dossier.html           # /dossier/ page (Flowbite Typography for the body copy)
   404.html               # Not-found page
 tailwind/input.css        # Tailwind entry + typographic scale
 tailwind.config.js        # Tailwind + Flowbite + Flowbite Typography config
+scripts/
+  seo-validate.mjs       # Validates ./public: titles, canonicals, OG, JSON-LD, sitemap, no hardcoded hosts
+  seo-validate.test.mjs  # Unit tests for the validator + regression tests for the UNABLE link
 static/                   # Copied verbatim (CNAME, generated css/, js/)
 ```
+
+Metadata (title, description, canonical, Open Graph, JSON-LD) is rendered
+exclusively in `templates/base.html`, sourced from each page's front matter
+with fallbacks in `config.toml`'s `[extra]` table. Child templates carry no
+metadata blocks, so there's nothing to duplicate or drift.
+
+Run `npm run build && node scripts/seo-validate.mjs --strict` before shipping,
+and `node --test scripts/*.test.mjs` for the unit/regression suite.
+
+## The `/dossier/` page
+
+The word **UNABLE** in the hero is an internal link (`get_url(path='@/dossier.md')`)
+to `content/dossier.md` — a short, self-referential "due-diligence" style
+write-up about the site itself. It's styled as a subtle color/emphasis
+variant of the existing poster typography (no underline, no button styling),
+reusing the site's existing gold accent family so it reads as part of the
+design rather than a bolted-on link. It's a real, indexable, canonical page
+(included in `sitemap.xml`, `200` on direct visit) — not hidden from crawlers,
+just not in any navigation menu (there isn't one).
 
 ## Local development
 

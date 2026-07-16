@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{#- No metadata blocks here on purpose. Title, description, canonical, Open
+    Graph and JSON-LD all come from front matter via base.html. -#}
+
+{% block content %}
+{#- Freshness is computed from the evidence declaration, not hand-written.
+    `now()` is read only to decide whether the review window has lapsed; it
+    never feeds `updated`, which would churn the date on every build. -#}
+{%- set ev = page.extra.evidence -%}
+{%- set reviewed_ts = ev.reviewed_at | date(format="%s") | int -%}
+{%- set age_days = ((now(timestamp=true) - reviewed_ts) / 86400) | round(method="floor") | int -%}
+{%- set stale = age_days > ev.review_interval_days -%}
+
+<main class="relative min-h-screen w-full bg-black px-4 py-16 text-white">
+  <div class="mx-auto max-w-3xl">
+    <p class="mb-8">
+      <a
+        href="{{ get_url(path='@/_index.md') | safe }}"
+        class="text-sm text-white/60 hover:text-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
+        >&larr; Back to unable.cz</a
+      >
+    </p>
+
+    <h1 class="font-sans text-3xl font-black text-white sm:text-4xl">{{ page.title }}</h1>
+
+    {%- if stale %}
+    <p class="mt-8 border-l-2 border-[#d4af37] bg-white/5 px-4 py-3 text-sm text-white/80">
+      <strong class="font-semibold text-[#d4af37]">This assessment is overdue for review.</strong>
+      It was last checked {{ age_days }} days ago, against a {{ ev.review_interval_days }}-day
+      review interval. Treat anything time-sensitive below as unverified.
+    </p>
+    {%- endif %}
+
+    {#- Provenance, rendered from the same fields the validator checks. -#}
+    <dl class="mt-8 grid grid-cols-1 gap-x-8 gap-y-3 border-y border-white/10 py-5 text-sm sm:grid-cols-2">
+      <div class="flex justify-between gap-4 sm:justify-start">
+        <dt class="text-white/50">Last updated</dt>
+        <dd class="text-white/90">{{ page.updated | date(format="%e %B %Y") | trim }}</dd>
+      </div>
+      <div class="flex justify-between gap-4 sm:justify-start">
+        <dt class="text-white/50">Evidence cutoff</dt>
+        <dd class="text-white/90">{{ ev.cutoff | date(format="%e %B %Y") | trim }}</dd>
+      </div>
+      <div class="flex justify-between gap-4 sm:justify-start">
+        <dt class="text-white/50">Confidence</dt>
+        <dd class="text-white/90">{{ ev.confidence | capitalize }}</dd>
+      </div>
+      <div class="flex justify-between gap-4 sm:justify-start">
+        <dt class="text-white/50">Review status</dt>
+        <dd class="text-white/90">
+          {%- if stale %}Overdue{% else %}Current{% endif %}
+        </dd>
+      </div>
+    </dl>
+
+    <article class="format format-invert lg:format-lg mt-8 max-w-none">
+      {{ page.content | safe }}
+    </article>
+  </div>
+</main>
+{% endblock content %}
