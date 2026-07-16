@@ -1,0 +1,19 @@
+{
+  "name": "unable-cz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "unable.cz static site (Zola + Flowbite)",
+  "scripts": {
+    "css:build": "tailwindcss -i ./tailwind/input.css -o ./static/css/main.css --minify",
+    "css:watch": "tailwindcss -i ./tailwind/input.css -o ./static/css/main.css --watch",
+    "js:build": "mkdir -p ./static/js && cp ./node_modules/alpinejs/dist/cdn.min.js ./static/js/alpine.min.js && cp ./node_modules/flowbite/dist/flowbite.min.js ./static/js/flowbite.min.js",
+    "dev": "npm run css:build && npm run js:build && zola serve",
+    "build": "npm run css:build && npm run js:build && zola build"
+  },
+  "devDependencies": {
+    "alpinejs": "^3.15.12",
+    "flowbite": "2.5.2",
+    "flowbite-typography": "^1.0.5",
+    "tailwindcss": "3.4.17"
+  }
+}

@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply overflow-x-hidden bg-black;
+  }
+}
+
+/*
+ * Deterministic 5x / 7x / 3x scale. Every clamp() min/preferred/max is
+ * the same scalar multiple of a shared unit, so the ratio holds exactly
+ * at every viewport width.
+ */
+@layer components {
+  .hero-l1 {
+    font-size: clamp(4rem, 10.71vw, 12rem);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
+
+  .hero-l2 {
+    font-size: clamp(5.6rem, 15vw, 16.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
+
+  .hero-l3 {
+    font-size: clamp(2.4rem, 6.43vw, 7.2rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  /* Poster-style inline emphasis: each is a fixed multiple of its line's size. */
+  .hero-l1 .hero-emphasis {
+    font-size: 1.15em;
+  }
+
+  .hero-l2 .hero-emphasis {
+    font-size: 1.1em;
+  }
+
+  .hero-l3 .hero-emphasis {
+    font-size: 1.2em;
+  }
+}

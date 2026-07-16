@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}{{ config.title }}{% endblock title %}
+
+{% block content %}
+<main class="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-black">
+  <div
+    class="absolute inset-0 scale-110 bg-cover bg-center grayscale-[70%] contrast-[1.15] blur-[3px]"
+    style="background-image:url('{{ get_url(path='images/hero-bg.jpg') | safe }}');"
+  ></div>
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative z-10 flex w-full flex-col items-center gap-[clamp(0.5rem,2vw,2rem)] px-4 py-16 text-center [text-shadow:0_4px_24px_rgb(0_0_0_/_85%)]">
+    <p class="hero-l1 font-sans font-black text-white">We are <strong class="hero-emphasis">UNABLE</strong></p>
+    <p class="hero-l2 font-serif font-black text-white">To <strong class="hero-emphasis">PAY</strong> U</p>
+    <p class="hero-l3 font-serif italic font-bold text-[#d4af37]">Just Because We <strong class="hero-emphasis">CAN</strong></p>
+  </div>
+</main>
+{% endblock content %}

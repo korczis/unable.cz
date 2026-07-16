@@ -1,0 +1,18 @@
+# Zola build output
+/public
+
+# Generated CSS (built by Tailwind in CI and locally)
+/static/css/main.css
+
+# Generated JS bundles (copied from node_modules)
+/static/js
+
+# Node
+/node_modules
+
+# Local tooling config (not part of site source)
+/.claude
+
+# OS / editor
+.DS_Store
+*.log
