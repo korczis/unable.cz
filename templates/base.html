@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark no-js">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="color-scheme" content="dark" />
+
+  {% block og %}
+  <meta property="og:title" content="{{ config.title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ config.base_url | safe }}" />
+  <meta property="og:image" content="{{ get_url(path='images/og-image.jpg') | safe }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="{{ config.title }}" />
+  <meta property="og:description" content="{{ config.description }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ config.title }}" />
+  <meta name="twitter:description" content="{{ config.description }}" />
+  <meta name="twitter:image" content="{{ get_url(path='images/og-image.jpg') | safe }}" />
+  {% endblock og %}
+
+  <link rel="icon" href="{{ get_url(path='favicon.ico') | safe }}" sizes="any" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path='icons/icon-16.png') | safe }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path='icons/icon-32.png') | safe }}" />
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ get_url(path='icons/icon-192.png') | safe }}" />
+  <link rel="apple-touch-icon" href="{{ get_url(path='icons/apple-touch-icon.png') | safe }}" />
+  <link rel="manifest" href="{{ get_url(path='site.webmanifest') | safe }}" />
 
   <link rel="stylesheet" href="{{ get_url(path='css/main.css', cachebust=true) | safe }}" />
 </head>

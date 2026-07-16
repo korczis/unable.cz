@@ -1,8 +1,8 @@
 # The URL the site will be built for
 base_url = "https://unable.cz"
 
-title = "unable.cz"
-description = "unable.cz"
+title = "We are UNABLE To PAY U"
+description = "Just Because We CAN."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false

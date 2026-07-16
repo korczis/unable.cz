@@ -46,3 +46,59 @@
     font-size: 1.2em;
   }
 }
+
+/* HTML5 Boilerplate helper classes (MIT License, https://html5boilerplate.com/) */
+@layer utilities {
+  .visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+
+  .clearfix::before,
+  .clearfix::after {
+    content: "";
+    display: table;
+  }
+
+  .clearfix::after {
+    clear: both;
+  }
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+}
