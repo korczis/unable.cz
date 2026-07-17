@@ -8,11 +8,12 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 12,
+    "count": 18,
     "byStatus": {
-      "VERIFIED_PRIMARY": 3,
-      "SELF_REPORTED": 6,
-      "CORROBORATED": 3
+      "VERIFIED_PRIMARY": 7,
+      "SELF_REPORTED": 7,
+      "CORROBORATED": 3,
+      "CONTRADICTED": 1
     }
   },
   "relationships": [
@@ -36,6 +37,34 @@
       "to": "able",
       "label": "shareholder",
       "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e13",
+      "from": "polansky",
+      "to": "able",
+      "label": "supervisory board",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e14",
+      "from": "zenx",
+      "to": "able",
+      "label": "shareholder (111 620 CZK)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e15",
+      "from": "g5326",
+      "to": "able",
+      "label": "shareholder (9 975 CZK)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e16",
+      "from": "pointfm",
+      "to": "able",
+      "label": "investor ~5% (2023, media)",
+      "status": "SELF_REPORTED"
     },
     {
       "id": "e4",
@@ -64,6 +93,20 @@
       "to": "able",
       "label": "leads business strategy",
       "status": "CORROBORATED"
+    },
+    {
+      "id": "e17",
+      "from": "domain",
+      "to": "able",
+      "label": "operated by",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e18",
+      "from": "able",
+      "to": "ksbr",
+      "label": "registered — C 85425",
+      "status": "CONTRADICTED"
     },
     {
       "id": "e8",

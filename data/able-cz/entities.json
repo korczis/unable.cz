@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 12
+    "count": 18
   },
   "entities": [
     {
@@ -27,16 +27,6 @@
       "type": "person"
     },
     {
-      "id": "juhanak",
-      "label": "R. Juhaňák",
-      "type": "person"
-    },
-    {
-      "id": "grolig",
-      "label": "L. Grolig",
-      "type": "person"
-    },
-    {
       "id": "blackfish",
       "label": "Blackfish",
       "type": "entity"
@@ -45,6 +35,46 @@
       "id": "schlesinger",
       "label": "V. Schlesinger",
       "type": "person"
+    },
+    {
+      "id": "juhanak",
+      "label": "R. Juhaňák",
+      "type": "person"
+    },
+    {
+      "id": "polansky",
+      "label": "L. Polanský",
+      "type": "person"
+    },
+    {
+      "id": "zenx",
+      "label": "ZenX Capital a.s.",
+      "type": "investor"
+    },
+    {
+      "id": "g5326",
+      "label": "5326G s.r.o.",
+      "type": "investor"
+    },
+    {
+      "id": "pointfm",
+      "label": "Point FM (M. Kříž)",
+      "type": "investor"
+    },
+    {
+      "id": "grolig",
+      "label": "L. Grolig",
+      "type": "person"
+    },
+    {
+      "id": "domain",
+      "label": "able.cz",
+      "type": "domain"
+    },
+    {
+      "id": "ksbr",
+      "label": "Krajský soud v Brně",
+      "type": "legal"
     },
     {
       "id": "aaa",
