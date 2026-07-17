@@ -10,7 +10,7 @@
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added."
   },
   "financials": {
-    "note": "Czech s.r.o. financial statements are filed in the Collection of Deeds (Sbírka listin) at justice.cz. They were not retrieved in this pass, so revenue, profit, assets, and headcount are NOT_FOUND here rather than estimated. The only hard figure is registered capital.",
+    "note": "Czech s.r.o. financial statements are filed in the Collection of Deeds (Sbírka listin) at justice.cz. This pass retrieved and directly parsed the filed FY2024 balance sheet and P&L (C 85425/SL68/KSBR, filed 5 Dec 2025), stored at cases/DD-Able-CZ-2026-07-17/sbirka-listin/. Figures in thousand CZK, FY2024 with FY2023 comparatives as filed.",
     "verified": [
       {
         "metric": "Registered capital",
@@ -19,6 +19,66 @@
         "sources": [
           "SRC-03"
         ]
+      },
+      {
+        "metric": "Revenue from sale of products/services (FY2024 / FY2023)",
+        "display": "36,319 / 42,642 tis. CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-15"
+        ],
+        "note": "Filed revenue declined ~15% year-on-year — well below the ~100M CZK combined (Able+Blackfish) self-reported target below."
+      },
+      {
+        "metric": "Net turnover (FY2024 / FY2023)",
+        "display": "36,319 / 43,079 tis. CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-15"
+        ]
+      },
+      {
+        "metric": "Net result for the period, after tax (FY2024 / FY2023)",
+        "display": "631 / 844 tis. CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-15"
+        ],
+        "note": "Profitable both years, but the margin is thin (under 2% of revenue) and shrinking."
+      },
+      {
+        "metric": "Total assets (FY2024 / FY2023)",
+        "display": "71,880 / 59,386 tis. CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-15"
+        ]
+      },
+      {
+        "metric": "Equity (FY2024 / FY2023)",
+        "display": "26,592 / 25,849 tis. CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-15"
+        ]
+      },
+      {
+        "metric": "Liabilities (FY2024 / FY2023)",
+        "display": "45,183 / 33,406 tis. CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-15"
+        ],
+        "note": "Liabilities grew faster than equity year-on-year."
+      },
+      {
+        "metric": "Personnel costs (FY2024 / FY2023)",
+        "display": "2,926 / 4,964 tis. CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-15"
+        ],
+        "note": "Personnel costs fell ~41%; 'Služby' (purchased services, 38.7M CZK) is by far the largest single cost line, consistent with a contractor-heavy delivery model rather than headcount growth."
       }
     ],
     "selfReported": [
@@ -30,7 +90,7 @@
           "SRC-04",
           "SRC-05"
         ],
-        "note": "A forward-looking target attributed to Vít Schlesinger in media, not a filed result."
+        "note": "A forward-looking target attributed to Vít Schlesinger in media, not a filed result — and well above Able's own filed FY2024 revenue of 36.3M CZK."
       },
       {
         "metric": "Combined headcount (Able + Blackfish)",
@@ -59,13 +119,10 @@
       }
     ],
     "notFound": [
-      "Revenue (filed)",
-      "Operating/net result",
-      "Total assets",
-      "Equity",
-      "Employee count (filed)",
+      "Employee count (filed — not a line item in this rozvaha/výkaz filing)",
       "Auditor's report",
-      "Going-concern language"
+      "Going-concern language",
+      "Consolidated Able+Blackfish combined financials (each entity files separately)"
     ]
   }
 }

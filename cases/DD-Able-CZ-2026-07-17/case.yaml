@@ -11,16 +11,22 @@ status: published
 authorization:
   by: korczis@gmail.com (site owner)
   on_record: "2026-07-17"
-  scope: public sources only; no data room, interviews, contracts, or filed statements
+  scope: >
+    public sources only; no data room, interviews, or contracts. Filed
+    statements (Sbírka listin) ARE in scope as of the 2026-07-17 extension —
+    see AGENTS.md "Scope extension: Able.cz ownership/relationship network".
+    Also covers the recursive ownership/relationship network reached from
+    Able.cz's officers/shareholders and the Blackfish acquisition (same
+    extension), not Able.cz alone.
 evidence_cutoff: "2026-07-17"
 confidence: moderate
 counts:
-  entities: 12
-  relationships: 12
-  claims: 15
-  sources: 6
-  contradictions: 1
-  open_questions: 5
+  entities: 41
+  relationships: 48
+  claims: 27
+  sources: 19
+  contradictions: 2
+  open_questions: 10
 canonical_data: data/dossier/able/dossier.json
 web_exports: static/data/able-cz/
 published_at: /dossier/
@@ -37,6 +43,9 @@ layout:
   unresolved/       : open-questions.md
   corrections/      : README.md
   logs/             : collection-log.md (incl. failed retrievals)
+  sbirka-listin/    : raw PDFs + extracted text of filed Sbírka listin documents
+                      (financial statements, execution filings) retrieved and
+                      parsed directly from or.justice.cz
 disclaimer: >
   This case reviews public sources only, as of the evidence cutoff. It asserts
   no insolvency, wrongdoing, or inability to pay — none was found. Analytical

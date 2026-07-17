@@ -14,22 +14,23 @@
   "evidenceCutoff": "2026-07-17",
   "confidence": "moderate",
   "counts": {
-    "entities": 21,
-    "relationships": 21,
-    "claims": 15,
-    "sources": 9,
-    "contradictions": 1,
-    "openQuestions": 5,
+    "entities": 41,
+    "relationships": 48,
+    "claims": 27,
+    "sources": 19,
+    "contradictions": 2,
+    "openQuestions": 10,
     "risks": 5
   },
   "claimsByStatus": {
     "SELF_REPORTED": 14,
-    "CORROBORATED": 1
+    "CORROBORATED": 10,
+    "VERIFIED_PRIMARY": 3
   },
   "relationshipsByStatus": {
-    "VERIFIED_PRIMARY": 10,
-    "SELF_REPORTED": 7,
-    "CORROBORATED": 3,
-    "CONTRADICTED": 1
+    "VERIFIED_PRIMARY": 11,
+    "SELF_REPORTED": 8,
+    "CORROBORATED": 25,
+    "CONTRADICTED": 4
   }
 }

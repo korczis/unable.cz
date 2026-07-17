@@ -24,3 +24,6 @@ The short version, if you read nothing else:
   dossier is public-sourced and status-labelled (`VERIFIED_PRIMARY`,
   `CORROBORATED`, `SELF_REPORTED`, `CONTRADICTED`, `NOT_FOUND`); it asserts no
   insolvency or wrongdoing. If you cannot source it, cut it.
+- From 2026-07-17, all `/dossier/*` content must be in Czech (prose only —
+  evidence-status enum values, register IDs, and source titles stay as-is).
+  See "Language policy for /dossier/*" in AGENTS.md.

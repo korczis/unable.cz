@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 9
+    "count": 19
   },
   "sources": [
     {
@@ -81,6 +81,86 @@
       "url": "https://crt.sh/?q=able.cz",
       "tier": 1,
       "kind": "technical observation",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-10",
+      "title": "Czech commercial register — aggregator mirror search (kurzy.cz, rejstrik-firem)",
+      "url": "https://rejstrik-firem.kurzy.cz/",
+      "tier": 2,
+      "kind": "company register mirror (aggregator republishing or.justice.cz data; a direct or.justice.cz fetch was attempted for every entity below but blocked by its JS-rendered search UI, so none of the facts sourced to SRC-10/11/12 reach VERIFIED_PRIMARY)",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-11",
+      "title": "Hlídač státu — osoba/subjekt ownership-graph records",
+      "url": "https://www.hlidacstatu.cz/",
+      "tier": 2,
+      "kind": "company register mirror + transparency-NGO aggregator",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-12",
+      "title": "ARES — Administrativní registr ekonomických subjektů (cross-check)",
+      "url": "https://ares.gov.cz",
+      "tier": 1,
+      "kind": "government registry",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-13",
+      "title": "CzechCrunch — Blackfish's 2021 Denmark expansion (names Oslzla as ~30% owner)",
+      "url": "https://cc.cz/2021/03/cesti-blackfish-dobyvaji-dansko-tamnimu-startupu-pomohli-k-investici-73-milionu-dolaru/",
+      "tier": 3,
+      "kind": "media",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-14",
+      "title": "Northdata — Petr Faraga entity profile (Znojmo)",
+      "url": "https://www.northdata.com/Faraga,%20Petr,%20Znojmo/1by",
+      "tier": 3,
+      "kind": "aggregator profile",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-15",
+      "title": "Sbírka listin (or.justice.cz) — Able.cz s.r.o., účetní závěrka 2024 (C 85425/SL68/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=89167789&subjektId=49914&spis=953839",
+      "tier": 1,
+      "kind": "filed financial statement (primary registry document)",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-16",
+      "title": "Sbírka listin (or.justice.cz) — exekuční příkaz postižením obchodního podílu, T. Melichárek (C 85425/SL69/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=89686364&subjektId=49914&spis=953839",
+      "tier": 1,
+      "kind": "court execution order (primary registry document)",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-17",
+      "title": "Sbírka listin (or.justice.cz) — oznámení o skončení exekuce, T. Melichárek (C 85425/SL70/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=90691646&subjektId=49914&spis=953839",
+      "tier": 1,
+      "kind": "court notice of execution termination (primary registry document)",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-18",
+      "title": "Sbírka listin (or.justice.cz) — Blackfish & Co. s.r.o., účetní závěrka 2024 (C 283664/SL21/MSPH)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=85725657&subjektId=991026&spis=1096381",
+      "tier": 1,
+      "kind": "filed financial statement, micro accounting unit — abbreviated (primary registry document)",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-19",
+      "title": "Sbírka listin (or.justice.cz) — Blackfish & Co. s.r.o., účetní závěrka 2025 (C 283664/SL23/MSPH)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=91233172&subjektId=991026&spis=1096381",
+      "tier": 1,
+      "kind": "filed financial statement, micro accounting unit — abbreviated (primary registry document)",
       "retrievedAt": "2026-07-17"
     }
   ]

@@ -113,6 +113,58 @@ mirrored as normalized web exports under `static/data/able-cz/`.
 If you cannot source a claim, cut it. `sources_consulted = 0` is an honest
 declaration; an invented citation is not.
 
+### Scope extension: Able.cz ownership/relationship network (on the record)
+
+Extended by the owner (korczis@gmail.com), **explicitly and on the record, on
+2026-07-17**: the authorization above covers not only Able.cz s.r.o. itself but
+the **ownership and relationship network directly reached by recursive public-register
+research starting from Able.cz's statutory officers/shareholders and its
+acquisition of Blackfish & Co. s.r.o.** This was a deliberate scope decision,
+made after this file's "do not add a named subject on your own initiative" rule
+was raised against a first draft of that research — it is not a default any
+future change may re-derive on its own.
+
+Named individuals in scope under this extension: Václav Faraga, Tomáš
+Melichárek, Radek Juhaňák, Petr Faraga, Jakub Kaman, Ondřej Kaman, Lukáš
+Grolig, Vít Schlesinger, Lukáš Oslzla — and the companies through which their
+register-documented roles connect back to Able.cz or Blackfish (e.g. FaMe
+logistics/trade, FaMa Media, M&M plan, one label s.r.o., Mindee app, ERA25,
+Verzuz.com, BGO, Usporix, VERASTO, Ventoux Studio, Vít Schlesinger s.r.o.,
+Artstay/Lovs & Co., mySASY).
+
+This extension does **not** relax the truthfulness rules — every fact under it
+still needs a status label and a source, and most of it is `CORROBORATED` via
+register-mirror aggregators (kurzy.cz, Hlídač státu), not `VERIFIED_PRIMARY`,
+because a direct or.justice.cz fetch was blocked by its JS-rendered search UI in
+every attempt made so far — see the dossier's own methodology note and CON-02.
+It does **not** authorize adding any *further* named subject beyond this
+specific network (e.g. a fresh, unrelated person or company) without a new,
+separate on-record decision.
+
+## Language policy for /dossier/*
+
+**From 2026-07-17, all content under `/dossier/*` must be written in Czech.**
+This covers `content/dossier.md` (and any future `content/dossier/*.md`) and
+every user-facing string in `templates/dossier.html` — headings, labels, table
+headers, aria-labels, captions. It does not cover:
+
+- evidence-status enum values (`VERIFIED_PRIMARY`, `CORROBORATED`,
+  `SELF_REPORTED`, `ASSESSED`, `CONTRADICTED`, `NOT_FOUND`) — these are
+  identifiers the template pattern-matches on (`{% if c.status == 'CORROBORATED' %}`
+  and similar in `templates/dossier.html`); translating the string would break
+  the conditional. Keep them as-is; explain them in Czech prose around them.
+- source titles/URLs, company/person names, IČO/DIČ and other register
+  identifiers, and code identifiers in `data/dossier/*/dossier.json` (field
+  names like `"status"`, `"sources"`, node/edge `id`s).
+- the `_comment` / methodological notes inside `dossier.json` itself, which
+  double as inline code documentation.
+
+This is editorial guidance, not a lint rule — there is no automated check for
+it (a check would need to parse rendered prose vs. structured fields, which is
+out of scope for `scripts/seo-validate.mjs`). Treat a PR/commit that adds
+English prose under `/dossier/*` as a review-blocking mistake, the same way an
+unsourced claim is.
+
 ## Adding a page
 
 ```bash

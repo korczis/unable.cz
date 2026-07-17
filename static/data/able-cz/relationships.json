@@ -8,12 +8,12 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 21,
+    "count": 48,
     "byStatus": {
-      "VERIFIED_PRIMARY": 10,
-      "SELF_REPORTED": 7,
-      "CORROBORATED": 3,
-      "CONTRADICTED": 1
+      "VERIFIED_PRIMARY": 11,
+      "SELF_REPORTED": 8,
+      "CORROBORATED": 25,
+      "CONTRADICTED": 4
     }
   },
   "relationships": [
@@ -163,6 +163,195 @@
       "to": "tastetown",
       "label": "named client",
       "status": "SELF_REPORTED"
+    },
+    {
+      "id": "e22",
+      "from": "petr_faraga",
+      "to": "able",
+      "label": "shareholder (~0.5%, since 29 Jul 2025)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e23",
+      "from": "jakub_kaman",
+      "to": "able",
+      "label": "shareholder (2,437 CZK)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e24",
+      "from": "faraga",
+      "to": "mindee",
+      "label": "jednatel (since 2 May 2024)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e25",
+      "from": "faraga",
+      "to": "era25",
+      "label": "jednatel + 39.5% (since 23 Aug 2025)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e26",
+      "from": "faraga",
+      "to": "verzuz",
+      "label": "jednatel (since 22 Dec 2025)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e27",
+      "from": "faraga",
+      "to": "fame_logistics",
+      "label": "jednatel + společník + likvidátor",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e28",
+      "from": "melicharek",
+      "to": "fame_logistics",
+      "label": "jednatel + společník (33%)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e29",
+      "from": "melicharek",
+      "to": "mmplan",
+      "label": "sole jednatel + 100% (since 4 Jul 2013)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e30",
+      "from": "petr_faraga",
+      "to": "fame_logistics",
+      "label": "jednatel + 34% (since 23 Aug 2013)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e31",
+      "from": "petr_faraga",
+      "to": "fame_trade",
+      "label": "jednatel + společník, exited 2020",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e32",
+      "from": "faraga",
+      "to": "fame_trade",
+      "label": "jednatel + společník, exited 2020",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e33",
+      "from": "petr_faraga",
+      "to": "fama_media",
+      "label": "sole jednatel + 100% (since 14 Oct 2015)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e34",
+      "from": "juhanak",
+      "to": "onelabel",
+      "label": "jednatel + stake (disputed — see CON-02)",
+      "status": "CONTRADICTED"
+    },
+    {
+      "id": "e35",
+      "from": "jakub_kaman",
+      "to": "onelabel",
+      "label": "jednatel + 36% (since 2014, disputed — see CON-02)",
+      "status": "CONTRADICTED"
+    },
+    {
+      "id": "e36",
+      "from": "ondrej_kaman",
+      "to": "onelabel",
+      "label": "jednatel + 34% (since 23 Feb 2022, disputed — see CON-02)",
+      "status": "CONTRADICTED"
+    },
+    {
+      "id": "e37",
+      "from": "grolig",
+      "to": "bgo",
+      "label": "ex-jednatel + 33.3% (terminated 2 Apr 2026)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e38",
+      "from": "grolig",
+      "to": "usporix",
+      "label": "jednatel + 25%",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e39",
+      "from": "grolig",
+      "to": "verasto",
+      "label": "role unconfirmed (home-address match)",
+      "status": "SELF_REPORTED"
+    },
+    {
+      "id": "e40",
+      "from": "faraga",
+      "to": "blackfish",
+      "label": "jednatel (added 28 Jul 2025)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e41",
+      "from": "schlesinger",
+      "to": "able",
+      "label": "shareholder (since 29 Jul 2025)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e42",
+      "from": "schlesinger",
+      "to": "ventoux",
+      "label": "🚩 undisclosed společník (since 22 Sep 2025)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e43",
+      "from": "schlesinger",
+      "to": "schlesinger_sro",
+      "label": "sole jednatel + 100% (since 18 Dec 2023)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e44",
+      "from": "schlesinger",
+      "to": "artstay_lovs",
+      "label": "jednatel/společník (2021–2024)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e45",
+      "from": "schlesinger",
+      "to": "mysasy",
+      "label": "board member (May 2022–Mar 2023)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e46",
+      "from": "oslzla",
+      "to": "blackfish",
+      "label": "jednatel + společník (Jun 2022–Feb 2024)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e47",
+      "from": "oslzla",
+      "to": "artstay_lovs",
+      "label": "jednatel (2021–) + 100% společník (since Jun 2022, current)",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e48",
+      "from": "melicharek",
+      "to": "exekuce-melicharek",
+      "label": "exekuce podílu (uzavřena, vymoženo)",
+      "status": "VERIFIED_PRIMARY"
     }
   ]
 }

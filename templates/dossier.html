@@ -17,27 +17,27 @@
     <p class="mb-8">
       <a href="{{ get_url(path='@/_index.md') | safe }}"
          class="text-sm text-white/60 hover:text-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
-        >&larr; Back to unable.cz</a>
+        >&larr; Zpět na úvod</a>
     </p>
 
     <h1 class="font-sans text-3xl font-black text-white sm:text-4xl">{{ page.title }}</h1>
     <p class="mt-2 text-sm text-white/50">
-      Subject: {{ d.meta.subject }} · IČO {{ d.meta.ico }} · public-evidence review · evidence cutoff {{ d.meta.evidenceCutoff }}
+      Subjekt: {{ d.meta.subject }} · IČO {{ d.meta.ico }} · review z veřejných zdrojů · mezní datum evidence {{ d.meta.evidenceCutoff }}
     </p>
 
     {%- if stale %}
     <p class="mt-8 border-l-2 border-[#d4af37] bg-white/5 px-4 py-3 text-sm text-white/80">
-      <strong class="font-semibold text-[#d4af37]">This assessment is overdue for review.</strong>
-      Last checked {{ age_days }} days ago against a {{ ev.review_interval_days }}-day interval.
-      Treat time-sensitive facts as unverified.
+      <strong class="font-semibold text-[#d4af37]">Toto posouzení je po termínu revize.</strong>
+      Naposledy zkontrolováno před {{ age_days }} dny, interval revize je {{ ev.review_interval_days }} dní.
+      Časově citlivá fakta považujte za neověřená.
     </p>
     {%- endif %}
 
     <dl class="mt-8 grid grid-cols-1 gap-x-8 gap-y-3 border-y border-white/10 py-5 text-sm sm:grid-cols-2">
-      <div class="flex justify-between gap-4 sm:justify-start"><dt class="text-white/50">Last updated</dt><dd class="text-white/90">{{ page.updated | date(format="%e %B %Y") | trim }}</dd></div>
-      <div class="flex justify-between gap-4 sm:justify-start"><dt class="text-white/50">Evidence cutoff</dt><dd class="text-white/90">{{ ev.cutoff | date(format="%e %B %Y") | trim }}</dd></div>
-      <div class="flex justify-between gap-4 sm:justify-start"><dt class="text-white/50">Confidence</dt><dd class="text-white/90">{{ ev.confidence | capitalize }}</dd></div>
-      <div class="flex justify-between gap-4 sm:justify-start"><dt class="text-white/50">Sources</dt><dd class="text-white/90">{{ d.sources | length }} public</dd></div>
+      <div class="flex justify-between gap-4 sm:justify-start"><dt class="text-white/50">Naposledy aktualizováno</dt><dd class="text-white/90">{{ page.updated | date(format="%e %B %Y") | trim }}</dd></div>
+      <div class="flex justify-between gap-4 sm:justify-start"><dt class="text-white/50">Mezní datum evidence</dt><dd class="text-white/90">{{ ev.cutoff | date(format="%e %B %Y") | trim }}</dd></div>
+      <div class="flex justify-between gap-4 sm:justify-start"><dt class="text-white/50">Důvěra</dt><dd class="text-white/90">{{ ev.confidence | capitalize }}</dd></div>
+      <div class="flex justify-between gap-4 sm:justify-start"><dt class="text-white/50">Zdroje</dt><dd class="text-white/90">{{ d.sources | length }} veřejných</dd></div>
     </dl>
 
     <article class="format format-invert lg:format-lg mt-8 max-w-none">
@@ -46,10 +46,10 @@
 
     {# ============ Figure 1: claim verification status (Chart.js) ============ #}
     <section class="mt-16" aria-labelledby="fig-claims-title">
-      <h2 id="fig-claims-title" class="font-sans text-2xl font-black text-white">Where the evidence stands</h2>
+      <h2 id="fig-claims-title" class="font-sans text-2xl font-black text-white">Kde stojí evidence</h2>
       <p class="mt-2 text-sm text-white/60">
-        Every material claim reviewed, by verification status. The chart is drawn
-        from the claim ledger below — the same records, counted.
+        Každé posouzené věcné tvrzení, podle stavu ověření. Graf vychází
+        z tvrzení níže — stejné záznamy, jen spočítané.
       </p>
       <div class="js-only mx-auto mt-6 max-w-sm rounded border border-white/10 bg-white/[0.02] p-4">
         <canvas id="status-chart" height="240" aria-hidden="true"></canvas>
@@ -57,12 +57,12 @@
 
       <div class="mt-6 overflow-x-auto">
         <table class="w-full border-collapse text-left text-sm">
-          <caption class="sr-only">Claim ledger: each claim and its verification status.</caption>
+          <caption class="sr-only">Seznam tvrzení a jejich stav ověření.</caption>
           <thead>
             <tr class="border-b border-white/20 text-white/60">
               <th scope="col" class="py-2 pr-4 font-medium">#</th>
-              <th scope="col" class="py-2 pr-4 font-medium">Claim</th>
-              <th scope="col" class="py-2 font-medium">Status</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Tvrzení</th>
+              <th scope="col" class="py-2 font-medium">Stav</th>
             </tr>
           </thead>
           <tbody>
@@ -80,26 +80,26 @@
 
     {# ============ Figure 2: relationship graph (Cytoscape.js) ============ #}
     <section class="mt-16" aria-labelledby="fig-graph-title">
-      <h2 id="fig-graph-title" class="font-sans text-2xl font-black text-white">People, entities & relationships</h2>
+      <h2 id="fig-graph-title" class="font-sans text-2xl font-black text-white">Lidé, entity a vztahy</h2>
       <p class="mt-2 text-sm text-white/60">
-        The company at the centre, with the people and entities tied to it. Solid
-        relationships are register-verified; lighter ones are self-reported. Every
-        edge is listed in the table beneath.
+        Firma uprostřed, s lidmi a entitami k ní vázanými. Plné vztahy jsou
+        ověřené rejstříkem; slabší jsou tvrzením firmy. Každá vazba je
+        vypsaná v tabulce níže.
       </p>
       <div class="js-only mt-6">
         <div id="rel-graph" class="h-[440px] w-full rounded border border-white/10 bg-white/[0.02]"
-             role="img" aria-label="Relationship graph. All edges are listed in the following table."></div>
+             role="img" aria-label="Graf vztahů. Všechny vazby jsou vypsané v tabulce níže."></div>
       </div>
 
       <div class="mt-6 overflow-x-auto">
         <table class="w-full border-collapse text-left text-sm">
-          <caption class="sr-only">Relationship edges and their evidence status.</caption>
+          <caption class="sr-only">Vazby vztahů a jejich stav evidence.</caption>
           <thead>
             <tr class="border-b border-white/20 text-white/60">
-              <th scope="col" class="py-2 pr-4 font-medium">From</th>
-              <th scope="col" class="py-2 pr-4 font-medium">Relationship</th>
-              <th scope="col" class="py-2 pr-4 font-medium">To</th>
-              <th scope="col" class="py-2 font-medium">Status</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Od</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Vztah</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Ke</th>
+              <th scope="col" class="py-2 font-medium">Stav</th>
             </tr>
           </thead>
           <tbody>
@@ -120,31 +120,31 @@
 
     {# ============ Figure 3: evidence field (p5.js) ============ #}
     <section class="mt-16" aria-labelledby="fig-field-title">
-      <h2 id="fig-field-title" class="font-sans text-2xl font-black text-white">The evidence at a glance</h2>
+      <h2 id="fig-field-title" class="font-sans text-2xl font-black text-white">Evidence na první pohled</h2>
       <p class="mt-2 text-sm text-white/60">
-        One mark per reviewed claim, coloured by status. Champagne marks are
-        corroborated or verified; muted marks are self-reported and still need
-        confirmation. The picture is deliberately mostly muted — that is the
-        honest state of the public evidence.
+        Jedna značka na každé posuzované tvrzení, obarvená podle stavu.
+        Champagne značky jsou potvrzené nebo ověřené; tlumené jsou tvrzením
+        firmy a čekají na potvrzení. Obrázek je záměrně převážně tlumený — to
+        je poctivý stav veřejné evidence.
       </p>
       <div class="js-only mt-6">
         <div id="evidence-field" class="h-64 w-full overflow-hidden rounded border border-white/10 bg-white/[0.02]"
-             role="img" aria-label="Field of marks, one per claim, coloured by verification status. The counts are given in the caption and the claim table above."></div>
+             role="img" aria-label="Pole značek, jedna na tvrzení, obarvené podle stavu ověření. Počty jsou uvedeny v popisku a v tabulce tvrzení výše."></div>
       </div>
       <p id="evidence-field-caption" class="mt-3 text-xs text-white/40"></p>
     </section>
 
     {# ============ Identity table ============ #}
     <section class="mt-16" aria-labelledby="id-title">
-      <h2 id="id-title" class="font-sans text-2xl font-black text-white">Identity, field by field</h2>
+      <h2 id="id-title" class="font-sans text-2xl font-black text-white">Identita, pole po poli</h2>
       <div class="mt-6 overflow-x-auto">
         <table class="w-full border-collapse text-left text-sm">
           <thead>
             <tr class="border-b border-white/20 text-white/60">
-              <th scope="col" class="py-2 pr-4 font-medium">Field</th>
-              <th scope="col" class="py-2 pr-4 font-medium">Value</th>
-              <th scope="col" class="py-2 pr-4 font-medium">Status</th>
-              <th scope="col" class="py-2 font-medium">Sources</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Pole</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Hodnota</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Stav</th>
+              <th scope="col" class="py-2 font-medium">Zdroje</th>
             </tr>
           </thead>
           <tbody>
@@ -171,15 +171,15 @@
 
     {# ============ Financials ============ #}
     <section class="mt-16" aria-labelledby="fin-title">
-      <h2 id="fin-title" class="font-sans text-2xl font-black text-white">Financial figures</h2>
+      <h2 id="fin-title" class="font-sans text-2xl font-black text-white">Finanční údaje</h2>
       <p class="mt-2 text-sm text-white/60">{{ d.financials.note }}</p>
       <div class="mt-6 overflow-x-auto">
         <table class="w-full border-collapse text-left text-sm">
           <thead>
             <tr class="border-b border-white/20 text-white/60">
-              <th scope="col" class="py-2 pr-4 font-medium">Metric</th>
-              <th scope="col" class="py-2 pr-4 text-right font-medium">Value</th>
-              <th scope="col" class="py-2 font-medium">Status</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Metrika</th>
+              <th scope="col" class="py-2 pr-4 text-right font-medium">Hodnota</th>
+              <th scope="col" class="py-2 font-medium">Stav</th>
             </tr>
           </thead>
           <tbody>
@@ -208,7 +208,7 @@
 
     {# ============ Open questions ============ #}
     <section class="mt-16" aria-labelledby="oq-title">
-      <h2 id="oq-title" class="font-sans text-2xl font-black text-white">Open questions</h2>
+      <h2 id="oq-title" class="font-sans text-2xl font-black text-white">Otevřené otázky</h2>
       <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-white/80">
         {%- for q in d.openQuestions %}
         <li>{{ q }}</li>
@@ -218,15 +218,15 @@
 
     {# ============ Source ledger ============ #}
     <section class="mt-16" aria-labelledby="src-title">
-      <h2 id="src-title" class="font-sans text-2xl font-black text-white">Source ledger</h2>
+      <h2 id="src-title" class="font-sans text-2xl font-black text-white">Seznam zdrojů</h2>
       <div class="mt-6 overflow-x-auto">
         <table class="w-full border-collapse text-left text-sm">
           <thead>
             <tr class="border-b border-white/20 text-white/60">
               <th scope="col" class="py-2 pr-4 font-medium">ID</th>
-              <th scope="col" class="py-2 pr-4 font-medium">Source</th>
-              <th scope="col" class="py-2 pr-4 font-medium">Tier</th>
-              <th scope="col" class="py-2 font-medium">Retrieved</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Zdroj</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Úroveň</th>
+              <th scope="col" class="py-2 font-medium">Získáno</th>
             </tr>
           </thead>
           <tbody>

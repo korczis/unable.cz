@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 3
+    "count": 5
   },
   "timeline": [
     {
@@ -34,6 +34,22 @@
       "status": "VERIFIED_PRIMARY",
       "sources": [
         "SRC-03"
+      ]
+    },
+    {
+      "date": "2026-01-19",
+      "event": "Court execution ordered against Tomáš Melichárek's personal Able.cz ownership stake over a 9,327.14 CZK debt to Dopravní podnik hl. m. Prahy, a.s.",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-16"
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "event": "That execution closed, satisfied by payment ('vymožením').",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-17"
       ]
     }
   ]
