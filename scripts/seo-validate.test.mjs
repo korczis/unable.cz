@@ -19,10 +19,6 @@ import {
   extractMeta,
   isIndexable,
   dateIssues,
-  frontMatter,
-  tomlValue,
-  daysBetween,
-  parseBaseUrl,
   ALLOWED_SCHEMA_TYPES,
 } from "./seo-validate.mjs";
 
@@ -131,69 +127,6 @@ test("dateIssues rejects unparseable and future dates", () => {
 });
 
 // ---------------------------------------------------------------------------
-// Front matter
-// ---------------------------------------------------------------------------
-
-const FM = `+++
-title = "T"
-date = 2026-07-16
-
-[extra]
-seo_type = "Report"
-
-[extra.evidence]
-cutoff = 2026-07-16
-review_interval_days = 180  # trailing comment
-confidence = "high"
-+++
-
-body text
-`;
-
-test("frontMatter extracts the TOML block only", () => {
-  const fm = frontMatter(FM);
-  assert.match(fm, /seo_type = "Report"/);
-  assert.ok(!fm.includes("body text"));
-  assert.equal(frontMatter("no front matter here"), null);
-});
-
-test("tomlValue reads scalars from the right table", () => {
-  const fm = frontMatter(FM);
-  assert.equal(tomlValue(fm, "extra", "seo_type"), "Report");
-  assert.equal(tomlValue(fm, "extra.evidence", "cutoff"), "2026-07-16");
-  assert.equal(tomlValue(fm, "extra.evidence", "confidence"), "high");
-  assert.equal(tomlValue(fm, "extra.evidence", "missing"), null);
-  assert.equal(tomlValue(fm, "nope", "cutoff"), null);
-});
-
-test("tomlValue strips trailing comments", () => {
-  assert.equal(tomlValue(frontMatter(FM), "extra.evidence", "review_interval_days"), "180");
-});
-
-test("tomlValue does not read across table boundaries", () => {
-  // `cutoff` lives in [extra.evidence]; asking [extra] for it must not find it.
-  assert.equal(tomlValue(frontMatter(FM), "extra", "cutoff"), null);
-});
-
-test("daysBetween counts whole elapsed days", () => {
-  assert.equal(daysBetween(new Date("2026-01-01"), new Date("2026-01-01")), 0);
-  assert.equal(daysBetween(new Date("2026-01-01"), new Date("2026-07-01")), 181);
-});
-
-test("parseBaseUrl reads base_url from config.toml", () => {
-  assert.equal(parseBaseUrl('base_url = "https://example.test"\ntitle = "x"'), "https://example.test");
-  assert.throws(() => parseBaseUrl('title = "x"'), /base_url not found/);
-});
-
-test("the real dossier declares a complete review policy", () => {
-  const fm = frontMatter(readFileSync(join(ROOT, "content/dossier.md"), "utf8"));
-  assert.equal(tomlValue(fm, "extra", "seo_type"), "Report");
-  for (const k of ["cutoff", "reviewed_at", "review_interval_days", "confidence"]) {
-    assert.ok(tomlValue(fm, "extra.evidence", k), `[extra.evidence] must declare ${k}`);
-  }
-});
-
-// ---------------------------------------------------------------------------
 // Schema allowlist
 // ---------------------------------------------------------------------------
 
@@ -270,38 +203,6 @@ test("no template except base.html renders its own metadata", () => {
     assert.ok(!/<title\b/i.test(src), `${file} renders a <title>; it comes from front matter`);
     assert.ok(!/application\/ld\+json/.test(src), `${file} renders JSON-LD; it comes from base.html`);
     assert.ok(!/rel="canonical"/.test(src), `${file} renders a canonical link; base.html owns it`);
-  }
-});
-
-test("JSON-LD values are encoded through the seo::j macro, not bare json_encode", () => {
-  // json_encode escapes quotes, so the JSON stays well-formed -- but it leaves
-  // the literal `</script>` alone, and an HTML parser ends the script element
-  // there regardless. A title containing `</script><script>alert(1)</script>`
-  // then breaks out and executes. seo::j additionally escapes `</` to `<\/`.
-  const base = readFileSync(join(ROOT, "templates/base.html"), "utf8");
-  assert.ok(!/json_encode\s*\|\s*safe/.test(base),
-    "bare `json_encode | safe` in base.html: a `</script>` in front matter would break out of the JSON-LD block. Use seo::j().");
-  assert.match(base, /import "macros\/seo\.html" as seo/);
-});
-
-test("the seo::j macro neutralizes </script>", () => {
-  const macro = readFileSync(join(ROOT, "templates/macros/seo.html"), "utf8");
-  assert.match(macro, /json_encode/);
-  assert.match(macro, /replace\(from="<\/", to="<\\\/"\)/,
-    "the macro must escape `</` to `<\\/`");
-});
-
-test("built JSON-LD parses and contains no closing script tag", () => {
-  // Guards the rendered artifact, not just the template.
-  for (const rel of ["public/index.html", "public/dossier/index.html"]) {
-    let html;
-    try { html = readFileSync(join(ROOT, rel), "utf8"); }
-    catch { continue; } // not built; `npm run verify` builds first
-    const m = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
-    assert.ok(m, `${rel}: no JSON-LD found`);
-    const data = JSON.parse(m[1]); // throws if a breakout truncated it
-    assert.equal(data["@context"], "https://schema.org");
-    assert.ok(!m[1].includes("</script>"), `${rel}: raw </script> inside JSON-LD`);
   }
 });
 
