@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 21
+    "count": 41
   },
   "entities": [
     {
@@ -115,6 +115,106 @@
       "id": "tastetown",
       "label": "Taste Town",
       "type": "client"
+    },
+    {
+      "id": "petr_faraga",
+      "label": "P. Faraga",
+      "type": "person"
+    },
+    {
+      "id": "jakub_kaman",
+      "label": "J. Kaman",
+      "type": "person"
+    },
+    {
+      "id": "ondrej_kaman",
+      "label": "O. Kaman",
+      "type": "person"
+    },
+    {
+      "id": "oslzla",
+      "label": "L. Oslzla",
+      "type": "person"
+    },
+    {
+      "id": "mindee",
+      "label": "Mindee app s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "era25",
+      "label": "ERA25 s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "verzuz",
+      "label": "Verzuz.com s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "fame_logistics",
+      "label": "FaMe logistics s.r.o. (v likvidaci)",
+      "type": "entity"
+    },
+    {
+      "id": "fame_trade",
+      "label": "FaMe trade s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "fama_media",
+      "label": "FaMa Media s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "mmplan",
+      "label": "M&M plan s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "onelabel",
+      "label": "one label s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "bgo",
+      "label": "BGO s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "usporix",
+      "label": "Usporix, s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "verasto",
+      "label": "VERASTO s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "ventoux",
+      "label": "Ventoux Studio s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "schlesinger_sro",
+      "label": "Vít Schlesinger s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "artstay_lovs",
+      "label": "Artstay / Lovs & Co. s.r.o.",
+      "type": "entity"
+    },
+    {
+      "id": "mysasy",
+      "label": "mySASY a.s.",
+      "type": "entity"
+    },
+    {
+      "id": "exekuce-melicharek",
+      "label": "Exekuce (podíl, 219 EX 00241/26)",
+      "type": "legal"
     }
   ]
 }
