@@ -79,87 +79,10 @@
     });
   })();
 
-  // ---- Figure 2: relationship graph (Cytoscape.js) ------------------------
-  (function () {
-    var container = document.getElementById("rel-graph");
-    if (!container || typeof window.cytoscape === "undefined") return;
-    if (!data.graph || !data.graph.nodes) return;
-
-    var groupShape = {
-      subject: "round-rectangle",
-      person: "ellipse",
-      entity: "round-rectangle",
-      client: "ellipse",
-      source: "diamond",
-    };
-    var groupColor = {
-      subject: CHAMPAGNE,
-      person: "#e5e7eb",
-      entity: GOLD,
-      client: "#9ca3af",
-      source: "#6b7280",
-    };
-
-    var cy = window.cytoscape({
-      container: container,
-      elements: { nodes: data.graph.nodes, edges: data.graph.edges },
-      style: [
-        {
-          selector: "node",
-          style: {
-            "background-color": function (n) { return groupColor[n.data("group")] || "#fff"; },
-            shape: function (n) { return groupShape[n.data("group")] || "ellipse"; },
-            label: "data(label)",
-            color: "#e5e7eb",
-            "font-size": 11,
-            "font-family": "ui-sans-serif, system-ui, sans-serif",
-            "text-valign": "bottom",
-            "text-margin-y": 4,
-            "text-halign": "center",
-            width: function (n) { return n.data("group") === "subject" ? 26 : 16; },
-            height: function (n) { return n.data("group") === "subject" ? 26 : 16; },
-          },
-        },
-        {
-          selector: "edge",
-          style: {
-            width: function (e) {
-              var s = e.data("status");
-              return s === "VERIFIED_PRIMARY" || s === "CORROBORATED" ? 2 : 1;
-            },
-            "line-color": function (e) {
-              var s = e.data("status");
-              return s === "VERIFIED_PRIMARY" || s === "CORROBORATED"
-                ? "rgba(243,229,192,0.55)"
-                : "rgba(255,255,255,0.18)";
-            },
-            "line-style": function (e) {
-              var s = e.data("status");
-              return s === "VERIFIED_PRIMARY" || s === "CORROBORATED" ? "solid" : "dashed";
-            },
-            "target-arrow-color": "rgba(255,255,255,0.35)",
-            "target-arrow-shape": "triangle",
-            "arrow-scale": 0.8,
-            "curve-style": "bezier",
-          },
-        },
-      ],
-      layout: {
-        name: "concentric",
-        concentric: function (n) { return n.data("group") === "subject" ? 10 : 1; },
-        levelWidth: function () { return 1; },
-        minNodeSpacing: 42,
-        padding: 28,
-        animate: false,
-      },
-      autoungrabify: true,
-      userZoomingEnabled: false,
-      userPanningEnabled: false,
-      boxSelectionEnabled: false,
-    });
-    cy.fit(undefined, 28);
-    window.addEventListener("resize", function () { cy.fit(undefined, 28); });
-  })();
+  // ---- Figure 2: relationship graph ---------------------------------------
+  // The relationship graph has grown into a full investigation workspace and
+  // lives in its own module, scripts/dossier/graph.js (loaded after Cytoscape).
+  // It reads the same #dossier-data and mounts on #rel-graph.
 
   // ---- Figure 3: evidence field (p5.js) -----------------------------------
   (function () {
