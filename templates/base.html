@@ -9,6 +9,8 @@
   Adding a <meta> tag to a child template is a bug. See docs/seo.md.
 -#}
 
+{%- import "macros/seo.html" as seo -%}
+
 {#- Normalization: unify page / section / neither (the 404) into one node.
     `config` is the fallback node because it carries .title, .description and
     .extra, which makes every lookup below total. -#}
@@ -76,37 +78,38 @@
   <meta name="twitter:image" content="{{ og_image | safe }}" />
   <meta name="twitter:image:alt" content="{{ og_image_alt }}" />
 
-  {#- JSON-LD. Every interpolated value passes through json_encode, which
-      escapes quotes and control characters, so front matter cannot break out
-      of the script block. Only fields backed by real data are emitted. -#}
+  {#- JSON-LD. Every interpolated value goes through seo::j, which json_encodes
+      AND neutralizes `</script>` so front matter cannot break out of the block
+      -- json_encode alone does not do the second part. See macros/seo.html.
+      Only fields backed by real data are emitted. -#}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": {{ seo_type | json_encode | safe }},
-    "name": {{ seo_title | json_encode | safe }},
-    "description": {{ seo_desc | json_encode | safe }},
-    "url": {{ og_url | json_encode | safe }},
-    "inLanguage": {{ lang | json_encode | safe }},
-    "image": {{ og_image | json_encode | safe }},
+    "@type": {{ seo::j(v=seo_type) }},
+    "name": {{ seo::j(v=seo_title) }},
+    "description": {{ seo::j(v=seo_desc) }},
+    "url": {{ seo::j(v=og_url) }},
+    "inLanguage": {{ seo::j(v=lang) }},
+    "image": {{ seo::j(v=og_image) }},
     "publisher": {
       "@type": "Organization",
-      "name": {{ publisher | json_encode | safe }},
-      "url": {{ config.base_url | json_encode | safe }}
+      "name": {{ seo::j(v=publisher) }},
+      "url": {{ seo::j(v=config.base_url) }}
     }
     {%- if seo_type != "WebSite" %},
     "isPartOf": {
       "@type": "WebSite",
-      "name": {{ config.title | json_encode | safe }},
-      "url": {{ config.base_url | json_encode | safe }}
+      "name": {{ seo::j(v=config.title) }},
+      "url": {{ seo::j(v=config.base_url) }}
     },
-    "mainEntityOfPage": {{ og_url | json_encode | safe }}
+    "mainEntityOfPage": {{ seo::j(v=og_url) }}
     {%- endif %}
     {%- if published %},
-    "datePublished": {{ published | json_encode | safe }},
-    "dateModified": {{ modified | json_encode | safe }}
+    "datePublished": {{ seo::j(v=published) }},
+    "dateModified": {{ seo::j(v=modified) }}
     {%- endif %}
     {%- if extra.evidence %},
-    "temporalCoverage": {{ extra.evidence.cutoff | json_encode | safe }}
+    "temporalCoverage": {{ seo::j(v=extra.evidence.cutoff) }}
     {%- endif %}
   }
   </script>

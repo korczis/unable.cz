@@ -33,8 +33,23 @@ exclusively in `templates/base.html`, sourced from each page's front matter
 with fallbacks in `config.toml`'s `[extra]` table. Child templates carry no
 metadata blocks, so there's nothing to duplicate or drift.
 
-Run `npm run build && node scripts/seo-validate.mjs --strict` before shipping,
-and `node --test scripts/*.test.mjs` for the unit/regression suite.
+Pages that assert evidence (`seo_type = "Report"`) must also declare where that
+evidence came from, when a human last checked it, and how long the check is
+good for; an overdue page renders a stale notice to its readers.
+
+Run `npm run verify` (build + validate + test) before shipping. CI runs the same
+gate and will not publish a build with broken metadata.
+
+| Command | Purpose |
+|---|---|
+| `npm run verify` | Build + validate + test — the one to run |
+| `npm run seo:validate` | Errors fail, warnings report |
+| `npm run seo:validate:strict` | Warnings fail too |
+| `npm run seo:validate:json` | Machine-readable, for CI |
+| `npm test` | Unit + regression tests |
+
+See **[docs/seo.md](docs/seo.md)** for the architecture and the front-matter
+schema, and **[AGENTS.md](AGENTS.md)** for the rules when editing.
 
 ## The `/dossier/` page
 

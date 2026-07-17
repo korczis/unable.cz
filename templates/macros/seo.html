@@ -1,0 +1,21 @@
+{#-
+  JSON-LD value encoder.
+
+  `json_encode` alone is NOT sufficient inside a <script> element. It escapes
+  quotes, so the JSON stays well-formed, but it leaves the literal string
+  `</script>` untouched -- and an HTML parser ends the script element at the
+  first `</script>` it sees, whatever the JSON thinks. A title containing
+  `</script><script>alert(1)</script>` therefore breaks out of the block and
+  executes. This is the standard JSON-in-HTML breakout, and Markdown front
+  matter is not exempt from it.
+
+  Escaping `</` to `<\/` closes that hole: `\/` is a legal JSON escape for `/`
+  and every JSON parser reads it back as a plain slash, while the HTML parser
+  no longer sees a closing tag.
+
+  Use this for every value interpolated into JSON-LD. Never `| json_encode |
+  safe` on its own.
+-#}
+{%- macro j(v) -%}
+{{ v | json_encode | replace(from="</", to="<\/") | safe }}
+{%- endmacro j -%}
