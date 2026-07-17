@@ -295,8 +295,12 @@
   }
   function passConf(el) {
     if (el.data("kind") === "source" || el.data("kind") === "evlink") return true;
-    var c = confOf(el.data("status"));
-    return state.filters[c];
+    // Only records that actually carry a confidence (edges, claims) are filtered.
+    // Plain entity nodes have no status and must not be hidden by a confidence
+    // toggle — otherwise "hide self-reported" would blank the whole graph.
+    var st = el.data("status");
+    if (st == null) return true;
+    return state.filters[confOf(st)];
   }
   function passProv(el) {
     var srcs = el.data("sources") || (el.data("ref") && [el.data("ref").id]) || [];
@@ -344,6 +348,9 @@
       else if (visN[s] && visN[t]) visE[e.id()] = true;
     });
 
+    // Count from the sets we just computed. cy.nodes(":visible") lags a render
+    // tick behind a class change, so reading it here would be stale.
+    state.viewCounts = { n: Object.keys(visN).length, e: Object.keys(visE).length };
     cy.batch(function () {
       cy.nodes().forEach(function (n) { n.toggleClass("gw-hidden", !visN[n.id()]); });
       cy.edges().forEach(function (e) { e.toggleClass("gw-hidden", !visE[e.id()]); });
@@ -351,6 +358,9 @@
     if (relayout !== false) runLayout();
     updateLegend();
     syncToolbar();
+    // Keep the default inspector's "This view" counts in sync after an expand,
+    // collapse, or filter change (which don't otherwise re-render it).
+    if (state.sel == null && !state.transientPanel) inspectDefault();
   }
 
   function runLayout() {
@@ -393,7 +403,7 @@
   function section(title, body) { return body ? '<div class="gw-sec"><h4>' + esc(title) + "</h4>" + body + "</div>" : ""; }
 
   function inspectDefault() {
-    state.sel = null;
+    state.sel = null; state.transientPanel = false;
     clearHi();
     var counts = { high: 0, low: 0, disputed: 0 };
     cy.edges('[kind = "rel"]').forEach(function (e) { counts[confOf(e.data("status"))]++; });
@@ -401,7 +411,7 @@
       '<div class="gw-ihead"><span class="gw-ikind">Workspace</span><h3>Able.cz relationship graph</h3></div>' +
       section("How to read it",
         '<p class="gw-p">Click a node to inspect it and highlight its neighbourhood. Double-click to expand. Click an edge for the evidence behind it. Solid = register-verified or corroborated; dashed = self-reported; gold = a contradiction.</p>') +
-      section("This view", '<p class="gw-p gw-mono">' + cy.nodes(":visible").length + " nodes · " + cy.edges(":visible").length + " edges · mode: " + esc(MODES[state.mode].label) + "</p>") +
+      section("This view", '<p class="gw-p gw-mono">' + ((state.viewCounts || {}).n || 0) + " nodes · " + ((state.viewCounts || {}).e || 0) + " edges · mode: " + esc(MODES[state.mode].label) + "</p>") +
       section("Relationship confidence",
         '<ul class="gw-kv"><li><span>Verified / corroborated</span><b>' + counts.high + "</b></li>" +
         "<li><span>Self-reported</span><b>" + counts.low + "</b></li>" +
@@ -524,6 +534,7 @@
 
   // ---- path finder ---------------------------------------------------------
   function computePath(a, b) {
+    state.transientPanel = true;
     var res = cy.elements(":visible").aStar({ root: cy.getElementById(a), goal: cy.getElementById(b), directed: false });
     clearHi();
     if (!res.found) {
@@ -545,7 +556,7 @@
 
   // ---- analytics -----------------------------------------------------------
   function analytics() {
-    clearHi();
+    state.transientPanel = true; clearHi();
     var ent = cy.nodes('[kind = "entity"]');
     var deg = ent.map(function (n) { return { l: n.data("label"), d: n.connectedEdges('[kind = "rel"]').length, id: n.id() }; })
       .sort(function (a, b) { return b.d - a.d; }).slice(0, 6);
@@ -587,6 +598,7 @@
     return s + "</graph>\n</graphml>\n";
   }
   function exportMenu() {
+    state.transientPanel = true;
     var picks = ["PNG", "SVG-fallback→PNG", "JSON (view)", "GraphML", "CyJS (full)"];
     // simple inline chooser in the inspector
     inspector.innerHTML = '<div class="gw-ihead"><span class="gw-ikind">export</span><h3>Export current view</h3></div>' +
