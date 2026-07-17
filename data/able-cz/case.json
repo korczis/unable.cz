@@ -1,0 +1,245 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "case",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Public-source review. Derived losslessly from the dossier data; nothing added."
+  },
+  "case": {
+    "id": "DD-Able-CZ-2026-07-17",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "kind": "public-source-due-diligence"
+  },
+  "identity": [
+    {
+      "field": "Legal name",
+      "value": "Able.cz s.r.o.",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-03",
+        "SRC-01"
+      ]
+    },
+    {
+      "field": "IČO",
+      "value": "24278815",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-03",
+        "SRC-01"
+      ]
+    },
+    {
+      "field": "DIČ (VAT)",
+      "value": "CZ24278815",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-03"
+      ]
+    },
+    {
+      "field": "VAT status (EU VIES)",
+      "value": "Valid — Able.cz s.r.o., Vlněna 526/5, Brno",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-08"
+      ]
+    },
+    {
+      "field": "Legal form",
+      "value": "s.r.o. (limited liability company)",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-03"
+      ]
+    },
+    {
+      "field": "Incorporated",
+      "value": "3 October 2012",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-03"
+      ]
+    },
+    {
+      "field": "Registered office",
+      "value": "Vlněna 526/5, Trnitá, 602 00 Brno",
+      "status": "CORROBORATED",
+      "sources": [
+        "SRC-03",
+        "SRC-01"
+      ]
+    },
+    {
+      "field": "Registered capital",
+      "value": "243,715 CZK",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-03"
+      ]
+    },
+    {
+      "field": "Court",
+      "value": "Krajský soud v Brně (Regional Court in Brno)",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-03",
+        "SRC-01"
+      ]
+    },
+    {
+      "field": "Last register change (observed)",
+      "value": "20 January 2026",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-03"
+      ]
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "CON-01",
+      "field": "Court file number (spisová značka)",
+      "valueA": {
+        "value": "C 85424",
+        "source": "SRC-01",
+        "where": "Able's own GDPR/legal page"
+      },
+      "valueB": {
+        "value": "C 85425",
+        "source": "SRC-03",
+        "where": "Public register mirrors (justice.cz / ARES)"
+      },
+      "resolution": "The public register value (C 85425) is the authoritative one. The value on the company's own legal page (C 85424) is most plausibly a transcription error or a stale copy. This is recorded, not silently normalized.",
+      "status": "CONTRADICTED"
+    }
+  ],
+  "governance": {
+    "note": "The register records the statutory body and shareholders below. Marketing job titles on the website (e.g. CTO, CSO) are not the same as statutory officers and are shown separately. Not every website leader is a registered statutory officer.",
+    "statutoryBody": [
+      {
+        "name": "Václav Faraga",
+        "role": "Statutory officer (jednatel)",
+        "since": "3 October 2012",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ]
+      },
+      {
+        "name": "Tomáš Melichárek",
+        "role": "Statutory officer (jednatel)",
+        "since": "3 October 2012",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    ],
+    "shareholders": [
+      {
+        "name": "Václav Faraga",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ]
+      },
+      {
+        "name": "Tomáš Melichárek",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ]
+      },
+      {
+        "name": "Radek Juhaňák",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    ],
+    "signingRule": {
+      "text": "A statutory officer acts independently, except for acts of property management or monetary obligations above 200,000 CZK (excl. VAT), which require all statutory officers to act jointly.",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-03"
+      ]
+    },
+    "marketingLeadership": [
+      {
+        "name": "Václav Faraga",
+        "role": "CEO",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "corroboration": "Also confirmed via LinkedIn (SRC-06) and as a statutory officer (SRC-03)."
+      },
+      {
+        "name": "Tomáš Melichárek",
+        "role": "CPO",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "corroboration": "Statutory officer per register (SRC-03)."
+      },
+      {
+        "name": "Radek Juhaňák",
+        "role": "CSO",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "corroboration": "Shareholder per register (SRC-03); statutory status not confirmed."
+      },
+      {
+        "name": "Lukáš Grolig",
+        "role": "CTO",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "corroboration": "Not found in the register statutory body or shareholder list in this pass — a marketing role, not a verified statutory office."
+      }
+    ]
+  },
+  "openQuestions": [
+    "Filed financial statements (revenue, result, assets, headcount) — available at justice.cz Sbírka listin, not retrieved in this pass.",
+    "Whether the marketing roles CTO (Grolig) and CSO (Juhaňák) correspond to any current statutory function.",
+    "Independent client confirmation of the quantified case-study results (ROI, person-days).",
+    "Public-sector contracts and any EU-cofinanced project details (Hlídač státu and grant registers not retrieved here).",
+    "Current combined headcount and revenue as filed, versus the self-reported target."
+  ],
+  "summary": {
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "confidence": "moderate",
+    "counts": {
+      "entities": 21,
+      "relationships": 21,
+      "claims": 15,
+      "sources": 9,
+      "contradictions": 1,
+      "openQuestions": 5,
+      "risks": 5
+    },
+    "claimsByStatus": {
+      "SELF_REPORTED": 14,
+      "CORROBORATED": 1
+    },
+    "relationshipsByStatus": {
+      "VERIFIED_PRIMARY": 10,
+      "SELF_REPORTED": 7,
+      "CORROBORATED": 3,
+      "CONTRADICTED": 1
+    }
+  }
+}

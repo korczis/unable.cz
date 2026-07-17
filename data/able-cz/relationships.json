@@ -1,0 +1,168 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "relationships",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
+    "count": 21,
+    "byStatus": {
+      "VERIFIED_PRIMARY": 10,
+      "SELF_REPORTED": 7,
+      "CORROBORATED": 3,
+      "CONTRADICTED": 1
+    }
+  },
+  "relationships": [
+    {
+      "id": "e1",
+      "from": "faraga",
+      "to": "able",
+      "label": "statutory officer + shareholder",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e2",
+      "from": "melicharek",
+      "to": "able",
+      "label": "statutory officer + shareholder",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e3",
+      "from": "juhanak",
+      "to": "able",
+      "label": "shareholder",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e13",
+      "from": "polansky",
+      "to": "able",
+      "label": "supervisory board",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e14",
+      "from": "zenx",
+      "to": "able",
+      "label": "shareholder (111 620 CZK)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e15",
+      "from": "g5326",
+      "to": "able",
+      "label": "shareholder (9 975 CZK)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e16",
+      "from": "pointfm",
+      "to": "able",
+      "label": "investor ~5% (2023, media)",
+      "status": "SELF_REPORTED"
+    },
+    {
+      "id": "e4",
+      "from": "grolig",
+      "to": "able",
+      "label": "marketing CTO (not in register)",
+      "status": "SELF_REPORTED"
+    },
+    {
+      "id": "e5",
+      "from": "able",
+      "to": "blackfish",
+      "label": "acquired 100%",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e6",
+      "from": "schlesinger",
+      "to": "blackfish",
+      "label": "founder",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e7",
+      "from": "schlesinger",
+      "to": "able",
+      "label": "leads business strategy",
+      "status": "CORROBORATED"
+    },
+    {
+      "id": "e17",
+      "from": "domain",
+      "to": "able",
+      "label": "operated by",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e18",
+      "from": "able",
+      "to": "ksbr",
+      "label": "registered — C 85425",
+      "status": "CONTRADICTED"
+    },
+    {
+      "id": "e19",
+      "from": "domain",
+      "to": "hosting",
+      "label": "resolves via (A 31.43.160.6)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e20",
+      "from": "domain",
+      "to": "gwork",
+      "label": "email via (MX)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e21",
+      "from": "domain",
+      "to": "tls",
+      "label": "TLS issued by",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e8",
+      "from": "able",
+      "to": "aaa",
+      "label": "named client",
+      "status": "SELF_REPORTED"
+    },
+    {
+      "id": "e9",
+      "from": "able",
+      "to": "aures",
+      "label": "named client",
+      "status": "SELF_REPORTED"
+    },
+    {
+      "id": "e10",
+      "from": "able",
+      "to": "arkadia",
+      "label": "named client",
+      "status": "SELF_REPORTED"
+    },
+    {
+      "id": "e11",
+      "from": "able",
+      "to": "encall",
+      "label": "named client",
+      "status": "SELF_REPORTED"
+    },
+    {
+      "id": "e12",
+      "from": "able",
+      "to": "tastetown",
+      "label": "named client",
+      "status": "SELF_REPORTED"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "financials",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Public-source review. Derived losslessly from the dossier data; nothing added."
+  },
+  "financials": {
+    "note": "Czech s.r.o. financial statements are filed in the Collection of Deeds (Sbírka listin) at justice.cz. They were not retrieved in this pass, so revenue, profit, assets, and headcount are NOT_FOUND here rather than estimated. The only hard figure is registered capital.",
+    "verified": [
+      {
+        "metric": "Registered capital",
+        "display": "243,715 CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    ],
+    "selfReported": [
+      {
+        "metric": "Combined revenue target (Able + Blackfish, stated year)",
+        "display": "~100,000,000 CZK",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-04",
+          "SRC-05"
+        ],
+        "note": "A forward-looking target attributed to Vít Schlesinger in media, not a filed result."
+      },
+      {
+        "metric": "Combined headcount (Able + Blackfish)",
+        "display": "~60 people",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-04",
+          "SRC-05"
+        ]
+      },
+      {
+        "metric": "Tenders won in the stated year (combined)",
+        "display": "4 tenders",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-05"
+        ]
+      },
+      {
+        "metric": "Combined contract value of those tenders",
+        "display": ">20,000,000 CZK",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-05"
+        ]
+      }
+    ],
+    "notFound": [
+      "Revenue (filed)",
+      "Operating/net result",
+      "Total assets",
+      "Equity",
+      "Employee count (filed)",
+      "Auditor's report",
+      "Going-concern language"
+    ]
+  }
+}

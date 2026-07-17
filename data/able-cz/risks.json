@@ -1,0 +1,66 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "risks",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
+    "count": 5
+  },
+  "risks": [
+    {
+      "id": "R-01",
+      "category": "governance",
+      "title": "Marketing titles are not statutory offices",
+      "probability": "moderate",
+      "impact": "low",
+      "confidence": "high",
+      "basis": "governance.marketingLeadership vs governance.statutoryBody",
+      "note": "Website markets four C-level leaders; the register confirms two as jednatelé. One marketed CTO was not found in the register in this pass."
+    },
+    {
+      "id": "R-02",
+      "category": "financial",
+      "title": "No filed financial statements retrieved",
+      "probability": "high",
+      "impact": "moderate",
+      "confidence": "high",
+      "basis": "financials.notFound",
+      "note": "Revenue/result/assets/headcount are NOT_FOUND (Sbírka listin not retrieved). An evidence gap, not a negative finding."
+    },
+    {
+      "id": "R-03",
+      "category": "reputational",
+      "title": "Performance claims are self-reported",
+      "probability": "moderate",
+      "impact": "moderate",
+      "confidence": "medium",
+      "basis": "14 of 15 claims are SELF_REPORTED",
+      "note": "Marketing/performance claims await independent corroboration."
+    },
+    {
+      "id": "R-04",
+      "category": "legal",
+      "title": "Insolvency not conclusively screened",
+      "probability": "unknown",
+      "impact": "high",
+      "confidence": "low",
+      "basis": "openQuestions (ISIR)",
+      "note": "No public insolvency was found; ISIR direct query and login-gated aggregators left this unresolved. Absence is not proof of absence."
+    },
+    {
+      "id": "R-05",
+      "category": "governance",
+      "title": "Public court-file discrepancy",
+      "probability": "high",
+      "impact": "low",
+      "confidence": "high",
+      "basis": "contradictions[CON-01]",
+      "note": "Company GDPR page cites C 85424; register records C 85425. Most plausibly a transcription/stale-copy error; recorded, not smoothed over."
+    }
+  ],
+  "disclaimer": "Risks are ASSESSED readings of documented evidence gaps, not findings of fact. Severity is independent of evidence confidence."
+}
