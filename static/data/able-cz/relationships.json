@@ -8,9 +8,9 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 18,
+    "count": 21,
     "byStatus": {
-      "VERIFIED_PRIMARY": 7,
+      "VERIFIED_PRIMARY": 10,
       "SELF_REPORTED": 7,
       "CORROBORATED": 3,
       "CONTRADICTED": 1
@@ -107,6 +107,27 @@
       "to": "ksbr",
       "label": "registered — C 85425",
       "status": "CONTRADICTED"
+    },
+    {
+      "id": "e19",
+      "from": "domain",
+      "to": "hosting",
+      "label": "resolves via (A 31.43.160.6)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e20",
+      "from": "domain",
+      "to": "gwork",
+      "label": "email via (MX)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e21",
+      "from": "domain",
+      "to": "tls",
+      "label": "TLS issued by",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e8",

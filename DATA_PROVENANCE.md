@@ -29,6 +29,18 @@ passive reads only (no authentication, no active scanning, no intrusion).
 | Hlídač státu — insolvency detail | HTTP GET | **Login-gated** — not resolvable from the public view. |
 | able.cz `/gdpr`, `/zasady-ochrany-osobnich-udaju` | HTTP GET | **404** — wrong paths; correct legal page (`/legal/gdpr`) found via the footer. |
 
+## Digital / technical footprint (measured 2026-07-17)
+Passive, public measurements — no scanning, no authentication.
+
+| Source | Method | Finding |
+|--------|--------|---------|
+| `SRC-07` Google Public DNS | HTTPS `dns.google/resolve` | A `31.43.160.6`, `31.43.161.6`; NS `ns1/ns2.websupport.cz`, `ns3.websupport.eu` (Websupport); MX `smtp.google.com` (Google Workspace) |
+| `SRC-08` EU VIES | HTTPS REST | VAT `CZ24278815` **valid** — "Able.cz s.r.o.", Vlněna 526/5, Brno (EU-level identity corroboration) |
+| `SRC-09` crt.sh (certificate transparency) | HTTPS JSON | Current TLS certs issued by **Let's Encrypt**; an Amazon-issued cert also present in CT logs |
+
+These are `VERIFIED_PRIMARY` technical observations, surfaced in the graph's
+Technical mode (`domain → hosting / email / TLS`) and the identity table.
+
 ## Not performed in this pass
 - **Collection of Deeds (Sbírka listin)** — filed financial statements not
   retrieved; revenue/result/assets/headcount left `NOT_FOUND` (not estimated).

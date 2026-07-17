@@ -43,6 +43,14 @@
       ]
     },
     {
+      "field": "VAT status (EU VIES)",
+      "value": "Valid — Able.cz s.r.o., Vlněna 526/5, Brno",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-08"
+      ]
+    },
+    {
       "field": "Legal form",
       "value": "s.r.o. (limited liability company)",
       "status": "VERIFIED_PRIMARY",
@@ -215,10 +223,10 @@
     "evidenceCutoff": "2026-07-17",
     "confidence": "moderate",
     "counts": {
-      "entities": 18,
-      "relationships": 18,
+      "entities": 21,
+      "relationships": 21,
       "claims": 15,
-      "sources": 6,
+      "sources": 9,
       "contradictions": 1,
       "openQuestions": 5,
       "risks": 5
@@ -228,7 +236,7 @@
       "CORROBORATED": 1
     },
     "relationshipsByStatus": {
-      "VERIFIED_PRIMARY": 7,
+      "VERIFIED_PRIMARY": 10,
       "SELF_REPORTED": 7,
       "CORROBORATED": 3,
       "CONTRADICTED": 1

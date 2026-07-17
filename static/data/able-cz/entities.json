@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 18
+    "count": 21
   },
   "entities": [
     {
@@ -75,6 +75,21 @@
       "id": "ksbr",
       "label": "Krajský soud v Brně",
       "type": "legal"
+    },
+    {
+      "id": "hosting",
+      "label": "Websupport (DNS/hosting)",
+      "type": "domain"
+    },
+    {
+      "id": "gwork",
+      "label": "Google Workspace (email)",
+      "type": "domain"
+    },
+    {
+      "id": "tls",
+      "label": "Let's Encrypt (TLS)",
+      "type": "domain"
     },
     {
       "id": "aaa",

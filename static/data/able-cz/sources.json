@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 6
+    "count": 9
   },
   "sources": [
     {
@@ -57,6 +57,30 @@
       "url": "https://cz.linkedin.com/in/vaclavfaraga/en",
       "tier": 3,
       "kind": "professional profile",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-07",
+      "title": "Google Public DNS (dns.google) — A/MX/NS for able.cz",
+      "url": "https://dns.google/resolve?name=able.cz",
+      "tier": 1,
+      "kind": "technical observation",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-08",
+      "title": "EU VIES VAT validation — CZ24278815",
+      "url": "https://ec.europa.eu/taxation_customs/vies/",
+      "tier": 1,
+      "kind": "official register",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-09",
+      "title": "crt.sh certificate transparency — able.cz",
+      "url": "https://crt.sh/?q=able.cz",
+      "tier": 1,
+      "kind": "technical observation",
       "retrievedAt": "2026-07-17"
     }
   ]
