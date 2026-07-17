@@ -1,0 +1,40 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "timeline",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
+    "count": 3
+  },
+  "timeline": [
+    {
+      "date": "2012-10-03",
+      "event": "Able.cz s.r.o. incorporated; Faraga and Melichárek registered as statutory officers.",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-03"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Able acquires 100% of Blackfish studio; combined team ~60; stated further-acquisition intent.",
+      "status": "CORROBORATED",
+      "sources": [
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "event": "Most recent change observed in the public register.",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-03"
+      ]
+    }
+  ]
+}

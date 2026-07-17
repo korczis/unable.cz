@@ -77,6 +77,31 @@ export function parseBaseUrl(configToml) {
   return m[1];
 }
 
+/** Read a page's TOML front matter block, or null if it has none. */
+export function frontMatter(md) {
+  const m = md.match(/^\+\+\+\r?\n([\s\S]*?)\r?\n\+\+\+/);
+  return m ? m[1] : null;
+}
+
+/** Pull one scalar out of a named TOML table in front matter.
+ *
+ *  This reads only the flat `key = value` shapes this repo actually uses; it is
+ *  not a TOML parser and must not be treated as one. Review policy is a
+ *  build-time governance concern, so it is checked at the source, where it is
+ *  declared -- unlike the metadata checks, which run on the output a crawler
+ *  sees. */
+export function tomlValue(fm, table, key) {
+  const start = fm.indexOf(`[${table}]`);
+  if (start === -1) return null;
+  const block = fm.slice(start + table.length + 2).split(/\r?\n\[/)[0];
+  const m = block.match(new RegExp(`^\\s*${key}\\s*=\\s*(.+?)\\s*(?:#.*)?$`, "m"));
+  if (!m) return null;
+  return m[1].trim().replace(/^["']|["']$/g, "");
+}
+
+/** Whole days elapsed between two dates. */
+export const daysBetween = (from, to) => Math.floor((to - from) / 86_400_000);
+
 const attr = (html, re) => {
   const m = html.match(re);
   return m ? decodeEntities(m[1]).trim() : null;
@@ -193,6 +218,46 @@ function main(argv) {
     }
   }
 
+  // --- Freshness policy, checked at the source where it is declared.
+  // --- A page that asserts evidence must say when the evidence was gathered,
+  // --- when a human last checked it, and how long that check is good for.
+  for (const file of walk(join(ROOT, "content")).filter((f) => f.endsWith(".md"))) {
+    const rel = relative(ROOT, file);
+    const fm = frontMatter(readFileSync(file, "utf8"));
+    if (!fm) { add("error", rel, "E_FRONTMATTER_MISSING", "no TOML front matter"); continue; }
+
+    const seoType = tomlValue(fm, "extra", "seo_type");
+    if (seoType && !ALLOWED_SCHEMA_TYPES.has(seoType))
+      add("error", rel, "E_SEO_TYPE", `seo_type "${seoType}" is not in the allowlist`);
+
+    if (!EVIDENCE_BEARING_TYPES.has(seoType)) continue;
+
+    const reviewed = tomlValue(fm, "extra.evidence", "reviewed_at");
+    const cutoff = tomlValue(fm, "extra.evidence", "cutoff");
+    const interval = tomlValue(fm, "extra.evidence", "review_interval_days");
+    const confidence = tomlValue(fm, "extra.evidence", "confidence");
+
+    if (!reviewed || !cutoff || !interval || !confidence) {
+      add("error", rel, "E_REVIEW_POLICY_MISSING",
+        `seo_type = "${seoType}" asserts evidence, so [extra.evidence] must declare cutoff, reviewed_at, review_interval_days and confidence`);
+      continue;
+    }
+    if (!["high", "moderate", "low"].includes(confidence))
+      add("error", rel, "E_CONFIDENCE", `confidence "${confidence}" must be high, moderate or low`);
+
+    for (const [label, v] of [["reviewed_at", reviewed], ["cutoff", cutoff]])
+      for (const issue of dateIssues(label, v, today)) add("error", rel, "E_DATE_INVALID", issue);
+
+    const age = daysBetween(new Date(reviewed), today);
+    const limit = Number(interval);
+    if (age > limit) {
+      // Public evidence that nobody has re-checked within its own stated window
+      // is not "probably fine" -- it is unverified, and says so on the page.
+      add("warn", rel, "W_REVIEW_OVERDUE",
+        `last reviewed ${age} days ago against a ${limit}-day interval; the page now renders a stale notice. Re-verify the claims and bump reviewed_at, or widen the interval deliberately.`);
+    }
+  }
+
   // --- Collect built pages
   const files = walk(PUBLIC_DIR).filter((f) => f.endsWith(".html"));
   const pages = files.map((f) => {
@@ -304,6 +369,7 @@ function main(argv) {
         add("error", rel, "E_LINK_BROKEN", `internal link ${href} resolves to ${target}, which is not in the build`);
     }
     for (const src of meta.assets) {
+      if (src === meta.canonical) continue; // already checked precisely above
       const target = urlToPublicPath(baseUrl, src);
       if (target === null) continue;
       if (!publicFiles.has(target))

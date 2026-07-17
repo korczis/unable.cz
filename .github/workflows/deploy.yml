@@ -36,8 +36,27 @@ jobs:
         with:
           tool: zola@0.22.1
 
+      - name: Check Zola templates and links
+        run: zola check
+
       - name: Build site
         run: zola build
+
+      # Gates the deploy. Errors (missing or drifted canonical, duplicate
+      # metadata, invalid or fabricated structured data, broken internal links,
+      # a sitemap that contradicts meta robots, a Report with no evidence
+      # declaration) fail the build and nothing ships.
+      #
+      # Warnings -- including an overdue review -- do not block. An overdue
+      # dossier already announces its own staleness on the page, and halting
+      # every unrelated deploy on a review clock would couple the whole site to
+      # one page's timer. `npm run seo:validate:strict` fails on warnings too,
+      # for use in review.
+      - name: Validate SEO
+        run: npm run seo:validate
+
+      - name: Test
+        run: npm test
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
