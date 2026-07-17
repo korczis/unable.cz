@@ -1,6 +1,6 @@
 +++
 title = "Able.cz — Due Diligence z veřejných zdrojů"
-description = "Due diligence review společnosti Able.cz s.r.o. (IČO 24278815) z veřejných zdrojů: ověřená fakta z rejstříku, tvrzení firmy a rozšířená síť souvisejících osob a firem."
+description = "Due diligence Able.cz s.r.o. (IČO 24278815) z veřejných zdrojů: ověřená fakta z rejstříku, tvrzení firmy a rozšířená síť souvisejících osob a firem."
 template = "dossier.html"
 
 date = 2026-07-17
