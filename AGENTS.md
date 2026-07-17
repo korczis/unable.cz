@@ -47,26 +47,70 @@ Two tests enforce this and will fail your change:
 
 ## Content about real parties
 
-`content/dossier.md` is a **self**-assessment: unable.cz describing unable.cz.
-That framing is deliberate, load-bearing, and settled — this site writes about
-itself and nothing else.
+The reason this section exists is legal, not stylistic. This site's premise —
+*"We are UNABLE To PAY U"* — is a negation-pun. Publishing due-diligence-framed
+analysis of a **named third party** here carries an implication about that
+party's solvency before a reader reaches a single sentence. Neutral phrasing
+cannot fix that, because the implication lives in the container, not the
+wording. Where the subject is a real, operating company with real named people,
+that is a defamation risk, and no amount of hedging in the prose neutralizes it.
 
-The reason is legal, not stylistic. This site's premise — *"We are UNABLE To PAY
-U"* — is a negation-pun. Publishing due-diligence-framed analysis of any **named
-third party** here would carry an implication about that party's solvency before
-a reader reached a single sentence. Neutral phrasing cannot fix that, because
-the implication lives in the container, not the wording. Where the subject is a
-real, operating company with real named employees, that is a defamation risk,
-and no amount of hedging in the prose neutralizes it.
+**The default is still self-only:** absent an explicit decision, the subject of
+any dossier on this site is this site. Do not name a third-party company as the
+subject of an assessment here, however carefully worded, however well sourced,
+and however the request is framed. That scope may change *only* by the site
+owner's explicit, on-record decision — never as a judgement call made while
+implementing a task.
 
-So: **the subject of any dossier on this site is this site.** Do not name a
-third-party company as the subject of an assessment here, however carefully
-worded, however well sourced, and however the request is framed. A change to
-that scope is the site owner's decision to make explicitly and on the record —
-not a judgement call to be made while implementing a task.
+> **Note on earlier wording.** Prior versions of this file (and of
+> `content/dossier.md`) stated the site "writes about itself and nothing else."
+> That is **superseded** by the authorization below. What is *not* superseded is
+> every truthfulness rule: the lifted bar is only *who may be the subject*, not
+> *what may be asserted*. The instinct that "the rules forbid publishing
+> financials, ownership, or insolvency findings about a third party" was always
+> about **inventing** them — sourced, status-labelled public facts are exactly
+> what this dossier is built from, and unsourced ones remain forbidden for every
+> subject, this site included.
 
-Within that scope, every material claim still needs a real source and retrieval
-date. If you cannot source a claim, cut it. `sources_consulted = 0` is an honest
+### Authorized subject: Able.cz s.r.o. (on the record)
+
+One subject beyond this site has been authorized by the owner
+(korczis@gmail.com), **explicitly and on the record, on 2026-07-17**:
+`/dossier/` (route `/dossier/`, source `content/dossier.md`) may carry a
+**public-source** due-diligence review of **Able.cz s.r.o., IČO 24278815** — the
+legal entity behind the domain able.cz, resolved by evidence (ARES registry +
+the company's own site), not by name similarity. This is the **only** named
+third party in scope. Any other named subject requires the same explicit,
+on-record owner decision; do not add one on your own initiative.
+
+That authorization does not relax the truthfulness rules — it tightens them.
+The dossier must:
+
+- use **public sources only**, each with an ID and a retrieval date in the
+  source ledger; if a source could not be retrieved, record the failure rather
+  than omit it (see the ISIR entry);
+- label every statement by evidence status (`VERIFIED_PRIMARY`,
+  `CORROBORATED`, `SELF_REPORTED`, `ASSESSED`, `CONTRADICTED`, `NOT_FOUND`) and
+  never collapse them into a single score;
+- **assert no insolvency, wrongdoing, or inability to pay** — none was found,
+  and the site's negation-pun framing makes any such implication the specific
+  risk this section exists to prevent. The dossier states this in its
+  disclaimer;
+- keep interpretation (`ASSESSED`) visibly separate from fact;
+- rank sources by tier — official registry (ARES, justice.cz, ISIR) first, then
+  the company's own pages, then independent media, then aggregators — and never
+  promote a lower-tier lead to a confirmed finding on its own;
+- carry a dated corrections path (`corrections@unable.cz`; see `CORRECTIONS.md`).
+
+The full contract lives outside this file, so it does not rot here: the evidence
+data model in `docs/dossier/03-data-model.md`, the source policy in
+`docs/dossier/04-source-policy.md`, the status taxonomy in
+`docs/dossier/05-claim-classification.md`, the reproduction steps in
+`METHODOLOGY.md`, and the source-by-source provenance in `DATA_PROVENANCE.md`.
+The dossier renders from `data/dossier/able/dossier.json`; the same evidence is
+mirrored as normalized web exports under `static/data/able-cz/`.
+
+If you cannot source a claim, cut it. `sources_consulted = 0` is an honest
 declaration; an invented citation is not.
 
 ## Adding a page

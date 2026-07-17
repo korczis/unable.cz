@@ -16,5 +16,11 @@ The short version, if you read nothing else:
   `config.toml`'s `base_url` is the only place the host is named.
 - Run `npm run verify` (build + validate + test) before committing.
 - Never bump `reviewed_at` without actually re-checking the sources.
-- A dossier about anyone other than this site itself needs the owner's explicit
-  sign-off. See "Content about real parties" in AGENTS.md.
+- `/dossier/` is a **public-source due diligence of Able.cz s.r.o. (IČO
+  24278815)** — authorized by the owner on the record (2026-07-17). That scope
+  is fixed: any *other* named third party needs the owner's explicit sign-off.
+  See "Content about real parties" in AGENTS.md.
+- Authorized subject does not mean invented facts. Every statement in the
+  dossier is public-sourced and status-labelled (`VERIFIED_PRIMARY`,
+  `CORROBORATED`, `SELF_REPORTED`, `CONTRADICTED`, `NOT_FOUND`); it asserts no
+  insolvency or wrongdoing. If you cannot source it, cut it.
