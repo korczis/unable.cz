@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-56",
+  "slug": "clm-56",
+  "canonicalPath": "/dossier/claims/clm-56/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "The 2023 media report that 'Marek Kříž (Point FM) took ~5 % of Able.cz for 4M CZK at an 80M CZK valuation' aligns in person, timing and approximate size with 5326G s.r.o.'s register entry (Kříž-majority vehicle, in from 28 Aug 2023) — but Point FM and 5326G are distinct legal entities and no public source states that 5326G executed that specific investment.",
+  "shortTitle": "The 2023 media report that 'Marek Kříž (Point FM) took ~5 % of…",
+  "status": "ASSESSED",
+  "statusExplanation": "Analytické čtení citované evidence, nikoli přímo doložený fakt.",
+  "note": "The article was re-fetched and hash-preserved 2026-07-18 (it names Point FM, Kříž, the 80M valuation and a five-percent stake); an attempt to corroborate via Point FM's own site failed (JS-rendered page, no readable content — see provider runs).",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-22",
+      "title": "CzechCrunch (2023-12-20) — Able.cz investment coverage: Point FM / Marek Kříž ~5% at 80M CZK valuation",
+      "url": "https://cc.cz/od-hrani-her-pres-slevove-portaly-k-vyvojarske-agenture-s-valuaci-80-milionu-able-ma-ted-noveho-investora/",
+      "tier": 3,
+      "upstream": "media_unknown",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-06",
+      "title": "LinkedIn — Václav Faraga, Able.cz s.r.o.",
+      "url": "https://cz.linkedin.com/in/vaclavfaraga/en",
+      "tier": 3,
+      "upstream": "linkedin",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 3,
+  "independentUpstreams": 3,
+  "upstreams": [
+    "cz_register",
+    "media_unknown",
+    "linkedin"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": false,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "g5326",
+        "title": "5326G s.r.o.",
+        "relation": "týká se entity"
+      },
+      {
+        "type": "entity",
+        "id": "pointfm",
+        "title": "Point FM (M. Kříž)",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 0,
+    "total": 3
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "2aa9ff62"
+}

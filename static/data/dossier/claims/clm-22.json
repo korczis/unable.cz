@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-22",
+  "slug": "clm-22",
+  "canonicalPath": "/dossier/claims/clm-22/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "As part of the acquisition, Vít Schlesinger became a shareholder of Able.cz s.r.o. itself — exactly 5.00 % (vklad 12,185.75 CZK), registered 29 July 2025.",
+  "shortTitle": "As part of the acquisition, Vít Schlesinger became a shareholder…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "Stake size primary-verified 2026-07-18; the observation that neither Forbes.cz nor CzechCrunch mentioned this reciprocal stake is CLM-51 (assessment).",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "schlesinger",
+        "title": "V. Schlesinger",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 2,
+    "total": 4
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "ea08f765"
+}

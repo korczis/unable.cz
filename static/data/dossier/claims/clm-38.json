@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-38",
+  "slug": "clm-38",
+  "canonicalPath": "/dossier/claims/clm-38/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Lukáš Grolig appears nowhere in Able.cz s.r.o.'s register record (statutory body, supervisory board, or any shareholder configuration 2012–2026). His marketed CTO title is a marketing role, not a registered office.",
+  "shortTitle": "Lukáš Grolig appears nowhere in Able.cz s.r.o.'s register record…",
+  "status": "ASSESSED",
+  "statusExplanation": "Analytické čtení citované evidence, nikoli přímo doložený fakt.",
+  "note": "Negative-search reading over the complete preserved VR history; a non-registered executive role is normal and this asserts nothing improper.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-02",
+      "title": "Able.cz — English site (services, claims, leadership)",
+      "url": "https://www.able.cz/en/",
+      "tier": 2,
+      "upstream": "able_cz",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 2,
+  "independentUpstreams": 2,
+  "upstreams": [
+    "cz_register",
+    "able_cz"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": false,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-20"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-20",
+      "contentPath": "@/dossier/claims/clm-20.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 1,
+    "total": 2
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "b9d72935"
+}

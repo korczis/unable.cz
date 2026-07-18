@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-58",
+  "slug": "clm-58",
+  "canonicalPath": "/dossier/claims/clm-58/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Insolvency status for Able.cz s.r.o. could not be determined: the official insolvency register (ISIR) returned HTTP 500 to subject-search requests on both 2026-07-17 and 2026-07-18.",
+  "shortTitle": "Insolvency status for Able.cz s.r.o. could not be determined: the…",
+  "status": "BLOCKED",
+  "statusExplanation": "Zdroj nešlo úspěšně dotázat (chyba/blokace). Z absence NELZE vyvodit negativní závěr.",
+  "note": "A provider failure is recorded as BLOCKED, never as NOT_FOUND — absence of evidence was not established.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-21",
+      "title": "ISIR — insolvenční rejstřík (subject lustrace, isir.justice.cz)",
+      "url": "https://isir.justice.cz/isir/ucastnik/vysledek_lustrace.do?ic=24278815&aktualnost=AKTUALNI_I_UKONCENA",
+      "tier": 1,
+      "upstream": "isir",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "isir"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 2,
+    "total": 3
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "3f0af6e3"
+}

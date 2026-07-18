@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-51",
+  "slug": "clm-51",
+  "canonicalPath": "/dossier/claims/clm-51/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Neither Forbes.cz nor CzechCrunch mentioned Schlesinger's reciprocal 5 % Able.cz stake in their acquisition coverage, which described only Able acquiring Blackfish.",
+  "shortTitle": "Neither Forbes.cz nor CzechCrunch mentioned Schlesinger's…",
+  "status": "ASSESSED",
+  "statusExplanation": "Analytické čtení citované evidence, nikoli přímo doložený fakt.",
+  "note": null,
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-04",
+      "title": "Forbes.cz — Able acquires Blackfish studio",
+      "url": "https://forbes.cz/vyvojar-able-ziskava-studio-blackfish-firmam-planuji-radit-jak-vyuzit-umelou-inteligenci-v-byznysu/",
+      "tier": 3,
+      "upstream": "forbes",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-05",
+      "title": "CzechCrunch — Able buys Blackfish",
+      "url": "https://cc.cz/desetimilionove-presuny-na-trhu-agentur-able-kupuje-blackfish-chteji-slapat-na-paty-strv/",
+      "tier": 3,
+      "upstream": "czechcrunch",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 3,
+  "independentUpstreams": 3,
+  "upstreams": [
+    "forbes",
+    "czechcrunch",
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": false,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 1,
+    "total": 2
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "19a2725d"
+}

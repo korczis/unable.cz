@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-23",
+  "slug": "clm-23",
+  "canonicalPath": "/dossier/claims/clm-23/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Vít Schlesinger holds an undisclosed concurrent shareholding in Ventoux Studio s.r.o. (IČO 23749636), registered since 22 September 2025 — about two months after the Blackfish acquisition closed — which is not mentioned in any Able.cz-related media coverage reviewed.",
+  "shortTitle": "Vít Schlesinger holds an undisclosed concurrent shareholding in…",
+  "status": "CORROBORATED",
+  "statusExplanation": "Podpořeno více nezávisle vzniklými rodinami zdrojů. Pozor: dvě zrcadla téže autority nejsou nezávislé potvrzení.",
+  "note": null,
+  "live": false,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-10",
+      "title": "Czech commercial register — aggregator mirror search (kurzy.cz, rejstrik-firem)",
+      "url": "https://rejstrik-firem.kurzy.cz/",
+      "tier": 2,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-11",
+      "title": "Hlídač státu — osoba/subjekt ownership-graph records",
+      "url": "https://www.hlidacstatu.cz/",
+      "tier": 2,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 2,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": true,
+  "supersededBy": [
+    "CLM-39",
+    "CLM-40"
+  ],
+  "supersededByLinks": [
+    {
+      "id": "CLM-39",
+      "contentPath": "@/dossier/claims/clm-39.md"
+    },
+    {
+      "id": "CLM-40",
+      "contentPath": "@/dossier/claims/clm-40.md"
+    }
+  ],
+  "supersededReason": "Mixed an ownership observation with a disclosure judgment; split, and the stake primary-verified as exactly 30 % (he is not a jednatel there) 2026-07-18.",
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 0,
+    "total": 1
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "33110ea0"
+}

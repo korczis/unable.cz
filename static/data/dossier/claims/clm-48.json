@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-48",
+  "slug": "clm-48",
+  "canonicalPath": "/dossier/claims/clm-48/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "A 9,327.14 CZK debt to the Prague public-transport operator is consistent in scale with an escalated unpaid-fare claim, but the filed documents do not state the debt's origin. The matter was personal, small, and resolved by payment within ~9 weeks; no enforcement directed at Able.cz s.r.o. itself was found in the preserved filings. Company-level insolvency could NOT be checked: the insolvency register was BLOCKED (ISIR returned HTTP 500 on both attempts).",
+  "shortTitle": "A 9,327.14 CZK debt to the Prague public-transport operator is…",
+  "status": "ASSESSED",
+  "statusExplanation": "Analytické čtení citované evidence, nikoli přímo doložený fakt.",
+  "note": "Replaces the superseded CLM-26 wording that presented the fare hypothesis inside a verified claim and implied an insolvency search that never succeeded.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-16",
+      "title": "Sbírka listin (or.justice.cz) — exekuční příkaz postižením obchodního podílu, T. Melichárek (C 85425/SL69/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=89686364&subjektId=49914&spis=953839",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    },
+    {
+      "id": "SRC-17",
+      "title": "Sbírka listin (or.justice.cz) — oznámení o skončení exekuce, T. Melichárek (C 85425/SL70/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=90691646&subjektId=49914&spis=953839",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    },
+    {
+      "id": "SRC-21",
+      "title": "ISIR — insolvenční rejstřík (subject lustrace, isir.justice.cz)",
+      "url": "https://isir.justice.cz/isir/ucastnik/vysledek_lustrace.do?ic=24278815&aktualnost=AKTUALNI_I_UKONCENA",
+      "tier": 1,
+      "upstream": "isir",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 3,
+  "independentUpstreams": 2,
+  "upstreams": [
+    "cz_register",
+    "isir"
+  ],
+  "primaryDirectCount": 2,
+  "monoculture": false,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-26"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-26",
+      "contentPath": "@/dossier/claims/clm-26.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 1,
+    "total": 2
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "f76a3f72"
+}

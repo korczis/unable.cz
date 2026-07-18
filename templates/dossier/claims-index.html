@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{#- Claims index: the canonical answer to "how many CLM objects exist?" All
+    counts derive from the manifest (single reconciliation point). Fully static. -#}
+
+{% block content %}
+{%- set m = load_data(path=section.extra.manifest_path) -%}
+<main class="relative min-h-screen w-full bg-black px-4 py-12 text-white">
+  <div class="mx-auto max-w-3xl">
+    <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
+      <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
+      <span class="px-1 text-white/30">/</span><span class="text-white/80">Tvrzení</span>
+    </nav>
+
+    <h1 class="mt-6 font-sans text-3xl font-black text-white">Tvrzení (claims)</h1>
+    <p class="mt-2 text-sm text-white/60">
+      Každé tvrzení je samostatný, adresovatelný objekt s vlastní stránkou, JSON záznamem,
+      stavem evidence a auditní stopou. Účetnictví níže je jediný zdroj počtů v celém dossieru.
+    </p>
+
+    <dl class="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 border-y border-white/10 py-4 text-sm sm:grid-cols-4">
+      <div><dt class="text-white/45">Vydáno</dt><dd class="font-mono text-lg text-white/90">{{ m.totalIssued }}</dd></div>
+      <div><dt class="text-white/45">Živých</dt><dd class="font-mono text-lg text-[#f3e5c0]">{{ m.liveCount }}</dd></div>
+      <div><dt class="text-white/45">Nahrazených</dt><dd class="font-mono text-lg text-white/50">{{ m.supersededCount }}</dd></div>
+      <div><dt class="text-white/45">Stavy</dt><dd class="text-xs text-white/60">{% for k, v in m.statusCounts %}{{ k }} {{ v }}{% if not loop.last %} · {% endif %}{% endfor %}</dd></div>
+    </dl>
+    <p class="mt-2 text-xs text-white/40">{{ m.accounting.note }}</p>
+
+    <div class="mt-8 overflow-x-auto">
+      <table class="w-full border-collapse text-left text-sm">
+        <caption class="sr-only">Rejstřík všech tvrzení s odkazem na vlastní stránku.</caption>
+        <thead>
+          <tr class="border-b border-white/20 text-white/60">
+            <th scope="col" class="py-2 pr-4 font-medium">ID</th>
+            <th scope="col" class="py-2 pr-4 font-medium">Tvrzení</th>
+            <th scope="col" class="py-2 pr-4 font-medium">Stav</th>
+            <th scope="col" class="py-2 font-medium">Živé</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for p in section.pages %}
+          {%- set cj = load_data(path=p.extra.data_path) -%}
+          <tr class="border-b border-white/10">
+            <td class="py-2 pr-4"><a class="font-mono text-[#f3e5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="{{ p.permalink | safe }}" aria-label="Otevřít tvrzení {{ cj.id }}">{{ cj.id }}</a></td>
+            <td class="py-2 pr-4 text-white/85">{{ cj.shortTitle }}</td>
+            <td class="py-2 pr-4 whitespace-nowrap {% if cj.status == 'VERIFIED_PRIMARY' or cj.status == 'CORROBORATED' %}text-[#f3e5c0]{% elif cj.status == 'CONTRADICTED' %}text-[#d4af37]{% else %}text-white/50{% endif %}">{{ cj.status }}</td>
+            <td class="py-2 text-white/50">{% if cj.superseded %}nahrazeno{% else %}živé{% endif %}</td>
+          </tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-6 text-xs text-white/30">manifest hash {{ m.dataHash }} · schéma {{ m._export.schemaVersion }} · generováno {{ m._export.generatedAt }}</p>
+  </div>
+</main>
+{% endblock content %}

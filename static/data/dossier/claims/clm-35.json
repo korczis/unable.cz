@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-35",
+  "slug": "clm-35",
+  "canonicalPath": "/dossier/claims/clm-35/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "A family relationship between Václav Faraga (b. 1989) and Petr Faraga (b. 1966) is plausible — shared surname, shared Znojmo address cluster, co-founding of Able.cz/BIT CONSULTING in 2012, and co-holdings in FaMe logistics and FaMe trade — but no public source states it. The same applies to Martin Patrik Faraga (FaMe logistics' founding co-owner).",
+  "shortTitle": "A family relationship between Václav Faraga (b. 1989) and Petr…",
+  "status": "ASSESSED",
+  "statusExplanation": "Analytické čtení citované evidence, nikoli přímo doložený fakt.",
+  "note": "Assessment only; the relationship itself remains NOT_FOUND in public sources.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-10",
+      "title": "Czech commercial register — aggregator mirror search (kurzy.cz, rejstrik-firem)",
+      "url": "https://rejstrik-firem.kurzy.cz/",
+      "tier": 2,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 2,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-18"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-18",
+      "contentPath": "@/dossier/claims/clm-18.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "petr_faraga",
+        "title": "P. Faraga",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 1,
+    "total": 3
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "ffd09b28"
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-34",
+  "slug": "clm-34",
+  "canonicalPath": "/dossier/claims/clm-34/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Petr Faraga (b. 1966) was a co-founder of Able.cz s.r.o. (then BIT CONSULTING s.r.o.): a founding 1/3 shareholder from 3 Oct 2012 and a jednatel from 3 Oct 2012 until 13 Oct 2020. He exited ownership in stages by 2020 and re-entered on 29 July 2025 with 0.50 % — the same restructuring in which Vít Schlesinger, Ondřej Kaman, Jakub Kaman, Radek Juhaňák and Tomáš Kořenský were registered as shareholders.",
+  "shortTitle": "Petr Faraga (b. 1966) was a co-founder of Able.cz s.r.o. (then BIT…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "Replaces the 'newly identified minor shareholder' framing: he is a co-founder with an eight-year officer history, which the mirrors did not surface.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-18"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-18",
+      "contentPath": "@/dossier/claims/clm-18.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "petr_faraga",
+        "title": "P. Faraga",
+        "relation": "týká se entity"
+      },
+      {
+        "type": "entity",
+        "id": "fama_media",
+        "title": "FaMa Media s.r.o.",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 3,
+    "total": 6
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "0edb709f"
+}

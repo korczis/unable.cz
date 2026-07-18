@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{#- Canonical static page for one CLM-* claim object. Fully server-rendered from
+    its JSON shard — no JavaScript required. base.html renders all metadata from
+    front matter (index=false → noindex). -#}
+
+{% block content %}
+{%- set c = load_data(path=page.extra.data_path) -%}
+{%- set good = c.status == "VERIFIED_PRIMARY" or c.status == "CORROBORATED" or c.status == "RESOLVED" -%}
+{%- set disputed = c.status == "CONTRADICTED" -%}
+
+<main class="relative min-h-screen w-full bg-black px-4 py-12 text-white">
+  <div class="mx-auto max-w-3xl">
+    <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
+      <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]">Dossier</a>
+      <span class="px-1 text-white/30">/</span>
+      <a href="{{ get_url(path='@/dossier/claims/_index.md') | safe }}" class="hover:text-white/90">Tvrzení</a>
+      <span class="px-1 text-white/30">/</span>
+      <span class="font-mono text-white/80">{{ c.id }}</span>
+    </nav>
+
+    <header class="mt-6 border-b border-white/10 pb-5">
+      <div class="flex flex-wrap items-center gap-3">
+        <h1 class="font-mono text-2xl font-black text-white">{{ c.id }}</h1>
+        <span class="rounded px-2 py-0.5 text-xs font-semibold {% if good %}bg-[#f3e5c0]/15 text-[#f3e5c0]{% elif disputed %}bg-[#d4af37]/20 text-[#d4af37]{% else %}bg-white/10 text-white/60{% endif %}">{{ c.status }}</span>
+        {% if c.superseded %}<span class="rounded bg-white/10 px-2 py-0.5 text-xs text-white/50">nahrazeno</span>{% else %}<span class="rounded bg-white/5 px-2 py-0.5 text-xs text-white/40">živé</span>{% endif %}
+      </div>
+      <p class="mt-2 text-sm text-white/50">Due diligence {{ c.caseId }} · mezní datum evidence {{ c.evidenceCutoff }} · naposledy ověřeno {{ c.lastVerifiedAt }}</p>
+    </header>
+
+    {%- if c.superseded %}
+    <div class="mt-6 border-l-2 border-[#d4af37] bg-white/5 px-4 py-3 text-sm text-white/80">
+      <strong class="font-semibold text-[#d4af37]">Toto tvrzení bylo nahrazeno.</strong>
+      Důvod: {{ c.supersededReason }}. Původní znění je níže zachováno pro auditní stopu.
+      {% if c.supersededByLinks %}<br>Nástupnická tvrzení:
+      {% for s in c.supersededByLinks %}<a class="font-mono underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path=s.contentPath) | safe }}">{{ s.id }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.{% endif %}
+    </div>
+    {%- endif %}
+
+    <section class="mt-8" aria-labelledby="prop-h">
+      <h2 id="prop-h" class="text-xs uppercase tracking-wide text-white/45">Tvrzení</h2>
+      <p class="mt-2 text-base leading-relaxed text-white/90">{{ c.proposition }}</p>
+      {%- if c.note %}<p class="mt-3 text-sm leading-relaxed text-white/50">{{ c.note }}</p>{%- endif %}
+    </section>
+
+    <section class="mt-8" aria-labelledby="stat-h">
+      <h2 id="stat-h" class="text-xs uppercase tracking-wide text-white/45">Stav evidence</h2>
+      <p class="mt-2 text-sm leading-relaxed text-white/80"><span class="font-mono text-[#f3e5c0]">{{ c.status }}</span> — {{ c.statusExplanation }}</p>
+    </section>
+
+    <section class="mt-8" aria-labelledby="src-h">
+      <h2 id="src-h" class="text-xs uppercase tracking-wide text-white/45">Zdroje ({{ c.sources | length }})</h2>
+      <p class="mt-1 text-sm text-white/60">Nezávislých autorit: <b class="{% if c.monoculture %}text-[#d4af37]{% else %}text-[#f3e5c0]{% endif %}">{{ c.independentUpstreams }}</b>{% if c.primaryDirectCount %} · primárních dokumentů: <b class="text-[#f3e5c0]">{{ c.primaryDirectCount }}</b>{% endif %}{% if c.monoculture %} <span class="text-white/40">(jediná autorita — ne nezávislé potvrzení)</span>{% endif %}</p>
+      <ul class="mt-3 space-y-2 text-sm">
+        {%- for s in c.sources %}
+        <li>
+          <span class="font-mono text-white/40">{{ s.id }}</span>
+          {% if s.url %}<a class="text-[#9ec5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ s.url }}" rel="nofollow noopener" target="_blank">{{ s.title }}</a>{% else %}<span class="text-white/70">{{ s.title }}</span>{% endif %}
+          <span class="ml-1 text-xs text-white/30">· tier {{ s.tier }} · {{ s.upstream }}{% if s.primaryDoc %} · primární{% endif %}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+
+    {%- if c.supersedesLinks | length > 0 %}
+    <section class="mt-8" aria-labelledby="pred-h">
+      <h2 id="pred-h" class="text-xs uppercase tracking-wide text-white/45">Nahrazuje</h2>
+      <p class="mt-2 text-sm text-white/70">Toto tvrzení vzniklo rozdělením/opravou:
+        {% for p in c.supersedesLinks %}<a class="font-mono underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path=p.contentPath) | safe }}">{{ p.id }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>
+    </section>
+    {%- endif %}
+
+    <section class="mt-8" aria-labelledby="bl-h">
+      <h2 id="bl-h" class="text-xs uppercase tracking-wide text-white/45">Kde je citováno ({{ c.backlinks.total }})</h2>
+      <ul class="mt-2 space-y-1 text-sm text-white/70">
+        <li>Rejstřík tvrzení a graf případu (vždy).</li>
+        {%- if c.backlinks.narrativeMentions > 0 %}<li>{{ c.backlinks.narrativeMentions }}× ve vyprávěcím textu dossieru.</li>{%- endif %}
+        {%- for e in c.backlinks.entities %}<li>Entita <b class="text-white/85">{{ e.title }}</b> — {{ e.relation }}.</li>{%- endfor %}
+      </ul>
+    </section>
+
+    <section class="mt-8" aria-labelledby="prov-h">
+      <h2 id="prov-h" class="text-xs uppercase tracking-wide text-white/45">Provenience a odkazy</h2>
+      <ul class="mt-2 space-y-1 text-sm">
+        <li><a class="text-[#9ec5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='data/dossier/claims/' ~ c.slug ~ '.json') | safe }}">Veřejný JSON záznam ({{ c.slug }}.json)</a></li>
+        <li><a class="text-[#9ec5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier.md') | safe }}#fig-graph-title">Zobrazit případ v grafu</a></li>
+        <li><a class="text-[#9ec5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/claims/_index.md') | safe }}">Zpět na rejstřík tvrzení</a></li>
+      </ul>
+      <p class="mt-3 text-xs text-white/30">obsahový hash {{ c.contentHash }} · schéma {{ c.schemaVersion }} · generováno {{ c.generatedAt }}</p>
+    </section>
+  </div>
+</main>
+{% endblock content %}

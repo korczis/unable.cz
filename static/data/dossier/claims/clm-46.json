@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-46",
+  "slug": "clm-46",
+  "canonicalPath": "/dossier/claims/clm-46/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "On 19 January 2026 soudní exekutor Mgr. Jakub Effenberger (Exekutorský úřad Kolín; case 219 EX 00241/26) issued execution orders against Tomáš Melichárek personally for a debt of 9,327.14 CZK owed to Dopravní podnik hl. m. Prahy, a.s. The orders covered bank accounts, income, movable assets, real estate and his business shares — including his podíl in Able.cz s.r.o. (filed to its Sbírka listin as C 85425/SL69). The execution ended on 24 March 2026 'vymožením' (satisfied by payment) per the termination notice (C 85425/SL70).",
+  "shortTitle": "On 19 January 2026 soudní exekutor Mgr. Jakub Effenberger…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "Exact passages cited in the evidence layer (order pp. 1–4; notice p. 1). The debtor's birth-ID number was redacted per data-minimization practice.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-16",
+      "title": "Sbírka listin (or.justice.cz) — exekuční příkaz postižením obchodního podílu, T. Melichárek (C 85425/SL69/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=89686364&subjektId=49914&spis=953839",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    },
+    {
+      "id": "SRC-17",
+      "title": "Sbírka listin (or.justice.cz) — oznámení o skončení exekuce, T. Melichárek (C 85425/SL70/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=90691646&subjektId=49914&spis=953839",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    }
+  ],
+  "sourceRecords": 2,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 2,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-26"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-26",
+      "contentPath": "@/dossier/claims/clm-26.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "exekuce-melicharek",
+        "title": "Exekuce (podíl, 219 EX 00241/26)",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 1,
+    "total": 3
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "7a98926b"
+}

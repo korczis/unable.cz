@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-14",
+  "slug": "clm-14",
+  "canonicalPath": "/dossier/claims/clm-14/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Acquired 100% of product studio Blackfish; founder Vít Schlesinger stayed to lead business strategy",
+  "shortTitle": "Acquired 100% of product studio Blackfish; founder Vít Schlesinger…",
+  "status": "CORROBORATED",
+  "statusExplanation": "Podpořeno více nezávisle vzniklými rodinami zdrojů. Pozor: dvě zrcadla téže autority nejsou nezávislé potvrzení.",
+  "note": "Reported consistently by two independent media outlets.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-04",
+      "title": "Forbes.cz — Able acquires Blackfish studio",
+      "url": "https://forbes.cz/vyvojar-able-ziskava-studio-blackfish-firmam-planuji-radit-jak-vyuzit-umelou-inteligenci-v-byznysu/",
+      "tier": 3,
+      "upstream": "forbes",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-05",
+      "title": "CzechCrunch — Able buys Blackfish",
+      "url": "https://cc.cz/desetimilionove-presuny-na-trhu-agentur-able-kupuje-blackfish-chteji-slapat-na-paty-strv/",
+      "tier": 3,
+      "upstream": "czechcrunch",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 2,
+  "independentUpstreams": 2,
+  "upstreams": [
+    "forbes",
+    "czechcrunch"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": false,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "able",
+        "title": "Able.cz s.r.o.",
+        "relation": "týká se entity"
+      },
+      {
+        "type": "entity",
+        "id": "blackfish",
+        "title": "Blackfish",
+        "relation": "týká se entity"
+      },
+      {
+        "type": "entity",
+        "id": "schlesinger",
+        "title": "V. Schlesinger",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 0,
+    "total": 4
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "232d0c2e"
+}
