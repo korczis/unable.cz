@@ -9,7 +9,7 @@
 {%- set good = c.status == "VERIFIED_PRIMARY" or c.status == "CORROBORATED" or c.status == "RESOLVED" -%}
 {%- set disputed = c.status == "CONTRADICTED" -%}
 
-<main class="relative min-h-screen w-full bg-black px-4 py-12 text-white">
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
   <div class="mx-auto max-w-3xl">
     <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
       <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]">Dossier</a>
