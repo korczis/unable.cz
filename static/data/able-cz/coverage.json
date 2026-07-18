@@ -1,0 +1,362 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "coverage",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "ASSESSED epistemic projection. Derived from the dossier's sourced records; every row lists the record IDs it is computed from. Ordinal scales only; nothing invented.",
+    "count": 10,
+    "byState": {
+      "strong": 2,
+      "adequate": 4,
+      "partial": 1,
+      "weak": 2,
+      "absent": 1
+    },
+    "stateLegend": {
+      "strong": "Primární doložený zdroj + VERIFIED_PRIMARY, bez rozporu.",
+      "adequate": "Ověřeno primárně nebo více nezávislými zdroji; drobné mezery.",
+      "partial": "Převážně CORROBORATED přes agregátory/média, nebo významná mezera.",
+      "weak": "Pouze SELF_REPORTED — čeká na nezávislé potvrzení.",
+      "absent": "Dimenze v tomto průchodu nebyla dotázána."
+    }
+  },
+  "dimensions": [
+    {
+      "dimension": "identity",
+      "label": "Identita",
+      "coverage": "strong",
+      "coverageCs": "silné",
+      "recordsExamined": 10,
+      "sourcesChecked": [
+        "SRC-03",
+        "SRC-01",
+        "SRC-08"
+      ],
+      "sourceClasses": {
+        "official": 2,
+        "company": 1
+      },
+      "statusDistribution": {
+        "VERIFIED_PRIMARY": 9,
+        "CORROBORATED": 1
+      },
+      "openGaps": [],
+      "notFoundCount": 0,
+      "hasPrimaryFiled": true,
+      "derivedFrom": [
+        "identity:Legal name",
+        "identity:IČO",
+        "identity:DIČ (VAT)",
+        "identity:VAT status (EU VIES)",
+        "identity:Legal form",
+        "identity:Incorporated",
+        "identity:Registered office",
+        "identity:Registered capital",
+        "identity:Court",
+        "identity:Last register change (observed)"
+      ]
+    },
+    {
+      "dimension": "ownership",
+      "label": "Vlastnictví",
+      "coverage": "adequate",
+      "coverageCs": "dostatečné",
+      "recordsExamined": 27,
+      "sourcesChecked": [
+        "SRC-03",
+        "SRC-02",
+        "SRC-06",
+        "SRC-10",
+        "SRC-11",
+        "SRC-14"
+      ],
+      "sourceClasses": {
+        "official": 3,
+        "company": 1,
+        "media": 2
+      },
+      "statusDistribution": {
+        "VERIFIED_PRIMARY": 3,
+        "SELF_REPORTED": 2,
+        "CORROBORATED": 19,
+        "CONTRADICTED": 3
+      },
+      "openGaps": [
+        "OQ-06",
+        "OQ-07",
+        "OQ-08",
+        "OQ-09",
+        "OQ-10"
+      ],
+      "notFoundCount": 0,
+      "hasPrimaryFiled": false,
+      "derivedFrom": [
+        "e3",
+        "e14",
+        "e15",
+        "e16",
+        "e22",
+        "e23",
+        "e24",
+        "e25",
+        "e26",
+        "e27",
+        "e28",
+        "e29",
+        "e30",
+        "e31",
+        "e32",
+        "e33",
+        "e34",
+        "e35",
+        "e36",
+        "e37",
+        "e38",
+        "e39",
+        "e42",
+        "e43",
+        "e44",
+        "e45",
+        "e47"
+      ]
+    },
+    {
+      "dimension": "management",
+      "label": "Vedení a orgány",
+      "coverage": "adequate",
+      "coverageCs": "dostatečné",
+      "recordsExamined": 4,
+      "sourcesChecked": [
+        "SRC-03",
+        "SRC-02"
+      ],
+      "sourceClasses": {
+        "official": 1,
+        "company": 1
+      },
+      "statusDistribution": {
+        "VERIFIED_PRIMARY": 3,
+        "SELF_REPORTED": 1
+      },
+      "openGaps": [
+        "OQ-02"
+      ],
+      "notFoundCount": 0,
+      "hasPrimaryFiled": false,
+      "derivedFrom": [
+        "e1",
+        "e2",
+        "e13",
+        "e4"
+      ]
+    },
+    {
+      "dimension": "financials",
+      "label": "Finance",
+      "coverage": "strong",
+      "coverageCs": "silné",
+      "recordsExamined": 12,
+      "sourcesChecked": [
+        "SRC-03",
+        "SRC-15",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "sourceClasses": {
+        "official": 2,
+        "media": 2
+      },
+      "statusDistribution": {
+        "VERIFIED_PRIMARY": 8,
+        "SELF_REPORTED": 4
+      },
+      "openGaps": [
+        "OQ-01",
+        "OQ-05"
+      ],
+      "notFoundCount": 4,
+      "hasPrimaryFiled": true,
+      "derivedFrom": [
+        "fin:0",
+        "fin:1",
+        "fin:2",
+        "fin:3",
+        "fin:4",
+        "fin:5",
+        "fin:6",
+        "fin:7",
+        "fin:8",
+        "fin:9",
+        "fin:10",
+        "fin:11"
+      ]
+    },
+    {
+      "dimension": "transactions",
+      "label": "Transakce",
+      "coverage": "partial",
+      "coverageCs": "částečné",
+      "recordsExamined": 6,
+      "sourcesChecked": [
+        "SRC-04",
+        "SRC-05",
+        "SRC-10",
+        "SRC-11"
+      ],
+      "sourceClasses": {
+        "media": 2,
+        "official": 2
+      },
+      "statusDistribution": {
+        "CORROBORATED": 6
+      },
+      "openGaps": [],
+      "notFoundCount": 0,
+      "hasPrimaryFiled": false,
+      "derivedFrom": [
+        "e5",
+        "e6",
+        "e7",
+        "e40",
+        "e41",
+        "e46"
+      ]
+    },
+    {
+      "dimension": "legal",
+      "label": "Právní a exekuce",
+      "coverage": "adequate",
+      "coverageCs": "dostatečné",
+      "recordsExamined": 2,
+      "sourcesChecked": [
+        "SRC-03",
+        "SRC-01",
+        "SRC-16",
+        "SRC-17"
+      ],
+      "sourceClasses": {
+        "official": 3,
+        "company": 1
+      },
+      "statusDistribution": {
+        "CONTRADICTED": 1,
+        "VERIFIED_PRIMARY": 1
+      },
+      "openGaps": [],
+      "notFoundCount": 0,
+      "hasPrimaryFiled": true,
+      "derivedFrom": [
+        "e18",
+        "e48"
+      ]
+    },
+    {
+      "dimension": "technical",
+      "label": "Digitální stopa",
+      "coverage": "adequate",
+      "coverageCs": "dostatečné",
+      "recordsExamined": 4,
+      "sourcesChecked": [
+        "SRC-02",
+        "SRC-01",
+        "SRC-07",
+        "SRC-09"
+      ],
+      "sourceClasses": {
+        "company": 2,
+        "other": 2
+      },
+      "statusDistribution": {
+        "VERIFIED_PRIMARY": 4
+      },
+      "openGaps": [],
+      "notFoundCount": 0,
+      "hasPrimaryFiled": false,
+      "derivedFrom": [
+        "e17",
+        "e19",
+        "e20",
+        "e21"
+      ]
+    },
+    {
+      "dimension": "commercial",
+      "label": "Klienti a obchod",
+      "coverage": "weak",
+      "coverageCs": "slabé",
+      "recordsExamined": 5,
+      "sourcesChecked": [
+        "SRC-02"
+      ],
+      "sourceClasses": {
+        "company": 1
+      },
+      "statusDistribution": {
+        "SELF_REPORTED": 5
+      },
+      "openGaps": [
+        "OQ-03"
+      ],
+      "notFoundCount": 0,
+      "hasPrimaryFiled": false,
+      "derivedFrom": [
+        "e8",
+        "e9",
+        "e10",
+        "e11",
+        "e12"
+      ]
+    },
+    {
+      "dimension": "media",
+      "label": "Média a diskurz",
+      "coverage": "weak",
+      "coverageCs": "slabé",
+      "recordsExamined": 5,
+      "sourcesChecked": [
+        "SRC-04",
+        "SRC-05",
+        "SRC-06",
+        "SRC-13",
+        "SRC-14"
+      ],
+      "sourceClasses": {
+        "media": 5
+      },
+      "statusDistribution": {
+        "SELF_REPORTED": 5
+      },
+      "openGaps": [],
+      "notFoundCount": 0,
+      "hasPrimaryFiled": false,
+      "derivedFrom": [
+        "media:SRC-04",
+        "media:SRC-05",
+        "media:SRC-06",
+        "media:SRC-13",
+        "media:SRC-14"
+      ]
+    },
+    {
+      "dimension": "procurement",
+      "label": "Veřejné zakázky",
+      "coverage": "absent",
+      "coverageCs": "chybí",
+      "recordsExamined": 0,
+      "sourcesChecked": [],
+      "sourceClasses": {},
+      "statusDistribution": {},
+      "openGaps": [
+        "OQ-04"
+      ],
+      "notFoundCount": 1,
+      "hasPrimaryFiled": false,
+      "derivedFrom": [],
+      "note": "Hlídač státu / registr smluv / dotační registry nebyly v tomto průchodu dotázány — viz OQ-04."
+    }
+  ]
+}

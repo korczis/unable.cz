@@ -14,7 +14,12 @@ The short version, if you read nothing else:
   `templates/base.html`. Never hand-write a `<meta>` tag.
 - Never write a literal `unable.cz`. Use `get_url()` / `current_url`;
   `config.toml`'s `base_url` is the only place the host is named.
-- Run `npm run verify` (build + validate + test) before committing.
+- Run `npm run verify` (build + evidence-integrity gate + SEO validate + test)
+  before committing. The dossier data pipeline is
+  `dossier.json → export.mjs → derive.mjs → validate.mjs`; the epistemic
+  projections (coverage/gaps/hypotheses/frontier) are **derived, never
+  hand-authored**, and each row must trace back via `derivedFrom`. See
+  `docs/dossier/depth/`.
 - Never bump `reviewed_at` without actually re-checking the sources.
 - `/dossier/` is a **public-source due diligence of Able.cz s.r.o. (IČO
   24278815)** — authorized by the owner on the record (2026-07-17). That scope

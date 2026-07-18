@@ -206,6 +206,151 @@
       </div>
     </section>
 
+    {# ============ Investigation coverage matrix ============ #}
+    {#- Derived, publication-safe exports (npm run data:build). The page consumes
+        ONLY these public projections, never the raw dossier, for the epistemic
+        sections below — coverage, gaps, hypotheses, frontier. -#}
+    {%- set cov = load_data(path="static/data/able-cz/coverage.json") -%}
+    {%- set gaps = load_data(path="static/data/able-cz/gaps.json") -%}
+    {%- set hyps = load_data(path="static/data/able-cz/hypotheses.json") -%}
+    {%- set frontier = load_data(path="static/data/able-cz/frontier.json") -%}
+
+    <section class="mt-16" aria-labelledby="cov-title">
+      <h2 id="cov-title" class="font-sans text-2xl font-black text-white">Pokrytí šetření</h2>
+      <p class="mt-2 text-sm text-white/60">
+        Kolik evidence každá vyšetřovací dimenze skutečně má. Stav pokrytí je
+        <strong>ASSESSED</strong> ordinál odvozený pravidlem ze stavů evidence
+        u záznamů dané dimenze — není to fakt o firmě, ale míra, nakolik je
+        firma v této dimenzi doložena. „Chybí" znamená, že dimenze nebyla v tomto
+        průchodu dotázána (viz mezera), nikoli že tam nic není.
+      </p>
+      <div class="js-only mx-auto mt-6 max-w-2xl rounded border border-white/10 bg-white/[0.02] p-4">
+        <canvas id="coverage-chart" height="220" aria-hidden="true"></canvas>
+      </div>
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <caption class="sr-only">Pokrytí evidence podle vyšetřovací dimenze.</caption>
+          <thead>
+            <tr class="border-b border-white/20 text-white/60">
+              <th scope="col" class="py-2 pr-4 font-medium">Dimenze</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Pokrytí</th>
+              <th scope="col" class="py-2 pr-4 text-right font-medium">Záznamů</th>
+              <th scope="col" class="py-2 pr-4 text-right font-medium">Zdrojů</th>
+              <th scope="col" class="py-2 font-medium">Otevřené mezery</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for dim in cov.dimensions %}
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4 text-white/90">{{ dim.label }}</td>
+              <td class="py-2 pr-4 whitespace-nowrap {% if dim.coverage == 'strong' or dim.coverage == 'adequate' %}text-[#f3e5c0]{% elif dim.coverage == 'absent' or dim.coverage == 'weak' %}text-white/40{% else %}text-white/70{% endif %}">{{ dim.coverageCs }}</td>
+              <td class="py-2 pr-4 text-right tabular-nums text-white/70">{{ dim.recordsExamined }}</td>
+              <td class="py-2 pr-4 text-right tabular-nums text-white/70">{{ dim.sourcesChecked | length }}</td>
+              <td class="py-2 font-mono text-white/40">{{ dim.openGaps | join(sep=", ") }}{% if dim.notFoundCount and dim.openGaps | length == 0 %}NOT_FOUND ×{{ dim.notFoundCount }}{% endif %}</td>
+            </tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {# ============ Evidence gaps ============ #}
+    <section class="mt-16" aria-labelledby="gap-title">
+      <h2 id="gap-title" class="font-sans text-2xl font-black text-white">Mezery v evidenci</h2>
+      <p class="mt-2 text-sm text-white/60">
+        Co se ví, že chybí. Každá otevřená otázka a každý nedohledaný údaj je
+        strukturovaná mezera s <strong>ASSESSED</strong> materialitou a
+        doporučeným zdrojem, který by ji uzavřel. Absence evidence je mezera,
+        ne důkaz.
+      </p>
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <caption class="sr-only">Strukturované mezery v evidenci.</caption>
+          <thead>
+            <tr class="border-b border-white/20 text-white/60">
+              <th scope="col" class="py-2 pr-4 font-medium">ID</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Chybějící údaj</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Dimenze</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Materialita</th>
+              <th scope="col" class="py-2 font-medium">Doporučený zdroj</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for g in gaps.gaps %}
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4 font-mono text-white/40">{{ g.id }}</td>
+              <td class="py-2 pr-4 text-white/90">{{ g.expectedDatum }}</td>
+              <td class="py-2 pr-4 text-white/60">{{ g.affectedDimension }}</td>
+              <td class="py-2 pr-4 whitespace-nowrap {% if g.materiality == 'high' %}text-[#d4af37]{% else %}text-white/50{% endif %}">{{ g.materialityCs }}</td>
+              <td class="py-2 text-white/60">{{ g.recommendedSource }}</td>
+            </tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {# ============ Hypotheses ============ #}
+    <section class="mt-16" aria-labelledby="hyp-title">
+      <h2 id="hyp-title" class="font-sans text-2xl font-black text-white">Hypotézy</h2>
+      <p class="mt-2 text-sm text-white/60">
+        Tvrzení, k nimž se evidence <em>vyjadřuje</em>, ale neuzavírá je. Nejsou
+        to fakta ani obvinění — každá nese stav (ordinální, ne pravděpodobnost)
+        a podmínku, za níž by byla vyvrácena. Hypotéza se nikde nezobrazuje jako
+        potvrzený vztah.
+      </p>
+      <div class="mt-6 space-y-4">
+        {%- for h in hyps.hypotheses %}
+        <div class="rounded border border-white/10 bg-white/[0.02] p-4">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <span class="font-mono text-xs text-white/40">{{ h.id }}</span>
+            <span class="whitespace-nowrap text-xs {% if h.state == 'contradicted' or h.state == 'rejected' %}text-[#d4af37]{% elif h.state == 'plausible' or h.state == 'supported' %}text-[#f3e5c0]{% else %}text-white/50{% endif %}">stav: {{ h.state }}</span>
+          </div>
+          <p class="mt-1 text-sm text-white/90">{{ h.proposition }}</p>
+          <dl class="mt-3 grid grid-cols-1 gap-2 text-xs text-white/60 sm:grid-cols-2">
+            <div><dt class="text-white/40">Pro</dt><dd>{{ h.supportingNote | default(value="—") }} <span class="font-mono text-white/30">{{ h.supporting | join(sep=", ") }}</span></dd></div>
+            <div><dt class="text-white/40">Proti</dt><dd>{{ h.contradictingNote | default(value="—") }} <span class="font-mono text-white/30">{{ h.contradicting | join(sep=", ") }}</span></dd></div>
+            <div class="sm:col-span-2"><dt class="text-white/40">Falzifikace</dt><dd>{{ h.falsification }}</dd></div>
+          </dl>
+        </div>
+        {%- endfor %}
+      </div>
+    </section>
+
+    {# ============ Investigation frontier ============ #}
+    <section class="mt-16" aria-labelledby="fr-title">
+      <h2 id="fr-title" class="font-sans text-2xl font-black text-white">Fronta šetření</h2>
+      <p class="mt-2 text-sm text-white/60">
+        Co šetřit dál, seřazené podle <strong>ASSESSED</strong> priority
+        (materialita + řešitelnost + slabost důvěry — <em>ne</em> stupeň v grafu).
+        Každý úkol pochází z rozporu, mezery nebo hypotézy výše a jmenuje
+        konkrétní veřejný zdroj, který by ho posunul.
+      </p>
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <caption class="sr-only">Prioritizovaná fronta vyšetřovacích úkolů.</caption>
+          <thead>
+            <tr class="border-b border-white/20 text-white/60">
+              <th scope="col" class="py-2 pr-4 font-medium">Priorita</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Otázka / úkol</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Materialita</th>
+              <th scope="col" class="py-2 font-medium">Doporučený zdroj</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for t in frontier.tasks %}
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4 whitespace-nowrap {% if t.priority == 'high' %}text-[#f3e5c0]{% elif t.priority == 'medium' %}text-white/70{% else %}text-white/40{% endif %}">{{ t.priorityCs }}</td>
+              <td class="py-2 pr-4 text-white/90">{{ t.question }}</td>
+              <td class="py-2 pr-4 whitespace-nowrap text-white/50">{{ t.materialityCs }}</td>
+              <td class="py-2 text-white/60">{{ t.recommendedSource }}</td>
+            </tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
     {# ============ Open questions ============ #}
     <section class="mt-16" aria-labelledby="oq-title">
       <h2 id="oq-title" class="font-sans text-2xl font-black text-white">Otevřené otázky</h2>
@@ -249,6 +394,7 @@
 </main>
 
 <script id="dossier-data" type="application/json">{{ d | json_encode | replace(from="</", to="<\/") | safe }}</script>
+<script id="coverage-data" type="application/json">{{ cov | json_encode | replace(from="</", to="<\/") | safe }}</script>
 {% endblock content %}
 
 {% block scripts %}

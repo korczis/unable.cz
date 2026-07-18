@@ -53,10 +53,17 @@ evidence field) are progressive enhancements over always-present data tables.
 ## Reproduce
 ```
 npm install
-node scripts/dossier/export.mjs   # regenerate exports
+npm run data:build                # export.mjs (reshape) + derive.mjs (epistemic layer)
+npm run data:validate             # evidence-integrity gate
 npm run build                     # css + js + data + zola  -> ./public
 npm run seo:validate && npm test  # gates (must be green)
 ```
+
+The epistemic projections — coverage, gaps, hypotheses, and the investigation
+frontier — are **derived** from the same sourced records, never hand-authored;
+every derived row traces back to a dossier record via `derivedFrom`, and the gate
+fails the build if that provenance is broken or a hypothesis is presented as a
+fact. See [docs/dossier/depth/](docs/dossier/depth/).
 
 ## Limitations
 See [docs/dossier/11-open-questions.md](docs/dossier/11-open-questions.md) and
