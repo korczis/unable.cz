@@ -1,0 +1,22 @@
+{
+  "isValid" : true,
+  "requestDate" : "2026-07-18T05:42:14.953Z",
+  "userError" : "VALID",
+  "name" : "Able.cz s.r.o.",
+  "address" : "Vlněna 526/5\nBRNO-STŘED, TRNITÁ\n602 00  BRNO 2",
+  "requestIdentifier" : "",
+  "originalVatNumber" : "24278815",
+  "vatNumber" : "24278815",
+  "viesApproximate" : {
+    "name" : "---",
+    "street" : "---",
+    "postalCode" : "---",
+    "city" : "---",
+    "companyType" : "---",
+    "matchName" : 3,
+    "matchStreet" : 3,
+    "matchPostalCode" : 3,
+    "matchCity" : 3,
+    "matchCompanyType" : 3
+  }
+}

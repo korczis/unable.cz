@@ -8,8 +8,8 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "independentUpstreams počítá odlišné autority, ne kopie. cz_register = jedna autorita, ať přes rejstřík, agregátor či Sbírku listin.",
-    "count": 27,
-    "monoculture": 24,
+    "count": 58,
+    "monoculture": 48,
     "companyControlledOnly": 14
   },
   "claims": [
@@ -321,9 +321,9 @@
     },
     {
       "claim": "CLM-19",
-      "epistemicState": "CORROBORATED",
+      "epistemicState": "VERIFIED_PRIMARY",
       "materiality": "high",
-      "sourceRecords": 2,
+      "sourceRecords": 1,
       "independentUpstreams": 1,
       "upstreams": [
         "cz_register"
@@ -331,7 +331,6 @@
       "primaryDirectCount": 0,
       "companyControlledOnly": false,
       "monoculture": true,
-      "note": "CORROBORATED přes více záznamů jediné autority (cz_register) — ne nezávislé potvrzení.",
       "derivedFrom": [
         "CLM-19"
       ]
@@ -355,9 +354,9 @@
     },
     {
       "claim": "CLM-21",
-      "epistemicState": "CORROBORATED",
+      "epistemicState": "VERIFIED_PRIMARY",
       "materiality": "high",
-      "sourceRecords": 4,
+      "sourceRecords": 3,
       "independentUpstreams": 3,
       "upstreams": [
         "cz_register",
@@ -373,9 +372,9 @@
     },
     {
       "claim": "CLM-22",
-      "epistemicState": "CORROBORATED",
+      "epistemicState": "VERIFIED_PRIMARY",
       "materiality": "high",
-      "sourceRecords": 2,
+      "sourceRecords": 1,
       "independentUpstreams": 1,
       "upstreams": [
         "cz_register"
@@ -383,7 +382,6 @@
       "primaryDirectCount": 0,
       "companyControlledOnly": false,
       "monoculture": true,
-      "note": "CORROBORATED přes více záznamů jediné autority (cz_register) — ne nezávislé potvrzení.",
       "derivedFrom": [
         "CLM-22"
       ]
@@ -468,6 +466,514 @@
       "monoculture": true,
       "derivedFrom": [
         "CLM-27"
+      ]
+    },
+    {
+      "claim": "CLM-28",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-28"
+      ]
+    },
+    {
+      "claim": "CLM-29",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-29"
+      ]
+    },
+    {
+      "claim": "CLM-30",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-30"
+      ]
+    },
+    {
+      "claim": "CLM-31",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-31"
+      ]
+    },
+    {
+      "claim": "CLM-32",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-32"
+      ]
+    },
+    {
+      "claim": "CLM-33",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-33"
+      ]
+    },
+    {
+      "claim": "CLM-34",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-34"
+      ]
+    },
+    {
+      "claim": "CLM-35",
+      "epistemicState": "ASSESSED",
+      "materiality": "high",
+      "sourceRecords": 2,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-35"
+      ]
+    },
+    {
+      "claim": "CLM-36",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-36"
+      ]
+    },
+    {
+      "claim": "CLM-37",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-37"
+      ]
+    },
+    {
+      "claim": "CLM-38",
+      "epistemicState": "ASSESSED",
+      "materiality": "high",
+      "sourceRecords": 2,
+      "independentUpstreams": 2,
+      "upstreams": [
+        "cz_register",
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": false,
+      "derivedFrom": [
+        "CLM-38"
+      ]
+    },
+    {
+      "claim": "CLM-39",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-39"
+      ]
+    },
+    {
+      "claim": "CLM-40",
+      "epistemicState": "ASSESSED",
+      "materiality": "low",
+      "sourceRecords": 3,
+      "independentUpstreams": 3,
+      "upstreams": [
+        "cz_register",
+        "forbes",
+        "czechcrunch"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": false,
+      "derivedFrom": [
+        "CLM-40"
+      ]
+    },
+    {
+      "claim": "CLM-41",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-41"
+      ]
+    },
+    {
+      "claim": "CLM-42",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-42"
+      ]
+    },
+    {
+      "claim": "CLM-43",
+      "epistemicState": "ASSESSED",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-43"
+      ]
+    },
+    {
+      "claim": "CLM-44",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 1,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-44"
+      ]
+    },
+    {
+      "claim": "CLM-45",
+      "epistemicState": "ASSESSED",
+      "materiality": "high",
+      "sourceRecords": 3,
+      "independentUpstreams": 3,
+      "upstreams": [
+        "cz_register",
+        "forbes",
+        "czechcrunch"
+      ],
+      "primaryDirectCount": 1,
+      "companyControlledOnly": false,
+      "monoculture": false,
+      "derivedFrom": [
+        "CLM-45"
+      ]
+    },
+    {
+      "claim": "CLM-46",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 2,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 2,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-46"
+      ]
+    },
+    {
+      "claim": "CLM-47",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-47"
+      ]
+    },
+    {
+      "claim": "CLM-48",
+      "epistemicState": "ASSESSED",
+      "materiality": "high",
+      "sourceRecords": 3,
+      "independentUpstreams": 2,
+      "upstreams": [
+        "cz_register",
+        "unknown"
+      ],
+      "primaryDirectCount": 2,
+      "companyControlledOnly": false,
+      "monoculture": false,
+      "derivedFrom": [
+        "CLM-48"
+      ]
+    },
+    {
+      "claim": "CLM-49",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 2,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 2,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-49"
+      ]
+    },
+    {
+      "claim": "CLM-50",
+      "epistemicState": "ASSESSED",
+      "materiality": "high",
+      "sourceRecords": 3,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 3,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-50"
+      ]
+    },
+    {
+      "claim": "CLM-51",
+      "epistemicState": "ASSESSED",
+      "materiality": "high",
+      "sourceRecords": 3,
+      "independentUpstreams": 3,
+      "upstreams": [
+        "forbes",
+        "czechcrunch",
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": false,
+      "derivedFrom": [
+        "CLM-51"
+      ]
+    },
+    {
+      "claim": "CLM-52",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-52"
+      ]
+    },
+    {
+      "claim": "CLM-53",
+      "epistemicState": "ASSESSED",
+      "materiality": "moderate",
+      "sourceRecords": 3,
+      "independentUpstreams": 3,
+      "upstreams": [
+        "cz_register",
+        "forbes",
+        "czechcrunch"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": false,
+      "derivedFrom": [
+        "CLM-53"
+      ]
+    },
+    {
+      "claim": "CLM-54",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-54"
+      ]
+    },
+    {
+      "claim": "CLM-55",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-55"
+      ]
+    },
+    {
+      "claim": "CLM-56",
+      "epistemicState": "ASSESSED",
+      "materiality": "moderate",
+      "sourceRecords": 3,
+      "independentUpstreams": 3,
+      "upstreams": [
+        "cz_register",
+        "unknown",
+        "linkedin"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": false,
+      "derivedFrom": [
+        "CLM-56"
+      ]
+    },
+    {
+      "claim": "CLM-57",
+      "epistemicState": "NOT_FOUND",
+      "materiality": "moderate",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "unknown"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-57"
+      ]
+    },
+    {
+      "claim": "CLM-58",
+      "epistemicState": "BLOCKED",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "unknown"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-58"
       ]
     }
   ]

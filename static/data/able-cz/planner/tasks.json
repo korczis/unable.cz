@@ -8,48 +8,19 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Investigation-planner projection. Derived from sourced records; ordinal/ASSESSED only; nothing invented. Source independence is counted by distinct upstream authority, not by source record.",
-    "count": 19,
+    "count": 20,
     "byEIG": {
-      "high": 5,
+      "high": 6,
       "moderate": 11,
       "low": 3
     },
     "byPriority": {
-      "high": 3,
-      "medium": 7,
-      "low": 9
+      "high": 2,
+      "medium": 8,
+      "low": 10
     }
   },
   "tasks": [
-    {
-      "id": "TASK-CON-02",
-      "target": "one label s.r.o. (IČO 02474727, Znojmo) — jednatel roles, stakes and dates for its three co-owners",
-      "question": "Vyřešit rozpor CON-02: one label s.r.o. (IČO 02474727, Znojmo) — jednatel roles, stakes and dates for its three co-owners",
-      "reason": "Two independent research passes over the same aggregator mirror returned inconsistent role/date/stake attributions across the three named co-owners of one label s.r.o. Neither pass reached a raw or.justice.cz page directly — its search UI is JS-rendered and blocked automated fetch both times — so this cannot yet be resolved to VERIFIED_PRIMARY. All three names (Juhaňák, Jakub Kaman, Ondřej Kaman) are confirmed to hold SOME stake/role in the company; only the precise split and dates are in dispute. Recorded as a live contradiction rather than silently picking one version. A manual or.justice.cz lookup for IČO 02474727 would resolve this.",
-      "expectedInformationGain": "high",
-      "recommendedSource": "or.justice.cz — přímý výpis IČO 02474727 (one label s.r.o.)",
-      "materiality": "moderate",
-      "currentConfidence": "disputed",
-      "graphDepth": 2,
-      "status": "proposed",
-      "priority": "high",
-      "derivedFrom": [
-        "CON-02"
-      ],
-      "priorityCs": "vysoká",
-      "materialityCs": "střední",
-      "priorityDimensions": {
-        "materiality": "moderate",
-        "uncertainty": "high",
-        "sourceAvailability": "known_public_source",
-        "sourceAuthority": "official_primary",
-        "staleness": "current",
-        "cost": "low",
-        "legalRisk": "low",
-        "privacyRisk": "low"
-      },
-      "whyRanked": "Priorita high: materialita=moderate, nejistota=high, zdroj=official_primary (známý veřejný zdroj)."
-    },
     {
       "id": "TASK-GAP-01",
       "target": "financials",
@@ -107,6 +78,35 @@
         "privacyRisk": "low"
       },
       "whyRanked": "Priorita high: materialita=high, nejistota=high, zdroj=official_primary (známý veřejný zdroj)."
+    },
+    {
+      "id": "TASK-CON-02",
+      "target": "one label s.r.o. (IČO 02474727, Znojmo) — jednatel roles, stakes and dates for its three co-owners",
+      "question": "Vyřešit rozpor CON-02: one label s.r.o. (IČO 02474727, Znojmo) — jednatel roles, stakes and dates for its three co-owners",
+      "reason": "RESOLVED 2026-07-18 from the primary register (ARES VR record for IČO 02474727, preserved and hashed): Jakub Kaman — 36 % and jednatel since 2 Jan 2014 (sole founder, 100 % until 2017); Ondřej Kaman — 34 % (49 % during 2017–2022) and jednatel since 23 Feb 2022; Radek Juhaňák — 30 % and jednatel since 23 Feb 2022, both continuously registered (the 2024-09-04 rows are re-registrations, not exits). The two mirror passes were each PARTIALLY right — their fragments were complementary, not conflicting; neither captured the whole record. See CLM-19.",
+      "expectedInformationGain": "high",
+      "recommendedSource": "or.justice.cz — přímý výpis IČO 02474727 (one label s.r.o.)",
+      "materiality": "moderate",
+      "currentConfidence": "disputed",
+      "graphDepth": 2,
+      "status": "proposed",
+      "priority": "medium",
+      "derivedFrom": [
+        "CON-02"
+      ],
+      "priorityCs": "střední",
+      "materialityCs": "střední",
+      "priorityDimensions": {
+        "materiality": "moderate",
+        "uncertainty": "high",
+        "sourceAvailability": "known_public_source",
+        "sourceAuthority": "official_primary",
+        "staleness": "current",
+        "cost": "low",
+        "legalRisk": "low",
+        "privacyRisk": "low"
+      },
+      "whyRanked": "Priorita medium: materialita=moderate, nejistota=high, zdroj=official_primary (známý veřejný zdroj)."
     },
     {
       "id": "TASK-GAP-02",
@@ -326,6 +326,35 @@
       "priority": "low",
       "derivedFrom": [
         "CON-01"
+      ],
+      "priorityCs": "nízká",
+      "materialityCs": "nízká",
+      "priorityDimensions": {
+        "materiality": "low",
+        "uncertainty": "high",
+        "sourceAvailability": "known_public_source",
+        "sourceAuthority": "official_primary",
+        "staleness": "current",
+        "cost": "low",
+        "legalRisk": "low",
+        "privacyRisk": "low"
+      },
+      "whyRanked": "Priorita low: materialita=low, nejistota=high, zdroj=official_primary (známý veřejný zdroj)."
+    },
+    {
+      "id": "TASK-CON-03",
+      "target": "When Lukáš Oslzla became a Blackfish & Co. owner",
+      "question": "Vyřešit rozpor CON-03: When Lukáš Oslzla became a Blackfish & Co. owner",
+      "reason": "The register is authoritative for legal ownership: Oslzla's registered stake began June 2022. The 2021 media description may reflect an informal, beneficial, or agreed-but-unregistered arrangement, or simply be imprecise — the sources cannot be reconciled on the record as filed. Left visible as a contradiction between media and register.",
+      "expectedInformationGain": "high",
+      "recommendedSource": "or.justice.cz — spisová značka Able.cz (C 85425)",
+      "materiality": "low",
+      "currentConfidence": "disputed",
+      "graphDepth": 2,
+      "status": "proposed",
+      "priority": "low",
+      "derivedFrom": [
+        "CON-03"
       ],
       "priorityCs": "nízká",
       "materialityCs": "nízká",

@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 19
+    "count": 22
   },
   "evidence": [
     {
@@ -46,27 +46,18 @@
         "CLM-11",
         "CLM-12",
         "CLM-13",
-        "CLM-15"
+        "CLM-15",
+        "CLM-38"
       ]
     },
     {
       "id": "SRC-03",
-      "title": "Czech public register / ARES (via justice.cz-sourced mirrors: kurzy.cz, penize.cz, podnikatel.cz)",
-      "url": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=24278815",
-      "tier": 1,
-      "kind": "company register",
+      "title": "Company-register mirrors, first identity pass (kurzy.cz, penize.cz, podnikatel.cz — republishing or.justice.cz data)",
+      "url": "https://rejstrik-firem.kurzy.cz/24278815/",
+      "tier": 2,
+      "kind": "company register mirror (aggregator; NOT a direct register fetch — the 2026-07-17 pass mislabelled this tier 1, corrected 2026-07-18; primary register facts now come from SRC-12 ARES artifacts)",
       "retrievedAt": "2026-07-17",
-      "supports": [
-        "identity:Legal name",
-        "identity:IČO",
-        "identity:DIČ (VAT)",
-        "identity:Legal form",
-        "identity:Incorporated",
-        "identity:Registered office",
-        "identity:Registered capital",
-        "identity:Court",
-        "identity:Last register change (observed)"
-      ]
+      "supports": []
     },
     {
       "id": "SRC-04",
@@ -77,7 +68,11 @@
       "retrievedAt": "2026-07-17",
       "supports": [
         "CLM-14",
-        "CLM-21"
+        "CLM-21",
+        "CLM-40",
+        "CLM-45",
+        "CLM-51",
+        "CLM-53"
       ]
     },
     {
@@ -89,7 +84,11 @@
       "retrievedAt": "2026-07-17",
       "supports": [
         "CLM-14",
-        "CLM-21"
+        "CLM-21",
+        "CLM-40",
+        "CLM-45",
+        "CLM-51",
+        "CLM-53"
       ]
     },
     {
@@ -99,7 +98,9 @@
       "tier": 3,
       "kind": "professional profile",
       "retrievedAt": "2026-07-17",
-      "supports": []
+      "supports": [
+        "CLM-56"
+      ]
     },
     {
       "id": "SRC-07",
@@ -141,12 +142,10 @@
         "CLM-16",
         "CLM-17",
         "CLM-18",
-        "CLM-19",
         "CLM-20",
-        "CLM-21",
-        "CLM-22",
         "CLM-23",
-        "CLM-24"
+        "CLM-24",
+        "CLM-35"
       ]
     },
     {
@@ -159,21 +158,55 @@
       "supports": [
         "CLM-16",
         "CLM-18",
-        "CLM-19",
-        "CLM-21",
-        "CLM-22",
         "CLM-23",
         "CLM-24"
       ]
     },
     {
       "id": "SRC-12",
-      "title": "ARES — Administrativní registr ekonomických subjektů (cross-check)",
-      "url": "https://ares.gov.cz",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed (cases/DD-Able-CZ-2026-07-17/artifacts/)",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
       "tier": 1,
-      "kind": "government registry",
-      "retrievedAt": "2026-07-17",
-      "supports": []
+      "kind": "government registry (primary, structured; 40 artifacts incl. officer/shareholder histories with dates)",
+      "retrievedAt": "2026-07-18",
+      "supports": [
+        "CLM-19",
+        "CLM-21",
+        "CLM-22",
+        "CLM-28",
+        "CLM-29",
+        "CLM-30",
+        "CLM-31",
+        "CLM-32",
+        "CLM-33",
+        "CLM-34",
+        "CLM-35",
+        "CLM-36",
+        "CLM-37",
+        "CLM-38",
+        "CLM-39",
+        "CLM-40",
+        "CLM-41",
+        "CLM-42",
+        "CLM-43",
+        "CLM-47",
+        "CLM-51",
+        "CLM-52",
+        "CLM-53",
+        "CLM-54",
+        "CLM-55",
+        "CLM-56",
+        "identity:Legal name",
+        "identity:Previous legal name",
+        "identity:IČO",
+        "identity:DIČ (VAT)",
+        "identity:Legal form",
+        "identity:Incorporated",
+        "identity:Registered office",
+        "identity:Registered capital",
+        "identity:Court",
+        "identity:Last register change (observed)"
+      ]
     },
     {
       "id": "SRC-13",
@@ -205,7 +238,10 @@
       "kind": "filed financial statement (primary registry document)",
       "retrievedAt": "2026-07-17",
       "supports": [
-        "CLM-25"
+        "CLM-25",
+        "CLM-44",
+        "CLM-45",
+        "CLM-50"
       ]
     },
     {
@@ -216,7 +252,9 @@
       "kind": "court execution order (primary registry document)",
       "retrievedAt": "2026-07-17",
       "supports": [
-        "CLM-26"
+        "CLM-26",
+        "CLM-46",
+        "CLM-48"
       ]
     },
     {
@@ -227,7 +265,9 @@
       "kind": "court notice of execution termination (primary registry document)",
       "retrievedAt": "2026-07-17",
       "supports": [
-        "CLM-26"
+        "CLM-26",
+        "CLM-46",
+        "CLM-48"
       ]
     },
     {
@@ -238,7 +278,9 @@
       "kind": "filed financial statement, micro accounting unit — abbreviated (primary registry document)",
       "retrievedAt": "2026-07-17",
       "supports": [
-        "CLM-27"
+        "CLM-27",
+        "CLM-49",
+        "CLM-50"
       ]
     },
     {
@@ -249,7 +291,43 @@
       "kind": "filed financial statement, micro accounting unit — abbreviated (primary registry document)",
       "retrievedAt": "2026-07-17",
       "supports": [
-        "CLM-27"
+        "CLM-27",
+        "CLM-49",
+        "CLM-50"
+      ]
+    },
+    {
+      "id": "SRC-20",
+      "title": "Registr smluv (smlouvy.gov.cz) — party search by IČO 24278815 and 06526411 (result pages preserved)",
+      "url": "https://smlouvy.gov.cz/vyhledavani?vyhledavani%5Bsmluvni_strana%5D%5Bico%5D=24278815",
+      "tier": 1,
+      "kind": "official contracts register (search executed 2026-07-18; zero contracts returned for either IČO)",
+      "retrievedAt": "2026-07-18",
+      "supports": [
+        "CLM-57"
+      ]
+    },
+    {
+      "id": "SRC-21",
+      "title": "ISIR — insolvenční rejstřík (subject lustrace, isir.justice.cz)",
+      "url": "https://isir.justice.cz/isir/ucastnik/vysledek_lustrace.do?ic=24278815&aktualnost=AKTUALNI_I_UKONCENA",
+      "tier": 1,
+      "kind": "official insolvency register — BLOCKED: HTTP 500 on 2026-07-17 and again on 2026-07-18; insolvency status is therefore unresolved, not clear",
+      "retrievedAt": "2026-07-18",
+      "supports": [
+        "CLM-48",
+        "CLM-58"
+      ]
+    },
+    {
+      "id": "SRC-22",
+      "title": "CzechCrunch — 2023 investment coverage (Point FM / Marek Kříž ~5% at 80M CZK valuation). Retrieved in the 2026-07-17 pass (collection log item 6) but its URL was not recorded then; registered 2026-07-18 to fix that source gap, URL re-resolution pending",
+      "url": null,
+      "tier": 3,
+      "kind": "media (referenced; exact URL lost by the earlier pass — facts sourced to it are flagged accordingly. A 2026-07-18 attempt to corroborate via Point FM's own site found the page JS-rendered with no readable portfolio content in the preserved HTML — recorded as a failed corroboration in provider-runs, not used as evidence)",
+      "retrievedAt": "2026-07-17",
+      "supports": [
+        "CLM-56"
       ]
     }
   ]

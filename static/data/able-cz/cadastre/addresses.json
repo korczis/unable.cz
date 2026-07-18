@@ -52,9 +52,9 @@
         {
           "raw": "Vlněna 526/5, Trnitá, 602 00 Brno",
           "from": "identity:Registered office",
-          "status": "CORROBORATED",
+          "status": "VERIFIED_PRIMARY",
           "sources": [
-            "SRC-03",
+            "SRC-12",
             "SRC-01"
           ]
         },
@@ -87,9 +87,10 @@
       "note": "Sídlo zapsané v rejstříku — veřejný firemní identifikátor. RÚIAN ID, souřadnice, budova, parcela a vlastnictví NEBYLY v tomto průchodu sbírány (vyžadují přímý přístup k ČÚZK/RÚIAN) a nejsou zde dopočítány.",
       "sources": [
         "SRC-08",
-        "SRC-03",
+        "SRC-12",
         "SRC-01",
-        "SRC-02"
+        "SRC-02",
+        "SRC-03"
       ]
     }
   ]

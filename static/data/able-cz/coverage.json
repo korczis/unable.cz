@@ -30,9 +30,9 @@
       "label": "Identita",
       "coverage": "strong",
       "coverageCs": "silné",
-      "recordsExamined": 10,
+      "recordsExamined": 11,
       "sourcesChecked": [
-        "SRC-03",
+        "SRC-12",
         "SRC-01",
         "SRC-08"
       ],
@@ -41,14 +41,14 @@
         "company": 1
       },
       "statusDistribution": {
-        "VERIFIED_PRIMARY": 9,
-        "CORROBORATED": 1
+        "VERIFIED_PRIMARY": 11
       },
       "openGaps": [],
       "notFoundCount": 0,
       "hasPrimaryFiled": true,
       "derivedFrom": [
         "identity:Legal name",
+        "identity:Previous legal name",
         "identity:IČO",
         "identity:DIČ (VAT)",
         "identity:VAT status (EU VIES)",
@@ -159,9 +159,9 @@
       "label": "Finance",
       "coverage": "strong",
       "coverageCs": "silné",
-      "recordsExamined": 12,
+      "recordsExamined": 15,
       "sourcesChecked": [
-        "SRC-03",
+        "SRC-12",
         "SRC-15",
         "SRC-04",
         "SRC-05"
@@ -171,7 +171,7 @@
         "media": 2
       },
       "statusDistribution": {
-        "VERIFIED_PRIMARY": 8,
+        "VERIFIED_PRIMARY": 11,
         "SELF_REPORTED": 4
       },
       "openGaps": [
@@ -192,7 +192,10 @@
         "fin:8",
         "fin:9",
         "fin:10",
-        "fin:11"
+        "fin:11",
+        "fin:12",
+        "fin:13",
+        "fin:14"
       ]
     },
     {
@@ -316,19 +319,20 @@
       "label": "Média a diskurz",
       "coverage": "weak",
       "coverageCs": "slabé",
-      "recordsExamined": 5,
+      "recordsExamined": 6,
       "sourcesChecked": [
         "SRC-04",
         "SRC-05",
         "SRC-06",
         "SRC-13",
-        "SRC-14"
+        "SRC-14",
+        "SRC-22"
       ],
       "sourceClasses": {
-        "media": 5
+        "media": 6
       },
       "statusDistribution": {
-        "SELF_REPORTED": 5
+        "SELF_REPORTED": 6
       },
       "openGaps": [],
       "notFoundCount": 0,
@@ -338,7 +342,8 @@
         "media:SRC-05",
         "media:SRC-06",
         "media:SRC-13",
-        "media:SRC-14"
+        "media:SRC-14",
+        "media:SRC-22"
       ]
     },
     {

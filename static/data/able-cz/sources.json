@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 19
+    "count": 22
   },
   "sources": [
     {
@@ -29,10 +29,11 @@
     },
     {
       "id": "SRC-03",
-      "title": "Czech public register / ARES (via justice.cz-sourced mirrors: kurzy.cz, penize.cz, podnikatel.cz)",
-      "url": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=24278815",
-      "tier": 1,
-      "kind": "company register",
+      "title": "Company-register mirrors, first identity pass (kurzy.cz, penize.cz, podnikatel.cz — republishing or.justice.cz data)",
+      "url": "https://rejstrik-firem.kurzy.cz/24278815/",
+      "tier": 2,
+      "kind": "company register mirror (aggregator; NOT a direct register fetch — the 2026-07-17 pass mislabelled this tier 1, corrected 2026-07-18; primary register facts now come from SRC-12 ARES artifacts)",
+      "family": "cz-state-register",
       "retrievedAt": "2026-07-17"
     },
     {
@@ -101,11 +102,12 @@
     },
     {
       "id": "SRC-12",
-      "title": "ARES — Administrativní registr ekonomických subjektů (cross-check)",
-      "url": "https://ares.gov.cz",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed (cases/DD-Able-CZ-2026-07-17/artifacts/)",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
       "tier": 1,
-      "kind": "government registry",
-      "retrievedAt": "2026-07-17"
+      "kind": "government registry (primary, structured; 40 artifacts incl. officer/shareholder histories with dates)",
+      "family": "cz-state-register",
+      "retrievedAt": "2026-07-18"
     },
     {
       "id": "SRC-13",
@@ -161,6 +163,34 @@
       "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=91233172&subjektId=991026&spis=1096381",
       "tier": 1,
       "kind": "filed financial statement, micro accounting unit — abbreviated (primary registry document)",
+      "family": "cz-state-register",
+      "retrievedAt": "2026-07-17"
+    },
+    {
+      "id": "SRC-20",
+      "title": "Registr smluv (smlouvy.gov.cz) — party search by IČO 24278815 and 06526411 (result pages preserved)",
+      "url": "https://smlouvy.gov.cz/vyhledavani?vyhledavani%5Bsmluvni_strana%5D%5Bico%5D=24278815",
+      "tier": 1,
+      "kind": "official contracts register (search executed 2026-07-18; zero contracts returned for either IČO)",
+      "family": "cz-isrs",
+      "retrievedAt": "2026-07-18"
+    },
+    {
+      "id": "SRC-21",
+      "title": "ISIR — insolvenční rejstřík (subject lustrace, isir.justice.cz)",
+      "url": "https://isir.justice.cz/isir/ucastnik/vysledek_lustrace.do?ic=24278815&aktualnost=AKTUALNI_I_UKONCENA",
+      "tier": 1,
+      "kind": "official insolvency register — BLOCKED: HTTP 500 on 2026-07-17 and again on 2026-07-18; insolvency status is therefore unresolved, not clear",
+      "family": "cz-isir",
+      "retrievedAt": "2026-07-18"
+    },
+    {
+      "id": "SRC-22",
+      "title": "CzechCrunch — 2023 investment coverage (Point FM / Marek Kříž ~5% at 80M CZK valuation). Retrieved in the 2026-07-17 pass (collection log item 6) but its URL was not recorded then; registered 2026-07-18 to fix that source gap, URL re-resolution pending",
+      "url": null,
+      "tier": 3,
+      "kind": "media (referenced; exact URL lost by the earlier pass — facts sourced to it are flagged accordingly. A 2026-07-18 attempt to corroborate via Point FM's own site found the page JS-rendered with no readable portfolio content in the preserved HTML — recorded as a failed corroboration in provider-runs, not used as evidence)",
+      "family": "media-czechcrunch",
       "retrievedAt": "2026-07-17"
     }
   ]

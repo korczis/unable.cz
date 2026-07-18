@@ -16,16 +16,19 @@
   "counts": {
     "entities": 41,
     "relationships": 48,
-    "claims": 27,
-    "sources": 19,
-    "contradictions": 2,
+    "claims": 58,
+    "sources": 22,
+    "contradictions": 3,
     "openQuestions": 10,
     "risks": 5
   },
   "claimsByStatus": {
     "SELF_REPORTED": 14,
-    "CORROBORATED": 10,
-    "VERIFIED_PRIMARY": 3
+    "CORROBORATED": 7,
+    "VERIFIED_PRIMARY": 25,
+    "ASSESSED": 10,
+    "NOT_FOUND": 1,
+    "BLOCKED": 1
   },
   "relationshipsByStatus": {
     "VERIFIED_PRIMARY": 11,

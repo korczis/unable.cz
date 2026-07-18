@@ -21,16 +21,25 @@
       "value": "Able.cz s.r.o.",
       "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-03",
+        "SRC-12",
         "SRC-01"
       ]
+    },
+    {
+      "field": "Previous legal name",
+      "value": "BIT CONSULTING s.r.o. (3 Oct 2012 – 14 Nov 2016); renamed Able.cz s.r.o. on 14 Nov 2016",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-12"
+      ],
+      "note": "Surfaced by the 2026-07-18 primary ARES VR fetch; absent from every mirror-based pass."
     },
     {
       "field": "IČO",
       "value": "24278815",
       "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-03",
+        "SRC-12",
         "SRC-01"
       ]
     },
@@ -39,7 +48,7 @@
       "value": "CZ24278815",
       "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-03"
+        "SRC-12"
       ]
     },
     {
@@ -55,49 +64,49 @@
       "value": "s.r.o. (limited liability company)",
       "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-03"
+        "SRC-12"
       ]
     },
     {
       "field": "Incorporated",
-      "value": "3 October 2012",
+      "value": "3 October 2012 — originally registered at the Municipal Court in Prague (C 200323)",
       "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-03"
+        "SRC-12"
       ]
     },
     {
       "field": "Registered office",
       "value": "Vlněna 526/5, Trnitá, 602 00 Brno",
-      "status": "CORROBORATED",
+      "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-03",
+        "SRC-12",
         "SRC-01"
       ]
     },
     {
       "field": "Registered capital",
-      "value": "243,715 CZK",
+      "value": "243,715 CZK (increased from 210,000 CZK on 14 Nov 2024)",
       "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-03"
+        "SRC-12"
       ]
     },
     {
       "field": "Court",
-      "value": "Krajský soud v Brně (Regional Court in Brno)",
+      "value": "Krajský soud v Brně, C 85425 (since 13 Nov 2014); previously Městský soud v Praze, C 200323 (2012–2014)",
       "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-03",
+        "SRC-12",
         "SRC-01"
       ]
     },
     {
       "field": "Last register change (observed)",
-      "value": "20 January 2026",
+      "value": "2 April 2026 (latest shareholding re-registration in the VR record; ARES update stamp 16 April 2026)",
       "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-03"
+        "SRC-12"
       ]
     }
   ],
@@ -131,7 +140,27 @@
         "source": "SRC-10",
         "where": "kurzy.cz mirror, independent follow-up pass"
       },
-      "resolution": "Two independent research passes over the same aggregator mirror returned inconsistent role/date/stake attributions across the three named co-owners of one label s.r.o. Neither pass reached a raw or.justice.cz page directly — its search UI is JS-rendered and blocked automated fetch both times — so this cannot yet be resolved to VERIFIED_PRIMARY. All three names (Juhaňák, Jakub Kaman, Ondřej Kaman) are confirmed to hold SOME stake/role in the company; only the precise split and dates are in dispute. Recorded as a live contradiction rather than silently picking one version. A manual or.justice.cz lookup for IČO 02474727 would resolve this.",
+      "resolution": "RESOLVED 2026-07-18 from the primary register (ARES VR record for IČO 02474727, preserved and hashed): Jakub Kaman — 36 % and jednatel since 2 Jan 2014 (sole founder, 100 % until 2017); Ondřej Kaman — 34 % (49 % during 2017–2022) and jednatel since 23 Feb 2022; Radek Juhaňák — 30 % and jednatel since 23 Feb 2022, both continuously registered (the 2024-09-04 rows are re-registrations, not exits). The two mirror passes were each PARTIALLY right — their fragments were complementary, not conflicting; neither captured the whole record. See CLM-19.",
+      "status": "RESOLVED",
+      "resolvedAt": "2026-07-18",
+      "resolvedBy": [
+        "SRC-12"
+      ]
+    },
+    {
+      "id": "CON-03",
+      "field": "When Lukáš Oslzla became a Blackfish & Co. owner",
+      "valueA": {
+        "value": "~30% owner as of March 2021",
+        "source": "SRC-13",
+        "where": "CzechCrunch 2021 Denmark-expansion article"
+      },
+      "valueB": {
+        "value": "30% shareholder registered only from 9 June 2022 (jednatel from 8 June 2022); before that Vít Schlesinger held 100% (2020–2022)",
+        "source": "SRC-12",
+        "where": "Primary register record (ARES VR, preserved artifact)"
+      },
+      "resolution": "The register is authoritative for legal ownership: Oslzla's registered stake began June 2022. The 2021 media description may reflect an informal, beneficial, or agreed-but-unregistered arrangement, or simply be imprecise — the sources cannot be reconciled on the record as filed. Left visible as a contradiction between media and register.",
       "status": "CONTRADICTED"
     }
   ],
@@ -144,7 +173,7 @@
         "since": "3 October 2012",
         "status": "VERIFIED_PRIMARY",
         "sources": [
-          "SRC-03"
+          "SRC-12"
         ]
       },
       {
@@ -153,63 +182,143 @@
         "since": "3 October 2012",
         "status": "VERIFIED_PRIMARY",
         "sources": [
-          "SRC-03"
+          "SRC-12"
         ]
+      },
+      {
+        "name": "Petr Faraga",
+        "role": "Statutory officer (jednatel) — historical",
+        "since": "3 October 2012",
+        "until": "13 October 2020",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-12"
+        ],
+        "note": "The primary VR record shows Petr Faraga was a third jednatel for the company's first eight years — he is a co-founder, not (as the mirror-based pass recorded) a newly arrived minor figure. His officer role ended in the 13–14 Oct 2020 governance restructuring (supervisory board created, ZenX Capital entered at 50%)."
       }
     ],
     "shareholders": [
       {
-        "name": "Václav Faraga",
+        "name": "ZenX Capital, a.s.",
+        "vklad": "111,620.01 CZK (45.80 %)",
+        "since": "14 October 2020 (initially 50 %; 47.5 % from 28 Aug 2023; 48.2 % from 14 Nov 2024; 45.80 % since 29 Jul 2025)",
         "status": "VERIFIED_PRIMARY",
         "sources": [
-          "SRC-03"
+          "SRC-12"
+        ],
+        "note": "Largest shareholder since October 2020. IČO 09289127; Zdeněk Sluka is a member of its správní rada (primary register). The mirror-based pass recorded only a flat vklad and missed the near-half ownership entirely."
+      },
+      {
+        "name": "Václav Faraga",
+        "vklad": "42,961.48 CZK (17.63 %)",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-12"
         ]
       },
       {
         "name": "Tomáš Melichárek",
+        "vklad": "42,961.48 CZK (17.63 %)",
         "status": "VERIFIED_PRIMARY",
         "sources": [
-          "SRC-03"
+          "SRC-12"
+        ],
+        "note": "His podíl record was re-registered 20 Jan / 16 Mar / 2 Apr 2026 — the register footprint of the January–March 2026 execution (CLM-46/CLM-47)."
+      },
+      {
+        "name": "Vít Schlesinger",
+        "vklad": "12,185.75 CZK (5.00 %)",
+        "since": "29 July 2025",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-12"
         ]
       },
       {
-        "name": "Radek Juhaňák",
-        "vklad": "5,605 CZK (~2.3%)",
-        "status": "CORROBORATED",
+        "name": "5326G s.r.o.",
+        "vklad": "9,975.00 CZK (4.09 %)",
+        "since": "28 August 2023",
+        "status": "VERIFIED_PRIMARY",
         "sources": [
-          "SRC-03",
-          "SRC-10"
+          "SRC-12"
         ],
-        "note": "Vklad amount from aggregator mirror, not a direct register fetch."
+        "note": "IČO 19540051 — owned 51 % by Marek Kříž (jednatel) and 49 % by David Jopek; see CLM-55/CLM-56 for the relation to the media-reported 'Point FM ~5 %' investment."
       },
       {
-        "name": "Petr Faraga",
-        "vklad": "~0.5%, since 29 July 2025",
-        "status": "CORROBORATED",
+        "name": "František Juren",
+        "vklad": "8,089.88 CZK (3.32 %)",
+        "since": "14 November 2016 (varying stakes)",
+        "status": "VERIFIED_PRIMARY",
         "sources": [
-          "SRC-10",
-          "SRC-11",
-          "SRC-14"
+          "SRC-12"
         ],
-        "note": "Newly identified in this pass — not in the original shareholder list. Shares a Znojmo address cluster and co-officer history (FaMe logistics, FaMe trade) with Václav Faraga; a family relationship is plausible from the ~23-year age gap but is NOT_FOUND in any public source."
+        "note": "Also 21 % shareholder and jednatel of ERA25 s.r.o. alongside both Able.cz founders (CLM-29)."
+      },
+      {
+        "name": "Radek Juhaňák",
+        "vklad": "5,605.44 CZK (2.30 %)",
+        "since": "29 July 2025",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-12"
+        ]
+      },
+      {
+        "name": "Ondřej Kaman",
+        "vklad": "3,655.73 CZK (1.50 %)",
+        "since": "29 July 2025",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-12"
+        ],
+        "note": "Corrects the earlier record that Ondřej Kaman had no direct Able.cz tie (CLM-36)."
       },
       {
         "name": "Jakub Kaman",
-        "vklad": "2,437 CZK",
-        "status": "CORROBORATED",
+        "vklad": "2,437.15 CZK (1.00 %)",
+        "since": "29 July 2025",
+        "status": "VERIFIED_PRIMARY",
         "sources": [
-          "SRC-10",
-          "SRC-11"
+          "SRC-12"
+        ]
+      },
+      {
+        "name": "Martin Nakládal",
+        "vklad": "1,785.92 CZK (0.73 %)",
+        "since": "14 November 2016 (varying stakes)",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-12"
+        ]
+      },
+      {
+        "name": "Tomáš Kořenský",
+        "vklad": "1,218.58 CZK (0.50 %)",
+        "since": "29 July 2025",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-12"
+        ]
+      },
+      {
+        "name": "Petr Faraga",
+        "vklad": "1,218.58 CZK (0.50 %)",
+        "since": "29 July 2025",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-12"
         ],
-        "note": "Newly identified in this pass — not in the original shareholder list. Also co-owner, with Radek Juhaňák and Ondřej Kaman, of one label s.r.o.; see CON-02."
+        "note": "Re-entry: he was a founding 1/3 shareholder (2012–2016) and jednatel (2012–2020) — see statutoryBody and CLM-34/CLM-35."
       }
     ],
+    "shareholdersNote": "Current capitalization table as registered (sums to 100.00 % of 243,715 CZK). Historical holders visible in the preserved VR record and not listed above: DataLife Group s.r.o. (15 %, 2017–2020), Václav Kleibl (2017–2025), Petr Milkov (2016–2024), plus earlier founder-only configurations. Every row traces to the hashed ARES VR artifact via the evidence layer.",
     "signingRule": {
       "text": "A statutory officer acts independently, except for acts of property management or monetary obligations above 200,000 CZK (excl. VAT), which require all statutory officers to act jointly.",
-      "status": "VERIFIED_PRIMARY",
+      "status": "CORROBORATED",
       "sources": [
         "SRC-03"
-      ]
+      ],
+      "note": "Register-mirror family only (single upstream): the ARES VR payload does not expose the signing rule (způsob jednání), so this row could not be primary-verified in the 2026-07-18 pass. Downgraded from the earlier (mislabelled) VERIFIED_PRIMARY."
     },
     "marketingLeadership": [
       {
@@ -270,16 +379,19 @@
     "counts": {
       "entities": 41,
       "relationships": 48,
-      "claims": 27,
-      "sources": 19,
-      "contradictions": 2,
+      "claims": 58,
+      "sources": 22,
+      "contradictions": 3,
       "openQuestions": 10,
       "risks": 5
     },
     "claimsByStatus": {
       "SELF_REPORTED": 14,
-      "CORROBORATED": 10,
-      "VERIFIED_PRIMARY": 3
+      "CORROBORATED": 7,
+      "VERIFIED_PRIMARY": 25,
+      "ASSESSED": 10,
+      "NOT_FOUND": 1,
+      "BLOCKED": 1
     },
     "relationshipsByStatus": {
       "VERIFIED_PRIMARY": 11,
