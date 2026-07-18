@@ -81,7 +81,9 @@ function mkFact(c, period, value, unit, m) {
     concept: c.concept, label: c.label, originalLabel: m.metric,
     period, value, valueDisplay: fmt(value), unit,
     status: "FILED_FACT", epistemicState: m.status,
-    sources: m.sources || [], evidenceCutoff: cutoff,
+    sources: m.sources || [],
+    sourceLinks: (m.sources || []).map((s) => ({ id: s, url: (SRCX[s] || {}).url || null })),
+    evidenceCutoff: cutoff,
   };
 }
 const factById = {}; facts.forEach((f) => (factById[f.concept + ":" + f.period] = f));
@@ -198,7 +200,9 @@ function bfFact(concept, label, period, value, unit, approx) {
     period, value, valueDisplay: fmt(value), unit,
     approximate: !!approx, status: "FILED_FACT", epistemicState: "VERIFIED_PRIMARY",
     accountingFormat: "micro_unit_abbreviated_no_pl",
-    sources: bfSources, evidenceCutoff: cutoff,
+    sources: bfSources,
+    sourceLinks: bfSources.map((s) => ({ id: s, url: (SRCX[s] || {}).url || null })),
+    evidenceCutoff: cutoff,
     derivedFrom: ["CLM-49"],
   };
 }
