@@ -5,8 +5,8 @@
     "caseId": "DD-Able-CZ-2026-07-17",
     "subject": "Able.cz s.r.o.",
     "ico": "24278815",
-    "evidenceCutoff": "2026-07-17",
-    "generatedAt": "2026-07-17",
+    "evidenceCutoff": "2026-07-18",
+    "generatedAt": "2026-07-18",
     "source": "data/dossier/able/dossier.json",
     "note": "Financial-intelligence projection. Filed facts parsed from sourced figures; metrics carry formulas + fact IDs; nothing invented; NOT_FOUND is never zero."
   },

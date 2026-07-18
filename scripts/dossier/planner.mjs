@@ -88,10 +88,16 @@ function usage(id) {
   return { claims: c, edges: e, contradictions: con };
 }
 
+const FRESH_WINDOW_DAYS = 14; // a source retrieved within ~2 weeks of the cutoff is current
 const freshness = (id) => {
-  // All retrievals are at the cutoff in this pass; still record it explicitly.
+  // Fresh if retrieved within the collection window of the cutoff — NOT only on
+  // the exact cutoff date. An exact-match rule wrongly labels a source retrieved
+  // one day before the cutoff as "aged" once the cutoff is the newer of two
+  // same-pass dates (see docs/dossier/convergence/13). Days apart, not equality.
   const r = SRCX[id]?.retrievedAt;
-  return r === cutoff ? "fresh" : r ? "aged" : "unknown";
+  if (!r || !cutoff) return r ? "unknown" : "unknown";
+  const days = Math.abs(new Date(cutoff) - new Date(r)) / 86400000;
+  return days <= FRESH_WINDOW_DAYS ? "fresh" : "aged";
 };
 
 const sources = (d.sources || []).map((s) => {

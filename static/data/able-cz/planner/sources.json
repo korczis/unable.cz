@@ -4,8 +4,8 @@
     "kind": "source-registry",
     "subject": "Able.cz s.r.o.",
     "ico": "24278815",
-    "evidenceCutoff": "2026-07-17",
-    "generatedAt": "2026-07-17",
+    "evidenceCutoff": "2026-07-18",
+    "generatedAt": "2026-07-18",
     "source": "data/dossier/able/dossier.json",
     "note": "Investigation-planner projection. Derived from sourced records; ordinal/ASSESSED only; nothing invented. Source independence is counted by distinct upstream authority, not by source record.",
     "count": 22,
@@ -267,7 +267,7 @@
       "official": true,
       "primary": true,
       "independence": "independent_origin",
-      "freshness": "aged",
+      "freshness": "fresh",
       "retrievedAt": "2026-07-18",
       "claimsSupported": [
         "CLM-19",
@@ -450,7 +450,7 @@
       "official": true,
       "primary": true,
       "independence": "independent_origin",
-      "freshness": "aged",
+      "freshness": "fresh",
       "retrievedAt": "2026-07-18",
       "claimsSupported": [
         "CLM-57"
@@ -469,7 +469,7 @@
       "official": true,
       "primary": true,
       "independence": "independent_origin",
-      "freshness": "aged",
+      "freshness": "fresh",
       "retrievedAt": "2026-07-18",
       "claimsSupported": [
         "CLM-48",
@@ -489,7 +489,7 @@
       "official": false,
       "primary": false,
       "independence": "independent_origin",
-      "freshness": "aged",
+      "freshness": "fresh",
       "retrievedAt": "2026-07-18",
       "claimsSupported": [
         "CLM-56"

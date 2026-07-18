@@ -4,8 +4,8 @@
     "kind": "evidence-spans",
     "subject": "Able.cz s.r.o.",
     "ico": "24278815",
-    "evidenceCutoff": "2026-07-17",
-    "generatedAt": "2026-07-17",
+    "evidenceCutoff": "2026-07-18",
+    "generatedAt": "2026-07-18",
     "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
     "note": "Derived and verified from preserved, hashed artifacts; nothing added.",
     "count": 28
