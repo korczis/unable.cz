@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
     "note": "Derived and verified from preserved, hashed artifacts; nothing added.",
-    "count": 58
+    "count": 59
   },
   "availability": [
     {
@@ -648,6 +648,17 @@
       "outcome": "ok",
       "status": "AVAILABLE",
       "sha256": "e247b33279a765a4"
+    },
+    {
+      "url": "https://cc.cz/od-hrani-her-pres-slevove-portaly-k-vyvojarske-agenture-s-valuaci-80-milionu-able-ma-ted-noveho-investora/",
+      "sourceId": "SRC-22",
+      "tag": "media",
+      "entity": "cc-investment-2023",
+      "lastChecked": "2026-07-18T06:40:33.351Z",
+      "httpStatus": 200,
+      "outcome": "ok",
+      "status": "AVAILABLE",
+      "sha256": "c8e1f8870a4ceb28"
     }
   ]
 }

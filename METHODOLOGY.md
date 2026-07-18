@@ -65,6 +65,14 @@ every derived row traces back to a dossier record via `derivedFrom`, and the gat
 fails the build if that provenance is broken or a hypothesis is presented as a
 fact. See [docs/dossier/depth/](docs/dossier/depth/).
 
+Since 2026-07-18 the dossier also carries a verified **evidence layer**:
+`npm run evidence:fetch` preserves sources content-addressed (SHA-256, every
+run logged), `evidence:parse` extracts register assertions deterministically,
+and `scripts/dossier/evidence.mjs` (part of `data:build`) verifies the whole
+chain — artifact hashes, exact citations, claim links, publication classes —
+and fails the build on any mismatch. See
+[docs/dossier/evidence/](docs/dossier/evidence/03-evidence-data-model.md).
+
 ## Limitations
 See [docs/dossier/11-open-questions.md](docs/dossier/11-open-questions.md) and
 the per-source notes in [DATA_PROVENANCE.md](DATA_PROVENANCE.md). This review

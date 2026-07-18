@@ -36,7 +36,7 @@
     "SRC-19": { "authority": "Městský soud v Praze — Sbírka listin", "official": true, "primary": "primary", "licensing": "public official filing; preserved", "publication": "OFFICIAL_PUBLIC", "legacyArtifacts": ["sbirka-listin/blackfish/2025-ucetni-zaverka-SL23.pdf", "sbirka-listin/blackfish/2025-ucetni-zaverka-SL23.txt"] },
     "SRC-20": { "authority": "DIA — Registr smluv", "official": true, "primary": "primary", "licensing": "official register output; result pages preserved", "publication": "OFFICIAL_PUBLIC", "artifactTags": ["registr-smluv:able-cz-contracts", "registr-smluv:blackfish-contracts"] },
     "SRC-21": { "authority": "Ministerstvo spravedlnosti — ISIR", "official": true, "primary": "primary", "licensing": "official register — provider failure (HTTP 500), no result to preserve", "publication": "BLOCKED", "artifactTags": [] },
-    "SRC-22": { "authority": "CzechCrunch (cc.cz)", "official": false, "primary": "secondary", "licensing": "referenced media; URL lost by the earlier pass, no artifact", "publication": "METADATA_ONLY", "artifactTags": [] }
+    "SRC-22": { "authority": "CzechCrunch (cc.cz)", "official": false, "primary": "secondary", "licensing": "copyrighted article; hash + headers preserved 2026-07-18, body not stored (URL recovered from DATA_PROVENANCE.md during the adversarial audit)", "publication": "METADATA_ONLY", "artifactTags": ["media:cc-investment-2023"] }
   },
 
   "documentSpans": [
@@ -147,7 +147,7 @@
     "CLM-53": [{ "selector": "EVD-ARES-ABLE-SHAREHOLDERS", "relation": "CONTEXTUALIZES" }],
     "CLM-54": [{ "selector": "EVD-ARES-ABLE-SHAREHOLDERS", "relation": "SUPPORTS" }, { "selector": "EVD-ARES-CAPITAL", "relation": "SUPPORTS" }],
     "CLM-55": [{ "selector": "EVD-ARES-5326G", "relation": "SUPPORTS" }, { "selector": "EVD-ARES-ABLE-SHAREHOLDERS", "relation": "SUPPORTS" }],
-    "CLM-56": [{ "selector": "EVD-ARES-5326G", "relation": "CONTEXTUALIZES" }, { "sourceId": "SRC-22", "relation": "SOURCE_OF_ASSERTION", "note": "the media claim; URL lost by earlier pass" }],
+    "CLM-56": [{ "selector": "EVD-ARES-5326G", "relation": "CONTEXTUALIZES" }, { "sourceId": "SRC-22", "relation": "SOURCE_OF_ASSERTION", "artifactTag": "media:cc-investment-2023", "note": "the media claim; article re-fetched and hash-preserved 2026-07-18" }],
     "CLM-57": [{ "sourceId": "SRC-20", "relation": "SUPPORTS", "artifactTag": "registr-smluv:able-cz-contracts" }, { "sourceId": "SRC-20", "relation": "SUPPORTS", "artifactTag": "registr-smluv:blackfish-contracts" }],
     "CLM-58": [{ "sourceId": "SRC-21", "relation": "SOURCE_OF_ASSERTION", "note": "provider failure evidence lives in provider-runs.ndjson (HTTP 500)" }]
   }

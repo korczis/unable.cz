@@ -8,8 +8,8 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
     "note": "Derived and verified from preserved, hashed artifacts; nothing added.",
-    "count": 69,
-    "totalBytes": 4088059
+    "count": 70,
+    "totalBytes": 4237099
   },
   "artifacts": [
     {
@@ -1182,6 +1182,23 @@
       "pubClass": "METADATA_ONLY",
       "legacy": false,
       "providerRunId": "run-20260718-c-001",
+      "download": null,
+      "downloadNote": "body not stored (copyrighted third-party content; this repository is public) — hash, size and HTTP metadata are the retrieval proof"
+    },
+    {
+      "id": "ART-c8e1f8870a4c",
+      "sha256": "c8e1f8870a4ceb28803d4dc27c1ae31180218b71114bce3ffef29bfc40f6a761",
+      "bytes": 149040,
+      "mime": "text/html",
+      "url": "https://cc.cz/od-hrani-her-pres-slevove-portaly-k-vyvojarske-agenture-s-valuaci-80-milionu-able-ma-ted-noveho-investora/",
+      "retrievedAt": "2026-07-18T06:40:33.351Z",
+      "httpStatus": 200,
+      "sourceId": "SRC-22",
+      "entity": "cc-investment-2023",
+      "tag": "media",
+      "pubClass": "METADATA_ONLY",
+      "legacy": false,
+      "providerRunId": "run-20260718-d-001",
       "download": null,
       "downloadNote": "body not stored (copyrighted third-party content; this repository is public) — hash, size and HTTP metadata are the retrieval proof"
     }

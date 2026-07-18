@@ -8,8 +8,8 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
     "note": "Derived and verified from preserved, hashed artifacts; nothing added.",
-    "count": 107,
-    "ok": 101
+    "count": 108,
+    "ok": 102
   },
   "runs": [
     {
@@ -1723,6 +1723,22 @@
       "sha256": "e247b33279a765a4a6c7c4602a25836e7c160f6515eaf8aa51cf376bb6de1ea2",
       "outcome": "ok",
       "note": "body hashed but not stored: third-party site; repo is public. Short quotations recorded in extraction."
+    },
+    {
+      "runId": "run-20260718-d-001",
+      "batch": "run-20260718-d",
+      "tag": "media",
+      "entity": "cc-investment-2023",
+      "sourceId": "SRC-22",
+      "url": "https://cc.cz/od-hrani-her-pres-slevove-portaly-k-vyvojarske-agenture-s-valuaci-80-milionu-able-ma-ted-noveho-investora/",
+      "method": "GET",
+      "startedAt": "2026-07-18T06:40:33.351Z",
+      "finishedAt": "2026-07-18T06:40:33.351Z",
+      "httpStatus": 200,
+      "bytes": 149040,
+      "sha256": "c8e1f8870a4ceb28803d4dc27c1ae31180218b71114bce3ffef29bfc40f6a761",
+      "outcome": "ok",
+      "note": "body hashed but not stored: copyrighted third-party content; repo is public. URL recovered from DATA_PROVENANCE.md S-06 during the adversarial audit."
     }
   ]
 }

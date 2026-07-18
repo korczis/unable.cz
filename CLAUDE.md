@@ -16,10 +16,16 @@ The short version, if you read nothing else:
   `config.toml`'s `base_url` is the only place the host is named.
 - Run `npm run verify` (build + evidence-integrity gate + SEO validate + test)
   before committing. The dossier data pipeline is
-  `dossier.json → export.mjs → derive.mjs → cadastre.mjs → planner.mjs → validate.mjs`; the epistemic
+  `dossier.json → export.mjs → evidence.mjs → derive.mjs → cadastre.mjs → planner.mjs → validate.mjs`; the epistemic
   projections (coverage/gaps/hypotheses/frontier) are **derived, never
   hand-authored**, and each row must trace back via `derivedFrom`. See
   `docs/dossier/depth/`.
+- The **evidence layer** is verified at build: every material claim links to a
+  preserved, SHA-256-hashed artifact via `data/dossier/able/evidence.json` +
+  `cases/DD-Able-CZ-2026-07-17/` (append-only manifests + provider-run
+  ledger). Never claim an artifact was retrieved unless it exists and hashes;
+  a provider failure is `BLOCKED`, never `NOT_FOUND`; mirrors of one upstream
+  never count as independent corroboration. See `docs/dossier/evidence/`.
 - Never bump `reviewed_at` without actually re-checking the sources.
 - `/dossier/` is a **public-source due diligence of Able.cz s.r.o. (IČO
   24278815)** — authorized by the owner on the record (2026-07-17). That scope

@@ -41,11 +41,42 @@ Passive, public measurements — no scanning, no authentication.
 These are `VERIFIED_PRIMARY` technical observations, surfaced in the graph's
 Technical mode (`domain → hosting / email / TLS`) and the identity table.
 
-## Not performed in this pass
-- **Collection of Deeds (Sbírka listin)** — filed financial statements not
-  retrieved; revenue/result/assets/headcount left `NOT_FOUND` (not estimated).
+## 2026-07-18 — evidence-completion pass (preserved, hashed, verified)
+
+The retrieval surface above was superseded by a preserved-artifact layer; this
+file's earlier "not performed" note about Sbírka listin was itself stale (the
+statements were retrieved later on 2026-07-17) — see CORRECTIONS.md.
+
+- **ARES basic + full-register (VR) JSON for all 19 in-scope entities** —
+  official REST API; 40 artifacts + 4 IČO-search results preserved
+  content-addressed (SHA-256) under
+  `cases/DD-Able-CZ-2026-07-17/artifacts/`, machine-extracted into 453
+  assertions. This replaced every mirror-backed register fact with primary
+  evidence and surfaced material corrections (see CORRECTIONS.md).
+- **Sbírka listin** — Able.cz FY2024 statement + two execution filings + two
+  Blackfish statements preserved with text extractions; every financial metric
+  now cites its exact statement row.
+- **Registr smluv** — party search for both IČOs executed and preserved: zero
+  published contracts (a true NOT_FOUND).
+- **able.cz snapshots** (home, /en/, /legal/gdpr) preserved with hashes;
+  marketing claims cite verbatim passages in the snapshots.
+- **Media** (Forbes, CzechCrunch ×3) — SHA-256 + HTTP metadata preserved as
+  retrieval proof; bodies not stored (copyright; public repo).
+- **ISIR** — retried, HTTP 500 again → status **BLOCKED** (the earlier
+  NOT_FOUND classification was wrong and is corrected).
+- **LinkedIn** — not fetched (terms prohibit automated retrieval); recorded
+  as a blocked run.
+
+Every retrieval — success or failure — is in
+`cases/DD-Able-CZ-2026-07-17/provider-runs.ndjson`; the public projections
+live under `static/data/able-cz/evidence/` and are verified at build time
+(hashes, exact citations, publication classes). See
+`docs/dossier/evidence/` for the full documentation set.
+
+## Not performed (still)
 - **EU/CZ sanctions & PEP screening** — not systematically run; flagged as an
   open question rather than asserted as clear.
+- **Grant/subsidy registers and Hlídač státu API** — not queried.
 
 ## The one contradiction
 `CON-01` — court file: **C 85424** (company GDPR page, S-03) vs **C 85425**

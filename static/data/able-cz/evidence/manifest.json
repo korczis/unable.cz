@@ -23,8 +23,8 @@
   "counts": {
     "sources": 22,
     "families": 9,
-    "artifacts": 69,
-    "providerRuns": 107,
+    "artifacts": 70,
+    "providerRuns": 108,
     "spans": 18,
     "assertions": 453,
     "liveClaims": 49,

@@ -460,7 +460,7 @@
     {
       "id": "TASK-GAP-11",
       "target": "identity",
-      "question": "The exact URL of the 2023 CzechCrunch investment article (SRC-22) — retrieved by the first pass, URL not recorded; and whether the media-reported 'Point FM' investment was executed via 5326G s.r.o. (CLM-56).",
+      "question": "Whether the media-reported 'Point FM' investment (SRC-22, recovered and preserved 2026-07-18) was executed via 5326G s.r.o. — the Kříž-majority register vehicle — or another route (CLM-56).",
       "reason": "Otevřená mezera v evidenci (open_question) v dimenzi identity.",
       "expectedInformationGain": "low",
       "recommendedSource": null,

@@ -1444,8 +1444,9 @@
       },
       {
         "relation": "SOURCE_OF_ASSERTION",
-        "note": "the media claim; URL lost by earlier pass",
-        "sourceId": "SRC-22"
+        "note": "the media claim; article re-fetched and hash-preserved 2026-07-18",
+        "sourceId": "SRC-22",
+        "artifactId": "ART-c8e1f8870a4c"
       }
     ],
     "CLM-57": [

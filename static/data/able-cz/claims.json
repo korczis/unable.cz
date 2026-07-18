@@ -440,7 +440,7 @@
         "SRC-22",
         "SRC-06"
       ],
-      "note": "The underlying CzechCrunch article's URL was not recorded by the earlier pass (SRC-22); an attempt to corroborate via Point FM's own site failed (JS-rendered page, no readable content — see provider runs)."
+      "note": "The article was re-fetched and hash-preserved 2026-07-18 (it names Point FM, Kříž, the 80M valuation and a five-percent stake); an attempt to corroborate via Point FM's own site failed (JS-rendered page, no readable content — see provider runs)."
     },
     {
       "id": "CLM-57",
