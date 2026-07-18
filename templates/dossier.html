@@ -40,6 +40,10 @@
       <div class="flex justify-between gap-4 sm:justify-start"><dt class="text-white/50">Zdroje</dt><dd class="text-white/90">{{ d.sources | length }} veřejných</dd></div>
     </dl>
 
+    {#- Investigation cockpit: executive overview strip (progressive enhancement,
+        populated by cockpit.js from the embedded #dossier-data; empty with JS off). -#}
+    <div id="cockpit-overview" class="js-only"></div>
+
     <article class="format format-invert lg:format-lg mt-8 max-w-none">
       {{ page.content | safe }}
     </article>
@@ -639,4 +643,5 @@
 <script src="{{ get_url(path='js/p5.min.js', cachebust=true) | safe }}" defer></script>
 <script src="{{ get_url(path='js/dossier.js', cachebust=true) | safe }}" defer></script>
 <script src="{{ get_url(path='js/graph.js', cachebust=true) | safe }}" defer></script>
+<script src="{{ get_url(path='js/cockpit.js', cachebust=true) | safe }}" defer></script>
 {% endblock scripts %}

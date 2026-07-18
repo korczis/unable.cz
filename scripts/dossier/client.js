@@ -320,7 +320,7 @@
             if (l.note) box.appendChild(el("p", "mt-1 text-xs text-white/50", l.note));
             var dl = el("dl", "mt-2 text-xs");
             if (l.span) {
-              box.insertBefore(heading("Přesná pasáž — " + l.span.document + ", s. " + l.span.page), dl);
+              box.appendChild(heading("Přesná pasáž — " + l.span.document + ", s. " + l.span.page));
               var q = el("blockquote", "mt-1 border-l-2 border-[#d4af37]/60 pl-3 font-mono text-xs text-white/80", l.span.exactText);
               box.appendChild(q);
               kv(dl, "Sekce / řádek", l.span.section + " · " + l.span.row);
