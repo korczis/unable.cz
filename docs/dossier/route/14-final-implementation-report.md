@@ -1,4 +1,10 @@
-# 14 — Investigation cockpit: final report
+# 14 — Investigation cockpit: implementation report (passes 1–2)
+
+> **Superseded by [17 — final report](17-final-report.md)**, which consolidates
+> the full cockpit (overview, navigator, inspector, search, graph-sync, financial
+> drill-down, lens, comparison, timeline) with deployed status. This file records
+> passes 1–2 (overview + navigator + deep-links, then inspector + search) and is
+> kept as the build trail.
 
 **Pass:** cockpit layer for `/dossier/` · **Date:** 2026-07-18 · **Branch:**
 `main`. Status labels: **IMPLEMENTED / VALIDATED / PARTIAL / NOT IMPLEMENTED**.
