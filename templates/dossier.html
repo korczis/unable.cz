@@ -351,6 +351,86 @@
       </div>
     </section>
 
+    {# ============ Source independence & relationship verification ============ #}
+    {%- set pdiv = load_data(path="static/data/able-cz/planner/diversity.json") -%}
+    {%- set pverif = load_data(path="static/data/able-cz/planner/verification.json") -%}
+    {%- set psrc = load_data(path="static/data/able-cz/planner/sources.json") -%}
+    <section class="mt-16" aria-labelledby="ind-title">
+      <h2 id="ind-title" class="font-sans text-2xl font-black text-white">Nezávislost zdrojů a ověření</h2>
+      <p class="mt-2 text-sm text-white/60">
+        Nezávislé potvrzení se počítá podle <strong>odlišných autorit</strong>, ne
+        podle počtu záznamů. Dvě zrcadla téhož rejstříku (kurzy.cz, Hlídač státu)
+        jsou <strong>jedna</strong> autorita, ne dvě — <span class="font-mono">CORROBORATED</span>
+        u nich neznamená nezávislé potvrzení. Z {{ pdiv._export.count }} tvrzení jich
+        <strong>{{ pdiv._export.monoculture }}</strong> stojí na jediné autoritě
+        a <strong>{{ pdiv._export.companyControlledOnly }}</strong> jen na vlastních
+        stránkách firmy. To je poctivý strop veřejné evidence, ne skrytá slabina.
+      </p>
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <caption class="sr-only">Materiální tvrzení a nezávislost jejich zdrojů.</caption>
+          <thead>
+            <tr class="border-b border-white/20 text-white/60">
+              <th scope="col" class="py-2 pr-4 font-medium">Tvrzení</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Stav</th>
+              <th scope="col" class="py-2 pr-4 text-right font-medium">Zdrojů</th>
+              <th scope="col" class="py-2 pr-4 text-right font-medium">Nezáv. autorit</th>
+              <th scope="col" class="py-2 font-medium">Poznámka</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for c in pdiv.claims %}{% if c.materiality != "low" %}
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4 font-mono text-white/40">{{ c.claim }}</td>
+              <td class="py-2 pr-4 whitespace-nowrap {% if c.epistemicState == 'VERIFIED_PRIMARY' or c.epistemicState == 'CORROBORATED' %}text-[#f3e5c0]{% elif c.epistemicState == 'CONTRADICTED' %}text-[#d4af37]{% else %}text-white/50{% endif %}">{{ c.epistemicState }}</td>
+              <td class="py-2 pr-4 text-right tabular-nums text-white/70">{{ c.sourceRecords }}</td>
+              <td class="py-2 pr-4 text-right tabular-nums {% if c.monoculture %}text-[#d4af37]{% else %}text-[#f3e5c0]{% endif %}">{{ c.independentUpstreams }}{% if c.primaryDirectCount %} <span class="text-white/30">(+{{ c.primaryDirectCount }} prim.)</span>{% endif %}</td>
+              <td class="py-2 text-white/50">{{ c.note | default(value="—") }}</td>
+            </tr>
+            {% endif %}{%- endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="mt-8 font-sans text-lg font-bold text-white">Stav ověření vztahů</h3>
+      <p class="mt-1 text-sm text-white/60">
+        Žádná hrana v grafu nesmí vypadat jistěji než její evidence. Rozdělení
+        {{ pverif._export.count }} vztahů podle stavu ověření:
+      </p>
+      <dl class="mt-3 grid grid-cols-2 gap-x-6 gap-y-1 text-sm sm:grid-cols-3">
+        {%- for k, v in pverif._export.byState %}
+        <div class="flex justify-between gap-3 border-b border-white/10 py-1"><dt class="text-white/50">{{ k }}</dt><dd class="tabular-nums text-white/90">{{ v }}</dd></div>
+        {%- endfor %}
+      </dl>
+
+      <h3 class="mt-8 font-sans text-lg font-bold text-white">Registr zdrojů</h3>
+      <div class="mt-3 overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <caption class="sr-only">Zdroje podle třídy, autority a nezávislosti.</caption>
+          <thead>
+            <tr class="border-b border-white/20 text-white/60">
+              <th scope="col" class="py-2 pr-4 font-medium">ID</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Třída</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Autorita (upstream)</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Nezávislost</th>
+              <th scope="col" class="py-2 text-right font-medium">Tvrzení</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for s in psrc.sources %}
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4 font-mono text-white/40">{{ s.id }}</td>
+              <td class="py-2 pr-4 text-white/70">{{ s.class }}</td>
+              <td class="py-2 pr-4 font-mono text-white/60">{{ s.upstream }}</td>
+              <td class="py-2 pr-4 whitespace-nowrap {% if s.independence == 'independent_origin' %}text-[#f3e5c0]{% else %}text-white/50{% endif %}">{{ s.independence }}</td>
+              <td class="py-2 text-right tabular-nums text-white/70">{{ s.claimsSupported | length }}</td>
+            </tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
     {# ============ Addresses & spatial context ============ #}
     {%- set cad = load_data(path="static/data/able-cz/cadastre/addresses.json") -%}
     {%- set cadcov = load_data(path="static/data/able-cz/cadastre/coverage.json") -%}

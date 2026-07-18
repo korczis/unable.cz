@@ -1,0 +1,814 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "relationship-verification",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Investigation-planner projection. Derived from sourced records; ordinal/ASSESSED only; nothing invented. Source independence is counted by distinct upstream authority, not by source record.",
+    "count": 48,
+    "byState": {
+      "verified": 7,
+      "source_claimed": 9,
+      "partially_verified": 3,
+      "contradicted": 4,
+      "unverified": 3,
+      "single_upstream": 22
+    }
+  },
+  "verification": [
+    {
+      "edge": "e1",
+      "from": "faraga",
+      "to": "able",
+      "label": "statutory officer + shareholder",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "verificationState": "verified",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-03"
+      ]
+    },
+    {
+      "edge": "e2",
+      "from": "melicharek",
+      "to": "able",
+      "label": "statutory officer + shareholder",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "verificationState": "verified",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-03"
+      ]
+    },
+    {
+      "edge": "e3",
+      "from": "juhanak",
+      "to": "able",
+      "label": "shareholder",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "verificationState": "verified",
+      "independentUpstreams": 2,
+      "upstreams": [
+        "cz_register",
+        "able_cz"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-03",
+        "SRC-02"
+      ]
+    },
+    {
+      "edge": "e13",
+      "from": "polansky",
+      "to": "able",
+      "label": "supervisory board",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "verificationState": "verified",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-03"
+      ]
+    },
+    {
+      "edge": "e14",
+      "from": "zenx",
+      "to": "able",
+      "label": "shareholder (111 620 CZK)",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "verificationState": "verified",
+      "independentUpstreams": 2,
+      "upstreams": [
+        "cz_register",
+        "linkedin"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-03",
+        "SRC-06"
+      ]
+    },
+    {
+      "edge": "e15",
+      "from": "g5326",
+      "to": "able",
+      "label": "shareholder (9 975 CZK)",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "verificationState": "verified",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-03"
+      ]
+    },
+    {
+      "edge": "e16",
+      "from": "pointfm",
+      "to": "able",
+      "label": "investor ~5% (2023, media)",
+      "epistemicState": "SELF_REPORTED",
+      "verificationState": "source_claimed",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "linkedin"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-06"
+      ]
+    },
+    {
+      "edge": "e4",
+      "from": "grolig",
+      "to": "able",
+      "label": "marketing CTO (not in register)",
+      "epistemicState": "SELF_REPORTED",
+      "verificationState": "source_claimed",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-02"
+      ]
+    },
+    {
+      "edge": "e5",
+      "from": "able",
+      "to": "blackfish",
+      "label": "acquired 100%",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "partially_verified",
+      "independentUpstreams": 2,
+      "upstreams": [
+        "forbes",
+        "czechcrunch"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "edge": "e6",
+      "from": "schlesinger",
+      "to": "blackfish",
+      "label": "founder",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "partially_verified",
+      "independentUpstreams": 2,
+      "upstreams": [
+        "forbes",
+        "czechcrunch"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "edge": "e7",
+      "from": "schlesinger",
+      "to": "able",
+      "label": "leads business strategy",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "partially_verified",
+      "independentUpstreams": 2,
+      "upstreams": [
+        "forbes",
+        "czechcrunch"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "edge": "e17",
+      "from": "domain",
+      "to": "able",
+      "label": "operated by",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "verificationState": "source_claimed",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-02",
+        "SRC-01"
+      ]
+    },
+    {
+      "edge": "e18",
+      "from": "able",
+      "to": "ksbr",
+      "label": "registered — C 85425",
+      "epistemicState": "CONTRADICTED",
+      "verificationState": "contradicted",
+      "independentUpstreams": 2,
+      "upstreams": [
+        "cz_register",
+        "able_cz"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-03",
+        "SRC-01"
+      ]
+    },
+    {
+      "edge": "e19",
+      "from": "domain",
+      "to": "hosting",
+      "label": "resolves via (A 31.43.160.6)",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "verificationState": "unverified",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "dns"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-07"
+      ]
+    },
+    {
+      "edge": "e20",
+      "from": "domain",
+      "to": "gwork",
+      "label": "email via (MX)",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "verificationState": "unverified",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "dns"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-07"
+      ]
+    },
+    {
+      "edge": "e21",
+      "from": "domain",
+      "to": "tls",
+      "label": "TLS issued by",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "verificationState": "unverified",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "crtsh"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-09"
+      ]
+    },
+    {
+      "edge": "e8",
+      "from": "able",
+      "to": "aaa",
+      "label": "named client",
+      "epistemicState": "SELF_REPORTED",
+      "verificationState": "source_claimed",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-02"
+      ]
+    },
+    {
+      "edge": "e9",
+      "from": "able",
+      "to": "aures",
+      "label": "named client",
+      "epistemicState": "SELF_REPORTED",
+      "verificationState": "source_claimed",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-02"
+      ]
+    },
+    {
+      "edge": "e10",
+      "from": "able",
+      "to": "arkadia",
+      "label": "named client",
+      "epistemicState": "SELF_REPORTED",
+      "verificationState": "source_claimed",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-02"
+      ]
+    },
+    {
+      "edge": "e11",
+      "from": "able",
+      "to": "encall",
+      "label": "named client",
+      "epistemicState": "SELF_REPORTED",
+      "verificationState": "source_claimed",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-02"
+      ]
+    },
+    {
+      "edge": "e12",
+      "from": "able",
+      "to": "tastetown",
+      "label": "named client",
+      "epistemicState": "SELF_REPORTED",
+      "verificationState": "source_claimed",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-02"
+      ]
+    },
+    {
+      "edge": "e22",
+      "from": "petr_faraga",
+      "to": "able",
+      "label": "shareholder (~0.5%, since 29 Jul 2025)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "edge": "e23",
+      "from": "jakub_kaman",
+      "to": "able",
+      "label": "shareholder (2,437 CZK)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "edge": "e24",
+      "from": "faraga",
+      "to": "mindee",
+      "label": "jednatel (since 2 May 2024)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e25",
+      "from": "faraga",
+      "to": "era25",
+      "label": "jednatel + 39.5% (since 23 Aug 2025)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e26",
+      "from": "faraga",
+      "to": "verzuz",
+      "label": "jednatel (since 22 Dec 2025)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e27",
+      "from": "faraga",
+      "to": "fame_logistics",
+      "label": "jednatel + společník + likvidátor",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e28",
+      "from": "melicharek",
+      "to": "fame_logistics",
+      "label": "jednatel + společník (33%)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e29",
+      "from": "melicharek",
+      "to": "mmplan",
+      "label": "sole jednatel + 100% (since 4 Jul 2013)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e30",
+      "from": "petr_faraga",
+      "to": "fame_logistics",
+      "label": "jednatel + 34% (since 23 Aug 2013)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e31",
+      "from": "petr_faraga",
+      "to": "fame_trade",
+      "label": "jednatel + společník, exited 2020",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e32",
+      "from": "faraga",
+      "to": "fame_trade",
+      "label": "jednatel + společník, exited 2020",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e33",
+      "from": "petr_faraga",
+      "to": "fama_media",
+      "label": "sole jednatel + 100% (since 14 Oct 2015)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10",
+        "SRC-14"
+      ]
+    },
+    {
+      "edge": "e34",
+      "from": "juhanak",
+      "to": "onelabel",
+      "label": "jednatel + stake (disputed — see CON-02)",
+      "epistemicState": "CONTRADICTED",
+      "verificationState": "contradicted",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e35",
+      "from": "jakub_kaman",
+      "to": "onelabel",
+      "label": "jednatel + 36% (since 2014, disputed — see CON-02)",
+      "epistemicState": "CONTRADICTED",
+      "verificationState": "contradicted",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e36",
+      "from": "ondrej_kaman",
+      "to": "onelabel",
+      "label": "jednatel + 34% (since 23 Feb 2022, disputed — see CON-02)",
+      "epistemicState": "CONTRADICTED",
+      "verificationState": "contradicted",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e37",
+      "from": "grolig",
+      "to": "bgo",
+      "label": "ex-jednatel + 33.3% (terminated 2 Apr 2026)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e38",
+      "from": "grolig",
+      "to": "usporix",
+      "label": "jednatel + 25%",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e39",
+      "from": "grolig",
+      "to": "verasto",
+      "label": "role unconfirmed (home-address match)",
+      "epistemicState": "SELF_REPORTED",
+      "verificationState": "source_claimed",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e40",
+      "from": "faraga",
+      "to": "blackfish",
+      "label": "jednatel (added 28 Jul 2025)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "edge": "e41",
+      "from": "schlesinger",
+      "to": "able",
+      "label": "shareholder (since 29 Jul 2025)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "edge": "e42",
+      "from": "schlesinger",
+      "to": "ventoux",
+      "label": "🚩 undisclosed společník (since 22 Sep 2025)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "edge": "e43",
+      "from": "schlesinger",
+      "to": "schlesinger_sro",
+      "label": "sole jednatel + 100% (since 18 Dec 2023)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e44",
+      "from": "schlesinger",
+      "to": "artstay_lovs",
+      "label": "jednatel/společník (2021–2024)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "edge": "e45",
+      "from": "schlesinger",
+      "to": "mysasy",
+      "label": "board member (May 2022–Mar 2023)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10"
+      ]
+    },
+    {
+      "edge": "e46",
+      "from": "oslzla",
+      "to": "blackfish",
+      "label": "jednatel + společník (Jun 2022–Feb 2024)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "edge": "e47",
+      "from": "oslzla",
+      "to": "artstay_lovs",
+      "label": "jednatel (2021–) + 100% společník (since Jun 2022, current)",
+      "epistemicState": "CORROBORATED",
+      "verificationState": "single_upstream",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": false,
+      "sources": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "edge": "e48",
+      "from": "melicharek",
+      "to": "exekuce-melicharek",
+      "label": "exekuce podílu (uzavřena, vymoženo)",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "verificationState": "verified",
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "hasPrimaryDirect": true,
+      "sources": [
+        "SRC-16",
+        "SRC-17"
+      ]
+    }
+  ]
+}

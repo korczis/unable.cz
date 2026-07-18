@@ -16,7 +16,7 @@ The short version, if you read nothing else:
   `config.toml`'s `base_url` is the only place the host is named.
 - Run `npm run verify` (build + evidence-integrity gate + SEO validate + test)
   before committing. The dossier data pipeline is
-  `dossier.json → export.mjs → derive.mjs → validate.mjs`; the epistemic
+  `dossier.json → export.mjs → derive.mjs → cadastre.mjs → planner.mjs → validate.mjs`; the epistemic
   projections (coverage/gaps/hypotheses/frontier) are **derived, never
   hand-authored**, and each row must trace back via `derivedFrom`. See
   `docs/dossier/depth/`.

@@ -178,7 +178,7 @@ npm run verify   # build + validate + test
 | Command | Purpose |
 |---|---|
 | `npm run dev` | Local server on :1111 |
-| `npm run data:build` | Regenerate public exports: `export.mjs` (lossless reshape) + `derive.mjs` (epistemic projections). |
+| `npm run data:build` | Regenerate public exports: `export.mjs` (reshape) + `derive.mjs` (epistemic projections) + `cadastre.mjs` (address layer) + `planner.mjs` (source intelligence). |
 | `npm run data:validate` | Evidence-integrity gate (`validate.mjs`): sources, privacy/PII, derived-record provenance. |
 | `npm run verify` | **Build + data:validate + seo:validate + test.** Run before every commit. |
 | `npm run seo:validate` | Errors fail; warnings report |

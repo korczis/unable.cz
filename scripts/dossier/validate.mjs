@@ -175,6 +175,54 @@ for (const f of ["cadastre/addresses.json", "cadastre/coverage.json", "cadastre/
   if (existsSync(p) && RODNE_CISLO.test(readFileSync(p, "utf8"))) err("PII_BIRTH_NUMBER", `${f} contains a rodné-číslo-shaped token`);
 }
 
+// ---------------------------------------------------------------------------
+// GATE 9 — investigation planner + source independence. The planner must not
+// count copies as independent confirmations, must not present a monoculture
+// claim as independently corroborated, every task must trace to a gap/
+// contradiction and carry an information-gain class, and every question must
+// have a task.
+// ---------------------------------------------------------------------------
+const pSources = loadOut("planner/sources.json");
+const pDiversity = loadOut("planner/diversity.json");
+const pTasks = loadOut("planner/tasks.json");
+const pQuestions = loadOut("planner/questions.json");
+const pVerif = loadOut("planner/verification.json");
+const EIG_SET = new Set(["very_low", "low", "moderate", "high", "very_high"]);
+
+if (pSources) {
+  for (const s of pSources.sources || []) {
+    if (!srcIds.has(s.id)) err("PLAN_SRC_UNKNOWN", `source registry has unknown ${s.id}`);
+    if (!s.upstream || s.upstream === "unknown") warn("PLAN_SRC_NO_UPSTREAM", `${s.id} has no upstream authority`);
+  }
+}
+if (pDiversity) {
+  for (const c of pDiversity.claims || []) {
+    // A copy can never add an independent upstream.
+    if (c.independentUpstreams > c.sourceRecords) err("PLAN_DIV_IMPOSSIBLE", `${c.claim} claims more upstreams (${c.independentUpstreams}) than source records (${c.sourceRecords})`);
+    // A monoculture CORROBORATED claim must be flagged honestly, never shown as independent corroboration.
+    if (c.monoculture && c.epistemicState === "CORROBORATED" && !c.note) err("PLAN_MONOCULTURE_UNFLAGGED", `${c.claim} is single-upstream CORROBORATED but carries no independence caveat`);
+  }
+}
+if (pTasks) {
+  const taskIds = new Set((pTasks.tasks || []).map((t) => t.id));
+  for (const t of pTasks.tasks || []) {
+    if (!EIG_SET.has(t.expectedInformationGain)) err("PLAN_TASK_NO_EIG", `${t.id} has bad information-gain "${t.expectedInformationGain}"`);
+    for (const ref of t.derivedFrom || []) if (!knownDerivedRefs.has(ref)) err("PLAN_TASK_ORPHAN", `${t.id} derives from unknown ${ref}`);
+    if (!t.derivedFrom || !t.derivedFrom.length) err("PLAN_TASK_NO_ORIGIN", `${t.id} has no originating gap/contradiction`);
+    if (!t.whyRanked) err("PLAN_TASK_NO_WHY", `${t.id} has no ranking rationale`);
+  }
+  if (pQuestions) {
+    for (const q of pQuestions.questions || []) {
+      if (q.linkedTask && !taskIds.has(q.linkedTask)) err("PLAN_Q_NO_TASK", `question ${q.id} → missing task ${q.linkedTask}`);
+    }
+  }
+}
+if (pVerif) {
+  for (const v of pVerif.verification || []) {
+    if (v.independentUpstreams > (v.sources || []).length) err("PLAN_VERIF_IMPOSSIBLE", `${v.edge} claims more upstreams than sources`);
+  }
+}
+
 // ---- report ---------------------------------------------------------------
 if (JSON_MODE) {
   console.log(JSON.stringify({ ok: errors.length === 0, errors, warnings }, null, 2));

@@ -1,0 +1,474 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "source-diversity",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "independentUpstreams počítá odlišné autority, ne kopie. cz_register = jedna autorita, ať přes rejstřík, agregátor či Sbírku listin.",
+    "count": 27,
+    "monoculture": 24,
+    "companyControlledOnly": 14
+  },
+  "claims": [
+    {
+      "claim": "CLM-01",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-01"
+      ]
+    },
+    {
+      "claim": "CLM-02",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "moderate",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-02"
+      ]
+    },
+    {
+      "claim": "CLM-03",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-03"
+      ]
+    },
+    {
+      "claim": "CLM-04",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-04"
+      ]
+    },
+    {
+      "claim": "CLM-05",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-05"
+      ]
+    },
+    {
+      "claim": "CLM-06",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-06"
+      ]
+    },
+    {
+      "claim": "CLM-07",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-07"
+      ]
+    },
+    {
+      "claim": "CLM-08",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-08"
+      ]
+    },
+    {
+      "claim": "CLM-09",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "moderate",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-09"
+      ]
+    },
+    {
+      "claim": "CLM-10",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-10"
+      ]
+    },
+    {
+      "claim": "CLM-11",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "moderate",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-11"
+      ]
+    },
+    {
+      "claim": "CLM-12",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-12"
+      ]
+    },
+    {
+      "claim": "CLM-13",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "low",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-13"
+      ]
+    },
+    {
+      "claim": "CLM-14",
+      "epistemicState": "CORROBORATED",
+      "materiality": "high",
+      "sourceRecords": 2,
+      "independentUpstreams": 2,
+      "upstreams": [
+        "forbes",
+        "czechcrunch"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": false,
+      "derivedFrom": [
+        "CLM-14"
+      ]
+    },
+    {
+      "claim": "CLM-15",
+      "epistemicState": "SELF_REPORTED",
+      "materiality": "moderate",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "able_cz"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": true,
+      "monoculture": true,
+      "note": "Pouze first-party zdroj (able.cz) — tvrzení firmy.",
+      "derivedFrom": [
+        "CLM-15"
+      ]
+    },
+    {
+      "claim": "CLM-16",
+      "epistemicState": "CORROBORATED",
+      "materiality": "high",
+      "sourceRecords": 2,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "note": "CORROBORATED přes více záznamů jediné autority (cz_register) — ne nezávislé potvrzení.",
+      "derivedFrom": [
+        "CLM-16"
+      ]
+    },
+    {
+      "claim": "CLM-17",
+      "epistemicState": "CORROBORATED",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "note": "CORROBORATED přes více záznamů jediné autority (cz_register) — ne nezávislé potvrzení.",
+      "derivedFrom": [
+        "CLM-17"
+      ]
+    },
+    {
+      "claim": "CLM-18",
+      "epistemicState": "CORROBORATED",
+      "materiality": "high",
+      "sourceRecords": 3,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "note": "CORROBORATED přes více záznamů jediné autority (cz_register) — ne nezávislé potvrzení.",
+      "derivedFrom": [
+        "CLM-18"
+      ]
+    },
+    {
+      "claim": "CLM-19",
+      "epistemicState": "CORROBORATED",
+      "materiality": "high",
+      "sourceRecords": 2,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "note": "CORROBORATED přes více záznamů jediné autority (cz_register) — ne nezávislé potvrzení.",
+      "derivedFrom": [
+        "CLM-19"
+      ]
+    },
+    {
+      "claim": "CLM-20",
+      "epistemicState": "CORROBORATED",
+      "materiality": "moderate",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "note": "CORROBORATED přes více záznamů jediné autority (cz_register) — ne nezávislé potvrzení.",
+      "derivedFrom": [
+        "CLM-20"
+      ]
+    },
+    {
+      "claim": "CLM-21",
+      "epistemicState": "CORROBORATED",
+      "materiality": "high",
+      "sourceRecords": 4,
+      "independentUpstreams": 3,
+      "upstreams": [
+        "cz_register",
+        "forbes",
+        "czechcrunch"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": false,
+      "derivedFrom": [
+        "CLM-21"
+      ]
+    },
+    {
+      "claim": "CLM-22",
+      "epistemicState": "CORROBORATED",
+      "materiality": "high",
+      "sourceRecords": 2,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "note": "CORROBORATED přes více záznamů jediné autority (cz_register) — ne nezávislé potvrzení.",
+      "derivedFrom": [
+        "CLM-22"
+      ]
+    },
+    {
+      "claim": "CLM-23",
+      "epistemicState": "CORROBORATED",
+      "materiality": "low",
+      "sourceRecords": 2,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "note": "CORROBORATED přes více záznamů jediné autority (cz_register) — ne nezávislé potvrzení.",
+      "derivedFrom": [
+        "CLM-23"
+      ]
+    },
+    {
+      "claim": "CLM-24",
+      "epistemicState": "CORROBORATED",
+      "materiality": "high",
+      "sourceRecords": 3,
+      "independentUpstreams": 2,
+      "upstreams": [
+        "cz_register",
+        "czechcrunch"
+      ],
+      "primaryDirectCount": 0,
+      "companyControlledOnly": false,
+      "monoculture": false,
+      "derivedFrom": [
+        "CLM-24"
+      ]
+    },
+    {
+      "claim": "CLM-25",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 1,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 1,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-25"
+      ]
+    },
+    {
+      "claim": "CLM-26",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 2,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 2,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-26"
+      ]
+    },
+    {
+      "claim": "CLM-27",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "materiality": "high",
+      "sourceRecords": 2,
+      "independentUpstreams": 1,
+      "upstreams": [
+        "cz_register"
+      ],
+      "primaryDirectCount": 2,
+      "companyControlledOnly": false,
+      "monoculture": true,
+      "derivedFrom": [
+        "CLM-27"
+      ]
+    }
+  ]
+}

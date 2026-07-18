@@ -1,0 +1,32 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "planner-manifest",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Investigation-planner projection. Derived from sourced records; ordinal/ASSESSED only; nothing invented. Source independence is counted by distinct upstream authority, not by source record."
+  },
+  "runHash": "e1b698de",
+  "stateFingerprint": {
+    "entities": 41,
+    "edges": 48,
+    "claims": 27,
+    "sources": 19,
+    "contradictions": 2,
+    "monocultureClaims": 24,
+    "verifiedEdges": 7
+  },
+  "baseline": true,
+  "changesSincePrevious": null,
+  "changeNote": "První běh plánovače — základní otisk stavu. Další běhy se porovnají proti runHash.",
+  "files": [
+    "sources.json",
+    "diversity.json",
+    "questions.json",
+    "tasks.json",
+    "verification.json"
+  ]
+}
