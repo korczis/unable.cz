@@ -45,3 +45,33 @@ test("every claim referenced by a node exists (inspector claim backlinks resolve
     }
   }
 });
+
+test("inspector wires financial drill-down over canonical financials", () => {
+  const js = read("scripts/dossier/inspector.js");
+  assert.ok(js.includes("finByMetric") && js.includes("fin-drill"), "financial index + drill affordance present");
+  assert.ok(js.includes("D.financials") || js.includes("F.financials") || js.includes("var F = D.financials"), "reads canonical financials");
+});
+
+test("every filed financial metric's sources resolve (drill-down never dead-ends)", () => {
+  const d = JSON.parse(read("data/dossier/able/dossier.json"));
+  const srcIds = new Set((d.sources || []).map((s) => s.id));
+  const f = d.financials || {};
+  for (const group of ["verified", "assessed", "selfReported"]) {
+    for (const m of f[group] || []) {
+      for (const s of m.sources || []) {
+        assert.ok(srcIds.has(s), `financial "${m.metric}" cites missing source ${s}`);
+      }
+    }
+  }
+});
+
+test("filed financial fact is kept separate from assessment", () => {
+  const d = JSON.parse(read("data/dossier/able/dossier.json"));
+  // A VERIFIED_PRIMARY filed figure carries a citation (the observed fact); any
+  // interpretation lives in `note`, never conflated into the citation.
+  for (const m of d.financials?.verified || []) {
+    if (m.note && m.citation) {
+      assert.notEqual(m.note, m.citation, `financial "${m.metric}" conflates fact and assessment`);
+    }
+  }
+});

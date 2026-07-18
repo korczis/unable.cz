@@ -35,6 +35,18 @@
   var nodeById = {}; ((D.graph && D.graph.nodes) || []).forEach(function (n) { nodeById[n.data.id] = n.data; });
   var edges = ((D.graph && D.graph.edges) || []).map(function (e) { return e.data; });
 
+  // Flat, stable index of every filed/self-reported/assessed financial metric,
+  // keyed for deep-linking (?fin=v3). The table shows metric/value/status only;
+  // the drill-down surfaces the source, exact filing citation, and evidence.
+  var FIN = [], finByKey = {}, finByMetric = {};
+  var F = D.financials || {};
+  [["verified", "v"], ["assessed", "a"], ["selfReported", "s"]].forEach(function (pair) {
+    (F[pair[0]] || []).forEach(function (m, i) {
+      var f = { key: pair[1] + i, group: pair[0], m: m };
+      FIN.push(f); finByKey[f.key] = f; finByMetric[m.metric] = f;
+    });
+  });
+
   function statusTone(s) {
     if (s === "VERIFIED_PRIMARY" || s === "CORROBORATED") return "good";
     if (s === "CONTRADICTED") return "warn";
@@ -155,6 +167,27 @@
       sec("Zdroje", srcs ? "<ul class='ix-list'>" + srcs + "</ul>" : "") +
       actions("entity", id);
   }
+  function renderFinancial(f) {
+    var m = f.m;
+    kindEl.textContent = "finanční údaj";
+    var srcs = (m.sources || []).map(function (s) { return "<li>" + srcLine(s) + "</li>"; }).join("");
+    // relate to the claim(s) that cite the same source, so the value isn't a dead end
+    var relClaims = (D.claims || []).filter(function (c) { return (c.sources || []).some(function (s) { return (m.sources || []).indexOf(s) !== -1; }) && /revenue|financ|zisk|result|assets|equity|liabilit|náklad|tržb|36,319|43,079/i.test(c.text || ""); }).map(function (c) { return c.id; });
+    body.innerHTML =
+      '<div class="ix-title">' + esc(m.display) + "</div>" +
+      "<div>" + badge(m.status) + "</div>" +
+      sec("Metrika", '<p class="ix-p">' + esc(m.metric) + "</p>") +
+      (m.citation ? sec("Přesné místo ve výkazu — pozorovaný fakt", '<p class="ix-p ix-mono">' + esc(m.citation) + "</p>") : "") +
+      (m.note ? sec("Posouzení (ne filed fakt)", '<p class="ix-p ix-dim">' + esc(m.note) + "</p>") : "") +
+      sec("Zdroje", srcs ? "<ul class='ix-list'>" + srcs + "</ul>" : "<p class='ix-p ix-dim'>—</p>") +
+      (m.evidence && m.evidence.length ? sec("Důkazní ID", "<p class='ix-p ix-mono'>" + esc(m.evidence.join(", ")) + "</p>") : "") +
+      (relClaims.length ? sec("Související tvrzení", "<ul class='ix-chips'>" + relClaims.map(function (x) { return "<li>" + recLink(x) + "</li>"; }).join("") + "</ul>") : "") +
+      '<div class="ix-actions">' +
+        '<button class="ix-b" data-act="graph" data-id="able">V grafu</button>' +
+        '<button class="ix-b" data-act="copyfin" data-id="' + esc(f.key) + '">Kopírovat odkaz</button>' +
+      "</div>";
+  }
+
   function notFound(id) { kindEl.textContent = "záznam · " + id; body.innerHTML = "<p class='ix-p ix-dim'>Záznam " + esc(id) + " není v datech.</p>" + actions("record", id); }
 
   function inspect(kind, id) {
@@ -182,10 +215,18 @@
   document.addEventListener("click", function (e) {
     var ent = e.target.closest("[data-entity]");
     if (ent) { e.preventDefault(); var id = ent.getAttribute("data-entity"); setEntityParam(id); inspect("entity", id); }
+    var fin = e.target.closest("[data-fin]");
+    if (fin && finByKey[fin.getAttribute("data-fin")]) { e.preventDefault(); openFinancial(finByKey[fin.getAttribute("data-fin")]); }
     var act = e.target.closest(".ix-b[data-act]");
     if (act) doAction(act.getAttribute("data-act"), act.getAttribute("data-id"), act.getAttribute("data-kind"));
   });
-  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && panel.getAttribute("aria-hidden") === "false") close(); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && panel.getAttribute("aria-hidden") === "false") close();
+    if ((e.key === "Enter" || e.key === " ") && e.target.hasAttribute && e.target.hasAttribute("data-fin") && finByKey[e.target.getAttribute("data-fin")]) { e.preventDefault(); openFinancial(finByKey[e.target.getAttribute("data-fin")]); }
+  });
+
+  function openFinancial(f) { if (!f) return; renderFinancial(f); open(); setFinParam(f.key); }
+  function setFinParam(k) { var u = new URL(window.location.href); ["claim", "source", "record", "entity"].forEach(function (p) { u.searchParams.delete(p); }); u.searchParams.set("fin", k); history.pushState({ fin: k }, "", u); }
 
   function doAction(act, id, kind) {
     if (act === "copy") {
@@ -193,6 +234,11 @@
       ["claim", "source", "record", "entity"].forEach(function (p) { u.searchParams.delete(p); });
       u.searchParams.set(kind === "entity" ? "entity" : kind === "source" ? "source" : kind === "claim" ? "claim" : "record", id);
       copy(u.toString());
+    } else if (act === "copyfin") {
+      var uf = new URL(window.location.href);
+      ["claim", "source", "record", "entity"].forEach(function (p) { uf.searchParams.delete(p); });
+      uf.searchParams.set("fin", id);
+      copy(uf.toString());
     } else if (act === "graph") {
       var h = document.getElementById("fig-graph-title"); if (h) (h.closest("section") || h).scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
       document.dispatchEvent(new CustomEvent("dossier:graph-focus-requested", { detail: { id: id } }));
@@ -205,7 +251,7 @@
 
   // ---- entity URL param (cockpit owns claim/source/record) ----------------
   function setEntityParam(id) { var u = new URL(window.location.href); ["claim", "source", "record"].forEach(function (p) { u.searchParams.delete(p); }); u.searchParams.set("entity", id); history.pushState({ entity: id }, "", u); }
-  function clearEntityParam() { var u = new URL(window.location.href); if (u.searchParams.has("entity")) { u.searchParams.delete("entity"); history.replaceState({}, "", u); } }
+  function clearEntityParam() { var u = new URL(window.location.href); if (u.searchParams.has("entity") || u.searchParams.has("fin")) { u.searchParams.delete("entity"); u.searchParams.delete("fin"); history.replaceState({}, "", u); } }
   function restoreEntity() { var id = new URL(window.location.href).searchParams.get("entity"); if (id && nodeById[id]) inspect("entity", id); }
   window.addEventListener("popstate", function () { var id = new URL(window.location.href).searchParams.get("entity"); if (id && nodeById[id]) inspect("entity", id); else if (panel.getAttribute("aria-hidden") === "false" && !new URL(location.href).searchParams.get("claim") && !new URL(location.href).searchParams.get("source") && !new URL(location.href).searchParams.get("record")) close(); });
 
@@ -264,12 +310,35 @@
   var toastEl;
   function toast(m) { if (!toastEl) { toastEl = el('<div class="ix-toast" role="status" aria-live="polite"></div>'); document.body.appendChild(toastEl); } toastEl.textContent = m; toastEl.classList.add("on"); clearTimeout(toastEl._t); toastEl._t = setTimeout(function () { toastEl.classList.remove("on"); }, 2200); }
 
+  // Make each filed financial value drillable: the table shows only
+  // metric/value/status, so clicking a value opens its source, exact filing
+  // citation, and the observed-fact/assessment split. Progressive enhancement
+  // over the server-rendered table — matched to canonical data by metric text.
+  (function enhanceFinancials() {
+    var h = document.getElementById("fin-title"); if (!h) return;
+    var section = h.closest("section"); if (!section) return;
+    section.querySelectorAll("tbody tr").forEach(function (tr) {
+      var cells = tr.querySelectorAll("td");
+      if (cells.length < 3) return;
+      var f = finByMetric[cells[0].textContent.trim()];
+      if (!f) return;
+      var val = cells[1];
+      val.classList.add("fin-drill");
+      val.setAttribute("data-fin", f.key);
+      val.setAttribute("role", "button");
+      val.setAttribute("tabindex", "0");
+      val.setAttribute("aria-label", "Zdroj a přesné místo ve výkazu: " + f.m.metric);
+    });
+  })();
+
   injectStyle();
   // Restore on load. cockpit.js dispatches its selection event before this
   // module's listeners exist (both defer, cockpit first), so open the panel
   // directly from the URL rather than relying on that event.
   (function restoreOnLoad() {
     var u = new URL(window.location.href);
+    var fin = u.searchParams.get("fin");
+    if (fin && finByKey[fin]) { renderFinancial(finByKey[fin]); open(); return; }
     var ent = u.searchParams.get("entity");
     if (ent && nodeById[ent]) { inspect("entity", ent); return; }
     var id = u.searchParams.get("claim") || u.searchParams.get("source") || u.searchParams.get("record");
@@ -307,7 +376,9 @@
       ".ix-sres{position:absolute;z-index:65;left:0;right:0;top:calc(100% + .25rem);list-style:none;margin:0;padding:.25rem;background:#0c0c0c;border:1px solid rgba(255,255,255,.16);border-radius:.5rem;max-height:52vh;overflow-y:auto;box-shadow:0 14px 34px rgba(0,0,0,.6)}" +
       ".ix-sr{display:grid;grid-template-columns:auto 1fr auto;gap:.5rem;align-items:baseline;padding:.4rem .5rem;border-radius:.35rem;cursor:pointer;font-size:.8rem}.ix-sr:hover,.ix-sr.is-sel{background:rgba(243,229,192,.12)}" +
       ".ix-sr-t{font-size:.58rem;text-transform:uppercase;letter-spacing:.04em;color:" + GOLD + "}.ix-sr-l{color:#e5e7eb;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ix-sr-id{color:rgba(255,255,255,.4)}" +
-      ".ix-toast{position:fixed;bottom:4.2rem;left:50%;transform:translateX(-50%);background:" + GOLD + ";color:#0a0a0a;font-size:.76rem;font-weight:600;padding:.4rem .8rem;border-radius:.4rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:80}.ix-toast.on{opacity:1}";
+      ".ix-toast{position:fixed;bottom:4.2rem;left:50%;transform:translateX(-50%);background:" + GOLD + ";color:#0a0a0a;font-size:.76rem;font-weight:600;padding:.4rem .8rem;border-radius:.4rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:80}.ix-toast.on{opacity:1}" +
+      // financial value drill-down affordance
+      ".fin-drill{cursor:pointer;border-bottom:1px dotted rgba(243,229,192,.4)}.fin-drill:hover,.fin-drill:focus-visible{color:" + CHAMPAGNE + ";outline:none;border-bottom-color:" + CHAMPAGNE + "}.fin-drill:focus-visible{outline:2px solid " + GOLD + ";outline-offset:2px}";
     var st = document.createElement("style"); st.id = "ix-style"; st.textContent = c; document.head.appendChild(st);
   }
 })();
