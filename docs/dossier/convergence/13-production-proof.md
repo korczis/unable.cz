@@ -106,9 +106,15 @@ matches the approved canonical manifest (`dataHash 375b87c5`, cutoff 2026-07-18,
 canonical records. The live Prismatic layer is BLOCKED (does not exist), which is
 documented and not a regression. Retest results appended below on deploy.
 
-## Retest after deploy
+## Retest after deploy (CONFIRMED)
 
-Production subtitle now reads `mezní datum evidence 2026-07-18`, matching the
-freshness panel `18 July 2026`. Manifest `evidenceCutoff` 2026-07-18 across
-canonical/built/production; `dataHash 375b87c5` identical. Object routes 200.
-(Filled in by the deploy verification step.)
+Deployed `05a72d3` (Pages run 29658006371, success). Retested live:
+- `/dossier/` subtitle: **`mezní datum evidence 2026-07-18`** ✓ === freshness
+  panel **`18 July 2026`** ✓ — the dual-date self-contradiction is gone.
+- sources shown: **22** ✓
+- production `data/dossier/claims/manifest.json`: `evidenceCutoff 2026-07-18`,
+  `dataHash 375b87c5`, `58 = 49 + 9` — **identical to canonical/built**.
+- object route `/dossier/claims/clm-52/`: HTTP 200, canonical record (ZenX 45.8%).
+
+**PROVEN.** The production manifest matches the approved canonical manifest and
+representative object routes expose the same canonical records.
