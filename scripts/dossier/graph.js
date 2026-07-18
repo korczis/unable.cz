@@ -676,6 +676,32 @@
     if (n && n.length !== 0) { if (n.hasClass("gw-hidden")) { state.mode = "everything"; modeSel.value = "everything"; state.expanded.add(n.data("expand")); applyState(); } cy.animate({ center: { eles: n }, zoom: 1.4 }, { duration: reduceMotion ? 0 : 300 }); inspectNode(n); openSheet(); }
   });
 
+  // ---- external sync: focus a graph node when the page inspector or global
+  // search selects a record (closes the §12 Cytoscape-sync loop). Reuses the
+  // same reveal-then-center path as the graph's own search. A record id may be
+  // an entity (`schlesinger`), a claim (`clm:CLM-25`) or a source (`src:SRC-15`)
+  // node; try each. Updates the graph inspector but does NOT pop the mobile
+  // sheet, so it never covers the page inspector that requested it.
+  function focusNodeById(rawId) {
+    if (!rawId) return false;
+    var candidates = [rawId, "clm:" + rawId, "src:" + rawId], n = null;
+    for (var i = 0; i < candidates.length; i++) {
+      var c = cy.getElementById(candidates[i]);
+      if (c && c.length && c.isNode()) { n = c; break; }
+    }
+    if (!n) return false;
+    if (n.hasClass("gw-hidden")) {
+      state.mode = "everything"; modeSel.value = "everything";
+      if (n.data("expand")) state.expanded.add(n.data("expand"));
+      applyState();
+    }
+    cy.animate({ center: { eles: n }, zoom: 1.4 }, { duration: reduceMotion ? 0 : 300 });
+    inspectNode(n); // highlights the neighbourhood + fills the graph inspector
+    return true;
+  }
+  document.addEventListener("dossier:entity-selected", function (e) { focusNodeById(e.detail && e.detail.id); });
+  document.addEventListener("dossier:graph-focus-requested", function (e) { focusNodeById(e.detail && e.detail.id); });
+
   // time machine
   var yearEl = document.getElementById("gw-year"), allTime = document.getElementById("gw-alltime"), yearLbl = document.getElementById("gw-yearlbl");
   function setYear() {
