@@ -17,7 +17,7 @@ reviewed_at = 2026-07-17
 review_interval_days = 90
 confidence = "moderate"
 freshness_class = "periodically_reviewed"
-sources_consulted = 19
+sources_consulted = 22
 +++
 
 ## Souhrn

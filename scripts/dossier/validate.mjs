@@ -65,7 +65,9 @@ for (const e of (d.graph?.edges || []).map((x) => x.data)) {
 for (const c of d.contradictions || []) {
   if (!c.valueA || !c.valueB) err("CON_INCOMPLETE", `${c.id} lacks two compared values`);
   for (const v of [c.valueA, c.valueB]) if (v && v.source && !srcIds.has(v.source)) err("CON_BAD_SOURCE", `${c.id} cites unknown ${v.source}`);
-  if (c.status !== "CONTRADICTED") warn("CON_STATUS", `${c.id} is not labelled CONTRADICTED`);
+  // A contradiction is normally CONTRADICTED, but may become RESOLVED once a
+  // primary source settles it (e.g. CON-02 resolved by a direct ARES fetch).
+  if (c.status !== "CONTRADICTED" && c.status !== "RESOLVED") warn("CON_STATUS", `${c.id} has unexpected status ${c.status}`);
 }
 
 // ---------------------------------------------------------------------------

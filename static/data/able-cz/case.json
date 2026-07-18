@@ -360,16 +360,18 @@
     ]
   },
   "openQuestions": [
-    "Filed financial statements (revenue, result, assets, headcount) — available at justice.cz Sbírka listin, not retrieved in this pass.",
-    "Whether the marketing roles CTO (Grolig) and CSO (Juhaňák) correspond to any current statutory function.",
-    "Independent client confirmation of the quantified case-study results (ROI, person-days).",
-    "Public-sector contracts and any EU-cofinanced project details (Hlídač státu and grant registers not retrieved here).",
-    "Combined Able+Blackfish headcount as filed (each entity files separately; Able's own filed revenue for FY2024 is now known — see financials).",
-    "The exact stake split and jednatel dates for one label s.r.o.'s three co-owners (Juhaňák, Jakub Kaman, Ondřej Kaman) — see CON-02 — need a direct or.justice.cz lookup to resolve.",
-    "Whether Vít Schlesinger's concurrent stake in Ventoux Studio s.r.o. (undisclosed in Able/Blackfish media coverage) has any operational bearing on Able.cz.",
-    "Why Lukáš Oslzla departed Blackfish & Co. in February 2024, 17 months before the Able.cz acquisition — no public source addresses this.",
-    "Whether Petr Faraga is related to Václav Faraga — plausible from the age gap and shared address cluster, but not stated anywhere.",
-    "All facts sourced to SRC-10/SRC-11 (kurzy.cz, Hlídač státu) are CORROBORATED via aggregator mirrors, not VERIFIED_PRIMARY via a direct or.justice.cz fetch — the firm/person *search* UI is JS-rendered and blocked automated fetch, though the Sbírka listin document index and downloads (SRC-15/16/17) did work directly and reach VERIFIED_PRIMARY."
+    "Independent client confirmation of the quantified case-study results (ROI, person-days) — no client-side confirmation found in any pass.",
+    "Public-sector grants / EU-cofinanced projects (grant registers, CEDR/SZIF, Hlídač státu API — not queried; the Registr smluv WAS queried 2026-07-18 and returned zero contracts for both IČOs, see CLM-57).",
+    "Combined Able+Blackfish headcount as filed (each entity files separately; no headcount line exists in either preserved filing).",
+    "Whether Vít Schlesinger's concurrent stake in Ventoux Studio s.r.o. has any operational bearing on Able.cz.",
+    "Why Lukáš Oslzla departed Blackfish & Co. in February 2024 (the mirrored Artstay/Blackfish ownership swap — CLM-42/43 — documents WHAT happened; no source states why).",
+    "Whether Petr Faraga (and Martin Patrik Faraga) are related to Václav Faraga — plausible per CLM-35, stated nowhere.",
+    "Beneficial ownership of ZenX Capital, a.s. — the register shows Zdeněk Sluka on its správní rada, but its shareholders are not visible in an a.s. register record; who ultimately controls Able.cz's largest stake is unresolved.",
+    "The consideration paid for Blackfish and the share-purchase terms (not public; the July 2025 notarial deed in Able.cz's Sbírka listin was not retrieved this pass).",
+    "The signing rule (způsob jednání) is still mirror-sourced only — ARES VR does not expose it; retrieving the official justice.cz výpis PDF would primary-verify it.",
+    "Insolvency status (ISIR) — BLOCKED, provider returned HTTP 500 on both attempts (2026-07-17, 2026-07-18); retry needed.",
+    "The exact URL of the 2023 CzechCrunch investment article (SRC-22) — retrieved by the first pass, URL not recorded; and whether the media-reported 'Point FM' investment was executed via 5326G s.r.o. (CLM-56).",
+    "Sanctions / PEP screening — not systematically run in any pass; flagged as open, not asserted as clear."
   ],
   "summary": {
     "subject": "Able.cz s.r.o.",
@@ -377,12 +379,12 @@
     "evidenceCutoff": "2026-07-17",
     "confidence": "moderate",
     "counts": {
-      "entities": 41,
-      "relationships": 48,
+      "entities": 43,
+      "relationships": 60,
       "claims": 58,
       "sources": 22,
       "contradictions": 3,
-      "openQuestions": 10,
+      "openQuestions": 12,
       "risks": 5
     },
     "claimsByStatus": {
@@ -394,10 +396,10 @@
       "BLOCKED": 1
     },
     "relationshipsByStatus": {
-      "VERIFIED_PRIMARY": 11,
-      "SELF_REPORTED": 8,
-      "CORROBORATED": 25,
-      "CONTRADICTED": 4
+      "VERIFIED_PRIMARY": 50,
+      "SELF_REPORTED": 7,
+      "CORROBORATED": 2,
+      "CONTRADICTED": 1
     }
   }
 }

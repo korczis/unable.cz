@@ -18,7 +18,9 @@
       "dns": 1,
       "vies": 1,
       "crtsh": 1,
-      "unknown": 3
+      "contracts_register": 1,
+      "isir": 1,
+      "media_unknown": 1
     },
     "byIndependence": {
       "company_controlled": 2,
@@ -93,7 +95,7 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [],
-      "edgesSupported": 7,
+      "edgesSupported": 0,
       "contradictionsTouched": [
         "CON-01"
       ]
@@ -162,7 +164,7 @@
       "claimsSupported": [
         "CLM-56"
       ],
-      "edgesSupported": 2,
+      "edgesSupported": 1,
       "contradictionsTouched": []
     },
     {
@@ -238,7 +240,7 @@
         "CLM-24",
         "CLM-35"
       ],
-      "edgesSupported": 26,
+      "edgesSupported": 0,
       "contradictionsTouched": [
         "CON-02"
       ]
@@ -262,7 +264,7 @@
         "CLM-23",
         "CLM-24"
       ],
-      "edgesSupported": 8,
+      "edgesSupported": 0,
       "contradictionsTouched": []
     },
     {
@@ -306,7 +308,7 @@
         "CLM-55",
         "CLM-56"
       ],
-      "edgesSupported": 0,
+      "edgesSupported": 46,
       "contradictionsTouched": [
         "CON-03"
       ]
@@ -327,7 +329,7 @@
       "claimsSupported": [
         "CLM-24"
       ],
-      "edgesSupported": 0,
+      "edgesSupported": 1,
       "contradictionsTouched": [
         "CON-03"
       ]
@@ -463,10 +465,10 @@
       "url": "https://smlouvy.gov.cz/vyhledavani?vyhledavani%5Bsmluvni_strana%5D%5Bico%5D=24278815",
       "tier": 1,
       "kind": "official contracts register (search executed 2026-07-18; zero contracts returned for either IČO)",
-      "class": "other",
-      "upstream": "unknown",
-      "official": false,
-      "primary": false,
+      "class": "official_register",
+      "upstream": "contracts_register",
+      "official": true,
+      "primary": true,
       "independence": "independent_origin",
       "freshness": "aged",
       "retrievedAt": "2026-07-18",
@@ -482,10 +484,10 @@
       "url": "https://isir.justice.cz/isir/ucastnik/vysledek_lustrace.do?ic=24278815&aktualnost=AKTUALNI_I_UKONCENA",
       "tier": 1,
       "kind": "official insolvency register — BLOCKED: HTTP 500 on 2026-07-17 and again on 2026-07-18; insolvency status is therefore unresolved, not clear",
-      "class": "other",
-      "upstream": "unknown",
-      "official": false,
-      "primary": false,
+      "class": "official_register",
+      "upstream": "isir",
+      "official": true,
+      "primary": true,
       "independence": "independent_origin",
       "freshness": "aged",
       "retrievedAt": "2026-07-18",
@@ -502,8 +504,8 @@
       "url": null,
       "tier": 3,
       "kind": "media (referenced; exact URL lost by the earlier pass — facts sourced to it are flagged accordingly. A 2026-07-18 attempt to corroborate via Point FM's own site found the page JS-rendered with no readable portfolio content in the preserved HTML — recorded as a failed corroboration in provider-runs, not used as evidence)",
-      "class": "other",
-      "upstream": "unknown",
+      "class": "media",
+      "upstream": "media_unknown",
       "official": false,
       "primary": false,
       "independence": "independent_origin",
@@ -512,7 +514,7 @@
       "claimsSupported": [
         "CLM-56"
       ],
-      "edgesSupported": 0,
+      "edgesSupported": 1,
       "contradictionsTouched": []
     }
   ]

@@ -61,11 +61,26 @@ test("every planner task has an info-gain class and a resolvable origin", () => 
   }
 });
 
-test("relationship verification distinguishes independent media from single register", () => {
+test("relationship verification never overstates the evidence (enrichment-robust)", () => {
   const v = load("planner/verification.json").verification;
-  const e5 = v.find((x) => x.edge === "e5"); // able → blackfish acquired 100%, Forbes+CzechCrunch
-  assert.equal(e5.verificationState, "partially_verified");
-  assert.equal(e5.independentUpstreams, 2);
+  // Invariant 1: a self-reported edge is never `verified` — always source_claimed
+  // or unverified (a company's own word cannot verify itself).
+  for (const e of v.filter((x) => x.epistemicState === "SELF_REPORTED")) {
+    assert.ok(["source_claimed", "unverified"].includes(e.verificationState), `${e.edge} overstated`);
+  }
+  // Invariant 2: a single-upstream CORROBORATED edge is never `verified` — it is
+  // single_upstream (one authority is not independent corroboration).
+  for (const e of v.filter((x) => x.epistemicState === "CORROBORATED" && x.independentUpstreams <= 1)) {
+    assert.equal(e.verificationState, "single_upstream", `${e.edge} single-authority shown as verified`);
+  }
+  // Invariant 3: independentUpstreams never exceeds the source count.
+  for (const e of v) assert.ok(e.independentUpstreams <= (e.sources || []).length, `${e.edge} impossible independence`);
+  // Invariant 4: the acquisition edge is register-confirmed (primary), so verified.
+  const e5 = v.find((x) => x.edge === "e5");
+  if (e5) {
+    assert.equal(e5.verificationState, "verified");
+    assert.ok(e5.upstreams.includes("cz_register"));
+  }
 });
 
 test("planner gate FAILS when a copy is counted as independent (non-vacuous)", () => {

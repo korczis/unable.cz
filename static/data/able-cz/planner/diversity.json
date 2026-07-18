@@ -801,7 +801,7 @@
       "independentUpstreams": 2,
       "upstreams": [
         "cz_register",
-        "unknown"
+        "isir"
       ],
       "primaryDirectCount": 2,
       "companyControlledOnly": false,
@@ -934,7 +934,7 @@
       "independentUpstreams": 3,
       "upstreams": [
         "cz_register",
-        "unknown",
+        "media_unknown",
         "linkedin"
       ],
       "primaryDirectCount": 0,
@@ -951,7 +951,7 @@
       "sourceRecords": 1,
       "independentUpstreams": 1,
       "upstreams": [
-        "unknown"
+        "contracts_register"
       ],
       "primaryDirectCount": 0,
       "companyControlledOnly": false,
@@ -967,7 +967,7 @@
       "sourceRecords": 1,
       "independentUpstreams": 1,
       "upstreams": [
-        "unknown"
+        "isir"
       ],
       "primaryDirectCount": 0,
       "companyControlledOnly": false,

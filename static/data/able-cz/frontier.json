@@ -8,18 +8,18 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Priorita je ASSESSED ordinál (materialita + řešitelnost + slabost důvěry), ne stupeň grafu.",
-    "count": 20,
+    "count": 22,
     "byPriority": {
       "high": 2,
       "medium": 8,
-      "low": 10
+      "low": 12
     }
   },
   "tasks": [
     {
       "id": "TASK-GAP-01",
       "target": "financials",
-      "question": "Filed financial statements (revenue, result, assets, headcount) — available at justice.cz Sbírka listin, not retrieved in this pass.",
+      "question": "Independent client confirmation of the quantified case-study results (ROI, person-days) — no client-side confirmation found in any pass.",
       "reason": "Otevřená mezera v evidenci (open_question) v dimenzi financials.",
       "expectedInformationGain": "high",
       "recommendedSource": "justice.cz — Sbírka listin (úplná účetní závěrka)",
@@ -37,7 +37,7 @@
     {
       "id": "TASK-GAP-10",
       "target": "ownership",
-      "question": "All facts sourced to SRC-10/SRC-11 (kurzy.cz, Hlídač státu) are CORROBORATED via aggregator mirrors, not VERIFIED_PRIMARY via a direct or.justice.cz fetch — the firm/person *search* UI is JS-rendered and blocked automated fetch, though the Sbírka listin document index and downloads (SRC-15/16/17) did work directly and reach VERIFIED_PRIMARY.",
+      "question": "Insolvency status (ISIR) — BLOCKED, provider returned HTTP 500 on both attempts (2026-07-17, 2026-07-18); retry needed.",
       "reason": "Otevřená mezera v evidenci (open_question) v dimenzi ownership.",
       "expectedInformationGain": "high",
       "recommendedSource": "přímý or.justice.cz fetch (nahradit aggregator mirrors SRC-10/11)",
@@ -73,7 +73,7 @@
     {
       "id": "TASK-GAP-02",
       "target": "management",
-      "question": "Whether the marketing roles CTO (Grolig) and CSO (Juhaňák) correspond to any current statutory function.",
+      "question": "Public-sector grants / EU-cofinanced projects (grant registers, CEDR/SZIF, Hlídač státu API — not queried; the Registr smluv WAS queried 2026-07-18 and returned zero contracts for both IČOs, see CLM-57).",
       "reason": "Otevřená mezera v evidenci (open_question) v dimenzi management.",
       "expectedInformationGain": "medium",
       "recommendedSource": "or.justice.cz — výpis statutárního orgánu Able.cz",
@@ -91,7 +91,7 @@
     {
       "id": "TASK-GAP-03",
       "target": "commercial",
-      "question": "Independent client confirmation of the quantified case-study results (ROI, person-days).",
+      "question": "Combined Able+Blackfish headcount as filed (each entity files separately; no headcount line exists in either preserved filing).",
       "reason": "Otevřená mezera v evidenci (open_question) v dimenzi commercial.",
       "expectedInformationGain": "medium",
       "recommendedSource": "nezávislé potvrzení od klientů (mimo web Able)",
@@ -109,7 +109,7 @@
     {
       "id": "TASK-GAP-04",
       "target": "procurement",
-      "question": "Public-sector contracts and any EU-cofinanced project details (Hlídač státu and grant registers not retrieved here).",
+      "question": "Whether Vít Schlesinger's concurrent stake in Ventoux Studio s.r.o. has any operational bearing on Able.cz.",
       "reason": "Otevřená mezera v evidenci (open_question) v dimenzi procurement.",
       "expectedInformationGain": "medium",
       "recommendedSource": "Hlídač státu / registr smluv / dotační registry",
@@ -127,7 +127,7 @@
     {
       "id": "TASK-GAP-05",
       "target": "financials",
-      "question": "Combined Able+Blackfish headcount as filed (each entity files separately; Able's own filed revenue for FY2024 is now known — see financials).",
+      "question": "Why Lukáš Oslzla departed Blackfish & Co. in February 2024 (the mirrored Artstay/Blackfish ownership swap — CLM-42/43 — documents WHAT happened; no source states why).",
       "reason": "Otevřená mezera v evidenci (open_question) v dimenzi financials.",
       "expectedInformationGain": "medium",
       "recommendedSource": "justice.cz — Sbírka listin (Able i Blackfish)",
@@ -145,7 +145,7 @@
     {
       "id": "TASK-GAP-06",
       "target": "ownership",
-      "question": "The exact stake split and jednatel dates for one label s.r.o.'s three co-owners (Juhaňák, Jakub Kaman, Ondřej Kaman) — see CON-02 — need a direct or.justice.cz lookup to resolve.",
+      "question": "Whether Petr Faraga (and Martin Patrik Faraga) are related to Václav Faraga — plausible per CLM-35, stated nowhere.",
       "reason": "Otevřená mezera v evidenci (open_question) v dimenzi ownership.",
       "expectedInformationGain": "medium",
       "recommendedSource": "or.justice.cz — přímý výpis IČO 02474727 (one label s.r.o.)",
@@ -236,7 +236,7 @@
     {
       "id": "TASK-GAP-07",
       "target": "ownership",
-      "question": "Whether Vít Schlesinger's concurrent stake in Ventoux Studio s.r.o. (undisclosed in Able/Blackfish media coverage) has any operational bearing on Able.cz.",
+      "question": "Beneficial ownership of ZenX Capital, a.s. — the register shows Zdeněk Sluka on its správní rada, but its shareholders are not visible in an a.s. register record; who ultimately controls Able.cz's largest stake is unresolved.",
       "reason": "Otevřená mezera v evidenci (open_question) v dimenzi ownership.",
       "expectedInformationGain": "low",
       "recommendedSource": "or.justice.cz — Ventoux Studio s.r.o. (IČO 23749636)",
@@ -254,7 +254,7 @@
     {
       "id": "TASK-GAP-08",
       "target": "ownership",
-      "question": "Why Lukáš Oslzla departed Blackfish & Co. in February 2024, 17 months before the Able.cz acquisition — no public source addresses this.",
+      "question": "The consideration paid for Blackfish and the share-purchase terms (not public; the July 2025 notarial deed in Able.cz's Sbírka listin was not retrieved this pass).",
       "reason": "Otevřená mezera v evidenci (open_question) v dimenzi ownership.",
       "expectedInformationGain": "low",
       "recommendedSource": "média / veřejné prohlášení k odchodu L. Oslzly z Blackfish",
@@ -272,7 +272,7 @@
     {
       "id": "TASK-GAP-09",
       "target": "ownership",
-      "question": "Whether Petr Faraga is related to Václav Faraga — plausible from the age gap and shared address cluster, but not stated anywhere.",
+      "question": "The signing rule (způsob jednání) is still mirror-sourced only — ARES VR does not expose it; retrieving the official justice.cz výpis PDF would primary-verify it.",
       "reason": "Otevřená mezera v evidenci (open_question) v dimenzi ownership.",
       "expectedInformationGain": "low",
       "recommendedSource": "veřejný zdroj k rodinnému vztahu P. a V. Faragy (nenalezen)",
@@ -286,6 +286,42 @@
       ],
       "priorityCs": "nízká",
       "materialityCs": "nízká"
+    },
+    {
+      "id": "TASK-GAP-11",
+      "target": "identity",
+      "question": "The exact URL of the 2023 CzechCrunch investment article (SRC-22) — retrieved by the first pass, URL not recorded; and whether the media-reported 'Point FM' investment was executed via 5326G s.r.o. (CLM-56).",
+      "reason": "Otevřená mezera v evidenci (open_question) v dimenzi identity.",
+      "expectedInformationGain": "medium",
+      "recommendedSource": null,
+      "materiality": "moderate",
+      "currentConfidence": "unknown",
+      "graphDepth": 0,
+      "status": "proposed",
+      "priority": "low",
+      "derivedFrom": [
+        "OQ-11"
+      ],
+      "priorityCs": "nízká",
+      "materialityCs": "střední"
+    },
+    {
+      "id": "TASK-GAP-12",
+      "target": "identity",
+      "question": "Sanctions / PEP screening — not systematically run in any pass; flagged as open, not asserted as clear.",
+      "reason": "Otevřená mezera v evidenci (open_question) v dimenzi identity.",
+      "expectedInformationGain": "medium",
+      "recommendedSource": null,
+      "materiality": "moderate",
+      "currentConfidence": "unknown",
+      "graphDepth": 0,
+      "status": "proposed",
+      "priority": "low",
+      "derivedFrom": [
+        "OQ-12"
+      ],
+      "priorityCs": "nízká",
+      "materialityCs": "střední"
     },
     {
       "id": "TASK-GAP-FIN-02",

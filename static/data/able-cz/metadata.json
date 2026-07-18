@@ -14,12 +14,12 @@
   "evidenceCutoff": "2026-07-17",
   "confidence": "moderate",
   "counts": {
-    "entities": 41,
-    "relationships": 48,
+    "entities": 43,
+    "relationships": 60,
     "claims": 58,
     "sources": 22,
     "contradictions": 3,
-    "openQuestions": 10,
+    "openQuestions": 12,
     "risks": 5
   },
   "claimsByStatus": {
@@ -31,9 +31,9 @@
     "BLOCKED": 1
   },
   "relationshipsByStatus": {
-    "VERIFIED_PRIMARY": 11,
-    "SELF_REPORTED": 8,
-    "CORROBORATED": 25,
-    "CONTRADICTED": 4
+    "VERIFIED_PRIMARY": 50,
+    "SELF_REPORTED": 7,
+    "CORROBORATED": 2,
+    "CONTRADICTED": 1
   }
 }

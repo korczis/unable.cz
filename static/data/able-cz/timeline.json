@@ -8,37 +8,86 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 5
+    "count": 11
   },
   "timeline": [
     {
       "date": "2012-10-03",
-      "event": "Able.cz s.r.o. incorporated; Faraga and Melichárek registered as statutory officers.",
+      "event": "Company incorporated as BIT CONSULTING s.r.o. at the Municipal Court in Prague (C 200323); founders Václav Faraga, Tomáš Melichárek and Petr Faraga, 1/3 each, all three jednatelé.",
       "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-03"
+        "SRC-12"
       ]
     },
     {
-      "date": "2025",
-      "event": "Able acquires 100% of Blackfish studio; combined team ~60; stated further-acquisition intent.",
-      "status": "CORROBORATED",
+      "date": "2014-11-13",
+      "event": "Registration moved to the Regional Court in Brno (C 85425).",
+      "status": "VERIFIED_PRIMARY",
       "sources": [
+        "SRC-12"
+      ]
+    },
+    {
+      "date": "2016-11-14",
+      "event": "Renamed from BIT CONSULTING s.r.o. to Able.cz s.r.o.; cap table widened (Juren, Nakládal, Milkov enter with small stakes).",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-12"
+      ]
+    },
+    {
+      "date": "2020-10-14",
+      "event": "Governance restructuring: ZenX Capital, a.s. enters at 50 %, a supervisory board is created (Libor Polanský), and Petr Faraga's jednatel role ends (13 Oct 2020).",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-12"
+      ]
+    },
+    {
+      "date": "2023-08-28",
+      "event": "Cap-table change: 5326G s.r.o. (Marek Kříž's vehicle) enters; ZenX moves to 47.5 %.",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-12"
+      ]
+    },
+    {
+      "date": "2024-11-14",
+      "event": "Registered capital increased 210,000 → 243,715 CZK; ZenX at 48.2 %.",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-12"
+      ]
+    },
+    {
+      "date": "2025-07-28",
+      "event": "Václav Faraga registered as second jednatel of Blackfish & Co. s.r.o.",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-12"
+      ]
+    },
+    {
+      "date": "2025-07-29",
+      "event": "Able.cz s.r.o. registered as 100 % shareholder of Blackfish & Co.; the same day, seven shareholders (incl. Vít Schlesinger at 5.00 %) are registered on Able.cz's own cap table. Media report the acquisition, combined team ~60, and further-acquisition intent.",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-12",
         "SRC-04",
         "SRC-05"
       ]
     },
     {
-      "date": "2026-01-20",
-      "event": "Most recent change observed in the public register.",
+      "date": "2025-12-22",
+      "event": "Verzuz.com s.r.o. founded as a 100 % Able.cz subsidiary.",
       "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-03"
+        "SRC-12"
       ]
     },
     {
       "date": "2026-01-19",
-      "event": "Court execution ordered against Tomáš Melichárek's personal Able.cz ownership stake over a 9,327.14 CZK debt to Dopravní podnik hl. m. Prahy, a.s.",
+      "event": "Court execution (219 EX 00241/26) ordered against Tomáš Melichárek personally — orders over accounts, income, movables, real estate and business shares incl. his Able.cz podíl — for a 9,327.14 CZK debt to Dopravní podnik hl. m. Prahy, a.s.",
       "status": "VERIFIED_PRIMARY",
       "sources": [
         "SRC-16"
@@ -46,10 +95,11 @@
     },
     {
       "date": "2026-03-24",
-      "event": "That execution closed, satisfied by payment ('vymožením').",
+      "event": "That execution closed, satisfied by payment ('vymožením'); Melichárek's podíl records across four companies re-registered cleanly by late April 2026.",
       "status": "VERIFIED_PRIMARY",
       "sources": [
-        "SRC-17"
+        "SRC-17",
+        "SRC-12"
       ]
     }
   ]

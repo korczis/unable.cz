@@ -72,6 +72,9 @@ const SOURCE_MODEL = {
   "SRC-17": { upstream: "cz_register", class: "primary_registry_document", primary: true, official: true },
   "SRC-18": { upstream: "cz_register", class: "primary_registry_document", primary: true, official: true },
   "SRC-19": { upstream: "cz_register", class: "primary_registry_document", primary: true, official: true },
+  "SRC-20": { upstream: "contracts_register", class: "official_register", primary: true, official: true },
+  "SRC-21": { upstream: "isir", class: "official_register", primary: true, official: true },
+  "SRC-22": { upstream: "media_unknown", class: "media", primary: false, official: false },
 };
 const model = (id) => SOURCE_MODEL[id] || { upstream: "unknown", class: "other", primary: false, official: false };
 
