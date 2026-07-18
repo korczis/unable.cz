@@ -28,7 +28,10 @@
   function el(html) { var t = document.createElement("template"); t.innerHTML = html.trim(); return t.content.firstChild; }
 
   // ---- canonical metric computation (from #dossier-data only) --------------
-  var claims = D.claims || [];
+  // Count LIVE claims only. Superseded claims are an audit trail (fact/assessment
+  // splits) and the claims table hides them ({% if not c.superseded %}); counting
+  // them here would make the overview disagree with the table (§36 consistency).
+  var claims = (D.claims || []).filter(function (c) { return !c.superseded; });
   function countStatus(sts) { return claims.filter(function (c) { return sts.indexOf(c.status) !== -1; }); }
   var verified = countStatus(["VERIFIED_PRIMARY", "CORROBORATED"]);
   var selfrep = countStatus(["SELF_REPORTED"]);
