@@ -1,0 +1,394 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "finance-facts",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Financial-intelligence projection. Filed facts parsed from sourced figures; metrics carry formulas + fact IDs; nothing invented; NOT_FOUND is never zero.",
+    "count": 21
+  },
+  "facts": [
+    {
+      "id": "FIN-ALE-asfiled-REGISTERED-CAPITAL",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "registered_capital",
+      "label": "Základní kapitál",
+      "originalLabel": "Registered capital",
+      "period": "as_filed",
+      "value": 243715,
+      "valueDisplay": "243 715",
+      "unit": "czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-12"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2024-REVENUE-PRODUCTS-SERVICES",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "revenue_products_services",
+      "label": "Tržby z prodeje výrobků a služeb",
+      "originalLabel": "Revenue from sale of products/services (FY2024 / FY2023)",
+      "period": "FY2024",
+      "value": 36319,
+      "valueDisplay": "36 319",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2023-REVENUE-PRODUCTS-SERVICES",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "revenue_products_services",
+      "label": "Tržby z prodeje výrobků a služeb",
+      "originalLabel": "Revenue from sale of products/services (FY2024 / FY2023)",
+      "period": "FY2023",
+      "value": 42642,
+      "valueDisplay": "42 642",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2024-NET-TURNOVER",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "net_turnover",
+      "label": "Čistý obrat",
+      "originalLabel": "Net turnover (FY2024 / FY2023)",
+      "period": "FY2024",
+      "value": 36319,
+      "valueDisplay": "36 319",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2023-NET-TURNOVER",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "net_turnover",
+      "label": "Čistý obrat",
+      "originalLabel": "Net turnover (FY2024 / FY2023)",
+      "period": "FY2023",
+      "value": 43079,
+      "valueDisplay": "43 079",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2024-NET-RESULT",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "net_result",
+      "label": "Výsledek hospodaření po zdanění",
+      "originalLabel": "Net result for the period, after tax (FY2024 / FY2023)",
+      "period": "FY2024",
+      "value": 631,
+      "valueDisplay": "631",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2023-NET-RESULT",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "net_result",
+      "label": "Výsledek hospodaření po zdanění",
+      "originalLabel": "Net result for the period, after tax (FY2024 / FY2023)",
+      "period": "FY2023",
+      "value": 844,
+      "valueDisplay": "844",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2024-TOTAL-ASSETS",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "total_assets",
+      "label": "Aktiva celkem",
+      "originalLabel": "Total assets (FY2024 / FY2023)",
+      "period": "FY2024",
+      "value": 71880,
+      "valueDisplay": "71 880",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2023-TOTAL-ASSETS",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "total_assets",
+      "label": "Aktiva celkem",
+      "originalLabel": "Total assets (FY2024 / FY2023)",
+      "period": "FY2023",
+      "value": 59386,
+      "valueDisplay": "59 386",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2024-TOTAL-EQUITY",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "total_equity",
+      "label": "Vlastní kapitál",
+      "originalLabel": "Equity (FY2024 / FY2023)",
+      "period": "FY2024",
+      "value": 26592,
+      "valueDisplay": "26 592",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2023-TOTAL-EQUITY",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "total_equity",
+      "label": "Vlastní kapitál",
+      "originalLabel": "Equity (FY2024 / FY2023)",
+      "period": "FY2023",
+      "value": 25849,
+      "valueDisplay": "25 849",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2024-TOTAL-LIABILITIES",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "total_liabilities",
+      "label": "Cizí zdroje (závazky)",
+      "originalLabel": "Liabilities (FY2024 / FY2023)",
+      "period": "FY2024",
+      "value": 45183,
+      "valueDisplay": "45 183",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2023-TOTAL-LIABILITIES",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "total_liabilities",
+      "label": "Cizí zdroje (závazky)",
+      "originalLabel": "Liabilities (FY2024 / FY2023)",
+      "period": "FY2023",
+      "value": 33406,
+      "valueDisplay": "33 406",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2024-PERSONNEL-COSTS",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "personnel_costs",
+      "label": "Osobní náklady",
+      "originalLabel": "Personnel costs (FY2024 / FY2023)",
+      "period": "FY2024",
+      "value": 2926,
+      "valueDisplay": "2 926",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2023-PERSONNEL-COSTS",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "personnel_costs",
+      "label": "Osobní náklady",
+      "originalLabel": "Personnel costs (FY2024 / FY2023)",
+      "period": "FY2023",
+      "value": 4964,
+      "valueDisplay": "4 964",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2024-PURCHASED-SERVICES",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "purchased_services",
+      "label": "Služby (A.3)",
+      "originalLabel": "Purchased services — 'A.3 Služby' (FY2024 / FY2023)",
+      "period": "FY2024",
+      "value": 38734,
+      "valueDisplay": "38 734",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2023-PURCHASED-SERVICES",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "purchased_services",
+      "label": "Služby (A.3)",
+      "originalLabel": "Purchased services — 'A.3 Služby' (FY2024 / FY2023)",
+      "period": "FY2023",
+      "value": 40612,
+      "valueDisplay": "40 612",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2024-INVESTMENTS-CONTROLLED-ENTITIES",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "investments_controlled_entities",
+      "label": "Podíly – ovládaná osoba (B.III.1)",
+      "originalLabel": "Stakes in controlled entities — 'B.III.1 Podíly - ovládaná nebo ovládající osoba' (FY2024 / FY2023)",
+      "period": "FY2024",
+      "value": 1430,
+      "valueDisplay": "1 430",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2023-INVESTMENTS-CONTROLLED-ENTITIES",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "investments_controlled_entities",
+      "label": "Podíly – ovládaná osoba (B.III.1)",
+      "originalLabel": "Stakes in controlled entities — 'B.III.1 Podíly - ovládaná nebo ovládající osoba' (FY2024 / FY2023)",
+      "period": "FY2023",
+      "value": 1430,
+      "valueDisplay": "1 430",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2024-LIABILITIES-TO-SHAREHOLDERS",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "liabilities_to_shareholders",
+      "label": "Závazky ke společníkům (C.I.9.1+C.II.8.1)",
+      "originalLabel": "Liabilities to shareholders — 'C.I.9.1 + C.II.8.1 Závazky ke společníkům' (FY2024 / FY2023)",
+      "period": "FY2024",
+      "value": 10034,
+      "valueDisplay": "10 034",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-ALE-FY2023-LIABILITIES-TO-SHAREHOLDERS",
+      "entity": "able",
+      "entityName": "Able.cz s.r.o.",
+      "concept": "liabilities_to_shareholders",
+      "label": "Závazky ke společníkům (C.I.9.1+C.II.8.1)",
+      "originalLabel": "Liabilities to shareholders — 'C.I.9.1 + C.II.8.1 Závazky ke společníkům' (FY2024 / FY2023)",
+      "period": "FY2023",
+      "value": 3072,
+      "valueDisplay": "3 072",
+      "unit": "thousand_czk",
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "evidenceCutoff": "2026-07-17"
+    }
+  ]
+}

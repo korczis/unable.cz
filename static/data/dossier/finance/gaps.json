@@ -1,0 +1,52 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "finance-gaps",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Financial-intelligence projection. Filed facts parsed from sourced figures; metrics carry formulas + fact IDs; nothing invented; NOT_FOUND is never zero.",
+    "count": 4
+  },
+  "gaps": [
+    {
+      "id": "GAP-FIN-01",
+      "entity": "able",
+      "concept": "Employee count (filed — not a line item in this rozvaha/výkaz filing)",
+      "state": "NOT_FOUND",
+      "whyMaterial": "Ověření mediálního headcount ~60.",
+      "recommendedSource": "justice.cz — úplná účetní závěrka / příloha / auditorská zpráva",
+      "note": "Chybějící údaj je mezera v evidenci, NE nula."
+    },
+    {
+      "id": "GAP-FIN-02",
+      "entity": "able",
+      "concept": "Auditor's report",
+      "state": "NOT_FOUND",
+      "whyMaterial": "Kvalita a předpoklad going-concern.",
+      "recommendedSource": "justice.cz — úplná účetní závěrka / příloha / auditorská zpráva",
+      "note": "Chybějící údaj je mezera v evidenci, NE nula."
+    },
+    {
+      "id": "GAP-FIN-03",
+      "entity": "able",
+      "concept": "Going-concern language",
+      "state": "NOT_FOUND",
+      "whyMaterial": "Kvalita a předpoklad going-concern.",
+      "recommendedSource": "justice.cz — úplná účetní závěrka / příloha / auditorská zpráva",
+      "note": "Chybějící údaj je mezera v evidenci, NE nula."
+    },
+    {
+      "id": "GAP-FIN-04",
+      "entity": "able",
+      "concept": "Consolidated Able+Blackfish combined financials (each entity files separately)",
+      "state": "NOT_PUBLIC",
+      "whyMaterial": "Skupinový pohled Able+Blackfish.",
+      "recommendedSource": "justice.cz — úplná účetní závěrka / příloha / auditorská zpráva",
+      "note": "Chybějící údaj je mezera v evidenci, NE nula."
+    }
+  ]
+}

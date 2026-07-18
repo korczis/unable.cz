@@ -179,6 +179,12 @@
     <section class="mt-16" aria-labelledby="fin-title">
       <h2 id="fin-title" class="font-sans text-2xl font-black text-white">Finanční údaje</h2>
       <p class="mt-2 text-sm text-white/60">{{ d.financials.note }}</p>
+      <p class="mt-3">
+        <a href="{{ get_url(path='@/dossier/finance.md') | safe }}"
+           class="inline-flex items-center gap-1 rounded border border-[#d4af37]/40 bg-[#d4af37]/10 px-3 py-1.5 text-sm font-semibold text-[#f3e5c0] hover:border-[#d4af37] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]"
+          >Otevřít úplnou finanční analýzu →</a>
+        <span class="ml-2 text-xs text-white/40">podaná fakta · odvozené ukazatele s vzorci · veřejná tvrzení vs. výkazy</span>
+      </p>
       <div class="mt-6 overflow-x-auto">
         <table class="w-full border-collapse text-left text-sm">
           <thead>
@@ -645,6 +651,7 @@
 <script src="{{ get_url(path='js/graph.js', cachebust=true) | safe }}" defer></script>
 <script src="{{ get_url(path='js/cockpit.js', cachebust=true) | safe }}" defer></script>
 <script src="{{ get_url(path='js/inspector.js', cachebust=true) | safe }}" defer></script>
+<script src="{{ get_url(path='js/lens.js', cachebust=true) | safe }}" defer></script>
 <script>window.__CLAIMS_BASE__ = "{{ get_url(path='@/dossier/claims/_index.md') | safe }}";</script>
 <script src="{{ get_url(path='js/claims-link.js', cachebust=true) | safe }}" defer></script>
 {% endblock scripts %}

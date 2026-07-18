@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{#- Financial analysis route — fully static, mobile-first. Renders the derived
+    finance layer (facts, metrics, claim-vs-filed, reconciliation, gaps) from its
+    JSON shards. Every figure is a FILED FACT unless a metric formula is shown.
+    base.html renders metadata from front matter. -#}
+
+{% block content %}
+{%- set facts = load_data(path="static/data/dossier/finance/facts.json") -%}
+{%- set metrics = load_data(path="static/data/dossier/finance/metrics.json") -%}
+{%- set recon = load_data(path="static/data/dossier/finance/reconciliation.json") -%}
+{%- set cvf = load_data(path="static/data/dossier/finance/claims-vs-filed.json") -%}
+{%- set gaps = load_data(path="static/data/dossier/finance/gaps.json") -%}
+
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
+  <div class="mx-auto max-w-3xl">
+    <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
+      <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
+      <span class="px-1 text-white/30">/</span><span class="text-white/80">Finance</span>
+    </nav>
+
+    <h1 class="mt-6 font-sans text-3xl font-black text-white">Finanční analýza</h1>
+    <p class="mt-2 text-sm text-white/60">
+      Z podané účetní závěrky Able.cz s.r.o. za <strong>FY2024</strong> (Sbírka listin, SRC-15), se
+      srovnávacím obdobím FY2023. Podaná fakta jsou <span class="font-mono text-[#f3e5c0]">FILED_FACT</span>;
+      ukazatele jsou <strong>vypočítané</strong> se zobrazeným vzorcem; ~100 mil. Kč je
+      <strong>výhledový cíl</strong>, ne výsledek. Chybějící údaje jsou mezery, ne nuly.
+    </p>
+
+    {# ---- filed facts ---- #}
+    <section class="mt-10" aria-labelledby="ff-h">
+      <h2 id="ff-h" class="font-sans text-2xl font-black text-white">Podaná fakta (FY2024 / FY2023)</h2>
+      <p class="mt-1 text-xs text-white/40">Hodnoty v tis. CZK, není-li uvedeno jinak. Zdroj: podaná závěrka SRC-15.</p>
+      <div class="mt-4 overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-white/20 text-white/60">
+              <th scope="col" class="py-2 pr-4 font-medium">Koncept</th>
+              <th scope="col" class="py-2 pr-4 text-right font-medium">FY2024</th>
+              <th scope="col" class="py-2 pr-4 text-right font-medium">FY2023</th>
+              <th scope="col" class="py-2 font-medium">Stav</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for f in facts.facts %}{% if f.period == "FY2024" or f.period == "as_filed" %}
+            {%- set prior = facts.facts | filter(attribute="concept", value=f.concept) | filter(attribute="period", value="FY2023") | first -%}
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4 text-white/90">{{ f.label }} <span class="ml-1 font-mono text-xs text-white/25">{{ f.id }}</span></td>
+              <td class="py-2 pr-4 text-right tabular-nums text-white/90">{{ f.valueDisplay }}{% if f.period == "as_filed" %} <span class="text-white/40 text-xs">CZK</span>{% endif %}</td>
+              <td class="py-2 pr-4 text-right tabular-nums text-white/60">{% if prior %}{{ prior.valueDisplay }}{% else %}—{% endif %}</td>
+              <td class="py-2 whitespace-nowrap text-[#f3e5c0]">{{ f.status }}</td>
+            </tr>
+            {% endif %}{%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {# ---- derived metrics ---- #}
+    <section class="mt-10" aria-labelledby="met-h">
+      <h2 id="met-h" class="font-sans text-2xl font-black text-white">Odvozené ukazatele</h2>
+      <p class="mt-1 text-sm text-white/60">Vypočítané z podaných faktů — každý se svým vzorcem. <strong>Nejsou to podaná fakta.</strong></p>
+      <div class="mt-4 space-y-3">
+        {%- for m in metrics.metrics %}
+        <div class="rounded border border-white/10 bg-white/[0.02] p-3">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <span class="text-sm text-white/85">{{ m.name }}</span>
+            <span class="font-mono text-base font-bold text-[#f3e5c0]">{{ m.value }}{% if m.unit == "percent" %} %{% endif %}</span>
+          </div>
+          <p class="mt-1 font-mono text-xs text-white/40">{{ m.formula }}</p>
+          <p class="mt-1 text-xs text-white/55">{{ m.caveats }}</p>
+        </div>
+        {%- endfor %}
+      </div>
+    </section>
+
+    {# ---- balance-sheet reconciliation ---- #}
+    {%- if recon.reconciliation %}
+    <section class="mt-10" aria-labelledby="rec-h">
+      <h2 id="rec-h" class="font-sans text-2xl font-black text-white">Kontrola rozvahy</h2>
+      <p class="mt-2 text-sm text-white/70"><span class="font-mono">{{ recon.reconciliation.equation }}</span> — stav:
+        <b class="text-[#f3e5c0]">{{ recon.reconciliation.state }}</b> (očekáváno {{ recon.reconciliation.expectedDisplay }}, pozorováno {{ recon.reconciliation.observedDisplay }}, rozdíl {{ recon.reconciliation.differenceThousandCzk }} tis. Kč).</p>
+      <p class="mt-1 text-xs text-white/45">{{ recon.reconciliation.note }}</p>
+    </section>
+    {%- endif %}
+
+    {# ---- public claim vs filed ---- #}
+    <section class="mt-10" aria-labelledby="cvf-h">
+      <h2 id="cvf-h" class="font-sans text-2xl font-black text-white">Veřejná tvrzení vs. podané výkazy</h2>
+      <div class="mt-4 space-y-3">
+        {%- for c in cvf.comparisons %}
+        <div class="rounded border border-white/10 bg-white/[0.02] p-3">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <span class="text-sm text-white/85">{{ c.claim }}</span>
+            <span class="whitespace-nowrap text-xs text-white/50">{{ c.classification }}</span>
+          </div>
+          <p class="mt-1 text-sm text-white/70">Tvrzeno: <b class="text-white/90">{{ c.claimValue }}</b></p>
+          {%- if c.filedComparator %}
+          <p class="mt-1 text-sm text-[#d4af37]">⚠ {{ c.interpretation }}</p>
+          {%- endif %}
+        </div>
+        {%- endfor %}
+      </div>
+    </section>
+
+    {# ---- gaps ---- #}
+    <section class="mt-10" aria-labelledby="gap-h">
+      <h2 id="gap-h" class="font-sans text-2xl font-black text-white">Chybějící evidence</h2>
+      <p class="mt-1 text-sm text-white/60">Chybějící údaj je mezera, <strong>ne nula</strong>.</p>
+      <ul class="mt-3 space-y-2 text-sm">
+        {%- for g in gaps.gaps %}
+        <li class="text-white/80"><span class="font-mono text-xs text-white/40">{{ g.state }}</span> — {{ g.concept }} <span class="text-white/40">({{ g.whyMaterial }})</span></li>
+        {%- endfor %}
+      </ul>
+    </section>
+
+    {# ---- methodology ---- #}
+    <section class="mt-10" aria-labelledby="mth-h">
+      <h2 id="mth-h" class="font-sans text-2xl font-black text-white">Metodika a limity</h2>
+      <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-white/70">
+        <li>Podaná fakta jsou parsována ze zdrojově doložených čísel (SRC-15); nic se nedopočítává ani nevymýšlí.</li>
+        <li>Ukazatele se počítají jen z kompatibilních faktů (stejná entita, období, jednotka); každý nese vzorec a ID zdrojových faktů.</li>
+        <li>Individuální výkazy Able.cz — <strong>ne</strong> konsolidované; prostý součet přes entity není konsolidace.</li>
+        <li>Sběr nových dokumentů / OCR / živý Prismatic pipeline: <strong>BLOCKED</strong> v tomto průchodu.</li>
+      </ul>
+      <p class="mt-4 text-sm"><a class="text-[#9ec5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier.md') | safe }}#fin-title">← Zpět na dossier</a></p>
+    </section>
+  </div>
+</main>
+{% endblock content %}
