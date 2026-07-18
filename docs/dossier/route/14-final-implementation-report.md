@@ -38,14 +38,42 @@ without a single inert control — the rest is labelled NOT IMPLEMENTED, not fak
   drift-prone literals), and that every claim status falls in the known enum so
   the overview buckets are exhaustive. 64 tests pass.
 
+## Implemented & validated — pass 2 (context inspector + global search)
+
+- **Context inspector** (`inspector.js`) — selecting a claim, source,
+  contradiction, or entity opens a side panel (desktop) / bottom sheet (mobile,
+  ≤768px) with the record's **real details from `#dossier-data`** and **typed,
+  clickable backlinks**: a claim shows its sources + referencing entities; a
+  source shows the claims/edges/identity fields it supports; a contradiction
+  shows both sides + resolution; an **entity shows its relationships**, each a
+  button that **jumps to the connected entity** — no dead end. VALIDATED:
+  `?entity=schlesinger` opens "person · V. Schlesinger" with 7 relationships;
+  clicking "Blackfish" navigates to `?entity=blackfish`.
+- **Actions** — "V grafu" (scroll + `dossier:graph-focus-requested`), "Kopírovat
+  odkaz" (deep link to the record). Escape closes; focus is captured on open and
+  restored on close; the panel is a `role=complementary` landmark.
+- **Global search** — an input in the overview (focus with `/`) over every
+  claim, source, contradiction, and entity (incl. IČO/ident text) plus exact-id
+  priority. Arrow/Enter keyboard nav; selecting a record routes through cockpit's
+  selection (highlight + URL) or opens the entity inspector. VALIDATED: "24278815"
+  and "Schlesinger" return results; keyboard-operable.
+- **Deep links** — extended with `?entity=<id>`; restore-on-load handled inside
+  `inspector.js` (cockpit dispatches its restore event before this module's
+  listeners exist, both `defer`, so the panel restores directly from the URL).
+- **Tests** (`dossier-inspector.test.mjs`) — wiring, canonical-data read, and
+  that every edge endpoint + node-referenced claim resolves (so no inspector
+  backlink can point nowhere). 68 tests pass.
+
 ## Not implemented (labelled)
 
-Lens system, right-context inspector rebuild, comparison mode, timeline rebuild,
-per-record detail shards, global fuzzy search, expanded command palette, Three.js
-temporal view. The existing graph workspace (`graph.js`) already provides a
-Ctrl+K palette, path finder, time machine, and inspector scoped to the graph;
-the cockpit dispatches `dossier:*-selected` events it (and future work) can
-consume, so the integration seam exists.
+Lens system, comparison mode, timeline rebuild, per-record detail shards,
+financial-value drill-down, chart-driven filtering, and a bidirectional
+Cytoscape sync (the inspector's "V grafu" scrolls + emits
+`dossier:graph-focus-requested`, but `graph.js` does not yet consume it to
+select the node). The existing graph workspace already provides a Ctrl+K
+palette, path finder, time machine, and a graph-scoped inspector; the page
+inspector + `/` search complement it for records/entities. These remain the
+honest next steps, labelled rather than faked.
 
 ## Files changed
 
