@@ -7,8 +7,12 @@ what was reused.
 
 ## What Prismatic provides (observed)
 - A monorepo of OTP applications for OSINT and DD, with source adapters for
-  Czech registers (ARES, ČÚZK, ISIR, Sbírka listin, justice.cz) and
-  international sources (sanctions, corporate registries).
+  Czech registers. **Correction (2026-07-18):** ARES, ISIR and justice.cz
+  adapters are real; the **ČÚZK/katastr adapter is a stub** (returns empty data),
+  and there is no RÚIAN loader or deployed PostGIS — verified in
+  [depth/19](depth/19-adversarial-implementation-audit.md) and
+  [cadastre/00](cadastre/00-current-capability-audit.md). Do not read this line
+  as "ČÚZK is integrated."
 - Existing DD **cases** under `cases/` (e.g. `DD-MA-CEZ-GasNet-2026-05-14`,
   `DD-AK-Prochazka-Brno-2026-05-03`), a `CASE_GENERATOR.md`, and an `index.yaml`
   — a case-bundle convention this dossier mirrors.

@@ -142,6 +142,39 @@ for (const c of d.contradictions || []) {
   if (!frontierRefs.has(c.id)) err("CON_NO_TASK", `${c.id} has no frontier task`);
 }
 
+// ---------------------------------------------------------------------------
+// GATE 8 — cadastral publication safety. The spatial layer carries elevated
+// privacy risk, so the shipped address exports must: publish only permitted
+// classes, never leak a natural-person residential address or private
+// coordinates, never present an ambiguous match as exact, and never carry an
+// invented RÚIAN id / parcel / ownership without a source.
+// ---------------------------------------------------------------------------
+const cad = loadOut("cadastre/addresses.json");
+const cadManifest = loadOut("cadastre/manifest.json");
+const ALLOWED_PUB = new Set(["public", "public_with_context"]);
+if (cad) {
+  for (const a of cad.addresses || []) {
+    if (!ALLOWED_PUB.has(a.publication)) err("CAD_PUB_CLASS", `${a.id} has non-public class "${a.publication}" in a public export`);
+    if (a.ownerType && a.ownerType !== "legal_entity") err("CAD_NATURAL_PERSON", `${a.id} is a natural-person address in a public export`);
+    if (!a.sources || !a.sources.length) err("CAD_NO_SOURCE", `${a.id} has no source`);
+    for (const s of a.sources || []) if (!srcIds.has(s)) err("CAD_BAD_SOURCE", `${a.id} cites unknown ${s}`);
+    if (a.resolution === "ambiguous") err("CAD_AMBIGUOUS_PUBLISHED", `${a.id} is ambiguous but published as a resolved address`);
+    // Invented-cadastral guard: a RÚIAN id / parcel / ownership / coordinates
+    // may only be present if it was actually collected (collected.* true).
+    if (a.ruianAddressPointId && !(a.collected && a.collected.ruian)) err("CAD_INVENTED_RUIAN", `${a.id} has a RÚIAN id but collected.ruian is false`);
+    if (a.coordinates && !(a.collected && a.collected.geometry)) err("CAD_INVENTED_GEOMETRY", `${a.id} has coordinates but collected.geometry is false`);
+    if ((a.parcels && a.parcels.length) && !(a.collected && a.collected.parcel)) err("CAD_INVENTED_PARCEL", `${a.id} has parcels but collected.parcel is false`);
+    if (a.ownership && !(a.collected && a.collected.ownership)) err("CAD_INVENTED_OWNERSHIP", `${a.id} has ownership but collected.ownership is false`);
+  }
+  if (cadManifest && cadManifest.naturalPersonAddressesPublished !== 0) err("CAD_NP_COUNT", `manifest reports ${cadManifest.naturalPersonAddressesPublished} natural-person addresses published`);
+  // Whole-file PII sweep already runs in GATE 4 over every cadastre file below.
+}
+// Extend the GATE-4 PII sweep to the cadastre exports.
+for (const f of ["cadastre/addresses.json", "cadastre/coverage.json", "cadastre/gaps.json", "cadastre/manifest.json"]) {
+  const p = join(OUT, f);
+  if (existsSync(p) && RODNE_CISLO.test(readFileSync(p, "utf8"))) err("PII_BIRTH_NUMBER", `${f} contains a rodné-číslo-shaped token`);
+}
+
 // ---- report ---------------------------------------------------------------
 if (JSON_MODE) {
   console.log(JSON.stringify({ ok: errors.length === 0, errors, warnings }, null, 2));
