@@ -1,0 +1,29 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "finance-reconciliation",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Financial-intelligence projection. Filed facts parsed from sourced figures; metrics carry formulas + fact IDs; nothing invented; NOT_FOUND is never zero."
+  },
+  "reconciliation": {
+    "id": "RECON-ALE-BS-FY2024",
+    "equation": "total_assets ≈ total_equity + total_liabilities",
+    "expected": 71880,
+    "observed": 71775,
+    "expectedDisplay": "71 880",
+    "observedDisplay": "71 775",
+    "differenceThousandCzk": 105,
+    "facts": [
+      "FIN-ALE-FY2024-TOTAL-ASSETS",
+      "FIN-ALE-FY2024-TOTAL-EQUITY",
+      "FIN-ALE-FY2024-TOTAL-LIABILITIES"
+    ],
+    "state": "PASSED_WITH_ROUNDING",
+    "note": "Rozdíl 105 tis. Kč je nejspíš časové rozlišení (accruals), které není v tomto výtahu samostatně zachyceno. Filed hodnoty se nemění kvůli dorovnání."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "finance-manifest",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Financial-intelligence projection. Filed facts parsed from sourced figures; metrics carry formulas + fact IDs; nothing invented; NOT_FOUND is never zero."
+  },
+  "entities": [
+    {
+      "id": "able",
+      "name": "Able.cz s.r.o.",
+      "periods": [
+        "FY2024",
+        "FY2023"
+      ],
+      "filedFacts": 21
+    }
+  ],
+  "factCount": 21,
+  "metricCount": 8,
+  "gapCount": 4,
+  "documentAcquisition": "BLOCKED — no live provider/OCR this pass; figures restructured from sourced dossier.json (SRC-15).",
+  "files": [
+    "facts.json",
+    "metrics.json",
+    "reconciliation.json",
+    "claims-vs-filed.json",
+    "gaps.json"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "finance-claims-vs-filed",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Financial-intelligence projection. Filed facts parsed from sourced figures; metrics carry formulas + fact IDs; nothing invented; NOT_FOUND is never zero.",
+    "count": 4
+  },
+  "comparisons": [
+    {
+      "claim": "Combined revenue target (Able + Blackfish, stated year)",
+      "claimValue": "~100,000,000 CZK",
+      "status": "SELF_REPORTED",
+      "sources": [
+        "SRC-04",
+        "SRC-05"
+      ],
+      "classification": "TARGET (forward-looking)",
+      "entityPerimeter": "Able + Blackfish (combined, self-described)",
+      "forwardLooking": true,
+      "filedComparator": {
+        "concept": "net_turnover",
+        "period": "FY2024",
+        "entity": "Able.cz only",
+        "value": 36319,
+        "unit": "thousand_czk",
+        "factId": "FIN-ALE-FY2024-NET-TURNOVER"
+      },
+      "periodMismatch": true,
+      "perimeterMismatch": true,
+      "interpretation": "~100 mil. Kč je SPOLEČNÝ, VÝHLEDOVÝ cíl (Able+Blackfish); filed FY2024 obrat Able.cz je 36,3 mil. Kč (jen Able, historický). NELZE je přímo srovnávat jako cíl vs. výsledek."
+    },
+    {
+      "claim": "Combined headcount (Able + Blackfish)",
+      "claimValue": "~60 people",
+      "status": "SELF_REPORTED",
+      "sources": [
+        "SRC-04",
+        "SRC-05"
+      ],
+      "classification": "PERFORMANCE/MARKETING CLAIM",
+      "entityPerimeter": "Able + Blackfish (combined, self-described)",
+      "forwardLooking": false
+    },
+    {
+      "claim": "Tenders won in the stated year (combined)",
+      "claimValue": "4 tenders",
+      "status": "SELF_REPORTED",
+      "sources": [
+        "SRC-05"
+      ],
+      "classification": "PERFORMANCE/MARKETING CLAIM",
+      "entityPerimeter": "Able + Blackfish (combined, self-described)",
+      "forwardLooking": false
+    },
+    {
+      "claim": "Combined contract value of those tenders",
+      "claimValue": ">20,000,000 CZK",
+      "status": "SELF_REPORTED",
+      "sources": [
+        "SRC-05"
+      ],
+      "classification": "PERFORMANCE/MARKETING CLAIM",
+      "entityPerimeter": "Able + Blackfish (combined, self-described)",
+      "forwardLooking": false
+    }
+  ]
+}
