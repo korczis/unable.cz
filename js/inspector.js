@@ -158,6 +158,7 @@
   function notFound(id) { kindEl.textContent = "záznam · " + id; body.innerHTML = "<p class='ix-p ix-dim'>Záznam " + esc(id) + " není v datech.</p>" + actions("record", id); }
 
   function inspect(kind, id) {
+    var isEntity = kind === "entity" || (!kind && !claimById[id] && !srcById[id] && !conById[id] && nodeById[id]);
     if (kind === "claim") renderClaim(id);
     else if (kind === "source") renderSource(id);
     else if (kind === "contradiction") renderContradiction(id);
@@ -168,6 +169,9 @@
     else if (nodeById[id]) renderEntity(id);
     else notFound(id);
     open();
+    // Sync the Cytoscape graph to the selected entity (graph.js listens). Only
+    // for entities — claims/sources would force an aggressive graph mode switch.
+    if (isEntity && nodeById[id]) document.dispatchEvent(new CustomEvent("dossier:entity-selected", { detail: { id: id } }));
   }
 
   // ---- listen to cockpit's selection events -------------------------------
