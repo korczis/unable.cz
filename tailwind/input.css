@@ -7,6 +7,17 @@
   body {
     @apply overflow-x-hidden bg-black;
   }
+
+  /*
+   * The `hidden` attribute must always win. Tailwind's display utilities
+   * (`flex`, `grid`, `block`…) have equal specificity to `[hidden]` and, being
+   * emitted later, override it — so a `<div hidden class="flex">` modal stays
+   * visible. The evidence and context inspectors toggle visibility via the
+   * `hidden` attribute, so pin it with `!important`.
+   */
+  [hidden] {
+    display: none !important;
+  }
 }
 
 /*
