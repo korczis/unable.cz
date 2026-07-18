@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-53",
+  "slug": "clm-53",
+  "canonicalPath": "/dossier/claims/clm-53/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Able.cz has been investor-plurality-owned for most of the period covered by the reviewed media narrative, which consistently frames it as the founders' company; the founders' combined registered stake (35.3 %) has been smaller than ZenX Capital's alone since at least November 2024.",
+  "shortTitle": "Able.cz has been investor-plurality-owned for most of the period…",
+  "status": "ASSESSED",
+  "statusExplanation": "Analytické čtení citované evidence, nikoli přímo doložený fakt.",
+  "note": null,
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-04",
+      "title": "Forbes.cz — Able acquires Blackfish studio",
+      "url": "https://forbes.cz/vyvojar-able-ziskava-studio-blackfish-firmam-planuji-radit-jak-vyuzit-umelou-inteligenci-v-byznysu/",
+      "tier": 3,
+      "upstream": "forbes",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-05",
+      "title": "CzechCrunch — Able buys Blackfish",
+      "url": "https://cc.cz/desetimilionove-presuny-na-trhu-agentur-able-kupuje-blackfish-chteji-slapat-na-paty-strv/",
+      "tier": 3,
+      "upstream": "czechcrunch",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 3,
+  "independentUpstreams": 3,
+  "upstreams": [
+    "cz_register",
+    "forbes",
+    "czechcrunch"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": false,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "zenx",
+        "title": "ZenX Capital a.s.",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 1,
+    "total": 3
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "009e40b6"
+}

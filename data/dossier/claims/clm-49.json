@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-49",
+  "slug": "clm-49",
+  "canonicalPath": "/dossier/claims/clm-49/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Blackfish & Co. s.r.o.'s filed balance sheets (micro accounting unit — abbreviated, no P&L) show: FY2024 total assets 6,747 tis. CZK, equity 2,665 tis. CZK; FY2025 total assets 8,253 tis. CZK, equity ~2.7M CZK.",
+  "shortTitle": "Blackfish & Co. s.r.o.'s filed balance sheets (micro accounting…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "Exact rows: 'AKTIVA CELKEM' and 'A. Vlastní kapitál' in each filing — see per-cell citations in the evidence layer.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-18",
+      "title": "Sbírka listin (or.justice.cz) — Blackfish & Co. s.r.o., účetní závěrka 2024 (C 283664/SL21/MSPH)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=85725657&subjektId=991026&spis=1096381",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    },
+    {
+      "id": "SRC-19",
+      "title": "Sbírka listin (or.justice.cz) — Blackfish & Co. s.r.o., účetní závěrka 2025 (C 283664/SL23/MSPH)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=91233172&subjektId=991026&spis=1096381",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    }
+  ],
+  "sourceRecords": 2,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 2,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-27"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-27",
+      "contentPath": "@/dossier/claims/clm-27.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "blackfish",
+        "title": "Blackfish",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 1,
+    "total": 3
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "c48f5b3b"
+}

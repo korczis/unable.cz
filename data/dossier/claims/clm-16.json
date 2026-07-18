@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-16",
+  "slug": "clm-16",
+  "canonicalPath": "/dossier/claims/clm-16/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Václav Faraga holds statutory and/or ownership roles in at least five other companies beyond Able.cz — Mindee app s.r.o. (IČO 06437877), Blackfish & Co. s.r.o. (IČO 06526411), ERA25 s.r.o. (IČO 23630051, 39.5%), Verzuz.com s.r.o. (IČO 24094323), and FaMe logistics s.r.o. v likvidaci (IČO 02019396) — most tied to a shared Znojmo address cluster.",
+  "shortTitle": "Václav Faraga holds statutory and/or ownership roles in at least…",
+  "status": "CORROBORATED",
+  "statusExplanation": "Podpořeno více nezávisle vzniklými rodinami zdrojů. Pozor: dvě zrcadla téže autority nejsou nezávislé potvrzení.",
+  "note": null,
+  "live": false,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-10",
+      "title": "Czech commercial register — aggregator mirror search (kurzy.cz, rejstrik-firem)",
+      "url": "https://rejstrik-firem.kurzy.cz/",
+      "tier": 2,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-11",
+      "title": "Hlídač státu — osoba/subjekt ownership-graph records",
+      "url": "https://www.hlidacstatu.cz/",
+      "tier": 2,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 2,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": true,
+  "supersededBy": [
+    "CLM-28",
+    "CLM-29",
+    "CLM-30",
+    "CLM-31",
+    "CLM-32"
+  ],
+  "supersededByLinks": [
+    {
+      "id": "CLM-28",
+      "contentPath": "@/dossier/claims/clm-28.md"
+    },
+    {
+      "id": "CLM-29",
+      "contentPath": "@/dossier/claims/clm-29.md"
+    },
+    {
+      "id": "CLM-30",
+      "contentPath": "@/dossier/claims/clm-30.md"
+    },
+    {
+      "id": "CLM-31",
+      "contentPath": "@/dossier/claims/clm-31.md"
+    },
+    {
+      "id": "CLM-32",
+      "contentPath": "@/dossier/claims/clm-32.md"
+    }
+  ],
+  "supersededReason": "Overloaded (five companies in one claim) and mirror-sourced; split per company and upgraded to primary evidence 2026-07-18.",
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 0,
+    "total": 1
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "c1d380dd"
+}

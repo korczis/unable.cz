@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-28",
+  "slug": "clm-28",
+  "canonicalPath": "/dossier/claims/clm-28/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Mindee app s.r.o. (IČO 06437877) is a majority-owned subsidiary of Able.cz s.r.o.: Able.cz held 50 % at its 2017 founding, 47.5 % during 2019–2024, and 95 % since 5 May 2024 (Radek Hübler holds the remaining 5 %). Tomáš Melichárek has been its jednatel since founding (2017); Václav Faraga was added as jednatel on 2 May 2024.",
+  "shortTitle": "Mindee app s.r.o. (IČO 06437877) is a majority-owned subsidiary of…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "The mirror-based pass recorded only Faraga's 2024 jednatel role and missed that the company is Able.cz-owned outright — a materially different fact. Consistent with the 1,430 tis. CZK 'Podíly - ovládaná osoba' line in Able.cz's filed FY2024 balance sheet.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-16"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-16",
+      "contentPath": "@/dossier/claims/clm-16.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "mindee",
+        "title": "Mindee app s.r.o.",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 3,
+    "total": 5
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "2f5fa7dd"
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-44",
+  "slug": "clm-44",
+  "canonicalPath": "/dossier/claims/clm-44/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Able.cz s.r.o.'s filed FY2024 statement (Sbírka listin C 85425/SL68/KSBR, filed 5 Dec 2025) shows: revenue from products and services 36,319 tis. CZK (FY2023: 42,642), net turnover 36,319 tis. CZK (FY2023: 43,079), and net result after tax 631 tis. CZK (FY2023: 844). Filed revenue therefore fell ~14.8 % year-on-year.",
+  "shortTitle": "Able.cz s.r.o.'s filed FY2024 statement (Sbírka listin C…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "Exact rows: VZZ lines I, '*** Čistý obrat' and '** Výsledek po zdanění' — see the financial table's per-cell citations. Revenue and net turnover are distinct filed metrics; the superseded CLM-25 conflated them.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-15",
+      "title": "Sbírka listin (or.justice.cz) — Able.cz s.r.o., účetní závěrka 2024 (C 85425/SL68/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=89167789&subjektId=49914&spis=953839",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 1,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-25"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-25",
+      "contentPath": "@/dossier/claims/clm-25.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 1,
+    "total": 2
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "34324310"
+}

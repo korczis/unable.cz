@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-17",
+  "slug": "clm-17",
+  "canonicalPath": "/dossier/claims/clm-17/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Tomáš Melichárek is sole owner and jednatel of M&M plan s.r.o. (IČO 01812840) since 2013, and co-jednatel of FaMe logistics s.r.o. v likvidaci alongside Václav Faraga and Petr Faraga. An enforcement (exekuce) proceeding recorded against the M&M plan director shows as closed as of 16 April 2026.",
+  "shortTitle": "Tomáš Melichárek is sole owner and jednatel of M&M plan s.r.o.…",
+  "status": "CORROBORATED",
+  "statusExplanation": "Podpořeno více nezávisle vzniklými rodinami zdrojů. Pozor: dvě zrcadla téže autority nejsou nezávislé potvrzení.",
+  "note": null,
+  "live": false,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-10",
+      "title": "Czech commercial register — aggregator mirror search (kurzy.cz, rejstrik-firem)",
+      "url": "https://rejstrik-firem.kurzy.cz/",
+      "tier": 2,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": true,
+  "supersededBy": [
+    "CLM-33",
+    "CLM-31",
+    "CLM-47"
+  ],
+  "supersededByLinks": [
+    {
+      "id": "CLM-33",
+      "contentPath": "@/dossier/claims/clm-33.md"
+    },
+    {
+      "id": "CLM-31",
+      "contentPath": "@/dossier/claims/clm-31.md"
+    },
+    {
+      "id": "CLM-47",
+      "contentPath": "@/dossier/claims/clm-47.md"
+    }
+  ],
+  "supersededReason": "Overloaded (two companies plus an enforcement observation); split and upgraded to primary evidence 2026-07-18.",
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 0,
+    "total": 1
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "fa077eb0"
+}

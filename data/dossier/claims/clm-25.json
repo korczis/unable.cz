@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-25",
+  "slug": "clm-25",
+  "canonicalPath": "/dossier/claims/clm-25/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Able.cz s.r.o.'s filed FY2024 financial statement (Sbírka listin, C 85425/SL68/KSBR) shows revenue of 36.3M CZK, down from 43.1M CZK in FY2023 — a decline, and well short of the ~100M CZK combined Able+Blackfish target reported in media. Net result was profitable but thin and shrinking (631 thousand CZK in FY2024 vs 844 thousand in FY2023).",
+  "shortTitle": "Able.cz s.r.o.'s filed FY2024 financial statement (Sbírka listin…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": null,
+  "live": false,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-15",
+      "title": "Sbírka listin (or.justice.cz) — Able.cz s.r.o., účetní závěrka 2024 (C 85425/SL68/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=89167789&subjektId=49914&spis=953839",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 1,
+  "monoculture": true,
+  "superseded": true,
+  "supersededBy": [
+    "CLM-44",
+    "CLM-45"
+  ],
+  "supersededByLinks": [
+    {
+      "id": "CLM-44",
+      "contentPath": "@/dossier/claims/clm-44.md"
+    },
+    {
+      "id": "CLM-45",
+      "contentPath": "@/dossier/claims/clm-45.md"
+    }
+  ],
+  "supersededReason": "Conflated line-I revenue (FY2023: 42,642 tis.) with net turnover (FY2023: 43,079 tis.) and bundled the media-target comparison (an assessment) into a primary-verified claim. Split 2026-07-18 with exact filing citations.",
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 0,
+    "total": 1
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "3c459f29"
+}

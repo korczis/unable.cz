@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-36",
+  "slug": "clm-36",
+  "canonicalPath": "/dossier/claims/clm-36/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Ondřej Kaman directly holds 1.50 % of Able.cz s.r.o. (vklad 3,655.73 CZK) since 29 July 2025.",
+  "shortTitle": "Ondřej Kaman directly holds 1.50 % of Able.cz s.r.o. (vklad…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "CORRECTION: the earlier record stated no direct Able.cz tie for Ondřej Kaman; the primary cap table shows one.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "ondrej_kaman",
+        "title": "O. Kaman",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 2,
+    "total": 4
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "e4da7ae3"
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-39",
+  "slug": "clm-39",
+  "canonicalPath": "/dossier/claims/clm-39/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Vít Schlesinger holds 30 % of Ventoux Studio s.r.o. (IČO 23749636) since its founding on 22 September 2025, alongside Andrea Naštická (35 %, jednatelka) and Nathalie Gabrielle Peyrichout (35 %, jednatelka). Schlesinger is not a jednatel there.",
+  "shortTitle": "Vít Schlesinger holds 30 % of Ventoux Studio s.r.o. (IČO 23749636)…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": null,
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-23"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-23",
+      "contentPath": "@/dossier/claims/clm-23.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "ventoux",
+        "title": "Ventoux Studio s.r.o.",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 1,
+    "total": 3
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "78b889ec"
+}

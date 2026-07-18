@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-26",
+  "slug": "clm-26",
+  "canonicalPath": "/dossier/claims/clm-26/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "In January 2026, a court exekutor ordered execution against Tomáš Melichárek's personal ownership stake (podíl) in Able.cz s.r.o., to satisfy a 9,327.14 CZK debt owed to Dopravní podnik hl. m. Prahy, a.s. (the Prague public-transport operator). The execution was closed on 24 March 2026 as satisfied by payment ('skončena vymožením'). This is a personal, minor matter — consistent with an unpaid public-transport fine escalated to court enforcement — not a sign of company-level financial distress; no insolvency or company-directed enforcement was found.",
+  "shortTitle": "In January 2026, a court exekutor ordered execution against Tomáš…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "The debtor's birth-ID number, present in the source documents, was redacted from this dossier and its underlying case files per personal-data-minimization practice.",
+  "live": false,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-16",
+      "title": "Sbírka listin (or.justice.cz) — exekuční příkaz postižením obchodního podílu, T. Melichárek (C 85425/SL69/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=89686364&subjektId=49914&spis=953839",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    },
+    {
+      "id": "SRC-17",
+      "title": "Sbírka listin (or.justice.cz) — oznámení o skončení exekuce, T. Melichárek (C 85425/SL70/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=90691646&subjektId=49914&spis=953839",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    }
+  ],
+  "sourceRecords": 2,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 2,
+  "monoculture": true,
+  "superseded": true,
+  "supersededBy": [
+    "CLM-46",
+    "CLM-47",
+    "CLM-48"
+  ],
+  "supersededByLinks": [
+    {
+      "id": "CLM-46",
+      "contentPath": "@/dossier/claims/clm-46.md"
+    },
+    {
+      "id": "CLM-47",
+      "contentPath": "@/dossier/claims/clm-47.md"
+    },
+    {
+      "id": "CLM-48",
+      "contentPath": "@/dossier/claims/clm-48.md"
+    }
+  ],
+  "supersededReason": "Embedded an unsourced cause ('consistent with an unpaid public-transport fine') and a materiality judgment inside a primary-verified observation; the filed documents state creditor and amount, never the debt's origin. Also, the insolvency-register part could never be asserted: ISIR was BLOCKED (HTTP 500), not searched. Split 2026-07-18.",
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 0,
+    "total": 1
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "60fa8ee7"
+}

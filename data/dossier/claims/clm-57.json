@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-57",
+  "slug": "clm-57",
+  "canonicalPath": "/dossier/claims/clm-57/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "The Registr smluv (official contracts register) returns zero published contracts for IČO 24278815 (Able.cz) and zero for IČO 06526411 (Blackfish & Co.) — searched 18 July 2026, result pages preserved. Neither company appears as a party to any contract published under the Czech contracts-register act.",
+  "shortTitle": "The Registr smluv (official contracts register) returns zero…",
+  "status": "NOT_FOUND",
+  "statusExplanation": "Zdroj byl úspěšně dotázán, ale žádný odpovídající záznam nevrátil.",
+  "note": "A genuine negative result from a successful query (the register only covers contracts with publication duty — mostly public-sector counterparties). This bounds, but does not disprove, the self-reported '4 tenders won' claim: no corresponding published contract was found.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-20",
+      "title": "Registr smluv (smlouvy.gov.cz) — party search by IČO 24278815 and 06526411 (result pages preserved)",
+      "url": "https://smlouvy.gov.cz/vyhledavani?vyhledavani%5Bsmluvni_strana%5D%5Bico%5D=24278815",
+      "tier": 1,
+      "upstream": "contracts_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "contracts_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 2,
+    "total": 3
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "4352f772"
+}

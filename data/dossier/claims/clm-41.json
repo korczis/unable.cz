@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-41",
+  "slug": "clm-41",
+  "canonicalPath": "/dossier/claims/clm-41/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Lukáš Oslzla was a Blackfish & Co. jednatel from 8 June 2022 to 22 February 2024 and a 30 % shareholder from 9 June 2022 to 23 February 2024, when Vít Schlesinger returned to 100 %.",
+  "shortTitle": "Lukáš Oslzla was a Blackfish & Co. jednatel from 8 June 2022 to 22…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": null,
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-24"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-24",
+      "contentPath": "@/dossier/claims/clm-24.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "oslzla",
+        "title": "L. Oslzla",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 1,
+    "total": 3
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "f777eaf5"
+}

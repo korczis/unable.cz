@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-40",
+  "slug": "clm-40",
+  "canonicalPath": "/dossier/claims/clm-40/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Schlesinger's concurrent Ventoux Studio stake — registered about two months after the Blackfish acquisition closed — and his reciprocal 5 % Able.cz stake (CLM-22) are both absent from every public account of the deal reviewed (Forbes.cz, CzechCrunch). A disclosure gap, not evidence of wrongdoing.",
+  "shortTitle": "Schlesinger's concurrent Ventoux Studio stake — registered about…",
+  "status": "ASSESSED",
+  "statusExplanation": "Analytické čtení citované evidence, nikoli přímo doložený fakt.",
+  "note": null,
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-04",
+      "title": "Forbes.cz — Able acquires Blackfish studio",
+      "url": "https://forbes.cz/vyvojar-able-ziskava-studio-blackfish-firmam-planuji-radit-jak-vyuzit-umelou-inteligenci-v-byznysu/",
+      "tier": 3,
+      "upstream": "forbes",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-05",
+      "title": "CzechCrunch — Able buys Blackfish",
+      "url": "https://cc.cz/desetimilionove-presuny-na-trhu-agentur-able-kupuje-blackfish-chteji-slapat-na-paty-strv/",
+      "tier": 3,
+      "upstream": "czechcrunch",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 3,
+  "independentUpstreams": 3,
+  "upstreams": [
+    "cz_register",
+    "forbes",
+    "czechcrunch"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": false,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-23"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-23",
+      "contentPath": "@/dossier/claims/clm-23.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "ventoux",
+        "title": "Ventoux Studio s.r.o.",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 1,
+    "total": 3
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "2092bff4"
+}

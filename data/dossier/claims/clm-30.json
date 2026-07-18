@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-30",
+  "slug": "clm-30",
+  "canonicalPath": "/dossier/claims/clm-30/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Verzuz.com s.r.o. (IČO 24094323, founded 22 Dec 2025) is a 100 % subsidiary of Able.cz s.r.o.; Václav Faraga and Tomáš Melichárek are its jednatelé.",
+  "shortTitle": "Verzuz.com s.r.o. (IČO 24094323, founded 22 Dec 2025) is a 100 %…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "The mirror-based pass recorded only a Faraga jednatel role, not Able.cz's full ownership.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-16"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-16",
+      "contentPath": "@/dossier/claims/clm-16.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "verzuz",
+        "title": "Verzuz.com s.r.o.",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 3,
+    "total": 5
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "a7cf377c"
+}

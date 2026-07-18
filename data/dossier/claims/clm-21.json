@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-21",
+  "slug": "clm-21",
+  "canonicalPath": "/dossier/claims/clm-21/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Able.cz s.r.o. is registered as the 100% shareholder of Blackfish & Co. s.r.o. (IČO 06526411) since 29 July 2025, with Václav Faraga added as a second jednatel on 28 July 2025 — confirming the media-reported acquisition at register level. Ownership before the deal: founder Vít Schlesinger held 100% at founding (2017, then named Black Fish Digital s.r.o.), one-third alongside Lukáš Caldr and David Veteška 2018–2020, 100% again 2020–2022, 70% during Lukáš Oslzla's 30% co-ownership 2022–2024, and 100% from 23 Feb 2024 until the sale.",
+  "shortTitle": "Able.cz s.r.o. is registered as the 100% shareholder of Blackfish…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "Corrects the earlier mirror-based wording that Schlesinger held 100% continuously until the sale; the full ownership history is in the preserved VR record. Strengthens CLM-14.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-04",
+      "title": "Forbes.cz — Able acquires Blackfish studio",
+      "url": "https://forbes.cz/vyvojar-able-ziskava-studio-blackfish-firmam-planuji-radit-jak-vyuzit-umelou-inteligenci-v-byznysu/",
+      "tier": 3,
+      "upstream": "forbes",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-05",
+      "title": "CzechCrunch — Able buys Blackfish",
+      "url": "https://cc.cz/desetimilionove-presuny-na-trhu-agentur-able-kupuje-blackfish-chteji-slapat-na-paty-strv/",
+      "tier": 3,
+      "upstream": "czechcrunch",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 3,
+  "independentUpstreams": 3,
+  "upstreams": [
+    "cz_register",
+    "forbes",
+    "czechcrunch"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": false,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "blackfish",
+        "title": "Blackfish",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 2,
+    "total": 4
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "46003691"
+}

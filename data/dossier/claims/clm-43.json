@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-43",
+  "slug": "clm-43",
+  "canonicalPath": "/dossier/claims/clm-43/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "The mirrored February 2024 exits — Schlesinger taking 100 % of Blackfish while Oslzla took 100 % of Artstay/Lovs — are consistent with a negotiated separation dividing the two ventures between the two men. No public source states the reason for the split.",
+  "shortTitle": "The mirrored February 2024 exits — Schlesinger taking 100 % of…",
+  "status": "ASSESSED",
+  "statusExplanation": "Analytické čtení citované evidence, nikoli přímo doložený fakt.",
+  "note": "Timing-based reading; the 'why' remains NOT_FOUND.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-24"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-24",
+      "contentPath": "@/dossier/claims/clm-24.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 1,
+    "total": 2
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "c3e13c6c"
+}

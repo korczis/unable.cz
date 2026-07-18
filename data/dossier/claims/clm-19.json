@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-19",
+  "slug": "clm-19",
+  "canonicalPath": "/dossier/claims/clm-19/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Radek Juhaňák and Jakub Kaman are both shareholders of Able.cz s.r.o. and co-own one label s.r.o. (IČO 02474727, Znojmo) together with Ondřej Kaman. Per the primary register: Jakub Kaman 36 % (jednatel since 2 Jan 2014; sole founder, 100 % until 2017), Ondřej Kaman 34 % (jednatel since 23 Feb 2022; 49 % during 2017–2022), Radek Juhaňák 30 % (jednatel since 23 Feb 2022).",
+  "shortTitle": "Radek Juhaňák and Jakub Kaman are both shareholders of Able.cz…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "The stake split was disputed between two mirror passes (CON-02) — resolved 2026-07-18 from the preserved ARES VR record for IČO 02474727.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "jakub_kaman",
+        "title": "J. Kaman",
+        "relation": "týká se entity"
+      },
+      {
+        "type": "entity",
+        "id": "ondrej_kaman",
+        "title": "O. Kaman",
+        "relation": "týká se entity"
+      },
+      {
+        "type": "entity",
+        "id": "onelabel",
+        "title": "one label s.r.o.",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 1,
+    "total": 5
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "5a8fb63b"
+}

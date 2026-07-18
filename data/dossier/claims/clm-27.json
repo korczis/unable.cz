@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-27",
+  "slug": "clm-27",
+  "canonicalPath": "/dossier/claims/clm-27/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Blackfish & Co. s.r.o.'s own filed balance sheets (as a micro accounting unit, no P&L required) show total assets of only 6.75M CZK (FY2024) and 8.25M CZK (FY2025) with equity around 2.6–2.7M CZK — financially tiny next to Able.cz's own 71.9M CZK total assets. Most of the scale implied by the self-reported 'combined ~60 people, ~100M CZK' framing evidently comes from Able.cz itself, not from Blackfish.",
+  "shortTitle": "Blackfish & Co. s.r.o.'s own filed balance sheets (as a micro…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": null,
+  "live": false,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-18",
+      "title": "Sbírka listin (or.justice.cz) — Blackfish & Co. s.r.o., účetní závěrka 2024 (C 283664/SL21/MSPH)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=85725657&subjektId=991026&spis=1096381",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    },
+    {
+      "id": "SRC-19",
+      "title": "Sbírka listin (or.justice.cz) — Blackfish & Co. s.r.o., účetní závěrka 2025 (C 283664/SL23/MSPH)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=91233172&subjektId=991026&spis=1096381",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    }
+  ],
+  "sourceRecords": 2,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 2,
+  "monoculture": true,
+  "superseded": true,
+  "supersededBy": [
+    "CLM-49",
+    "CLM-50"
+  ],
+  "supersededByLinks": [
+    {
+      "id": "CLM-49",
+      "contentPath": "@/dossier/claims/clm-49.md"
+    },
+    {
+      "id": "CLM-50",
+      "contentPath": "@/dossier/claims/clm-50.md"
+    }
+  ],
+  "supersededReason": "Mixed filed figures with an analytical comparison; split into observation + assessment 2026-07-18 with exact citations.",
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 0,
+    "total": 1
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "047c5059"
+}

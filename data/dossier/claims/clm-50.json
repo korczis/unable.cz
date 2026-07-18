@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-50",
+  "slug": "clm-50",
+  "canonicalPath": "/dossier/claims/clm-50/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Blackfish is financially small next to Able.cz (filed total assets 6.7–8.3M vs 71.9M CZK): most of the scale implied by the self-reported 'combined ~60 people, ~100M CZK' framing evidently comes from Able.cz itself.",
+  "shortTitle": "Blackfish is financially small next to Able.cz (filed total assets…",
+  "status": "ASSESSED",
+  "statusExplanation": "Analytické čtení citované evidence, nikoli přímo doložený fakt.",
+  "note": null,
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-15",
+      "title": "Sbírka listin (or.justice.cz) — Able.cz s.r.o., účetní závěrka 2024 (C 85425/SL68/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=89167789&subjektId=49914&spis=953839",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    },
+    {
+      "id": "SRC-18",
+      "title": "Sbírka listin (or.justice.cz) — Blackfish & Co. s.r.o., účetní závěrka 2024 (C 283664/SL21/MSPH)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=85725657&subjektId=991026&spis=1096381",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    },
+    {
+      "id": "SRC-19",
+      "title": "Sbírka listin (or.justice.cz) — Blackfish & Co. s.r.o., účetní závěrka 2025 (C 283664/SL23/MSPH)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=91233172&subjektId=991026&spis=1096381",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    }
+  ],
+  "sourceRecords": 3,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 3,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-27"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-27",
+      "contentPath": "@/dossier/claims/clm-27.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 1,
+    "total": 2
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "217ddf9b"
+}

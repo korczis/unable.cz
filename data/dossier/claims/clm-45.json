@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-45",
+  "slug": "clm-45",
+  "canonicalPath": "/dossier/claims/clm-45/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "The filed FY2024 trajectory (36.3M CZK revenue, declining; net margin under 2 % and shrinking) is far below the ~100M CZK combined Able+Blackfish revenue target attributed to Vít Schlesinger in 2025 media coverage.",
+  "shortTitle": "The filed FY2024 trajectory (36.3M CZK revenue, declining; net…",
+  "status": "ASSESSED",
+  "statusExplanation": "Analytické čtení citované evidence, nikoli přímo doložený fakt.",
+  "note": "Comparison of a filed FY2024 result against a forward-looking media target for a later period — an analytical juxtaposition, not a contradiction of a filed fact.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-15",
+      "title": "Sbírka listin (or.justice.cz) — Able.cz s.r.o., účetní závěrka 2024 (C 85425/SL68/KSBR)",
+      "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=89167789&subjektId=49914&spis=953839",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": true
+    },
+    {
+      "id": "SRC-04",
+      "title": "Forbes.cz — Able acquires Blackfish studio",
+      "url": "https://forbes.cz/vyvojar-able-ziskava-studio-blackfish-firmam-planuji-radit-jak-vyuzit-umelou-inteligenci-v-byznysu/",
+      "tier": 3,
+      "upstream": "forbes",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-05",
+      "title": "CzechCrunch — Able buys Blackfish",
+      "url": "https://cc.cz/desetimilionove-presuny-na-trhu-agentur-able-kupuje-blackfish-chteji-slapat-na-paty-strv/",
+      "tier": 3,
+      "upstream": "czechcrunch",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 3,
+  "independentUpstreams": 3,
+  "upstreams": [
+    "cz_register",
+    "forbes",
+    "czechcrunch"
+  ],
+  "primaryDirectCount": 1,
+  "monoculture": false,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-25"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-25",
+      "contentPath": "@/dossier/claims/clm-25.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 1,
+    "total": 2
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "2b84c2f8"
+}

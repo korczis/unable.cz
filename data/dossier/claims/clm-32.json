@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-32",
+  "slug": "clm-32",
+  "canonicalPath": "/dossier/claims/clm-32/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "FaMe trade s.r.o. (IČO 29292859, founded 2011) is ACTIVE, and Václav Faraga currently holds 50 % (since 14 Dec 2020) and remains a jednatel, alongside Tomáš Melichárek (50 %, jednatel). Petr Faraga was a jednatel and shareholder until December 2020. Melichárek's 50 % record shows the same Jan–Apr 2026 re-registration churn as his other holdings.",
+  "shortTitle": "FaMe trade s.r.o. (IČO 29292859, founded 2011) is ACTIVE, and…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "CORRECTION of the earlier mirror-based record, which stated the company was dissolved/exited and that both Václav and Petr Faraga had left by end-2020 — the primary register contradicts that for Václav Faraga, who took 50 % at exactly that date.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-16"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-16",
+      "contentPath": "@/dossier/claims/clm-16.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "fame_trade",
+        "title": "FaMe trade s.r.o.",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 2,
+    "total": 4
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "b61d093d"
+}

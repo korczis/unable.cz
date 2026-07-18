@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-42",
+  "slug": "clm-42",
+  "canonicalPath": "/dossier/claims/clm-42/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Lovs & Co. s.r.o. (IČO 10847031, founded 14 May 2021) was co-owned 50/50 by Vít Schlesinger and Lukáš Oslzla, both jednatelé. On 13 February 2024 the company was renamed Artstay s.r.o., Schlesinger's jednatel role and 50 % ended, and Oslzla became sole (100 %) owner — ten days before Oslzla's exit from Blackfish completed on 23 February 2024.",
+  "shortTitle": "Lovs & Co. s.r.o. (IČO 10847031, founded 14 May 2021) was co-owned…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "CORRECTION: the earlier record had the renaming direction reversed (it said Artstay was 'later renamed Lovs & Co.').",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-24"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-24",
+      "contentPath": "@/dossier/claims/clm-24.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "oslzla",
+        "title": "L. Oslzla",
+        "relation": "týká se entity"
+      },
+      {
+        "type": "entity",
+        "id": "artstay_lovs",
+        "title": "Artstay s.r.o. (dř. Lovs & Co.)",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 1,
+    "total": 4
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "5662b53f"
+}

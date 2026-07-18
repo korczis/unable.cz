@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-47",
+  "slug": "clm-47",
+  "canonicalPath": "/dossier/claims/clm-47/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "During the execution window, Melichárek's shareholding records show re-registrations across four companies: Able.cz s.r.o. (20 Jan 2026, cleared by 2 Apr 2026), M&M plan s.r.o. (21 Jan 2026), FaMe logistics s.r.o. (23 Jan 2026) and FaMe trade s.r.o. (26 Jan 2026) — the register-visible footprint of enforcement against his podíly.",
+  "shortTitle": "During the execution window, Melichárek's shareholding records…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": "The dated re-registrations are observed in the preserved VR records; the SL69 order names the Able.cz podíl explicitly. Attributing the other three companies' churn to the same case 219 EX 00241/26 is highly consistent in timing but not stated in those records themselves.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-17",
+    "CLM-26"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-17",
+      "contentPath": "@/dossier/claims/clm-17.md"
+    },
+    {
+      "id": "CLM-26",
+      "contentPath": "@/dossier/claims/clm-26.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "mmplan",
+        "title": "M&M plan s.r.o.",
+        "relation": "týká se entity"
+      },
+      {
+        "type": "entity",
+        "id": "exekuce-melicharek",
+        "title": "Exekuce (podíl, 219 EX 00241/26)",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 1,
+    "total": 4
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "17283b92"
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-13",
+  "slug": "clm-13",
+  "canonicalPath": "/dossier/claims/clm-13/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Data never leaves the EU",
+  "shortTitle": "Data never leaves the EU",
+  "status": "SELF_REPORTED",
+  "statusExplanation": "Uvádí subjekt (Able) nebo přidružená strana; bez nezávislého potvrzení.",
+  "note": "The GDPR page (SRC-01) states no intent to transfer personal data to third countries, which is consistent but is itself a company statement, not independent proof.",
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-02",
+      "title": "Able.cz — English site (services, claims, leadership)",
+      "url": "https://www.able.cz/en/",
+      "tier": 2,
+      "upstream": "able_cz",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "able_cz"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 0,
+    "total": 1
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "ea05b6c4"
+}

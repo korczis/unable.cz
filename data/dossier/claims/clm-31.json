@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-31",
+  "slug": "clm-31",
+  "canonicalPath": "/dossier/claims/clm-31/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "FaMe logistics s.r.o. v likvidaci (IČO 02019396; founded 2013 as FaMe group s.r.o., renamed 2015) is co-owned by Václav Faraga (33 %), Petr Faraga (34 %) and Tomáš Melichárek (33 %); all three are jednatelé since 23 Aug 2013, and Václav Faraga is the registered likvidátor since 1 Mar 2021. Martin Patrik Faraga — a fourth person with the Faraga surname — was a founding 50 % shareholder and jednatel until 2015.",
+  "shortTitle": "FaMe logistics s.r.o. v likvidaci (IČO 02019396; founded 2013 as…",
+  "status": "VERIFIED_PRIMARY",
+  "statusExplanation": "Přímo doloženo primárním/oficiálním zdrojem (např. přímý výpis rejstříku nebo zakládaná listina).",
+  "note": null,
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-12",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+      "tier": 1,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [
+    "CLM-16",
+    "CLM-17"
+  ],
+  "supersedesLinks": [
+    {
+      "id": "CLM-16",
+      "contentPath": "@/dossier/claims/clm-16.md"
+    },
+    {
+      "id": "CLM-17",
+      "contentPath": "@/dossier/claims/clm-17.md"
+    }
+  ],
+  "backlinks": {
+    "entities": [
+      {
+        "type": "entity",
+        "id": "fame_logistics",
+        "title": "FaMe logistics s.r.o. (v likvidaci)",
+        "relation": "týká se entity"
+      }
+    ],
+    "narrativeMentions": 1,
+    "total": 3
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "999f9aff"
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-18",
+  "slug": "clm-18",
+  "canonicalPath": "/dossier/claims/clm-18/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Petr Faraga (b. 1966) — sharing the Znojmo address cluster and co-officer history with Václav Faraga (b. 1989) across FaMe logistics and FaMe trade — became a shareholder of Able.cz s.r.o. itself (~0.5%) on 29 July 2025, the same date Václav Faraga was added as a second jednatel of Blackfish & Co.",
+  "shortTitle": "Petr Faraga (b. 1966) — sharing the Znojmo address cluster and…",
+  "status": "CORROBORATED",
+  "statusExplanation": "Podpořeno více nezávisle vzniklými rodinami zdrojů. Pozor: dvě zrcadla téže autority nejsou nezávislé potvrzení.",
+  "note": null,
+  "live": false,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-10",
+      "title": "Czech commercial register — aggregator mirror search (kurzy.cz, rejstrik-firem)",
+      "url": "https://rejstrik-firem.kurzy.cz/",
+      "tier": 2,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-11",
+      "title": "Hlídač státu — osoba/subjekt ownership-graph records",
+      "url": "https://www.hlidacstatu.cz/",
+      "tier": 2,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    },
+    {
+      "id": "SRC-14",
+      "title": "Northdata — Petr Faraga entity profile (Znojmo)",
+      "url": "https://www.northdata.com/Faraga,%20Petr,%20Znojmo/1by",
+      "tier": 3,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 3,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": true,
+  "supersededBy": [
+    "CLM-34",
+    "CLM-35"
+  ],
+  "supersededByLinks": [
+    {
+      "id": "CLM-34",
+      "contentPath": "@/dossier/claims/clm-34.md"
+    },
+    {
+      "id": "CLM-35",
+      "contentPath": "@/dossier/claims/clm-35.md"
+    }
+  ],
+  "supersededReason": "Mixed observation with a family-relationship inference, and materially understated the history: the primary record shows Petr Faraga was a 2012 co-founder and jednatel until 2020. Split into observation + assessment 2026-07-18.",
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 0,
+    "total": 1
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "cabc5be3"
+}

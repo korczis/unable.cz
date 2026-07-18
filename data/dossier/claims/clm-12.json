@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-12",
+  "slug": "clm-12",
+  "canonicalPath": "/dossier/claims/clm-12/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "NDA and DPA signed on every project",
+  "shortTitle": "NDA and DPA signed on every project",
+  "status": "SELF_REPORTED",
+  "statusExplanation": "Uvádí subjekt (Able) nebo přidružená strana; bez nezávislého potvrzení.",
+  "note": null,
+  "live": true,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-02",
+      "title": "Able.cz — English site (services, claims, leadership)",
+      "url": "https://www.able.cz/en/",
+      "tier": 2,
+      "upstream": "able_cz",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "able_cz"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": false,
+  "supersededBy": [],
+  "supersededByLinks": [],
+  "supersededReason": null,
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 0,
+    "total": 1
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "31978f03"
+}

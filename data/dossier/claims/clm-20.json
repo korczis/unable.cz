@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "CLM-20",
+  "slug": "clm-20",
+  "canonicalPath": "/dossier/claims/clm-20/",
+  "caseId": "DD-Able-CZ-2026-07-17",
+  "proposition": "Independent research found no register or address overlap between Lukáš Grolig (Able's marketed CTO) and the Able.cz/Znojmo cluster in any of his own companies (BGO s.r.o. — terminated, Usporix s.r.o. — 25%, VERASTO s.r.o.), reinforcing that his CTO title is a marketing role only.",
+  "shortTitle": "Independent research found no register or address overlap between…",
+  "status": "CORROBORATED",
+  "statusExplanation": "Podpořeno více nezávisle vzniklými rodinami zdrojů. Pozor: dvě zrcadla téže autority nejsou nezávislé potvrzení.",
+  "note": null,
+  "live": false,
+  "publicationState": "public",
+  "sources": [
+    {
+      "id": "SRC-10",
+      "title": "Czech commercial register — aggregator mirror search (kurzy.cz, rejstrik-firem)",
+      "url": "https://rejstrik-firem.kurzy.cz/",
+      "tier": 2,
+      "upstream": "cz_register",
+      "primaryDoc": false
+    }
+  ],
+  "sourceRecords": 1,
+  "independentUpstreams": 1,
+  "upstreams": [
+    "cz_register"
+  ],
+  "primaryDirectCount": 0,
+  "monoculture": true,
+  "superseded": true,
+  "supersededBy": [
+    "CLM-37",
+    "CLM-38"
+  ],
+  "supersededByLinks": [
+    {
+      "id": "CLM-37",
+      "contentPath": "@/dossier/claims/clm-37.md"
+    },
+    {
+      "id": "CLM-38",
+      "contentPath": "@/dossier/claims/clm-38.md"
+    }
+  ],
+  "supersededReason": "Mixed three company observations with an analytical conclusion, and two details were wrong in the mirrors (Usporix is 100 % Grolig-held via four 25 % units and was founded 26 Jun 2026; VERASTO is confirmed 100 % + jednatel, not 'role unconfirmed'). Split and primary-sourced 2026-07-18.",
+  "supersedes": [],
+  "supersedesLinks": [],
+  "backlinks": {
+    "entities": [],
+    "narrativeMentions": 0,
+    "total": 1
+  },
+  "subjectIds": null,
+  "predicate": null,
+  "objectIds": null,
+  "materiality": null,
+  "validFrom": null,
+  "validTo": null,
+  "lastVerifiedAt": "2026-07-17",
+  "evidenceCutoff": "2026-07-17",
+  "generatedAt": "2026-07-17",
+  "contentHash": "c58df856"
+}
