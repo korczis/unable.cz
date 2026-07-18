@@ -14,7 +14,7 @@
     "seo:validate": "node scripts/seo-validate.mjs",
     "seo:validate:strict": "node scripts/seo-validate.mjs --strict",
     "seo:validate:json": "node scripts/seo-validate.mjs --json",
-    "test": "node --test 'scripts/*.test.mjs'",
+    "test": "node --test --test-concurrency=1 'scripts/*.test.mjs'",
     "verify": "npm run build && npm run data:validate && npm run seo:validate && npm test"
   },
   "devDependencies": {
