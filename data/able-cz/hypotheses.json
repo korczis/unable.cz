@@ -1,0 +1,110 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "hypotheses",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "ASSESSED epistemic projection. Derived from the dossier's sourced records; every row lists the record IDs it is computed from. Ordinal scales only; nothing invented.",
+    "count": 4,
+    "byState": {
+      "plausible": 1,
+      "unresolved": 2,
+      "contradicted": 1
+    },
+    "disclaimer": "Hypotézy jsou ASSESSED tvrzení, k nimž se evidence vyjadřuje, ale neuzavírá je. Nejsou to fakta ani obvinění; každá nese podmínku falzifikace."
+  },
+  "hypotheses": [
+    {
+      "id": "HYP-01",
+      "proposition": "Petr Faraga je v příbuzenském vztahu s Václavem Faragou.",
+      "subject": "petr_faraga",
+      "predicate": "related_to",
+      "object": "faraga",
+      "state": "plausible",
+      "supporting": [
+        "CLM-18"
+      ],
+      "supportingNote": "Sdílený znojemský adresní klastr, souběžná funkční historie (FaMe logistics, FaMe trade) a ~23letý věkový rozdíl.",
+      "contradicting": [],
+      "alternatives": [
+        "Nesouvisející osoby se shodou příjmení a lokality."
+      ],
+      "falsification": "Přímý veřejný zdroj (rejstřík/matrika) potvrzující nebo vyvracející příbuznost.",
+      "nextBestEvidence": "or.justice.cz výpisy obou osob; veřejné rodinné vazby.",
+      "materiality": "low",
+      "derivedFrom": [
+        "CLM-18",
+        "OQ-09"
+      ]
+    },
+    {
+      "id": "HYP-02",
+      "proposition": "Souběžný podíl Víta Schlesingera ve Ventoux Studio s.r.o. má provozní souvislost s Able.cz.",
+      "subject": "schlesinger",
+      "predicate": "operational_bearing_on",
+      "object": "able",
+      "state": "unresolved",
+      "supporting": [],
+      "supportingNote": "Nezveřejněný souběžný podíl registrovaný ~2 měsíce po uzavření akvizice Blackfish (CLM-23).",
+      "contradicting": [],
+      "alternatives": [
+        "Nezávislý soukromý zájem bez vazby na Able.cz (u aktivního podnikatele obvyklé)."
+      ],
+      "falsification": "Doklad o obchodním/smluvním vztahu mezi Ventoux Studio a Able.cz — žádný nenalezen.",
+      "nextBestEvidence": "or.justice.cz Ventoux Studio; registr smluv; média.",
+      "materiality": "moderate",
+      "derivedFrom": [
+        "CLM-23",
+        "OQ-07"
+      ]
+    },
+    {
+      "id": "HYP-03",
+      "proposition": "Marketingové role CTO (Grolig) a CSO (Juhaňák) odpovídají současné statutární funkci v Able.cz.",
+      "subject": "grolig",
+      "predicate": "holds_statutory_office_at",
+      "object": "able",
+      "state": "contradicted",
+      "supporting": [],
+      "supportingNote": "Web Able je prezentuje jako C-level vedení (SELF_REPORTED).",
+      "contradicting": [
+        "CLM-20"
+      ],
+      "contradictingNote": "Nezávislý research nenašel Groliga ve statutárním orgánu ani mezi společníky Able.cz; Juhaňák je společník, ne potvrzený statutár.",
+      "alternatives": [
+        "Čistě marketingové tituly bez statutární funkce (nejpravděpodobnější dle rejstříku)."
+      ],
+      "falsification": "Zápis ve statutárním orgánu Able.cz v rejstříku.",
+      "nextBestEvidence": "or.justice.cz — statutární orgán Able.cz.",
+      "materiality": "low",
+      "derivedFrom": [
+        "CLM-20",
+        "OQ-02"
+      ]
+    },
+    {
+      "id": "HYP-04",
+      "proposition": "Odchod Lukáše Oslzly z Blackfish (únor 2024) souvisí s jeho rolí v Artstay / Lovs & Co.",
+      "subject": "oslzla",
+      "predicate": "departure_linked_to",
+      "object": "artstay_lovs",
+      "state": "unresolved",
+      "supporting": [],
+      "supportingNote": "Časová shoda: Oslzla je jednatelem téže entity (IČO 10847031) od 2021 a jejím výhradním vlastníkem od 2022 (CLM-24).",
+      "contradicting": [],
+      "alternatives": [
+        "Nesouvisející odchod; příčina je jinde a veřejně nedoložená."
+      ],
+      "falsification": "Veřejný zdroj vysvětlující důvod odchodu — žádný nenalezen (NOT_FOUND).",
+      "nextBestEvidence": "média / prohlášení; rejstříkové změny Blackfish v období.",
+      "materiality": "low",
+      "derivedFrom": [
+        "CLM-24",
+        "OQ-08"
+      ]
+    }
+  ]
+}

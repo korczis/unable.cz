@@ -79,6 +79,74 @@
     });
   })();
 
+  // ---- Figure 1b: investigation coverage (Chart.js) -----------------------
+  // One horizontal bar per dimension, height = ASSESSED ordinal coverage. The
+  // matrix table beside it is the full, no-JS fallback. Reads the derived,
+  // publication-safe coverage export embedded as #coverage-data.
+  (function () {
+    var canvas = document.getElementById("coverage-chart");
+    var covEl = document.getElementById("coverage-data");
+    if (!canvas || !covEl || typeof window.Chart === "undefined") return;
+    var cov;
+    try { cov = JSON.parse(covEl.textContent); } catch (e) { return; }
+    var dims = (cov && cov.dimensions) || [];
+    if (!dims.length) return;
+
+    // Ordinal → height. Colour tracks strength so the eye reads it the same way
+    // as the status figures (champagne = well-evidenced, muted = thin/absent).
+    var RANK = { strong: 5, adequate: 4, partial: 3, weak: 2, absent: 1 };
+    var LABEL = { strong: "silné", adequate: "dostatečné", partial: "částečné", weak: "slabé", absent: "chybí" };
+    function covColor(state) {
+      if (state === "strong" || state === "adequate") return CHAMPAGNE;
+      if (state === "partial") return "#c8a24a";
+      return MUTED;
+    }
+    new window.Chart(canvas, {
+      type: "bar",
+      data: {
+        labels: dims.map(function (x) { return x.label; }),
+        datasets: [{
+          label: "Pokrytí",
+          data: dims.map(function (x) { return RANK[x.coverage] || 0; }),
+          backgroundColor: dims.map(function (x) { return covColor(x.coverage); }),
+          borderColor: "#000000",
+          borderWidth: 1,
+        }],
+      },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        maintainAspectRatio: true,
+        animation: reduceMotion ? false : { duration: 400 },
+        scales: {
+          x: {
+            min: 0, max: 5,
+            ticks: {
+              color: "#9ca3af", stepSize: 1,
+              callback: function (v) {
+                var m = { 5: "silné", 4: "dostatečné", 3: "částečné", 2: "slabé", 1: "chybí" };
+                return m[v] || "";
+              },
+            },
+            grid: { color: "rgba(255,255,255,0.06)" },
+          },
+          y: { ticks: { color: "#cbd5e1", font: { size: 11 } }, grid: { display: false } },
+        },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: function (ctx) {
+                var dim = dims[ctx.dataIndex];
+                return LABEL[dim.coverage] + " · " + dim.sourcesChecked.length + " zdrojů · " + dim.recordsExamined + " záznamů";
+              },
+            },
+          },
+        },
+      },
+    });
+  })();
+
   // ---- Figure 2: relationship graph ---------------------------------------
   // The relationship graph has grown into a full investigation workspace and
   // lives in its own module, scripts/dossier/graph.js (loaded after Cytoscape).

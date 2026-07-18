@@ -1,0 +1,202 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "gaps",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "ASSESSED epistemic projection. Derived from the dossier's sourced records; every row lists the record IDs it is computed from. Ordinal scales only; nothing invented.",
+    "count": 14,
+    "byMateriality": {
+      "high": 2,
+      "moderate": 6,
+      "low": 6
+    }
+  },
+  "gaps": [
+    {
+      "id": "GAP-01",
+      "category": "open_question",
+      "affectedDimension": "financials",
+      "expectedDatum": "Filed financial statements (revenue, result, assets, headcount) — available at justice.cz Sbírka listin, not retrieved in this pass.",
+      "materiality": "high",
+      "materialityCs": "vysoká",
+      "recommendedSource": "justice.cz — Sbírka listin (úplná účetní závěrka)",
+      "status": "open",
+      "derivedFrom": [
+        "OQ-01"
+      ]
+    },
+    {
+      "id": "GAP-02",
+      "category": "open_question",
+      "affectedDimension": "management",
+      "expectedDatum": "Whether the marketing roles CTO (Grolig) and CSO (Juhaňák) correspond to any current statutory function.",
+      "materiality": "moderate",
+      "materialityCs": "střední",
+      "recommendedSource": "or.justice.cz — výpis statutárního orgánu Able.cz",
+      "status": "open",
+      "derivedFrom": [
+        "OQ-02"
+      ]
+    },
+    {
+      "id": "GAP-03",
+      "category": "open_question",
+      "affectedDimension": "commercial",
+      "expectedDatum": "Independent client confirmation of the quantified case-study results (ROI, person-days).",
+      "materiality": "moderate",
+      "materialityCs": "střední",
+      "recommendedSource": "nezávislé potvrzení od klientů (mimo web Able)",
+      "status": "open",
+      "derivedFrom": [
+        "OQ-03"
+      ]
+    },
+    {
+      "id": "GAP-04",
+      "category": "open_question",
+      "affectedDimension": "procurement",
+      "expectedDatum": "Public-sector contracts and any EU-cofinanced project details (Hlídač státu and grant registers not retrieved here).",
+      "materiality": "moderate",
+      "materialityCs": "střední",
+      "recommendedSource": "Hlídač státu / registr smluv / dotační registry",
+      "status": "open",
+      "derivedFrom": [
+        "OQ-04"
+      ]
+    },
+    {
+      "id": "GAP-05",
+      "category": "open_question",
+      "affectedDimension": "financials",
+      "expectedDatum": "Combined Able+Blackfish headcount as filed (each entity files separately; Able's own filed revenue for FY2024 is now known — see financials).",
+      "materiality": "moderate",
+      "materialityCs": "střední",
+      "recommendedSource": "justice.cz — Sbírka listin (Able i Blackfish)",
+      "status": "open",
+      "derivedFrom": [
+        "OQ-05"
+      ]
+    },
+    {
+      "id": "GAP-06",
+      "category": "open_question",
+      "affectedDimension": "ownership",
+      "expectedDatum": "The exact stake split and jednatel dates for one label s.r.o.'s three co-owners (Juhaňák, Jakub Kaman, Ondřej Kaman) — see CON-02 — need a direct or.justice.cz lookup to resolve.",
+      "materiality": "moderate",
+      "materialityCs": "střední",
+      "recommendedSource": "or.justice.cz — přímý výpis IČO 02474727 (one label s.r.o.)",
+      "status": "open",
+      "derivedFrom": [
+        "OQ-06"
+      ]
+    },
+    {
+      "id": "GAP-07",
+      "category": "open_question",
+      "affectedDimension": "ownership",
+      "expectedDatum": "Whether Vít Schlesinger's concurrent stake in Ventoux Studio s.r.o. (undisclosed in Able/Blackfish media coverage) has any operational bearing on Able.cz.",
+      "materiality": "low",
+      "materialityCs": "nízká",
+      "recommendedSource": "or.justice.cz — Ventoux Studio s.r.o. (IČO 23749636)",
+      "status": "open",
+      "derivedFrom": [
+        "OQ-07"
+      ]
+    },
+    {
+      "id": "GAP-08",
+      "category": "open_question",
+      "affectedDimension": "ownership",
+      "expectedDatum": "Why Lukáš Oslzla departed Blackfish & Co. in February 2024, 17 months before the Able.cz acquisition — no public source addresses this.",
+      "materiality": "low",
+      "materialityCs": "nízká",
+      "recommendedSource": "média / veřejné prohlášení k odchodu L. Oslzly z Blackfish",
+      "status": "open",
+      "derivedFrom": [
+        "OQ-08"
+      ]
+    },
+    {
+      "id": "GAP-09",
+      "category": "open_question",
+      "affectedDimension": "ownership",
+      "expectedDatum": "Whether Petr Faraga is related to Václav Faraga — plausible from the age gap and shared address cluster, but not stated anywhere.",
+      "materiality": "low",
+      "materialityCs": "nízká",
+      "recommendedSource": "veřejný zdroj k rodinnému vztahu P. a V. Faragy (nenalezen)",
+      "status": "open",
+      "derivedFrom": [
+        "OQ-09"
+      ]
+    },
+    {
+      "id": "GAP-10",
+      "category": "open_question",
+      "affectedDimension": "ownership",
+      "expectedDatum": "All facts sourced to SRC-10/SRC-11 (kurzy.cz, Hlídač státu) are CORROBORATED via aggregator mirrors, not VERIFIED_PRIMARY via a direct or.justice.cz fetch — the firm/person *search* UI is JS-rendered and blocked automated fetch, though the Sbírka listin document index and downloads (SRC-15/16/17) did work directly and reach VERIFIED_PRIMARY.",
+      "materiality": "high",
+      "materialityCs": "vysoká",
+      "recommendedSource": "přímý or.justice.cz fetch (nahradit aggregator mirrors SRC-10/11)",
+      "status": "open",
+      "derivedFrom": [
+        "OQ-10"
+      ]
+    },
+    {
+      "id": "GAP-FIN-01",
+      "category": "missing_datum",
+      "affectedDimension": "financials",
+      "expectedDatum": "Employee count (filed — not a line item in this rozvaha/výkaz filing)",
+      "materiality": "moderate",
+      "materialityCs": "střední",
+      "recommendedSource": "justice.cz — Sbírka listin / auditorská zpráva",
+      "status": "open",
+      "derivedFrom": [
+        "financials.notFound"
+      ]
+    },
+    {
+      "id": "GAP-FIN-02",
+      "category": "missing_datum",
+      "affectedDimension": "financials",
+      "expectedDatum": "Auditor's report",
+      "materiality": "low",
+      "materialityCs": "nízká",
+      "recommendedSource": "justice.cz — Sbírka listin / auditorská zpráva",
+      "status": "open",
+      "derivedFrom": [
+        "financials.notFound"
+      ]
+    },
+    {
+      "id": "GAP-FIN-03",
+      "category": "missing_datum",
+      "affectedDimension": "financials",
+      "expectedDatum": "Going-concern language",
+      "materiality": "low",
+      "materialityCs": "nízká",
+      "recommendedSource": "justice.cz — Sbírka listin / auditorská zpráva",
+      "status": "open",
+      "derivedFrom": [
+        "financials.notFound"
+      ]
+    },
+    {
+      "id": "GAP-FIN-04",
+      "category": "missing_datum",
+      "affectedDimension": "financials",
+      "expectedDatum": "Consolidated Able+Blackfish combined financials (each entity files separately)",
+      "materiality": "low",
+      "materialityCs": "nízká",
+      "recommendedSource": "justice.cz — Sbírka listin / auditorská zpráva",
+      "status": "open",
+      "derivedFrom": [
+        "financials.notFound"
+      ]
+    }
+  ]
+}
