@@ -1,0 +1,81 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-45",
+    "text": "The filed FY2024 trajectory (36.3M CZK revenue, declining; net margin under 2 % and shrinking) is far below the ~100M CZK combined Able+Blackfish revenue target attributed to Vít Schlesinger in 2025 media coverage.",
+    "status": "ASSESSED",
+    "note": "Comparison of a filed FY2024 result against a forward-looking media target for a later period — an analytical juxtaposition, not a contradiction of a filed fact.",
+    "sources": [
+      "SRC-15",
+      "SRC-04",
+      "SRC-05"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-45",
+    "status": "ASSESSED",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-04",
+      "SRC-05",
+      "SRC-15"
+    ],
+    "sourceFamilies": [
+      "cz-state-register",
+      "media-czechcrunch",
+      "media-forbes"
+    ],
+    "independentFamilies": 3,
+    "primarySources": 1,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "assessment"
+  },
+  "links": [
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "spanId": "EVD-SL68-REVENUE",
+      "span": {
+        "id": "EVD-SL68-REVENUE",
+        "sourceId": "SRC-15",
+        "page": 2,
+        "section": "Výkaz zisku a ztráty",
+        "row": "I.",
+        "line": 96,
+        "exactText": "I. Tržby z prodeje výrobků a služeb 36319 42642",
+        "normalized": {
+          "metric": "revenue_products_services",
+          "fy2024": 36319,
+          "fy2023": 42642,
+          "unit": "tis. CZK"
+        },
+        "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+        "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+        "verified": true,
+        "document": "2024-ucetni-zaverka-SL68.pdf"
+      }
+    },
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "sourceId": "SRC-04",
+      "artifactId": "ART-cdc23894a86b"
+    },
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "sourceId": "SRC-05",
+      "artifactId": "ART-29fcea5b6197"
+    }
+  ]
+}

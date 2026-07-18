@@ -1,0 +1,116 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-50",
+    "text": "Blackfish is financially small next to Able.cz (filed total assets 6.7–8.3M vs 71.9M CZK): most of the scale implied by the self-reported 'combined ~60 people, ~100M CZK' framing evidently comes from Able.cz itself.",
+    "status": "ASSESSED",
+    "note": null,
+    "sources": [
+      "SRC-15",
+      "SRC-18",
+      "SRC-19"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-50",
+    "status": "ASSESSED",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-15",
+      "SRC-18",
+      "SRC-19"
+    ],
+    "sourceFamilies": [
+      "cz-state-register"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 3,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "assessment"
+  },
+  "links": [
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "spanId": "EVD-SL21-ASSETS",
+      "span": {
+        "id": "EVD-SL21-ASSETS",
+        "sourceId": "SRC-18",
+        "page": 1,
+        "section": "Rozvaha (mikro, zkrácená) — AKTIVA",
+        "row": "AKTIVA CELKEM",
+        "line": 14,
+        "exactText": "AKTIVA CELKEM 6957 210 6747 5966",
+        "normalized": {
+          "metric": "total_assets_netto",
+          "fy2024": 6747,
+          "fy2023": 5966,
+          "unit": "tis. CZK"
+        },
+        "pdfSha256": "2e8112b746576e7b9c0a8ef7441067257a3e91d23174155549208ad420c2a28f",
+        "txtSha256": "4a5d82363b060dee194ecdfed5969b39f996372cd05a2f27e2f322815787fef2",
+        "verified": true,
+        "document": "2024-ucetni-zaverka-SL21.pdf"
+      }
+    },
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "spanId": "EVD-SL23-ASSETS",
+      "span": {
+        "id": "EVD-SL23-ASSETS",
+        "sourceId": "SRC-19",
+        "page": 1,
+        "section": "Rozvaha (mikro, zkrácená) — AKTIVA",
+        "row": "AKTIVA CELKEM",
+        "line": 13,
+        "exactText": "AKTIVA CELKEM 8477 224 8253 6747",
+        "normalized": {
+          "metric": "total_assets_netto",
+          "fy2025": 8253,
+          "fy2024": 6747,
+          "unit": "tis. CZK"
+        },
+        "pdfSha256": "47810c27bdbf067aa6efbf52cc19e4f17e9959a8d42db1e9b44e30ea21e7b4cd",
+        "txtSha256": "8d4c853a4893f86874b7415029ea93fcc76047a7d4e34f4019bad8bc8ba1c318",
+        "verified": true,
+        "document": "2025-ucetni-zaverka-SL23.pdf"
+      }
+    },
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "spanId": "EVD-SL68-ASSETS",
+      "span": {
+        "id": "EVD-SL68-ASSETS",
+        "sourceId": "SRC-15",
+        "page": 1,
+        "section": "Rozvaha — AKTIVA",
+        "row": "AKTIVA CELKEM",
+        "line": 12,
+        "exactText": "AKTIVA CELKEM 100016 28136 71880 59386",
+        "normalized": {
+          "metric": "total_assets_netto",
+          "fy2024": 71880,
+          "fy2023": 59386,
+          "unit": "tis. CZK",
+          "note": "columns: brutto, korekce, netto, netto-minulé"
+        },
+        "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+        "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+        "verified": true,
+        "document": "2024-ucetni-zaverka-SL68.pdf"
+      }
+    }
+  ]
+}

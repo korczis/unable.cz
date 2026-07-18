@@ -186,12 +186,12 @@
     },
     {
       "id": "SRC-22",
-      "title": "CzechCrunch — 2023 investment coverage (Point FM / Marek Kříž ~5% at 80M CZK valuation). Retrieved in the 2026-07-17 pass (collection log item 6) but its URL was not recorded then; registered 2026-07-18 to fix that source gap, URL re-resolution pending",
-      "url": null,
+      "title": "CzechCrunch (2023-12-20) — Able.cz investment coverage: Point FM / Marek Kříž ~5% at 80M CZK valuation",
+      "url": "https://cc.cz/od-hrani-her-pres-slevove-portaly-k-vyvojarske-agenture-s-valuaci-80-milionu-able-ma-ted-noveho-investora/",
       "tier": 3,
-      "kind": "media (referenced; exact URL lost by the earlier pass — facts sourced to it are flagged accordingly. A 2026-07-18 attempt to corroborate via Point FM's own site found the page JS-rendered with no readable portfolio content in the preserved HTML — recorded as a failed corroboration in provider-runs, not used as evidence)",
+      "kind": "media (the 2026-07-17 pass cited it only via a LinkedIn summary; its URL was recovered from DATA_PROVENANCE.md during the 2026-07-18 adversarial audit, re-fetched and hash-preserved — the live page names Point FM, Kříž, the 80M valuation and the five-percent stake. A parallel attempt to corroborate via Point FM's own site failed: JS-rendered page, no readable content — recorded in provider-runs, not used as evidence)",
       "family": "media-czechcrunch",
-      "retrievedAt": "2026-07-17"
+      "retrievedAt": "2026-07-18"
     }
   ]
 }

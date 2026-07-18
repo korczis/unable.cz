@@ -1,0 +1,516 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "evidence-spans",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added.",
+    "count": 28
+  },
+  "spans": [
+    {
+      "id": "EVD-SL68-REVENUE",
+      "sourceId": "SRC-15",
+      "page": 2,
+      "section": "Výkaz zisku a ztráty",
+      "row": "I.",
+      "line": 96,
+      "exactText": "I. Tržby z prodeje výrobků a služeb 36319 42642",
+      "normalized": {
+        "metric": "revenue_products_services",
+        "fy2024": 36319,
+        "fy2023": 42642,
+        "unit": "tis. CZK"
+      },
+      "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+      "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL68.pdf"
+    },
+    {
+      "id": "EVD-SL68-TURNOVER",
+      "sourceId": "SRC-15",
+      "page": 2,
+      "section": "Výkaz zisku a ztráty",
+      "row": "*** Čistý obrat",
+      "line": 129,
+      "exactText": "* Čistý obrat za účetní období 36319 43079",
+      "normalized": {
+        "metric": "net_turnover",
+        "fy2024": 36319,
+        "fy2023": 43079,
+        "unit": "tis. CZK"
+      },
+      "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+      "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL68.pdf"
+    },
+    {
+      "id": "EVD-SL68-RESULT",
+      "sourceId": "SRC-15",
+      "page": 2,
+      "section": "Výkaz zisku a ztráty",
+      "row": "** Výsledek hospodaření po zdanění",
+      "line": 127,
+      "exactText": "** Výsledek hospodaření po zdanění (+/-) 631 844",
+      "normalized": {
+        "metric": "net_result_after_tax",
+        "fy2024": 631,
+        "fy2023": 844,
+        "unit": "tis. CZK"
+      },
+      "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+      "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL68.pdf"
+    },
+    {
+      "id": "EVD-SL68-ASSETS",
+      "sourceId": "SRC-15",
+      "page": 1,
+      "section": "Rozvaha — AKTIVA",
+      "row": "AKTIVA CELKEM",
+      "line": 12,
+      "exactText": "AKTIVA CELKEM 100016 28136 71880 59386",
+      "normalized": {
+        "metric": "total_assets_netto",
+        "fy2024": 71880,
+        "fy2023": 59386,
+        "unit": "tis. CZK",
+        "note": "columns: brutto, korekce, netto, netto-minulé"
+      },
+      "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+      "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL68.pdf"
+    },
+    {
+      "id": "EVD-SL68-EQUITY",
+      "sourceId": "SRC-15",
+      "page": 1,
+      "section": "Rozvaha — PASIVA",
+      "row": "A. Vlastní kapitál",
+      "line": 53,
+      "exactText": "A. Vlastní kapitál 26592 25849",
+      "normalized": {
+        "metric": "equity",
+        "fy2024": 26592,
+        "fy2023": 25849,
+        "unit": "tis. CZK"
+      },
+      "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+      "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL68.pdf"
+    },
+    {
+      "id": "EVD-SL68-LIABILITIES",
+      "sourceId": "SRC-15",
+      "page": 1,
+      "section": "Rozvaha — PASIVA",
+      "row": "B.+C. Cizí zdroje",
+      "line": 62,
+      "exactText": "B.+C. Cizí zdroje 45183 33406",
+      "normalized": {
+        "metric": "liabilities",
+        "fy2024": 45183,
+        "fy2023": 33406,
+        "unit": "tis. CZK"
+      },
+      "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+      "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL68.pdf"
+    },
+    {
+      "id": "EVD-SL68-PERSONNEL",
+      "sourceId": "SRC-15",
+      "page": 2,
+      "section": "Výkaz zisku a ztráty",
+      "row": "D. Osobní náklady",
+      "line": 102,
+      "exactText": "D. Osobní náklady 2926 4964",
+      "normalized": {
+        "metric": "personnel_costs",
+        "fy2024": 2926,
+        "fy2023": 4964,
+        "unit": "tis. CZK"
+      },
+      "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+      "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL68.pdf"
+    },
+    {
+      "id": "EVD-SL68-SERVICES",
+      "sourceId": "SRC-15",
+      "page": 2,
+      "section": "Výkaz zisku a ztráty",
+      "row": "A.3 Služby",
+      "line": 99,
+      "exactText": "A.3 Služby 38734 40612",
+      "normalized": {
+        "metric": "services",
+        "fy2024": 38734,
+        "fy2023": 40612,
+        "unit": "tis. CZK"
+      },
+      "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+      "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL68.pdf"
+    },
+    {
+      "id": "EVD-SL68-SUBSIDIARY",
+      "sourceId": "SRC-15",
+      "page": 1,
+      "section": "Rozvaha — AKTIVA",
+      "row": "B.III.1",
+      "line": 24,
+      "exactText": "B.III.1. Podíly - ovládaná nebo ovládající osoba 1430 1430 1430",
+      "normalized": {
+        "metric": "stakes_controlled_entities",
+        "fy2024": 1430,
+        "fy2023": 1430,
+        "unit": "tis. CZK"
+      },
+      "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+      "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL68.pdf"
+    },
+    {
+      "id": "EVD-SL68-SHAREHOLDER-DEBT",
+      "sourceId": "SRC-15",
+      "page": 1,
+      "section": "Rozvaha — PASIVA",
+      "row": "C.I.9.1",
+      "line": 67,
+      "exactText": "C.I.9.1. Závazky ke společníkům 9754 2935",
+      "normalized": {
+        "metric": "long_term_shareholder_liabilities",
+        "fy2024": 9754,
+        "fy2023": 2935,
+        "unit": "tis. CZK",
+        "note": "short-term C.II.8.1 (280/137) on line 75"
+      },
+      "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+      "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL68.pdf"
+    },
+    {
+      "id": "EVD-SL21-ASSETS",
+      "sourceId": "SRC-18",
+      "page": 1,
+      "section": "Rozvaha (mikro, zkrácená) — AKTIVA",
+      "row": "AKTIVA CELKEM",
+      "line": 14,
+      "exactText": "AKTIVA CELKEM 6957 210 6747 5966",
+      "normalized": {
+        "metric": "total_assets_netto",
+        "fy2024": 6747,
+        "fy2023": 5966,
+        "unit": "tis. CZK"
+      },
+      "pdfSha256": "2e8112b746576e7b9c0a8ef7441067257a3e91d23174155549208ad420c2a28f",
+      "txtSha256": "4a5d82363b060dee194ecdfed5969b39f996372cd05a2f27e2f322815787fef2",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL21.pdf"
+    },
+    {
+      "id": "EVD-SL21-EQUITY",
+      "sourceId": "SRC-18",
+      "page": 2,
+      "section": "Rozvaha (mikro, zkrácená) — PASIVA",
+      "row": "A. Vlastní kapitál",
+      "line": 25,
+      "exactText": "A. Vlastní kapitál 2665 2581",
+      "normalized": {
+        "metric": "equity",
+        "fy2024": 2665,
+        "fy2023": 2581,
+        "unit": "tis. CZK"
+      },
+      "pdfSha256": "2e8112b746576e7b9c0a8ef7441067257a3e91d23174155549208ad420c2a28f",
+      "txtSha256": "4a5d82363b060dee194ecdfed5969b39f996372cd05a2f27e2f322815787fef2",
+      "verified": true,
+      "document": "2024-ucetni-zaverka-SL21.pdf"
+    },
+    {
+      "id": "EVD-SL23-ASSETS",
+      "sourceId": "SRC-19",
+      "page": 1,
+      "section": "Rozvaha (mikro, zkrácená) — AKTIVA",
+      "row": "AKTIVA CELKEM",
+      "line": 13,
+      "exactText": "AKTIVA CELKEM 8477 224 8253 6747",
+      "normalized": {
+        "metric": "total_assets_netto",
+        "fy2025": 8253,
+        "fy2024": 6747,
+        "unit": "tis. CZK"
+      },
+      "pdfSha256": "47810c27bdbf067aa6efbf52cc19e4f17e9959a8d42db1e9b44e30ea21e7b4cd",
+      "txtSha256": "8d4c853a4893f86874b7415029ea93fcc76047a7d4e34f4019bad8bc8ba1c318",
+      "verified": true,
+      "document": "2025-ucetni-zaverka-SL23.pdf"
+    },
+    {
+      "id": "EVD-SL69-ORDER",
+      "sourceId": "SRC-16",
+      "page": 1,
+      "section": "Exekuční příkaz 219 EX 00241/26",
+      "row": "výrok I.",
+      "line": 40,
+      "exactText": "I. Soudní exekutor Mgr. Jakub Effenberger rozhodl o provedení exekuce postižením účasti",
+      "normalized": {
+        "event": "execution_order_business_share",
+        "case": "219 EX 00241/26",
+        "date": "2026-01-19"
+      },
+      "pdfSha256": "f5e2bf811372ffa7022589c476309a9536639f58442d16622278afbc866f7a82",
+      "txtSha256": "7e75ee8124da38650612a3e678fe1e5ee5a7565b10a15d3df0d6f5ae0d8226ea",
+      "verified": true,
+      "document": "2026-01-21-exekucni-prikaz-podil-SL69.pdf"
+    },
+    {
+      "id": "EVD-SL69-AMOUNT",
+      "sourceId": "SRC-16",
+      "page": 4,
+      "section": "Exekuční příkaz — vyčíslení",
+      "row": "řádek 12",
+      "line": 111,
+      "exactText": "12 celkem ke dni vydání exekučního příkazu (řádky 4 + 11) v Kč 9 327,14 Kč",
+      "normalized": {
+        "metric": "total_enforced_amount",
+        "value": 9327.14,
+        "unit": "CZK"
+      },
+      "pdfSha256": "f5e2bf811372ffa7022589c476309a9536639f58442d16622278afbc866f7a82",
+      "txtSha256": "7e75ee8124da38650612a3e678fe1e5ee5a7565b10a15d3df0d6f5ae0d8226ea",
+      "verified": true,
+      "document": "2026-01-21-exekucni-prikaz-podil-SL69.pdf"
+    },
+    {
+      "id": "EVD-SL69-CREDITOR",
+      "sourceId": "SRC-16",
+      "page": 1,
+      "section": "Exekuční příkaz — oprávněný",
+      "row": "oprávněný",
+      "line": 25,
+      "exactText": "Dopravní podnik hl. m. Prahy, akciová společnost se sídlem",
+      "normalized": {
+        "creditor": "Dopravní podnik hl. m. Prahy, a.s."
+      },
+      "pdfSha256": "f5e2bf811372ffa7022589c476309a9536639f58442d16622278afbc866f7a82",
+      "txtSha256": "7e75ee8124da38650612a3e678fe1e5ee5a7565b10a15d3df0d6f5ae0d8226ea",
+      "verified": true,
+      "document": "2026-01-21-exekucni-prikaz-podil-SL69.pdf"
+    },
+    {
+      "id": "EVD-SL70-CLOSED",
+      "sourceId": "SRC-17",
+      "page": 1,
+      "section": "Oznámení o skončení exekuce",
+      "row": "výrok I.",
+      "line": 29,
+      "exactText": "exekuce byla dne 24.03.2026  skončena vymožením.",
+      "normalized": {
+        "event": "execution_terminated_by_payment",
+        "date": "2026-03-24"
+      },
+      "pdfSha256": "482f90a77fe54b0ead22f2cccb55f9871890eae51a84831e70c7e3c2dffef71d",
+      "txtSha256": "0f92e43d8e5b68622a58fecc4051d84f319c8cdd2edc6ec0870a73fa913b01e5",
+      "verified": true,
+      "document": "2026-04-08-skonceni-exekuce-SL70.pdf"
+    },
+    {
+      "id": "EVD-SL70-INSTRUMENTS",
+      "sourceId": "SRC-17",
+      "page": 1,
+      "section": "Oznámení o skončení exekuce — seznam příkazů",
+      "row": "seznam exekučních příkazů",
+      "line": 38,
+      "exactText": "2. Exekuční příkaz - obchodní podíl č.j. 219 EX 00241/26-032, ze dne 19.01.2026,",
+      "normalized": {
+        "event": "instruments_list",
+        "instruments": [
+          "účty (2×)",
+          "nemovité věci",
+          "příjmy",
+          "movité věci",
+          "obchodní podíl (2×)"
+        ],
+        "note": "lines 33–38 of the extraction enumerate all orders incl. accounts, real estate, income, movables, business shares"
+      },
+      "pdfSha256": "482f90a77fe54b0ead22f2cccb55f9871890eae51a84831e70c7e3c2dffef71d",
+      "txtSha256": "0f92e43d8e5b68622a58fecc4051d84f319c8cdd2edc6ec0870a73fa913b01e5",
+      "verified": true,
+      "document": "2026-04-08-skonceni-exekuce-SL70.pdf"
+    }
+  ],
+  "webSpans": [
+    {
+      "id": "EVD-WEB-AGENTS",
+      "sourceId": "SRC-02",
+      "artifactTag": "web-snapshot:able-cz-en",
+      "contains": [
+        "AI-driven software built on 150+ in-house AI agents."
+      ],
+      "quote": "AI-driven software built on 150+ in-house AI agents.",
+      "where": "meta description + hero, able.cz/en snapshot",
+      "artifactId": "ART-885f7780bf7b",
+      "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+      "retrievedAt": "2026-07-18T05:38:22.413Z",
+      "url": "https://www.able.cz/en/",
+      "verified": true
+    },
+    {
+      "id": "EVD-WEB-ROI",
+      "sourceId": "SRC-02",
+      "artifactTag": "web-snapshot:able-cz-en",
+      "contains": [
+        "Average client-side ROI",
+        ">300%</h3>"
+      ],
+      "quote": "300% — Average client-side ROI",
+      "where": "stats band, able.cz/en snapshot",
+      "artifactId": "ART-885f7780bf7b",
+      "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+      "retrievedAt": "2026-07-18T05:38:22.413Z",
+      "url": "https://www.able.cz/en/",
+      "verified": true
+    },
+    {
+      "id": "EVD-WEB-MANDAYS",
+      "sourceId": "SRC-02",
+      "artifactTag": "web-snapshot:able-cz-en",
+      "contains": [
+        "Man-days saved",
+        ">Hundreds<"
+      ],
+      "quote": "Hundreds — Man-days saved",
+      "where": "stats band, able.cz/en snapshot",
+      "artifactId": "ART-885f7780bf7b",
+      "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+      "retrievedAt": "2026-07-18T05:38:22.413Z",
+      "url": "https://www.able.cz/en/",
+      "verified": true
+    },
+    {
+      "id": "EVD-WEB-WEEKS",
+      "sourceId": "SRC-02",
+      "artifactTag": "web-snapshot:able-cz-en",
+      "contains": [
+        "Delivery in weeks, not months"
+      ],
+      "quote": "Delivery in weeks, not months",
+      "where": "stats band, able.cz/en snapshot",
+      "artifactId": "ART-885f7780bf7b",
+      "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+      "retrievedAt": "2026-07-18T05:38:22.413Z",
+      "url": "https://www.able.cz/en/",
+      "verified": true
+    },
+    {
+      "id": "EVD-WEB-ERROR",
+      "sourceId": "SRC-02",
+      "artifactTag": "web-snapshot:able-cz-en",
+      "contains": [
+        "Reduction in error rate",
+        "&gt;90%"
+      ],
+      "quote": ">90% — Reduction in error rate",
+      "where": "stats band, able.cz/en snapshot",
+      "artifactId": "ART-885f7780bf7b",
+      "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+      "retrievedAt": "2026-07-18T05:38:22.413Z",
+      "url": "https://www.able.cz/en/",
+      "verified": true
+    },
+    {
+      "id": "EVD-WEB-600ROI",
+      "sourceId": "SRC-02",
+      "artifactTag": "web-snapshot:able-cz-en",
+      "contains": [
+        "With Able, we developed a platform with a 600% ROI."
+      ],
+      "quote": "“With Able, we developed a platform with a 600% ROI.” (Arkadia Labs testimonial)",
+      "where": "testimonials, able.cz/en snapshot",
+      "artifactId": "ART-885f7780bf7b",
+      "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+      "retrievedAt": "2026-07-18T05:38:22.413Z",
+      "url": "https://www.able.cz/en/",
+      "verified": true
+    },
+    {
+      "id": "EVD-WEB-AAA",
+      "sourceId": "SRC-02",
+      "artifactTag": "web-snapshot:able-cz-en",
+      "contains": [
+        "close 30% more insurance policies while speeding up the process by 50% and saving 3,500 person-days."
+      ],
+      "quote": "…helped AAA Auto close 30% more insurance policies while speeding up the process by 50% and saving 3,500 person-days.",
+      "where": "case studies, able.cz/en snapshot",
+      "artifactId": "ART-885f7780bf7b",
+      "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+      "retrievedAt": "2026-07-18T05:38:22.413Z",
+      "url": "https://www.able.cz/en/",
+      "verified": true
+    },
+    {
+      "id": "EVD-WEB-SECURITY",
+      "sourceId": "SRC-02",
+      "artifactTag": "web-snapshot:able-cz-en",
+      "contains": [
+        "AI agents run in an isolated environment, client data is never used to train external LLMs"
+      ],
+      "quote": "AI agents run in an isolated environment, client data is never used to train external LLMs, and the code remains under your control.",
+      "where": "security section, able.cz/en snapshot",
+      "artifactId": "ART-885f7780bf7b",
+      "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+      "retrievedAt": "2026-07-18T05:38:22.413Z",
+      "url": "https://www.able.cz/en/",
+      "verified": true
+    },
+    {
+      "id": "EVD-WEB-NDA",
+      "sourceId": "SRC-02",
+      "artifactTag": "web-snapshot:able-cz-en",
+      "contains": [
+        "sign both an NDA and a DPA on every project. Data never leaves the EU."
+      ],
+      "quote": "We work in compliance with GDPR and sign both an NDA and a DPA on every project. Data never leaves the EU.",
+      "where": "security section, able.cz/en snapshot",
+      "artifactId": "ART-885f7780bf7b",
+      "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+      "retrievedAt": "2026-07-18T05:38:22.413Z",
+      "url": "https://www.able.cz/en/",
+      "verified": true
+    },
+    {
+      "id": "EVD-WEB-CLIENTS",
+      "sourceId": "SRC-02",
+      "artifactTag": "web-snapshot:able-cz-en",
+      "contains": [
+        "AAA Auto",
+        "Arkadia Labs",
+        "Encall",
+        "Taste Town",
+        "Aures Holdings a.s."
+      ],
+      "quote": "Named clients on able.cz/en: AAA Auto, Aures Holdings a.s., Arkadia Labs, Encall, Taste Town",
+      "where": "clients/testimonials, able.cz/en snapshot",
+      "artifactId": "ART-885f7780bf7b",
+      "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+      "retrievedAt": "2026-07-18T05:38:22.413Z",
+      "url": "https://www.able.cz/en/",
+      "verified": true
+    }
+  ]
+}

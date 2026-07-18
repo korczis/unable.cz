@@ -9,14 +9,14 @@
     "source": "data/dossier/able/dossier.json",
     "note": "Investigation-planner projection. Derived from sourced records; ordinal/ASSESSED only; nothing invented. Source independence is counted by distinct upstream authority, not by source record."
   },
-  "runHash": "e106c1a0",
+  "runHash": "325521e6",
   "stateFingerprint": {
     "entities": 43,
     "edges": 60,
-    "claims": 58,
+    "claims": 49,
     "sources": 22,
     "contradictions": 3,
-    "monocultureClaims": 48,
+    "monocultureClaims": 40,
     "verifiedEdges": 46
   },
   "baseline": true,

@@ -370,7 +370,7 @@
     "The consideration paid for Blackfish and the share-purchase terms (not public; the July 2025 notarial deed in Able.cz's Sbírka listin was not retrieved this pass).",
     "The signing rule (způsob jednání) is still mirror-sourced only — ARES VR does not expose it; retrieving the official justice.cz výpis PDF would primary-verify it.",
     "Insolvency status (ISIR) — BLOCKED, provider returned HTTP 500 on both attempts (2026-07-17, 2026-07-18); retry needed.",
-    "The exact URL of the 2023 CzechCrunch investment article (SRC-22) — retrieved by the first pass, URL not recorded; and whether the media-reported 'Point FM' investment was executed via 5326G s.r.o. (CLM-56).",
+    "Whether the media-reported 'Point FM' investment (SRC-22, recovered and preserved 2026-07-18) was executed via 5326G s.r.o. — the Kříž-majority register vehicle — or another route (CLM-56).",
     "Sanctions / PEP screening — not systematically run in any pass; flagged as open, not asserted as clear."
   ],
   "summary": {
@@ -381,16 +381,16 @@
     "counts": {
       "entities": 43,
       "relationships": 60,
-      "claims": 58,
+      "claims": 49,
       "sources": 22,
       "contradictions": 3,
       "openQuestions": 12,
-      "risks": 5
+      "risks": 6
     },
     "claimsByStatus": {
       "SELF_REPORTED": 14,
-      "CORROBORATED": 7,
-      "VERIFIED_PRIMARY": 25,
+      "CORROBORATED": 1,
+      "VERIFIED_PRIMARY": 22,
       "ASSESSED": 10,
       "NOT_FOUND": 1,
       "BLOCKED": 1

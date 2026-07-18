@@ -1,0 +1,28 @@
+IČ: 6526411
+Rozvaha pro podnikatele, ve zkráceném rozsahu pro
+mikro účetní jednotku, která nemá povinnost mít účetní
+závěrku ověřenou auditorem
+ke dni 31.12.2025
+(v celých tisících CZK)
+AKTIVA
+běžné účetní obdobíminulé
+účetní
+období
+nettobrutto korekce netto
+1 2 3 4
+AKTIVA CELKEM 8477 224 8253 6747
+B. Stálá aktiva 316 224 92 191
+C. Oběžná aktiva 8049 0 8049 6103
+D. Časové rozlišení aktiv 112 0 112 453
+
+ 
+PASIVA běžné účetní
+období
+minulé účetní
+období
+1 2
+A. Vlastní kapitál 2678 2665
+PASIVA CELKEM 8253 6747
+B.+C. Cizí zdroje 5176 4057
+C. Závazky 5176 4057
+D. Časové rozlišení pasiv 399 25

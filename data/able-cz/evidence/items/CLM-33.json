@@ -1,0 +1,322 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-33",
+    "text": "Tomáš Melichárek is sole owner (100 %) and jednatel of M&M plan s.r.o. (IČO 01812840) since 4 July 2013 (Martin Havlík held 66 % and a jednatel role during 2014–2017).",
+    "status": "VERIFIED_PRIMARY",
+    "note": null,
+    "sources": [
+      "SRC-12"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-33",
+    "status": "VERIFIED_PRIMARY",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-12"
+    ],
+    "sourceFamilies": [
+      "cz-state-register"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 1,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-MMPLAN",
+      "assertions": [
+        {
+          "id": "ASR-37397a884ad8",
+          "entity": "mm-plan",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-07-04",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-62dd4b812f58",
+          "entity": "mm-plan",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-07-04",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-a33a523fe262",
+          "entity": "mm-plan",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "MARTIN HAVLÍK",
+            "bornYear": "1988"
+          },
+          "role": "jednatel",
+          "validFrom": "2014-07-14",
+          "validTo": "2017-01-27",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-c3b478ed4a6c",
+          "entity": "mm-plan",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "MARTIN HAVLÍK",
+            "bornYear": "1988"
+          },
+          "role": "jednatel",
+          "validFrom": "2014-07-14",
+          "validTo": "2016-02-24",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-17ec0b332c63",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2026-03-16",
+          "validTo": "2026-04-15",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/6/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-204b19e0f3f8",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2026-04-15",
+          "validTo": "2026-04-15",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/7/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-23e702f6f48e",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN HAVLÍK",
+            "bornYear": "1988"
+          },
+          "stake": "66%",
+          "vklad": "132000 KORUNY",
+          "validFrom": "2016-02-24",
+          "validTo": "2017-01-27",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/4/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-326bdc768f1f",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2013-07-04",
+          "validTo": "2014-07-22",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-37ad7927149e",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2017-01-27",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-714086286ea9",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "34%",
+          "vklad": "68000 KORUNY",
+          "validFrom": "2014-07-22",
+          "validTo": "2017-01-27",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-8175eebac9a6",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2026-04-15",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/8/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-9cfd1e957368",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2017-06-25",
+          "validTo": "2026-01-21",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-b958b1af3e4e",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN HAVLÍK",
+            "bornYear": "1988"
+          },
+          "stake": "66%",
+          "vklad": "132000 KORUNY",
+          "validFrom": "2014-07-22",
+          "validTo": "2016-02-24",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-faa0845e57ea",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2026-01-21",
+          "validTo": "2026-03-16",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        }
+      ]
+    }
+  ]
+}

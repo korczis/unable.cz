@@ -1,0 +1,53 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "resolved-questions",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
+    "count": 4
+  },
+  "resolvedQuestions": [
+    {
+      "id": "RQ-01",
+      "question": "Filed financial statements (revenue, result, assets) — 'available at justice.cz Sbírka listin, not retrieved in this pass.'",
+      "resolvedAt": "2026-07-17",
+      "resolution": "Retrieved, preserved and parsed the same day the question was written (SL68 + Blackfish SL21/SL23); the gap text nevertheless stayed in the dossier until 2026-07-18 — a stale-gap defect. Figures live in financials.verified with exact row citations; headcount is genuinely absent from the filings and remains open above.",
+      "resolvedBy": [
+        "SRC-15",
+        "SRC-18",
+        "SRC-19"
+      ]
+    },
+    {
+      "id": "RQ-02",
+      "question": "The exact stake split and jednatel dates for one label s.r.o.'s three co-owners (CON-02).",
+      "resolvedAt": "2026-07-18",
+      "resolution": "Resolved from the preserved primary ARES VR record for IČO 02474727: J. Kaman 36 % (since 2014), O. Kaman 34 %, R. Juhaňák 30 % (both since 23 Feb 2022). See CON-02 (RESOLVED) and CLM-19.",
+      "resolvedBy": [
+        "SRC-12"
+      ]
+    },
+    {
+      "id": "RQ-03",
+      "question": "Whether the marketing roles CTO (Grolig) and CSO (Juhaňák) correspond to any current statutory function.",
+      "resolvedAt": "2026-07-18",
+      "resolution": "Resolved from the complete preserved VR history: neither appears in Able.cz's statutory body at any point 2012–2026. Juhaňák is a 2.30 % shareholder (primary-verified); Grolig holds no registered role or stake at all (CLM-37/38).",
+      "resolvedBy": [
+        "SRC-12"
+      ]
+    },
+    {
+      "id": "RQ-04",
+      "question": "'All facts sourced to SRC-10/SRC-11 cannot reach VERIFIED_PRIMARY because the or.justice.cz search UI is JS-rendered.'",
+      "resolvedAt": "2026-07-18",
+      "resolution": "The premise is obsolete: the official ARES VR REST endpoint serves the full register record (officers, shareholders, histories) as structured JSON. All 19 in-scope entities were fetched, preserved and hashed; the affected facts were re-derived from primary artifacts and upgraded or corrected accordingly.",
+      "resolvedBy": [
+        "SRC-12"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-06",
+    "text": "600% ROI (Arkadia Labs case)",
+    "status": "SELF_REPORTED",
+    "note": null,
+    "sources": [
+      "SRC-02"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-06",
+    "status": "SELF_REPORTED",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-02"
+    ],
+    "sourceFamilies": [
+      "company-able"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 0,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SOURCE_OF_ASSERTION",
+      "note": null,
+      "sourceId": "SRC-02",
+      "webSpanId": "EVD-WEB-600ROI",
+      "artifactId": "ART-885f7780bf7b",
+      "webSpan": {
+        "id": "EVD-WEB-600ROI",
+        "sourceId": "SRC-02",
+        "artifactTag": "web-snapshot:able-cz-en",
+        "contains": [
+          "With Able, we developed a platform with a 600% ROI."
+        ],
+        "quote": "“With Able, we developed a platform with a 600% ROI.” (Arkadia Labs testimonial)",
+        "where": "testimonials, able.cz/en snapshot",
+        "artifactId": "ART-885f7780bf7b",
+        "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+        "retrievedAt": "2026-07-18T05:38:22.413Z",
+        "url": "https://www.able.cz/en/",
+        "verified": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-48",
+    "text": "A 9,327.14 CZK debt to the Prague public-transport operator is consistent in scale with an escalated unpaid-fare claim, but the filed documents do not state the debt's origin. The matter was personal, small, and resolved by payment within ~9 weeks; no enforcement directed at Able.cz s.r.o. itself was found in the preserved filings. Company-level insolvency could NOT be checked: the insolvency register was BLOCKED (ISIR returned HTTP 500 on both attempts).",
+    "status": "ASSESSED",
+    "note": "Replaces the superseded CLM-26 wording that presented the fare hypothesis inside a verified claim and implied an insolvency search that never succeeded.",
+    "sources": [
+      "SRC-16",
+      "SRC-17",
+      "SRC-21"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-48",
+    "status": "ASSESSED",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-16",
+      "SRC-17",
+      "SRC-21"
+    ],
+    "sourceFamilies": [
+      "cz-isir",
+      "cz-state-register"
+    ],
+    "independentFamilies": 2,
+    "primarySources": 3,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "assessment"
+  },
+  "links": [
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "spanId": "EVD-SL69-AMOUNT",
+      "span": {
+        "id": "EVD-SL69-AMOUNT",
+        "sourceId": "SRC-16",
+        "page": 4,
+        "section": "Exekuční příkaz — vyčíslení",
+        "row": "řádek 12",
+        "line": 111,
+        "exactText": "12 celkem ke dni vydání exekučního příkazu (řádky 4 + 11) v Kč 9 327,14 Kč",
+        "normalized": {
+          "metric": "total_enforced_amount",
+          "value": 9327.14,
+          "unit": "CZK"
+        },
+        "pdfSha256": "f5e2bf811372ffa7022589c476309a9536639f58442d16622278afbc866f7a82",
+        "txtSha256": "7e75ee8124da38650612a3e678fe1e5ee5a7565b10a15d3df0d6f5ae0d8226ea",
+        "verified": true,
+        "document": "2026-01-21-exekucni-prikaz-podil-SL69.pdf"
+      }
+    },
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "spanId": "EVD-SL69-CREDITOR",
+      "span": {
+        "id": "EVD-SL69-CREDITOR",
+        "sourceId": "SRC-16",
+        "page": 1,
+        "section": "Exekuční příkaz — oprávněný",
+        "row": "oprávněný",
+        "line": 25,
+        "exactText": "Dopravní podnik hl. m. Prahy, akciová společnost se sídlem",
+        "normalized": {
+          "creditor": "Dopravní podnik hl. m. Prahy, a.s."
+        },
+        "pdfSha256": "f5e2bf811372ffa7022589c476309a9536639f58442d16622278afbc866f7a82",
+        "txtSha256": "7e75ee8124da38650612a3e678fe1e5ee5a7565b10a15d3df0d6f5ae0d8226ea",
+        "verified": true,
+        "document": "2026-01-21-exekucni-prikaz-podil-SL69.pdf"
+      }
+    },
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "spanId": "EVD-SL70-CLOSED",
+      "span": {
+        "id": "EVD-SL70-CLOSED",
+        "sourceId": "SRC-17",
+        "page": 1,
+        "section": "Oznámení o skončení exekuce",
+        "row": "výrok I.",
+        "line": 29,
+        "exactText": "exekuce byla dne 24.03.2026  skončena vymožením.",
+        "normalized": {
+          "event": "execution_terminated_by_payment",
+          "date": "2026-03-24"
+        },
+        "pdfSha256": "482f90a77fe54b0ead22f2cccb55f9871890eae51a84831e70c7e3c2dffef71d",
+        "txtSha256": "0f92e43d8e5b68622a58fecc4051d84f319c8cdd2edc6ec0870a73fa913b01e5",
+        "verified": true,
+        "document": "2026-04-08-skonceni-exekuce-SL70.pdf"
+      }
+    }
+  ]
+}

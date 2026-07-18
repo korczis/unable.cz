@@ -1,0 +1,62 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-03",
+    "text": "Hundreds of man-days saved",
+    "status": "SELF_REPORTED",
+    "note": null,
+    "sources": [
+      "SRC-02"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-03",
+    "status": "SELF_REPORTED",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-02"
+    ],
+    "sourceFamilies": [
+      "company-able"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 0,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SOURCE_OF_ASSERTION",
+      "note": null,
+      "sourceId": "SRC-02",
+      "webSpanId": "EVD-WEB-MANDAYS",
+      "artifactId": "ART-885f7780bf7b",
+      "webSpan": {
+        "id": "EVD-WEB-MANDAYS",
+        "sourceId": "SRC-02",
+        "artifactTag": "web-snapshot:able-cz-en",
+        "contains": [
+          "Man-days saved",
+          ">Hundreds<"
+        ],
+        "quote": "Hundreds — Man-days saved",
+        "where": "stats band, able.cz/en snapshot",
+        "artifactId": "ART-885f7780bf7b",
+        "sha256": "885f7780bf7b1fada775a4c7c3244580b895d118508be18e10eba1462a5762b6",
+        "retrievedAt": "2026-07-18T05:38:22.413Z",
+        "url": "https://www.able.cz/en/",
+        "verified": true
+      }
+    }
+  ]
+}

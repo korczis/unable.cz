@@ -232,12 +232,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-16",
-        "CLM-17",
-        "CLM-18",
-        "CLM-20",
-        "CLM-23",
-        "CLM-24",
         "CLM-35"
       ],
       "edgesSupported": 0,
@@ -258,12 +252,7 @@
       "independence": "derivative",
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
-      "claimsSupported": [
-        "CLM-16",
-        "CLM-18",
-        "CLM-23",
-        "CLM-24"
-      ],
+      "claimsSupported": [],
       "edgesSupported": 0,
       "contradictionsTouched": []
     },
@@ -276,7 +265,7 @@
       "class": "official_register",
       "upstream": "cz_register",
       "official": true,
-      "primary": false,
+      "primary": true,
       "independence": "independent_origin",
       "freshness": "aged",
       "retrievedAt": "2026-07-18",
@@ -326,9 +315,7 @@
       "independence": "independent_origin",
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
-      "claimsSupported": [
-        "CLM-24"
-      ],
+      "claimsSupported": [],
       "edgesSupported": 1,
       "contradictionsTouched": [
         "CON-03"
@@ -347,9 +334,7 @@
       "independence": "derivative",
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
-      "claimsSupported": [
-        "CLM-18"
-      ],
+      "claimsSupported": [],
       "edgesSupported": 1,
       "contradictionsTouched": []
     },
@@ -367,7 +352,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-25",
         "CLM-44",
         "CLM-45",
         "CLM-50"
@@ -389,7 +373,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-26",
         "CLM-46",
         "CLM-48"
       ],
@@ -410,7 +393,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-26",
         "CLM-46",
         "CLM-48"
       ],
@@ -431,7 +413,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-27",
         "CLM-49",
         "CLM-50"
       ],
@@ -452,7 +433,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-27",
         "CLM-49",
         "CLM-50"
       ],
@@ -500,17 +480,17 @@
     },
     {
       "id": "SRC-22",
-      "title": "CzechCrunch — 2023 investment coverage (Point FM / Marek Kříž ~5% at 80M CZK valuation). Retrieved in the 2026-07-17 pass (collection log item 6) but its URL was not recorded then; registered 2026-07-18 to fix that source gap, URL re-resolution pending",
-      "url": null,
+      "title": "CzechCrunch (2023-12-20) — Able.cz investment coverage: Point FM / Marek Kříž ~5% at 80M CZK valuation",
+      "url": "https://cc.cz/od-hrani-her-pres-slevove-portaly-k-vyvojarske-agenture-s-valuaci-80-milionu-able-ma-ted-noveho-investora/",
       "tier": 3,
-      "kind": "media (referenced; exact URL lost by the earlier pass — facts sourced to it are flagged accordingly. A 2026-07-18 attempt to corroborate via Point FM's own site found the page JS-rendered with no readable portfolio content in the preserved HTML — recorded as a failed corroboration in provider-runs, not used as evidence)",
+      "kind": "media (the 2026-07-17 pass cited it only via a LinkedIn summary; its URL was recovered from DATA_PROVENANCE.md during the 2026-07-18 adversarial audit, re-fetched and hash-preserved — the live page names Point FM, Kříž, the 80M valuation and the five-percent stake. A parallel attempt to corroborate via Point FM's own site failed: JS-rendered page, no readable content — recorded in provider-runs, not used as evidence)",
       "class": "media",
       "upstream": "media_unknown",
       "official": false,
       "primary": false,
       "independence": "independent_origin",
-      "freshness": "fresh",
-      "retrievedAt": "2026-07-17",
+      "freshness": "aged",
+      "retrievedAt": "2026-07-18",
       "claimsSupported": [
         "CLM-56"
       ],

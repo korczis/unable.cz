@@ -1,0 +1,2503 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-47",
+    "text": "During the execution window, Melichárek's shareholding records show re-registrations across four companies: Able.cz s.r.o. (20 Jan 2026, cleared by 2 Apr 2026), M&M plan s.r.o. (21 Jan 2026), FaMe logistics s.r.o. (23 Jan 2026) and FaMe trade s.r.o. (26 Jan 2026) — the register-visible footprint of enforcement against his podíly.",
+    "status": "VERIFIED_PRIMARY",
+    "note": "The dated re-registrations are observed in the preserved VR records; the SL69 order names the Able.cz podíl explicitly. Attributing the other three companies' churn to the same case 219 EX 00241/26 is highly consistent in timing but not stated in those records themselves.",
+    "sources": [
+      "SRC-12"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-47",
+    "status": "VERIFIED_PRIMARY",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-12"
+    ],
+    "sourceFamilies": [
+      "cz-state-register"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 1,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "assertions": [
+        {
+          "id": "ASR-00c50d2daa15",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Petr Faraga",
+            "bornYear": "1966"
+          },
+          "stake": "1/3",
+          "vklad": "70000 KORUNY",
+          "validFrom": "2012-10-03",
+          "validTo": "2014-10-03",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/6/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-06dbd42c57a9",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "FRANTIŠEK JUREN",
+            "bornYear": "1990"
+          },
+          "stake": "808988;24371500",
+          "vklad": "8089;88 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/10/podil/4",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-18599fd63154",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "FRANTIŠEK JUREN",
+            "bornYear": "1990"
+          },
+          "stake": "47880;2100000",
+          "vklad": "4788 KORUNY",
+          "validFrom": "2023-08-28",
+          "validTo": "2024-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/10/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-1d632ad6e765",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN NAKLÁDAL",
+            "bornYear": "1992"
+          },
+          "stake": "1680/210000",
+          "vklad": "1680 KORUNY",
+          "validFrom": "2017-03-31",
+          "validTo": "2023-08-28",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/11/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-205190ab981a",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "4817285;24371500",
+          "vklad": "48172;85 KORUNY",
+          "validFrom": "2024-11-14",
+          "validTo": "2025-07-29",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/5",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-228cdd5f57c8",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "4296148;24371500",
+          "vklad": "42961;48 KORUNY",
+          "validFrom": "2026-04-02",
+          "validTo": "2026-04-02",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/25/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-317732e064b6",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR MILKOV",
+            "bornYear": "1981"
+          },
+          "stake": "1680/210000",
+          "vklad": "1680 KORUNY",
+          "validFrom": "2017-03-31",
+          "validTo": "2023-08-28",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/12/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-32bc8b5008c9",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "4296148;24371500",
+          "vklad": "42961;48 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/6",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-356cf8f89733",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "43050/210000",
+          "vklad": "43050 KORUNY",
+          "validFrom": "2020-10-14",
+          "validTo": "2023-08-28",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-3739fec3a4b0",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "665/2100",
+          "vklad": "66500 KORUNY",
+          "validFrom": "2016-11-14",
+          "validTo": "2017-03-31",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-38bddb0dec7a",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN NAKLÁDAL",
+            "bornYear": "1992"
+          },
+          "stake": "187991;24371500",
+          "vklad": "1879;91 KORUNY",
+          "validFrom": "2024-11-14",
+          "validTo": "2025-06-04",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/11/podil/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-38d195e3aea8",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV KLEIBL",
+            "bornYear": "1964"
+          },
+          "stake": "99750;2100000",
+          "vklad": "9975 KORUNY",
+          "validFrom": "2023-08-28",
+          "validTo": "2024-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/13/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-488d0bbb6d30",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "1/3",
+          "vklad": "70000 KORUNY",
+          "validFrom": "2014-10-03",
+          "validTo": "2016-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/7/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-48b520d55a51",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR MILKOV",
+            "bornYear": "1981"
+          },
+          "stake": "15960;2100000",
+          "vklad": "1596 KORUNY",
+          "validFrom": "2023-08-28",
+          "validTo": "2024-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/12/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-4c2618a642d5",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "1/3",
+          "vklad": "70000 KORUNY",
+          "validFrom": "2014-10-03",
+          "validTo": "2016-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-4ce686b9e528",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "665/2100",
+          "vklad": "66500 KORUNY",
+          "validFrom": "2016-11-14",
+          "validTo": "2017-03-31",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/7/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-4f7bb7122500",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "408975;2100000",
+          "vklad": "40897;50 KORUNY",
+          "validFrom": "2023-08-28",
+          "validTo": "2024-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/4",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-50bf120ca2c6",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "53200/210000",
+          "vklad": "53200 KORUNY",
+          "validFrom": "2017-12-06",
+          "validTo": "2020-10-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/8/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-5147fc92260d",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "FRANTIŠEK JUREN",
+            "bornYear": "1990"
+          },
+          "stake": "751965;24371500",
+          "vklad": "7519;65 KORUNY",
+          "validFrom": "2024-11-14",
+          "validTo": "2025-07-29",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/10/podil/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-52692f4a452b",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "FRANTIŠEK JUREN",
+            "bornYear": "1990"
+          },
+          "stake": "63/2100",
+          "vklad": "6300 KORUNY",
+          "validFrom": "2016-11-14",
+          "validTo": "2017-03-31",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/10/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-529b04ba93d3",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "5326G s.r.o.",
+            "bornYear": null
+          },
+          "stake": "997500;24371500",
+          "vklad": "9975 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/15/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-5980c05f61bb",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "4296148;24371500",
+          "vklad": "42961;48 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": "2026-01-20",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/9/podil/4",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-59cca5e4380d",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Tomáš Melichárek",
+            "bornYear": "1990"
+          },
+          "stake": "1/3",
+          "vklad": "70000 KORUNY",
+          "validFrom": "2012-10-03",
+          "validTo": "2014-10-03",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-6d2e9c6ca472",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV KLEIBL",
+            "bornYear": "1964"
+          },
+          "stake": "997500;24371500",
+          "vklad": "9975 KORUNY",
+          "validFrom": "2024-11-14",
+          "validTo": "2025-07-29",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/13/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-7a658783a735",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "5326G s.r.o.",
+            "bornYear": null
+          },
+          "stake": "105000;2100000",
+          "vklad": "10500 KORUNY",
+          "validFrom": "2023-08-28",
+          "validTo": "2024-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/15/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-83695aa63831",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN NAKLÁDAL",
+            "bornYear": "1992"
+          },
+          "stake": "187991;24371500",
+          "vklad": "1879;91 KORUNY",
+          "validFrom": "2025-06-04",
+          "validTo": "2025-07-29",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/16/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-8c338e78db6e",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "ZenX Capital, a.s.",
+            "bornYear": null
+          },
+          "stake": "11162001;24371500",
+          "vklad": "111620;01 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-8cfd331c07b2",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN NAKLÁDAL",
+            "bornYear": "1992"
+          },
+          "stake": "178592;24371500",
+          "vklad": "1785;92 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/16/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-8e541e43c663",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "53200/210000",
+          "vklad": "53200 KORUNY",
+          "validFrom": "2017-03-31",
+          "validTo": "2017-12-06",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/7/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-8ff6ec7b11e6",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "53200/210000",
+          "vklad": "53200 KORUNY",
+          "validFrom": "2017-03-31",
+          "validTo": "2020-10-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-94c5a1897b1f",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "43050/210000",
+          "vklad": "43050 KORUNY",
+          "validFrom": "2020-10-14",
+          "validTo": "2023-08-28",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/9/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-9a03f015606e",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "ONDŘEJ KAMAN",
+            "bornYear": "1990"
+          },
+          "stake": "365573;24371500",
+          "vklad": "3655;73 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/19/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-9e32abad7581",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "1/3",
+          "vklad": "70000 KORUNY",
+          "validFrom": "2014-07-23",
+          "validTo": "2014-10-03",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/4/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-a08d44303c91",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "408975;2100000",
+          "vklad": "40897;50 KORUNY",
+          "validFrom": "2023-08-28",
+          "validTo": "2024-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/9/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-a874c42fe6f8",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÍT SCHLESINGER",
+            "bornYear": "1995"
+          },
+          "stake": "1218575;24371500",
+          "vklad": "12185;75 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/22/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-ae807859abb6",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV KLEIBL",
+            "bornYear": "1964"
+          },
+          "stake": "10500/210000",
+          "vklad": "10500 KORUNY",
+          "validFrom": "2017-03-31",
+          "validTo": "2023-08-28",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/13/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-b7a60a135385",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "ZenX Capital, a.s.",
+            "bornYear": null
+          },
+          "stake": "997500;2100000",
+          "vklad": "99750 KORUNY",
+          "validFrom": "2023-08-28",
+          "validTo": "2024-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-b89f93e50704",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "4296148;24371500",
+          "vklad": "42961;48 KORUNY",
+          "validFrom": "2026-04-02",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/26/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-c088020a4e64",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "121858;24371500",
+          "vklad": "1218;58 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/20/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-c220a1a43670",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "53200/210000",
+          "vklad": "53200 KORUNY",
+          "validFrom": "2017-06-25",
+          "validTo": "2020-10-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/9/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-c26fb24468bd",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "5326G s.r.o.",
+            "bornYear": null
+          },
+          "stake": "1050000;24371500",
+          "vklad": "10500 KORUNY",
+          "validFrom": "2024-11-14",
+          "validTo": "2025-07-29",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/15/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-c65b24cc58b1",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "1/3",
+          "vklad": "70000 KORUNY",
+          "validFrom": "2014-10-03",
+          "validTo": "2016-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-c69bfd1a655a",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "4296148;24371500",
+          "vklad": "42961;48 KORUNY",
+          "validFrom": "2026-03-16",
+          "validTo": "2026-04-02",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/24/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-cb21be20be6e",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "4296148;24371500",
+          "vklad": "42961;48 KORUNY",
+          "validFrom": "2026-01-20",
+          "validTo": "2026-03-16",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/23/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-d0c0cb47bcb3",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "665/2100",
+          "vklad": "66500 KORUNY",
+          "validFrom": "2016-11-14",
+          "validTo": "2017-03-31",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-d4efe470d443",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "4817285;24371500",
+          "vklad": "48172;85 KORUNY",
+          "validFrom": "2024-11-14",
+          "validTo": "2025-07-29",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/9/podil/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-d73d8a8db7f4",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN NAKLÁDAL",
+            "bornYear": "1992"
+          },
+          "stake": "21/2100",
+          "vklad": "2100 KORUNY",
+          "validFrom": "2016-11-14",
+          "validTo": "2017-03-31",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/11/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-db6de5d7c217",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR MILKOV",
+            "bornYear": "1981"
+          },
+          "stake": "21/2100",
+          "vklad": "2100 KORUNY",
+          "validFrom": "2016-11-14",
+          "validTo": "2017-03-31",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/12/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-de10c1cb4683",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ KOŘENSKÝ",
+            "bornYear": "1989"
+          },
+          "stake": "121858;24371500",
+          "vklad": "1218;58 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/18/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-df8ac1fe1f9a",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN NAKLÁDAL",
+            "bornYear": "1992"
+          },
+          "stake": "15960;2100000",
+          "vklad": "1596 KORUNY",
+          "validFrom": "2023-08-28",
+          "validTo": "2024-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/11/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-df98640c39e2",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "53200/210000",
+          "vklad": "53200 KORUNY",
+          "validFrom": "2017-03-31",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-ee77757acf86",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "ZenX Capital, a.s.",
+            "bornYear": null
+          },
+          "stake": "105000/210000",
+          "vklad": "105000 KORUNY",
+          "validFrom": "2020-10-14",
+          "validTo": "2023-08-28",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-eee9d589c0f3",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Václav Faraga",
+            "bornYear": "1989"
+          },
+          "stake": "1/3",
+          "vklad": "70000 KORUNY",
+          "validFrom": "2012-10-03",
+          "validTo": "2014-07-23",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-ef1dbe2a8a9c",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "JAKUB KAMAN",
+            "bornYear": "1984"
+          },
+          "stake": "243715;24371500",
+          "vklad": "2437;15 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/17/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-f05c6a94391a",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "DataLife Group s.r.o.",
+            "bornYear": null
+          },
+          "stake": "31500/210000",
+          "vklad": "31500 KORUNY",
+          "validFrom": "2017-03-31",
+          "validTo": "2020-10-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/14/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-f53d9d0bc72c",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "ZenX Capital, a.s.",
+            "bornYear": null
+          },
+          "stake": "11749474;24371500",
+          "vklad": "117494;74 KORUNY",
+          "validFrom": "2024-11-14",
+          "validTo": "2025-07-29",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-f750f14879fa",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "RADEK JUHAŇÁK",
+            "bornYear": "1984"
+          },
+          "stake": "560544;24371500",
+          "vklad": "5605;44 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/21/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-feb0e6bda7ed",
+          "entity": "able-cz",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "FRANTIŠEK JUREN",
+            "bornYear": "1990"
+          },
+          "stake": "5040/210000",
+          "vklad": "5040 KORUNY",
+          "validFrom": "2017-03-31",
+          "validTo": "2023-08-28",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/10/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        }
+      ]
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-MMPLAN",
+      "assertions": [
+        {
+          "id": "ASR-37397a884ad8",
+          "entity": "mm-plan",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-07-04",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-62dd4b812f58",
+          "entity": "mm-plan",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-07-04",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-a33a523fe262",
+          "entity": "mm-plan",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "MARTIN HAVLÍK",
+            "bornYear": "1988"
+          },
+          "role": "jednatel",
+          "validFrom": "2014-07-14",
+          "validTo": "2017-01-27",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-c3b478ed4a6c",
+          "entity": "mm-plan",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "MARTIN HAVLÍK",
+            "bornYear": "1988"
+          },
+          "role": "jednatel",
+          "validFrom": "2014-07-14",
+          "validTo": "2016-02-24",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-17ec0b332c63",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2026-03-16",
+          "validTo": "2026-04-15",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/6/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-204b19e0f3f8",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2026-04-15",
+          "validTo": "2026-04-15",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/7/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-23e702f6f48e",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN HAVLÍK",
+            "bornYear": "1988"
+          },
+          "stake": "66%",
+          "vklad": "132000 KORUNY",
+          "validFrom": "2016-02-24",
+          "validTo": "2017-01-27",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/4/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-326bdc768f1f",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2013-07-04",
+          "validTo": "2014-07-22",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-37ad7927149e",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2017-01-27",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-714086286ea9",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "34%",
+          "vklad": "68000 KORUNY",
+          "validFrom": "2014-07-22",
+          "validTo": "2017-01-27",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-8175eebac9a6",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2026-04-15",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/8/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-9cfd1e957368",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2017-06-25",
+          "validTo": "2026-01-21",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-b958b1af3e4e",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN HAVLÍK",
+            "bornYear": "1988"
+          },
+          "stake": "66%",
+          "vklad": "132000 KORUNY",
+          "validFrom": "2014-07-22",
+          "validTo": "2016-02-24",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        },
+        {
+          "id": "ASR-faa0845e57ea",
+          "entity": "mm-plan",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "100 %",
+          "vklad": "200000 KORUNY",
+          "validFrom": "2026-01-21",
+          "validTo": "2026-03-16",
+          "artifact": {
+            "id": "ART-f0bee0c469be",
+            "sha256": "f0bee0c469be5cf8e290d68382fc31f0b1a82f935a18967fe0288cef43102c98",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01812840",
+            "retrievedAt": "2026-07-18T05:38:14.775Z"
+          }
+        }
+      ]
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-FAME-LOGISTICS",
+      "assertions": [
+        {
+          "id": "ASR-79f9740144e2",
+          "entity": "fame-logistics",
+          "predicate": "registry:business-name",
+          "value": "FaMe logistics s.r.o.",
+          "validFrom": "2015-02-28",
+          "validTo": "2021-03-01",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/obchodniJmeno/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-807fff05d4ca",
+          "entity": "fame-logistics",
+          "predicate": "registry:business-name",
+          "value": "FaMe group s.r.o.",
+          "validFrom": "2013-08-23",
+          "validTo": "2015-02-28",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/obchodniJmeno/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-b303692a9609",
+          "entity": "fame-logistics",
+          "predicate": "registry:business-name",
+          "value": "FaMe logistics s.r.o. v likvidaci",
+          "validFrom": "2021-03-01",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/obchodniJmeno/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-1ff89ead5939",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "MARTIN PATRIK FARAGA",
+            "bornYear": "1991"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": "2015-02-03",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-71acf9c2e884",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": "2014-07-23",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-7b4471f2b2d6",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-828a9bc8d299",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "Likvidátor",
+          "validFrom": "2021-03-01",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/1/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-a0ed26a96788",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": "2017-12-06",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-e1b2e144c856",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/5",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-e57a162a7657",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/4",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-f2c075d03ca3",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/6",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-02defeee63b2",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "33 %",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2015-02-28",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/4/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-20127dbd8282",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "16%",
+          "vklad": "32000 KORUNY",
+          "validFrom": "2013-08-23",
+          "validTo": "2014-07-23",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-323e1d5ae3ff",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "34 %",
+          "vklad": "68000 KORUNY",
+          "validFrom": "2017-12-06",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-4fef5e7d4c16",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "33 %",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2017-06-25",
+          "validTo": "2026-01-23",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/6/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-5317fe48b0e7",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "33 %",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2015-02-28",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-5e28c7798c1b",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "16%",
+          "vklad": "32000 KORUNY",
+          "validFrom": "2014-07-23",
+          "validTo": "2015-02-28",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/4/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-5edd0c49c908",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "34 %",
+          "vklad": "68000 KORUNY",
+          "validFrom": "2015-02-28",
+          "validTo": "2017-12-06",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-62d8ec9134a5",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "17%",
+          "vklad": "34000 KORUNY",
+          "validFrom": "2013-08-23",
+          "validTo": "2015-02-28",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-698bc276db2e",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "17%",
+          "vklad": "34000 KORUNY",
+          "validFrom": "2013-08-23",
+          "validTo": "2015-02-28",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-760c42a61806",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "33 %",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2026-03-17",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/8/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-984ad5a140e4",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN PATRIK FARAGA",
+            "bornYear": "1991"
+          },
+          "stake": "50%",
+          "vklad": "100000;00 KORUNY",
+          "validFrom": "2013-08-23",
+          "validTo": "2015-02-28",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-bbe6d648316b",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "33 %",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2026-01-23",
+          "validTo": "2026-03-17",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/7/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        }
+      ]
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-FAME-TRADE",
+      "assertions": [
+        {
+          "id": "ASR-0086f67948fa",
+          "entity": "fame-trade",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "jednatel",
+          "validFrom": "2011-09-15",
+          "validTo": "2014-09-10",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/4",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-1928b6778793",
+          "entity": "fame-trade",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "Václav Faraga",
+            "bornYear": "1989"
+          },
+          "role": "jednatel",
+          "validFrom": "2011-09-15",
+          "validTo": "2014-07-23",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-504370f12182",
+          "entity": "fame-trade",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2011-09-15",
+          "validTo": "2014-09-10",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-6de195ac5f2f",
+          "entity": "fame-trade",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2011-09-15",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/9",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-7b92f38ce6da",
+          "entity": "fame-trade",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-02-28",
+          "validTo": "2020-12-10",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/8",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-a91fac35cc9f",
+          "entity": "fame-trade",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "jednatel",
+          "validFrom": "2011-09-15",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/5",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-b92b23237d0b",
+          "entity": "fame-trade",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-02-28",
+          "validTo": "2017-12-06",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/7",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-ceae286a50ca",
+          "entity": "fame-trade",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "Tomáš Melichárek",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2011-09-15",
+          "validTo": "2013-08-29",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-e70ad134c41b",
+          "entity": "fame-trade",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2011-09-15",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-f8a599248299",
+          "entity": "fame-trade",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "Petr Faraga",
+            "bornYear": "1966"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-02-28",
+          "validTo": "2014-09-10",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/6",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-017c45fb5198",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Tomáš Melichárek",
+            "bornYear": "1990"
+          },
+          "stake": "1/3",
+          "vklad": "66000;00 KORUNY",
+          "validFrom": "2012-03-06",
+          "validTo": "2013-08-29",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-0d4aaf10cf9e",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "50 %",
+          "vklad": "100000 KORUNY",
+          "validFrom": "2026-04-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/15/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-0f2cf745da00",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "34%",
+          "vklad": "68000 KORUNY",
+          "validFrom": "2014-09-10",
+          "validTo": "2017-12-06",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/11/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-18f9d9fc496b",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "33%",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2014-09-10",
+          "validTo": "2020-12-14",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/9/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-1a3c4202c320",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Václav Faraga",
+            "bornYear": "1989"
+          },
+          "stake": "50 %",
+          "vklad": "100000;00 KORUNY",
+          "validFrom": "2011-09-15",
+          "validTo": "2012-03-06",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-1a523ee8d534",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "50 %",
+          "vklad": "100000 KORUNY",
+          "validFrom": "2026-01-26",
+          "validTo": "2026-03-17",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/12/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-214ec1afbff2",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "50 %",
+          "vklad": "100000 KORUNY",
+          "validFrom": "2026-04-23",
+          "validTo": "2026-04-23",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/14/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-2c93c637c0b4",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Petr Faraga",
+            "bornYear": "1966"
+          },
+          "stake": "1/3",
+          "vklad": "68000;00 KORUNY",
+          "validFrom": "2012-03-06",
+          "validTo": "2014-09-10",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/10/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-3047e0e12d1f",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "33%",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2017-06-25",
+          "validTo": "2020-12-14",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/7/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-44c4d05f1156",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "1/3",
+          "vklad": "66000;00 KORUNY",
+          "validFrom": "2014-07-23",
+          "validTo": "2014-09-10",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/8/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-5464c4711443",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Tomáš Melichárek",
+            "bornYear": "1990"
+          },
+          "stake": "50 %",
+          "vklad": "100000;00 KORUNY",
+          "validFrom": "2011-09-15",
+          "validTo": "2012-03-06",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-8909718ed8b3",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Václav Faraga",
+            "bornYear": "1989"
+          },
+          "stake": "1/3",
+          "vklad": "66000;00 KORUNY",
+          "validFrom": "2012-03-06",
+          "validTo": "2014-07-23",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-a5a67abcc5ba",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "34%",
+          "vklad": "68000 KORUNY",
+          "validFrom": "2017-12-06",
+          "validTo": "2020-12-14",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/6/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-c323d780f850",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "50 %",
+          "vklad": "100000 KORUNY",
+          "validFrom": "2020-12-14",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/9/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-e410fc52307d",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "50 %",
+          "vklad": "100000 KORUNY",
+          "validFrom": "2026-03-17",
+          "validTo": "2026-04-23",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/13/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-f00bd220c002",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "33%",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2014-09-10",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/4/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-fceefbcc3b16",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "1/3",
+          "vklad": "66000;00 KORUNY",
+          "validFrom": "2013-08-29",
+          "validTo": "2014-09-10",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-fd76428f8502",
+          "entity": "fame-trade",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "50 %",
+          "vklad": "100000 KORUNY",
+          "validFrom": "2020-12-14",
+          "validTo": "2026-01-26",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/7/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        },
+        {
+          "id": "ASR-73e0c2c16585",
+          "entity": "fame-trade",
+          "predicate": "registry:subject-state",
+          "value": "AKTIVNI",
+          "artifact": {
+            "id": "ART-6f1563556c5c",
+            "sha256": "6f1563556c5c0ed283b0578c348de48614cf01faf3b7ddc7c042e737491435c1",
+            "jsonPointer": "/zaznamy/0/stavSubjektu",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29292859",
+            "retrievedAt": "2026-07-18T05:38:12.946Z"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-56",
+    "text": "The 2023 media report that 'Marek Kříž (Point FM) took ~5 % of Able.cz for 4M CZK at an 80M CZK valuation' aligns in person, timing and approximate size with 5326G s.r.o.'s register entry (Kříž-majority vehicle, in from 28 Aug 2023) — but Point FM and 5326G are distinct legal entities and no public source states that 5326G executed that specific investment.",
+    "status": "ASSESSED",
+    "note": "The article was re-fetched and hash-preserved 2026-07-18 (it names Point FM, Kříž, the 80M valuation and a five-percent stake); an attempt to corroborate via Point FM's own site failed (JS-rendered page, no readable content — see provider runs).",
+    "sources": [
+      "SRC-12",
+      "SRC-22",
+      "SRC-06"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-56",
+    "status": "ASSESSED",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-06",
+      "SRC-12",
+      "SRC-22"
+    ],
+    "sourceFamilies": [
+      "company-able",
+      "cz-state-register",
+      "media-czechcrunch"
+    ],
+    "independentFamilies": 3,
+    "primarySources": 1,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "assessment"
+  },
+  "links": [
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "selector": "EVD-ARES-5326G",
+      "assertions": [
+        {
+          "id": "ASR-e2699110e8aa",
+          "entity": "5326g",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "MAREK KŘÍŽ",
+            "bornYear": "1993"
+          },
+          "role": "Jednatel",
+          "validFrom": "2023-07-19",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-e6512a2fa87d",
+            "sha256": "e6512a2fa87d01e9880b8b20b41d03bbf654d1b3117590bca20fc0eb52a616de",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19540051",
+            "retrievedAt": "2026-07-18T05:41:17.667Z"
+          }
+        },
+        {
+          "id": "ASR-45f37c3ed565",
+          "entity": "5326g",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MAREK KŘÍŽ",
+            "bornYear": "1993"
+          },
+          "stake": "51 %",
+          "vklad": "10200 KORUNY",
+          "validFrom": "2023-07-19",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-e6512a2fa87d",
+            "sha256": "e6512a2fa87d01e9880b8b20b41d03bbf654d1b3117590bca20fc0eb52a616de",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19540051",
+            "retrievedAt": "2026-07-18T05:41:17.667Z"
+          }
+        },
+        {
+          "id": "ASR-5557f56fc172",
+          "entity": "5326g",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "DAVID JOPEK",
+            "bornYear": "1980"
+          },
+          "stake": "49 %",
+          "vklad": "9800 KORUNY",
+          "validFrom": "2023-07-19",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-e6512a2fa87d",
+            "sha256": "e6512a2fa87d01e9880b8b20b41d03bbf654d1b3117590bca20fc0eb52a616de",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19540051",
+            "retrievedAt": "2026-07-18T05:41:17.667Z"
+          }
+        }
+      ]
+    },
+    {
+      "relation": "SOURCE_OF_ASSERTION",
+      "note": "the media claim; article re-fetched and hash-preserved 2026-07-18",
+      "sourceId": "SRC-22",
+      "artifactId": "ART-c8e1f8870a4c"
+    }
+  ]
+}

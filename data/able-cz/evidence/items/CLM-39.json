@@ -1,0 +1,144 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-39",
+    "text": "Vít Schlesinger holds 30 % of Ventoux Studio s.r.o. (IČO 23749636) since its founding on 22 September 2025, alongside Andrea Naštická (35 %, jednatelka) and Nathalie Gabrielle Peyrichout (35 %, jednatelka). Schlesinger is not a jednatel there.",
+    "status": "VERIFIED_PRIMARY",
+    "note": null,
+    "sources": [
+      "SRC-12"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-39",
+    "status": "VERIFIED_PRIMARY",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-12"
+    ],
+    "sourceFamilies": [
+      "cz-state-register"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 1,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-VENTOUX",
+      "assertions": [
+        {
+          "id": "ASR-55131d817aad",
+          "entity": "ventoux-studio",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "NATHALIE GABRIELLE PEYRICHOUT",
+            "bornYear": "1997"
+          },
+          "role": "Jednatel",
+          "validFrom": "2025-09-22",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-650d71cad562",
+            "sha256": "650d71cad56267c2bcab41012e236b72286b319c6353d09b6e3e9887427ea45e",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23749636",
+            "retrievedAt": "2026-07-18T05:38:15.687Z"
+          }
+        },
+        {
+          "id": "ASR-dbfbe519590c",
+          "entity": "ventoux-studio",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "ANDREA NAŠTICKÁ",
+            "bornYear": "1993"
+          },
+          "role": "Jednatel",
+          "validFrom": "2025-09-22",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-650d71cad562",
+            "sha256": "650d71cad56267c2bcab41012e236b72286b319c6353d09b6e3e9887427ea45e",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23749636",
+            "retrievedAt": "2026-07-18T05:38:15.687Z"
+          }
+        },
+        {
+          "id": "ASR-085769a43d1c",
+          "entity": "ventoux-studio",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "ANDREA NAŠTICKÁ",
+            "bornYear": "1993"
+          },
+          "stake": "35 %",
+          "vklad": "1050 KORUNY",
+          "validFrom": "2025-09-22",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-650d71cad562",
+            "sha256": "650d71cad56267c2bcab41012e236b72286b319c6353d09b6e3e9887427ea45e",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23749636",
+            "retrievedAt": "2026-07-18T05:38:15.687Z"
+          }
+        },
+        {
+          "id": "ASR-3794efa3eafb",
+          "entity": "ventoux-studio",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÍT SCHLESINGER",
+            "bornYear": "1995"
+          },
+          "stake": "30 %",
+          "vklad": "900 KORUNY",
+          "validFrom": "2025-09-22",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-650d71cad562",
+            "sha256": "650d71cad56267c2bcab41012e236b72286b319c6353d09b6e3e9887427ea45e",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23749636",
+            "retrievedAt": "2026-07-18T05:38:15.687Z"
+          }
+        },
+        {
+          "id": "ASR-60131fd6fbe1",
+          "entity": "ventoux-studio",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "NATHALIE GABRIELLE PEYRICHOUT",
+            "bornYear": "1997"
+          },
+          "stake": "35 %",
+          "vklad": "1050 KORUNY",
+          "validFrom": "2025-09-22",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-650d71cad562",
+            "sha256": "650d71cad56267c2bcab41012e236b72286b319c6353d09b6e3e9887427ea45e",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23749636",
+            "retrievedAt": "2026-07-18T05:38:15.687Z"
+          }
+        }
+      ]
+    }
+  ]
+}

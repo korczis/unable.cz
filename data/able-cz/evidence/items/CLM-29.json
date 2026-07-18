@@ -1,0 +1,223 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-29",
+    "text": "ERA25 s.r.o. (IČO 23630051, founded 23 Aug 2025) is co-owned by both Able.cz founders and an Able.cz shareholder: Václav Faraga 39.5 % + jednatel, Tomáš Melichárek 39.5 % + jednatel, František Juren 21 % + jednatel.",
+    "status": "VERIFIED_PRIMARY",
+    "note": "The mirror-based pass attributed ERA25 to Václav Faraga alone.",
+    "sources": [
+      "SRC-12"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-29",
+    "status": "VERIFIED_PRIMARY",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-12"
+    ],
+    "sourceFamilies": [
+      "cz-state-register"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 1,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-ERA25",
+      "assertions": [
+        {
+          "id": "ASR-6106e454fc12",
+          "entity": "era25",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "Jednatel",
+          "validFrom": "2025-08-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-4c23d43c099f",
+            "sha256": "4c23d43c099f1f1a14dbcc35b6c3af8b3fe7df5f7974d46d08ff5721fd421fea",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23630051",
+            "retrievedAt": "2026-07-18T05:38:10.197Z"
+          }
+        },
+        {
+          "id": "ASR-b94eac459eb1",
+          "entity": "era25",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "FRANTIŠEK JUREN",
+            "bornYear": "1990"
+          },
+          "role": "Jednatel",
+          "validFrom": "2025-08-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-4c23d43c099f",
+            "sha256": "4c23d43c099f1f1a14dbcc35b6c3af8b3fe7df5f7974d46d08ff5721fd421fea",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23630051",
+            "retrievedAt": "2026-07-18T05:38:10.197Z"
+          }
+        },
+        {
+          "id": "ASR-eb707da7d771",
+          "entity": "era25",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "Jednatel",
+          "validFrom": "2025-08-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-4c23d43c099f",
+            "sha256": "4c23d43c099f1f1a14dbcc35b6c3af8b3fe7df5f7974d46d08ff5721fd421fea",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23630051",
+            "retrievedAt": "2026-07-18T05:38:10.197Z"
+          }
+        },
+        {
+          "id": "ASR-3f4f6174b418",
+          "entity": "era25",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "39;5 %",
+          "vklad": "3950 KORUNY",
+          "validFrom": "2026-01-22",
+          "validTo": "2026-03-16",
+          "artifact": {
+            "id": "ART-4c23d43c099f",
+            "sha256": "4c23d43c099f1f1a14dbcc35b6c3af8b3fe7df5f7974d46d08ff5721fd421fea",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23630051",
+            "retrievedAt": "2026-07-18T05:38:10.197Z"
+          }
+        },
+        {
+          "id": "ASR-538b0a264465",
+          "entity": "era25",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "39;5 %",
+          "vklad": "3950 KORUNY",
+          "validFrom": "2026-04-17",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-4c23d43c099f",
+            "sha256": "4c23d43c099f1f1a14dbcc35b6c3af8b3fe7df5f7974d46d08ff5721fd421fea",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23630051",
+            "retrievedAt": "2026-07-18T05:38:10.197Z"
+          }
+        },
+        {
+          "id": "ASR-607dd601ecdb",
+          "entity": "era25",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "39;5 %",
+          "vklad": "3950 KORUNY",
+          "validFrom": "2026-03-16",
+          "validTo": "2026-04-17",
+          "artifact": {
+            "id": "ART-4c23d43c099f",
+            "sha256": "4c23d43c099f1f1a14dbcc35b6c3af8b3fe7df5f7974d46d08ff5721fd421fea",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/4/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23630051",
+            "retrievedAt": "2026-07-18T05:38:10.197Z"
+          }
+        },
+        {
+          "id": "ASR-987e0c376b9b",
+          "entity": "era25",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "FRANTIŠEK JUREN",
+            "bornYear": "1990"
+          },
+          "stake": "21 %",
+          "vklad": "2100 KORUNY",
+          "validFrom": "2025-08-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-4c23d43c099f",
+            "sha256": "4c23d43c099f1f1a14dbcc35b6c3af8b3fe7df5f7974d46d08ff5721fd421fea",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23630051",
+            "retrievedAt": "2026-07-18T05:38:10.197Z"
+          }
+        },
+        {
+          "id": "ASR-b5ac50b3e4af",
+          "entity": "era25",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "39;5 %",
+          "vklad": "3950 KORUNY",
+          "validFrom": "2025-08-23",
+          "validTo": "2026-01-22",
+          "artifact": {
+            "id": "ART-4c23d43c099f",
+            "sha256": "4c23d43c099f1f1a14dbcc35b6c3af8b3fe7df5f7974d46d08ff5721fd421fea",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23630051",
+            "retrievedAt": "2026-07-18T05:38:10.197Z"
+          }
+        },
+        {
+          "id": "ASR-d37ca0c1da38",
+          "entity": "era25",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "39;5 %",
+          "vklad": "3950 KORUNY",
+          "validFrom": "2025-08-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-4c23d43c099f",
+            "sha256": "4c23d43c099f1f1a14dbcc35b6c3af8b3fe7df5f7974d46d08ff5721fd421fea",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/23630051",
+            "retrievedAt": "2026-07-18T05:38:10.197Z"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1474 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claims-evidence",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added.",
+    "count": 49,
+    "byCategory": {
+      "COMPLETE": 47,
+      "PARTIAL": 1,
+      "BLOCKED": 1
+    }
+  },
+  "claims": [
+    {
+      "claim": "CLM-01",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-02",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-03",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-04",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-05",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-06",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-07",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-08",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-09",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-10",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-11",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-12",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-13",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-01",
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-14",
+      "status": "CORROBORATED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-04",
+        "SRC-05",
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register",
+        "media-czechcrunch",
+        "media-forbes"
+      ],
+      "independentFamilies": 3,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-15",
+      "status": "SELF_REPORTED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02"
+      ],
+      "sourceFamilies": [
+        "company-able"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 0,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-19",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-21",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-04",
+        "SRC-05",
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register",
+        "media-czechcrunch",
+        "media-forbes"
+      ],
+      "independentFamilies": 3,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-22",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-28",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12",
+        "SRC-15"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 2,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-29",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-30",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-31",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-32",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-33",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-34",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-35",
+      "status": "ASSESSED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-10",
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "assessment"
+    },
+    {
+      "claim": "CLM-36",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-37",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-38",
+      "status": "ASSESSED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-02",
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "company-able",
+        "cz-state-register"
+      ],
+      "independentFamilies": 2,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "assessment"
+    },
+    {
+      "claim": "CLM-39",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-40",
+      "status": "ASSESSED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-04",
+        "SRC-05",
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register",
+        "media-czechcrunch",
+        "media-forbes"
+      ],
+      "independentFamilies": 3,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "assessment"
+    },
+    {
+      "claim": "CLM-41",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-42",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-43",
+      "status": "ASSESSED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "assessment"
+    },
+    {
+      "claim": "CLM-44",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-15"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-45",
+      "status": "ASSESSED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-04",
+        "SRC-05",
+        "SRC-15"
+      ],
+      "sourceFamilies": [
+        "cz-state-register",
+        "media-czechcrunch",
+        "media-forbes"
+      ],
+      "independentFamilies": 3,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "assessment"
+    },
+    {
+      "claim": "CLM-46",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-16",
+        "SRC-17"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 2,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-47",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-48",
+      "status": "ASSESSED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-16",
+        "SRC-17",
+        "SRC-21"
+      ],
+      "sourceFamilies": [
+        "cz-isir",
+        "cz-state-register"
+      ],
+      "independentFamilies": 2,
+      "primarySources": 3,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "assessment"
+    },
+    {
+      "claim": "CLM-49",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-18",
+        "SRC-19"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 2,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-50",
+      "status": "ASSESSED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-15",
+        "SRC-18",
+        "SRC-19"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 3,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "assessment"
+    },
+    {
+      "claim": "CLM-51",
+      "status": "ASSESSED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-04",
+        "SRC-05",
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register",
+        "media-czechcrunch",
+        "media-forbes"
+      ],
+      "independentFamilies": 3,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "assessment"
+    },
+    {
+      "claim": "CLM-52",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-53",
+      "status": "ASSESSED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-04",
+        "SRC-05",
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register",
+        "media-czechcrunch",
+        "media-forbes"
+      ],
+      "independentFamilies": 3,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "assessment"
+    },
+    {
+      "claim": "CLM-54",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-55",
+      "status": "VERIFIED_PRIMARY",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-12"
+      ],
+      "sourceFamilies": [
+        "cz-state-register"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-56",
+      "status": "ASSESSED",
+      "category": "COMPLETE",
+      "sources": [
+        "SRC-06",
+        "SRC-12",
+        "SRC-22"
+      ],
+      "sourceFamilies": [
+        "company-able",
+        "cz-state-register",
+        "media-czechcrunch"
+      ],
+      "independentFamilies": 3,
+      "primarySources": 1,
+      "exactCitation": true,
+      "artifactPreserved": true,
+      "kind": "assessment"
+    },
+    {
+      "claim": "CLM-57",
+      "status": "NOT_FOUND",
+      "category": "PARTIAL",
+      "sources": [
+        "SRC-20"
+      ],
+      "sourceFamilies": [
+        "cz-isrs"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": false,
+      "artifactPreserved": true,
+      "kind": "observation"
+    },
+    {
+      "claim": "CLM-58",
+      "status": "BLOCKED",
+      "category": "BLOCKED",
+      "sources": [
+        "SRC-21"
+      ],
+      "sourceFamilies": [
+        "cz-isir"
+      ],
+      "independentFamilies": 1,
+      "primarySources": 1,
+      "exactCitation": false,
+      "artifactPreserved": false,
+      "kind": "observation"
+    }
+  ],
+  "links": {
+    "CLM-01": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": "self-published marketing claim; snapshot preserved",
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-AGENTS",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-02": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-ROI",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-03": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-MANDAYS",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-04": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-WEEKS",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-05": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-ERROR",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-06": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-600ROI",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-07": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-AAA",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-08": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-AAA",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-09": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-SECURITY",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-10": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-SECURITY",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-11": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-SECURITY",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-12": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-NDA",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-13": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-NDA",
+        "artifactId": "ART-885f7780bf7b"
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "sourceId": "SRC-01",
+        "artifactId": "ART-b4af492d9b71"
+      }
+    ],
+    "CLM-14": [
+      {
+        "relation": "SUPPORTS",
+        "note": "hash+headers only (copyright)",
+        "sourceId": "SRC-04",
+        "artifactId": "ART-cdc23894a86b"
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": "hash+headers only",
+        "sourceId": "SRC-05",
+        "artifactId": "ART-29fcea5b6197"
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-BLACKFISH",
+        "assertionIds": 21
+      }
+    ],
+    "CLM-15": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": null,
+        "sourceId": "SRC-02",
+        "webSpanId": "EVD-WEB-CLIENTS",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-19": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ONELABEL",
+        "assertionIds": 12
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+        "assertionIds": 58
+      }
+    ],
+    "CLM-21": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-BLACKFISH",
+        "assertionIds": 21
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "sourceId": "SRC-04",
+        "artifactId": "ART-cdc23894a86b"
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "sourceId": "SRC-05",
+        "artifactId": "ART-29fcea5b6197"
+      }
+    ],
+    "CLM-22": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+        "assertionIds": 58
+      }
+    ],
+    "CLM-28": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-MINDEE",
+        "assertionIds": 11
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "spanId": "EVD-SL68-SUBSIDIARY"
+      }
+    ],
+    "CLM-29": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ERA25",
+        "assertionIds": 9
+      }
+    ],
+    "CLM-30": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-VERZUZ",
+        "assertionIds": 3
+      }
+    ],
+    "CLM-31": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-FAME-LOGISTICS",
+        "assertionIds": 23
+      }
+    ],
+    "CLM-32": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-FAME-TRADE",
+        "assertionIds": 29
+      }
+    ],
+    "CLM-33": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-MMPLAN",
+        "assertionIds": 14
+      }
+    ],
+    "CLM-34": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+        "assertionIds": 58
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-OFFICERS",
+        "assertionIds": 11
+      }
+    ],
+    "CLM-35": [
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "selector": "EVD-ARES-FAME-LOGISTICS",
+        "assertionIds": 23
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-OFFICERS",
+        "assertionIds": 11
+      }
+    ],
+    "CLM-36": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+        "assertionIds": 58
+      }
+    ],
+    "CLM-37": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-VERASTO",
+        "assertionIds": 2
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-BGO",
+        "assertionIds": 8
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-USPORIX",
+        "assertionIds": 5
+      }
+    ],
+    "CLM-38": [
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": "negative search: Grolig absent from the complete officer/shareholder history",
+        "selector": "EVD-ARES-ABLE-OFFICERS",
+        "assertionIds": 11
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+        "assertionIds": 58
+      },
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": "the CTO title itself",
+        "sourceId": "SRC-02",
+        "artifactId": "ART-885f7780bf7b"
+      }
+    ],
+    "CLM-39": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-VENTOUX",
+        "assertionIds": 5
+      }
+    ],
+    "CLM-40": [
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "selector": "EVD-ARES-VENTOUX",
+        "assertionIds": 5
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": "absence of mention",
+        "sourceId": "SRC-04"
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": "absence of mention",
+        "sourceId": "SRC-05"
+      }
+    ],
+    "CLM-41": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-BLACKFISH",
+        "assertionIds": 21
+      }
+    ],
+    "CLM-42": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ARTSTAY",
+        "assertionIds": 11
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-BLACKFISH",
+        "assertionIds": 21
+      }
+    ],
+    "CLM-43": [
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "selector": "EVD-ARES-ARTSTAY",
+        "assertionIds": 11
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "selector": "EVD-ARES-BLACKFISH",
+        "assertionIds": 21
+      }
+    ],
+    "CLM-44": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "spanId": "EVD-SL68-REVENUE"
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "spanId": "EVD-SL68-TURNOVER"
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "spanId": "EVD-SL68-RESULT"
+      }
+    ],
+    "CLM-45": [
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "spanId": "EVD-SL68-REVENUE"
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "sourceId": "SRC-04",
+        "artifactId": "ART-cdc23894a86b"
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "sourceId": "SRC-05",
+        "artifactId": "ART-29fcea5b6197"
+      }
+    ],
+    "CLM-46": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "spanId": "EVD-SL69-ORDER"
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "spanId": "EVD-SL69-AMOUNT"
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "spanId": "EVD-SL69-CREDITOR"
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "spanId": "EVD-SL70-CLOSED"
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "spanId": "EVD-SL70-INSTRUMENTS"
+      }
+    ],
+    "CLM-47": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+        "assertionIds": 58
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-MMPLAN",
+        "assertionIds": 14
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-FAME-LOGISTICS",
+        "assertionIds": 23
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-FAME-TRADE",
+        "assertionIds": 29
+      }
+    ],
+    "CLM-48": [
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "spanId": "EVD-SL69-AMOUNT"
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "spanId": "EVD-SL69-CREDITOR"
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "spanId": "EVD-SL70-CLOSED"
+      }
+    ],
+    "CLM-49": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "spanId": "EVD-SL21-ASSETS"
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "spanId": "EVD-SL21-EQUITY"
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "spanId": "EVD-SL23-ASSETS"
+      }
+    ],
+    "CLM-50": [
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "spanId": "EVD-SL21-ASSETS"
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "spanId": "EVD-SL23-ASSETS"
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "spanId": "EVD-SL68-ASSETS"
+      }
+    ],
+    "CLM-51": [
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+        "assertionIds": 58
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": "absence of mention",
+        "sourceId": "SRC-04"
+      },
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": "absence of mention",
+        "sourceId": "SRC-05"
+      }
+    ],
+    "CLM-52": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+        "assertionIds": 58
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ZENX",
+        "assertionIds": 3
+      }
+    ],
+    "CLM-53": [
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+        "assertionIds": 58
+      }
+    ],
+    "CLM-54": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+        "assertionIds": 58
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-CAPITAL",
+        "assertionIds": 2
+      }
+    ],
+    "CLM-55": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-5326G",
+        "assertionIds": 3
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "selector": "EVD-ARES-ABLE-SHAREHOLDERS",
+        "assertionIds": 58
+      }
+    ],
+    "CLM-56": [
+      {
+        "relation": "CONTEXTUALIZES",
+        "note": null,
+        "selector": "EVD-ARES-5326G",
+        "assertionIds": 3
+      },
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": "the media claim; article re-fetched and hash-preserved 2026-07-18",
+        "sourceId": "SRC-22",
+        "artifactId": "ART-c8e1f8870a4c"
+      }
+    ],
+    "CLM-57": [
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "sourceId": "SRC-20",
+        "artifactId": "ART-9a2a730d4856"
+      },
+      {
+        "relation": "SUPPORTS",
+        "note": null,
+        "sourceId": "SRC-20",
+        "artifactId": "ART-35e525e0438f"
+      }
+    ],
+    "CLM-58": [
+      {
+        "relation": "SOURCE_OF_ASSERTION",
+        "note": "provider failure evidence lives in provider-runs.ndjson (HTTP 500)",
+        "sourceId": "SRC-21"
+      }
+    ]
+  }
+}

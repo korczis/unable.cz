@@ -1,0 +1,355 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-37",
+    "text": "Lukáš Grolig's own register footprint: VERASTO s.r.o. (IČO 06116159) — sole owner and jednatel since 18 May 2017; BGO s.r.o. (IČO 19173661) — 1/3 shareholder and jednatel from 22 Mar 2023 until 2 Apr 2026; Usporix, s.r.o. (IČO 29725364) — founded 26 Jun 2026 with Grolig as jednatel holding all four 25 % units (100 %). None of these shares an address or officer with the Able.cz/Znojmo cluster.",
+    "status": "VERIFIED_PRIMARY",
+    "note": "Upgrades and corrects the mirror record (VERASTO was 'role unconfirmed'; Usporix was reported as a 25 % minority stake and is in fact wholly Grolig-held; its 2026-06-26 founding date means the mirror pass described a company only weeks old).",
+    "sources": [
+      "SRC-12"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-37",
+    "status": "VERIFIED_PRIMARY",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-12"
+    ],
+    "sourceFamilies": [
+      "cz-state-register"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 1,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-VERASTO",
+      "assertions": [
+        {
+          "id": "ASR-c058f46be004",
+          "entity": "verasto",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "LUKÁŠ GROLIG",
+            "bornYear": "1988"
+          },
+          "role": "jednatel",
+          "validFrom": "2017-05-18",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-ae7b4ef81665",
+            "sha256": "ae7b4ef81665232dac32f488b03f075f84f25e33c2b8498e000711a999e666e7",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06116159",
+            "retrievedAt": "2026-07-18T05:38:21.192Z"
+          }
+        },
+        {
+          "id": "ASR-55e6b2e57d52",
+          "entity": "verasto",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "LUKÁŠ GROLIG",
+            "bornYear": "1988"
+          },
+          "stake": "1/1",
+          "vklad": "1000;00 KORUNY",
+          "validFrom": "2017-05-18",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-ae7b4ef81665",
+            "sha256": "ae7b4ef81665232dac32f488b03f075f84f25e33c2b8498e000711a999e666e7",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06116159",
+            "retrievedAt": "2026-07-18T05:38:21.192Z"
+          }
+        }
+      ]
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-BGO",
+      "assertions": [
+        {
+          "id": "ASR-68661519320a",
+          "entity": "bgo",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "PAVEL BARTOŠ",
+            "bornYear": "1987"
+          },
+          "role": "Jednatel",
+          "validFrom": "2023-03-22",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-d709627371b1",
+            "sha256": "d709627371b1283240c984dd518e135c69f0292e16102290a235fb34d006f7da",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19173661",
+            "retrievedAt": "2026-07-18T05:38:19.378Z"
+          }
+        },
+        {
+          "id": "ASR-b8b18d970491",
+          "entity": "bgo",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "LUKÁŠ GROLIG",
+            "bornYear": "1988"
+          },
+          "role": "Jednatel",
+          "validFrom": "2023-03-22",
+          "validTo": "2026-04-02",
+          "artifact": {
+            "id": "ART-d709627371b1",
+            "sha256": "d709627371b1283240c984dd518e135c69f0292e16102290a235fb34d006f7da",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19173661",
+            "retrievedAt": "2026-07-18T05:38:19.378Z"
+          }
+        },
+        {
+          "id": "ASR-e2be11b0ddf5",
+          "entity": "bgo",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "JAKUB ORSÁG",
+            "bornYear": "1991"
+          },
+          "role": "Jednatel",
+          "validFrom": "2023-03-22",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-d709627371b1",
+            "sha256": "d709627371b1283240c984dd518e135c69f0292e16102290a235fb34d006f7da",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19173661",
+            "retrievedAt": "2026-07-18T05:38:19.378Z"
+          }
+        },
+        {
+          "id": "ASR-208718e4c052",
+          "entity": "bgo",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "JAKUB ORSÁG",
+            "bornYear": "1991"
+          },
+          "stake": "1;3",
+          "vklad": "1000;00 KORUNY",
+          "validFrom": "2023-03-22",
+          "validTo": "2026-04-02",
+          "artifact": {
+            "id": "ART-d709627371b1",
+            "sha256": "d709627371b1283240c984dd518e135c69f0292e16102290a235fb34d006f7da",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19173661",
+            "retrievedAt": "2026-07-18T05:38:19.378Z"
+          }
+        },
+        {
+          "id": "ASR-48cb5ac6ffa6",
+          "entity": "bgo",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PAVEL BARTOŠ",
+            "bornYear": "1987"
+          },
+          "stake": "1;3",
+          "vklad": "1000;00 KORUNY",
+          "validFrom": "2023-03-22",
+          "validTo": "2026-04-02",
+          "artifact": {
+            "id": "ART-d709627371b1",
+            "sha256": "d709627371b1283240c984dd518e135c69f0292e16102290a235fb34d006f7da",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19173661",
+            "retrievedAt": "2026-07-18T05:38:19.378Z"
+          }
+        },
+        {
+          "id": "ASR-769a3c5da7eb",
+          "entity": "bgo",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "LUKÁŠ GROLIG",
+            "bornYear": "1988"
+          },
+          "stake": "1;3",
+          "vklad": "1000;00 KORUNY",
+          "validFrom": "2023-03-22",
+          "validTo": "2026-04-02",
+          "artifact": {
+            "id": "ART-d709627371b1",
+            "sha256": "d709627371b1283240c984dd518e135c69f0292e16102290a235fb34d006f7da",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19173661",
+            "retrievedAt": "2026-07-18T05:38:19.378Z"
+          }
+        },
+        {
+          "id": "ASR-a66be07e79f2",
+          "entity": "bgo",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PAVEL BARTOŠ",
+            "bornYear": "1987"
+          },
+          "stake": "50 %",
+          "vklad": "1500;00 KORUNY",
+          "validFrom": "2026-04-02",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-d709627371b1",
+            "sha256": "d709627371b1283240c984dd518e135c69f0292e16102290a235fb34d006f7da",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19173661",
+            "retrievedAt": "2026-07-18T05:38:19.378Z"
+          }
+        },
+        {
+          "id": "ASR-d6f84aefb61b",
+          "entity": "bgo",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "JAKUB ORSÁG",
+            "bornYear": "1991"
+          },
+          "stake": "50 %",
+          "vklad": "1500;00 KORUNY",
+          "validFrom": "2026-04-02",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-d709627371b1",
+            "sha256": "d709627371b1283240c984dd518e135c69f0292e16102290a235fb34d006f7da",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19173661",
+            "retrievedAt": "2026-07-18T05:38:19.378Z"
+          }
+        }
+      ]
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-USPORIX",
+      "assertions": [
+        {
+          "id": "ASR-6dd72c4feb9e",
+          "entity": "usporix",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "LUKÁŠ GROLIG",
+            "bornYear": "1988"
+          },
+          "role": "Jednatel",
+          "validFrom": "2026-06-26",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-6e7b56fd067b",
+            "sha256": "6e7b56fd067bd517d6d2ac04275b6e5dfe2ddca32a91c304ea1c5e93da58c4c2",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29725364",
+            "retrievedAt": "2026-07-18T05:38:20.284Z"
+          }
+        },
+        {
+          "id": "ASR-3dda4dba7751",
+          "entity": "usporix",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "LUKÁŠ GROLIG",
+            "bornYear": "1988"
+          },
+          "stake": "25 %",
+          "vklad": "2500 KORUNY",
+          "validFrom": "2026-06-26",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-6e7b56fd067b",
+            "sha256": "6e7b56fd067bd517d6d2ac04275b6e5dfe2ddca32a91c304ea1c5e93da58c4c2",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29725364",
+            "retrievedAt": "2026-07-18T05:38:20.284Z"
+          }
+        },
+        {
+          "id": "ASR-3eafbb8ec6ee",
+          "entity": "usporix",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "LUKÁŠ GROLIG",
+            "bornYear": "1988"
+          },
+          "stake": "25 %",
+          "vklad": "2500 KORUNY",
+          "validFrom": "2026-06-26",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-6e7b56fd067b",
+            "sha256": "6e7b56fd067bd517d6d2ac04275b6e5dfe2ddca32a91c304ea1c5e93da58c4c2",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29725364",
+            "retrievedAt": "2026-07-18T05:38:20.284Z"
+          }
+        },
+        {
+          "id": "ASR-5bf2231e287e",
+          "entity": "usporix",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "LUKÁŠ GROLIG",
+            "bornYear": "1988"
+          },
+          "stake": "25 %",
+          "vklad": "2500 KORUNY",
+          "validFrom": "2026-06-26",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-6e7b56fd067b",
+            "sha256": "6e7b56fd067bd517d6d2ac04275b6e5dfe2ddca32a91c304ea1c5e93da58c4c2",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29725364",
+            "retrievedAt": "2026-07-18T05:38:20.284Z"
+          }
+        },
+        {
+          "id": "ASR-676e4b3c75e2",
+          "entity": "usporix",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "LUKÁŠ GROLIG",
+            "bornYear": "1988"
+          },
+          "stake": "25 %",
+          "vklad": "2500 KORUNY",
+          "validFrom": "2026-06-26",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-6e7b56fd067b",
+            "sha256": "6e7b56fd067bd517d6d2ac04275b6e5dfe2ddca32a91c304ea1c5e93da58c4c2",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29725364",
+            "retrievedAt": "2026-07-18T05:38:20.284Z"
+          }
+        }
+      ]
+    }
+  ]
+}

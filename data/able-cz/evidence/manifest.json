@@ -1,0 +1,43 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "evidence-manifest",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "files": [
+    "sources.json",
+    "source-families.json",
+    "artifacts.json",
+    "provider-runs.json",
+    "spans.json",
+    "assertions.json",
+    "availability.json",
+    "claims-evidence.json"
+  ],
+  "itemsDir": "items/",
+  "counts": {
+    "sources": 22,
+    "families": 9,
+    "artifacts": 70,
+    "providerRuns": 108,
+    "spans": 18,
+    "assertions": 453,
+    "liveClaims": 49,
+    "supersededClaims": 9,
+    "inventory": {
+      "COMPLETE": 47,
+      "PARTIAL": 1,
+      "BLOCKED": 1
+    }
+  },
+  "integrity": {
+    "artifactsVerified": 64,
+    "spansVerified": 18,
+    "selectorsResolved": 24
+  }
+}

@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 5
+    "count": 6
   },
   "risks": [
     {
@@ -18,18 +18,18 @@
       "probability": "moderate",
       "impact": "low",
       "confidence": "high",
-      "basis": "governance.marketingLeadership vs governance.statutoryBody",
-      "note": "Website markets four C-level leaders; the register confirms two as jednatelé. One marketed CTO was not found in the register in this pass."
+      "basis": "governance.marketingLeadership vs governance.statutoryBody; CLM-38",
+      "note": "Website markets four C-level leaders; the register confirms two as jednatelé. The marketed CTO appears nowhere in the complete preserved register history (primary-verified negative search)."
     },
     {
       "id": "R-02",
       "category": "financial",
-      "title": "No filed financial statements retrieved",
+      "title": "Filed revenue declining and far below the media-reported combined target",
       "probability": "high",
       "impact": "moderate",
       "confidence": "high",
-      "basis": "financials.notFound",
-      "note": "Revenue/result/assets/headcount are NOT_FOUND (Sbírka listin not retrieved). An evidence gap, not a negative finding."
+      "basis": "CLM-44, CLM-45 (filed FY2024 statement, exact rows cited)",
+      "note": "Replaces the earlier 'statements not retrieved' gap-risk, which was stale: statements were retrieved and parsed. The substantive reading: revenue fell ~14.8% YoY, thin shrinking margin, shareholder loans tripled (FIN-ASSESS-01..04)."
     },
     {
       "id": "R-03",
@@ -38,8 +38,8 @@
       "probability": "moderate",
       "impact": "moderate",
       "confidence": "medium",
-      "basis": "14 of 58 claims are SELF_REPORTED",
-      "note": "Marketing/performance claims await independent corroboration."
+      "basis": "14 of 49 live claims are SELF_REPORTED",
+      "note": "Marketing/performance claims await independent corroboration; the Registr smluv returned zero public contracts to anchor the tender claims (CLM-57)."
     },
     {
       "id": "R-04",
@@ -48,8 +48,8 @@
       "probability": "unknown",
       "impact": "high",
       "confidence": "low",
-      "basis": "openQuestions (ISIR)",
-      "note": "No public insolvency was found; ISIR direct query and login-gated aggregators left this unresolved. Absence is not proof of absence."
+      "basis": "CLM-58 (ISIR BLOCKED — HTTP 500 on both attempts)",
+      "note": "No public insolvency was found anywhere, but the authoritative register could not be queried. BLOCKED, not clear; absence is not proof of absence."
     },
     {
       "id": "R-05",
@@ -60,6 +60,16 @@
       "confidence": "high",
       "basis": "contradictions[CON-01]",
       "note": "Company GDPR page cites C 85424; register records C 85425. Most plausibly a transcription/stale-copy error; recorded, not smoothed over."
+    },
+    {
+      "id": "R-06",
+      "category": "ownership",
+      "title": "Control concentration outside the founders",
+      "probability": "high",
+      "impact": "moderate",
+      "confidence": "high",
+      "basis": "CLM-52, CLM-53 (primary cap table)",
+      "note": "ZenX Capital, a.s. has held 45.8–50% since Oct 2020 — more than both founders combined — while its own beneficial ownership is not register-visible. The public narrative reviewed does not reflect this."
     }
   ],
   "disclaimer": "Risks are ASSESSED readings of documented evidence gaps, not findings of fact. Severity is independent of evidence confidence."
