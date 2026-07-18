@@ -1,0 +1,95 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "cadastre-gaps",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "publicationProfile": "public",
+    "coordinateSystem": null,
+    "source": "data/dossier/able/dossier.json",
+    "privacyNote": "Obsahuje pouze sídlo právnické osoby (veřejný firemní identifikátor). Žádné adresy fyzických osob, žádné souřadnice soukromých míst, žádné vlastnické záznamy fyzických osob. RÚIAN/parcely/vlastnictví nebyly sbírány.",
+    "count": 6
+  },
+  "gaps": [
+    {
+      "id": "GAP-CAD-01",
+      "category": "cadastral",
+      "affectedDimension": "ruian_resolution",
+      "expectedDatum": "RÚIAN adresní bod",
+      "materiality": "low",
+      "recommendedSource": "RÚIAN VDP (vdp.cuzk.cz) — adresní místo",
+      "status": "blocked",
+      "blockedReason": "Vyžaduje přímý přístup k ČÚZK/RÚIAN; v tomto průchodu neproveden. Data se nedopočítávají.",
+      "derivedFrom": [
+        "identity:Registered office"
+      ]
+    },
+    {
+      "id": "GAP-CAD-02",
+      "category": "cadastral",
+      "affectedDimension": "building_resolution",
+      "expectedDatum": "Budova",
+      "materiality": "low",
+      "recommendedSource": "ČÚZK katastr / RÚIAN dataset",
+      "status": "blocked",
+      "blockedReason": "Vyžaduje přímý přístup k ČÚZK/RÚIAN; v tomto průchodu neproveden. Data se nedopočítávají.",
+      "derivedFrom": [
+        "identity:Registered office"
+      ]
+    },
+    {
+      "id": "GAP-CAD-03",
+      "category": "cadastral",
+      "affectedDimension": "parcel_resolution",
+      "expectedDatum": "Parcely",
+      "materiality": "low",
+      "recommendedSource": "ČÚZK katastr / RÚIAN dataset",
+      "status": "blocked",
+      "blockedReason": "Vyžaduje přímý přístup k ČÚZK/RÚIAN; v tomto průchodu neproveden. Data se nedopočítávají.",
+      "derivedFrom": [
+        "identity:Registered office"
+      ]
+    },
+    {
+      "id": "GAP-CAD-04",
+      "category": "cadastral",
+      "affectedDimension": "property_ownership",
+      "expectedDatum": "Vlastnictví nemovitosti",
+      "materiality": "moderate",
+      "recommendedSource": "ČÚZK — nahlížení do katastru / list vlastnictví (parcela pod Vlněna 526/5)",
+      "status": "blocked",
+      "blockedReason": "Vyžaduje přímý přístup k ČÚZK/RÚIAN; v tomto průchodu neproveden. Data se nedopočítávají.",
+      "derivedFrom": [
+        "identity:Registered office"
+      ]
+    },
+    {
+      "id": "GAP-CAD-05",
+      "category": "cadastral",
+      "affectedDimension": "geometry",
+      "expectedDatum": "Geometrie / souřadnice",
+      "materiality": "low",
+      "recommendedSource": "ČÚZK katastr / RÚIAN dataset",
+      "status": "blocked",
+      "blockedReason": "Vyžaduje přímý přístup k ČÚZK/RÚIAN; v tomto průchodu neproveden. Data se nedopočítávají.",
+      "derivedFrom": [
+        "identity:Registered office"
+      ]
+    },
+    {
+      "id": "GAP-CAD-06",
+      "category": "cadastral",
+      "affectedDimension": "address_history",
+      "expectedDatum": "Historie adres",
+      "materiality": "low",
+      "recommendedSource": "ČÚZK katastr / RÚIAN dataset",
+      "status": "blocked",
+      "blockedReason": "Vyžaduje přímý přístup k ČÚZK/RÚIAN; v tomto průchodu neproveden. Data se nedopočítávají.",
+      "derivedFrom": [
+        "identity:Registered office"
+      ]
+    }
+  ]
+}

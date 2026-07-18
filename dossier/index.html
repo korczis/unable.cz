@@ -64,7 +64,7 @@
   <link rel="apple-touch-icon" href="https://unable.cz/icons/apple-touch-icon.png" />
   <link rel="manifest" href="https://unable.cz/site.webmanifest" />
 
-  <link rel="stylesheet" href="https://unable.cz/css/main.css?h=c5963701719769fcef2c" />
+  <link rel="stylesheet" href="https://unable.cz/css/main.css?h=eaed0f9a4eab5b64604c" />
 </head>
 <body class="min-h-screen w-full bg-black text-white antialiased" x-data>
   <main class="relative min-h-screen w-full bg-black px-4 py-16 text-white">
@@ -1287,6 +1287,50 @@ datovány a připsány.</p>
           </tbody>
         </table>
       </div>
+    </section>
+
+    <section class="mt-16" aria-labelledby="addr-title">
+      <h2 id="addr-title" class="font-sans text-2xl font-black text-white">Adresy a prostorový kontext</h2>
+      <p class="mt-2 text-sm text-white/60">
+        Adresa je vyšetřovací objekt, ne jen text. Zveřejňuje se <strong>pouze
+        sídlo právnické osoby</strong> (veřejný firemní identifikátor,
+        <span class="font-mono">public_with_context</span>). Adresy fyzických
+        osob, souřadnice soukromých míst a vlastnické záznamy fyzických osob se
+        <strong>nezveřejňují</strong>. <strong>Sídlo není vlastnictví ani
+        provozovna</strong> — shoda rejstříku a webu je vodítko, ne důkaz
+        provozní přítomnosti.
+      </p>
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <caption class="sr-only">Zveřejněné adresy a jejich klasifikace.</caption>
+          <thead>
+            <tr class="border-b border-white/20 text-white/60">
+              <th scope="col" class="py-2 pr-4 font-medium">Subjekt</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Adresa (rozparsováno)</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Role</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Klasifikace</th>
+              <th scope="col" class="py-2 font-medium">Zdroje</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4 text-white/90">Able.cz s.r.o.</td>
+              <td class="py-2 pr-4 text-white/90">
+                Vlněna 526/5, Trnitá, 602 00 Brno
+                <span class="ml-1 font-mono text-xs text-white/30">exact</span>
+              </td>
+              <td class="py-2 pr-4 text-white/60">registered_office</td>
+              <td class="py-2 pr-4 whitespace-nowrap text-[#f3e5c0]">public_with_context</td>
+              <td class="py-2 font-mono text-white/40">SRC-08, SRC-03, SRC-01, SRC-02</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-xs text-white/40">
+        <strong class="text-white/60">Nesbíráno v tomto průchodu</strong> (vyžaduje přímý přístup k ČÚZK/RÚIAN; nedopočítává se):
+        RÚIAN adresní bod · Budova · Parcely · Vlastnictví nemovitosti · Geometrie &#x2F; souřadnice · Historie adres.
+        RÚIAN adresní bod, budova, parcela, vlastnictví a souřadnice zůstávají <span class="font-mono">null</span> a jsou vedeny jako blokované mezery, nikoli odhadovány.
+      </p>
     </section>
 
     

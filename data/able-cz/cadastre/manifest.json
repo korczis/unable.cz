@@ -1,0 +1,33 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "cadastre-manifest",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "publicationProfile": "public",
+    "coordinateSystem": null,
+    "source": "data/dossier/able/dossier.json",
+    "privacyNote": "Obsahuje pouze sídlo právnické osoby (veřejný firemní identifikátor). Žádné adresy fyzických osob, žádné souřadnice soukromých míst, žádné vlastnické záznamy fyzických osob. RÚIAN/parcely/vlastnictví nebyly sbírány."
+  },
+  "files": [
+    "addresses.json",
+    "coverage.json",
+    "gaps.json"
+  ],
+  "addressesPublished": 1,
+  "naturalPersonAddressesPublished": 0,
+  "ruianResolved": 0,
+  "parcelsResolved": 0,
+  "ownershipRecords": 0,
+  "coordinatesPublished": 0,
+  "blockedDimensions": [
+    "ruian_resolution",
+    "building_resolution",
+    "parcel_resolution",
+    "property_ownership",
+    "geometry",
+    "address_history"
+  ]
+}

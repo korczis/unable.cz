@@ -1,0 +1,96 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "cadastre-addresses",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "publicationProfile": "public",
+    "coordinateSystem": null,
+    "source": "data/dossier/able/dossier.json",
+    "privacyNote": "Obsahuje pouze sídlo právnické osoby (veřejný firemní identifikátor). Žádné adresy fyzických osob, žádné souřadnice soukromých míst, žádné vlastnické záznamy fyzických osob. RÚIAN/parcely/vlastnictví nebyly sbírány.",
+    "count": 1
+  },
+  "addresses": [
+    {
+      "id": "address:able:reg-office",
+      "canonicalKey": "vlnena|526|5|brno",
+      "raw": "Vlněna 526/5, Brno",
+      "street": "Vlněna",
+      "cisloPopisne": "526",
+      "cisloOrientacni": "5",
+      "castObce": "Trnitá",
+      "psc": "602 00",
+      "obec": "Brno",
+      "country": "CZ",
+      "resolution": "exact",
+      "role": "registered_office",
+      "publication": "public_with_context",
+      "ownerType": "legal_entity",
+      "linkedEntities": [
+        {
+          "entity": "able",
+          "name": "Able.cz s.r.o.",
+          "role": "registered_office",
+          "status": "VERIFIED_PRIMARY",
+          "sources": [
+            "SRC-08"
+          ],
+          "discoveredFrom": "identity:VAT status (EU VIES)"
+        }
+      ],
+      "rawObservations": [
+        {
+          "raw": "Vlněna 526/5, Brno",
+          "from": "identity:VAT status (EU VIES)",
+          "status": "VERIFIED_PRIMARY",
+          "sources": [
+            "SRC-08"
+          ]
+        },
+        {
+          "raw": "Vlněna 526/5, Trnitá, 602 00 Brno",
+          "from": "identity:Registered office",
+          "status": "CORROBORATED",
+          "sources": [
+            "SRC-03",
+            "SRC-01"
+          ]
+        },
+        {
+          "raw": "Vlněna 526/5, Trnitá, 602 00 Brno",
+          "from": "node:able.seat",
+          "status": "CORROBORATED",
+          "sources": [
+            "SRC-01",
+            "SRC-02",
+            "SRC-03"
+          ]
+        }
+      ],
+      "ruianAddressPointId": null,
+      "coordinates": null,
+      "building": null,
+      "parcels": [],
+      "ownership": null,
+      "title": null,
+      "collected": {
+        "components": true,
+        "ruian": false,
+        "geometry": false,
+        "building": false,
+        "parcel": false,
+        "ownership": false,
+        "title": false
+      },
+      "note": "Sídlo zapsané v rejstříku — veřejný firemní identifikátor. RÚIAN ID, souřadnice, budova, parcela a vlastnictví NEBYLY v tomto průchodu sbírány (vyžadují přímý přístup k ČÚZK/RÚIAN) a nejsou zde dopočítány.",
+      "sources": [
+        "SRC-08",
+        "SRC-03",
+        "SRC-01",
+        "SRC-02"
+      ]
+    }
+  ]
+}

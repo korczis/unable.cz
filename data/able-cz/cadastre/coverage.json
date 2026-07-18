@@ -1,0 +1,66 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "cadastre-coverage",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "publicationProfile": "public",
+    "coordinateSystem": null,
+    "source": "data/dossier/able/dossier.json",
+    "privacyNote": "Obsahuje pouze sídlo právnické osoby (veřejný firemní identifikátor). Žádné adresy fyzických osob, žádné souřadnice soukromých míst, žádné vlastnické záznamy fyzických osob. RÚIAN/parcely/vlastnictví nebyly sbírány.",
+    "count": 7
+  },
+  "dimensions": [
+    {
+      "dimension": "address_identity",
+      "label": "Identita adresy",
+      "coverage": "adequate",
+      "note": "Adresa sídla je doložena rejstříkem (SRC-03) a VIES (SRC-08); komponenty rozparsovány.",
+      "collected": true
+    },
+    {
+      "dimension": "ruian_resolution",
+      "label": "RÚIAN adresní bod",
+      "coverage": "absent",
+      "note": "Nevyžádáno u RÚIAN/ČÚZK v tomto průchodu.",
+      "collected": false
+    },
+    {
+      "dimension": "building_resolution",
+      "label": "Budova",
+      "coverage": "absent",
+      "note": "Nevyžádáno u ČÚZK.",
+      "collected": false
+    },
+    {
+      "dimension": "parcel_resolution",
+      "label": "Parcely",
+      "coverage": "absent",
+      "note": "Nevyžádáno u ČÚZK katastru.",
+      "collected": false
+    },
+    {
+      "dimension": "property_ownership",
+      "label": "Vlastnictví nemovitosti",
+      "coverage": "absent",
+      "note": "List vlastnictví nevyžádán; sídlo ≠ vlastnictví.",
+      "collected": false
+    },
+    {
+      "dimension": "geometry",
+      "label": "Geometrie / souřadnice",
+      "coverage": "absent",
+      "note": "Žádné souřadnice nebyly sbírány ani dopočítány.",
+      "collected": false
+    },
+    {
+      "dimension": "address_history",
+      "label": "Historie adres",
+      "coverage": "partial",
+      "note": "Rejstřík eviduje jen aktuální sídlo v tomto datasetu; dřívější sídla nevyžádána.",
+      "collected": false
+    }
+  ]
+}
