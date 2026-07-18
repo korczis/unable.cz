@@ -130,7 +130,9 @@
 <body class="min-h-screen w-full bg-black text-white antialiased" x-data>
   {% block content %}{% endblock content %}
 
-  <script src="{{ get_url(path='js/flowbite.min.js', cachebust=true) | safe }}" defer></script>
+  {#- flowbite.min.js was loaded but entirely unused (no initFlowbite / data-*
+      components anywhere) — removed as dead weight. flowbite-typography (the
+      Tailwind plugin, for prose) stays. See docs/ui/flowbite/00. -#}
   <script src="{{ get_url(path='js/alpine.min.js', cachebust=true) | safe }}" defer></script>
   {% block scripts %}{% endblock scripts %}
 </body>

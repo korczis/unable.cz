@@ -20,43 +20,44 @@ and produced an **honest audit**, rather than a theatrical overhaul.
 
 ## What was done
 
-- **`min-h-[100dvh]`** on the claim + claims-index pages (was `min-h-screen`/100vh)
-  — the §5 dynamic-viewport-height fix. **PROVEN** (built, class present in CSS).
+- **Playwright responsive suite** (`e2e/responsive.spec.mjs`, `npm run test:responsive`)
+  — the genuine device-emulation the 1280-clamped browser tool could not do.
+  **21/21 pass**: 5 routes (`/`, `/dossier/`, `/dossier/claims/`, two claim pages)
+  × 4 viewports (**320 / 390 / 768 / 1440px**) assert **no horizontal overflow,
+  viewport meta present, key element visible, no console errors**; plus the 320px
+  narrative claim anchor is adequately sized and navigates. Report:
+  `reports/ui-responsive-validation.json`. Kept OUT of `npm test`/CI (no browsers
+  there); run locally with the cached chromium.
+- **`min-h-[100dvh]`** on claim + claims-index pages (§5 dynamic-viewport-height).
+- **Removed the dead `flowbite.min.js` load** (§25) — confirmed 100% unused; built
+  pages no longer fetch it. `flowbite-typography` (prose) stays.
 - **Honest audit docs** (00, 01) recording versions, the dead-loaded Flowbite JS,
-  the custom-surface rationale, and the genuine gaps.
+  and the custom-surface rationale.
 
-## Proof matrix
+## Proof matrix (measured by Playwright unless noted)
 
-Statuses reflect what was actually measurable. The automation window is fixed at
-1280px, so **narrow-viewport rendering could not be exercised** — those cells are
-`NOT VERIFIED`, not `PROVEN`.
+| Concern | 320 | 390 | 768 | 1440 | Status |
+|---|:--:|:--:|:--:|:--:|---|
+| No page-level horizontal overflow | ✓ | ✓ | ✓ | ✓ | **PROVEN** |
+| Viewport meta present | ✓ | ✓ | ✓ | ✓ | **PROVEN** |
+| Key structural element visible | ✓ | ✓ | ✓ | ✓ | **PROVEN** |
+| No critical console errors | ✓ | ✓ | ✓ | ✓ | **PROVEN** |
+| Narrative claim anchor sized + navigates | ✓ | — | — | — | **PROVEN** |
+| Dynamic viewport height (claim pages) | ✓ | ✓ | ✓ | ✓ | **PROVEN** (`100dvh`) |
+| GitHub Pages base-path safety | ✓ | ✓ | ✓ | ✓ | **PROVEN** (`get_url`) |
+| Tailwind dynamic classes survive purge | ✓ | ✓ | ✓ | ✓ | **PROVEN** |
+| Flowbite components correct/accessible | — | — | — | — | **NOT APPLICABLE** (none exist) |
+| Tables restructured to cards on mobile | — | — | — | — | **PARTIAL** (contained `overflow-x-auto`, not carded) |
 
-| Concern | Static evidence | 1280 (measured) | ≤768 (measured) | Status |
-|---|---|---|---|---|
-| Viewport meta present | base.html | ✓ | — | **PROVEN** |
-| No page-level horizontal overflow | `overflow-x-hidden` on html,body | overflow=0 | — | **PROVEN** at 1280; structurally enforced at all widths |
-| Fluid page layout (no fixed width) | `max-w-3xl px-4` | ✓ | — | **PROVEN** |
-| Dynamic viewport height on claim pages | `min-h-[100dvh]` | ✓ | — | **PROVEN** |
-| Custom inspector → bottom sheet on mobile | `@media(max-width:768px)` in inspector.js | — | not renderable (tool) | **PARTIAL** (code present, unverified in-browser) |
-| Graph toolbar/inspector at 320px | fluid CSS + mobile media query | — | — | **NOT VERIFIED** |
-| Tables usable at 320px | `overflow-x-auto` contained | — | — | **PARTIAL** (contained scroll, not restructured to cards) |
-| Flowbite components correct/accessible | none exist | — | — | **NOT APPLICABLE** |
-| GitHub Pages base-path safety | all links via `get_url`; JSON via `get_url(path=…)` | ✓ | — | **PROVEN** |
-| Dynamic Tailwind classes survive purge | claim template uses literal classes; custom JS uses own CSS | ✓ | — | **PROVEN** |
+## NOT IMPLEMENTED (labelled, not faked)
 
-## Honest limitations / NOT VERIFIED
-
-- **True 320–430px rendering was not exercisable** with the current browser tool
-  (window clamped to 1280). Claims of 320px usability would be unfounded, so they
-  are labelled NOT VERIFIED. A real device / Playwright device-emulation run is
-  the correct next step (§27 Playwright suite — **NOT IMPLEMENTED** this pass).
-- **No safe-area-inset padding** on the full-height graph/inspector surfaces
-  (§5) — recommended, not applied (those files are the concurrent session's).
-- **Flowbite component macros, drawers, modals, tabs, skeletons** (§4–§13):
-  **NOT IMPLEMENTED** — there is no Flowbite UI in the product to build them on,
-  and adding a Flowbite shell would replace working custom UI without a driver.
-- **Responsive Playwright + axe + visual-regression suites** (§27–§28):
-  **NOT IMPLEMENTED**.
+- **Safe-area-inset padding** on the full-height graph/inspector surfaces (§5) —
+  recommended; those files are the concurrent session's, not edited this pass.
+- **Flowbite component macros / drawers / modals / tabs / skeletons** (§4–§13):
+  no Flowbite UI exists to build them on; adding a shell would replace working
+  custom UI without a product driver.
+- **axe accessibility + visual-regression suites** (§28): not added; the
+  responsive suite covers overflow/console/structure, not full a11y.
 
 ## Recommendation
 

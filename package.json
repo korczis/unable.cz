@@ -6,7 +6,7 @@
   "scripts": {
     "css:build": "tailwindcss -i ./tailwind/input.css -o ./static/css/main.css --minify",
     "css:watch": "tailwindcss -i ./tailwind/input.css -o ./static/css/main.css --watch",
-    "js:build": "mkdir -p ./static/js && cp ./node_modules/alpinejs/dist/cdn.min.js ./static/js/alpine.min.js && cp ./node_modules/flowbite/dist/flowbite.min.js ./static/js/flowbite.min.js && cp ./node_modules/chart.js/dist/chart.umd.js ./static/js/chart.umd.js && cp ./node_modules/cytoscape/dist/cytoscape.min.js ./static/js/cytoscape.min.js && cp ./node_modules/p5/lib/p5.min.js ./static/js/p5.min.js && cp ./scripts/dossier/client.js ./static/js/dossier.js && cp ./scripts/dossier/graph.js ./static/js/graph.js && cp ./scripts/dossier/cockpit.js ./static/js/cockpit.js && cp ./scripts/dossier/inspector.js ./static/js/inspector.js && cp ./scripts/dossier/claims-link.js ./static/js/claims-link.js",
+    "js:build": "mkdir -p ./static/js && cp ./node_modules/alpinejs/dist/cdn.min.js ./static/js/alpine.min.js && cp ./node_modules/chart.js/dist/chart.umd.js ./static/js/chart.umd.js && cp ./node_modules/cytoscape/dist/cytoscape.min.js ./static/js/cytoscape.min.js && cp ./node_modules/p5/lib/p5.min.js ./static/js/p5.min.js && cp ./scripts/dossier/client.js ./static/js/dossier.js && cp ./scripts/dossier/graph.js ./static/js/graph.js && cp ./scripts/dossier/cockpit.js ./static/js/cockpit.js && cp ./scripts/dossier/inspector.js ./static/js/inspector.js && cp ./scripts/dossier/claims-link.js ./static/js/claims-link.js",
     "data:build": "node scripts/dossier/export.mjs && node scripts/dossier/evidence.mjs && node scripts/dossier/derive.mjs && node scripts/dossier/cadastre.mjs && node scripts/dossier/planner.mjs && node scripts/dossier/claims-gen.mjs",
     "evidence:fetch": "node scripts/dossier/fetch-evidence.mjs",
     "evidence:parse": "node scripts/dossier/parse-ares.mjs",
@@ -18,9 +18,11 @@
     "seo:validate:strict": "node scripts/seo-validate.mjs --strict",
     "seo:validate:json": "node scripts/seo-validate.mjs --json",
     "test": "node --test --test-concurrency=1 'scripts/*.test.mjs'",
-    "verify": "npm run build && npm run data:validate && npm run seo:validate && npm test"
+    "verify": "npm run build && npm run data:validate && npm run seo:validate && npm test",
+    "test:responsive": "npm run build && playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.61.1",
     "alpinejs": "^3.15.12",
     "chart.js": "^4.5.1",
     "cytoscape": "^3.34.0",
