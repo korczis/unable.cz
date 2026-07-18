@@ -9,7 +9,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Financial-intelligence projection. Filed facts parsed from sourced figures; metrics carry formulas + fact IDs; nothing invented; NOT_FOUND is never zero.",
-    "count": 21
+    "count": 25
   },
   "facts": [
     {
@@ -389,6 +389,102 @@
         "SRC-15"
       ],
       "evidenceCutoff": "2026-07-17"
+    },
+    {
+      "id": "FIN-BLF-FY2024-TOTAL-ASSETS",
+      "entity": "blackfish",
+      "entityName": "Blackfish & Co. s.r.o.",
+      "concept": "total_assets",
+      "label": "Aktiva celkem",
+      "originalLabel": "CLM-49 (Sbírka listin, micro unit)",
+      "period": "FY2024",
+      "value": 6747,
+      "valueDisplay": "6 747",
+      "unit": "thousand_czk",
+      "approximate": false,
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "accountingFormat": "micro_unit_abbreviated_no_pl",
+      "sources": [
+        "SRC-18",
+        "SRC-19"
+      ],
+      "evidenceCutoff": "2026-07-17",
+      "derivedFrom": [
+        "CLM-49"
+      ]
+    },
+    {
+      "id": "FIN-BLF-FY2024-TOTAL-EQUITY",
+      "entity": "blackfish",
+      "entityName": "Blackfish & Co. s.r.o.",
+      "concept": "total_equity",
+      "label": "Vlastní kapitál",
+      "originalLabel": "CLM-49 (Sbírka listin, micro unit)",
+      "period": "FY2024",
+      "value": 2665,
+      "valueDisplay": "2 665",
+      "unit": "thousand_czk",
+      "approximate": false,
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "accountingFormat": "micro_unit_abbreviated_no_pl",
+      "sources": [
+        "SRC-18",
+        "SRC-19"
+      ],
+      "evidenceCutoff": "2026-07-17",
+      "derivedFrom": [
+        "CLM-49"
+      ]
+    },
+    {
+      "id": "FIN-BLF-FY2025-TOTAL-ASSETS",
+      "entity": "blackfish",
+      "entityName": "Blackfish & Co. s.r.o.",
+      "concept": "total_assets",
+      "label": "Aktiva celkem",
+      "originalLabel": "CLM-49 (Sbírka listin, micro unit)",
+      "period": "FY2025",
+      "value": 8253,
+      "valueDisplay": "8 253",
+      "unit": "thousand_czk",
+      "approximate": false,
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "accountingFormat": "micro_unit_abbreviated_no_pl",
+      "sources": [
+        "SRC-18",
+        "SRC-19"
+      ],
+      "evidenceCutoff": "2026-07-17",
+      "derivedFrom": [
+        "CLM-49"
+      ]
+    },
+    {
+      "id": "FIN-BLF-FY2025-TOTAL-EQUITY",
+      "entity": "blackfish",
+      "entityName": "Blackfish & Co. s.r.o.",
+      "concept": "total_equity",
+      "label": "Vlastní kapitál",
+      "originalLabel": "CLM-49 (Sbírka listin, micro unit)",
+      "period": "FY2025",
+      "value": 2680,
+      "valueDisplay": "2 680",
+      "unit": "thousand_czk",
+      "approximate": true,
+      "status": "FILED_FACT",
+      "epistemicState": "VERIFIED_PRIMARY",
+      "accountingFormat": "micro_unit_abbreviated_no_pl",
+      "sources": [
+        "SRC-18",
+        "SRC-19"
+      ],
+      "evidenceCutoff": "2026-07-17",
+      "derivedFrom": [
+        "CLM-49"
+      ]
     }
   ]
 }
