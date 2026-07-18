@@ -10,9 +10,8 @@
     "note": "ASSESSED epistemic projection. Derived from the dossier's sourced records; every row lists the record IDs it is computed from. Ordinal scales only; nothing invented.",
     "count": 10,
     "byState": {
-      "strong": 2,
-      "adequate": 4,
-      "partial": 1,
+      "strong": 5,
+      "adequate": 2,
       "weak": 2,
       "absent": 1
     },
@@ -30,9 +29,9 @@
       "label": "Identita",
       "coverage": "strong",
       "coverageCs": "silné",
-      "recordsExamined": 10,
+      "recordsExamined": 11,
       "sourcesChecked": [
-        "SRC-03",
+        "SRC-12",
         "SRC-01",
         "SRC-08"
       ],
@@ -41,14 +40,14 @@
         "company": 1
       },
       "statusDistribution": {
-        "VERIFIED_PRIMARY": 9,
-        "CORROBORATED": 1
+        "VERIFIED_PRIMARY": 11
       },
       "openGaps": [],
       "notFoundCount": 0,
       "hasPrimaryFiled": true,
       "derivedFrom": [
         "identity:Legal name",
+        "identity:Previous legal name",
         "identity:IČO",
         "identity:DIČ (VAT)",
         "identity:VAT status (EU VIES)",
@@ -63,27 +62,24 @@
     {
       "dimension": "ownership",
       "label": "Vlastnictví",
-      "coverage": "adequate",
-      "coverageCs": "dostatečné",
-      "recordsExamined": 27,
+      "coverage": "strong",
+      "coverageCs": "silné",
+      "recordsExamined": 33,
       "sourcesChecked": [
-        "SRC-03",
+        "SRC-12",
         "SRC-02",
+        "SRC-22",
         "SRC-06",
-        "SRC-10",
-        "SRC-11",
         "SRC-14"
       ],
       "sourceClasses": {
-        "official": 3,
+        "official": 1,
         "company": 1,
-        "media": 2
+        "media": 3
       },
       "statusDistribution": {
-        "VERIFIED_PRIMARY": 3,
-        "SELF_REPORTED": 2,
-        "CORROBORATED": 19,
-        "CONTRADICTED": 3
+        "VERIFIED_PRIMARY": 32,
+        "SELF_REPORTED": 1
       },
       "openGaps": [
         "OQ-06",
@@ -93,17 +89,23 @@
         "OQ-10"
       ],
       "notFoundCount": 0,
-      "hasPrimaryFiled": false,
+      "hasPrimaryFiled": true,
       "derivedFrom": [
+        "e49",
+        "e50",
         "e3",
         "e14",
         "e15",
         "e16",
+        "e52",
+        "e53",
+        "e55",
+        "e56",
+        "e57",
+        "e59",
         "e22",
         "e23",
-        "e24",
         "e25",
-        "e26",
         "e27",
         "e28",
         "e29",
@@ -127,11 +129,11 @@
     {
       "dimension": "management",
       "label": "Vedení a orgány",
-      "coverage": "adequate",
-      "coverageCs": "dostatečné",
-      "recordsExamined": 4,
+      "coverage": "strong",
+      "coverageCs": "silné",
+      "recordsExamined": 10,
       "sourcesChecked": [
-        "SRC-03",
+        "SRC-12",
         "SRC-02"
       ],
       "sourceClasses": {
@@ -139,19 +141,25 @@
         "company": 1
       },
       "statusDistribution": {
-        "VERIFIED_PRIMARY": 3,
+        "VERIFIED_PRIMARY": 9,
         "SELF_REPORTED": 1
       },
       "openGaps": [
         "OQ-02"
       ],
       "notFoundCount": 0,
-      "hasPrimaryFiled": false,
+      "hasPrimaryFiled": true,
       "derivedFrom": [
         "e1",
         "e2",
+        "e51",
         "e13",
-        "e4"
+        "e54",
+        "e58",
+        "e60",
+        "e4",
+        "e24",
+        "e26"
       ]
     },
     {
@@ -159,9 +167,9 @@
       "label": "Finance",
       "coverage": "strong",
       "coverageCs": "silné",
-      "recordsExamined": 12,
+      "recordsExamined": 15,
       "sourcesChecked": [
-        "SRC-03",
+        "SRC-12",
         "SRC-15",
         "SRC-04",
         "SRC-05"
@@ -171,7 +179,7 @@
         "media": 2
       },
       "statusDistribution": {
-        "VERIFIED_PRIMARY": 8,
+        "VERIFIED_PRIMARY": 11,
         "SELF_REPORTED": 4
       },
       "openGaps": [
@@ -192,31 +200,35 @@
         "fin:8",
         "fin:9",
         "fin:10",
-        "fin:11"
+        "fin:11",
+        "fin:12",
+        "fin:13",
+        "fin:14"
       ]
     },
     {
       "dimension": "transactions",
       "label": "Transakce",
-      "coverage": "partial",
-      "coverageCs": "částečné",
+      "coverage": "strong",
+      "coverageCs": "silné",
       "recordsExamined": 6,
       "sourcesChecked": [
+        "SRC-12",
         "SRC-04",
         "SRC-05",
-        "SRC-10",
-        "SRC-11"
+        "SRC-13"
       ],
       "sourceClasses": {
-        "media": 2,
-        "official": 2
+        "official": 1,
+        "media": 3
       },
       "statusDistribution": {
-        "CORROBORATED": 6
+        "VERIFIED_PRIMARY": 4,
+        "CORROBORATED": 2
       },
       "openGaps": [],
       "notFoundCount": 0,
-      "hasPrimaryFiled": false,
+      "hasPrimaryFiled": true,
       "derivedFrom": [
         "e5",
         "e6",
@@ -233,7 +245,7 @@
       "coverageCs": "dostatečné",
       "recordsExamined": 2,
       "sourcesChecked": [
-        "SRC-03",
+        "SRC-12",
         "SRC-01",
         "SRC-16",
         "SRC-17"
@@ -316,19 +328,20 @@
       "label": "Média a diskurz",
       "coverage": "weak",
       "coverageCs": "slabé",
-      "recordsExamined": 5,
+      "recordsExamined": 6,
       "sourcesChecked": [
         "SRC-04",
         "SRC-05",
         "SRC-06",
         "SRC-13",
-        "SRC-14"
+        "SRC-14",
+        "SRC-22"
       ],
       "sourceClasses": {
-        "media": 5
+        "media": 6
       },
       "statusDistribution": {
-        "SELF_REPORTED": 5
+        "SELF_REPORTED": 6
       },
       "openGaps": [],
       "notFoundCount": 0,
@@ -338,7 +351,8 @@
         "media:SRC-05",
         "media:SRC-06",
         "media:SRC-13",
-        "media:SRC-14"
+        "media:SRC-14",
+        "media:SRC-22"
       ]
     },
     {

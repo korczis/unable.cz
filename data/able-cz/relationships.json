@@ -8,12 +8,12 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 48,
+    "count": 60,
     "byStatus": {
-      "VERIFIED_PRIMARY": 11,
-      "SELF_REPORTED": 8,
-      "CORROBORATED": 25,
-      "CONTRADICTED": 4
+      "VERIFIED_PRIMARY": 50,
+      "SELF_REPORTED": 7,
+      "CORROBORATED": 2,
+      "CONTRADICTED": 1
     }
   },
   "relationships": [
@@ -21,42 +21,63 @@
       "id": "e1",
       "from": "faraga",
       "to": "able",
-      "label": "statutory officer + shareholder",
+      "label": "jednatel (since 3 Oct 2012)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e49",
+      "from": "faraga",
+      "to": "able",
+      "label": "shareholder 17.63%",
       "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e2",
       "from": "melicharek",
       "to": "able",
-      "label": "statutory officer + shareholder",
+      "label": "jednatel (since 3 Oct 2012)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e50",
+      "from": "melicharek",
+      "to": "able",
+      "label": "shareholder 17.63%",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e51",
+      "from": "petr_faraga",
+      "to": "able",
+      "label": "jednatel 2012–2020 (historical)",
       "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e3",
       "from": "juhanak",
       "to": "able",
-      "label": "shareholder",
+      "label": "shareholder 2.30% (since 29 Jul 2025)",
       "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e13",
       "from": "polansky",
       "to": "able",
-      "label": "supervisory board",
+      "label": "supervisory board (since 13 Oct 2020)",
       "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e14",
       "from": "zenx",
       "to": "able",
-      "label": "shareholder (111 620 CZK)",
+      "label": "largest shareholder 45.80% (50% in 2020)",
       "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e15",
       "from": "g5326",
       "to": "able",
-      "label": "shareholder (9 975 CZK)",
+      "label": "shareholder 4.09% (since 28 Aug 2023)",
       "status": "VERIFIED_PRIMARY"
     },
     {
@@ -65,6 +86,69 @@
       "to": "able",
       "label": "investor ~5% (2023, media)",
       "status": "SELF_REPORTED"
+    },
+    {
+      "id": "e52",
+      "from": "juren",
+      "to": "able",
+      "label": "shareholder 3.32% (since 2016)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e53",
+      "from": "juren",
+      "to": "era25",
+      "label": "jednatel + 21%",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e54",
+      "from": "sluka",
+      "to": "zenx",
+      "label": "člen správní rady (since 2020)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e55",
+      "from": "ondrej_kaman",
+      "to": "able",
+      "label": "shareholder 1.50% (since 29 Jul 2025)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e56",
+      "from": "able",
+      "to": "mindee",
+      "label": "owns 95% (50% at 2017 founding)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e57",
+      "from": "able",
+      "to": "verzuz",
+      "label": "owns 100% (since founding, 22 Dec 2025)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e58",
+      "from": "melicharek",
+      "to": "mindee",
+      "label": "jednatel (since 2017 founding)",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e59",
+      "from": "melicharek",
+      "to": "era25",
+      "label": "jednatel + 39.5%",
+      "status": "VERIFIED_PRIMARY"
+    },
+    {
+      "id": "e60",
+      "from": "melicharek",
+      "to": "verzuz",
+      "label": "jednatel (since founding)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e4",
@@ -77,8 +161,8 @@
       "id": "e5",
       "from": "able",
       "to": "blackfish",
-      "label": "acquired 100%",
-      "status": "CORROBORATED"
+      "label": "owns 100% (registered 29 Jul 2025)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e6",
@@ -105,7 +189,7 @@
       "id": "e18",
       "from": "able",
       "to": "ksbr",
-      "label": "registered — C 85425",
+      "label": "registered — C 85425 (since 2014; C 200323/MSPH before)",
       "status": "CONTRADICTED"
     },
     {
@@ -168,183 +252,183 @@
       "id": "e22",
       "from": "petr_faraga",
       "to": "able",
-      "label": "shareholder (~0.5%, since 29 Jul 2025)",
-      "status": "CORROBORATED"
+      "label": "shareholder 0.50% (since 29 Jul 2025; founding 1/3 in 2012)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e23",
       "from": "jakub_kaman",
       "to": "able",
-      "label": "shareholder (2,437 CZK)",
-      "status": "CORROBORATED"
+      "label": "shareholder 1.00% (since 29 Jul 2025)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e24",
       "from": "faraga",
       "to": "mindee",
       "label": "jednatel (since 2 May 2024)",
-      "status": "CORROBORATED"
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e25",
       "from": "faraga",
       "to": "era25",
       "label": "jednatel + 39.5% (since 23 Aug 2025)",
-      "status": "CORROBORATED"
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e26",
       "from": "faraga",
       "to": "verzuz",
       "label": "jednatel (since 22 Dec 2025)",
-      "status": "CORROBORATED"
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e27",
       "from": "faraga",
       "to": "fame_logistics",
-      "label": "jednatel + společník + likvidátor",
-      "status": "CORROBORATED"
+      "label": "jednatel + 33% + likvidátor (current)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e28",
       "from": "melicharek",
       "to": "fame_logistics",
-      "label": "jednatel + společník (33%)",
-      "status": "CORROBORATED"
+      "label": "jednatel + 33%",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e29",
       "from": "melicharek",
       "to": "mmplan",
       "label": "sole jednatel + 100% (since 4 Jul 2013)",
-      "status": "CORROBORATED"
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e30",
       "from": "petr_faraga",
       "to": "fame_logistics",
       "label": "jednatel + 34% (since 23 Aug 2013)",
-      "status": "CORROBORATED"
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e31",
       "from": "petr_faraga",
       "to": "fame_trade",
-      "label": "jednatel + společník, exited 2020",
-      "status": "CORROBORATED"
+      "label": "jednatel + společník, exited Dec 2020",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e32",
       "from": "faraga",
       "to": "fame_trade",
-      "label": "jednatel + společník, exited 2020",
-      "status": "CORROBORATED"
+      "label": "jednatel + 50% (CURRENT — corrected)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e33",
       "from": "petr_faraga",
       "to": "fama_media",
       "label": "sole jednatel + 100% (since 14 Oct 2015)",
-      "status": "CORROBORATED"
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e34",
       "from": "juhanak",
       "to": "onelabel",
-      "label": "jednatel + stake (disputed — see CON-02)",
-      "status": "CONTRADICTED"
+      "label": "jednatel + 30% (since 23 Feb 2022) — resolved",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e35",
       "from": "jakub_kaman",
       "to": "onelabel",
-      "label": "jednatel + 36% (since 2014, disputed — see CON-02)",
-      "status": "CONTRADICTED"
+      "label": "jednatel + 36% (founder, since 2 Jan 2014) — resolved",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e36",
       "from": "ondrej_kaman",
       "to": "onelabel",
-      "label": "jednatel + 34% (since 23 Feb 2022, disputed — see CON-02)",
-      "status": "CONTRADICTED"
+      "label": "jednatel + 34% (since 23 Feb 2022) — resolved",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e37",
       "from": "grolig",
       "to": "bgo",
-      "label": "ex-jednatel + 33.3% (terminated 2 Apr 2026)",
-      "status": "CORROBORATED"
+      "label": "ex-jednatel + 1/3 (22 Mar 2023 – 2 Apr 2026)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e38",
       "from": "grolig",
       "to": "usporix",
-      "label": "jednatel + 25%",
-      "status": "CORROBORATED"
+      "label": "jednatel + 100% (founded 26 Jun 2026)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e39",
       "from": "grolig",
       "to": "verasto",
-      "label": "role unconfirmed (home-address match)",
-      "status": "SELF_REPORTED"
+      "label": "sole owner + jednatel (since 18 May 2017)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e40",
       "from": "faraga",
       "to": "blackfish",
       "label": "jednatel (added 28 Jul 2025)",
-      "status": "CORROBORATED"
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e41",
       "from": "schlesinger",
       "to": "able",
-      "label": "shareholder (since 29 Jul 2025)",
-      "status": "CORROBORATED"
+      "label": "shareholder 5.00% (since 29 Jul 2025)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e42",
       "from": "schlesinger",
       "to": "ventoux",
-      "label": "🚩 undisclosed společník (since 22 Sep 2025)",
-      "status": "CORROBORATED"
+      "label": "🚩 undisclosed 30% (since 22 Sep 2025)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e43",
       "from": "schlesinger",
       "to": "schlesinger_sro",
       "label": "sole jednatel + 100% (since 18 Dec 2023)",
-      "status": "CORROBORATED"
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e44",
       "from": "schlesinger",
       "to": "artstay_lovs",
-      "label": "jednatel/společník (2021–2024)",
-      "status": "CORROBORATED"
+      "label": "jednatel + 50% (2021 – 13 Feb 2024)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e45",
       "from": "schlesinger",
       "to": "mysasy",
-      "label": "board member (May 2022–Mar 2023)",
-      "status": "CORROBORATED"
+      "label": "board member (19 Aug 2022 – 22 May 2023)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e46",
       "from": "oslzla",
       "to": "blackfish",
-      "label": "jednatel + společník (Jun 2022–Feb 2024)",
-      "status": "CORROBORATED"
+      "label": "jednatel + 30% (Jun 2022 – Feb 2024)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e47",
       "from": "oslzla",
       "to": "artstay_lovs",
-      "label": "jednatel (2021–) + 100% společník (since Jun 2022, current)",
-      "status": "CORROBORATED"
+      "label": "jednatel (2021–) + 100% (since 13 Feb 2024)",
+      "status": "VERIFIED_PRIMARY"
     },
     {
       "id": "e48",

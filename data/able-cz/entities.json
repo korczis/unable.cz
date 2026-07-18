@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 41
+    "count": 43
   },
   "entities": [
     {
@@ -44,6 +44,16 @@
     {
       "id": "polansky",
       "label": "L. Polanský",
+      "type": "person"
+    },
+    {
+      "id": "juren",
+      "label": "F. Juren",
+      "type": "person"
+    },
+    {
+      "id": "sluka",
+      "label": "Z. Sluka",
       "type": "person"
     },
     {
@@ -203,7 +213,7 @@
     },
     {
       "id": "artstay_lovs",
-      "label": "Artstay / Lovs & Co. s.r.o.",
+      "label": "Artstay s.r.o. (dř. Lovs & Co.)",
       "type": "entity"
     },
     {

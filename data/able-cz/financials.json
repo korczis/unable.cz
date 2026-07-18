@@ -17,7 +17,10 @@
         "display": "243,715 CZK",
         "status": "VERIFIED_PRIMARY",
         "sources": [
-          "SRC-03"
+          "SRC-12"
+        ],
+        "evidence": [
+          "EVD-ARES-CAPITAL"
         ]
       },
       {
@@ -27,7 +30,10 @@
         "sources": [
           "SRC-15"
         ],
-        "note": "Filed revenue declined ~15% year-on-year — well below the ~100M CZK combined (Able+Blackfish) self-reported target below."
+        "evidence": [
+          "EVD-SL68-REVENUE"
+        ],
+        "citation": "Výkaz zisku a ztráty, line I. 'Tržby z prodeje výrobků a služeb' (SL68 p. 2; extraction line 96)"
       },
       {
         "metric": "Net turnover (FY2024 / FY2023)",
@@ -35,7 +41,12 @@
         "status": "VERIFIED_PRIMARY",
         "sources": [
           "SRC-15"
-        ]
+        ],
+        "evidence": [
+          "EVD-SL68-TURNOVER"
+        ],
+        "citation": "Výkaz zisku a ztráty, line '*** Čistý obrat za účetní období' (SL68 p. 2; extraction line 129)",
+        "note": "Distinct from line I revenue: FY2023 turnover 43,079 vs FY2023 revenue 42,642 — the two must not be conflated (an earlier claim did; see CORRECTIONS)."
       },
       {
         "metric": "Net result for the period, after tax (FY2024 / FY2023)",
@@ -44,7 +55,10 @@
         "sources": [
           "SRC-15"
         ],
-        "note": "Profitable both years, but the margin is thin (under 2% of revenue) and shrinking."
+        "evidence": [
+          "EVD-SL68-RESULT"
+        ],
+        "citation": "Výkaz zisku a ztráty, line '** Výsledek hospodaření po zdanění' (SL68 p. 2; extraction line 127)"
       },
       {
         "metric": "Total assets (FY2024 / FY2023)",
@@ -52,7 +66,11 @@
         "status": "VERIFIED_PRIMARY",
         "sources": [
           "SRC-15"
-        ]
+        ],
+        "evidence": [
+          "EVD-SL68-ASSETS"
+        ],
+        "citation": "Rozvaha, line 'AKTIVA CELKEM', netto columns (SL68 p. 1; extraction line 12)"
       },
       {
         "metric": "Equity (FY2024 / FY2023)",
@@ -60,7 +78,11 @@
         "status": "VERIFIED_PRIMARY",
         "sources": [
           "SRC-15"
-        ]
+        ],
+        "evidence": [
+          "EVD-SL68-EQUITY"
+        ],
+        "citation": "Rozvaha, line 'A. Vlastní kapitál' (SL68 p. 1; extraction line 53)"
       },
       {
         "metric": "Liabilities (FY2024 / FY2023)",
@@ -69,7 +91,10 @@
         "sources": [
           "SRC-15"
         ],
-        "note": "Liabilities grew faster than equity year-on-year."
+        "evidence": [
+          "EVD-SL68-LIABILITIES"
+        ],
+        "citation": "Rozvaha, line 'B.+C. Cizí zdroje' (SL68 p. 1; extraction line 62)"
       },
       {
         "metric": "Personnel costs (FY2024 / FY2023)",
@@ -78,7 +103,83 @@
         "sources": [
           "SRC-15"
         ],
-        "note": "Personnel costs fell ~41%; 'Služby' (purchased services, 38.7M CZK) is by far the largest single cost line, consistent with a contractor-heavy delivery model rather than headcount growth."
+        "evidence": [
+          "EVD-SL68-PERSONNEL"
+        ],
+        "citation": "Výkaz zisku a ztráty, line 'D. Osobní náklady' (SL68 p. 2; extraction line 102)"
+      },
+      {
+        "metric": "Purchased services — 'A.3 Služby' (FY2024 / FY2023)",
+        "display": "38,734 / 40,612 tis. CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-15"
+        ],
+        "evidence": [
+          "EVD-SL68-SERVICES"
+        ],
+        "citation": "Výkaz zisku a ztráty, line 'A.3 Služby' (SL68 p. 2; extraction line 99)"
+      },
+      {
+        "metric": "Stakes in controlled entities — 'B.III.1 Podíly - ovládaná nebo ovládající osoba' (FY2024 / FY2023)",
+        "display": "1,430 / 1,430 tis. CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-15"
+        ],
+        "evidence": [
+          "EVD-SL68-SUBSIDIARY"
+        ],
+        "citation": "Rozvaha, line 'B.III.1' (SL68 p. 1; extraction line 24)",
+        "note": "Consistent with the register-confirmed subsidiaries (Mindee app 95 %; Verzuz.com 100 % — registered Dec 2025, after this balance-sheet date)."
+      },
+      {
+        "metric": "Liabilities to shareholders — 'C.I.9.1 + C.II.8.1 Závazky ke společníkům' (FY2024 / FY2023)",
+        "display": "10,034 / 3,072 tis. CZK (9,754+280 / 2,935+137)",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-15"
+        ],
+        "evidence": [
+          "EVD-SL68-SHAREHOLDER-DEBT"
+        ],
+        "citation": "Rozvaha, lines C.I.9.1 and C.II.8.1 (SL68 p. 1; extraction lines 67, 75)"
+      }
+    ],
+    "assessed": [
+      {
+        "id": "FIN-ASSESS-01",
+        "text": "Filed revenue declined ~14.8 % year-on-year and is well below the ~100M CZK combined (Able+Blackfish) self-reported media target.",
+        "status": "ASSESSED",
+        "basis": [
+          "SRC-15",
+          "SRC-04",
+          "SRC-05"
+        ]
+      },
+      {
+        "id": "FIN-ASSESS-02",
+        "text": "Profitable both years, but the net margin is thin (under 2 % of revenue) and shrinking.",
+        "status": "ASSESSED",
+        "basis": [
+          "SRC-15"
+        ]
+      },
+      {
+        "id": "FIN-ASSESS-03",
+        "text": "Liabilities grew faster than equity year-on-year; shareholder loans more than tripled (3.1M → 10.0M CZK).",
+        "status": "ASSESSED",
+        "basis": [
+          "SRC-15"
+        ]
+      },
+      {
+        "id": "FIN-ASSESS-04",
+        "text": "Personnel costs fell ~41 % while purchased services ('Služby', 38.7M CZK) is by far the largest cost line — a cost structure consistent with contractor-heavy delivery rather than headcount growth. This is an analytical reading of the cost lines, not a filed fact; headcount is not inferred from it.",
+        "status": "ASSESSED",
+        "basis": [
+          "SRC-15"
+        ]
       }
     ],
     "selfReported": [

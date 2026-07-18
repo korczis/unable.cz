@@ -8,7 +8,7 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Investigation-planner projection. Derived from sourced records; ordinal/ASSESSED only; nothing invented. Source independence is counted by distinct upstream authority, not by source record.",
-    "count": 19,
+    "count": 22,
     "byUpstream": {
       "able_cz": 2,
       "cz_register": 10,
@@ -17,12 +17,15 @@
       "linkedin": 1,
       "dns": 1,
       "vies": 1,
-      "crtsh": 1
+      "crtsh": 1,
+      "contracts_register": 1,
+      "isir": 1,
+      "media_unknown": 1
     },
     "byIndependence": {
       "company_controlled": 2,
       "derivative": 4,
-      "independent_origin": 13
+      "independent_origin": 16
     }
   },
   "sources": [
@@ -72,17 +75,18 @@
         "CLM-11",
         "CLM-12",
         "CLM-13",
-        "CLM-15"
+        "CLM-15",
+        "CLM-38"
       ],
       "edgesSupported": 8,
       "contradictionsTouched": []
     },
     {
       "id": "SRC-03",
-      "title": "Czech public register / ARES (via justice.cz-sourced mirrors: kurzy.cz, penize.cz, podnikatel.cz)",
-      "url": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=24278815",
-      "tier": 1,
-      "kind": "company register",
+      "title": "Company-register mirrors, first identity pass (kurzy.cz, penize.cz, podnikatel.cz — republishing or.justice.cz data)",
+      "url": "https://rejstrik-firem.kurzy.cz/24278815/",
+      "tier": 2,
+      "kind": "company register mirror (aggregator; NOT a direct register fetch — the 2026-07-17 pass mislabelled this tier 1, corrected 2026-07-18; primary register facts now come from SRC-12 ARES artifacts)",
       "class": "register_mirror",
       "upstream": "cz_register",
       "official": true,
@@ -91,7 +95,7 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [],
-      "edgesSupported": 7,
+      "edgesSupported": 0,
       "contradictionsTouched": [
         "CON-01"
       ]
@@ -111,7 +115,11 @@
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
         "CLM-14",
-        "CLM-21"
+        "CLM-21",
+        "CLM-40",
+        "CLM-45",
+        "CLM-51",
+        "CLM-53"
       ],
       "edgesSupported": 3,
       "contradictionsTouched": []
@@ -131,7 +139,11 @@
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
         "CLM-14",
-        "CLM-21"
+        "CLM-21",
+        "CLM-40",
+        "CLM-45",
+        "CLM-51",
+        "CLM-53"
       ],
       "edgesSupported": 3,
       "contradictionsTouched": []
@@ -149,8 +161,10 @@
       "independence": "independent_origin",
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
-      "claimsSupported": [],
-      "edgesSupported": 2,
+      "claimsSupported": [
+        "CLM-56"
+      ],
+      "edgesSupported": 1,
       "contradictionsTouched": []
     },
     {
@@ -221,14 +235,12 @@
         "CLM-16",
         "CLM-17",
         "CLM-18",
-        "CLM-19",
         "CLM-20",
-        "CLM-21",
-        "CLM-22",
         "CLM-23",
-        "CLM-24"
+        "CLM-24",
+        "CLM-35"
       ],
-      "edgesSupported": 26,
+      "edgesSupported": 0,
       "contradictionsTouched": [
         "CON-02"
       ]
@@ -249,31 +261,57 @@
       "claimsSupported": [
         "CLM-16",
         "CLM-18",
-        "CLM-19",
-        "CLM-21",
-        "CLM-22",
         "CLM-23",
         "CLM-24"
       ],
-      "edgesSupported": 8,
+      "edgesSupported": 0,
       "contradictionsTouched": []
     },
     {
       "id": "SRC-12",
-      "title": "ARES — Administrativní registr ekonomických subjektů (cross-check)",
-      "url": "https://ares.gov.cz",
+      "title": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed (cases/DD-Able-CZ-2026-07-17/artifacts/)",
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
       "tier": 1,
-      "kind": "government registry",
+      "kind": "government registry (primary, structured; 40 artifacts incl. officer/shareholder histories with dates)",
       "class": "official_register",
       "upstream": "cz_register",
       "official": true,
       "primary": false,
       "independence": "independent_origin",
-      "freshness": "fresh",
-      "retrievedAt": "2026-07-17",
-      "claimsSupported": [],
-      "edgesSupported": 0,
-      "contradictionsTouched": []
+      "freshness": "aged",
+      "retrievedAt": "2026-07-18",
+      "claimsSupported": [
+        "CLM-19",
+        "CLM-21",
+        "CLM-22",
+        "CLM-28",
+        "CLM-29",
+        "CLM-30",
+        "CLM-31",
+        "CLM-32",
+        "CLM-33",
+        "CLM-34",
+        "CLM-35",
+        "CLM-36",
+        "CLM-37",
+        "CLM-38",
+        "CLM-39",
+        "CLM-40",
+        "CLM-41",
+        "CLM-42",
+        "CLM-43",
+        "CLM-47",
+        "CLM-51",
+        "CLM-52",
+        "CLM-53",
+        "CLM-54",
+        "CLM-55",
+        "CLM-56"
+      ],
+      "edgesSupported": 46,
+      "contradictionsTouched": [
+        "CON-03"
+      ]
     },
     {
       "id": "SRC-13",
@@ -291,8 +329,10 @@
       "claimsSupported": [
         "CLM-24"
       ],
-      "edgesSupported": 0,
-      "contradictionsTouched": []
+      "edgesSupported": 1,
+      "contradictionsTouched": [
+        "CON-03"
+      ]
     },
     {
       "id": "SRC-14",
@@ -327,7 +367,10 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-25"
+        "CLM-25",
+        "CLM-44",
+        "CLM-45",
+        "CLM-50"
       ],
       "edgesSupported": 0,
       "contradictionsTouched": []
@@ -346,7 +389,9 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-26"
+        "CLM-26",
+        "CLM-46",
+        "CLM-48"
       ],
       "edgesSupported": 1,
       "contradictionsTouched": []
@@ -365,7 +410,9 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-26"
+        "CLM-26",
+        "CLM-46",
+        "CLM-48"
       ],
       "edgesSupported": 1,
       "contradictionsTouched": []
@@ -384,7 +431,9 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-27"
+        "CLM-27",
+        "CLM-49",
+        "CLM-50"
       ],
       "edgesSupported": 0,
       "contradictionsTouched": []
@@ -403,9 +452,69 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-27"
+        "CLM-27",
+        "CLM-49",
+        "CLM-50"
       ],
       "edgesSupported": 0,
+      "contradictionsTouched": []
+    },
+    {
+      "id": "SRC-20",
+      "title": "Registr smluv (smlouvy.gov.cz) — party search by IČO 24278815 and 06526411 (result pages preserved)",
+      "url": "https://smlouvy.gov.cz/vyhledavani?vyhledavani%5Bsmluvni_strana%5D%5Bico%5D=24278815",
+      "tier": 1,
+      "kind": "official contracts register (search executed 2026-07-18; zero contracts returned for either IČO)",
+      "class": "official_register",
+      "upstream": "contracts_register",
+      "official": true,
+      "primary": true,
+      "independence": "independent_origin",
+      "freshness": "aged",
+      "retrievedAt": "2026-07-18",
+      "claimsSupported": [
+        "CLM-57"
+      ],
+      "edgesSupported": 0,
+      "contradictionsTouched": []
+    },
+    {
+      "id": "SRC-21",
+      "title": "ISIR — insolvenční rejstřík (subject lustrace, isir.justice.cz)",
+      "url": "https://isir.justice.cz/isir/ucastnik/vysledek_lustrace.do?ic=24278815&aktualnost=AKTUALNI_I_UKONCENA",
+      "tier": 1,
+      "kind": "official insolvency register — BLOCKED: HTTP 500 on 2026-07-17 and again on 2026-07-18; insolvency status is therefore unresolved, not clear",
+      "class": "official_register",
+      "upstream": "isir",
+      "official": true,
+      "primary": true,
+      "independence": "independent_origin",
+      "freshness": "aged",
+      "retrievedAt": "2026-07-18",
+      "claimsSupported": [
+        "CLM-48",
+        "CLM-58"
+      ],
+      "edgesSupported": 0,
+      "contradictionsTouched": []
+    },
+    {
+      "id": "SRC-22",
+      "title": "CzechCrunch — 2023 investment coverage (Point FM / Marek Kříž ~5% at 80M CZK valuation). Retrieved in the 2026-07-17 pass (collection log item 6) but its URL was not recorded then; registered 2026-07-18 to fix that source gap, URL re-resolution pending",
+      "url": null,
+      "tier": 3,
+      "kind": "media (referenced; exact URL lost by the earlier pass — facts sourced to it are flagged accordingly. A 2026-07-18 attempt to corroborate via Point FM's own site found the page JS-rendered with no readable portfolio content in the preserved HTML — recorded as a failed corroboration in provider-runs, not used as evidence)",
+      "class": "media",
+      "upstream": "media_unknown",
+      "official": false,
+      "primary": false,
+      "independence": "independent_origin",
+      "freshness": "fresh",
+      "retrievedAt": "2026-07-17",
+      "claimsSupported": [
+        "CLM-56"
+      ],
+      "edgesSupported": 1,
       "contradictionsTouched": []
     }
   ]
