@@ -64,8 +64,24 @@ for (const g of gaps?.gaps || []) {
 
 if (!recon?.reconciliation) err("NO_RECON", "reconciliation.json missing");
 
+// scale comparison: sourced, clickable, non-consolidated, resolvable fact IDs
+const scale = load("scale-comparison.json");
+if (scale?.scaleComparison) {
+  const sc = scale.scaleComparison;
+  if (!/NON-CONSOLIDATED/i.test(sc.perimeter || "")) err("CMP_NOT_LABELLED", "scale comparison not labelled non-consolidated");
+  if (!sc.caveats || !sc.caveats.length) err("CMP_NO_CAVEATS", "scale comparison has no caveats");
+  for (const r of sc.rows || []) {
+    if (!factIds.has(r.able.factId)) err("CMP_ORPHAN_ABLE", `${sc.id} row ${r.concept} → missing Able fact`);
+    if (!factIds.has(r.blackfish.factId)) err("CMP_ORPHAN_BLF", `${sc.id} row ${r.concept} → missing Blackfish fact`);
+    // Different-period comparison must be visible (Able vs Blackfish periods differ here)
+    if (!r.able.period || !r.blackfish.period) err("CMP_NO_PERIOD", `${sc.id} row ${r.concept} lacks a period on a side`);
+  }
+  for (const s of sc.sourceLinks || []) if (!s.url) err("CMP_SOURCE_NO_URL", `${sc.id} source ${s.id} has no url`);
+  if (!sc.derivedFromLinks?.length) err("CMP_NO_DERIVED", `${sc.id} has no derivedFrom links`);
+}
+
 // privacy sweep across all finance shards
-for (const n of ["facts.json", "metrics.json", "claims-vs-filed.json", "reconciliation.json", "gaps.json", "manifest.json"]) {
+for (const n of ["facts.json", "metrics.json", "claims-vs-filed.json", "reconciliation.json", "gaps.json", "scale-comparison.json", "manifest.json"]) {
   const p = join(DIR, n);
   if (existsSync(p)) {
     const raw = readFileSync(p, "utf8");

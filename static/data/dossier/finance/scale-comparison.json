@@ -1,0 +1,86 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "finance-scale-comparison",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Financial-intelligence projection. Filed facts parsed from sourced figures; metrics carry formulas + fact IDs; nothing invented; NOT_FOUND is never zero."
+  },
+  "scaleComparison": {
+    "id": "CMP-ALE-BLF-SCALE",
+    "title": "Able.cz vs. Blackfish — velikost rozvahy (nejnovější podané období každé firmy)",
+    "rows": [
+      {
+        "concept": "total_assets",
+        "label": "Aktiva celkem",
+        "able": {
+          "period": "FY2024",
+          "value": 71880,
+          "display": "71 880",
+          "factId": "FIN-ALE-FY2024-TOTAL-ASSETS"
+        },
+        "blackfish": {
+          "period": "FY2025",
+          "value": 8253,
+          "display": "8 253",
+          "factId": "FIN-BLF-FY2025-TOTAL-ASSETS"
+        },
+        "ableToBlackfish": 8.7
+      },
+      {
+        "concept": "total_equity",
+        "label": "Vlastní kapitál",
+        "able": {
+          "period": "FY2024",
+          "value": 26592,
+          "display": "26 592",
+          "factId": "FIN-ALE-FY2024-TOTAL-EQUITY"
+        },
+        "blackfish": {
+          "period": "FY2025",
+          "value": 2680,
+          "display": "2 680",
+          "factId": "FIN-BLF-FY2025-TOTAL-EQUITY",
+          "approximate": true
+        },
+        "ableToBlackfish": 9.9
+      }
+    ],
+    "perimeter": "NON-CONSOLIDATED — dvě samostatné firmy, ne skupinový součet.",
+    "caveats": [
+      "Různá období: Able FY2024, Blackfish FY2025 (podle nejnovější podané závěrky každé firmy).",
+      "Blackfish je mikro účetní jednotka — jen rozvaha, žádná výsledovka; tržby/marži NELZE srovnat.",
+      "Toto NENÍ konsolidace ani prostý součet; je to srovnání velikosti dvou rozvah.",
+      "FY2025 vlastní kapitál Blackfish je přibližný (zdroj uvádí ~2,7 mil. Kč)."
+    ],
+    "derivedFrom": [
+      "CLM-49",
+      "CLM-50"
+    ],
+    "derivedFromLinks": [
+      {
+        "id": "CLM-49",
+        "contentPath": "@/dossier/claims/clm-49.md"
+      },
+      {
+        "id": "CLM-50",
+        "contentPath": "@/dossier/claims/clm-50.md"
+      }
+    ],
+    "sourceLinks": [
+      {
+        "id": "SRC-18",
+        "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=85725657&subjektId=991026&spis=1096381"
+      },
+      {
+        "id": "SRC-19",
+        "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=91233172&subjektId=991026&spis=1096381"
+      }
+    ],
+    "assessment": "Blackfish je rozvahově řádově menší než Able.cz (aktiva ~8,3 vs 71,9 mil. Kč); většina škály z mediálního 'combined ~100M / ~60 lidí' pochází z Able.cz, ne z Blackfish (ASSESSED, CLM-50)."
+  }
+}

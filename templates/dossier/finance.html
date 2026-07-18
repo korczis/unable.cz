@@ -11,6 +11,8 @@
 {%- set recon = load_data(path="static/data/dossier/finance/reconciliation.json") -%}
 {%- set cvf = load_data(path="static/data/dossier/finance/claims-vs-filed.json") -%}
 {%- set gaps = load_data(path="static/data/dossier/finance/gaps.json") -%}
+{%- set scale = load_data(path="static/data/dossier/finance/scale-comparison.json") -%}
+{%- set dd = load_data(path="data/dossier/able/dossier.json") -%}
 
 <main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
   <div class="mx-auto max-w-3xl">
@@ -73,6 +75,45 @@
         {%- endfor %}
       </div>
     </section>
+
+    {# ---- Able vs Blackfish scale comparison ---- #}
+    {%- if scale.scaleComparison %}
+    {%- set sc = scale.scaleComparison -%}
+    <section class="mt-10" aria-labelledby="cmp-h">
+      <h2 id="cmp-h" class="font-sans text-2xl font-black text-white">{{ sc.title }}</h2>
+      <p class="mt-1 text-sm text-[#d4af37]">⚠ {{ sc.perimeter }}</p>
+      <div class="mt-4 overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-white/20 text-white/60">
+              <th scope="col" class="py-2 pr-4 font-medium">Koncept</th>
+              <th scope="col" class="py-2 pr-4 text-right font-medium">Able.cz</th>
+              <th scope="col" class="py-2 pr-4 text-right font-medium">Blackfish</th>
+              <th scope="col" class="py-2 text-right font-medium">Able / Blackfish</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for r in sc.rows %}
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4 text-white/90">{{ r.label }}</td>
+              <td class="py-2 pr-4 text-right tabular-nums text-white/90">{{ r.able.display }} <span class="text-xs text-white/40">tis. Kč · {{ r.able.period }}</span></td>
+              <td class="py-2 pr-4 text-right tabular-nums text-white/90">{{ r.blackfish.display }}{% if r.blackfish.approximate %} <span class="text-[#d4af37]">~</span>{% endif %} <span class="text-xs text-white/40">tis. Kč · {{ r.blackfish.period }}</span></td>
+              <td class="py-2 text-right tabular-nums text-[#f3e5c0]">{{ r.ableToBlackfish }}×</td>
+            </tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+      <ul class="mt-3 list-disc space-y-1 pl-5 text-xs text-white/55">
+        {%- for c in sc.caveats %}<li>{{ c }}</li>{%- endfor %}
+      </ul>
+      <p class="mt-3 text-sm text-white/70"><span class="font-mono text-xs text-white/40">ASSESSED</span> — {{ sc.assessment }}</p>
+      <p class="mt-2 text-xs text-white/40">Zdroj: podané závěrky Blackfish
+        {%- for s in sc.sourceLinks %} <a class="text-[#9ec5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ s.url }}" rel="nofollow noopener" target="_blank">{{ s.id }}</a>{% endfor %};
+        odvozeno z tvrzení
+        {%- for l in sc.derivedFromLinks %} <a class="font-mono text-[#f3e5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path=l.contentPath) | safe }}">{{ l.id }}</a>{% if not loop.last %},{% endif %}{% endfor %}.</p>
+    </section>
+    {%- endif %}
 
     {# ---- balance-sheet reconciliation ---- #}
     {%- if recon.reconciliation %}

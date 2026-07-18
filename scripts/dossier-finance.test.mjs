@@ -58,6 +58,32 @@ test("the ~100M target is flagged, never compared as a historical result", () =>
   assert.equal(target.filedComparator.period, "FY2024");
 });
 
+test("Blackfish facts are sourced, micro-unit, and the scale comparison is non-consolidated + sourced + clickable", () => {
+  const facts = load("facts.json").facts;
+  const bf = facts.filter((f) => f.entity === "blackfish");
+  assert.equal(bf.length, 4);
+  for (const f of bf) {
+    assert.deepEqual(f.sources, ["SRC-18", "SRC-19"]);
+    assert.equal(f.accountingFormat, "micro_unit_abbreviated_no_pl");
+    assert.deepEqual(f.derivedFrom, ["CLM-49"]);
+  }
+  // no fabricated P&L: Blackfish has no revenue/margin fact
+  assert.equal(facts.some((f) => f.entity === "blackfish" && /revenue|turnover|result/.test(f.concept)), false);
+
+  const sc = load("scale-comparison.json").scaleComparison;
+  assert.match(sc.perimeter, /NON-CONSOLIDATED/);
+  const ids = new Set(facts.map((f) => f.id));
+  for (const r of sc.rows) {
+    assert.ok(ids.has(r.able.factId) && ids.has(r.blackfish.factId), `${r.concept} orphan fact`);
+    assert.notEqual(r.able.period, r.blackfish.period); // periods genuinely differ (FY2024 vs FY2025)
+  }
+  // sourced + clickable
+  for (const s of sc.sourceLinks) assert.ok(s.url, `${s.id} no url`);
+  assert.ok(sc.derivedFromLinks.every((l) => /\/dossier\/claims\//.test(l.contentPath)));
+  // Able ~8-10× Blackfish on assets & equity
+  assert.ok(sc.rows[0].ableToBlackfish > 5);
+});
+
 test("balance-sheet reconciliation is recorded and gaps are never zero", () => {
   const r = load("reconciliation.json").reconciliation;
   assert.ok(["PASSED_WITH_ROUNDING", "PASSED", "WARNING"].includes(r.state));

@@ -30,6 +30,7 @@ const d = JSON.parse(readFileSync(SRC, "utf8"));
 const meta = d.meta || {};
 const cutoff = meta.evidenceCutoff || null;
 const fin = d.financials || {};
+const SRCX = {}; (d.sources || []).forEach((s) => (SRCX[s.id] = s));
 mkdirSync(OUT, { recursive: true });
 
 // Canonical concept for each filed metric label (order = display order).
@@ -182,6 +183,68 @@ const gaps = (fin.notFound || []).map((line, i) => ({
   note: "Chybějící údaj je mezera v evidenci, NE nula.",
 }));
 
+// ---- Blackfish facts (from sourced claim CLM-49; SRC-18/19) ---------------
+// Blackfish & Co. is a MICRO accounting unit: balance sheet only, no P&L, so no
+// revenue/margin exist. Filed periods are FY2024 AND FY2025 — different from
+// Able's FY2024/FY2023. Every figure below is quoted verbatim from CLM-49
+// (VERIFIED_PRIMARY); FY2025 equity is flagged approximate because the source
+// itself hedges it ("~2.7M"). Nothing invented; no P&L is fabricated.
+const bfSources = ["SRC-18", "SRC-19"];
+function bfFact(concept, label, period, value, unit, approx) {
+  return {
+    id: "FIN-BLF-" + period + "-" + concept.toUpperCase().replace(/_/g, "-"),
+    entity: "blackfish", entityName: "Blackfish & Co. s.r.o.",
+    concept, label, originalLabel: "CLM-49 (Sbírka listin, micro unit)",
+    period, value, valueDisplay: fmt(value), unit,
+    approximate: !!approx, status: "FILED_FACT", epistemicState: "VERIFIED_PRIMARY",
+    accountingFormat: "micro_unit_abbreviated_no_pl",
+    sources: bfSources, evidenceCutoff: cutoff,
+    derivedFrom: ["CLM-49"],
+  };
+}
+const bfFacts = [
+  bfFact("total_assets", "Aktiva celkem", "FY2024", 6747, "thousand_czk", false),
+  bfFact("total_equity", "Vlastní kapitál", "FY2024", 2665, "thousand_czk", false),
+  bfFact("total_assets", "Aktiva celkem", "FY2025", 8253, "thousand_czk", false),
+  bfFact("total_equity", "Vlastní kapitál", "FY2025", 2680, "thousand_czk", true),
+];
+facts.push(...bfFacts);
+
+// ---- Able vs Blackfish scale comparison (guarded) -------------------------
+// Compare ONLY the concepts both file (total assets, equity), on each entity's
+// OWN latest filed period, and label it a non-consolidated, period-mismatched
+// scale comparison — never a group total.
+const bfAssets = bfFacts.find((f) => f.concept === "total_assets" && f.period === "FY2025");
+const bfEquity = bfFacts.find((f) => f.concept === "total_equity" && f.period === "FY2025");
+let scaleComparison = null;
+if (as && eq && bfAssets && bfEquity) {
+  scaleComparison = {
+    id: "CMP-ALE-BLF-SCALE",
+    title: "Able.cz vs. Blackfish — velikost rozvahy (nejnovější podané období každé firmy)",
+    rows: [
+      { concept: "total_assets", label: "Aktiva celkem",
+        able: { period: "FY2024", value: as.value, display: fmt(as.value), factId: as.id },
+        blackfish: { period: "FY2025", value: bfAssets.value, display: fmt(bfAssets.value), factId: bfAssets.id },
+        ableToBlackfish: Math.round((as.value / bfAssets.value) * 10) / 10 },
+      { concept: "total_equity", label: "Vlastní kapitál",
+        able: { period: "FY2024", value: eq.value, display: fmt(eq.value), factId: eq.id },
+        blackfish: { period: "FY2025", value: bfEquity.value, display: fmt(bfEquity.value), factId: bfEquity.id, approximate: true },
+        ableToBlackfish: Math.round((eq.value / bfEquity.value) * 10) / 10 },
+    ],
+    perimeter: "NON-CONSOLIDATED — dvě samostatné firmy, ne skupinový součet.",
+    caveats: [
+      "Různá období: Able FY2024, Blackfish FY2025 (podle nejnovější podané závěrky každé firmy).",
+      "Blackfish je mikro účetní jednotka — jen rozvaha, žádná výsledovka; tržby/marži NELZE srovnat.",
+      "Toto NENÍ konsolidace ani prostý součet; je to srovnání velikosti dvou rozvah.",
+      "FY2025 vlastní kapitál Blackfish je přibližný (zdroj uvádí ~2,7 mil. Kč).",
+    ],
+    derivedFrom: ["CLM-49", "CLM-50"],
+    derivedFromLinks: ["CLM-49", "CLM-50"].map((c) => ({ id: c, contentPath: "@/dossier/claims/" + c.toLowerCase() + ".md" })),
+    sourceLinks: bfSources.map((s) => ({ id: s, url: (SRCX[s] || {}).url || null })),
+    assessment: "Blackfish je rozvahově řádově menší než Able.cz (aktiva ~8,3 vs 71,9 mil. Kč); většina škály z mediálního 'combined ~100M / ~60 lidí' pochází z Able.cz, ne z Blackfish (ASSESSED, CLM-50).",
+  };
+}
+
 // ---- write ----------------------------------------------------------------
 function hdr(kind, payload, extra = {}) {
   return { _export: { schemaVersion: SCHEMA_VERSION, kind, caseId: "DD-Able-CZ-2026-07-17", subject: meta.subject, ico: meta.ico, evidenceCutoff: cutoff, generatedAt: cutoff, source: "data/dossier/able/dossier.json", note: "Financial-intelligence projection. Filed facts parsed from sourced figures; metrics carry formulas + fact IDs; nothing invented; NOT_FOUND is never zero.", ...extra }, ...payload };
@@ -194,13 +257,17 @@ written.push(w("metrics.json", "finance-metrics", { metrics }, { count: metrics.
 written.push(w("reconciliation.json", "finance-reconciliation", { reconciliation }));
 written.push(w("claims-vs-filed.json", "finance-claims-vs-filed", { comparisons: claimsVsFiled }, { count: claimsVsFiled.length }));
 written.push(w("gaps.json", "finance-gaps", { gaps }, { count: gaps.length }));
+written.push(w("scale-comparison.json", "finance-scale-comparison", { scaleComparison }));
 written.push(w("manifest.json", "finance-manifest", {
-  entities: [{ id: "able", name: meta.subject, periods: ["FY2024", "FY2023"], filedFacts: facts.length }],
+  entities: [
+    { id: "able", name: meta.subject, periods: ["FY2024", "FY2023"], filedFacts: facts.filter((f) => f.entity === "able").length, accountingFormat: "full/small_unit" },
+    { id: "blackfish", name: "Blackfish & Co. s.r.o.", periods: ["FY2024", "FY2025"], filedFacts: bfFacts.length, accountingFormat: "micro_unit_no_pl", note: "Jen rozvaha; žádná výsledovka (tržby/marži nelze srovnat)." },
+  ],
   factCount: facts.length, metricCount: metrics.length, gapCount: gaps.length,
-  documentAcquisition: "BLOCKED — no live provider/OCR this pass; figures restructured from sourced dossier.json (SRC-15).",
+  documentAcquisition: "BLOCKED — no live provider/OCR this pass; figures restructured from sourced dossier.json (SRC-15/18/19).",
   files: written.map((x) => x.replace("finance/", "")),
 }));
 
-console.log("Finance: " + facts.length + " filed facts, " + metrics.length + " metrics, " + gaps.length + " gaps.");
+console.log("Finance: " + facts.length + " filed facts (" + bfFacts.length + " Blackfish), " + metrics.length + " metrics, " + gaps.length + " gaps.");
 if (reconciliation) console.log("  BS reconciliation: " + reconciliation.state + " (diff " + reconciliation.differenceThousandCzk + " tis. CZK)");
 console.log("  wrote: " + written.join(", "));
