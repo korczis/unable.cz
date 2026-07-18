@@ -24,13 +24,16 @@ const load = (n) => JSON.parse(readFileSync(join(OUT, n), "utf8"));
 const div = load("planner/diversity.json").claims;
 const byClaim = (id) => div.find((c) => c.claim === id);
 
-test("two mirrors of the same register count as ONE independent upstream", () => {
-  // CLM-16 cites SRC-10 + SRC-11 — both aggregator mirrors of cz_register.
-  const c = byClaim("CLM-16");
+test("two register-family sources count as ONE independent upstream", () => {
+  // CLM-35 cites SRC-12 (ARES) + SRC-10 (mirror) — both are the cz_register
+  // upstream; official channel + mirror is still one authority, not two.
+  const c = byClaim("CLM-35");
   assert.equal(c.sourceRecords >= 2, true);
-  assert.equal(c.independentUpstreams, 1, "SRC-10 + SRC-11 are the same upstream authority");
+  assert.equal(c.independentUpstreams, 1, "SRC-12 + SRC-10 are the same upstream authority");
   assert.equal(c.monoculture, true);
-  assert.ok(c.note, "a single-upstream CORROBORATED claim must carry the caveat");
+  // The caveat note is mandatory only for CORROBORATED monocultures (none
+  // remain after the 2026-07-18 primary upgrade); ASSESSED rows carry their
+  // basis in the claim itself.
 });
 
 test("two independent media outlets count as TWO upstreams", () => {
@@ -41,8 +44,9 @@ test("two independent media outlets count as TWO upstreams", () => {
 });
 
 test("a primary filed document is distinguished from a mirror", () => {
-  // CLM-26 (exekuce) rests on Sbírka listin primary documents.
-  const c = byClaim("CLM-26");
+  // CLM-46 (exekuce, split from the superseded CLM-26) rests on Sbírka listin
+  // primary documents.
+  const c = byClaim("CLM-46");
   assert.ok(c.primaryDirectCount >= 1, "must record ≥1 direct primary registry document");
 });
 
@@ -103,7 +107,12 @@ test("planner gate FAILS when a monoculture CORROBORATED claim drops its caveat"
     for (const dir of ["data", "static/data", "scripts"]) cpSync(join(ROOT, dir), join(tmp, dir), { recursive: true });
     const p = join(tmp, "static/data/able-cz/planner/diversity.json");
     const j = JSON.parse(readFileSync(p, "utf8"));
-    const m = j.claims.find((c) => c.monoculture && c.epistemicState === "CORROBORATED");
+    // The 2026-07-18 primary-source upgrade eliminated every real
+    // CORROBORATED-monoculture claim, so synthesize the defect: the gate must
+    // still fire if one ever reappears without its caveat.
+    const m = j.claims[0];
+    m.epistemicState = "CORROBORATED";
+    m.monoculture = true;
     delete m.note; // strip the honesty caveat
     writeFileSync(p, JSON.stringify(j, null, 2));
     assert.throws(() => execFileSync(node, ["scripts/dossier/validate.mjs"], { cwd: tmp, stdio: "pipe" }));

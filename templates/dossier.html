@@ -62,17 +62,19 @@
             <tr class="border-b border-white/20 text-white/60">
               <th scope="col" class="py-2 pr-4 font-medium">#</th>
               <th scope="col" class="py-2 pr-4 font-medium">Tvrzení</th>
-              <th scope="col" class="py-2 font-medium">Stav</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Stav</th>
+              <th scope="col" class="py-2 font-medium"><span class="sr-only">Důkazní řetězec</span></th>
             </tr>
           </thead>
           <tbody>
-            {%- for c in d.claims %}
+            {%- for c in d.claims %}{%- if not c.superseded %}
             <tr class="border-b border-white/10">
               <td class="py-2 pr-4 font-mono text-white/40">{{ c.id }}</td>
               <td class="py-2 pr-4 text-white/90">{{ c.text }}</td>
-              <td class="py-2 whitespace-nowrap {% if c.status == 'CORROBORATED' or c.status == 'VERIFIED_PRIMARY' %}text-[#f3e5c0]{% elif c.status == 'CONTRADICTED' %}text-[#d4af37]{% else %}text-white/50{% endif %}">{{ c.status }}</td>
+              <td class="py-2 pr-4 whitespace-nowrap {% if c.status == 'CORROBORATED' or c.status == 'VERIFIED_PRIMARY' %}text-[#f3e5c0]{% elif c.status == 'CONTRADICTED' %}text-[#d4af37]{% else %}text-white/50{% endif %}">{{ c.status }}</td>
+              <td class="py-2 whitespace-nowrap"><button type="button" data-evd-claim="{{ c.id }}" class="rounded border border-white/20 px-2 py-0.5 text-xs text-white/70 hover:border-[#d4af37] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#d4af37]">důkaz</button></td>
             </tr>
-            {%- endfor %}
+            {%- endif %}{%- endfor %}
           </tbody>
         </table>
       </div>
@@ -481,6 +483,70 @@
     </section>
 
     {# ============ Open questions ============ #}
+    {# ============ Evidence layer ============ #}
+    {%- set evman = load_data(path="static/data/able-cz/evidence/manifest.json") -%}
+    {%- set evclaims = load_data(path="static/data/able-cz/evidence/claims-evidence.json") -%}
+    {%- set evsrc = load_data(path="static/data/able-cz/evidence/sources.json") -%}
+    {%- set evavail = load_data(path="static/data/able-cz/evidence/availability.json") -%}
+    <section class="mt-16" aria-labelledby="evd-title">
+      <h2 id="evd-title" class="font-sans text-2xl font-black text-white">Důkazní vrstva</h2>
+      <p class="mt-3 max-w-prose text-sm leading-relaxed text-white/70">
+        Každé živé tvrzení se dá rozbalit až na přesnou pasáž, zachovaný artefakt a jeho otisk
+        (SHA-256). Registrová fakta se opírají o úřední záznamy ARES/VR stažené a uložené
+        18.&nbsp;7.&nbsp;2026; podané listiny (Sbírka listin) jsou uloženy včetně textové extrakce.
+        Každé stažení — i neúspěšné — je zapsáno v ledgeru provider runs. Zrcadla rejstříku se
+        nikdy nepočítají jako nezávislé potvrzení.
+      </p>
+      <dl class="mt-6 grid grid-cols-2 gap-4 text-sm sm:grid-cols-4">
+        <div class="rounded border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Artefakty (ověřené otisky)</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.artifacts }}</dd></div>
+        <div class="rounded border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Přesné pasáže</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.spans }}</dd></div>
+        <div class="rounded border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Rejstříková tvrzení</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.assertions }}</dd></div>
+        <div class="rounded border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Provider runs</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.providerRuns }}</dd></div>
+      </dl>
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <caption class="sr-only">Úplnost důkazního řetězce každého živého tvrzení.</caption>
+          <thead>
+            <tr class="border-b border-white/20 text-white/60">
+              <th scope="col" class="py-2 pr-4 font-medium">Tvrzení</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Stav</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Úplnost</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Nezávislé rodiny</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Přesná citace</th>
+              <th scope="col" class="py-2 font-medium">Artefakt</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for i in evclaims.claims %}
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4"><button type="button" data-evd-claim="{{ i.claim }}" class="font-mono text-white/70 underline decoration-white/30 underline-offset-2 hover:decoration-[#d4af37] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#d4af37]">{{ i.claim }}</button></td>
+              <td class="py-2 pr-4 whitespace-nowrap text-white/60">{{ i.status }}</td>
+              <td class="py-2 pr-4 whitespace-nowrap {% if i.category == 'COMPLETE' %}text-[#f3e5c0]{% elif i.category == 'BLOCKED' %}text-[#d4af37]{% else %}text-white/50{% endif %}">{{ i.category }}</td>
+              <td class="py-2 pr-4 text-white/60">{{ i.independentFamilies }}</td>
+              <td class="py-2 pr-4 text-white/60">{% if i.exactCitation %}✓{% else %}—{% endif %}</td>
+              <td class="py-2 text-white/60">{% if i.artifactPreserved %}✓{% else %}—{% endif %}</td>
+            </tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-3 text-xs text-white/40">
+        {{ evman.counts.supersededClaims }} dřívějších tvrzení bylo nahrazeno (rozdělení faktu a
+        hodnocení, oprava zrcadlových dat, přesná citace) — auditní stopa je v claims.json
+        (sekce superseded) a v docs/dossier/evidence/.
+      </p>
+      {%- set brok = evavail.availability | filter(attribute="status", value="BLOCKED") %}
+      {%- if brok | length > 0 %}
+      <h3 class="mt-8 font-sans text-lg font-bold text-white">Nedostupné zdroje</h3>
+      <ul class="mt-2 space-y-1 text-sm text-white/70">
+        {%- for b in brok %}
+        <li><span class="font-mono text-white/40">{{ b.tag }}</span> — {{ b.url }} ({{ b.outcome }}{% if b.httpStatus %}, HTTP {{ b.httpStatus }}{% endif %}; naposledy {{ b.lastChecked | date(format="%e %B %Y") | trim }})</li>
+        {%- endfor %}
+      </ul>
+      <p class="mt-2 text-xs text-white/40">Selhání poskytovatele se nikdy nevydává za „nenalezeno“ — viz stav BLOCKED.</p>
+      {%- endif %}
+    </section>
+
     <section class="mt-16" aria-labelledby="oq-title">
       <h2 id="oq-title" class="font-sans text-2xl font-black text-white">Otevřené otázky</h2>
       <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-white/80">
@@ -490,35 +556,76 @@
       </ul>
     </section>
 
-    {# ============ Source ledger ============ #}
+    <section class="mt-16" aria-labelledby="rq-title">
+      <h2 id="rq-title" class="font-sans text-2xl font-black text-white">Vyřešené otázky</h2>
+      <p class="mt-3 max-w-prose text-sm text-white/60">Dříve otevřené mezery, které pozdější sběr důkazů uzavřel. Každá nese odkaz na důkaz, který ji vyřešil — mezera nikdy nezmizí mlčky.</p>
+      <ul class="mt-4 space-y-3 text-sm text-white/80">
+        {%- for rq in d.resolvedQuestions %}
+        <li class="rounded border border-white/10 bg-white/[0.02] p-3">
+          <span class="font-mono text-white/40">{{ rq.id }}</span> · <s class="text-white/50">{{ rq.question }}</s>
+          <p class="mt-1 text-white/80">{{ rq.resolution }}</p>
+          <p class="mt-1 text-xs text-white/40">Vyřešeno {{ rq.resolvedAt | date(format="%e %B %Y") | trim }} · {{ rq.resolvedBy | join(sep=", ") }}</p>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+
+    {# ============ Source workspace ============ #}
     <section class="mt-16" aria-labelledby="src-title">
-      <h2 id="src-title" class="font-sans text-2xl font-black text-white">Seznam zdrojů</h2>
+      <h2 id="src-title" class="font-sans text-2xl font-black text-white">Zdroje: registr s provenience</h2>
+      <p class="mt-3 max-w-prose text-sm text-white/60">
+        Každý zdroj nese rodinu původu (zrcadla téhož upstreamu tvoří jednu rodinu a nepočítají se
+        dvakrát), právní klasifikaci publikace a stav dostupnosti z posledního ověření. Kliknutím
+        na ID zdroje se otevřou jeho artefakty a historie stahování.
+      </p>
       <div class="mt-6 overflow-x-auto">
         <table class="w-full border-collapse text-left text-sm">
+          <caption class="sr-only">Registr zdrojů s rodinami původu a dostupností.</caption>
           <thead>
             <tr class="border-b border-white/20 text-white/60">
               <th scope="col" class="py-2 pr-4 font-medium">ID</th>
               <th scope="col" class="py-2 pr-4 font-medium">Zdroj</th>
-              <th scope="col" class="py-2 pr-4 font-medium">Úroveň</th>
-              <th scope="col" class="py-2 font-medium">Získáno</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Rodina</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Povaha</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Artefakty</th>
+              <th scope="col" class="py-2 pr-4 font-medium">Tvrzení</th>
+              <th scope="col" class="py-2 font-medium">Dostupnost</th>
             </tr>
           </thead>
           <tbody>
-            {%- for s in d.sources %}
+            {%- for s in evsrc.sources %}
             <tr class="border-b border-white/10">
-              <td class="py-2 pr-4 font-mono text-white/40">{{ s.id }}</td>
+              <td class="py-2 pr-4"><button type="button" data-evd-source="{{ s.id }}" class="font-mono text-white/70 underline decoration-white/30 underline-offset-2 hover:decoration-[#d4af37] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#d4af37]">{{ s.id }}</button></td>
               <td class="py-2 pr-4 text-white/90">
+                {%- if s.url %}
                 <a href="{{ s.url }}" rel="nofollow noopener" target="_blank"
                    class="underline decoration-white/30 underline-offset-2 hover:decoration-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]">{{ s.title }}</a>
+                {%- else %}{{ s.title }}{%- endif %}
               </td>
-              <td class="py-2 pr-4 text-white/60">{{ s.tier }} · {{ s.kind }}</td>
-              <td class="py-2 text-white/60">{{ s.retrievedAt }}</td>
+              <td class="py-2 pr-4 font-mono text-xs text-white/50">{{ s.family }}</td>
+              <td class="py-2 pr-4 text-white/60">{{ s.primary }}{% if s.official %} · úřední{% endif %}</td>
+              <td class="py-2 pr-4 text-white/60">{{ s.artifactCount }}</td>
+              <td class="py-2 pr-4 text-white/60">{{ s.claimsSupported | length }}</td>
+              <td class="py-2 whitespace-nowrap {% if s.availability == 'AVAILABLE' %}text-[#f3e5c0]{% elif s.availability == 'BLOCKED' %}text-[#d4af37]{% else %}text-white/50{% endif %}">{{ s.availability | default(value="—") }}</td>
             </tr>
             {%- endfor %}
           </tbody>
         </table>
       </div>
     </section>
+  </div>
+
+  {# ============ Evidence inspector (progressive enhancement) ============ #}
+  <div id="evd-inspector" hidden role="dialog" aria-modal="true" aria-labelledby="evd-inspector-title"
+       class="fixed inset-0 z-50 flex items-end justify-center sm:items-center">
+    <div id="evd-inspector-backdrop" class="absolute inset-0 bg-black/80"></div>
+    <div class="relative m-0 flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden rounded-t-lg border border-white/20 bg-[#0a0a0a] sm:m-4 sm:rounded-lg">
+      <div class="flex items-center justify-between gap-4 border-b border-white/10 px-4 py-3">
+        <h3 id="evd-inspector-title" class="font-mono text-sm text-[#f3e5c0]">Důkaz</h3>
+        <button type="button" id="evd-inspector-close" class="rounded border border-white/20 px-2 py-1 text-xs text-white/70 hover:border-[#d4af37] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#d4af37]">zavřít (Esc)</button>
+      </div>
+      <div id="evd-inspector-body" class="overflow-y-auto p-4 text-sm text-white/80"></div>
+    </div>
   </div>
 </main>
 

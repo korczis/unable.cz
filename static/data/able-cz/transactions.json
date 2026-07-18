@@ -1,0 +1,60 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "transactions",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/dossier.json",
+    "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
+    "count": 1
+  },
+  "transactions": [
+    {
+      "id": "transaction:able-blackfish-2025",
+      "label": "Able.cz acquires 100 % of Blackfish & Co. s.r.o.",
+      "announced": "2025 (Forbes.cz, CzechCrunch coverage; exact publication dates not re-verified in this pass)",
+      "effectiveInRegister": {
+        "blackfishOwnershipTransfer": "2025-07-29",
+        "faragaJednatelAtBlackfish": "2025-07-28",
+        "ableCapTableRestructuring": "2025-07-29"
+      },
+      "parties": [
+        "Able.cz s.r.o. (IČO 24278815)",
+        "Blackfish & Co. s.r.o. (IČO 06526411)",
+        "Vít Schlesinger (seller)"
+      ],
+      "ownershipBefore": {
+        "blackfish": "Vít Schlesinger 100 % (since 23 Feb 2024)"
+      },
+      "ownershipAfter": {
+        "blackfish": "Able.cz s.r.o. 100 %",
+        "able": "Vít Schlesinger 5.00 % (reciprocal stake, registered 29 Jul 2025)"
+      },
+      "leadershipChanges": [
+        "Václav Faraga added as second Blackfish jednatel (28 Jul 2025)",
+        "Vít Schlesinger remains Blackfish jednatel; per media, leads Able business strategy"
+      ],
+      "considerationDisclosed": false,
+      "missingDocuments": [
+        "share-purchase agreement (not a public document)",
+        "price / consideration (not disclosed anywhere reviewed)",
+        "notarial deed of the July 2025 general meeting (in Sbírka listin scope but not retrieved this pass)"
+      ],
+      "claims": [
+        "CLM-14",
+        "CLM-21",
+        "CLM-22",
+        "CLM-51",
+        "CLM-54"
+      ],
+      "contradictions": [],
+      "sources": [
+        "SRC-12",
+        "SRC-04",
+        "SRC-05"
+      ]
+    }
+  ]
+}

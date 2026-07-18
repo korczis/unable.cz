@@ -1,0 +1,159 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-46",
+    "text": "On 19 January 2026 soudní exekutor Mgr. Jakub Effenberger (Exekutorský úřad Kolín; case 219 EX 00241/26) issued execution orders against Tomáš Melichárek personally for a debt of 9,327.14 CZK owed to Dopravní podnik hl. m. Prahy, a.s. The orders covered bank accounts, income, movable assets, real estate and his business shares — including his podíl in Able.cz s.r.o. (filed to its Sbírka listin as C 85425/SL69). The execution ended on 24 March 2026 'vymožením' (satisfied by payment) per the termination notice (C 85425/SL70).",
+    "status": "VERIFIED_PRIMARY",
+    "note": "Exact passages cited in the evidence layer (order pp. 1–4; notice p. 1). The debtor's birth-ID number was redacted per data-minimization practice.",
+    "sources": [
+      "SRC-16",
+      "SRC-17"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-46",
+    "status": "VERIFIED_PRIMARY",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-16",
+      "SRC-17"
+    ],
+    "sourceFamilies": [
+      "cz-state-register"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 2,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "spanId": "EVD-SL69-ORDER",
+      "span": {
+        "id": "EVD-SL69-ORDER",
+        "sourceId": "SRC-16",
+        "page": 1,
+        "section": "Exekuční příkaz 219 EX 00241/26",
+        "row": "výrok I.",
+        "line": 40,
+        "exactText": "I. Soudní exekutor Mgr. Jakub Effenberger rozhodl o provedení exekuce postižením účasti",
+        "normalized": {
+          "event": "execution_order_business_share",
+          "case": "219 EX 00241/26",
+          "date": "2026-01-19"
+        },
+        "pdfSha256": "f5e2bf811372ffa7022589c476309a9536639f58442d16622278afbc866f7a82",
+        "txtSha256": "7e75ee8124da38650612a3e678fe1e5ee5a7565b10a15d3df0d6f5ae0d8226ea",
+        "verified": true,
+        "document": "2026-01-21-exekucni-prikaz-podil-SL69.pdf"
+      }
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "spanId": "EVD-SL69-AMOUNT",
+      "span": {
+        "id": "EVD-SL69-AMOUNT",
+        "sourceId": "SRC-16",
+        "page": 4,
+        "section": "Exekuční příkaz — vyčíslení",
+        "row": "řádek 12",
+        "line": 111,
+        "exactText": "12 celkem ke dni vydání exekučního příkazu (řádky 4 + 11) v Kč 9 327,14 Kč",
+        "normalized": {
+          "metric": "total_enforced_amount",
+          "value": 9327.14,
+          "unit": "CZK"
+        },
+        "pdfSha256": "f5e2bf811372ffa7022589c476309a9536639f58442d16622278afbc866f7a82",
+        "txtSha256": "7e75ee8124da38650612a3e678fe1e5ee5a7565b10a15d3df0d6f5ae0d8226ea",
+        "verified": true,
+        "document": "2026-01-21-exekucni-prikaz-podil-SL69.pdf"
+      }
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "spanId": "EVD-SL69-CREDITOR",
+      "span": {
+        "id": "EVD-SL69-CREDITOR",
+        "sourceId": "SRC-16",
+        "page": 1,
+        "section": "Exekuční příkaz — oprávněný",
+        "row": "oprávněný",
+        "line": 25,
+        "exactText": "Dopravní podnik hl. m. Prahy, akciová společnost se sídlem",
+        "normalized": {
+          "creditor": "Dopravní podnik hl. m. Prahy, a.s."
+        },
+        "pdfSha256": "f5e2bf811372ffa7022589c476309a9536639f58442d16622278afbc866f7a82",
+        "txtSha256": "7e75ee8124da38650612a3e678fe1e5ee5a7565b10a15d3df0d6f5ae0d8226ea",
+        "verified": true,
+        "document": "2026-01-21-exekucni-prikaz-podil-SL69.pdf"
+      }
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "spanId": "EVD-SL70-CLOSED",
+      "span": {
+        "id": "EVD-SL70-CLOSED",
+        "sourceId": "SRC-17",
+        "page": 1,
+        "section": "Oznámení o skončení exekuce",
+        "row": "výrok I.",
+        "line": 29,
+        "exactText": "exekuce byla dne 24.03.2026  skončena vymožením.",
+        "normalized": {
+          "event": "execution_terminated_by_payment",
+          "date": "2026-03-24"
+        },
+        "pdfSha256": "482f90a77fe54b0ead22f2cccb55f9871890eae51a84831e70c7e3c2dffef71d",
+        "txtSha256": "0f92e43d8e5b68622a58fecc4051d84f319c8cdd2edc6ec0870a73fa913b01e5",
+        "verified": true,
+        "document": "2026-04-08-skonceni-exekuce-SL70.pdf"
+      }
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "spanId": "EVD-SL70-INSTRUMENTS",
+      "span": {
+        "id": "EVD-SL70-INSTRUMENTS",
+        "sourceId": "SRC-17",
+        "page": 1,
+        "section": "Oznámení o skončení exekuce — seznam příkazů",
+        "row": "seznam exekučních příkazů",
+        "line": 38,
+        "exactText": "2. Exekuční příkaz - obchodní podíl č.j. 219 EX 00241/26-032, ze dne 19.01.2026,",
+        "normalized": {
+          "event": "instruments_list",
+          "instruments": [
+            "účty (2×)",
+            "nemovité věci",
+            "příjmy",
+            "movité věci",
+            "obchodní podíl (2×)"
+          ],
+          "note": "lines 33–38 of the extraction enumerate all orders incl. accounts, real estate, income, movables, business shares"
+        },
+        "pdfSha256": "482f90a77fe54b0ead22f2cccb55f9871890eae51a84831e70c7e3c2dffef71d",
+        "txtSha256": "0f92e43d8e5b68622a58fecc4051d84f319c8cdd2edc6ec0870a73fa913b01e5",
+        "verified": true,
+        "document": "2026-04-08-skonceni-exekuce-SL70.pdf"
+      }
+    }
+  ]
+}

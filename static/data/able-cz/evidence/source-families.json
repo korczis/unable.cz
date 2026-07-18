@@ -1,0 +1,102 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "source-families",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added.",
+    "count": 9
+  },
+  "families": [
+    {
+      "id": "cz-state-register",
+      "label": "Czech state business register (or.justice.cz / ARES and its republishers)",
+      "canonicalOrigin": "Ministerstvo spravedlnosti ČR — veřejný rejstřík",
+      "members": [
+        "SRC-03",
+        "SRC-10",
+        "SRC-11",
+        "SRC-12",
+        "SRC-14",
+        "SRC-15",
+        "SRC-16",
+        "SRC-17",
+        "SRC-18",
+        "SRC-19"
+      ],
+      "note": "SRC-03/10/11/14 are derivative mirrors of the same upstream; SRC-12 and SRC-15..19 are the authoritative channel. Mirrors NEVER count as independent corroboration of register facts."
+    },
+    {
+      "id": "company-able",
+      "label": "Able.cz first-party statements",
+      "canonicalOrigin": "Able.cz s.r.o.",
+      "members": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-06"
+      ],
+      "note": "SRC-06 (a founder's LinkedIn) is affiliated with the subject — same family, not independent."
+    },
+    {
+      "id": "media-forbes",
+      "label": "Forbes.cz",
+      "canonicalOrigin": "Forbes.cz",
+      "members": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "media-czechcrunch",
+      "label": "CzechCrunch",
+      "canonicalOrigin": "cc.cz",
+      "members": [
+        "SRC-05",
+        "SRC-13",
+        "SRC-22"
+      ]
+    },
+    {
+      "id": "technical-dns",
+      "label": "Google Public DNS",
+      "canonicalOrigin": "dns.google",
+      "members": [
+        "SRC-07"
+      ]
+    },
+    {
+      "id": "official-eu-vies",
+      "label": "EU VIES",
+      "canonicalOrigin": "European Commission",
+      "members": [
+        "SRC-08"
+      ]
+    },
+    {
+      "id": "technical-ct",
+      "label": "Certificate-transparency logs",
+      "canonicalOrigin": "CT log ecosystem via crt.sh",
+      "members": [
+        "SRC-09"
+      ]
+    },
+    {
+      "id": "cz-isrs",
+      "label": "Registr smluv",
+      "canonicalOrigin": "DIA — Informační systém registru smluv",
+      "members": [
+        "SRC-20"
+      ]
+    },
+    {
+      "id": "cz-isir",
+      "label": "Insolvenční rejstřík",
+      "canonicalOrigin": "Ministerstvo spravedlnosti ČR — ISIR",
+      "members": [
+        "SRC-21"
+      ]
+    }
+  ]
+}

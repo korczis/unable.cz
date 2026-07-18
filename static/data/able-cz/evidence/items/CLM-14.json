@@ -1,0 +1,465 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-14",
+    "text": "Acquired 100% of product studio Blackfish; founder Vít Schlesinger stayed to lead business strategy",
+    "status": "CORROBORATED",
+    "note": "Reported consistently by two independent media outlets.",
+    "sources": [
+      "SRC-04",
+      "SRC-05"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-14",
+    "status": "CORROBORATED",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-04",
+      "SRC-05",
+      "SRC-12"
+    ],
+    "sourceFamilies": [
+      "cz-state-register",
+      "media-czechcrunch",
+      "media-forbes"
+    ],
+    "independentFamilies": 3,
+    "primarySources": 1,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SUPPORTS",
+      "note": "hash+headers only (copyright)",
+      "sourceId": "SRC-04",
+      "artifactId": "ART-cdc23894a86b"
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": "hash+headers only",
+      "sourceId": "SRC-05",
+      "artifactId": "ART-29fcea5b6197"
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-BLACKFISH",
+      "assertions": [
+        {
+          "id": "ASR-3e4f4df0f7d2",
+          "entity": "blackfish",
+          "predicate": "registry:business-name",
+          "value": "Black Fish Digital s.r.o.",
+          "validFrom": "2017-10-16",
+          "validTo": "2020-01-09",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/obchodniJmeno/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-e87fbaf0627e",
+          "entity": "blackfish",
+          "predicate": "registry:business-name",
+          "value": "Blackfish & Co. s.r.o.",
+          "validFrom": "2020-01-09",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/obchodniJmeno/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-179a01993022",
+          "entity": "blackfish",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "LUKÁŠ OSLZLA",
+            "bornYear": "1992"
+          },
+          "role": "Jednatel",
+          "validFrom": "2022-06-08",
+          "validTo": "2022-06-24",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-1d1bbad10588",
+          "entity": "blackfish",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÍT SCHLESINGER",
+            "bornYear": "1995"
+          },
+          "role": "Jednatel",
+          "validFrom": "2017-10-16",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-3b412b6ae881",
+          "entity": "blackfish",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "LUKÁŠ CALDR",
+            "bornYear": "1997"
+          },
+          "role": "jednatel",
+          "validFrom": "2018-10-08",
+          "validTo": "2020-01-09",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/5",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-487762d5df0c",
+          "entity": "blackfish",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "LUKÁŠ OSLZLA",
+            "bornYear": "1992"
+          },
+          "role": "Jednatel",
+          "validFrom": "2022-06-08",
+          "validTo": "2024-02-22",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-97b1d4ecf09c",
+          "entity": "blackfish",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "DAVID VETEŠKA",
+            "bornYear": "1995"
+          },
+          "role": "jednatel",
+          "validFrom": "2018-10-08",
+          "validTo": "2020-01-09",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/4",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-a43164de3766",
+          "entity": "blackfish",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÍT SCHLESINGER",
+            "bornYear": "1995"
+          },
+          "role": "jednatel",
+          "validFrom": "2017-10-16",
+          "validTo": "2020-01-09",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-af75e6f99514",
+          "entity": "blackfish",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÍT SCHLESINGER",
+            "bornYear": "1995"
+          },
+          "role": "Jednatel",
+          "validFrom": "2017-10-16",
+          "validTo": "2022-07-02",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/6",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-dff560efeaba",
+          "entity": "blackfish",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "Jednatel",
+          "validFrom": "2025-07-28",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/7",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-04f742f3ae9f",
+          "entity": "blackfish",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÍT SCHLESINGER",
+            "bornYear": "1995"
+          },
+          "stake": "jedna třetina",
+          "vklad": "7000 KORUNY",
+          "validFrom": "2018-10-18",
+          "validTo": "2020-01-09",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-0cd8a2a91d36",
+          "entity": "blackfish",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÍT SCHLESINGER",
+            "bornYear": "1995"
+          },
+          "stake": "100 %",
+          "vklad": "20000 KORUNY",
+          "validFrom": "2017-10-16",
+          "validTo": "2018-10-18",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-15503d78c65d",
+          "entity": "blackfish",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÍT SCHLESINGER",
+            "bornYear": "1995"
+          },
+          "stake": "70 %",
+          "vklad": "14700 KORUNY",
+          "validFrom": "2022-06-09",
+          "validTo": "2022-07-02",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-16416d56a736",
+          "entity": "blackfish",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "LUKÁŠ OSLZLA",
+            "bornYear": "1992"
+          },
+          "stake": "30 %",
+          "vklad": "6300 KORUNY",
+          "validFrom": "2022-06-09",
+          "validTo": "2022-06-24",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-6ac9a5a69367",
+          "entity": "blackfish",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÍT SCHLESINGER",
+            "bornYear": "1995"
+          },
+          "stake": "100 %",
+          "vklad": "21000 KORUNY",
+          "validFrom": "2020-01-09",
+          "validTo": "2022-06-09",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-943d08a2366a",
+          "entity": "blackfish",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "DAVID VETEŠKA",
+            "bornYear": "1995"
+          },
+          "stake": "jedna třetina",
+          "vklad": "7000 KORUNY",
+          "validFrom": "2018-10-18",
+          "validTo": "2020-01-09",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/4/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-9dcbb40cb43d",
+          "entity": "blackfish",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "LUKÁŠ CALDR",
+            "bornYear": "1997"
+          },
+          "stake": "jedna třetina",
+          "vklad": "7000 KORUNY",
+          "validFrom": "2018-10-18",
+          "validTo": "2020-01-09",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-adc773d7ecd9",
+          "entity": "blackfish",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÍT SCHLESINGER",
+            "bornYear": "1995"
+          },
+          "stake": "70 %",
+          "vklad": "14700 KORUNY",
+          "validFrom": "2022-07-02",
+          "validTo": "2024-02-23",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-b2d03fa02bd5",
+          "entity": "blackfish",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Able.cz s.r.o.",
+            "bornYear": null
+          },
+          "stake": "100 %",
+          "vklad": "21000 KORUNY",
+          "validFrom": "2025-07-29",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/6/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-d80f7f1184e4",
+          "entity": "blackfish",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÍT SCHLESINGER",
+            "bornYear": "1995"
+          },
+          "stake": "100 %",
+          "vklad": "21000 KORUNY",
+          "validFrom": "2024-02-23",
+          "validTo": "2025-07-29",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        },
+        {
+          "id": "ASR-dfb6c208ac69",
+          "entity": "blackfish",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "LUKÁŠ OSLZLA",
+            "bornYear": "1992"
+          },
+          "stake": "30 %",
+          "vklad": "6300 KORUNY",
+          "validFrom": "2022-06-24",
+          "validTo": "2024-02-23",
+          "artifact": {
+            "id": "ART-9828d64ed830",
+            "sha256": "9828d64ed830abb12d54661d9a8954463b47a5096982cb60500380390f3a0b99",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06526411",
+            "retrievedAt": "2026-07-18T05:38:07.405Z"
+          }
+        }
+      ]
+    }
+  ]
+}

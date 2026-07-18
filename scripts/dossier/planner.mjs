@@ -33,7 +33,7 @@ const meta = d.meta || {};
 const cutoff = meta.evidenceCutoff || null;
 mkdirSync(OUT, { recursive: true });
 
-const claims = d.claims || [];
+const claims = (d.claims || []).filter((c) => !c.superseded); // superseded = audit trail, not live findings
 const edges = (d.graph?.edges || []).map((e) => e.data);
 const SRCX = {};
 (d.sources || []).forEach((s) => (SRCX[s.id] = s));
@@ -64,7 +64,7 @@ const SOURCE_MODEL = {
   "SRC-09": { upstream: "crtsh", class: "technical", primary: true, official: false },
   "SRC-10": { upstream: "cz_register", class: "register_aggregator", primary: false, official: false },
   "SRC-11": { upstream: "cz_register", class: "register_aggregator", primary: false, official: false },
-  "SRC-12": { upstream: "cz_register", class: "official_register", primary: false, official: true },
+  "SRC-12": { upstream: "cz_register", class: "official_register", primary: true, official: true },
   "SRC-13": { upstream: "czechcrunch", class: "media", primary: false, official: false },
   "SRC-14": { upstream: "cz_register", class: "register_aggregator", primary: false, official: false },
   "SRC-15": { upstream: "cz_register", class: "primary_registry_document", primary: true, official: true },

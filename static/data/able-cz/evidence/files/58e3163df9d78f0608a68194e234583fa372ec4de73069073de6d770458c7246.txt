@@ -1,0 +1,129 @@
+Rozvaha pro podnikatele, v plném rozsahu
+ke dni 31.12.2024
+(v celých tisících Kč)
+Daňový subjekt: Able.cz s.r.o. s.r.o.
+IČ / DIČ: 24278815 / CZ24278815
+Sídlo účetní jednotky: Vlněna 526/5, 60200 Brno
+A K T I V A běžné účetní období minulé
+účetní
+období
+nettobrutto korekce netto
+1 2 3 4
+AKTIVA CELKEM 100016 28136 71880 59386
+B. Stálá aktiva 86672 28136 58536 45777
+B.I. Dlouhodobý nehmotný majetek 82373 27239 55134 41890
+B.I.2. Ocenitelná práva 69501 27239 42262 26594
+B.I.2.1. Software 69501 27239 42262 26594
+B.I.5. Poskytnuté zálohy na dlouhodobý nehmotný majetek a
+nedokončený dlouhodobý nehmotný majetek
+12872 12872 15296
+B.I.5.2. Nedokončený dlouhodobý nehmotný majetek 12872 12872 15296
+B.II. Dlouhodobý hmotný majetek 2869 897 1972 2457
+B.II.2. Hmotné movité věci a jejich soubory 2869 897 1972 2457
+B.III. Dlouhodobý finanční majetek 1430 1430 1430
+B.III.1. Podíly - ovládaná nebo ovládající osoba 1430 1430 1430
+C. Oběžná aktiva 13299 13299 13543
+C.I. Zásoby 3680 3680 5528
+C.I.2. Nedokončená výroba a polotovary 3680 3680 5528
+C.II. Pohledávky 9098 9098 8015
+C.II.2. Krátkodobé pohledávky 9098 9098 8015
+C.II.2.1. Pohledávky z obchodních vztahů 3395 3395 3416
+C.II.2.4. Pohledávky - ostatní 5703 5703 4599
+C.II.2.4.
+4.
+Krátkodobé poskytnuté zálohy 1 1
+C.II.2.4.
+5.
+Dohadné účty aktivní 75 75
+C.II.2.4.
+6.
+Jiné pohledávky 5627 5627 4599
+C.IV. Peněžní prostředky 521 521
+C.IV.1. Peněžní prostředky v pokladně 104 104
+C.IV.2. Peněžní prostředky na účtech 417 417
+D. Časové rozlišení aktiv 45 45 66
+D.1. Náklady příštích období 45 45 66
+
+P A S I V A běžné účetní
+období
+minulé účetní
+období
+1 2
+PASIVA CELKEM 71880 59386
+A. Vlastní kapitál 26592 25849
+A.I. Základní kapitál 244 210
+A.I.1. Základní kapitál 244 210
+A.II. Ážio a kapitálové fondy 20980 20902
+A.II.2. Kapitálové fondy 20980 20902
+A.II.2.1. Ostatní kapitálové fondy 20980 20902
+A.IV. Výsledek hospodaření minulých let (+/-) 4737 3893
+A.IV.1. Nerozdělený zisk nebo neuhrazená ztráta minulých let (+/-) 4737 3893
+A.V Výsledek hospodaření běžného účetního období (+/-) 631 844
+B.+C. Cizí zdroje 45183 33406
+C. Závazky 45183 33406
+C.I. Dlouhodobé závazky 30010 13257
+C.I.2. Závazky k úvěrovým institucím 2041 2220
+C.I.9. Závazky - ostatní 27969 11037
+C.I.9.1. Závazky ke společníkům 9754 2935
+C.I.9.3. Jiné závazky 18215 8102
+C.II. Krátkodobé závazky 15173 20149
+C.II.2. Závazky k úvěrovým institucím 0 2966
+C.II.3. Krátkodobé přijaté zálohy 1046 1768
+C.II.4. Závazky z obchodních vztahů 7827 8323
+C.II.6. Závazky - ovládaná nebo ovládající osoba 1242 0
+C.II.8. Závazky ostatní 5058 7092
+C.II.8.1. Závazky ke společníkům 280 137
+C.II.8.3. Závazky k zaměstnancům 206 199
+C.II.8.4. Závazky ze sociálního zabezpečení a zdravotního pojištění 1269 1004
+C.II.8.5. Stát - daňové závazky a dotace 2346 1719
+C.II.8.6. Dohadné účty pasivní 13 153
+C.II.8.7. Jiné závazky 944 3880
+D. Časové rozlišení pasiv 105 131
+D.1. Výdaje příštích období 0 78
+D.2. Výnosy příštích období 105 53
+
+Výkaz zisku a ztráty pro podnikatele - druhové členění, v plném rozsahu
+ke dni 31.12.2024
+(v celých tisících Kč)
+Daňový subjekt: Able.cz s.r.o. s.r.o.
+IČ / DIČ: 24278815 / CZ24278815
+Sídlo účetní jednotky: Vlněna 526/5, 60200 Brno
+Název položky běžné účetní
+období
+minulé účetní
+období
+1 2
+I. Tržby z prodeje výrobků a služeb 36319 42642
+A. Výkonová spotřeba 39889 41113
+A.2 Spotřeba materiálu a energie 1155 501
+A.3 Služby 38734 40612
+B. Změna stavu zásob vlastní činnosti (+/-) 1848 273
+C. Aktivace (-) -19342 -15296
+D. Osobní náklady 2926 4964
+D.1. Mzdové náklady 2189 3710
+D.2 Náklady na sociální zabezpečení, zdravotní pojištění a ostatní náklady 737 1254
+D.2.1. Náklady na sociální zabezpečení a zdravotní pojištění 737 1254
+E. Úpravy hodnot v provozní oblasti 6671 7117
+E.1. Úpravy hodnot dlouhodobého nehmotného a hmotného majetku 6671 7117
+E.1.1. Úpravy hodnot dlouhodobého nehmotného a hmotného majetku - trvalé 6671 7117
+III. Ostatní provozní výnosy 453 256
+III.1. Tržby z prodaného dlouhodobého majetku 34 248
+III.3. Jiné provozní výnosy 419 8
+F. Ostatní provozní náklady 591 827
+F.1. Zůstatková cena prodaného dlouhodobého majetku 0 182
+F.3. Daně a poplatky 9 19
+F.5. Jiné provozní náklady 582 626
+* Provozní výsledek hospodaření (+/-) 4189 3900
+VI. Výnosové úroky a podobné výnosy 234 180
+VI.2. Ostatní výnosové úroky a podobné výnosy 234 180
+J. Nákladové úroky a podobné náklady 3193 2553
+J.2. Ostatní nákladové úroky a podobné náklady 3193 2553
+VII. Ostatní finanční výnosy 7 1
+K. Ostatní finanční náklady 192 120
+* Finanční výsledek hospodaření (+/-) -3144 -2492
+** Výsledek hospodaření před zdaněním (+/-) 1045 1408
+L. Daň z příjmů 414 564
+L.1. Daň z příjmů splatná 414 564
+** Výsledek hospodaření po zdanění (+/-) 631 844
+*** Výsledek hospodaření za účetní období (+/-) 631 844
+* Čistý obrat za účetní období 36319 43079

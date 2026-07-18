@@ -232,12 +232,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-16",
-        "CLM-17",
-        "CLM-18",
-        "CLM-20",
-        "CLM-23",
-        "CLM-24",
         "CLM-35"
       ],
       "edgesSupported": 0,
@@ -258,12 +252,7 @@
       "independence": "derivative",
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
-      "claimsSupported": [
-        "CLM-16",
-        "CLM-18",
-        "CLM-23",
-        "CLM-24"
-      ],
+      "claimsSupported": [],
       "edgesSupported": 0,
       "contradictionsTouched": []
     },
@@ -276,7 +265,7 @@
       "class": "official_register",
       "upstream": "cz_register",
       "official": true,
-      "primary": false,
+      "primary": true,
       "independence": "independent_origin",
       "freshness": "aged",
       "retrievedAt": "2026-07-18",
@@ -326,9 +315,7 @@
       "independence": "independent_origin",
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
-      "claimsSupported": [
-        "CLM-24"
-      ],
+      "claimsSupported": [],
       "edgesSupported": 1,
       "contradictionsTouched": [
         "CON-03"
@@ -347,9 +334,7 @@
       "independence": "derivative",
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
-      "claimsSupported": [
-        "CLM-18"
-      ],
+      "claimsSupported": [],
       "edgesSupported": 1,
       "contradictionsTouched": []
     },
@@ -367,7 +352,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-25",
         "CLM-44",
         "CLM-45",
         "CLM-50"
@@ -389,7 +373,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-26",
         "CLM-46",
         "CLM-48"
       ],
@@ -410,7 +393,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-26",
         "CLM-46",
         "CLM-48"
       ],
@@ -431,7 +413,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-27",
         "CLM-49",
         "CLM-50"
       ],
@@ -452,7 +433,6 @@
       "freshness": "fresh",
       "retrievedAt": "2026-07-17",
       "claimsSupported": [
-        "CLM-27",
         "CLM-49",
         "CLM-50"
       ],

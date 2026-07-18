@@ -139,12 +139,6 @@
       "kind": "company register mirror (aggregator republishing or.justice.cz data; a direct or.justice.cz fetch was attempted for every entity below but blocked by its JS-rendered search UI, so none of the facts sourced to SRC-10/11/12 reach VERIFIED_PRIMARY)",
       "retrievedAt": "2026-07-17",
       "supports": [
-        "CLM-16",
-        "CLM-17",
-        "CLM-18",
-        "CLM-20",
-        "CLM-23",
-        "CLM-24",
         "CLM-35"
       ]
     },
@@ -155,12 +149,7 @@
       "tier": 2,
       "kind": "company register mirror + transparency-NGO aggregator",
       "retrievedAt": "2026-07-17",
-      "supports": [
-        "CLM-16",
-        "CLM-18",
-        "CLM-23",
-        "CLM-24"
-      ]
+      "supports": []
     },
     {
       "id": "SRC-12",
@@ -215,9 +204,7 @@
       "tier": 3,
       "kind": "media",
       "retrievedAt": "2026-07-17",
-      "supports": [
-        "CLM-24"
-      ]
+      "supports": []
     },
     {
       "id": "SRC-14",
@@ -226,9 +213,7 @@
       "tier": 3,
       "kind": "aggregator profile",
       "retrievedAt": "2026-07-17",
-      "supports": [
-        "CLM-18"
-      ]
+      "supports": []
     },
     {
       "id": "SRC-15",
@@ -238,7 +223,6 @@
       "kind": "filed financial statement (primary registry document)",
       "retrievedAt": "2026-07-17",
       "supports": [
-        "CLM-25",
         "CLM-44",
         "CLM-45",
         "CLM-50"
@@ -252,7 +236,6 @@
       "kind": "court execution order (primary registry document)",
       "retrievedAt": "2026-07-17",
       "supports": [
-        "CLM-26",
         "CLM-46",
         "CLM-48"
       ]
@@ -265,7 +248,6 @@
       "kind": "court notice of execution termination (primary registry document)",
       "retrievedAt": "2026-07-17",
       "supports": [
-        "CLM-26",
         "CLM-46",
         "CLM-48"
       ]
@@ -278,7 +260,6 @@
       "kind": "filed financial statement, micro accounting unit — abbreviated (primary registry document)",
       "retrievedAt": "2026-07-17",
       "supports": [
-        "CLM-27",
         "CLM-49",
         "CLM-50"
       ]
@@ -291,7 +272,6 @@
       "kind": "filed financial statement, micro accounting unit — abbreviated (primary registry document)",
       "retrievedAt": "2026-07-17",
       "supports": [
-        "CLM-27",
         "CLM-49",
         "CLM-50"
       ]

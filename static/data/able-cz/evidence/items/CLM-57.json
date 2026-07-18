@@ -1,0 +1,51 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-57",
+    "text": "The Registr smluv (official contracts register) returns zero published contracts for IČO 24278815 (Able.cz) and zero for IČO 06526411 (Blackfish & Co.) — searched 18 July 2026, result pages preserved. Neither company appears as a party to any contract published under the Czech contracts-register act.",
+    "status": "NOT_FOUND",
+    "note": "A genuine negative result from a successful query (the register only covers contracts with publication duty — mostly public-sector counterparties). This bounds, but does not disprove, the self-reported '4 tenders won' claim: no corresponding published contract was found.",
+    "sources": [
+      "SRC-20"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-57",
+    "status": "NOT_FOUND",
+    "category": "PARTIAL",
+    "sources": [
+      "SRC-20"
+    ],
+    "sourceFamilies": [
+      "cz-isrs"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 1,
+    "exactCitation": false,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "sourceId": "SRC-20",
+      "artifactId": "ART-9a2a730d4856"
+    },
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "sourceId": "SRC-20",
+      "artifactId": "ART-35e525e0438f"
+    }
+  ]
+}

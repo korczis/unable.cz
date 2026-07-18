@@ -1,0 +1,104 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-30",
+    "text": "Verzuz.com s.r.o. (IČO 24094323, founded 22 Dec 2025) is a 100 % subsidiary of Able.cz s.r.o.; Václav Faraga and Tomáš Melichárek are its jednatelé.",
+    "status": "VERIFIED_PRIMARY",
+    "note": "The mirror-based pass recorded only a Faraga jednatel role, not Able.cz's full ownership.",
+    "sources": [
+      "SRC-12"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-30",
+    "status": "VERIFIED_PRIMARY",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-12"
+    ],
+    "sourceFamilies": [
+      "cz-state-register"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 1,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-VERZUZ",
+      "assertions": [
+        {
+          "id": "ASR-317c7b28f390",
+          "entity": "verzuz-com",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "Jednatel",
+          "validFrom": "2025-12-22",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-df254bc92c8a",
+            "sha256": "df254bc92c8a4f66a8abb7847b375adc5bb6c74cd07034bf853e16196047b8b5",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24094323",
+            "retrievedAt": "2026-07-18T05:38:11.107Z"
+          }
+        },
+        {
+          "id": "ASR-7ecadf478640",
+          "entity": "verzuz-com",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "Jednatel",
+          "validFrom": "2025-12-22",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-df254bc92c8a",
+            "sha256": "df254bc92c8a4f66a8abb7847b375adc5bb6c74cd07034bf853e16196047b8b5",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24094323",
+            "retrievedAt": "2026-07-18T05:38:11.107Z"
+          }
+        },
+        {
+          "id": "ASR-ec6e9bc46cce",
+          "entity": "verzuz-com",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Able.cz s.r.o.",
+            "bornYear": null
+          },
+          "stake": "100 %",
+          "vklad": "1000 KORUNY",
+          "validFrom": "2025-12-22",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-df254bc92c8a",
+            "sha256": "df254bc92c8a4f66a8abb7847b375adc5bb6c74cd07034bf853e16196047b8b5",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24094323",
+            "retrievedAt": "2026-07-18T05:38:11.107Z"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -8,11 +8,12 @@
     "generatedAt": "2026-07-17",
     "source": "data/dossier/able/dossier.json",
     "note": "Public-source review. Derived losslessly from the dossier data; nothing added.",
-    "count": 58,
+    "count": 49,
+    "supersededCount": 9,
     "byStatus": {
       "SELF_REPORTED": 14,
-      "CORROBORATED": 7,
-      "VERIFIED_PRIMARY": 25,
+      "CORROBORATED": 1,
+      "VERIFIED_PRIMARY": 22,
       "ASSESSED": 10,
       "NOT_FOUND": 1,
       "BLOCKED": 1
@@ -144,55 +145,6 @@
       "note": "Published by Able; a named client is evidence of a stated relationship, not of the quantified result."
     },
     {
-      "id": "CLM-16",
-      "text": "Václav Faraga holds statutory and/or ownership roles in at least five other companies beyond Able.cz — Mindee app s.r.o. (IČO 06437877), Blackfish & Co. s.r.o. (IČO 06526411), ERA25 s.r.o. (IČO 23630051, 39.5%), Verzuz.com s.r.o. (IČO 24094323), and FaMe logistics s.r.o. v likvidaci (IČO 02019396) — most tied to a shared Znojmo address cluster.",
-      "status": "CORROBORATED",
-      "sources": [
-        "SRC-10",
-        "SRC-11"
-      ],
-      "superseded": true,
-      "supersededBy": [
-        "CLM-28",
-        "CLM-29",
-        "CLM-30",
-        "CLM-31",
-        "CLM-32"
-      ],
-      "supersededReason": "Overloaded (five companies in one claim) and mirror-sourced; split per company and upgraded to primary evidence 2026-07-18."
-    },
-    {
-      "id": "CLM-17",
-      "text": "Tomáš Melichárek is sole owner and jednatel of M&M plan s.r.o. (IČO 01812840) since 2013, and co-jednatel of FaMe logistics s.r.o. v likvidaci alongside Václav Faraga and Petr Faraga. An enforcement (exekuce) proceeding recorded against the M&M plan director shows as closed as of 16 April 2026.",
-      "status": "CORROBORATED",
-      "sources": [
-        "SRC-10"
-      ],
-      "superseded": true,
-      "supersededBy": [
-        "CLM-33",
-        "CLM-31",
-        "CLM-47"
-      ],
-      "supersededReason": "Overloaded (two companies plus an enforcement observation); split and upgraded to primary evidence 2026-07-18."
-    },
-    {
-      "id": "CLM-18",
-      "text": "Petr Faraga (b. 1966) — sharing the Znojmo address cluster and co-officer history with Václav Faraga (b. 1989) across FaMe logistics and FaMe trade — became a shareholder of Able.cz s.r.o. itself (~0.5%) on 29 July 2025, the same date Václav Faraga was added as a second jednatel of Blackfish & Co.",
-      "status": "CORROBORATED",
-      "sources": [
-        "SRC-10",
-        "SRC-11",
-        "SRC-14"
-      ],
-      "superseded": true,
-      "supersededBy": [
-        "CLM-34",
-        "CLM-35"
-      ],
-      "supersededReason": "Mixed observation with a family-relationship inference, and materially understated the history: the primary record shows Petr Faraga was a 2012 co-founder and jednatel until 2020. Split into observation + assessment 2026-07-18."
-    },
-    {
       "id": "CLM-19",
       "text": "Radek Juhaňák and Jakub Kaman are both shareholders of Able.cz s.r.o. and co-own one label s.r.o. (IČO 02474727, Znojmo) together with Ondřej Kaman. Per the primary register: Jakub Kaman 36 % (jednatel since 2 Jan 2014; sole founder, 100 % until 2017), Ondřej Kaman 34 % (jednatel since 23 Feb 2022; 49 % during 2017–2022), Radek Juhaňák 30 % (jednatel since 23 Feb 2022).",
       "status": "VERIFIED_PRIMARY",
@@ -200,20 +152,6 @@
         "SRC-12"
       ],
       "note": "The stake split was disputed between two mirror passes (CON-02) — resolved 2026-07-18 from the preserved ARES VR record for IČO 02474727."
-    },
-    {
-      "id": "CLM-20",
-      "text": "Independent research found no register or address overlap between Lukáš Grolig (Able's marketed CTO) and the Able.cz/Znojmo cluster in any of his own companies (BGO s.r.o. — terminated, Usporix s.r.o. — 25%, VERASTO s.r.o.), reinforcing that his CTO title is a marketing role only.",
-      "status": "CORROBORATED",
-      "sources": [
-        "SRC-10"
-      ],
-      "superseded": true,
-      "supersededBy": [
-        "CLM-37",
-        "CLM-38"
-      ],
-      "supersededReason": "Mixed three company observations with an analytical conclusion, and two details were wrong in the mirrors (Usporix is 100 % Grolig-held via four 25 % units and was founded 26 Jun 2026; VERASTO is confirmed 100 % + jednatel, not 'role unconfirmed'). Split and primary-sourced 2026-07-18."
     },
     {
       "id": "CLM-21",
@@ -234,84 +172,6 @@
         "SRC-12"
       ],
       "note": "Stake size primary-verified 2026-07-18; the observation that neither Forbes.cz nor CzechCrunch mentioned this reciprocal stake is CLM-51 (assessment)."
-    },
-    {
-      "id": "CLM-23",
-      "text": "Vít Schlesinger holds an undisclosed concurrent shareholding in Ventoux Studio s.r.o. (IČO 23749636), registered since 22 September 2025 — about two months after the Blackfish acquisition closed — which is not mentioned in any Able.cz-related media coverage reviewed.",
-      "status": "CORROBORATED",
-      "sources": [
-        "SRC-10",
-        "SRC-11"
-      ],
-      "superseded": true,
-      "supersededBy": [
-        "CLM-39",
-        "CLM-40"
-      ],
-      "supersededReason": "Mixed an ownership observation with a disclosure judgment; split, and the stake primary-verified as exactly 30 % (he is not a jednatel there) 2026-07-18."
-    },
-    {
-      "id": "CLM-24",
-      "text": "Lukáš Oslzla was jednatel and co-owner of Blackfish & Co. s.r.o. from June 2022, exiting in February 2024 — about 17 months before Able.cz's 2025 acquisition. No public source explains the departure. He and Vít Schlesinger were separately both involved with the same entity, Artstay s.r.o. (IČO 10847031, later renamed Lovs & Co. s.r.o.): Schlesinger 2021–2024, Oslzla as its sole owner from 2021/2022 onward — a second link between the two men beyond Blackfish.",
-      "status": "CORROBORATED",
-      "sources": [
-        "SRC-10",
-        "SRC-11",
-        "SRC-13"
-      ],
-      "superseded": true,
-      "supersededBy": [
-        "CLM-41",
-        "CLM-42",
-        "CLM-43"
-      ],
-      "supersededReason": "Overloaded, and the renaming direction was recorded backwards (the register shows Lovs & Co. s.r.o. was renamed TO Artstay s.r.o. on 13 Feb 2024, not the reverse). Split and primary-sourced 2026-07-18; see CON-03 for the 2021 media-vs-register ownership timing."
-    },
-    {
-      "id": "CLM-25",
-      "text": "Able.cz s.r.o.'s filed FY2024 financial statement (Sbírka listin, C 85425/SL68/KSBR) shows revenue of 36.3M CZK, down from 43.1M CZK in FY2023 — a decline, and well short of the ~100M CZK combined Able+Blackfish target reported in media. Net result was profitable but thin and shrinking (631 thousand CZK in FY2024 vs 844 thousand in FY2023).",
-      "status": "VERIFIED_PRIMARY",
-      "sources": [
-        "SRC-15"
-      ],
-      "superseded": true,
-      "supersededBy": [
-        "CLM-44",
-        "CLM-45"
-      ],
-      "supersededReason": "Conflated line-I revenue (FY2023: 42,642 tis.) with net turnover (FY2023: 43,079 tis.) and bundled the media-target comparison (an assessment) into a primary-verified claim. Split 2026-07-18 with exact filing citations."
-    },
-    {
-      "id": "CLM-26",
-      "text": "In January 2026, a court exekutor ordered execution against Tomáš Melichárek's personal ownership stake (podíl) in Able.cz s.r.o., to satisfy a 9,327.14 CZK debt owed to Dopravní podnik hl. m. Prahy, a.s. (the Prague public-transport operator). The execution was closed on 24 March 2026 as satisfied by payment ('skončena vymožením'). This is a personal, minor matter — consistent with an unpaid public-transport fine escalated to court enforcement — not a sign of company-level financial distress; no insolvency or company-directed enforcement was found.",
-      "status": "VERIFIED_PRIMARY",
-      "sources": [
-        "SRC-16",
-        "SRC-17"
-      ],
-      "superseded": true,
-      "supersededBy": [
-        "CLM-46",
-        "CLM-47",
-        "CLM-48"
-      ],
-      "supersededReason": "Embedded an unsourced cause ('consistent with an unpaid public-transport fine') and a materiality judgment inside a primary-verified observation; the filed documents state creditor and amount, never the debt's origin. Also, the insolvency-register part could never be asserted: ISIR was BLOCKED (HTTP 500), not searched. Split 2026-07-18.",
-      "note": "The debtor's birth-ID number, present in the source documents, was redacted from this dossier and its underlying case files per personal-data-minimization practice."
-    },
-    {
-      "id": "CLM-27",
-      "text": "Blackfish & Co. s.r.o.'s own filed balance sheets (as a micro accounting unit, no P&L required) show total assets of only 6.75M CZK (FY2024) and 8.25M CZK (FY2025) with equity around 2.6–2.7M CZK — financially tiny next to Able.cz's own 71.9M CZK total assets. Most of the scale implied by the self-reported 'combined ~60 people, ~100M CZK' framing evidently comes from Able.cz itself, not from Blackfish.",
-      "status": "VERIFIED_PRIMARY",
-      "sources": [
-        "SRC-18",
-        "SRC-19"
-      ],
-      "superseded": true,
-      "supersededBy": [
-        "CLM-49",
-        "CLM-50"
-      ],
-      "supersededReason": "Mixed filed figures with an analytical comparison; split into observation + assessment 2026-07-18 with exact citations."
     },
     {
       "id": "CLM-28",
@@ -599,6 +459,149 @@
         "SRC-21"
       ],
       "note": "A provider failure is recorded as BLOCKED, never as NOT_FOUND — absence of evidence was not established."
+    }
+  ],
+  "superseded": [
+    {
+      "id": "CLM-16",
+      "text": "Václav Faraga holds statutory and/or ownership roles in at least five other companies beyond Able.cz — Mindee app s.r.o. (IČO 06437877), Blackfish & Co. s.r.o. (IČO 06526411), ERA25 s.r.o. (IČO 23630051, 39.5%), Verzuz.com s.r.o. (IČO 24094323), and FaMe logistics s.r.o. v likvidaci (IČO 02019396) — most tied to a shared Znojmo address cluster.",
+      "status": "CORROBORATED",
+      "sources": [
+        "SRC-10",
+        "SRC-11"
+      ],
+      "superseded": true,
+      "supersededBy": [
+        "CLM-28",
+        "CLM-29",
+        "CLM-30",
+        "CLM-31",
+        "CLM-32"
+      ],
+      "supersededReason": "Overloaded (five companies in one claim) and mirror-sourced; split per company and upgraded to primary evidence 2026-07-18."
+    },
+    {
+      "id": "CLM-17",
+      "text": "Tomáš Melichárek is sole owner and jednatel of M&M plan s.r.o. (IČO 01812840) since 2013, and co-jednatel of FaMe logistics s.r.o. v likvidaci alongside Václav Faraga and Petr Faraga. An enforcement (exekuce) proceeding recorded against the M&M plan director shows as closed as of 16 April 2026.",
+      "status": "CORROBORATED",
+      "sources": [
+        "SRC-10"
+      ],
+      "superseded": true,
+      "supersededBy": [
+        "CLM-33",
+        "CLM-31",
+        "CLM-47"
+      ],
+      "supersededReason": "Overloaded (two companies plus an enforcement observation); split and upgraded to primary evidence 2026-07-18."
+    },
+    {
+      "id": "CLM-18",
+      "text": "Petr Faraga (b. 1966) — sharing the Znojmo address cluster and co-officer history with Václav Faraga (b. 1989) across FaMe logistics and FaMe trade — became a shareholder of Able.cz s.r.o. itself (~0.5%) on 29 July 2025, the same date Václav Faraga was added as a second jednatel of Blackfish & Co.",
+      "status": "CORROBORATED",
+      "sources": [
+        "SRC-10",
+        "SRC-11",
+        "SRC-14"
+      ],
+      "superseded": true,
+      "supersededBy": [
+        "CLM-34",
+        "CLM-35"
+      ],
+      "supersededReason": "Mixed observation with a family-relationship inference, and materially understated the history: the primary record shows Petr Faraga was a 2012 co-founder and jednatel until 2020. Split into observation + assessment 2026-07-18."
+    },
+    {
+      "id": "CLM-20",
+      "text": "Independent research found no register or address overlap between Lukáš Grolig (Able's marketed CTO) and the Able.cz/Znojmo cluster in any of his own companies (BGO s.r.o. — terminated, Usporix s.r.o. — 25%, VERASTO s.r.o.), reinforcing that his CTO title is a marketing role only.",
+      "status": "CORROBORATED",
+      "sources": [
+        "SRC-10"
+      ],
+      "superseded": true,
+      "supersededBy": [
+        "CLM-37",
+        "CLM-38"
+      ],
+      "supersededReason": "Mixed three company observations with an analytical conclusion, and two details were wrong in the mirrors (Usporix is 100 % Grolig-held via four 25 % units and was founded 26 Jun 2026; VERASTO is confirmed 100 % + jednatel, not 'role unconfirmed'). Split and primary-sourced 2026-07-18."
+    },
+    {
+      "id": "CLM-23",
+      "text": "Vít Schlesinger holds an undisclosed concurrent shareholding in Ventoux Studio s.r.o. (IČO 23749636), registered since 22 September 2025 — about two months after the Blackfish acquisition closed — which is not mentioned in any Able.cz-related media coverage reviewed.",
+      "status": "CORROBORATED",
+      "sources": [
+        "SRC-10",
+        "SRC-11"
+      ],
+      "superseded": true,
+      "supersededBy": [
+        "CLM-39",
+        "CLM-40"
+      ],
+      "supersededReason": "Mixed an ownership observation with a disclosure judgment; split, and the stake primary-verified as exactly 30 % (he is not a jednatel there) 2026-07-18."
+    },
+    {
+      "id": "CLM-24",
+      "text": "Lukáš Oslzla was jednatel and co-owner of Blackfish & Co. s.r.o. from June 2022, exiting in February 2024 — about 17 months before Able.cz's 2025 acquisition. No public source explains the departure. He and Vít Schlesinger were separately both involved with the same entity, Artstay s.r.o. (IČO 10847031, later renamed Lovs & Co. s.r.o.): Schlesinger 2021–2024, Oslzla as its sole owner from 2021/2022 onward — a second link between the two men beyond Blackfish.",
+      "status": "CORROBORATED",
+      "sources": [
+        "SRC-10",
+        "SRC-11",
+        "SRC-13"
+      ],
+      "superseded": true,
+      "supersededBy": [
+        "CLM-41",
+        "CLM-42",
+        "CLM-43"
+      ],
+      "supersededReason": "Overloaded, and the renaming direction was recorded backwards (the register shows Lovs & Co. s.r.o. was renamed TO Artstay s.r.o. on 13 Feb 2024, not the reverse). Split and primary-sourced 2026-07-18; see CON-03 for the 2021 media-vs-register ownership timing."
+    },
+    {
+      "id": "CLM-25",
+      "text": "Able.cz s.r.o.'s filed FY2024 financial statement (Sbírka listin, C 85425/SL68/KSBR) shows revenue of 36.3M CZK, down from 43.1M CZK in FY2023 — a decline, and well short of the ~100M CZK combined Able+Blackfish target reported in media. Net result was profitable but thin and shrinking (631 thousand CZK in FY2024 vs 844 thousand in FY2023).",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-15"
+      ],
+      "superseded": true,
+      "supersededBy": [
+        "CLM-44",
+        "CLM-45"
+      ],
+      "supersededReason": "Conflated line-I revenue (FY2023: 42,642 tis.) with net turnover (FY2023: 43,079 tis.) and bundled the media-target comparison (an assessment) into a primary-verified claim. Split 2026-07-18 with exact filing citations."
+    },
+    {
+      "id": "CLM-26",
+      "text": "In January 2026, a court exekutor ordered execution against Tomáš Melichárek's personal ownership stake (podíl) in Able.cz s.r.o., to satisfy a 9,327.14 CZK debt owed to Dopravní podnik hl. m. Prahy, a.s. (the Prague public-transport operator). The execution was closed on 24 March 2026 as satisfied by payment ('skončena vymožením'). This is a personal, minor matter — consistent with an unpaid public-transport fine escalated to court enforcement — not a sign of company-level financial distress; no insolvency or company-directed enforcement was found.",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-16",
+        "SRC-17"
+      ],
+      "superseded": true,
+      "supersededBy": [
+        "CLM-46",
+        "CLM-47",
+        "CLM-48"
+      ],
+      "supersededReason": "Embedded an unsourced cause ('consistent with an unpaid public-transport fine') and a materiality judgment inside a primary-verified observation; the filed documents state creditor and amount, never the debt's origin. Also, the insolvency-register part could never be asserted: ISIR was BLOCKED (HTTP 500), not searched. Split 2026-07-18.",
+      "note": "The debtor's birth-ID number, present in the source documents, was redacted from this dossier and its underlying case files per personal-data-minimization practice."
+    },
+    {
+      "id": "CLM-27",
+      "text": "Blackfish & Co. s.r.o.'s own filed balance sheets (as a micro accounting unit, no P&L required) show total assets of only 6.75M CZK (FY2024) and 8.25M CZK (FY2025) with equity around 2.6–2.7M CZK — financially tiny next to Able.cz's own 71.9M CZK total assets. Most of the scale implied by the self-reported 'combined ~60 people, ~100M CZK' framing evidently comes from Able.cz itself, not from Blackfish.",
+      "status": "VERIFIED_PRIMARY",
+      "sources": [
+        "SRC-18",
+        "SRC-19"
+      ],
+      "superseded": true,
+      "supersededBy": [
+        "CLM-49",
+        "CLM-50"
+      ],
+      "supersededReason": "Mixed filed figures with an analytical comparison; split into observation + assessment 2026-07-18 with exact citations."
     }
   ]
 }

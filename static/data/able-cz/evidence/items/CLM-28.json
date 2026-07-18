@@ -1,0 +1,288 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-28",
+    "text": "Mindee app s.r.o. (IČO 06437877) is a majority-owned subsidiary of Able.cz s.r.o.: Able.cz held 50 % at its 2017 founding, 47.5 % during 2019–2024, and 95 % since 5 May 2024 (Radek Hübler holds the remaining 5 %). Tomáš Melichárek has been its jednatel since founding (2017); Václav Faraga was added as jednatel on 2 May 2024.",
+    "status": "VERIFIED_PRIMARY",
+    "note": "The mirror-based pass recorded only Faraga's 2024 jednatel role and missed that the company is Able.cz-owned outright — a materially different fact. Consistent with the 1,430 tis. CZK 'Podíly - ovládaná osoba' line in Able.cz's filed FY2024 balance sheet.",
+    "sources": [
+      "SRC-12"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-28",
+    "status": "VERIFIED_PRIMARY",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-12",
+      "SRC-15"
+    ],
+    "sourceFamilies": [
+      "cz-state-register"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 2,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SUPPORTS",
+      "note": null,
+      "selector": "EVD-ARES-MINDEE",
+      "assertions": [
+        {
+          "id": "ASR-46b04b344490",
+          "entity": "mindee-app",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "MARTIN MAŠEK",
+            "bornYear": "1988"
+          },
+          "role": "jednatel",
+          "validFrom": "2017-09-17",
+          "validTo": "2024-05-02",
+          "artifact": {
+            "id": "ART-ad793f6654f3",
+            "sha256": "ad793f6654f33dc50dd6a869ced1d95850992267ced90970139bbb187452448a",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06437877",
+            "retrievedAt": "2026-07-18T05:38:09.237Z"
+          }
+        },
+        {
+          "id": "ASR-65b7bc0fb0b5",
+          "entity": "mindee-app",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2017-09-17",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-ad793f6654f3",
+            "sha256": "ad793f6654f33dc50dd6a869ced1d95850992267ced90970139bbb187452448a",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06437877",
+            "retrievedAt": "2026-07-18T05:38:09.237Z"
+          }
+        },
+        {
+          "id": "ASR-e999dd318ebf",
+          "entity": "mindee-app",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "jednatel",
+          "validFrom": "2024-05-02",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-ad793f6654f3",
+            "sha256": "ad793f6654f33dc50dd6a869ced1d95850992267ced90970139bbb187452448a",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06437877",
+            "retrievedAt": "2026-07-18T05:38:09.237Z"
+          }
+        },
+        {
+          "id": "ASR-1d7333e448b4",
+          "entity": "mindee-app",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "RADEK HÜBLER",
+            "bornYear": "1961"
+          },
+          "stake": "5 %",
+          "vklad": "10000 KORUNY",
+          "validFrom": "2019-04-24",
+          "validTo": "2024-05-05",
+          "artifact": {
+            "id": "ART-ad793f6654f3",
+            "sha256": "ad793f6654f33dc50dd6a869ced1d95850992267ced90970139bbb187452448a",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06437877",
+            "retrievedAt": "2026-07-18T05:38:09.237Z"
+          }
+        },
+        {
+          "id": "ASR-4b022cbeec69",
+          "entity": "mindee-app",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Able.cz s.r.o.",
+            "bornYear": null
+          },
+          "stake": "47;5 %",
+          "vklad": "95000 KORUNY",
+          "validFrom": "2023-07-30",
+          "validTo": "2024-05-05",
+          "artifact": {
+            "id": "ART-ad793f6654f3",
+            "sha256": "ad793f6654f33dc50dd6a869ced1d95850992267ced90970139bbb187452448a",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06437877",
+            "retrievedAt": "2026-07-18T05:38:09.237Z"
+          }
+        },
+        {
+          "id": "ASR-518b50a3a1af",
+          "entity": "mindee-app",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "RADEK HÜBLER",
+            "bornYear": "1961"
+          },
+          "stake": "5 %",
+          "vklad": "10000 KORUNY",
+          "validFrom": "2024-05-05",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-ad793f6654f3",
+            "sha256": "ad793f6654f33dc50dd6a869ced1d95850992267ced90970139bbb187452448a",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06437877",
+            "retrievedAt": "2026-07-18T05:38:09.237Z"
+          }
+        },
+        {
+          "id": "ASR-840b2c001701",
+          "entity": "mindee-app",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Able.cz s.r.o.",
+            "bornYear": null
+          },
+          "stake": "95 %",
+          "vklad": "190000 KORUNY",
+          "validFrom": "2024-05-05",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-ad793f6654f3",
+            "sha256": "ad793f6654f33dc50dd6a869ced1d95850992267ced90970139bbb187452448a",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06437877",
+            "retrievedAt": "2026-07-18T05:38:09.237Z"
+          }
+        },
+        {
+          "id": "ASR-c336fa4727fe",
+          "entity": "mindee-app",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Able.cz s.r.o.",
+            "bornYear": null
+          },
+          "stake": "50 %",
+          "vklad": "100000 KORUNY",
+          "validFrom": "2017-09-17",
+          "validTo": "2019-04-24",
+          "artifact": {
+            "id": "ART-ad793f6654f3",
+            "sha256": "ad793f6654f33dc50dd6a869ced1d95850992267ced90970139bbb187452448a",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06437877",
+            "retrievedAt": "2026-07-18T05:38:09.237Z"
+          }
+        },
+        {
+          "id": "ASR-cdbc2a9cf571",
+          "entity": "mindee-app",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MAHOON systems s.r.o.",
+            "bornYear": null
+          },
+          "stake": "47;5 %",
+          "vklad": "95000 KORUNY",
+          "validFrom": "2019-04-24",
+          "validTo": "2024-05-05",
+          "artifact": {
+            "id": "ART-ad793f6654f3",
+            "sha256": "ad793f6654f33dc50dd6a869ced1d95850992267ced90970139bbb187452448a",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06437877",
+            "retrievedAt": "2026-07-18T05:38:09.237Z"
+          }
+        },
+        {
+          "id": "ASR-d4fce8634de4",
+          "entity": "mindee-app",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MAHOON systems s.r.o.",
+            "bornYear": null
+          },
+          "stake": "50 %",
+          "vklad": "100000 KORUNY",
+          "validFrom": "2017-09-17",
+          "validTo": "2019-04-24",
+          "artifact": {
+            "id": "ART-ad793f6654f3",
+            "sha256": "ad793f6654f33dc50dd6a869ced1d95850992267ced90970139bbb187452448a",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06437877",
+            "retrievedAt": "2026-07-18T05:38:09.237Z"
+          }
+        },
+        {
+          "id": "ASR-e163ef75e550",
+          "entity": "mindee-app",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "Able.cz s.r.o.",
+            "bornYear": null
+          },
+          "stake": "47;5 %",
+          "vklad": "95000 KORUNY",
+          "validFrom": "2019-04-24",
+          "validTo": "2023-07-30",
+          "artifact": {
+            "id": "ART-ad793f6654f3",
+            "sha256": "ad793f6654f33dc50dd6a869ced1d95850992267ced90970139bbb187452448a",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06437877",
+            "retrievedAt": "2026-07-18T05:38:09.237Z"
+          }
+        }
+      ]
+    },
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "spanId": "EVD-SL68-SUBSIDIARY",
+      "span": {
+        "id": "EVD-SL68-SUBSIDIARY",
+        "sourceId": "SRC-15",
+        "page": 1,
+        "section": "Rozvaha — AKTIVA",
+        "row": "B.III.1",
+        "line": 24,
+        "exactText": "B.III.1. Podíly - ovládaná nebo ovládající osoba 1430 1430 1430",
+        "normalized": {
+          "metric": "stakes_controlled_entities",
+          "fy2024": 1430,
+          "fy2023": 1430,
+          "unit": "tis. CZK"
+        },
+        "pdfSha256": "fbe57ee1cbe6cc2a97c08495288ca1f2f6fe3f772700599e940ddcdc4e70572e",
+        "txtSha256": "58e3163df9d78f0608a68194e234583fa372ec4de73069073de6d770458c7246",
+        "verified": true,
+        "document": "2024-ucetni-zaverka-SL68.pdf"
+      }
+    }
+  ]
+}

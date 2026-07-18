@@ -67,7 +67,10 @@ for (const c of d.contradictions || []) {
   for (const v of [c.valueA, c.valueB]) if (v && v.source && !srcIds.has(v.source)) err("CON_BAD_SOURCE", `${c.id} cites unknown ${v.source}`);
   // A contradiction is normally CONTRADICTED, but may become RESOLVED once a
   // primary source settles it (e.g. CON-02 resolved by a direct ARES fetch).
-  if (c.status !== "CONTRADICTED" && c.status !== "RESOLVED") warn("CON_STATUS", `${c.id} has unexpected status ${c.status}`);
+  if (c.status === "RESOLVED") {
+    if (!c.resolvedBy || !c.resolvedBy.length || !c.resolvedAt) err("CON_RESOLVED_UNGROUNDED", `${c.id} is RESOLVED without resolvedBy/resolvedAt`);
+    for (const s of c.resolvedBy || []) if (!srcIds.has(s)) err("CON_BAD_SOURCE", `${c.id} resolvedBy unknown ${s}`);
+  } else if (c.status !== "CONTRADICTED") warn("CON_STATUS", `${c.id} has unexpected status ${c.status}`);
 }
 
 // ---------------------------------------------------------------------------
@@ -222,6 +225,68 @@ if (pTasks) {
 if (pVerif) {
   for (const v of pVerif.verification || []) {
     if (v.independentUpstreams > (v.sources || []).length) err("PLAN_VERIF_IMPOSSIBLE", `${v.edge} claims more upstreams than sources`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// GATE 10 — evidence chain. Every live material claim resolves to evidence;
+// every published artifact hash matches its physical file; exact citations
+// point at text that exists; superseded claims are excluded from live
+// projections; a provider failure is never rendered NOT_FOUND; restricted
+// artifacts are never published; no internal filesystem path leaks.
+// ---------------------------------------------------------------------------
+import { createHash } from "node:crypto";
+const EV = join(OUT, "evidence");
+const evManifest = loadOut("evidence/manifest.json");
+const evClaims = loadOut("evidence/claims-evidence.json");
+const evArtifacts = loadOut("evidence/artifacts.json");
+const evSpans = loadOut("evidence/spans.json");
+const liveClaimIds = new Set((d.claims || []).filter((c) => !c.superseded).map((c) => c.id));
+const supersededIds = new Set((d.claims || []).filter((c) => c.superseded).map((c) => c.id));
+
+if (!evManifest || !evClaims || !evArtifacts || !evSpans) {
+  err("EVIDENCE_MISSING", "evidence exports not built — run npm run data:build");
+} else {
+  // 10a. every live claim appears in the evidence inventory with a category.
+  const covered = new Set((evClaims.claims || []).map((c) => c.claim));
+  for (const id of liveClaimIds) if (!covered.has(id)) err("CLAIM_NO_EVIDENCE", `live claim ${id} missing from evidence inventory`);
+  for (const c of evClaims.claims || []) {
+    if (supersededIds.has(c.claim)) err("SUPERSEDED_LIVE", `superseded claim ${c.claim} appears in live evidence inventory`);
+    // 10b. a BLOCKED source must never surface as NOT_FOUND and vice versa.
+    const claim = (d.claims || []).find((x) => x.id === c.claim);
+    if (claim && claim.status === "NOT_FOUND" && c.category === "BLOCKED") err("BLOCKED_AS_NOTFOUND", `${c.claim} is NOT_FOUND but its evidence category is BLOCKED`);
+  }
+  // 10c. superseded claims must have resolvable successors.
+  for (const c of d.claims || []) {
+    if (!c.superseded) continue;
+    if (!c.supersededBy || !c.supersededBy.length) err("SUPERSEDED_NO_SUCCESSOR", `${c.id} superseded without supersededBy`);
+    for (const s of c.supersededBy || []) if (!liveClaimIds.has(s)) err("SUPERSEDED_BAD_SUCCESSOR", `${c.id} → ${s} is not a live claim`);
+  }
+  // 10d. published artifact files exist and their hashes match; restricted
+  // artifacts must not carry a download path.
+  for (const a of evArtifacts.artifacts || []) {
+    if (a.download) {
+      const p = join(OUT, "evidence", a.download.replace("/data/able-cz/evidence/", ""));
+      if (!existsSync(p)) { err("ARTIFACT_FILE_MISSING", `${a.id} download target missing: ${a.download}`); continue; }
+      const h = createHash("sha256").update(readFileSync(p)).digest("hex");
+      if (h !== a.sha256) err("ARTIFACT_HASH_MISMATCH", `${a.id}: published file hash ${h.slice(0, 12)} ≠ manifest ${a.sha256.slice(0, 12)}`);
+    }
+    if ((a.pubClass || "").startsWith("RESTRICTED") && a.download) err("RESTRICTED_PUBLISHED", `${a.id} is ${a.pubClass} but has a public download`);
+    if (a.download && !a.download.startsWith("/data/")) err("ARTIFACT_PATH_LEAK", `${a.id} download is not a site-relative path: ${a.download}`);
+  }
+  // 10e. spans must be verified and carry page + document + exact text.
+  for (const s of evSpans.spans || []) {
+    if (!s.verified) err("SPAN_UNVERIFIED", `${s.id} shipped unverified`);
+    if (!s.exactText || !s.page || !s.document) err("SPAN_INCOMPLETE", `${s.id} lacks exactText/page/document`);
+  }
+  // 10f. no internal filesystem path in any public evidence export.
+  for (const f of ["evidence/manifest.json", "evidence/sources.json", "evidence/artifacts.json", "evidence/claims-evidence.json", "evidence/spans.json", "evidence/assertions.json", "evidence/provider-runs.json", "evidence/availability.json", "evidence/source-families.json"]) {
+    const p = join(OUT, f);
+    if (!existsSync(p)) { err("EXPORT_MISSING", `${f} not built`); continue; }
+    const raw = readFileSync(p, "utf8");
+    if (/\/Users\/|\/home\/|[A-Z]:\\\\/.test(raw)) err("PATH_LEAK", `${f} contains an internal filesystem path`);
+    if (RODNE_CISLO.test(raw)) err("PII_BIRTH_NUMBER", `${f} contains a rodné-číslo-shaped token`);
+    if (/"born"\s*:\s*"\d{4}-\d{2}-\d{2}"/.test(raw)) err("PII_FULL_BIRTHDATE", `${f} contains a full birth date`);
   }
 }
 

@@ -1,0 +1,44 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-58",
+    "text": "Insolvency status for Able.cz s.r.o. could not be determined: the official insolvency register (ISIR) returned HTTP 500 to subject-search requests on both 2026-07-17 and 2026-07-18.",
+    "status": "BLOCKED",
+    "note": "A provider failure is recorded as BLOCKED, never as NOT_FOUND — absence of evidence was not established.",
+    "sources": [
+      "SRC-21"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-58",
+    "status": "BLOCKED",
+    "category": "BLOCKED",
+    "sources": [
+      "SRC-21"
+    ],
+    "sourceFamilies": [
+      "cz-isir"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 1,
+    "exactCitation": false,
+    "artifactPreserved": false,
+    "kind": "observation"
+  },
+  "links": [
+    {
+      "relation": "SOURCE_OF_ASSERTION",
+      "note": "provider failure evidence lives in provider-runs.ndjson (HTTP 500)",
+      "sourceId": "SRC-21"
+    }
+  ]
+}

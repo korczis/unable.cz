@@ -1,0 +1,701 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "claim-evidence-item",
+    "subject": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "evidenceCutoff": "2026-07-17",
+    "generatedAt": "2026-07-17",
+    "source": "data/dossier/able/evidence.json + cases/DD-Able-CZ-2026-07-17",
+    "note": "Derived and verified from preserved, hashed artifacts; nothing added."
+  },
+  "claim": {
+    "id": "CLM-35",
+    "text": "A family relationship between Václav Faraga (b. 1989) and Petr Faraga (b. 1966) is plausible — shared surname, shared Znojmo address cluster, co-founding of Able.cz/BIT CONSULTING in 2012, and co-holdings in FaMe logistics and FaMe trade — but no public source states it. The same applies to Martin Patrik Faraga (FaMe logistics' founding co-owner).",
+    "status": "ASSESSED",
+    "note": "Assessment only; the relationship itself remains NOT_FOUND in public sources.",
+    "sources": [
+      "SRC-12",
+      "SRC-10"
+    ]
+  },
+  "inventory": {
+    "claim": "CLM-35",
+    "status": "ASSESSED",
+    "category": "COMPLETE",
+    "sources": [
+      "SRC-10",
+      "SRC-12"
+    ],
+    "sourceFamilies": [
+      "cz-state-register"
+    ],
+    "independentFamilies": 1,
+    "primarySources": 1,
+    "exactCitation": true,
+    "artifactPreserved": true,
+    "kind": "assessment"
+  },
+  "links": [
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "selector": "EVD-ARES-FAME-LOGISTICS",
+      "assertions": [
+        {
+          "id": "ASR-79f9740144e2",
+          "entity": "fame-logistics",
+          "predicate": "registry:business-name",
+          "value": "FaMe logistics s.r.o.",
+          "validFrom": "2015-02-28",
+          "validTo": "2021-03-01",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/obchodniJmeno/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-807fff05d4ca",
+          "entity": "fame-logistics",
+          "predicate": "registry:business-name",
+          "value": "FaMe group s.r.o.",
+          "validFrom": "2013-08-23",
+          "validTo": "2015-02-28",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/obchodniJmeno/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-b303692a9609",
+          "entity": "fame-logistics",
+          "predicate": "registry:business-name",
+          "value": "FaMe logistics s.r.o. v likvidaci",
+          "validFrom": "2021-03-01",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/obchodniJmeno/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-1ff89ead5939",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "MARTIN PATRIK FARAGA",
+            "bornYear": "1991"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": "2015-02-03",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-71acf9c2e884",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": "2014-07-23",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-7b4471f2b2d6",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-828a9bc8d299",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "Likvidátor",
+          "validFrom": "2021-03-01",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/1/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-a0ed26a96788",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": "2017-12-06",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-e1b2e144c856",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/5",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-e57a162a7657",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/4",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-f2c075d03ca3",
+          "entity": "fame-logistics",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2013-08-23",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/6",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-02defeee63b2",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "33 %",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2015-02-28",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/4/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-20127dbd8282",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "16%",
+          "vklad": "32000 KORUNY",
+          "validFrom": "2013-08-23",
+          "validTo": "2014-07-23",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/3/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-323e1d5ae3ff",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "34 %",
+          "vklad": "68000 KORUNY",
+          "validFrom": "2017-12-06",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/5/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-4fef5e7d4c16",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "33 %",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2017-06-25",
+          "validTo": "2026-01-23",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/6/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-5317fe48b0e7",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "33 %",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2015-02-28",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-5e28c7798c1b",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "stake": "16%",
+          "vklad": "32000 KORUNY",
+          "validFrom": "2014-07-23",
+          "validTo": "2015-02-28",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/4/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-5edd0c49c908",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "34 %",
+          "vklad": "68000 KORUNY",
+          "validFrom": "2015-02-28",
+          "validTo": "2017-12-06",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-62d8ec9134a5",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "17%",
+          "vklad": "34000 KORUNY",
+          "validFrom": "2013-08-23",
+          "validTo": "2015-02-28",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/0/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-698bc276db2e",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "stake": "17%",
+          "vklad": "34000 KORUNY",
+          "validFrom": "2013-08-23",
+          "validTo": "2015-02-28",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/2/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-760c42a61806",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "33 %",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2026-03-17",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/8/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-984ad5a140e4",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "MARTIN PATRIK FARAGA",
+            "bornYear": "1991"
+          },
+          "stake": "50%",
+          "vklad": "100000;00 KORUNY",
+          "validFrom": "2013-08-23",
+          "validTo": "2015-02-28",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/1/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        },
+        {
+          "id": "ASR-bbe6d648316b",
+          "entity": "fame-logistics",
+          "predicate": "registry:shareholding",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "stake": "33 %",
+          "vklad": "66000 KORUNY",
+          "validFrom": "2026-01-23",
+          "validTo": "2026-03-17",
+          "artifact": {
+            "id": "ART-5714ca410ba1",
+            "sha256": "5714ca410ba17876de826e81b3b019b3d06e49cb9c8c896550f2b3aafbdbf256",
+            "jsonPointer": "/zaznamy/0/spolecnici/0/spolecnik/7/podil/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02019396",
+            "retrievedAt": "2026-07-18T05:38:12.028Z"
+          }
+        }
+      ]
+    },
+    {
+      "relation": "CONTEXTUALIZES",
+      "note": null,
+      "selector": "EVD-ARES-ABLE-OFFICERS",
+      "assertions": [
+        {
+          "id": "ASR-022886193713",
+          "entity": "able-cz",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-10-03",
+          "validTo": "2014-10-03",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/3",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-05154cf679af",
+          "entity": "able-cz",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-10-03",
+          "validTo": "2017-12-06",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/6",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-12115933d59c",
+          "entity": "able-cz",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-10-03",
+          "validTo": "2024-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/8",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-2292d0673151",
+          "entity": "able-cz",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "Jednatel",
+          "validFrom": "2012-10-03",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/9",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-2727083e58de",
+          "entity": "able-cz",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "Václav Faraga",
+            "bornYear": "1989"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-10-03",
+          "validTo": "2014-07-23",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/2",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-4c7445c9e879",
+          "entity": "able-cz",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "Tomáš Melichárek",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-10-03",
+          "validTo": "2014-10-03",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/0",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-853bc6f42538",
+          "entity": "able-cz",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "TOMÁŠ MELICHÁREK",
+            "bornYear": "1990"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-10-03",
+          "validTo": "2017-06-25",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/1",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-900229be001e",
+          "entity": "able-cz",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "Petr Faraga",
+            "bornYear": "1966"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-10-03",
+          "validTo": "2014-10-03",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/5",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-93e02a5ee2a9",
+          "entity": "able-cz",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "PETR FARAGA",
+            "bornYear": "1966"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-10-03",
+          "validTo": "2020-10-13",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/7",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-cf4e4421f4e8",
+          "entity": "able-cz",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "jednatel",
+          "validFrom": "2012-10-03",
+          "validTo": "2024-11-14",
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/4",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        },
+        {
+          "id": "ASR-e21a3e2594db",
+          "entity": "able-cz",
+          "predicate": "registry:officer",
+          "who": {
+            "name": "VÁCLAV FARAGA",
+            "bornYear": "1989"
+          },
+          "role": "Jednatel",
+          "validFrom": "2012-10-03",
+          "validTo": null,
+          "artifact": {
+            "id": "ART-700ca3145cb6",
+            "sha256": "700ca3145cb6062fc8267be1b0b6265c0163a31b74cf65a1883c1d49dd9a5e8f",
+            "jsonPointer": "/zaznamy/0/statutarniOrgany/0/clenoveOrganu/10",
+            "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24278815",
+            "retrievedAt": "2026-07-18T05:38:06.475Z"
+          }
+        }
+      ]
+    }
+  ]
+}

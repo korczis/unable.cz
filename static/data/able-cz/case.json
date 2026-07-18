@@ -381,16 +381,16 @@
     "counts": {
       "entities": 43,
       "relationships": 60,
-      "claims": 58,
+      "claims": 49,
       "sources": 22,
       "contradictions": 3,
       "openQuestions": 12,
-      "risks": 5
+      "risks": 6
     },
     "claimsByStatus": {
       "SELF_REPORTED": 14,
-      "CORROBORATED": 7,
-      "VERIFIED_PRIMARY": 25,
+      "CORROBORATED": 1,
+      "VERIFIED_PRIMARY": 22,
       "ASSESSED": 10,
       "NOT_FOUND": 1,
       "BLOCKED": 1

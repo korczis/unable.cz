@@ -37,7 +37,7 @@ const SRCX = {};
 (d.sources || []).forEach((s) => (SRCX[s.id] = s));
 const edges = (d.graph?.edges || []).map((e) => e.data);
 const nodes = (d.graph?.nodes || []).map((n) => n.data);
-const claims = d.claims || [];
+const claims = (d.claims || []).filter((c) => !c.superseded); // superseded = audit trail, not live findings
 
 /** Source class from a source record's kind/tier — same rule the graph UI uses. */
 function provClass(id) {

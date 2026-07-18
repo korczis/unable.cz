@@ -78,8 +78,12 @@ const relationships = (d.graph?.edges || []).map((e) => ({
 }));
 
 // --- evidence: sources joined to the claims/fields that cite them --------
+// Superseded claims are audit-trail records, not live findings: they are
+// excluded from live projections and shipped separately.
+const liveClaims = (d.claims || []).filter((c) => !c.superseded);
+const supersededClaims = (d.claims || []).filter((c) => c.superseded);
 const claimsBySource = {};
-for (const c of d.claims || []) for (const s of c.sources || []) (claimsBySource[s] ||= []).push(c.id);
+for (const c of liveClaims) for (const s of c.sources || []) (claimsBySource[s] ||= []).push(c.id);
 for (const f of d.identity || []) for (const s of f.sources || []) (claimsBySource[s] ||= []).push("identity:" + f.field);
 const evidence = (d.sources || []).map((s) => ({
   id: s.id,
@@ -92,32 +96,32 @@ const evidence = (d.sources || []).map((s) => ({
 }));
 
 // --- risks: ASSESSED, each grounded in dossier records -------------------
-const selfReported = (d.claims || []).filter((c) => c.status === "SELF_REPORTED").length;
-const totalClaims = (d.claims || []).length;
+const selfReported = liveClaims.filter((c) => c.status === "SELF_REPORTED").length;
+const totalClaims = liveClaims.length;
 const risks = [
   {
     id: "R-01", category: "governance", title: "Marketing titles are not statutory offices",
     probability: "moderate", impact: "low", confidence: "high",
-    basis: "governance.marketingLeadership vs governance.statutoryBody",
-    note: "Website markets four C-level leaders; the register confirms two as jednatelé. One marketed CTO was not found in the register in this pass.",
+    basis: "governance.marketingLeadership vs governance.statutoryBody; CLM-38",
+    note: "Website markets four C-level leaders; the register confirms two as jednatelé. The marketed CTO appears nowhere in the complete preserved register history (primary-verified negative search).",
   },
   {
-    id: "R-02", category: "financial", title: "No filed financial statements retrieved",
+    id: "R-02", category: "financial", title: "Filed revenue declining and far below the media-reported combined target",
     probability: "high", impact: "moderate", confidence: "high",
-    basis: "financials.notFound",
-    note: "Revenue/result/assets/headcount are NOT_FOUND (Sbírka listin not retrieved). An evidence gap, not a negative finding.",
+    basis: "CLM-44, CLM-45 (filed FY2024 statement, exact rows cited)",
+    note: "Replaces the earlier 'statements not retrieved' gap-risk, which was stale: statements were retrieved and parsed. The substantive reading: revenue fell ~14.8% YoY, thin shrinking margin, shareholder loans tripled (FIN-ASSESS-01..04).",
   },
   {
     id: "R-03", category: "reputational", title: "Performance claims are self-reported",
     probability: "moderate", impact: "moderate", confidence: "medium",
-    basis: `${selfReported} of ${totalClaims} claims are SELF_REPORTED`,
-    note: "Marketing/performance claims await independent corroboration.",
+    basis: `${selfReported} of ${totalClaims} live claims are SELF_REPORTED`,
+    note: "Marketing/performance claims await independent corroboration; the Registr smluv returned zero public contracts to anchor the tender claims (CLM-57).",
   },
   {
     id: "R-04", category: "legal", title: "Insolvency not conclusively screened",
     probability: "unknown", impact: "high", confidence: "low",
-    basis: "openQuestions (ISIR)",
-    note: "No public insolvency was found; ISIR direct query and login-gated aggregators left this unresolved. Absence is not proof of absence.",
+    basis: "CLM-58 (ISIR BLOCKED — HTTP 500 on both attempts)",
+    note: "No public insolvency was found anywhere, but the authoritative register could not be queried. BLOCKED, not clear; absence is not proof of absence.",
   },
   {
     id: "R-05", category: "governance", title: "Public court-file discrepancy",
@@ -125,13 +129,21 @@ const risks = [
     basis: "contradictions[CON-01]",
     note: "Company GDPR page cites C 85424; register records C 85425. Most plausibly a transcription/stale-copy error; recorded, not smoothed over.",
   },
+  {
+    id: "R-06", category: "ownership", title: "Control concentration outside the founders",
+    probability: "high", impact: "moderate", confidence: "high",
+    basis: "CLM-52, CLM-53 (primary cap table)",
+    note: "ZenX Capital, a.s. has held 45.8–50% since Oct 2020 — more than both founders combined — while its own beneficial ownership is not register-visible. The public narrative reviewed does not reflect this.",
+  },
 ];
 
 // --- write all exports ----------------------------------------------------
 const written = [];
 written.push(write("entities.json", "entities", { entities }, { count: entities.length }));
 written.push(write("relationships.json", "relationships", { relationships }, { count: relationships.length, byStatus: tally(d.graph?.edges) }));
-written.push(write("claims.json", "claims", { claims: d.claims || [] }, { count: totalClaims, byStatus: tally(d.claims) }));
+written.push(write("claims.json", "claims", { claims: liveClaims, superseded: supersededClaims }, { count: totalClaims, supersededCount: supersededClaims.length, byStatus: tally(liveClaims) }));
+written.push(write("transactions.json", "transactions", { transactions: d.transactions || [] }, { count: (d.transactions || []).length }));
+written.push(write("resolved-questions.json", "resolved-questions", { resolvedQuestions: d.resolvedQuestions || [] }, { count: (d.resolvedQuestions || []).length }));
 written.push(write("evidence.json", "evidence", { evidence }, { count: evidence.length }));
 written.push(write("timeline.json", "timeline", { timeline: d.timeline || [] }, { count: (d.timeline || []).length }));
 written.push(write("financials.json", "financials", { financials: d.financials || {} }));
@@ -153,7 +165,7 @@ const summary = {
     openQuestions: (d.openQuestions || []).length,
     risks: risks.length,
   },
-  claimsByStatus: tally(d.claims),
+  claimsByStatus: tally(liveClaims),
   relationshipsByStatus: tally(d.graph?.edges),
 };
 written.push(write("metadata.json", "metadata", summary));
