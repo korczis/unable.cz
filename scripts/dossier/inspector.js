@@ -257,7 +257,9 @@
 
   // ---- global search -------------------------------------------------------
   var INDEX = [];
-  (D.claims || []).forEach(function (c) { INDEX.push({ type: "claim", id: c.id, label: c.text, kind: "tvrzení", state: c.status, rec: true }); });
+  // Search surfaces LIVE claims; superseded ones are an audit trail (still
+  // reachable by direct id, just not offered as current findings).
+  (D.claims || []).filter(function (c) { return !c.superseded; }).forEach(function (c) { INDEX.push({ type: "claim", id: c.id, label: c.text, kind: "tvrzení", state: c.status, rec: true }); });
   (D.sources || []).forEach(function (s) { INDEX.push({ type: "source", id: s.id, label: s.title, kind: "zdroj", state: "tier " + s.tier, rec: true }); });
   (D.contradictions || []).forEach(function (c) { INDEX.push({ type: "record", id: c.id, label: c.field, kind: "rozpor", state: c.status, rec: true }); });
   Object.keys(nodeById).forEach(function (id) { var n = nodeById[id]; INDEX.push({ type: "entity", id: id, label: n.label + " " + JSON.stringify(n.ident || ""), display: n.label, kind: n.group || "entita", state: "", ent: true }); });

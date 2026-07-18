@@ -33,6 +33,14 @@ test("cockpit reads canonical data, not hardcoded counts", () => {
   assert.ok(!/\b(58|22)\s*(claims|sources|tvrzení|zdroj)/i.test(js), "no drift-prone hardcoded totals");
 });
 
+test("overview claim count matches the claims table (both exclude superseded) §36", () => {
+  const tpl = read("templates/dossier.html");
+  const cockpit = read("scripts/dossier/cockpit.js");
+  // The claims table hides superseded claims; the overview must count the same set.
+  assert.ok(/not c\.superseded/.test(tpl), "claims table filters superseded");
+  assert.ok(/!c\.superseded/.test(cockpit), "overview also excludes superseded — counts agree");
+});
+
 test("overview status buckets are exhaustive over canonical claims (no claim dropped)", () => {
   const d = JSON.parse(read("data/dossier/able/dossier.json"));
   // The buckets the overview counts, matching cockpit.js.
