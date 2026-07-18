@@ -5,15 +5,15 @@
     "caseId": "DD-Able-CZ-2026-07-17",
     "subject": "Able.cz s.r.o.",
     "ico": "24278815",
-    "evidenceCutoff": "2026-07-17",
-    "generatedAt": "2026-07-17",
+    "evidenceCutoff": "2026-07-18",
+    "generatedAt": "2026-07-18",
     "source": "data/dossier/able/dossier.json",
     "note": "Financial-intelligence projection. Filed facts parsed from sourced figures; metrics carry formulas + fact IDs; nothing invented; NOT_FOUND is never zero.",
     "count": 8
   },
   "metrics": [
     {
-      "generatedAt": "2026-07-17",
+      "generatedAt": "2026-07-18",
       "id": "MET-ALE-TURNOVER-GROWTH-FY2024",
       "name": "Meziroční změna čistého obratu (FY2024 vs FY2023)",
       "formula": "(net_turnover[FY2024] − net_turnover[FY2023]) / net_turnover[FY2023]",
@@ -29,7 +29,7 @@
       "caveats": "Pokles ~15 %. Filed, individuální (jen Able.cz), 12měsíční období."
     },
     {
-      "generatedAt": "2026-07-17",
+      "generatedAt": "2026-07-18",
       "id": "MET-ALE-NET-MARGIN-FY2024",
       "name": "Čistá marže (FY2024)",
       "formula": "net_result[FY2024] / net_turnover[FY2024]",
@@ -44,7 +44,7 @@
       "caveats": "Tenká marže (<2 %). Ne likvidita, ne cash flow."
     },
     {
-      "generatedAt": "2026-07-17",
+      "generatedAt": "2026-07-18",
       "id": "MET-ALE-NET-MARGIN-FY2023",
       "name": "Čistá marže (FY2023)",
       "formula": "net_result[FY2023] / net_turnover[FY2023]",
@@ -59,7 +59,7 @@
       "caveats": "Tenká marže (<2 %). Ne likvidita, ne cash flow."
     },
     {
-      "generatedAt": "2026-07-17",
+      "generatedAt": "2026-07-18",
       "id": "MET-ALE-EQUITY-RATIO-FY2024",
       "name": "Podíl vlastního kapitálu (FY2024)",
       "formula": "total_equity / total_assets",
@@ -74,7 +74,7 @@
       "caveats": "Kapitálová struktura, ne likvidita."
     },
     {
-      "generatedAt": "2026-07-17",
+      "generatedAt": "2026-07-18",
       "id": "MET-ALE-LEVERAGE-FY2024",
       "name": "Cizí zdroje k vlastnímu kapitálu (FY2024)",
       "formula": "total_liabilities / total_equity",
@@ -89,7 +89,7 @@
       "caveats": "Účetní páka; závazky ≠ dluh po splatnosti."
     },
     {
-      "generatedAt": "2026-07-17",
+      "generatedAt": "2026-07-18",
       "id": "MET-ALE-RELATED-PARTY-SHARE-FY2024",
       "name": "Závazky ke společníkům jako podíl cizích zdrojů (FY2024)",
       "formula": "liabilities_to_shareholders / total_liabilities",
@@ -104,7 +104,7 @@
       "caveats": "Vnitropodnikové/related-party financování; NENÍ známkou pochybení. Meziročně vzrostlo z 3,072 na 10,034 tis. Kč."
     },
     {
-      "generatedAt": "2026-07-17",
+      "generatedAt": "2026-07-18",
       "id": "MET-ALE-SERVICES-SHARE-FY2024",
       "name": "Služby jako podíl obratu (FY2024)",
       "formula": "purchased_services / net_turnover",
@@ -119,7 +119,7 @@
       "caveats": "Přes 100 % obratu — konzistentní s dodavatelsky náročným (contractor-heavy) modelem; interpretace je ASSESSED, ne účetní fakt."
     },
     {
-      "generatedAt": "2026-07-17",
+      "generatedAt": "2026-07-18",
       "id": "MET-ALE-PERSONNEL-SHARE-FY2024",
       "name": "Osobní náklady jako podíl obratu (FY2024)",
       "formula": "personnel_costs / net_turnover",
