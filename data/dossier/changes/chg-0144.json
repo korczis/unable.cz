@@ -1,0 +1,67 @@
+{
+  "id": "CHG-0144",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r02",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "change_kind": "changed",
+  "change_type": "OWNERSHIP_CHANGED",
+  "object_type": "shareholding",
+  "object_id": "SHARE-radek-juhanak",
+  "old_revision_id": "SHARE-radek-juhanak@b76e0ada994b58c5",
+  "new_revision_id": "SHARE-radek-juhanak@665e5698b460ea8a",
+  "field_changes": [
+    {
+      "field": "note",
+      "kind": "value",
+      "previous": null,
+      "current": "Vklad amount from aggregator mirror, not a direct register fetch."
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-10"
+      ],
+      "removed": []
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "VERIFIED_PRIMARY",
+      "current": "CORROBORATED"
+    },
+    {
+      "field": "vklad",
+      "kind": "value",
+      "previous": null,
+      "current": "5,605 CZK (~2.3%)"
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": "governance.shareholders.since",
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-17T21:17:13+02:00",
+  "materiality": "HIGH",
+  "epistemic_impact": "CORRECTED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Vlastnická struktura: Radek Juhaňák — 5,605 CZK (~2.3%).",
+  "technical_summary": "changed shareholding SHARE-radek-juhanak fields=[note,sources,status,vklad]",
+  "source_ids": [
+    "SRC-03",
+    "SRC-10"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0144/"
+}

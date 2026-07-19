@@ -1,0 +1,41 @@
+{
+  "id": "CHG-0123",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r02",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "change_kind": "added",
+  "change_type": "OWNERSHIP_CHANGED",
+  "object_type": "shareholding",
+  "object_id": "SHARE-petr-faraga",
+  "old_revision_id": null,
+  "new_revision_id": "SHARE-petr-faraga@ec7509fa2e6a1397",
+  "field_changes": [],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": "governance.shareholders.since",
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-17T21:17:13+02:00",
+  "materiality": "HIGH",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Vlastnická struktura: Petr Faraga — ~0.5%, since 29 July 2025.",
+  "technical_summary": "added shareholding SHARE-petr-faraga",
+  "source_ids": [
+    "SRC-10",
+    "SRC-11",
+    "SRC-14"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0123/"
+}

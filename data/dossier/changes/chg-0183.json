@@ -1,0 +1,42 @@
+{
+  "id": "CHG-0183",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "added",
+  "change_type": "FINANCIAL_PERIOD_ADDED",
+  "object_type": "financial_fact",
+  "object_id": "FIN-VERIFIED-stakes-in-controlled-entities-b-iii-1-podily-ovladana-nebo-ovladajici-osoba-fy2024-fy2023",
+  "old_revision_id": null,
+  "new_revision_id": "FIN-VERIFIED-stakes-in-controlled-entities-b-iii-1-podily-ovladana-nebo-ovladajici-osoba-fy2024-fy2023@6a1242951a11f8f0",
+  "field_changes": [],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Finanční údaj (verified): Stakes in controlled entities — 'B.III.1 Podíly - ovládaná nebo ovládající osoba' (FY2024 / FY2023) = 1,430 / 1,430 tis. CZK.",
+  "technical_summary": "added financial_fact FIN-VERIFIED-stakes-in-controlled-entities-b-iii-1-podily-ovladana-nebo-ovladajici-osoba-fy2024-fy2023",
+  "source_ids": [
+    "SRC-15"
+  ],
+  "evidence_ids": [
+    "EVD-SL68-SUBSIDIARY"
+  ],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/finance/"
+  ],
+  "public_route": "/dossier/changes/chg-0183/"
+}

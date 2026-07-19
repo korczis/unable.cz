@@ -1,0 +1,40 @@
+{
+  "id": "CHG-0122",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r02",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "change_kind": "added",
+  "change_type": "OWNERSHIP_CHANGED",
+  "object_type": "shareholding",
+  "object_id": "SHARE-jakub-kaman",
+  "old_revision_id": null,
+  "new_revision_id": "SHARE-jakub-kaman@80a12f5c905d1ae2",
+  "field_changes": [],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": "governance.shareholders.since",
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-17T21:17:13+02:00",
+  "materiality": "HIGH",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Vlastnická struktura: Jakub Kaman — 2,437 CZK.",
+  "technical_summary": "added shareholding SHARE-jakub-kaman",
+  "source_ids": [
+    "SRC-10",
+    "SRC-11"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0122/"
+}

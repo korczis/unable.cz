@@ -1,0 +1,76 @@
+{
+  "id": "CHG-0342",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r05",
+  "change_kind": "changed",
+  "change_type": "STATUS_CHANGED",
+  "object_type": "relationship",
+  "object_id": "REL-e33",
+  "old_revision_id": "REL-e33@6614b5b70228ad5d",
+  "new_revision_id": "REL-e33@0a027aa396f0f43a",
+  "field_changes": [
+    {
+      "field": "confidence",
+      "kind": "value",
+      "previous": "medium",
+      "current": "high"
+    },
+    {
+      "field": "predicate",
+      "kind": "value",
+      "previous": null,
+      "current": "SHAREHOLDER_OF"
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-10"
+      ]
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "CORROBORATED",
+      "current": "VERIFIED_PRIMARY"
+    },
+    {
+      "field": "why",
+      "kind": "value",
+      "previous": "Aggregator mirror lists Petr Faraga as sole jednatel and 100% owner of FaMa Media s.r.o.",
+      "current": "The primary VR record shows Petr Faraga as FaMa Media's jednatel since founding and 100% owner since 2017 (50/50 with Daniel Maďa before)."
+    }
+  ],
+  "effective_at": "2015-10-14",
+  "effective_time_precision": "EXACT_DATE",
+  "effective_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T08:09:53+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "REL-e33: stav evidence CORROBORATED → VERIFIED_PRIMARY.",
+  "technical_summary": "changed relationship REL-e33 fields=[confidence,predicate,sources,status,why]",
+  "source_ids": [
+    "SRC-12",
+    "SRC-14"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/#graph"
+  ],
+  "public_route": "/dossier/changes/chg-0342/"
+}

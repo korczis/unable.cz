@@ -1,0 +1,56 @@
+{
+  "id": "CHG-0238",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "OBJECT_CORRECTED",
+  "object_type": "identity_field",
+  "object_id": "ID-incorporated",
+  "old_revision_id": "ID-incorporated@b3453e6244e5e63d",
+  "new_revision_id": "ID-incorporated@cc4abb20bd0468a1",
+  "field_changes": [
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-03"
+      ]
+    },
+    {
+      "field": "value",
+      "kind": "value",
+      "previous": "3 October 2012",
+      "current": "3 October 2012 — originally registered at the Municipal Court in Prague (C 200323)"
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "CORRECTED",
+  "category": "CORRECTION",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Opraven záznam ID-incorporated (identity_field): sources, value.",
+  "technical_summary": "changed identity_field ID-incorporated fields=[sources,value]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0238/"
+}

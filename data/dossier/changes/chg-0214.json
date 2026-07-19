@@ -1,0 +1,65 @@
+{
+  "id": "CHG-0214",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "CLAIM_SUPERSEDED",
+  "object_type": "claim",
+  "object_id": "CLM-17",
+  "old_revision_id": "CLM-17@385576b527f83e99",
+  "new_revision_id": "CLM-17@d01551db775ea2d1",
+  "field_changes": [
+    {
+      "field": "superseded",
+      "kind": "value",
+      "previous": false,
+      "current": true
+    },
+    {
+      "field": "supersededBy",
+      "kind": "collection",
+      "added": [
+        "CLM-31",
+        "CLM-33",
+        "CLM-47"
+      ],
+      "removed": []
+    },
+    {
+      "field": "supersededReason",
+      "kind": "value",
+      "previous": null,
+      "current": "Overloaded (two companies plus an enforcement observation); split and upgraded to primary evidence 2026-07-18."
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "CORRECTED",
+  "category": "CORRECTION",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Tvrzení CLM-17 nahrazeno (CLM-31, CLM-33, CLM-47). Důvod: Overloaded (two companies plus an enforcement observation); split and upgraded to primary evidence 2026-07-18.",
+  "technical_summary": "changed claim CLM-17 fields=[superseded,supersededBy,supersededReason]",
+  "source_ids": [
+    "SRC-10"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-17"
+  ],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/claims/clm-17/"
+  ],
+  "public_route": "/dossier/changes/chg-0214/"
+}

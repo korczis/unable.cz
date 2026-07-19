@@ -1,0 +1,93 @@
+{
+  "id": "CHG-0346",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r05",
+  "change_kind": "changed",
+  "change_type": "STATUS_CHANGED",
+  "object_type": "relationship",
+  "object_id": "REL-e37",
+  "old_revision_id": "REL-e37@7b2985d8dde876c5",
+  "new_revision_id": "REL-e37@ba304a950bbfb59e",
+  "field_changes": [
+    {
+      "field": "confidence",
+      "kind": "value",
+      "previous": "medium",
+      "current": "high"
+    },
+    {
+      "field": "firstObserved",
+      "kind": "value",
+      "previous": null,
+      "current": "2023-03-22"
+    },
+    {
+      "field": "label",
+      "kind": "value",
+      "previous": "ex-jednatel + 33.3% (terminated 2 Apr 2026)",
+      "current": "ex-jednatel + 1/3 (22 Mar 2023 – 2 Apr 2026)"
+    },
+    {
+      "field": "lastObserved",
+      "kind": "value",
+      "previous": null,
+      "current": "2026-04-02"
+    },
+    {
+      "field": "predicate",
+      "kind": "value",
+      "previous": null,
+      "current": "SHAREHOLDER_OF"
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-10"
+      ]
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "CORROBORATED",
+      "current": "VERIFIED_PRIMARY"
+    },
+    {
+      "field": "why",
+      "kind": "value",
+      "previous": "Aggregator mirrors show Lukáš Grolig's jednatel/shareholder role at BGO s.r.o. was terminated 2 Apr 2026; no address/officer overlap with Able.cz found.",
+      "current": "The primary VR record confirms Grolig's BGO third and jednatel role ended 2 Apr 2026; no overlap with the Able.cz cluster."
+    }
+  ],
+  "effective_at": "2023-03-22",
+  "effective_time_precision": "EXACT_DATE",
+  "effective_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T08:09:53+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "REL-e37: stav evidence CORROBORATED → VERIFIED_PRIMARY.",
+  "technical_summary": "changed relationship REL-e37 fields=[confidence,firstObserved,label,lastObserved,predicate,sources,status,why]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/#graph"
+  ],
+  "public_route": "/dossier/changes/chg-0346/"
+}

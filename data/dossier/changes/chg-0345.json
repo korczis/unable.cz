@@ -1,0 +1,87 @@
+{
+  "id": "CHG-0345",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r05",
+  "change_kind": "changed",
+  "change_type": "STATUS_CHANGED",
+  "object_type": "relationship",
+  "object_id": "REL-e36",
+  "old_revision_id": "REL-e36@bb089e0c7a6df64c",
+  "new_revision_id": "REL-e36@18adefc1b99c5235",
+  "field_changes": [
+    {
+      "field": "confidence",
+      "kind": "value",
+      "previous": "disputed",
+      "current": "high"
+    },
+    {
+      "field": "firstObserved",
+      "kind": "value",
+      "previous": "2022-02-23",
+      "current": "2017-05-19"
+    },
+    {
+      "field": "label",
+      "kind": "value",
+      "previous": "jednatel + 34% (since 23 Feb 2022, disputed — see CON-02)",
+      "current": "jednatel + 34% (since 23 Feb 2022) — resolved"
+    },
+    {
+      "field": "predicate",
+      "kind": "value",
+      "previous": null,
+      "current": "SHAREHOLDER_OF"
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-10"
+      ]
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "CONTRADICTED",
+      "current": "VERIFIED_PRIMARY"
+    },
+    {
+      "field": "why",
+      "kind": "value",
+      "previous": "Second research pass attributes this role/stake/date to Ondřej Kaman; the first pass attributed the same date/similar stake to Radek Juhaňák instead. See CON-02.",
+      "current": "CON-02 resolved: Ondřej Kaman holds 34% (49% during 2017–2022) and a jednatel role since 23 Feb 2022."
+    }
+  ],
+  "effective_at": "2017-05-19",
+  "effective_time_precision": "EXACT_DATE",
+  "effective_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T08:09:53+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "RESOLVED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "REL-e36: stav evidence CONTRADICTED → VERIFIED_PRIMARY.",
+  "technical_summary": "changed relationship REL-e36 fields=[confidence,firstObserved,label,predicate,sources,status,why]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/#graph"
+  ],
+  "public_route": "/dossier/changes/chg-0345/"
+}

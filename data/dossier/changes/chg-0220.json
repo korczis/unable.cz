@@ -1,0 +1,71 @@
+{
+  "id": "CHG-0220",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "CLAIM_SUPERSEDED",
+  "object_type": "claim",
+  "object_id": "CLM-23",
+  "old_revision_id": "CLM-23@7087dc93e0dbf7d8",
+  "new_revision_id": "CLM-23@115f68d42681bf6f",
+  "field_changes": [
+    {
+      "field": "note",
+      "kind": "value",
+      "previous": "Flagged as a gap in public disclosure, not as evidence of wrongdoing. A concurrent private interest is not unusual for an active entrepreneur, but it was absent from every public account of the deal reviewed in this pass.",
+      "current": null
+    },
+    {
+      "field": "superseded",
+      "kind": "value",
+      "previous": false,
+      "current": true
+    },
+    {
+      "field": "supersededBy",
+      "kind": "collection",
+      "added": [
+        "CLM-39",
+        "CLM-40"
+      ],
+      "removed": []
+    },
+    {
+      "field": "supersededReason",
+      "kind": "value",
+      "previous": null,
+      "current": "Mixed an ownership observation with a disclosure judgment; split, and the stake primary-verified as exactly 30 % (he is not a jednatel there) 2026-07-18."
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "CORRECTED",
+  "category": "CORRECTION",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Tvrzení CLM-23 nahrazeno (CLM-39, CLM-40). Důvod: Mixed an ownership observation with a disclosure judgment; split, and the stake primary-verified as exactly 30 % (he is not a jednatel ther…",
+  "technical_summary": "changed claim CLM-23 fields=[note,superseded,supersededBy,supersededReason]",
+  "source_ids": [
+    "SRC-10",
+    "SRC-11"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-23"
+  ],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/claims/clm-23/"
+  ],
+  "public_route": "/dossier/changes/chg-0220/"
+}

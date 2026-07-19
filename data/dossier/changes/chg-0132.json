@@ -1,0 +1,39 @@
+{
+  "id": "CHG-0132",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r02",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "change_kind": "added",
+  "change_type": "SOURCE_ADDED",
+  "object_type": "source",
+  "object_id": "SRC-18",
+  "old_revision_id": null,
+  "new_revision_id": "SRC-18@2ed3c2ec2476be24",
+  "field_changes": [],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "source.retrievedAt",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-17T21:17:13+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Nový zdroj SRC-18 (tier 1): Sbírka listin (or.justice.cz) — Blackfish & Co. s.r.o., účetní závěrka 2024 (C 283664/SL2…",
+  "technical_summary": "added source SRC-18",
+  "source_ids": [],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-27"
+  ],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0132/"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "CHG-0249",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "SOURCE_AVAILABILITY_CHANGED",
+  "object_type": "source",
+  "object_id": "SRC-03",
+  "old_revision_id": "SRC-03@e5eee7da8a64f10a",
+  "new_revision_id": "SRC-03@0a715283887c33f1",
+  "field_changes": [
+    {
+      "field": "kind",
+      "kind": "value",
+      "previous": "company register",
+      "current": "company register mirror (aggregator; NOT a direct register fetch — the 2026-07-17 pass mislabelled this tier 1, corrected 2026-07-18; primary register facts now come from SRC-12 ARES artifacts)"
+    },
+    {
+      "field": "tier",
+      "kind": "value",
+      "previous": 1,
+      "current": 2
+    },
+    {
+      "field": "title",
+      "kind": "value",
+      "previous": "Czech public register / ARES (via justice.cz-sourced mirrors: kurzy.cz, penize.cz, podnikatel.cz)",
+      "current": "Company-register mirrors, first identity pass (kurzy.cz, penize.cz, podnikatel.cz — republishing or.justice.cz data)"
+    },
+    {
+      "field": "url",
+      "kind": "value",
+      "previous": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=24278815",
+      "current": "https://rejstrik-firem.kurzy.cz/24278815/"
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "source.retrievedAt",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "NO_EPISTEMIC_CHANGE",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": true,
+  "public_summary": "Zdroj SRC-03: změna dostupnosti/URL.",
+  "technical_summary": "changed source SRC-03 fields=[kind,tier,title,url]",
+  "source_ids": [],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0249/"
+}

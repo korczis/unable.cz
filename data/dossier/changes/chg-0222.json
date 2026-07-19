@@ -1,0 +1,64 @@
+{
+  "id": "CHG-0222",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "CLAIM_SUPERSEDED",
+  "object_type": "claim",
+  "object_id": "CLM-25",
+  "old_revision_id": "CLM-25@2a9fca4b62833146",
+  "new_revision_id": "CLM-25@a8b53b3e34393fd6",
+  "field_changes": [
+    {
+      "field": "superseded",
+      "kind": "value",
+      "previous": false,
+      "current": true
+    },
+    {
+      "field": "supersededBy",
+      "kind": "collection",
+      "added": [
+        "CLM-44",
+        "CLM-45"
+      ],
+      "removed": []
+    },
+    {
+      "field": "supersededReason",
+      "kind": "value",
+      "previous": null,
+      "current": "Conflated line-I revenue (FY2023: 42,642 tis.) with net turnover (FY2023: 43,079 tis.) and bundled the media-target comparison (an assessment) into a primary-verified claim. Split 2026-07-18 with exact filing citations."
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "CORRECTED",
+  "category": "CORRECTION",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Tvrzení CLM-25 nahrazeno (CLM-44, CLM-45). Důvod: Conflated line-I revenue (FY2023: 42,642 tis.) with net turnover (FY2023: 43,079 tis.) and bundled the media-target comparison (an assessme…",
+  "technical_summary": "changed claim CLM-25 fields=[superseded,supersededBy,supersededReason]",
+  "source_ids": [
+    "SRC-15"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-25"
+  ],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/claims/clm-25/"
+  ],
+  "public_route": "/dossier/changes/chg-0222/"
+}

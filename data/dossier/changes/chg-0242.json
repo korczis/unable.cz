@@ -1,0 +1,56 @@
+{
+  "id": "CHG-0242",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "OBJECT_CORRECTED",
+  "object_type": "identity_field",
+  "object_id": "ID-registered-capital",
+  "old_revision_id": "ID-registered-capital@1356a9ec62c3bdd5",
+  "new_revision_id": "ID-registered-capital@c2c66f7a5a2c1078",
+  "field_changes": [
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-03"
+      ]
+    },
+    {
+      "field": "value",
+      "kind": "value",
+      "previous": "243,715 CZK",
+      "current": "243,715 CZK (increased from 210,000 CZK on 14 Nov 2024)"
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "CORRECTED",
+  "category": "CORRECTION",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Opraven záznam ID-registered-capital (identity_field): sources, value.",
+  "technical_summary": "changed identity_field ID-registered-capital fields=[sources,value]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0242/"
+}

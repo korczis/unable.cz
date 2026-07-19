@@ -1,0 +1,66 @@
+{
+  "id": "CHG-0223",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "CLAIM_SUPERSEDED",
+  "object_type": "claim",
+  "object_id": "CLM-26",
+  "old_revision_id": "CLM-26@06b0b8f3b9d2c2fe",
+  "new_revision_id": "CLM-26@b623112e6747f2e8",
+  "field_changes": [
+    {
+      "field": "superseded",
+      "kind": "value",
+      "previous": false,
+      "current": true
+    },
+    {
+      "field": "supersededBy",
+      "kind": "collection",
+      "added": [
+        "CLM-46",
+        "CLM-47",
+        "CLM-48"
+      ],
+      "removed": []
+    },
+    {
+      "field": "supersededReason",
+      "kind": "value",
+      "previous": null,
+      "current": "Embedded an unsourced cause ('consistent with an unpaid public-transport fine') and a materiality judgment inside a primary-verified observation; the filed documents state creditor and amount, never the debt's origin. Also, the insolvency-register part could never be asserted: ISIR was BLOCKED (HTTP 500), not searched. Split 2026-07-18."
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "CORRECTED",
+  "category": "CORRECTION",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Tvrzení CLM-26 nahrazeno (CLM-46, CLM-47, CLM-48). Důvod: Embedded an unsourced cause ('consistent with an unpaid public-transport fine') and a materiality judgment inside a primary-verified observ…",
+  "technical_summary": "changed claim CLM-26 fields=[superseded,supersededBy,supersededReason]",
+  "source_ids": [
+    "SRC-16",
+    "SRC-17"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-26"
+  ],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/claims/clm-26/"
+  ],
+  "public_route": "/dossier/changes/chg-0223/"
+}
