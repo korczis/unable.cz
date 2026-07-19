@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{#- Revalidace: co je čerstvé, co po termínu, co blokované — a v jakém pořadí
+    znovu ověřovat. Stav je deterministicky vyhodnocen k meznímu datu evidence;
+    JavaScript navíc porovná termíny s dnešním dnem prohlížeče (označeno). -#}
+
+{% block content %}
+{%- set fr = load_data(path=page.extra.freshness_path) -%}
+{%- set plan = load_data(path=page.extra.plan_path) -%}
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
+  <div class="mx-auto max-w-4xl">
+    <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
+      <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
+      <span class="px-1 text-white/30">/</span><span class="text-white/80">Revalidace</span>
+    </nav>
+
+    <h1 class="mt-6 font-sans text-3xl font-black">Revalidace</h1>
+    <p class="mt-2 max-w-3xl text-sm text-white/60">
+      Kvalita evidence a aktuálnost jsou dvě různé věci: zachovaný artefakt nikdy „nezreziví",
+      ale skutečný svět se mezitím mohl pohnout. Tato stránka říká, u kterých záznamů se svět
+      pohnout mohl a v jakém pořadí to ověřit. Stav je vyhodnocen k
+      <span class="font-mono">{{ fr._export.asOf }}</span> — {{ fr._export.asOfNote }}
+    </p>
+
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Stav čerstvosti ({{ fr.items | length }} sledovaných záznamů)</h2>
+    <dl class="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 border-y border-white/10 py-4 text-sm sm:grid-cols-4">
+      {%- for k, v in fr.byState %}
+      <div><dt class="text-white/45">{{ k }}</dt><dd class="font-mono text-lg {% if k == 'BLOCKED' %}text-[#d4af37]{% elif k == 'FRESH' %}text-[#f3e5c0]{% else %}text-white/85{% endif %}">{{ v }}</dd></div>
+      {%- endfor %}
+    </dl>
+    <p class="mt-2 text-xs text-white/45">BLOCKED = poskytovatele nešlo úspěšně dotázat — nikdy to neznamená negativní zjištění. Uzavřená historická fakta jsou NOT_APPLICABLE (revalidace na nich nic nemění).</p>
+
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Prioritizovaná fronta ({{ plan.taskCount }})</h2>
+    {%- if plan.taskCount == 0 %}
+    <p class="mt-3 text-sm text-white/70">K datu vyhodnocení není po termínu žádný záznam.</p>
+    {%- else %}
+    <div class="mt-3 space-y-4">
+      {%- for t in plan.tasks %}
+      <div class="rounded border border-white/10 bg-white/5 p-4">
+        <h3 class="flex flex-wrap items-baseline gap-2">
+          <span class="font-mono text-sm text-[#f3e5c0]">{{ t.task_id }}</span>
+          <span class="rounded border border-white/20 px-1.5 py-0.5 font-mono text-[11px] {% if t.state == 'BLOCKED' %}border-[#d4af37]/50 text-[#d4af37]{% else %}text-white/60{% endif %}">{{ t.state }}</span>
+          <span class="font-mono text-[11px] text-white/40">priorita {{ t.priority_score }}</span>
+        </h3>
+        <p class="mt-1 text-sm text-white/85">{{ t.label }}</p>
+        <dl class="mt-2 grid grid-cols-1 gap-x-6 gap-y-1 text-xs sm:grid-cols-2">
+          <div><dt class="inline text-white/45">Důvod: </dt><dd class="inline text-white/75">{{ t.reason_due }}</dd></div>
+          <div><dt class="inline text-white/45">Naposledy ověřeno: </dt><dd class="inline font-mono text-white/75">{{ t.last_verified }}</dd></div>
+          <div><dt class="inline text-white/45">Termín: </dt><dd class="inline font-mono text-white/75" data-due="{{ t.next_due_at }}">{{ t.next_due_at }}</dd></div>
+          <div><dt class="inline text-white/45">Doporučený poskytovatel: </dt><dd class="inline text-white/75">{{ t.recommended_provider }}</dd></div>
+          <div><dt class="inline text-white/45">Očekávaný přínos: </dt><dd class="inline text-white/75">{{ t.expected_information_gain }}</dd></div>
+          <div><dt class="inline text-white/45">Závislých záznamů: </dt><dd class="inline font-mono text-white/75">{{ t.affected_dependents }}</dd></div>
+          <div class="sm:col-span-2"><dt class="inline text-white/45">Stop podmínka: </dt><dd class="inline text-white/75">{{ t.stop_condition }}</dd></div>
+        </dl>
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+
+    <h2 class="mt-10 font-sans text-lg font-bold text-white/90">Aktuálnost vztahů</h2>
+    <p class="mt-2 max-w-3xl text-xs text-white/50">
+      Kvalita evidence (jak dobře zachovaný artefakt vztah doložil) se časem nesnižuje.
+      Aktuálnost (zda vztah stále platí) se řídí průhlednou politikou, ne neprůhlednou exponenciálou.
+    </p>
+    {%- set_global cur = 0 %}{%- set_global histC = 0 %}{%- set_global dueC = 0 %}{%- set_global unsch = 0 %}
+    {%- for r in fr.relationshipCurrentness %}
+      {%- if r.currentness_state == "CURRENT_AS_VERIFIED" %}{% set_global cur = cur + 1 %}
+      {%- elif r.currentness_state == "HISTORICAL" %}{% set_global histC = histC + 1 %}
+      {%- elif r.currentness_state == "REVALIDATION_DUE" %}{% set_global dueC = dueC + 1 %}
+      {%- else %}{% set_global unsch = unsch + 1 %}{% endif %}
+    {%- endfor %}
+    <dl class="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 border-y border-white/10 py-4 text-sm sm:grid-cols-4">
+      <div><dt class="text-white/45">Aktuální (k ověření)</dt><dd class="font-mono text-lg text-[#f3e5c0]">{{ cur }}</dd></div>
+      <div><dt class="text-white/45">Po termínu</dt><dd class="font-mono text-lg text-[#d4af37]">{{ dueC }}</dd></div>
+      <div><dt class="text-white/45">Historické (uzavřené)</dt><dd class="font-mono text-lg text-white/70">{{ histC }}</dd></div>
+      <div><dt class="text-white/45">Mimo plán (via zdroje)</dt><dd class="font-mono text-lg text-white/60">{{ unsch }}</dd></div>
+    </dl>
+
+    <p class="mt-10 text-xs text-white/30">
+      Data: <a class="underline decoration-white/30 underline-offset-2" href="/data/dossier/revalidation/freshness.json">freshness.json</a> ·
+      <a class="underline decoration-white/30 underline-offset-2" href="/data/dossier/revalidation/plan.json">plan.json</a>
+    </p>
+  </div>
+</main>
+
+<script>
+(function () {
+  "use strict";
+  var today = new Date().toISOString().slice(0, 10);
+  document.querySelectorAll("[data-due]").forEach(function (el) {
+    var due = el.getAttribute("data-due");
+    if (due && due < today) {
+      var mark = document.createElement("span");
+      mark.className = "ml-1 text-[#d4af37]";
+      mark.textContent = "(k dnešnímu dni " + today + " po termínu)";
+      el.appendChild(mark);
+    }
+  });
+})();
+</script>
+{% endblock content %}

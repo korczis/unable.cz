@@ -1,0 +1,87 @@
+{
+  "id": "CHG-0344",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r05",
+  "change_kind": "changed",
+  "change_type": "STATUS_CHANGED",
+  "object_type": "relationship",
+  "object_id": "REL-e35",
+  "old_revision_id": "REL-e35@04a9297737c79c39",
+  "new_revision_id": "REL-e35@cc3f23be5d19abd5",
+  "field_changes": [
+    {
+      "field": "confidence",
+      "kind": "value",
+      "previous": "disputed",
+      "current": "high"
+    },
+    {
+      "field": "firstObserved",
+      "kind": "value",
+      "previous": null,
+      "current": "2014-01-02"
+    },
+    {
+      "field": "label",
+      "kind": "value",
+      "previous": "jednatel + 36% (since 2014, disputed — see CON-02)",
+      "current": "jednatel + 36% (founder, since 2 Jan 2014) — resolved"
+    },
+    {
+      "field": "predicate",
+      "kind": "value",
+      "previous": null,
+      "current": "SHAREHOLDER_OF"
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-10"
+      ]
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "CONTRADICTED",
+      "current": "VERIFIED_PRIMARY"
+    },
+    {
+      "field": "why",
+      "kind": "value",
+      "previous": "Aggregator mirror (second pass) lists Jakub Kaman as jednatel since 2014 with a 36% stake; not corroborated by the first pass, which did not surface him at all. See CON-02.",
+      "current": "CON-02 resolved: Jakub Kaman founded one label s.r.o. (100% in 2014), holds 36% since 2022 and has been jednatel throughout."
+    }
+  ],
+  "effective_at": "2014-01-02",
+  "effective_time_precision": "EXACT_DATE",
+  "effective_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T08:09:53+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "RESOLVED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "REL-e35: stav evidence CONTRADICTED → VERIFIED_PRIMARY.",
+  "technical_summary": "changed relationship REL-e35 fields=[confidence,firstObserved,label,predicate,sources,status,why]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/#graph"
+  ],
+  "public_route": "/dossier/changes/chg-0344/"
+}

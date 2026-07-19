@@ -1,0 +1,94 @@
+{
+  "id": "CHG-0353",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r05",
+  "change_kind": "changed",
+  "change_type": "STATUS_CHANGED",
+  "object_type": "relationship",
+  "object_id": "REL-e44",
+  "old_revision_id": "REL-e44@99fac4c04dc148c8",
+  "new_revision_id": "REL-e44@e4a6c3e26f38276f",
+  "field_changes": [
+    {
+      "field": "confidence",
+      "kind": "value",
+      "previous": "medium",
+      "current": "high"
+    },
+    {
+      "field": "firstObserved",
+      "kind": "value",
+      "previous": null,
+      "current": "2021-05-14"
+    },
+    {
+      "field": "label",
+      "kind": "value",
+      "previous": "jednatel/společník (2021–2024)",
+      "current": "jednatel + 50% (2021 – 13 Feb 2024)"
+    },
+    {
+      "field": "lastObserved",
+      "kind": "value",
+      "previous": null,
+      "current": "2024-02-13"
+    },
+    {
+      "field": "predicate",
+      "kind": "value",
+      "previous": null,
+      "current": "SHAREHOLDER_OF"
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "CORROBORATED",
+      "current": "VERIFIED_PRIMARY"
+    },
+    {
+      "field": "why",
+      "kind": "value",
+      "previous": "Schlesinger held a role at Artstay s.r.o. (IČO 10847031) from 2021 to 2024 — the same entity (later renamed Lovs & Co. s.r.o.) where Lukáš Oslzla is now sole owner.",
+      "current": "The primary VR record shows Schlesinger co-founded Lovs & Co. s.r.o. 50/50 with Oslzla in 2021 and exited on 13 Feb 2024 — the day it was renamed Artstay s.r.o. (CLM-42)."
+    }
+  ],
+  "effective_at": "2021-05-14",
+  "effective_time_precision": "EXACT_DATE",
+  "effective_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T08:09:53+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "REL-e44: stav evidence CORROBORATED → VERIFIED_PRIMARY.",
+  "technical_summary": "changed relationship REL-e44 fields=[confidence,firstObserved,label,lastObserved,predicate,sources,status,why]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/#graph"
+  ],
+  "public_route": "/dossier/changes/chg-0353/"
+}

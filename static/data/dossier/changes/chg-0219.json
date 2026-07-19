@@ -1,0 +1,72 @@
+{
+  "id": "CHG-0219",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "STATUS_CHANGED",
+  "object_type": "claim",
+  "object_id": "CLM-22",
+  "old_revision_id": "CLM-22@92a5417009c416f0",
+  "new_revision_id": "CLM-22@75c75a9710410cf3",
+  "field_changes": [
+    {
+      "field": "note",
+      "kind": "value",
+      "previous": null,
+      "current": "Stake size primary-verified 2026-07-18; the observation that neither Forbes.cz nor CzechCrunch mentioned this reciprocal stake is CLM-51 (assessment)."
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "CORROBORATED",
+      "current": "VERIFIED_PRIMARY"
+    },
+    {
+      "field": "text",
+      "kind": "value",
+      "previous": "As part of the acquisition, Vít Schlesinger became a shareholder of Able.cz s.r.o. itself (registered 29 July 2025) — a reciprocal equity stake not mentioned in the Forbes.cz or CzechCrunch coverage, which described only Able acquiring Blackfish, not Schlesinger receiving Able equity.",
+      "current": "As part of the acquisition, Vít Schlesinger became a shareholder of Able.cz s.r.o. itself — exactly 5.00 % (vklad 12,185.75 CZK), registered 29 July 2025."
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "CLM-22: stav evidence CORROBORATED → VERIFIED_PRIMARY.",
+  "technical_summary": "changed claim CLM-22 fields=[note,sources,status,text]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-22"
+  ],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/claims/clm-22/"
+  ],
+  "public_route": "/dossier/changes/chg-0219/"
+}

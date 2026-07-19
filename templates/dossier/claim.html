@@ -79,6 +79,33 @@
       </ul>
     </section>
 
+    {#- Historie tvrzení napříč publikovanými snapshoty (PROMPT-09 §21–22):
+        revizní řetězec + změnové záznamy z neměnného snapshot diffu. -#}
+    {%- set hist_all = load_data(path="static/data/dossier/history/objects.json") -%}
+    {%- set hkey = "claim:" ~ c.id -%}
+    {%- set h = hist_all.objects | get(key=hkey) -%}
+    <section class="mt-8" aria-labelledby="hist-h">
+      <h2 id="hist-h" class="text-xs uppercase tracking-wide text-white/45">Historie ve snapshotech</h2>
+      <ul class="mt-2 space-y-1 text-sm text-white/70">
+        {%- for r in h.revisions %}
+        <li>
+          <span class="font-mono text-xs text-white/50">revize {{ r.revision_number }}</span> —
+          poprvé ve snapshotu <a class="font-mono text-xs text-[#9ec5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/snapshots/' ~ r.snapshot_id ~ '.md') | safe }}">{{ r.snapshot_id }}</a>
+          <span class="font-mono text-xs text-white/40">(hash {{ r.content_hash | truncate(length=8, end="") }})</span>
+          {%- if r.last_snapshot_id %} · beze změny až do {{ r.last_snapshot_id }}{%- endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+      {%- if h.change_ids | length > 0 %}
+      <p class="mt-2 text-sm text-white/70">Změnové záznamy:
+        {% for cid in h.change_ids %}{% set cidslug = cid | lower %}<a class="font-mono text-xs text-[#9ec5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/changes/_index.md') | safe }}#{{ cidslug }}">{{ cid }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+      </p>
+      {%- else %}
+      <p class="mt-2 text-sm text-white/50">Záznam je beze změny od svého prvního publikování.</p>
+      {%- endif %}
+      <p class="mt-2 text-xs text-white/40">Starší znění je vždy dohledatelné ve zmrazeném objects.json příslušného snapshotu — revize se nikdy nepřepisují.</p>
+    </section>
+
     <section class="mt-8" aria-labelledby="prov-h">
       <h2 id="prov-h" class="text-xs uppercase tracking-wide text-white/45">Provenience a odkazy</h2>
       <ul class="mt-2 space-y-1 text-sm">

@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{#- Historie objektů: revizní řetězec každého kanonického záznamu napříč
+    publikovanými snapshoty. Objekty s více revizemi nebo změnami jsou
+    vypsané; stabilní objekty jsou shrnuty počtem (nezamlčeny). -#}
+
+{% block content %}
+{%- set hist = load_data(path=page.extra.histories_path) -%}
+{%- set idx = load_data(path=page.extra.index_path) -%}
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
+  <div class="mx-auto max-w-4xl">
+    <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
+      <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
+      <span class="px-1 text-white/30">/</span><span class="text-white/80">Historie objektů</span>
+    </nav>
+
+    <h1 class="mt-6 font-sans text-3xl font-black">Historie objektů</h1>
+    <p class="mt-2 max-w-3xl text-sm text-white/60">
+      Každý kanonický objekt má revizní řetězec: ve kterém snapshotu se poprvé objevil,
+      kdy se jeho obsah změnil (nový content hash = nová revize) a které změnové záznamy
+      se ho týkají. Revize se nikdy nepřepisují — starší stav je vždy dohledatelný
+      ve zmrazeném <code class="text-xs">objects.json</code> příslušného snapshotu.
+    </p>
+
+    {%- set_global multi = 0 %}{%- set_global single = 0 %}
+    {%- for k, h in hist.objects %}
+      {%- if h.revisions | length > 1 or h.change_ids | length > 0 %}{% set_global multi = multi + 1 %}{% else %}{% set_global single = single + 1 %}{% endif %}
+    {%- endfor %}
+    <dl class="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 border-y border-white/10 py-4 text-sm sm:grid-cols-3">
+      <div><dt class="text-white/45">Objektů celkem</dt><dd class="font-mono text-lg text-white/90">{{ multi + single }}</dd></div>
+      <div><dt class="text-white/45">S historií (revize/změny)</dt><dd class="font-mono text-lg text-[#f3e5c0]">{{ multi }}</dd></div>
+      <div><dt class="text-white/45">Beze změny od vzniku</dt><dd class="font-mono text-lg text-white/60">{{ single }}</dd></div>
+    </dl>
+
+    <label class="mt-6 block text-xs text-white/60" for="hist-search" hidden id="hist-search-label">Hledat objekt (ID nebo typ)
+    </label>
+    <input id="hist-search" type="search" hidden
+      class="mt-1 w-full max-w-md rounded border border-white/20 bg-black px-3 py-2 text-sm text-white placeholder-white/30"
+      placeholder="např. CLM-44, shareholding, SRC-12" />
+    <p id="hist-search-state" class="mt-1 text-xs text-white/40" aria-live="polite"></p>
+
+    <div class="mt-6 overflow-x-auto">
+      <table class="w-full border-collapse text-left text-sm" id="hist-table">
+        <caption class="sr-only">Objekty s revizní historií</caption>
+        <thead>
+          <tr class="border-b border-white/20 text-white/60">
+            <th scope="col" class="py-2 pr-3 font-medium">Objekt</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Typ</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Revize</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Řetězec revizí (snapshot @ hash)</th>
+            <th scope="col" class="py-2 font-medium">Změny</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for k, h in hist.objects %}
+          {%- if h.revisions | length > 1 or h.change_ids | length > 0 %}
+          <tr class="border-b border-white/10 align-top" data-key="{{ h.object_type }}:{{ h.object_id }}">
+            <td class="py-2 pr-3 font-mono text-xs text-white/90">
+              {%- if h.object_type == "claim" %}{% set hslug = h.object_id | lower %}<a class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/claims/' ~ hslug ~ '.md') | safe }}">{{ h.object_id }}</a>
+              {%- else %}{{ h.object_id }}{%- endif %}
+            </td>
+            <td class="py-2 pr-3 font-mono text-xs text-white/60">{{ h.object_type }}</td>
+            <td class="py-2 pr-3 font-mono text-white/85">{{ h.revisions | length }}{% if h.removed %} <span class="text-[#d4af37]">(mimo publikaci)</span>{% endif %}</td>
+            <td class="py-2 pr-3 font-mono text-[11px] leading-5 text-white/60">
+              {%- for r in h.revisions %}<span class="whitespace-nowrap">r{{ r.snapshot_sequence }}@{{ r.content_hash | truncate(length=8, end="") }}</span>{% if not loop.last %} → {% endif %}{%- endfor %}
+            </td>
+            <td class="py-2 text-xs">
+              {%- for cid in h.change_ids %}<a class="font-mono text-[#f3e5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/changes/_index.md') | safe }}#{{ cid | lower }}">{{ cid }}</a>{% if not loop.last %}, {% endif %}{%- endfor %}
+            </td>
+          </tr>
+          {%- endif %}
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-6 text-xs text-white/40">
+      Objekty beze změny ({{ single }}) mají jedinou revizi ve všech snapshotech, kde existují;
+      úplný strojově čitelný řetězec všech objektů: <a class="underline decoration-white/30 underline-offset-2" href="/data/dossier/history/objects.json">history/objects.json</a>.
+    </p>
+  </div>
+</main>
+
+<script>
+(function () {
+  "use strict";
+  var input = document.getElementById("hist-search");
+  var label = document.getElementById("hist-search-label");
+  var state = document.getElementById("hist-search-state");
+  if (!input) return;
+  input.hidden = false; label.hidden = false;
+  input.addEventListener("input", function () {
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    document.querySelectorAll("#hist-table tbody tr").forEach(function (tr) {
+      var ok = !q || tr.getAttribute("data-key").toLowerCase().indexOf(q) !== -1;
+      tr.hidden = !ok; if (ok) shown++;
+    });
+    state.textContent = q ? "Zobrazeno " + shown + " objektů." : "";
+  });
+})();
+</script>
+{% endblock content %}

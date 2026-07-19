@@ -32,6 +32,14 @@ const ROUTES = [
   { path: "/dossier/claims/", key: "table" },
   { path: "/dossier/claims/clm-22/", key: "h1" },
   { path: "/dossier/claims/clm-52/", key: "h1" },
+  // temporal layer (PROMPT-09)
+  { path: "/dossier/changes/", key: "table" },
+  { path: "/dossier/changes/chg-0122/", key: "h1" },
+  { path: "/dossier/snapshots/", key: "table" },
+  { path: "/dossier/snapshots/able-cz-public-2026-07-18-r07/", key: "h1" },
+  { path: "/dossier/history/", key: "table" },
+  { path: "/dossier/revalidation/", key: "h1" },
+  { path: "/dossier/monitoring/", key: "table" },
 ];
 
 for (const vp of VIEWPORTS) {
@@ -102,4 +110,68 @@ test("390px keyboard/touch: search → inspector bottom sheet → Escape closes;
   // Focus not lost into a hidden region.
   const active = await page.evaluate(() => (document.activeElement || {}).tagName || "BODY");
   expect(active).not.toBe("HTML");
+});
+
+// ---- temporal layer interaction proofs (PROMPT-09 §44 browser tests) ------
+
+test("comparison URL survives reload in a fresh context and Back works", async ({ page }) => {
+  const url = "/dossier/changes/?from=able-cz-public-2026-07-17-r04&to=able-cz-public-2026-07-17-r05&materialita=MEDIUM";
+  await page.goto(url, { waitUntil: "networkidle" });
+  // The pair select reflects the URL state after a cold load.
+  await expect(page.locator("#f-pair")).toHaveValue("able-cz-public-2026-07-17-r04..able-cz-public-2026-07-17-r05");
+  await expect(page.locator("#f-mat")).toHaveValue("MEDIUM");
+  // Only the selected pair's section stays visible.
+  const visibleSections = await page.locator("section[data-pair]:not([hidden])").count();
+  expect(visibleSections).toBe(1);
+  // Changing the filter pushes state; browser Back restores the previous one.
+  await page.locator("#f-mat").selectOption("HIGH");
+  await page.goBack();
+  await expect(page.locator("#f-mat")).toHaveValue("MEDIUM");
+});
+
+test("change detail links prior and current revision and both time axes", async ({ page }) => {
+  await page.goto("/dossier/changes/chg-0122/", { waitUntil: "networkidle" });
+  await expect(page.locator("main")).toContainText("valid time");
+  await expect(page.locator("main")).toContainText("system time");
+  await expect(page.locator("main")).toContainText("Publikováno ve snapshotu");
+  // Snapshot pair links resolve.
+  const fromHref = await page.locator('a[href*="able-cz-public-2026-07-17-r02"]').first().getAttribute("href");
+  expect(fromHref).toContain("/dossier/snapshots/");
+});
+
+test("snapshot detail offers comparisons and frozen object layer", async ({ page }) => {
+  await page.goto("/dossier/snapshots/able-cz-public-2026-07-17-r05/", { waitUntil: "networkidle" });
+  await expect(page.getByRole("link", { name: "Porovnat s předchozím" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Porovnat s aktuálním" })).toBeVisible();
+  const objHref = await page.locator('a[href$="objects.json"]').first().getAttribute("href");
+  expect(objHref).toContain("/data/dossier/snapshots/able-cz-public-2026-07-17-r05/");
+  // Static JSON must actually be served.
+  const res = await page.request.get(objHref);
+  expect(res.ok()).toBeTruthy();
+});
+
+test("dossier overview exposes snapshot id and the change summary block", async ({ page }) => {
+  await page.goto("/dossier/", { waitUntil: "networkidle" });
+  const snapId = page.locator("#dossier-snapshot-id");
+  await expect(snapId).toContainText("able-cz-public-");
+  expect(await snapId.getAttribute("data-content-hash")).toMatch(/^[0-9a-f]{64}$/);
+  await expect(page.locator("#zmeny-heading")).toContainText("Co se změnilo");
+});
+
+test("graph change mode renders comparison banner with table alternative", async ({ page }) => {
+  await page.goto("/dossier/?mode=changes&from=able-cz-public-2026-07-17-r06&to=able-cz-public-2026-07-18-r07", { waitUntil: "networkidle" });
+  const banner = page.locator('[aria-label="Porovnání snapshotů v grafu"]');
+  await expect(banner).toBeVisible();
+  await expect(banner).toContainText("Režim porovnání snapshotů");
+  await expect(banner.locator("summary")).toContainText("Tabulková alternativa");
+});
+
+test("timeline lanes separate reality from evidence observation (keyboard reachable)", async ({ page }) => {
+  await page.goto("/dossier/?lane=zdroje", { waitUntil: "networkidle" });
+  const laneBtn = page.locator('[data-tl-lane="zdroje"]');
+  await expect(laneBtn).toHaveAttribute("aria-pressed", "true");
+  // Every visible event in the lane is labelled as observation, not world event.
+  const tags = await page.locator("#tl-list .tl-tag").allTextContents();
+  expect(tags.length).toBeGreaterThan(0);
+  for (const t of tags) expect(t).toBe("pozorování evidence");
 });

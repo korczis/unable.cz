@@ -1,0 +1,72 @@
+{
+  "id": "CHG-0215",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "CLAIM_SUPERSEDED",
+  "object_type": "claim",
+  "object_id": "CLM-18",
+  "old_revision_id": "CLM-18@390508f6cbbf4d6e",
+  "new_revision_id": "CLM-18@7caa74c9d85c6e73",
+  "field_changes": [
+    {
+      "field": "note",
+      "kind": "value",
+      "previous": "A family relationship between the two Faragas is a plausible inference from the ~23-year age gap and shared cluster, but is NOT_FOUND in any public source — not asserted as fact.",
+      "current": null
+    },
+    {
+      "field": "superseded",
+      "kind": "value",
+      "previous": false,
+      "current": true
+    },
+    {
+      "field": "supersededBy",
+      "kind": "collection",
+      "added": [
+        "CLM-34",
+        "CLM-35"
+      ],
+      "removed": []
+    },
+    {
+      "field": "supersededReason",
+      "kind": "value",
+      "previous": null,
+      "current": "Mixed observation with a family-relationship inference, and materially understated the history: the primary record shows Petr Faraga was a 2012 co-founder and jednatel until 2020. Split into observation + assessment 2026-07-18."
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "CORRECTED",
+  "category": "CORRECTION",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Tvrzení CLM-18 nahrazeno (CLM-34, CLM-35). Důvod: Mixed observation with a family-relationship inference, and materially understated the history: the primary record shows Petr Faraga was a …",
+  "technical_summary": "changed claim CLM-18 fields=[note,superseded,supersededBy,supersededReason]",
+  "source_ids": [
+    "SRC-10",
+    "SRC-11",
+    "SRC-14"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-18"
+  ],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/claims/clm-18/"
+  ],
+  "public_route": "/dossier/changes/chg-0215/"
+}

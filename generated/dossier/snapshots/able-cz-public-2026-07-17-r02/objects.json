@@ -1,0 +1,2454 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "able-cz-public-2026-07-17-r02",
+  "object_count": 108,
+  "objects": [
+    {
+      "object_type": "case_meta",
+      "object_id": "META",
+      "revision_id": "META@96778d6b902bedba",
+      "content_hash": "96778d6b902bedba",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "subject": "Able.cz s.r.o.",
+        "ico": "24278815",
+        "evidenceCutoff": "2026-07-17",
+        "scope": "Public-evidence due diligence. Not a full transaction due diligence: no data room, management Q&A, contracts, bank records, tax files, or source-code access were available."
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-01",
+      "revision_id": "CLM-01@24c221e2e2646111",
+      "content_hash": "24c221e2e2646111",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "150+ in-house AI agents",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-02",
+      "revision_id": "CLM-02@0d0158815d5d03ef",
+      "content_hash": "0d0158815d5d03ef",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "300% average client-side ROI",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-03",
+      "revision_id": "CLM-03@6896b153ba9faac6",
+      "content_hash": "6896b153ba9faac6",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Hundreds of man-days saved",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-04",
+      "revision_id": "CLM-04@7c96e99da25f07f0",
+      "content_hash": "7c96e99da25f07f0",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Delivery in weeks, not months",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-05",
+      "revision_id": "CLM-05@19df38c0da11107a",
+      "content_hash": "19df38c0da11107a",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": ">90% reduction in error rate",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-06",
+      "revision_id": "CLM-06@41996c3d426bc8b6",
+      "content_hash": "41996c3d426bc8b6",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "600% ROI (Arkadia Labs case)",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-07",
+      "revision_id": "CLM-07@d4fb4ce77e629958",
+      "content_hash": "d4fb4ce77e629958",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "3,500 person-days saved (AAA Auto case)",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-08",
+      "revision_id": "CLM-08@7037e4d37538849c",
+      "content_hash": "7037e4d37538849c",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "50% faster process (AAA Auto case)",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-09",
+      "revision_id": "CLM-09@ac12cd1b4ee1da41",
+      "content_hash": "ac12cd1b4ee1da41",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Client data never used to train external LLMs",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-10",
+      "revision_id": "CLM-10@5241571660b46791",
+      "content_hash": "5241571660b46791",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "AI agents run in an isolated environment",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-11",
+      "revision_id": "CLM-11@9e6273f5c921233a",
+      "content_hash": "9e6273f5c921233a",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Code remains under client control",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-12",
+      "revision_id": "CLM-12@4effb0299bcf5e4f",
+      "content_hash": "4effb0299bcf5e4f",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "NDA and DPA signed on every project",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": null,
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-13",
+      "revision_id": "CLM-13@aeed14164369f387",
+      "content_hash": "aeed14164369f387",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Data never leaves the EU",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": "The GDPR page (SRC-01) states no intent to transfer personal data to third countries, which is consistent but is itself a company statement, not independent proof.",
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-14",
+      "revision_id": "CLM-14@53224158420c2810",
+      "content_hash": "53224158420c2810",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Acquired 100% of product studio Blackfish; founder Vít Schlesinger stayed to lead business strategy",
+        "status": "CORROBORATED",
+        "sources": [
+          "SRC-04",
+          "SRC-05"
+        ],
+        "note": "Reported consistently by two independent media outlets.",
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "claim",
+      "object_id": "CLM-15",
+      "revision_id": "CLM-15@5d3b9a772206459c",
+      "content_hash": "5d3b9a772206459c",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Named clients incl. AAA Auto, Aures Holdings, Arkadia, Encall, Taste Town",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "note": "Published by Able; a named client is evidence of a stated relationship, not of the quantified result.",
+        "superseded": false,
+        "supersededBy": [],
+        "supersededReason": null
+      }
+    },
+    {
+      "object_type": "contradiction",
+      "object_id": "CON-01",
+      "revision_id": "CON-01@eadad89b082296c8",
+      "content_hash": "eadad89b082296c8",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "field": "Court file number (spisová značka)",
+        "valueA": {
+          "value": "C 85424",
+          "source": "SRC-01",
+          "where": "Able's own GDPR/legal page"
+        },
+        "valueB": {
+          "value": "C 85425",
+          "source": "SRC-03",
+          "where": "Public register mirrors (justice.cz / ARES)"
+        },
+        "resolution": "The public register value (C 85425) is the authoritative one. The value on the company's own legal page (C 85424) is most plausibly a transcription error or a stale copy. This is recorded, not silently normalized.",
+        "status": "CONTRADICTED"
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-aaa",
+      "revision_id": "ENT-aaa@9b2ff2002ccece30",
+      "content_hash": "9b2ff2002ccece30",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "aaa",
+        "label": "AAA Auto",
+        "group": "client",
+        "type": "company",
+        "cats": [
+          "client"
+        ],
+        "ident": null,
+        "summary": "Named client; relationship stated by Able, quantified result not independently verified.",
+        "claims": [
+          "CLM-07",
+          "CLM-08"
+        ],
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-able",
+      "revision_id": "ENT-able@1cf298fc73b14e97",
+      "content_hash": "1cf298fc73b14e97",
+      "valid_from": "2012-10-03",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "able",
+        "label": "Able.cz s.r.o.",
+        "group": "subject",
+        "type": "company",
+        "cats": [
+          "governance",
+          "legal",
+          "ownership",
+          "people",
+          "technical",
+          "transactions"
+        ],
+        "ident": {
+          "IČO": "24278815",
+          "DIČ": "CZ24278815",
+          "form": "s.r.o.",
+          "seat": "Vlněna 526/5, Trnitá, 602 00 Brno",
+          "capital": "243 715 CZK"
+        },
+        "summary": "Brno software company, the subject of this review. Incorporated 3 Oct 2012.",
+        "claims": [
+          "CLM-01",
+          "CLM-14"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-arkadia",
+      "revision_id": "ENT-arkadia@e4fd450f217878c6",
+      "content_hash": "e4fd450f217878c6",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "arkadia",
+        "label": "Arkadia",
+        "group": "client",
+        "type": "company",
+        "cats": [
+          "client"
+        ],
+        "ident": null,
+        "summary": "Named client; 600% ROI case is self-reported.",
+        "claims": [
+          "CLM-06"
+        ],
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-aures",
+      "revision_id": "ENT-aures@600d881a3832ab71",
+      "content_hash": "600d881a3832ab71",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "aures",
+        "label": "Aures Holdings",
+        "group": "client",
+        "type": "company",
+        "cats": [
+          "client"
+        ],
+        "ident": null,
+        "summary": "Named client (self-reported).",
+        "claims": [
+          "CLM-15"
+        ],
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-blackfish",
+      "revision_id": "ENT-blackfish@995bc0fd58533528",
+      "content_hash": "995bc0fd58533528",
+      "valid_from": "2025",
+      "valid_to": null,
+      "valid_time_precision": "YEAR",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "blackfish",
+        "label": "Blackfish",
+        "group": "entity",
+        "type": "company",
+        "cats": [
+          "ownership",
+          "transactions"
+        ],
+        "ident": {
+          "role": "product studio, acquired by Able"
+        },
+        "summary": "Product studio; Able acquired 100% in 2025 (two-outlet corroboration).",
+        "claims": [
+          "CLM-14"
+        ],
+        "sources": [
+          "SRC-04",
+          "SRC-05"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-domain",
+      "revision_id": "ENT-domain@ae97558b460e6ed4",
+      "content_hash": "ae97558b460e6ed4",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "domain",
+        "label": "able.cz",
+        "group": "domain",
+        "type": "domain",
+        "cats": [
+          "technical"
+        ],
+        "ident": {
+          "role": "primary domain / website",
+          "legalPages": "/legal/gdpr, /legal/eu"
+        },
+        "summary": "Company website; seat and identity on it match the register.",
+        "claims": [],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-encall",
+      "revision_id": "ENT-encall@520bc2d059276e67",
+      "content_hash": "520bc2d059276e67",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "encall",
+        "label": "Encall",
+        "group": "client",
+        "type": "company",
+        "cats": [
+          "client"
+        ],
+        "ident": null,
+        "summary": "Named client (self-reported).",
+        "claims": [
+          "CLM-15"
+        ],
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-faraga",
+      "revision_id": "ENT-faraga@e35f70fb0939c692",
+      "content_hash": "e35f70fb0939c692",
+      "valid_from": "2012-10-03",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "faraga",
+        "label": "V. Faraga",
+        "group": "person",
+        "type": "person",
+        "cats": [
+          "governance",
+          "ownership",
+          "people"
+        ],
+        "ident": {
+          "role": "jednatel (statutory officer) + shareholder; markets as CEO"
+        },
+        "summary": "Co-founder; registered statutory officer since incorporation.",
+        "claims": [],
+        "sources": [
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-g5326",
+      "revision_id": "ENT-g5326@217a863fea01daae",
+      "content_hash": "217a863fea01daae",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "g5326",
+        "label": "5326G s.r.o.",
+        "group": "investor",
+        "type": "company",
+        "cats": [
+          "ownership"
+        ],
+        "ident": {
+          "role": "shareholder",
+          "stake": "9 975 CZK"
+        },
+        "summary": "Register shareholder (minority stake).",
+        "claims": [],
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-grolig",
+      "revision_id": "ENT-grolig@fa19cbf6ed83a760",
+      "content_hash": "fa19cbf6ed83a760",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "grolig",
+        "label": "L. Grolig",
+        "group": "person",
+        "type": "person",
+        "cats": [
+          "people"
+        ],
+        "ident": {
+          "role": "marketing CTO (not in register)"
+        },
+        "summary": "Marketed as CTO; not found in the register statutory body or shareholder list.",
+        "claims": [],
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-gwork",
+      "revision_id": "ENT-gwork@c7756f1e2191d3cd",
+      "content_hash": "c7756f1e2191d3cd",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "gwork",
+        "label": "Google Workspace (email)",
+        "group": "domain",
+        "type": "service",
+        "cats": [
+          "technical"
+        ],
+        "ident": {
+          "role": "mail exchanger (MX)",
+          "mx": "smtp.google.com (priority 10)"
+        },
+        "summary": "able.cz mail routes to Google (MX smtp.google.com) — Google Workspace.",
+        "claims": [],
+        "sources": [
+          "SRC-07"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-hosting",
+      "revision_id": "ENT-hosting@a5926a72c20dd78a",
+      "content_hash": "a5926a72c20dd78a",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "hosting",
+        "label": "Websupport (DNS/hosting)",
+        "group": "domain",
+        "type": "infrastructure",
+        "cats": [
+          "technical"
+        ],
+        "ident": {
+          "role": "authoritative nameservers + A records",
+          "nameservers": "ns1/ns2.websupport.cz, ns3.websupport.eu",
+          "a": "31.43.160.6, 31.43.161.6"
+        },
+        "summary": "able.cz nameservers and A records resolve to Websupport infrastructure (measured 2026-07-17).",
+        "claims": [],
+        "sources": [
+          "SRC-07"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-juhanak",
+      "revision_id": "ENT-juhanak@5c231044330f20d1",
+      "content_hash": "5c231044330f20d1",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "juhanak",
+        "label": "R. Juhaňák",
+        "group": "person",
+        "type": "person",
+        "cats": [
+          "governance",
+          "ownership",
+          "people"
+        ],
+        "ident": {
+          "role": "shareholder; markets as CSO"
+        },
+        "summary": "Register shareholder; marketed as CSO — statutory status not confirmed.",
+        "claims": [],
+        "sources": [
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-ksbr",
+      "revision_id": "ENT-ksbr@e7b200e0798962bd",
+      "content_hash": "e7b200e0798962bd",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "ksbr",
+        "label": "Krajský soud v Brně",
+        "group": "legal",
+        "type": "court",
+        "cats": [
+          "legal"
+        ],
+        "ident": {
+          "role": "registration court",
+          "fileRegister": "C 85425",
+          "fileGdprPage": "C 85424"
+        },
+        "summary": "Registration court. The register file (C 85425) contradicts the company GDPR page (C 85424).",
+        "claims": [],
+        "sources": [
+          "SRC-01",
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-melicharek",
+      "revision_id": "ENT-melicharek@9a3c0b98638c21e6",
+      "content_hash": "9a3c0b98638c21e6",
+      "valid_from": "2012-10-03",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "melicharek",
+        "label": "T. Melichárek",
+        "group": "person",
+        "type": "person",
+        "cats": [
+          "governance",
+          "ownership",
+          "people"
+        ],
+        "ident": {
+          "role": "jednatel (statutory officer); markets as CPO"
+        },
+        "summary": "Registered statutory officer since incorporation.",
+        "claims": [],
+        "sources": [
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-pointfm",
+      "revision_id": "ENT-pointfm@ca791759c7c335b9",
+      "content_hash": "ca791759c7c335b9",
+      "valid_from": "2023",
+      "valid_to": null,
+      "valid_time_precision": "YEAR",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "pointfm",
+        "label": "Point FM (M. Kříž)",
+        "group": "investor",
+        "type": "company",
+        "cats": [
+          "ownership",
+          "transactions"
+        ],
+        "ident": {
+          "role": "investor ~5% (2023, media)",
+          "consideration": "CZK 4m at CZK 80m valuation"
+        },
+        "summary": "Media-reported 2023 investor; ~5% stake. Self-reported, single-outlet.",
+        "claims": [],
+        "sources": [
+          "SRC-06"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-polansky",
+      "revision_id": "ENT-polansky@a728e6db5ab348d0",
+      "content_hash": "a728e6db5ab348d0",
+      "valid_from": "2020-10-13",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "polansky",
+        "label": "L. Polanský",
+        "group": "person",
+        "type": "person",
+        "cats": [
+          "governance",
+          "people"
+        ],
+        "ident": {
+          "role": "supervisory board member"
+        },
+        "summary": "Registered to the supervisory board on 13 Oct 2020.",
+        "claims": [],
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-schlesinger",
+      "revision_id": "ENT-schlesinger@e5722fcc158d2a1f",
+      "content_hash": "e5722fcc158d2a1f",
+      "valid_from": "2025",
+      "valid_to": null,
+      "valid_time_precision": "YEAR",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "schlesinger",
+        "label": "V. Schlesinger",
+        "group": "person",
+        "type": "person",
+        "cats": [
+          "people",
+          "transactions"
+        ],
+        "ident": {
+          "role": "Blackfish founder; joined Able leadership 2025"
+        },
+        "summary": "Founder of Blackfish; stayed to lead business strategy after the acquisition.",
+        "claims": [
+          "CLM-14"
+        ],
+        "sources": [
+          "SRC-04",
+          "SRC-05"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-tastetown",
+      "revision_id": "ENT-tastetown@0904b467e8a2894a",
+      "content_hash": "0904b467e8a2894a",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "tastetown",
+        "label": "Taste Town",
+        "group": "client",
+        "type": "company",
+        "cats": [
+          "client"
+        ],
+        "ident": null,
+        "summary": "Named client (self-reported).",
+        "claims": [
+          "CLM-15"
+        ],
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-tls",
+      "revision_id": "ENT-tls@0d306ecd6bd19407",
+      "content_hash": "0d306ecd6bd19407",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "tls",
+        "label": "Let's Encrypt (TLS)",
+        "group": "domain",
+        "type": "service",
+        "cats": [
+          "technical"
+        ],
+        "ident": {
+          "role": "TLS certificate issuer",
+          "current": "Let's Encrypt",
+          "note": "an Amazon-issued certificate is also present in CT logs"
+        },
+        "summary": "Current able.cz TLS certificates are issued by Let's Encrypt; an Amazon-issued certificate is also present in certificate-transparency logs.",
+        "claims": [],
+        "sources": [
+          "SRC-09"
+        ]
+      }
+    },
+    {
+      "object_type": "entity",
+      "object_id": "ENT-zenx",
+      "revision_id": "ENT-zenx@a0206a3eb9f7c283",
+      "content_hash": "a0206a3eb9f7c283",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.node.validFrom",
+      "payload": {
+        "id": "zenx",
+        "label": "ZenX Capital a.s.",
+        "group": "investor",
+        "type": "company",
+        "cats": [
+          "ownership"
+        ],
+        "ident": {
+          "role": "shareholder",
+          "stake": "111 620 CZK"
+        },
+        "summary": "Register shareholder (investment vehicle linked to Zdeněk Sluka in media).",
+        "claims": [],
+        "sources": [
+          "SRC-03",
+          "SRC-06"
+        ]
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-NOTFOUND-auditor-s-report",
+      "revision_id": "FIN-NOTFOUND-auditor-s-report@7051c4701862cdc8",
+      "content_hash": "7051c4701862cdc8",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "notFound",
+        "metric": "Auditor's report",
+        "display": null,
+        "status": "NOT_FOUND",
+        "sources": [],
+        "evidence": [],
+        "note": null
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-NOTFOUND-employee-count-filed",
+      "revision_id": "FIN-NOTFOUND-employee-count-filed@c0e72c06f86a6208",
+      "content_hash": "c0e72c06f86a6208",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "notFound",
+        "metric": "Employee count (filed)",
+        "display": null,
+        "status": "NOT_FOUND",
+        "sources": [],
+        "evidence": [],
+        "note": null
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-NOTFOUND-equity",
+      "revision_id": "FIN-NOTFOUND-equity@f51767689b2550be",
+      "content_hash": "f51767689b2550be",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "notFound",
+        "metric": "Equity",
+        "display": null,
+        "status": "NOT_FOUND",
+        "sources": [],
+        "evidence": [],
+        "note": null
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-NOTFOUND-going-concern-language",
+      "revision_id": "FIN-NOTFOUND-going-concern-language@8340abcf3d0a2b10",
+      "content_hash": "8340abcf3d0a2b10",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "notFound",
+        "metric": "Going-concern language",
+        "display": null,
+        "status": "NOT_FOUND",
+        "sources": [],
+        "evidence": [],
+        "note": null
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-NOTFOUND-operating-net-result",
+      "revision_id": "FIN-NOTFOUND-operating-net-result@3d5822df955592bd",
+      "content_hash": "3d5822df955592bd",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "notFound",
+        "metric": "Operating/net result",
+        "display": null,
+        "status": "NOT_FOUND",
+        "sources": [],
+        "evidence": [],
+        "note": null
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-NOTFOUND-revenue-filed",
+      "revision_id": "FIN-NOTFOUND-revenue-filed@d34b28b6a7d8d7d7",
+      "content_hash": "d34b28b6a7d8d7d7",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "notFound",
+        "metric": "Revenue (filed)",
+        "display": null,
+        "status": "NOT_FOUND",
+        "sources": [],
+        "evidence": [],
+        "note": null
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-NOTFOUND-total-assets",
+      "revision_id": "FIN-NOTFOUND-total-assets@974e1d50d5bb3236",
+      "content_hash": "974e1d50d5bb3236",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "notFound",
+        "metric": "Total assets",
+        "display": null,
+        "status": "NOT_FOUND",
+        "sources": [],
+        "evidence": [],
+        "note": null
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-SELFREPORTED-combined-contract-value-of-those-tenders",
+      "revision_id": "FIN-SELFREPORTED-combined-contract-value-of-those-tenders@30c2eb3588acc893",
+      "content_hash": "30c2eb3588acc893",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "selfReported",
+        "metric": "Combined contract value of those tenders",
+        "display": ">20,000,000 CZK",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-05"
+        ],
+        "evidence": [],
+        "note": null
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-SELFREPORTED-combined-headcount-able-blackfish",
+      "revision_id": "FIN-SELFREPORTED-combined-headcount-able-blackfish@505c633616b0343f",
+      "content_hash": "505c633616b0343f",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "selfReported",
+        "metric": "Combined headcount (Able + Blackfish)",
+        "display": "~60 people",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-04",
+          "SRC-05"
+        ],
+        "evidence": [],
+        "note": null
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-SELFREPORTED-combined-revenue-target-able-blackfish-stated-year",
+      "revision_id": "FIN-SELFREPORTED-combined-revenue-target-able-blackfish-stated-year@e322c1bd704f02ac",
+      "content_hash": "e322c1bd704f02ac",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "selfReported",
+        "metric": "Combined revenue target (Able + Blackfish, stated year)",
+        "display": "~100,000,000 CZK",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-04",
+          "SRC-05"
+        ],
+        "evidence": [],
+        "note": "A forward-looking target attributed to Vít Schlesinger in media, not a filed result."
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-SELFREPORTED-tenders-won-in-the-stated-year-combined",
+      "revision_id": "FIN-SELFREPORTED-tenders-won-in-the-stated-year-combined@599021b9eeef0976",
+      "content_hash": "599021b9eeef0976",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "selfReported",
+        "metric": "Tenders won in the stated year (combined)",
+        "display": "4 tenders",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-05"
+        ],
+        "evidence": [],
+        "note": null
+      }
+    },
+    {
+      "object_type": "financial_fact",
+      "object_id": "FIN-VERIFIED-registered-capital",
+      "revision_id": "FIN-VERIFIED-registered-capital@4ed8db34ff9601dc",
+      "content_hash": "4ed8db34ff9601dc",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "bucket": "verified",
+        "metric": "Registered capital",
+        "display": "243,715 CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ],
+        "evidence": [],
+        "note": null
+      }
+    },
+    {
+      "object_type": "governance_rule",
+      "object_id": "GOV-SIGNING",
+      "revision_id": "GOV-SIGNING@9c606c9b4112c18a",
+      "content_hash": "9c606c9b4112c18a",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "rule": {
+          "text": "A statutory officer acts independently, except for acts of property management or monetary obligations above 200,000 CZK (excl. VAT), which require all statutory officers to act jointly.",
+          "status": "VERIFIED_PRIMARY",
+          "sources": [
+            "SRC-03"
+          ]
+        }
+      }
+    },
+    {
+      "object_type": "identity_field",
+      "object_id": "ID-court",
+      "revision_id": "ID-court@6182542100a25dfb",
+      "content_hash": "6182542100a25dfb",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "field": "Court",
+        "value": "Krajský soud v Brně (Regional Court in Brno)",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-01",
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "identity_field",
+      "object_id": "ID-dic-vat",
+      "revision_id": "ID-dic-vat@92f47caf0c2b060f",
+      "content_hash": "92f47caf0c2b060f",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "field": "DIČ (VAT)",
+        "value": "CZ24278815",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "identity_field",
+      "object_id": "ID-ico",
+      "revision_id": "ID-ico@35b43966dd69a1c7",
+      "content_hash": "35b43966dd69a1c7",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "field": "IČO",
+        "value": "24278815",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-01",
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "identity_field",
+      "object_id": "ID-incorporated",
+      "revision_id": "ID-incorporated@b3453e6244e5e63d",
+      "content_hash": "b3453e6244e5e63d",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "field": "Incorporated",
+        "value": "3 October 2012",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "identity_field",
+      "object_id": "ID-last-register-change-observed",
+      "revision_id": "ID-last-register-change-observed@317c75e021dfe1c1",
+      "content_hash": "317c75e021dfe1c1",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "field": "Last register change (observed)",
+        "value": "20 January 2026",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "identity_field",
+      "object_id": "ID-legal-form",
+      "revision_id": "ID-legal-form@ef5a32259c1c2ff3",
+      "content_hash": "ef5a32259c1c2ff3",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "field": "Legal form",
+        "value": "s.r.o. (limited liability company)",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "identity_field",
+      "object_id": "ID-legal-name",
+      "revision_id": "ID-legal-name@fdd56f9a244c104f",
+      "content_hash": "fdd56f9a244c104f",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "field": "Legal name",
+        "value": "Able.cz s.r.o.",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-01",
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "identity_field",
+      "object_id": "ID-registered-capital",
+      "revision_id": "ID-registered-capital@1356a9ec62c3bdd5",
+      "content_hash": "1356a9ec62c3bdd5",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "field": "Registered capital",
+        "value": "243,715 CZK",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "identity_field",
+      "object_id": "ID-registered-office",
+      "revision_id": "ID-registered-office@2a73785611516e80",
+      "content_hash": "2a73785611516e80",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "field": "Registered office",
+        "value": "Vlněna 526/5, Trnitá, 602 00 Brno",
+        "status": "CORROBORATED",
+        "sources": [
+          "SRC-01",
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "identity_field",
+      "object_id": "ID-vat-status-eu-vies",
+      "revision_id": "ID-vat-status-eu-vies@28425a892655105f",
+      "content_hash": "28425a892655105f",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "field": "VAT status (EU VIES)",
+        "value": "Valid — Able.cz s.r.o., Vlněna 526/5, Brno",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-08"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "marketing_role",
+      "object_id": "MKT-lukas-grolig",
+      "revision_id": "MKT-lukas-grolig@c58bd7acad55688e",
+      "content_hash": "c58bd7acad55688e",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "name": "Lukáš Grolig",
+        "role": "CTO",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "corroboration": "Not found in the register statutory body or shareholder list in this pass — a marketing role, not a verified statutory office."
+      }
+    },
+    {
+      "object_type": "marketing_role",
+      "object_id": "MKT-radek-juhanak",
+      "revision_id": "MKT-radek-juhanak@8e9668cd50a2d148",
+      "content_hash": "8e9668cd50a2d148",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "name": "Radek Juhaňák",
+        "role": "CSO",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "corroboration": "Shareholder per register (SRC-03); statutory status not confirmed."
+      }
+    },
+    {
+      "object_type": "marketing_role",
+      "object_id": "MKT-tomas-melicharek",
+      "revision_id": "MKT-tomas-melicharek@57f4b3413f1ee82b",
+      "content_hash": "57f4b3413f1ee82b",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "name": "Tomáš Melichárek",
+        "role": "CPO",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "corroboration": "Statutory officer per register (SRC-03)."
+      }
+    },
+    {
+      "object_type": "marketing_role",
+      "object_id": "MKT-vaclav-faraga",
+      "revision_id": "MKT-vaclav-faraga@d4f523a6f71150bc",
+      "content_hash": "d4f523a6f71150bc",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "name": "Václav Faraga",
+        "role": "CEO",
+        "status": "SELF_REPORTED",
+        "sources": [
+          "SRC-02"
+        ],
+        "corroboration": "Also confirmed via LinkedIn (SRC-06) and as a statutory officer (SRC-03)."
+      }
+    },
+    {
+      "object_type": "open_question",
+      "object_id": "OQ-5da8d050",
+      "revision_id": "OQ-5da8d050@dd8507f55c12dfe8",
+      "content_hash": "dd8507f55c12dfe8",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Whether the marketing roles CTO (Grolig) and CSO (Juhaňák) correspond to any current statutory function."
+      }
+    },
+    {
+      "object_type": "open_question",
+      "object_id": "OQ-6d4f73e3",
+      "revision_id": "OQ-6d4f73e3@89d695b8484f6e4d",
+      "content_hash": "89d695b8484f6e4d",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Current combined headcount and revenue as filed, versus the self-reported target."
+      }
+    },
+    {
+      "object_type": "open_question",
+      "object_id": "OQ-79c4bc92",
+      "revision_id": "OQ-79c4bc92@27cdb4199006f046",
+      "content_hash": "27cdb4199006f046",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Filed financial statements (revenue, result, assets, headcount) — available at justice.cz Sbírka listin, not retrieved in this pass."
+      }
+    },
+    {
+      "object_type": "open_question",
+      "object_id": "OQ-8e9b1fd2",
+      "revision_id": "OQ-8e9b1fd2@429eee23fa57311c",
+      "content_hash": "429eee23fa57311c",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Public-sector contracts and any EU-cofinanced project details (Hlídač státu and grant registers not retrieved here)."
+      }
+    },
+    {
+      "object_type": "open_question",
+      "object_id": "OQ-d4a3234f",
+      "revision_id": "OQ-d4a3234f@0a8ec2d6df036136",
+      "content_hash": "0a8ec2d6df036136",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "text": "Independent client confirmation of the quantified case-study results (ROI, person-days)."
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e1",
+      "revision_id": "REL-e1@374622cb08e2522e",
+      "content_hash": "374622cb08e2522e",
+      "valid_from": "2012-10-03",
+      "valid_to": "2026-07-17",
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e1",
+        "source": "faraga",
+        "target": "able",
+        "label": "statutory officer + shareholder",
+        "status": "VERIFIED_PRIMARY",
+        "cat": "governance",
+        "predicate": null,
+        "why": "The public register records Václav Faraga as a jednatel (statutory officer) of Able.cz s.r.o. since incorporation, and among the shareholders.",
+        "confidence": "high",
+        "firstObserved": "2012-10-03",
+        "lastObserved": "2026-07-17",
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e10",
+      "revision_id": "REL-e10@26a0ed61c3c5fe33",
+      "content_hash": "26a0ed61c3c5fe33",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e10",
+        "source": "able",
+        "target": "arkadia",
+        "label": "named client",
+        "status": "SELF_REPORTED",
+        "cat": "client",
+        "predicate": null,
+        "why": "Able names Arkadia as a client; the 600% ROI figure is self-reported.",
+        "confidence": "low",
+        "firstObserved": null,
+        "lastObserved": null,
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e11",
+      "revision_id": "REL-e11@7812c5927c449f9f",
+      "content_hash": "7812c5927c449f9f",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e11",
+        "source": "able",
+        "target": "encall",
+        "label": "named client",
+        "status": "SELF_REPORTED",
+        "cat": "client",
+        "predicate": null,
+        "why": "Able names Encall as a client (self-reported).",
+        "confidence": "low",
+        "firstObserved": null,
+        "lastObserved": null,
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e12",
+      "revision_id": "REL-e12@65634750b53a3b57",
+      "content_hash": "65634750b53a3b57",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e12",
+        "source": "able",
+        "target": "tastetown",
+        "label": "named client",
+        "status": "SELF_REPORTED",
+        "cat": "client",
+        "predicate": null,
+        "why": "Able names Taste Town as a client (self-reported).",
+        "confidence": "low",
+        "firstObserved": null,
+        "lastObserved": null,
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e13",
+      "revision_id": "REL-e13@c01a3c0517c55e9b",
+      "content_hash": "c01a3c0517c55e9b",
+      "valid_from": "2020-10-13",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e13",
+        "source": "polansky",
+        "target": "able",
+        "label": "supervisory board",
+        "status": "VERIFIED_PRIMARY",
+        "cat": "governance",
+        "predicate": null,
+        "why": "The register records Libor Polanský as a supervisory-board member from 13 Oct 2020.",
+        "confidence": "high",
+        "firstObserved": "2020-10-13",
+        "lastObserved": null,
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e14",
+      "revision_id": "REL-e14@4e96d44acbad6228",
+      "content_hash": "4e96d44acbad6228",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e14",
+        "source": "zenx",
+        "target": "able",
+        "label": "shareholder (111 620 CZK)",
+        "status": "VERIFIED_PRIMARY",
+        "cat": "ownership",
+        "predicate": null,
+        "why": "The register lists ZenX Capital a.s. as a shareholder holding 111 620 CZK; media ties ZenX to investor Zdeněk Sluka.",
+        "confidence": "high",
+        "firstObserved": null,
+        "lastObserved": null,
+        "sources": [
+          "SRC-03",
+          "SRC-06"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e15",
+      "revision_id": "REL-e15@e70a661c4af80ab4",
+      "content_hash": "e70a661c4af80ab4",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e15",
+        "source": "g5326",
+        "target": "able",
+        "label": "shareholder (9 975 CZK)",
+        "status": "VERIFIED_PRIMARY",
+        "cat": "ownership",
+        "predicate": null,
+        "why": "The register lists 5326G s.r.o. as a shareholder holding 9 975 CZK.",
+        "confidence": "high",
+        "firstObserved": null,
+        "lastObserved": null,
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e16",
+      "revision_id": "REL-e16@e8a51d5e4414becf",
+      "content_hash": "e8a51d5e4414becf",
+      "valid_from": "2023-12-20",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e16",
+        "source": "pointfm",
+        "target": "able",
+        "label": "investor ~5% (2023, media)",
+        "status": "SELF_REPORTED",
+        "cat": "ownership",
+        "predicate": null,
+        "why": "CzechCrunch reported (2023) that Marek Kříž's Point FM took ~5% for CZK 4m at an CZK 80m valuation. Single-outlet, not register-confirmed here.",
+        "confidence": "low",
+        "firstObserved": "2023-12-20",
+        "lastObserved": null,
+        "sources": [
+          "SRC-06"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e17",
+      "revision_id": "REL-e17@8cd1e14a82dbdddc",
+      "content_hash": "8cd1e14a82dbdddc",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e17",
+        "source": "domain",
+        "target": "able",
+        "label": "operated by",
+        "status": "VERIFIED_PRIMARY",
+        "cat": "technical",
+        "predicate": null,
+        "why": "The able.cz website presents the company's identity and legal pages; the seat on the GDPR page matches the register.",
+        "confidence": "high",
+        "firstObserved": null,
+        "lastObserved": null,
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e18",
+      "revision_id": "REL-e18@204fd74831bbc749",
+      "content_hash": "204fd74831bbc749",
+      "valid_from": "2012-10-03",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e18",
+        "source": "able",
+        "target": "ksbr",
+        "label": "registered — C 85425",
+        "status": "CONTRADICTED",
+        "cat": "legal",
+        "predicate": null,
+        "why": "Able is registered at the Regional Court in Brno under file C 85425 (register). The company's own GDPR page cites C 85424 — a contradiction left visible; the register is authoritative.",
+        "confidence": "disputed",
+        "firstObserved": "2012-10-03",
+        "lastObserved": null,
+        "sources": [
+          "SRC-01",
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e19",
+      "revision_id": "REL-e19@6fecf13e25ebc0ff",
+      "content_hash": "6fecf13e25ebc0ff",
+      "valid_from": "2026-07-17",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e19",
+        "source": "domain",
+        "target": "hosting",
+        "label": "resolves via (A 31.43.160.6)",
+        "status": "VERIFIED_PRIMARY",
+        "cat": "technical",
+        "predicate": null,
+        "why": "able.cz A records (31.43.160.6, 31.43.161.6) and authoritative nameservers are Websupport, measured via Google Public DNS on 2026-07-17.",
+        "confidence": "high",
+        "firstObserved": "2026-07-17",
+        "lastObserved": null,
+        "sources": [
+          "SRC-07"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e2",
+      "revision_id": "REL-e2@9f55e17b836358b5",
+      "content_hash": "9f55e17b836358b5",
+      "valid_from": "2012-10-03",
+      "valid_to": "2026-07-17",
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e2",
+        "source": "melicharek",
+        "target": "able",
+        "label": "statutory officer + shareholder",
+        "status": "VERIFIED_PRIMARY",
+        "cat": "governance",
+        "predicate": null,
+        "why": "The public register records Tomáš Melichárek as a jednatel (statutory officer) since incorporation.",
+        "confidence": "high",
+        "firstObserved": "2012-10-03",
+        "lastObserved": "2026-07-17",
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e20",
+      "revision_id": "REL-e20@db8832d59c8d89a3",
+      "content_hash": "db8832d59c8d89a3",
+      "valid_from": "2026-07-17",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e20",
+        "source": "domain",
+        "target": "gwork",
+        "label": "email via (MX)",
+        "status": "VERIFIED_PRIMARY",
+        "cat": "technical",
+        "predicate": null,
+        "why": "able.cz MX record points to smtp.google.com (priority 10) — Google Workspace.",
+        "confidence": "high",
+        "firstObserved": "2026-07-17",
+        "lastObserved": null,
+        "sources": [
+          "SRC-07"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e21",
+      "revision_id": "REL-e21@ea9e6a273d670add",
+      "content_hash": "ea9e6a273d670add",
+      "valid_from": "2026-07-17",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e21",
+        "source": "domain",
+        "target": "tls",
+        "label": "TLS issued by",
+        "status": "VERIFIED_PRIMARY",
+        "cat": "technical",
+        "predicate": null,
+        "why": "Current TLS certificates for able.cz are issued by Let's Encrypt (certificate transparency, crt.sh).",
+        "confidence": "high",
+        "firstObserved": "2026-07-17",
+        "lastObserved": null,
+        "sources": [
+          "SRC-09"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e3",
+      "revision_id": "REL-e3@f1808cf5cf061304",
+      "content_hash": "f1808cf5cf061304",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e3",
+        "source": "juhanak",
+        "target": "able",
+        "label": "shareholder",
+        "status": "VERIFIED_PRIMARY",
+        "cat": "ownership",
+        "predicate": null,
+        "why": "The register lists Radek Juhaňák among the shareholders. The website additionally markets him as CSO, which is not a statutory office.",
+        "confidence": "high",
+        "firstObserved": null,
+        "lastObserved": null,
+        "sources": [
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e4",
+      "revision_id": "REL-e4@a21dbc8e860f1d66",
+      "content_hash": "a21dbc8e860f1d66",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e4",
+        "source": "grolig",
+        "target": "able",
+        "label": "marketing CTO (not in register)",
+        "status": "SELF_REPORTED",
+        "cat": "people",
+        "predicate": null,
+        "why": "The website presents Lukáš Grolig as CTO. He was not found in the register statutory body or shareholder list, so this is a marketing role, not a verified statutory office.",
+        "confidence": "low",
+        "firstObserved": null,
+        "lastObserved": null,
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e5",
+      "revision_id": "REL-e5@d88913f1c2fc4ddb",
+      "content_hash": "d88913f1c2fc4ddb",
+      "valid_from": "2025",
+      "valid_to": null,
+      "valid_time_precision": "YEAR",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e5",
+        "source": "able",
+        "target": "blackfish",
+        "label": "acquired 100%",
+        "status": "CORROBORATED",
+        "cat": "transactions",
+        "predicate": null,
+        "why": "Two independent outlets (Forbes, CzechCrunch) reported that Able acquired 100% of the product studio Blackfish in 2025.",
+        "confidence": "high",
+        "firstObserved": "2025",
+        "lastObserved": null,
+        "sources": [
+          "SRC-04",
+          "SRC-05"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e6",
+      "revision_id": "REL-e6@d2bd9d1a92b0ad83",
+      "content_hash": "d2bd9d1a92b0ad83",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e6",
+        "source": "schlesinger",
+        "target": "blackfish",
+        "label": "founder",
+        "status": "CORROBORATED",
+        "cat": "transactions",
+        "predicate": null,
+        "why": "Vít Schlesinger is reported as the founder/owner of Blackfish prior to the acquisition.",
+        "confidence": "high",
+        "firstObserved": null,
+        "lastObserved": null,
+        "sources": [
+          "SRC-04",
+          "SRC-05"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e7",
+      "revision_id": "REL-e7@4feacdda282f19b7",
+      "content_hash": "4feacdda282f19b7",
+      "valid_from": "2025",
+      "valid_to": null,
+      "valid_time_precision": "YEAR",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e7",
+        "source": "schlesinger",
+        "target": "able",
+        "label": "leads business strategy",
+        "status": "CORROBORATED",
+        "cat": "transactions",
+        "predicate": null,
+        "why": "After the acquisition, Schlesinger stayed on to lead Able's business strategy (client relations in CZ and Denmark).",
+        "confidence": "high",
+        "firstObserved": "2025",
+        "lastObserved": null,
+        "sources": [
+          "SRC-04",
+          "SRC-05"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e8",
+      "revision_id": "REL-e8@88caadbffbd2ebe8",
+      "content_hash": "88caadbffbd2ebe8",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e8",
+        "source": "able",
+        "target": "aaa",
+        "label": "named client",
+        "status": "SELF_REPORTED",
+        "cat": "client",
+        "predicate": null,
+        "why": "Able names AAA Auto as a client with quantified results; a named client is evidence of a stated relationship, not of the result.",
+        "confidence": "low",
+        "firstObserved": null,
+        "lastObserved": null,
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "relationship",
+      "object_id": "REL-e9",
+      "revision_id": "REL-e9@a3a3b235875b9097",
+      "content_hash": "a3a3b235875b9097",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+      "payload": {
+        "id": "e9",
+        "source": "able",
+        "target": "aures",
+        "label": "named client",
+        "status": "SELF_REPORTED",
+        "cat": "client",
+        "predicate": null,
+        "why": "Able names Aures Holdings as a client (self-reported).",
+        "confidence": "low",
+        "firstObserved": null,
+        "lastObserved": null,
+        "sources": [
+          "SRC-02"
+        ]
+      }
+    },
+    {
+      "object_type": "shareholding",
+      "object_id": "SHARE-radek-juhanak",
+      "revision_id": "SHARE-radek-juhanak@b76e0ada994b58c5",
+      "content_hash": "b76e0ada994b58c5",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "governance.shareholders.since",
+      "payload": {
+        "name": "Radek Juhaňák",
+        "vklad": null,
+        "since": null,
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "shareholding",
+      "object_id": "SHARE-tomas-melicharek",
+      "revision_id": "SHARE-tomas-melicharek@2c4aa929e541d0be",
+      "content_hash": "2c4aa929e541d0be",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "governance.shareholders.since",
+      "payload": {
+        "name": "Tomáš Melichárek",
+        "vklad": null,
+        "since": null,
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "shareholding",
+      "object_id": "SHARE-vaclav-faraga",
+      "revision_id": "SHARE-vaclav-faraga@675f9b05d3bce0af",
+      "content_hash": "675f9b05d3bce0af",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": "governance.shareholders.since",
+      "payload": {
+        "name": "Václav Faraga",
+        "vklad": null,
+        "since": null,
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "source",
+      "object_id": "SRC-01",
+      "revision_id": "SRC-01@df5a8698287bee04",
+      "content_hash": "df5a8698287bee04",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "title": "Able.cz — GDPR / legal notice",
+        "url": "https://www.able.cz/legal/gdpr",
+        "tier": 2,
+        "kind": "company legal notice",
+        "retrievedAt": "2026-07-17",
+        "availability": null,
+        "note": null
+      }
+    },
+    {
+      "object_type": "source",
+      "object_id": "SRC-02",
+      "revision_id": "SRC-02@e1ce06aa5f0f70e5",
+      "content_hash": "e1ce06aa5f0f70e5",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "title": "Able.cz — English site (services, claims, leadership)",
+        "url": "https://www.able.cz/en/",
+        "tier": 2,
+        "kind": "company marketing",
+        "retrievedAt": "2026-07-17",
+        "availability": null,
+        "note": null
+      }
+    },
+    {
+      "object_type": "source",
+      "object_id": "SRC-03",
+      "revision_id": "SRC-03@e5eee7da8a64f10a",
+      "content_hash": "e5eee7da8a64f10a",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "title": "Czech public register / ARES (via justice.cz-sourced mirrors: kurzy.cz, penize.cz, podnikatel.cz)",
+        "url": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=24278815",
+        "tier": 1,
+        "kind": "company register",
+        "retrievedAt": "2026-07-17",
+        "availability": null,
+        "note": null
+      }
+    },
+    {
+      "object_type": "source",
+      "object_id": "SRC-04",
+      "revision_id": "SRC-04@24bd4adeeda01241",
+      "content_hash": "24bd4adeeda01241",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "title": "Forbes.cz — Able acquires Blackfish studio",
+        "url": "https://forbes.cz/vyvojar-able-ziskava-studio-blackfish-firmam-planuji-radit-jak-vyuzit-umelou-inteligenci-v-byznysu/",
+        "tier": 3,
+        "kind": "media",
+        "retrievedAt": "2026-07-17",
+        "availability": null,
+        "note": null
+      }
+    },
+    {
+      "object_type": "source",
+      "object_id": "SRC-05",
+      "revision_id": "SRC-05@dbc030246dd0586d",
+      "content_hash": "dbc030246dd0586d",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "title": "CzechCrunch — Able buys Blackfish",
+        "url": "https://cc.cz/desetimilionove-presuny-na-trhu-agentur-able-kupuje-blackfish-chteji-slapat-na-paty-strv/",
+        "tier": 3,
+        "kind": "media",
+        "retrievedAt": "2026-07-17",
+        "availability": null,
+        "note": null
+      }
+    },
+    {
+      "object_type": "source",
+      "object_id": "SRC-06",
+      "revision_id": "SRC-06@304c8bed1f08bc72",
+      "content_hash": "304c8bed1f08bc72",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "title": "LinkedIn — Václav Faraga, Able.cz s.r.o.",
+        "url": "https://cz.linkedin.com/in/vaclavfaraga/en",
+        "tier": 3,
+        "kind": "professional profile",
+        "retrievedAt": "2026-07-17",
+        "availability": null,
+        "note": null
+      }
+    },
+    {
+      "object_type": "source",
+      "object_id": "SRC-07",
+      "revision_id": "SRC-07@7aaaa05e1784eb71",
+      "content_hash": "7aaaa05e1784eb71",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "title": "Google Public DNS (dns.google) — A/MX/NS for able.cz",
+        "url": "https://dns.google/resolve?name=able.cz",
+        "tier": 1,
+        "kind": "technical observation",
+        "retrievedAt": "2026-07-17",
+        "availability": null,
+        "note": null
+      }
+    },
+    {
+      "object_type": "source",
+      "object_id": "SRC-08",
+      "revision_id": "SRC-08@a701c46632c3f611",
+      "content_hash": "a701c46632c3f611",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "title": "EU VIES VAT validation — CZ24278815",
+        "url": "https://ec.europa.eu/taxation_customs/vies/",
+        "tier": 1,
+        "kind": "official register",
+        "retrievedAt": "2026-07-17",
+        "availability": null,
+        "note": null
+      }
+    },
+    {
+      "object_type": "source",
+      "object_id": "SRC-09",
+      "revision_id": "SRC-09@faff29a6d8f993a3",
+      "content_hash": "faff29a6d8f993a3",
+      "valid_from": null,
+      "valid_to": null,
+      "valid_time_precision": "UNKNOWN",
+      "valid_time_source": null,
+      "payload": {
+        "title": "crt.sh certificate transparency — able.cz",
+        "url": "https://crt.sh/?q=able.cz",
+        "tier": 1,
+        "kind": "technical observation",
+        "retrievedAt": "2026-07-17",
+        "availability": null,
+        "note": null
+      }
+    },
+    {
+      "object_type": "statutory_role",
+      "object_id": "ROLE-tomas-melicharek-17b19cba",
+      "revision_id": "ROLE-tomas-melicharek-17b19cba@4274ad483e07afe9",
+      "content_hash": "4274ad483e07afe9",
+      "valid_from": "2012-10-03",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "governance.statutoryBody.since/until",
+      "payload": {
+        "name": "Tomáš Melichárek",
+        "role": "Statutory officer (jednatel)",
+        "since": "3 October 2012",
+        "until": null,
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "statutory_role",
+      "object_id": "ROLE-vaclav-faraga-17b19cba",
+      "revision_id": "ROLE-vaclav-faraga-17b19cba@0973125d0d2939d4",
+      "content_hash": "0973125d0d2939d4",
+      "valid_from": "2012-10-03",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "governance.statutoryBody.since/until",
+      "payload": {
+        "name": "Václav Faraga",
+        "role": "Statutory officer (jednatel)",
+        "since": "3 October 2012",
+        "until": null,
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ],
+        "note": null
+      }
+    },
+    {
+      "object_type": "timeline_event",
+      "object_id": "TLE-72c825e2",
+      "revision_id": "TLE-72c825e2@8076ec0f01e502ee",
+      "content_hash": "8076ec0f01e502ee",
+      "valid_from": "2012-10-03",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "timeline.date",
+      "payload": {
+        "date": "2012-10-03",
+        "event": "Able.cz s.r.o. incorporated; Faraga and Melichárek registered as statutory officers.",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "timeline_event",
+      "object_id": "TLE-98580124",
+      "revision_id": "TLE-98580124@df82bb2c6799eb94",
+      "content_hash": "df82bb2c6799eb94",
+      "valid_from": "2026-01-20",
+      "valid_to": null,
+      "valid_time_precision": "EXACT_DATE",
+      "valid_time_source": "timeline.date",
+      "payload": {
+        "date": "2026-01-20",
+        "event": "Most recent change observed in the public register.",
+        "status": "VERIFIED_PRIMARY",
+        "sources": [
+          "SRC-03"
+        ]
+      }
+    },
+    {
+      "object_type": "timeline_event",
+      "object_id": "TLE-efa249a6",
+      "revision_id": "TLE-efa249a6@21409a0613efe8fd",
+      "content_hash": "21409a0613efe8fd",
+      "valid_from": "2025",
+      "valid_to": null,
+      "valid_time_precision": "YEAR",
+      "valid_time_source": "timeline.date",
+      "payload": {
+        "date": "2025",
+        "event": "Able acquires 100% of Blackfish studio; combined team ~60; stated further-acquisition intent.",
+        "status": "CORROBORATED",
+        "sources": [
+          "SRC-04",
+          "SRC-05"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "able-cz-public-2026-07-17-r06",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "case_slug": "able-cz",
+  "publication_profile": "public",
+  "snapshot_sequence": 6,
+  "previous_snapshot_id": "able-cz-public-2026-07-17-r05",
+  "generated_at": "2026-07-18T08:43:03+02:00",
+  "evidence_cutoff": "2026-07-17",
+  "approved_at": "2026-07-18T08:43:03+02:00",
+  "approval_state": "PUBLISHED",
+  "canonical_case_revision": "f9fc4dc",
+  "prismatic_commit": null,
+  "prismatic_note": "Prismatic má koncepty (fact-row valid-time, content-hash lifecycle), ale žádný dossier-snapshot příkaz; kanonický případ žije v tomto repozitáři. Viz docs/dossier/temporal/00.",
+  "unable_commit": "f9fc4dc",
+  "generator_version": "temporal-1.0.0",
+  "content_hash": "c67279594796bc2881dbff52d482177397a883b5929d61bf2541586c3fb765af",
+  "object_manifest_hash": "78bb3cf4186aa80593fc7d6a57488d4ac7ef55d67e8ee37e3a741331438753f4",
+  "route_manifest_hash": null,
+  "finance_manifest_hash": null,
+  "graph_manifest_hash": null,
+  "search_index_hash": null,
+  "route_layer_note": "Historický snapshot bootstrapovaný z gitu: zachována je objektová vrstva (úplná), derivované route manifesty té doby zachovány nebyly. Poctivé omezení — viz docs/dossier/temporal/03.",
+  "counts": {
+    "by_type": {
+      "case_meta": 1,
+      "claim": 58,
+      "contradiction": 3,
+      "entity": 43,
+      "financial_fact": 23,
+      "governance_rule": 1,
+      "identity_field": 11,
+      "marketing_role": 4,
+      "open_question": 12,
+      "relationship": 60,
+      "resolved_question": 4,
+      "shareholding": 12,
+      "source": 22,
+      "statutory_role": 3,
+      "timeline_event": 11,
+      "transaction": 1
+    },
+    "entity_count": 43,
+    "relationship_count": 60,
+    "claim_live_count": 49,
+    "claim_superseded_count": 9,
+    "source_count": 22,
+    "contradiction_open_count": 2,
+    "contradiction_resolved_count": 1,
+    "gap_open_count": 12,
+    "gap_resolved_count": 4,
+    "timeline_event_count": 11,
+    "financial_fact_count": 23,
+    "transaction_count": 1
+  },
+  "state_distributions": {
+    "claim_states": {
+      "SELF_REPORTED": 14,
+      "CORROBORATED": 7,
+      "VERIFIED_PRIMARY": 25,
+      "ASSESSED": 10,
+      "NOT_FOUND": 1,
+      "BLOCKED": 1
+    },
+    "relationship_states": {
+      "VERIFIED_PRIMARY": 50,
+      "SELF_REPORTED": 7,
+      "CONTRADICTED": 1,
+      "CORROBORATED": 2
+    },
+    "identity_states": {
+      "VERIFIED_PRIMARY": 11
+    }
+  },
+  "production_url": "/dossier/snapshots/able-cz-public-2026-07-17-r06/",
+  "note": "Obnova SRC-22; opravy z adversariálního auditu."
+}

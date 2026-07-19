@@ -27,6 +27,11 @@ The short version, if you read nothing else:
   a provider failure is `BLOCKED`, never `NOT_FOUND`; mirrors of one upstream
   never count as independent corroboration. See `docs/dossier/evidence/`.
 - Never bump `reviewed_at` without actually re-checking the sources.
+- The dossier is **versioned**: immutable snapshots under
+  `static/data/dossier/snapshots/` (never hand-edit), first-class change
+  objects, and a canonical-drift gate — editing `dossier.json` requires
+  `npm run data:build` + `npm run verify` before committing. See
+  `docs/dossier/temporal/` and the "Temporal layer" section of AGENTS.md.
 - `/dossier/` is a **public-source due diligence of Able.cz s.r.o. (IČO
   24278815)** — authorized by the owner on the record (2026-07-17). That scope
   is fixed: any *other* named third party needs the owner's explicit sign-off.

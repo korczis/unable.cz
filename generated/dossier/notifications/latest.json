@@ -1,0 +1,27 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "notification-candidates",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "generatedAt": "2026-07-18",
+    "source": "static/data/dossier/snapshots/ (immutable manifests)",
+    "note": "Každá materiální změna je objekt první třídy s vlastní trasou. Sémantické změny — nikdy rozdíly formátování, pořadí polí nebo času buildu."
+  },
+  "from_snapshot_id": "able-cz-public-2026-07-17-r06",
+  "to_snapshot_id": "able-cz-public-2026-07-18-r07",
+  "candidates": [
+    {
+      "change_id": "CHG-0362",
+      "headline": "Mezní datum evidence posunuto: 2026-07-17 → 2026-07-18.",
+      "materiality": "INFORMATIONAL",
+      "object": "case_meta:META",
+      "summary": "changed case_meta META fields=[evidenceCutoff]",
+      "snapshot": "able-cz-public-2026-07-18-r07",
+      "effective_at": null,
+      "observed_at": null,
+      "public_url": "/dossier/changes/",
+      "should_notify": false,
+      "notification_reason": "pod prahem notifikace (HIGH)"
+    }
+  ]
+}

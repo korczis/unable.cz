@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{#- Detail jednoho neměnného snapshotu: manifest, hashe, počty, porovnání.
+    „Otevřít dossier v tomto snapshotu" vede poctivě na zmrazenou objektovou
+    vrstvu (objects.json) — úplné historické vykreslení route vrstvy pro
+    bootstrapované snapshoty zachováno nebylo a nepředstíráme opak. -#}
+
+{% block content %}
+{%- set m = load_data(path=page.extra.manifest_path) -%}
+{%- set idx = load_data(path=page.extra.index_path) -%}
+{%- set chg = load_data(path=page.extra.changes_path) -%}
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
+  <div class="mx-auto max-w-3xl">
+    <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
+      <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
+      <span class="px-1 text-white/30">/</span>
+      <a href="{{ get_url(path='@/dossier/snapshots/_index.md') | safe }}" class="hover:text-white/90">Snapshoty</a>
+      <span class="px-1 text-white/30">/</span><span class="text-white/80">{{ m.snapshot_id }}</span>
+    </nav>
+
+    <h1 class="mt-6 break-all font-sans text-2xl font-black sm:text-3xl">{{ m.snapshot_id }}</h1>
+    {%- if m.note %}<p class="mt-2 text-sm text-white/70">{{ m.note }}</p>{%- endif %}
+    {%- if m.snapshot_id == chg.current_snapshot_id %}
+    <p class="mt-2 inline-block rounded border border-[#d4af37]/40 bg-[#d4af37]/10 px-2 py-0.5 text-xs text-[#f3e5c0]">Aktuální publikovaný snapshot</p>
+    {%- endif %}
+
+    <div class="mt-6 flex flex-wrap gap-2 text-sm">
+      {%- if m.previous_snapshot_id %}
+      <a class="rounded border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="{{ get_url(path='@/dossier/changes/_index.md') | safe }}?from={{ m.previous_snapshot_id }}&to={{ m.snapshot_id }}">Porovnat s předchozím</a>
+      {%- endif %}
+      {%- if m.snapshot_id != chg.current_snapshot_id %}
+      <a class="rounded border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="{{ get_url(path='@/dossier/changes/_index.md') | safe }}?from={{ m.snapshot_id }}&to={{ chg.current_snapshot_id }}">Porovnat s aktuálním</a>
+      {%- endif %}
+      <a class="rounded border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="/data/dossier/snapshots/{{ m.snapshot_id }}/objects.json">Otevřít dossier v tomto snapshotu (objektová vrstva)</a>
+      <button type="button" id="copy-link" class="rounded border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" hidden>Kopírovat stabilní odkaz</button>
+    </div>
+    <p id="copy-state" class="mt-2 text-xs text-white/50" aria-live="polite"></p>
+    <p class="mt-2 text-xs text-white/45">{{ m.route_layer_note }}</p>
+
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Manifest</h2>
+    <dl class="mt-3 grid grid-cols-1 gap-x-6 gap-y-2 border-y border-white/10 py-4 text-sm sm:grid-cols-2">
+      <div><dt class="text-white/45">Pořadí</dt><dd class="font-mono text-white/90">{{ m.snapshot_sequence }}</dd></div>
+      <div><dt class="text-white/45">Mezní datum evidence</dt><dd class="font-mono text-white/90">{{ m.evidence_cutoff }}</dd></div>
+      <div><dt class="text-white/45">Vygenerováno</dt><dd class="font-mono text-white/90">{{ m.generated_at }}</dd></div>
+      <div><dt class="text-white/45">Stav schválení</dt><dd class="font-mono text-white/90">{{ m.approval_state }}</dd></div>
+      <div><dt class="text-white/45">Commit (unable.cz)</dt><dd class="font-mono text-white/90">{{ m.unable_commit }}</dd></div>
+      <div><dt class="text-white/45">Generátor</dt><dd class="font-mono text-white/90">{{ m.generator_version }}</dd></div>
+      <div><dt class="text-white/45">Předchozí snapshot</dt>
+        <dd class="font-mono text-xs text-white/80">{% if m.previous_snapshot_id %}<a class="underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/snapshots/' ~ m.previous_snapshot_id ~ '.md') | safe }}">{{ m.previous_snapshot_id }}</a>{% else %}— (první){% endif %}</dd></div>
+      <div><dt class="text-white/45">Publikační profil</dt><dd class="font-mono text-white/90">{{ m.publication_profile }}</dd></div>
+    </dl>
+
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Hashe (integrita)</h2>
+    <dl class="mt-3 space-y-2 text-xs">
+      <div><dt class="text-white/45">Sémantický hash obsahu</dt><dd class="mt-0.5 break-all font-mono text-white/85">{{ m.content_hash }}</dd></div>
+      <div><dt class="text-white/45">Hash objektového manifestu</dt><dd class="mt-0.5 break-all font-mono text-white/70">{{ m.object_manifest_hash }}</dd></div>
+      {%- if m.route_manifest_hash %}<div><dt class="text-white/45">Hash route manifestu (claims)</dt><dd class="mt-0.5 break-all font-mono text-white/70">{{ m.route_manifest_hash }}</dd></div>{%- endif %}
+      {%- if m.finance_manifest_hash %}<div><dt class="text-white/45">Hash finance manifestu</dt><dd class="mt-0.5 break-all font-mono text-white/70">{{ m.finance_manifest_hash }}</dd></div>{%- endif %}
+      {%- if m.graph_manifest_hash %}<div><dt class="text-white/45">Hash grafové projekce</dt><dd class="mt-0.5 break-all font-mono text-white/70">{{ m.graph_manifest_hash }}</dd></div>{%- endif %}
+    </dl>
+
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Počty objektů</h2>
+    <dl class="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 border-y border-white/10 py-4 text-sm sm:grid-cols-4">
+      <div><dt class="text-white/45">Tvrzení (živá)</dt><dd class="font-mono text-lg text-[#f3e5c0]">{{ m.counts.claim_live_count }}</dd></div>
+      <div><dt class="text-white/45">Nahrazená</dt><dd class="font-mono text-lg text-white/60">{{ m.counts.claim_superseded_count }}</dd></div>
+      <div><dt class="text-white/45">Zdroje</dt><dd class="font-mono text-lg text-white/90">{{ m.counts.source_count }}</dd></div>
+      <div><dt class="text-white/45">Entity</dt><dd class="font-mono text-lg text-white/90">{{ m.counts.entity_count }}</dd></div>
+      <div><dt class="text-white/45">Vztahy</dt><dd class="font-mono text-lg text-white/90">{{ m.counts.relationship_count }}</dd></div>
+      <div><dt class="text-white/45">Otevřené otázky</dt><dd class="font-mono text-lg text-white/90">{{ m.counts.gap_open_count }}</dd></div>
+      <div><dt class="text-white/45">Vyřešené otázky</dt><dd class="font-mono text-lg text-white/90">{{ m.counts.gap_resolved_count }}</dd></div>
+      <div><dt class="text-white/45">Finanční fakta</dt><dd class="font-mono text-lg text-white/90">{{ m.counts.financial_fact_count }}</dd></div>
+    </dl>
+
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Rozložení stavů tvrzení</h2>
+    <dl class="mt-3 grid grid-cols-2 gap-x-6 gap-y-1 text-sm sm:grid-cols-3">
+      {%- for k, v in m.state_distributions.claim_states %}
+      <div><dt class="inline text-white/45">{{ k }}: </dt><dd class="inline font-mono text-white/85">{{ v }}</dd></div>
+      {%- endfor %}
+    </dl>
+
+    {%- for p in chg.pairs %}{% if p.to_snapshot_id == m.snapshot_id %}
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Změny oproti předchozímu snapshotu</h2>
+    <p class="mt-2 text-sm text-white/70">
+      Přidáno {{ p.reconciliation.objects_added }} · odebráno {{ p.reconciliation.objects_removed }} ·
+      změněno {{ p.reconciliation.objects_changed }} · beze změny {{ p.reconciliation.objects_unchanged }}.
+      <a class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/changes/_index.md') | safe }}?from={{ p.from_snapshot_id }}&to={{ p.to_snapshot_id }}">Zobrazit všech {{ p.change_count }} změn</a>
+    </p>
+    {%- if p.change_count == 0 %}<p class="mt-2 text-sm text-white/60">Žádná sémantická změna (např. čistě publikační/deployment rozdíl se snapshotem nestane).</p>{%- endif %}
+    {% endif %}{% endfor %}
+
+    <p class="mt-10 text-xs text-white/30">
+      Manifest: <a class="underline decoration-white/30 underline-offset-2" href="/data/dossier/snapshots/{{ m.snapshot_id }}/manifest.json">manifest.json</a> ·
+      objekty: <a class="underline decoration-white/30 underline-offset-2" href="/data/dossier/snapshots/{{ m.snapshot_id }}/objects.json">objects.json</a>
+    </p>
+  </div>
+</main>
+
+<script>
+(function () {
+  "use strict";
+  var btn = document.getElementById("copy-link");
+  var state = document.getElementById("copy-state");
+  if (!btn || !navigator.clipboard) return;
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    navigator.clipboard.writeText(location.origin + location.pathname).then(function () {
+      state.textContent = "Odkaz zkopírován do schránky.";
+    }, function () {
+      state.textContent = "Kopírování se nepodařilo — odkaz: " + location.origin + location.pathname;
+    });
+  });
+})();
+</script>
+{% endblock content %}

@@ -1,0 +1,47 @@
+{
+  "id": "CHG-0207",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "added",
+  "change_type": "OWNERSHIP_CHANGED",
+  "object_type": "transaction",
+  "object_id": "TXN-able-blackfish-2025",
+  "old_revision_id": null,
+  "new_revision_id": "TXN-able-blackfish-2025@6a3773893592b80b",
+  "field_changes": [],
+  "effective_at": "2025-07-29",
+  "effective_time_precision": "EXACT_DATE",
+  "effective_time_source": "transactions.effectiveInRegister",
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "HIGH",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Transakce: Able.cz acquires 100 % of Blackfish & Co. s.r.o.",
+  "technical_summary": "added transaction TXN-able-blackfish-2025",
+  "source_ids": [
+    "SRC-12",
+    "SRC-04",
+    "SRC-05"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-14",
+    "CLM-21",
+    "CLM-22",
+    "CLM-51",
+    "CLM-54"
+  ],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0207/"
+}

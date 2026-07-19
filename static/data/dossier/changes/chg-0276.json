@@ -1,0 +1,40 @@
+{
+  "id": "CHG-0276",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r05",
+  "change_kind": "added",
+  "change_type": "RELATIONSHIP_ADDED",
+  "object_type": "relationship",
+  "object_id": "REL-e58",
+  "old_revision_id": null,
+  "new_revision_id": "REL-e58@9417f9b23fa8e053",
+  "field_changes": [],
+  "effective_at": "2017-09-17",
+  "effective_time_precision": "EXACT_DATE",
+  "effective_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T08:09:53+02:00",
+  "materiality": "HIGH",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Nový vztah (VERIFIED_PRIMARY): jednatel (since 2017 founding)",
+  "technical_summary": "added relationship REL-e58",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/#graph"
+  ],
+  "public_route": "/dossier/changes/chg-0276/"
+}

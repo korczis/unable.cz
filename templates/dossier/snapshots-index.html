@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{#- Rejstřík neměnných publikovaných snapshotů. Každý řádek vede na detail
+    s manifestem, hashi a porovnáním. Zahrnuje i publikační události
+    (stažení a obnovení publikace) — historie se nezamlčuje. -#}
+
+{% block content %}
+{%- set idx = load_data(path=section.extra.index_path) -%}
+{%- set chg = load_data(path=section.extra.changes_path) -%}
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
+  <div class="mx-auto max-w-4xl">
+    <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
+      <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
+      <span class="px-1 text-white/30">/</span><span class="text-white/80">Snapshoty</span>
+    </nav>
+
+    <h1 class="mt-6 font-sans text-3xl font-black">Publikované snapshoty</h1>
+    <p class="mt-2 max-w-3xl text-sm text-white/60">
+      Každý snapshot je neměnný záznam toho, co dossier v daném okamžiku veřejně tvrdil:
+      manifest s počty a hashi + úplné zmrazené revize všech objektů. Snapshot se nikdy
+      nepřepisuje ani nemaže; validátor selže, pokud by se obsah existujícího snapshotu změnil.
+    </p>
+
+    <dl class="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 border-y border-white/10 py-4 text-sm sm:grid-cols-3">
+      <div><dt class="text-white/45">Snapshotů</dt><dd class="font-mono text-lg text-white/90">{{ idx.snapshot_count }}</dd></div>
+      <div><dt class="text-white/45">První publikace</dt><dd class="font-mono text-sm text-white/80">2026-07-17</dd></div>
+      <div><dt class="text-white/45">Aktuální</dt><dd class="font-mono text-xs text-[#f3e5c0]">{{ idx.snapshots | last | get(key="snapshot_id") }}</dd></div>
+    </dl>
+
+    <div class="mt-8 overflow-x-auto">
+      <table class="w-full border-collapse text-left text-sm">
+        <caption class="sr-only">Rejstřík publikovaných snapshotů dossieru</caption>
+        <thead>
+          <tr class="border-b border-white/20 text-white/60">
+            <th scope="col" class="py-2 pr-3 font-medium">Snapshot</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Evidence k</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Živá tvrzení</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Zdroje</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Materiální změny od předchozího</th>
+            <th scope="col" class="py-2 font-medium">Poznámka</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for s in idx.snapshots | reverse %}
+          <tr class="border-b border-white/10 align-top">
+            <td class="py-2 pr-3 whitespace-nowrap"><a class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="{{ get_url(path='@/dossier/snapshots/' ~ s.snapshot_id ~ '.md') | safe }}">{{ s.snapshot_id }}</a></td>
+            <td class="py-2 pr-3 font-mono text-xs text-white/70">{{ s.evidence_cutoff }}</td>
+            <td class="py-2 pr-3 font-mono text-white/85">{{ s.counts.claims_live }}</td>
+            <td class="py-2 pr-3 font-mono text-white/85">{{ s.counts.sources }}</td>
+            <td class="py-2 pr-3 font-mono text-white/85">
+              {%- set_global mat = "—" %}
+              {%- for p in chg.pairs %}{% if p.to_snapshot_id == s.snapshot_id %}{% set_global mat = p.material_change_count %}{% endif %}{% endfor %}
+              {{ mat }}
+            </td>
+            <td class="py-2 text-xs text-white/60">{{ s.note }}</td>
+          </tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="mt-10 font-sans text-lg font-bold text-white/90">Publikační události</h2>
+    <ul class="mt-3 space-y-2 text-sm text-white/70">
+      {%- for e in idx.publication_events %}
+      <li><span class="font-mono text-xs text-white/50">{{ e.at }}</span> · <span class="font-mono text-xs {% if e.event == 'WITHDRAWN' %}text-[#d4af37]{% else %}text-[#f3e5c0]{% endif %}">{{ e.event }}</span> — {{ e.note }} <span class="font-mono text-xs text-white/40">({{ e.commit }})</span></li>
+      {%- endfor %}
+    </ul>
+    <p class="mt-3 text-xs text-white/40">{{ idx.retention_policy }}</p>
+
+    <p class="mt-10 text-xs text-white/30">
+      Zdroj: <a class="underline decoration-white/30 underline-offset-2" href="/data/dossier/snapshots/index.json">snapshots/index.json</a> ·
+      aktuální ukazatel: <a class="underline decoration-white/30 underline-offset-2" href="/data/dossier/snapshots/current.json">current.json</a>
+    </p>
+  </div>
+</main>
+{% endblock content %}

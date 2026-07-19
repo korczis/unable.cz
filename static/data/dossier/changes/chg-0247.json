@@ -1,0 +1,62 @@
+{
+  "id": "CHG-0247",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "OWNERSHIP_CHANGED",
+  "object_type": "shareholding",
+  "object_id": "SHARE-tomas-melicharek",
+  "old_revision_id": "SHARE-tomas-melicharek@2c4aa929e541d0be",
+  "new_revision_id": "SHARE-tomas-melicharek@81bb1e19022ad60f",
+  "field_changes": [
+    {
+      "field": "note",
+      "kind": "value",
+      "previous": null,
+      "current": "His podíl record was re-registered 20 Jan / 16 Mar / 2 Apr 2026 — the register footprint of the January–March 2026 execution (CLM-46/CLM-47)."
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-03"
+      ]
+    },
+    {
+      "field": "vklad",
+      "kind": "value",
+      "previous": null,
+      "current": "42,961.48 CZK (17.63 %)"
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": "governance.shareholders.since",
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "HIGH",
+  "epistemic_impact": "CORRECTED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Vlastnická struktura: Tomáš Melichárek — 42,961.48 CZK (17.63 %).",
+  "technical_summary": "changed shareholding SHARE-tomas-melicharek fields=[note,sources,vklad]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0247/"
+}

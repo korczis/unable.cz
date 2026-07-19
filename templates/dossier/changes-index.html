@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{#- Ledger změn: každá sémantická změna mezi publikovanými snapshoty.
+    Bez JavaScriptu je stránka plně čitelná (sekce po dvojicích snapshotů,
+    nejnovější první). JavaScript pouze doplňuje filtrování a URL stav
+    (?from=…&to=…&materialita=…&typ=…), který přežije reload i tlačítko Zpět. -#}
+
+{% block content %}
+{%- set m = load_data(path=section.extra.manifest_path) -%}
+{%- set snaps = load_data(path=section.extra.snapshots_path) -%}
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
+  <div class="mx-auto max-w-5xl">
+    <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
+      <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
+      <span class="px-1 text-white/30">/</span><span class="text-white/80">Změny</span>
+    </nav>
+
+    <h1 class="mt-6 font-sans text-3xl font-black">Co se změnilo</h1>
+    <p class="mt-2 max-w-3xl text-sm text-white/60">
+      Každá materiální změna dossieru je objekt první třídy: má vlastní ID, trasu, dvojici snapshotů,
+      materialitu, epistemický dopad a rozlišuje <strong class="text-white/80">datum účinnosti ve světě</strong>
+      od <strong class="text-white/80">data, kdy jsme se to dozvěděli</strong>. Rozdíly formátování, pořadí polí
+      ani čas buildu se změnou nikdy nestanou.
+    </p>
+
+    <dl class="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 border-y border-white/10 py-4 text-sm sm:grid-cols-4">
+      <div><dt class="text-white/45">Sémantických změn</dt><dd class="font-mono text-lg text-white/90">{{ m.total_changes }}</dd></div>
+      <div><dt class="text-white/45">Materiálních</dt><dd class="font-mono text-lg text-[#f3e5c0]">{{ m.material_changes }}</dd></div>
+      <div><dt class="text-white/45">Snapshotů</dt><dd class="font-mono text-lg text-white/90">{{ snaps.snapshot_count }}</dd></div>
+      <div><dt class="text-white/45">Aktuální snapshot</dt><dd class="font-mono text-xs text-white/70"><a class="underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/snapshots/' ~ m.current_snapshot_id ~ '.md') | safe }}">{{ m.current_snapshot_id }}</a></dd></div>
+    </dl>
+
+    <form id="chg-filters" class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3" hidden>
+      <label class="text-xs text-white/60">Dvojice snapshotů
+        <select id="f-pair" class="mt-1 w-full rounded border border-white/20 bg-black px-2 py-1.5 text-sm text-white">
+          <option value="">Všechny dvojice</option>
+          {%- for p in m.pairs | reverse %}
+          <option value="{{ p.from_snapshot_id }}..{{ p.to_snapshot_id }}">{{ p.from_snapshot_id }} → {{ p.to_snapshot_id }}</option>
+          {%- endfor %}
+        </select>
+      </label>
+      <label class="text-xs text-white/60">Materialita
+        <select id="f-mat" class="mt-1 w-full rounded border border-white/20 bg-black px-2 py-1.5 text-sm text-white">
+          <option value="">Vše</option>
+          <option>HIGH</option><option>MEDIUM</option><option>LOW</option><option>INFORMATIONAL</option>
+        </select>
+      </label>
+      <label class="text-xs text-white/60">Typ změny
+        <select id="f-typ" class="mt-1 w-full rounded border border-white/20 bg-black px-2 py-1.5 text-sm text-white">
+          <option value="">Vše</option>
+          {%- set types = m.changes | map(attribute="change_type") | unique | sort %}
+          {%- for t in types %}<option>{{ t }}</option>{%- endfor %}
+        </select>
+      </label>
+    </form>
+    <p id="chg-filter-state" class="mt-2 text-xs text-white/40" aria-live="polite"></p>
+
+    {%- for p in m.pairs | reverse %}
+    <section class="mt-10" data-pair="{{ p.from_snapshot_id }}..{{ p.to_snapshot_id }}" aria-labelledby="pair-{{ loop.index }}">
+      <h2 id="pair-{{ loop.index }}" class="font-sans text-lg font-bold text-white/90">
+        <span class="font-mono text-sm text-white/60">{{ p.from_snapshot_id }}</span>
+        <span class="px-1 text-white/40">→</span>
+        <span class="font-mono text-sm text-[#f3e5c0]">{{ p.to_snapshot_id }}</span>
+      </h2>
+      <p class="mt-1 text-xs text-white/50">
+        Přidáno {{ p.reconciliation.objects_added }} · odebráno {{ p.reconciliation.objects_removed }} ·
+        změněno {{ p.reconciliation.objects_changed }} · beze změny {{ p.reconciliation.objects_unchanged }} ·
+        materiálních změn {{ p.material_change_count }}
+      </p>
+      {%- if p.change_count == 0 %}
+      <p class="mt-3 rounded border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/70">Mezi těmito snapshoty nebyla zjištěna žádná sémantická změna.</p>
+      {%- else %}
+      {%- if p.executive | length > 0 %}
+      <div class="mt-3 rounded border border-[#d4af37]/30 bg-[#d4af37]/5 px-3 py-2">
+        <h3 class="text-xs font-semibold uppercase tracking-wide text-[#f3e5c0]">Souhrn pro čtenáře</h3>
+        <ul class="mt-1 space-y-1 text-sm text-white/85">
+          {%- for e in p.executive %}{% set eslug = e.change_id | lower %}
+          <li><span class="font-mono text-xs text-white/50">[{{ e.materiality }}]</span> {{ e.text }} <a class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/changes/' ~ eslug ~ '.md') | safe }}">{{ e.change_id }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endif %}
+      <div class="mt-3 overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <caption class="sr-only">Změny mezi snapshoty {{ p.from_snapshot_id }} a {{ p.to_snapshot_id }}</caption>
+          <thead>
+            <tr class="border-b border-white/20 text-white/60">
+              <th scope="col" class="py-2 pr-3 font-medium">ID</th>
+              <th scope="col" class="py-2 pr-3 font-medium">Materialita</th>
+              <th scope="col" class="py-2 pr-3 font-medium">Typ</th>
+              <th scope="col" class="py-2 pr-3 font-medium">Objekt</th>
+              <th scope="col" class="py-2 font-medium">Shrnutí</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for c in m.changes %}
+            {%- if c.from_snapshot_id == p.from_snapshot_id and c.to_snapshot_id == p.to_snapshot_id %}
+            <tr class="border-b border-white/10 align-top" data-mat="{{ c.materiality }}" data-typ="{{ c.change_type }}">
+              <td class="py-2 pr-3 whitespace-nowrap">
+                {%- if c.public_route %}{% set cslug = c.id | lower %}
+                <a class="font-mono text-[#f3e5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="{{ get_url(path='@/dossier/changes/' ~ cslug ~ '.md') | safe }}">{{ c.id }}</a>
+                {%- else %}<span class="font-mono text-white/50">{{ c.id }}</span>{%- endif %}
+              </td>
+              <td class="py-2 pr-3 whitespace-nowrap {% if c.materiality == 'HIGH' or c.materiality == 'CRITICAL' %}text-[#d4af37] font-semibold{% elif c.materiality == 'MEDIUM' %}text-[#f3e5c0]{% else %}text-white/45{% endif %}">{{ c.materiality }}</td>
+              <td class="py-2 pr-3 font-mono text-xs text-white/60">{{ c.change_type }}</td>
+              <td class="py-2 pr-3 font-mono text-xs text-white/60">{{ c.object_type }}:{{ c.object_id }}</td>
+              <td class="py-2 text-white/85">{{ c.public_summary }}</td>
+            </tr>
+            {%- endif %}
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+      {%- endif %}
+    </section>
+    {%- endfor %}
+
+    <p class="mt-10 text-xs text-white/30">
+      Zdroj: <a class="underline decoration-white/30 underline-offset-2" href="/data/dossier/changes/manifest.json">changes/manifest.json</a> ·
+      snapshoty: <a class="underline decoration-white/30 underline-offset-2" href="{{ get_url(path='@/dossier/snapshots/_index.md') | safe }}">/dossier/snapshots/</a> ·
+      generováno {{ m._export.generatedAt }} (deterministicky, k meznímu datu evidence)
+    </p>
+  </div>
+</main>
+
+<script>
+(function () {
+  "use strict";
+  var form = document.getElementById("chg-filters");
+  if (!form) return;
+  form.hidden = false;
+  var pairSel = document.getElementById("f-pair");
+  var matSel = document.getElementById("f-mat");
+  var typSel = document.getElementById("f-typ");
+  var state = document.getElementById("chg-filter-state");
+
+  function readParams() {
+    var q = new URLSearchParams(location.search);
+    var from = q.get("from"), to = q.get("to");
+    pairSel.value = from && to ? from + ".." + to : "";
+    if (pairSel.selectedIndex < 0) pairSel.value = "";
+    matSel.value = q.get("materialita") || "";
+    typSel.value = q.get("typ") || "";
+  }
+  function writeParams() {
+    var q = new URLSearchParams();
+    if (pairSel.value) { var p = pairSel.value.split(".."); q.set("from", p[0]); q.set("to", p[1]); }
+    if (matSel.value) q.set("materialita", matSel.value);
+    if (typSel.value) q.set("typ", typSel.value);
+    var url = location.pathname + (q.toString() ? "?" + q.toString() : "");
+    history.pushState(null, "", url);
+  }
+  function apply() {
+    var shown = 0, total = 0;
+    document.querySelectorAll("section[data-pair]").forEach(function (sec) {
+      var pairOk = !pairSel.value || sec.getAttribute("data-pair") === pairSel.value;
+      var visibleRows = 0;
+      sec.querySelectorAll("tbody tr").forEach(function (tr) {
+        total++;
+        var ok = pairOk
+          && (!matSel.value || tr.getAttribute("data-mat") === matSel.value)
+          && (!typSel.value || tr.getAttribute("data-typ") === typSel.value);
+        tr.hidden = !ok;
+        if (ok) { visibleRows++; shown++; }
+      });
+      sec.hidden = !pairOk || (visibleRows === 0 && sec.querySelector("tbody tr") !== null && (matSel.value || typSel.value));
+    });
+    state.textContent = (matSel.value || typSel.value || pairSel.value)
+      ? "Filtr aktivní: zobrazeno " + shown + " změn."
+      : "";
+  }
+  [pairSel, matSel, typSel].forEach(function (el) {
+    el.addEventListener("change", function () { writeParams(); apply(); });
+  });
+  window.addEventListener("popstate", function () { readParams(); apply(); });
+  readParams(); apply();
+})();
+</script>
+{% endblock content %}

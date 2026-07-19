@@ -1,0 +1,56 @@
+{
+  "id": "CHG-0239",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "OBJECT_CORRECTED",
+  "object_type": "identity_field",
+  "object_id": "ID-last-register-change-observed",
+  "old_revision_id": "ID-last-register-change-observed@317c75e021dfe1c1",
+  "new_revision_id": "ID-last-register-change-observed@93b91bdad20247fb",
+  "field_changes": [
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-03"
+      ]
+    },
+    {
+      "field": "value",
+      "kind": "value",
+      "previous": "20 January 2026",
+      "current": "2 April 2026 (latest shareholding re-registration in the VR record; ARES update stamp 16 April 2026)"
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "CORRECTED",
+  "category": "CORRECTION",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Opraven záznam ID-last-register-change-observed (identity_field): sources, value.",
+  "technical_summary": "changed identity_field ID-last-register-change-observed fields=[sources,value]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0239/"
+}

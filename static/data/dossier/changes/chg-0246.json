@@ -1,0 +1,75 @@
+{
+  "id": "CHG-0246",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "OWNERSHIP_CHANGED",
+  "object_type": "shareholding",
+  "object_id": "SHARE-radek-juhanak",
+  "old_revision_id": "SHARE-radek-juhanak@665e5698b460ea8a",
+  "new_revision_id": "SHARE-radek-juhanak@e0bcb01a20b12832",
+  "field_changes": [
+    {
+      "field": "note",
+      "kind": "value",
+      "previous": "Vklad amount from aggregator mirror, not a direct register fetch.",
+      "current": null
+    },
+    {
+      "field": "since",
+      "kind": "value",
+      "previous": null,
+      "current": "29 July 2025"
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-03",
+        "SRC-10"
+      ]
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "CORROBORATED",
+      "current": "VERIFIED_PRIMARY"
+    },
+    {
+      "field": "vklad",
+      "kind": "value",
+      "previous": "5,605 CZK (~2.3%)",
+      "current": "5,605.44 CZK (2.30 %)"
+    }
+  ],
+  "effective_at": "2025-07-29",
+  "effective_time_precision": "EXACT_DATE",
+  "effective_time_source": "governance.shareholders.since",
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "HIGH",
+  "epistemic_impact": "CORRECTED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Vlastnická struktura: Radek Juhaňák — 5,605.44 CZK (2.30 %).",
+  "technical_summary": "changed shareholding SHARE-radek-juhanak fields=[note,since,sources,status,vklad]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0246/"
+}

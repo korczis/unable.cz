@@ -4,7 +4,7 @@ description = "Due diligence Able.cz s.r.o. (IČO 24278815) z veřejných zdroj�
 template = "dossier.html"
 
 date = 2026-07-17
-updated = 2026-07-18
+updated = 2026-07-19
 
 [extra]
 seo_type = "Report"

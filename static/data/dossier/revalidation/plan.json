@@ -1,0 +1,83 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "revalidation-plan",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "snapshotId": "able-cz-public-2026-07-18-r07",
+    "evidenceCutoff": "2026-07-18",
+    "asOf": "2026-07-18",
+    "asOfNote": "Stav vyhodnocen k meznímu datu evidence (deterministicky). Prohlížeč navíc porovnává next_due_at s aktuálním datem klienta — označeno v UI.",
+    "generatedAt": "2026-07-18"
+  },
+  "taskCount": 4,
+  "tasks": [
+    {
+      "task_id": "REV-SRC-21",
+      "object_id": "SRC-21",
+      "object_type": "source",
+      "label": "ISIR — insolvenční rejstřík (subject lustrace, isir.justice.cz)",
+      "reason_due": "Poskytovatel je blokovaný / vrací chybu — nejde o zjištěnou negativní skutečnost.",
+      "last_verified": "2026-07-18",
+      "next_due_at": "2026-07-25",
+      "state": "BLOCKED",
+      "recommended_provider": "ISIR (SRC-21)",
+      "expected_information_gain": "Uzavření screeningu, který dosud nebylo možné provést.",
+      "affected_dependents": 2,
+      "estimated_effort": "jeden dotaz poskytovatele + přezkum diffů",
+      "priority_score": 77,
+      "materiality": "HIGH",
+      "stop_condition": "Úspěšný dotaz s uchovaným artefaktem, NEBO 3 neúspěšné pokusy → záznam zůstává BLOCKED s incidentem."
+    },
+    {
+      "task_id": "REV-CLM-58",
+      "object_id": "CLM-58",
+      "object_type": "claim",
+      "label": "Insolvency status for Able.cz s.r.o. could not be determined: the official insolvency register (ISIR) returned HTTP 500 to subject-search requests on both 2026-07-17 and 2026-07-18.",
+      "reason_due": "Poskytovatel je blokovaný / vrací chybu — nejde o zjištěnou negativní skutečnost.",
+      "last_verified": "2026-07-18",
+      "next_due_at": "2026-07-25",
+      "state": "BLOCKED",
+      "recommended_provider": "ISIR (SRC-21)",
+      "expected_information_gain": "Uzavření screeningu, který dosud nebylo možné provést.",
+      "affected_dependents": 0,
+      "estimated_effort": "jeden dotaz poskytovatele + přezkum diffů",
+      "priority_score": 75,
+      "materiality": "HIGH",
+      "stop_condition": "Úspěšný dotaz s uchovaným artefaktem, NEBO 3 neúspěšné pokusy → záznam zůstává BLOCKED s incidentem."
+    },
+    {
+      "task_id": "REV-SRC-06",
+      "object_id": "SRC-06",
+      "object_type": "source",
+      "label": "LinkedIn — Václav Faraga, Able.cz s.r.o.",
+      "reason_due": "Poskytovatel je blokovaný / vrací chybu — nejde o zjištěnou negativní skutečnost.",
+      "last_verified": "2026-07-17",
+      "next_due_at": "2027-01-13",
+      "state": "BLOCKED",
+      "recommended_provider": "web + archivace",
+      "expected_information_gain": "Uzavření screeningu, který dosud nebylo možné provést.",
+      "affected_dependents": 5,
+      "estimated_effort": "jeden dotaz poskytovatele + přezkum diffů",
+      "priority_score": 45,
+      "materiality": "LOW",
+      "stop_condition": "Úspěšný dotaz s uchovaným artefaktem, NEBO 3 neúspěšné pokusy → záznam zůstává BLOCKED s incidentem."
+    },
+    {
+      "task_id": "REV-SRC-09",
+      "object_id": "SRC-09",
+      "object_type": "source",
+      "label": "crt.sh certificate transparency — able.cz",
+      "reason_due": "Poskytovatel je blokovaný / vrací chybu — nejde o zjištěnou negativní skutečnost.",
+      "last_verified": "2026-07-17",
+      "next_due_at": "2026-08-16",
+      "state": "BLOCKED",
+      "recommended_provider": "DNS / crt.sh (SRC-07, SRC-09)",
+      "expected_information_gain": "Uzavření screeningu, který dosud nebylo možné provést.",
+      "affected_dependents": 2,
+      "estimated_effort": "jeden dotaz poskytovatele + přezkum diffů",
+      "priority_score": 42,
+      "materiality": "LOW",
+      "stop_condition": "Úspěšný dotaz s uchovaným artefaktem, NEBO 3 neúspěšné pokusy → záznam zůstává BLOCKED s incidentem."
+    }
+  ]
+}

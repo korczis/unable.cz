@@ -1,0 +1,57 @@
+{
+  "id": "CHG-0235",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "OBJECT_CORRECTED",
+  "object_type": "identity_field",
+  "object_id": "ID-court",
+  "old_revision_id": "ID-court@6182542100a25dfb",
+  "new_revision_id": "ID-court@dda3e0dc1ec50a5a",
+  "field_changes": [
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-03"
+      ]
+    },
+    {
+      "field": "value",
+      "kind": "value",
+      "previous": "Krajský soud v Brně (Regional Court in Brno)",
+      "current": "Krajský soud v Brně, C 85425 (since 13 Nov 2014); previously Městský soud v Praze, C 200323 (2012–2014)"
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "CORRECTED",
+  "category": "CORRECTION",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Opraven záznam ID-court (identity_field): sources, value.",
+  "technical_summary": "changed identity_field ID-court fields=[sources,value]",
+  "source_ids": [
+    "SRC-01",
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0235/"
+}

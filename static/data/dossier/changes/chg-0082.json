@@ -1,0 +1,40 @@
+{
+  "id": "CHG-0082",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r02",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "change_kind": "added",
+  "change_type": "FINANCIAL_PERIOD_ADDED",
+  "object_type": "financial_fact",
+  "object_id": "FIN-VERIFIED-equity-fy2024-fy2023",
+  "old_revision_id": null,
+  "new_revision_id": "FIN-VERIFIED-equity-fy2024-fy2023@7158d00938adb257",
+  "field_changes": [],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-17T21:17:13+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": "FIN-NOTFOUND-equity",
+  "requires_revalidation": false,
+  "public_summary": "Finanční údaj (verified): Equity (FY2024 / FY2023) = 26,592 / 25,849 tis. CZK.",
+  "technical_summary": "added financial_fact FIN-VERIFIED-equity-fy2024-fy2023",
+  "source_ids": [
+    "SRC-15"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/finance/"
+  ],
+  "public_route": "/dossier/changes/chg-0082/"
+}

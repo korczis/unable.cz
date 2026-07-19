@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "publication_profile": "public",
+  "snapshot_count": 7,
+  "publication_events": [
+    {
+      "at": "2026-07-17T19:43:43+02:00",
+      "commit": "186ea29",
+      "event": "WITHDRAWN",
+      "note": "Dossier dočasně stažen z publikace (revert)."
+    },
+    {
+      "at": "2026-07-17T19:51:07+02:00",
+      "commit": "db36129",
+      "event": "REPUBLISHED",
+      "note": "Publikace obnovena; kanonický obsah byte-identický se snapshotem r01."
+    }
+  ],
+  "retention_policy": "Všechny dříve publikované veřejné snapshoty se uchovávají trvale; snapshot se nikdy nemaže ani nepřepisuje (validátor selže na změně hashe).",
+  "snapshots": [
+    {
+      "snapshot_id": "able-cz-public-2026-07-17-r01",
+      "snapshot_sequence": 1,
+      "previous_snapshot_id": null,
+      "evidence_cutoff": "2026-07-17",
+      "generated_at": "2026-07-17T18:27:21+02:00",
+      "unable_commit": "cc56717",
+      "content_hash": "319528cdcd7a3e32634b7de2f69e71a76ea999999bf723b0d55c1e71e467b50b",
+      "counts": {
+        "claims_live": 15,
+        "claims_superseded": 0,
+        "sources": 6,
+        "entities": 12,
+        "relationships": 12
+      },
+      "note": "První publikovaný dossier (15 tvrzení, 6 zdrojů)."
+    },
+    {
+      "snapshot_id": "able-cz-public-2026-07-17-r02",
+      "snapshot_sequence": 2,
+      "previous_snapshot_id": "able-cz-public-2026-07-17-r01",
+      "evidence_cutoff": "2026-07-17",
+      "generated_at": "2026-07-17T19:55:05+02:00",
+      "unable_commit": "01aadea",
+      "content_hash": "78faeaef76161ee7497a3b62469c984a10ffc9f8d3f556cf7c71acd445792e05",
+      "counts": {
+        "claims_live": 15,
+        "claims_superseded": 0,
+        "sources": 9,
+        "entities": 21,
+        "relationships": 21
+      },
+      "note": "Měřená digitální stopa able.cz (DNS/VAT/TLS)."
+    },
+    {
+      "snapshot_id": "able-cz-public-2026-07-17-r03",
+      "snapshot_sequence": 3,
+      "previous_snapshot_id": "able-cz-public-2026-07-17-r02",
+      "evidence_cutoff": "2026-07-17",
+      "generated_at": "2026-07-17T21:17:13+02:00",
+      "unable_commit": "8004298",
+      "content_hash": "abd072f946edc11e9dea88ad940527ee6e319607a23800e83800c20c32ac95e7",
+      "counts": {
+        "claims_live": 27,
+        "claims_superseded": 0,
+        "sources": 19,
+        "entities": 41,
+        "relationships": 48
+      },
+      "note": "Vlastnická síť + Sbírka listin; nález ZenX Capital ~45,8 %."
+    },
+    {
+      "snapshot_id": "able-cz-public-2026-07-17-r04",
+      "snapshot_sequence": 4,
+      "previous_snapshot_id": "able-cz-public-2026-07-17-r03",
+      "evidence_cutoff": "2026-07-17",
+      "generated_at": "2026-07-18T07:59:27+02:00",
+      "unable_commit": "9c99b53",
+      "content_hash": "444707edcb5bdb5ab0671d4d4c9c340452c0538464ff01b2e1321b19cc3e40fe",
+      "counts": {
+        "claims_live": 49,
+        "claims_superseded": 9,
+        "sources": 22,
+        "entities": 41,
+        "relationships": 48
+      },
+      "note": "Surová evidenční vrstva (ARES, artefakty, provider runs)."
+    },
+    {
+      "snapshot_id": "able-cz-public-2026-07-17-r05",
+      "snapshot_sequence": 5,
+      "previous_snapshot_id": "able-cz-public-2026-07-17-r04",
+      "evidence_cutoff": "2026-07-17",
+      "generated_at": "2026-07-18T08:09:53+02:00",
+      "unable_commit": "57fbf68",
+      "content_hash": "d7b85351d788cced68a74b92cb54554d0fc3e49bb56e59e8e987e9c2201847dc",
+      "counts": {
+        "claims_live": 49,
+        "claims_superseded": 9,
+        "sources": 22,
+        "entities": 43,
+        "relationships": 60
+      },
+      "note": "Obohacení z primárních zdrojů; 58 tvrzení; vyřešený rozpor."
+    },
+    {
+      "snapshot_id": "able-cz-public-2026-07-17-r06",
+      "snapshot_sequence": 6,
+      "previous_snapshot_id": "able-cz-public-2026-07-17-r05",
+      "evidence_cutoff": "2026-07-17",
+      "generated_at": "2026-07-18T08:43:03+02:00",
+      "unable_commit": "f9fc4dc",
+      "content_hash": "c67279594796bc2881dbff52d482177397a883b5929d61bf2541586c3fb765af",
+      "counts": {
+        "claims_live": 49,
+        "claims_superseded": 9,
+        "sources": 22,
+        "entities": 43,
+        "relationships": 60
+      },
+      "note": "Obnova SRC-22; opravy z adversariálního auditu."
+    },
+    {
+      "snapshot_id": "able-cz-public-2026-07-18-r07",
+      "snapshot_sequence": 7,
+      "previous_snapshot_id": "able-cz-public-2026-07-17-r06",
+      "evidence_cutoff": "2026-07-18",
+      "generated_at": "2026-07-18T21:32:38+02:00",
+      "unable_commit": "05a72d3",
+      "content_hash": "5a2646a179cbc66fbc27f1be4d0e541814315442f91e75165e018bb38cad4292",
+      "counts": {
+        "claims_live": 49,
+        "claims_superseded": 9,
+        "sources": 22,
+        "entities": 43,
+        "relationships": 60
+      },
+      "note": "Konvergence mezního data evidence na 2026-07-18."
+    }
+  ]
+}

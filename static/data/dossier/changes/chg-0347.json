@@ -1,0 +1,87 @@
+{
+  "id": "CHG-0347",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r05",
+  "change_kind": "changed",
+  "change_type": "STATUS_CHANGED",
+  "object_type": "relationship",
+  "object_id": "REL-e38",
+  "old_revision_id": "REL-e38@019cfd8ef37fd5d1",
+  "new_revision_id": "REL-e38@0f16c492227b0640",
+  "field_changes": [
+    {
+      "field": "confidence",
+      "kind": "value",
+      "previous": "medium",
+      "current": "high"
+    },
+    {
+      "field": "firstObserved",
+      "kind": "value",
+      "previous": null,
+      "current": "2026-06-26"
+    },
+    {
+      "field": "label",
+      "kind": "value",
+      "previous": "jednatel + 25%",
+      "current": "jednatel + 100% (founded 26 Jun 2026)"
+    },
+    {
+      "field": "predicate",
+      "kind": "value",
+      "previous": null,
+      "current": "SHAREHOLDER_OF"
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-10"
+      ]
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "CORROBORATED",
+      "current": "VERIFIED_PRIMARY"
+    },
+    {
+      "field": "why",
+      "kind": "value",
+      "previous": "Aggregator mirror lists Lukáš Grolig as jednatel and 25% shareholder of Usporix, s.r.o.; unrelated to Able.cz.",
+      "current": "CORRECTION: the mirror reported a 25% stake; the primary VR record shows Grolig holds all four 25% units (100%) of Usporix, founded weeks before the evidence cutoff."
+    }
+  ],
+  "effective_at": "2026-06-26",
+  "effective_time_precision": "EXACT_DATE",
+  "effective_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T08:09:53+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "REL-e38: stav evidence CORROBORATED → VERIFIED_PRIMARY.",
+  "technical_summary": "changed relationship REL-e38 fields=[confidence,firstObserved,label,predicate,sources,status,why]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/#graph"
+  ],
+  "public_route": "/dossier/changes/chg-0347/"
+}

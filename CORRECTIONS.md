@@ -67,3 +67,13 @@ earlier records (each traceable to a hashed artifact; see
 10. **Stale gap removed**: "filed financial statements not retrieved" remained
     listed as an open question after the statements had been retrieved and
     parsed — moved to resolvedQuestions (RQ-01) with resolving evidence.
+
+## Correction mechanics since the temporal layer (2026-07-19)
+
+Corrections are now machine-auditable: a corrected record produces a new
+immutable revision, a change object (`OBJECT_CORRECTED` / `CLAIM_CORRECTED` /
+`FINANCIAL_VALUE_CORRECTED`, category CORRECTION) with field-level old/new
+values, and remains visible in every prior snapshot it appeared in. Silent
+overwrites of published state now fail the build (`npm run temporal:validate`).
+The historical corrections listed above are visible retroactively in the
+r01→…→r07 change ledger at /dossier/changes/.

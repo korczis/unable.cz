@@ -1,0 +1,65 @@
+{
+  "id": "CHG-0224",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "CLAIM_SUPERSEDED",
+  "object_type": "claim",
+  "object_id": "CLM-27",
+  "old_revision_id": "CLM-27@a8b087032336aa95",
+  "new_revision_id": "CLM-27@209c9d44b8e155fd",
+  "field_changes": [
+    {
+      "field": "superseded",
+      "kind": "value",
+      "previous": false,
+      "current": true
+    },
+    {
+      "field": "supersededBy",
+      "kind": "collection",
+      "added": [
+        "CLM-49",
+        "CLM-50"
+      ],
+      "removed": []
+    },
+    {
+      "field": "supersededReason",
+      "kind": "value",
+      "previous": null,
+      "current": "Mixed filed figures with an analytical comparison; split into observation + assessment 2026-07-18 with exact citations."
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "CORRECTED",
+  "category": "CORRECTION",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Tvrzení CLM-27 nahrazeno (CLM-49, CLM-50). Důvod: Mixed filed figures with an analytical comparison; split into observation + assessment 2026-07-18 with exact citations.",
+  "technical_summary": "changed claim CLM-27 fields=[superseded,supersededBy,supersededReason]",
+  "source_ids": [
+    "SRC-18",
+    "SRC-19"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-27"
+  ],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/claims/clm-27/"
+  ],
+  "public_route": "/dossier/changes/chg-0224/"
+}

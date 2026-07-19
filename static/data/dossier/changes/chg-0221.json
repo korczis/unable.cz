@@ -1,0 +1,73 @@
+{
+  "id": "CHG-0221",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "CLAIM_SUPERSEDED",
+  "object_type": "claim",
+  "object_id": "CLM-24",
+  "old_revision_id": "CLM-24@3a2456faa7885254",
+  "new_revision_id": "CLM-24@4d9d993e5ac38cb0",
+  "field_changes": [
+    {
+      "field": "note",
+      "kind": "value",
+      "previous": "The causal link between the Blackfish departure and the Artstay/Lovs & Co. role is an inference from timing, not a sourced fact — labelled NOT_FOUND for the 'why'.",
+      "current": null
+    },
+    {
+      "field": "superseded",
+      "kind": "value",
+      "previous": false,
+      "current": true
+    },
+    {
+      "field": "supersededBy",
+      "kind": "collection",
+      "added": [
+        "CLM-41",
+        "CLM-42",
+        "CLM-43"
+      ],
+      "removed": []
+    },
+    {
+      "field": "supersededReason",
+      "kind": "value",
+      "previous": null,
+      "current": "Overloaded, and the renaming direction was recorded backwards (the register shows Lovs & Co. s.r.o. was renamed TO Artstay s.r.o. on 13 Feb 2024, not the reverse). Split and primary-sourced 2026-07-18; see CON-03 for the 2021 media-vs-register ownership timing."
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "CORRECTED",
+  "category": "CORRECTION",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Tvrzení CLM-24 nahrazeno (CLM-41, CLM-42, CLM-43). Důvod: Overloaded, and the renaming direction was recorded backwards (the register shows Lovs & Co. s.r.o. was renamed TO Artstay s.r.o. on 13 Feb…",
+  "technical_summary": "changed claim CLM-24 fields=[note,superseded,supersededBy,supersededReason]",
+  "source_ids": [
+    "SRC-10",
+    "SRC-11",
+    "SRC-13"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-24"
+  ],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/claims/clm-24/"
+  ],
+  "public_route": "/dossier/changes/chg-0221/"
+}

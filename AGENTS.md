@@ -165,6 +165,29 @@ out of scope for `scripts/seo-validate.mjs`). Treat a PR/commit that adds
 English prose under `/dossier/*` as a review-blocking mistake, the same way an
 unsourced claim is.
 
+## Temporal layer (snapshots, changes, history)
+
+The dossier is versioned. Working rules (details: `docs/dossier/temporal/`):
+
+- **Never edit or delete anything under `static/data/dossier/snapshots/` or
+  `generated/dossier/snapshots/` by hand.** Snapshots are immutable published
+  history; `npm run temporal:validate` fails on any hash drift, and the
+  bootstrap refuses divergent overwrites.
+- Changing `data/dossier/able/dossier.json` requires regenerating the temporal
+  layer before committing: `npm run data:build` (which runs `temporal:build` —
+  a new snapshot is created only when the semantic hash actually changed) and
+  `npm run verify`. The canonical-drift gate fails the build otherwise.
+- Change objects (`CHG-*`), snapshot manifests, freshness/revalidation data and
+  the routes under `content/dossier/{changes,snapshots}/` +
+  `content/dossier/{history,revalidation,monitoring}.md` are **generated —
+  never hand-edit** them; fix the generator or the canonical data.
+- Time-axis discipline: discovery dates are never event dates. If you add a
+  dated fact, put the real-world date in the canonical valid-time field
+  (`timeline.date`, `since`/`until`, `effectiveInRegister`, node `validFrom`)
+  and let retrieval dates live only in `retrievedAt`/provider runs.
+- The monitoring page describes a *plan*; do not add wording implying live
+  background monitoring unless such infrastructure actually exists.
+
 ## Adding a page
 
 ```bash

@@ -264,6 +264,12 @@
       { selector: ".gw-sel", style: { "border-width": 4, "border-color": GOLD } },
       { selector: ".gw-path", style: { "line-color": GOLD, width: 4, "target-arrow-color": GOLD, opacity: 1 } },
       { selector: ".gw-pathnode", style: { "border-width": 4, "border-color": GOLD, opacity: 1 } },
+      // snapshot change mode (§26): added = champagne double border, changed =
+      // gold; never color-only — the mode always renders a textual table too.
+      { selector: "node.chg-added", style: { "border-width": 5, "border-color": CHAMPAGNE, "border-style": "double", opacity: 1 } },
+      { selector: "edge.chg-added", style: { "line-color": CHAMPAGNE, width: 3.5, opacity: 1, "target-arrow-color": CHAMPAGNE } },
+      { selector: "node.chg-changed", style: { "border-width": 4, "border-color": GOLD, "border-style": "dashed", opacity: 1 } },
+      { selector: "edge.chg-changed", style: { "line-color": GOLD, width: 3, opacity: 1, "target-arrow-color": GOLD } },
     ],
     layout: { name: "concentric", animate: false },
     autoungrabify: true,
@@ -895,4 +901,75 @@
       "@media(prefers-reduced-motion:reduce){.gw-inspector{transition:none}}";
     var st = document.createElement("style"); st.id = "gw-style"; st.textContent = css; document.head.appendChild(st);
   }
+
+  // ---- snapshot change mode (?mode=changes&from=…&to=…) — PROMPT-09 §26 ----
+  // Compares two immutable snapshot object layers. Visual highlighting is
+  // applied ONLY when the target snapshot equals the snapshot this page
+  // actually renders (anything else would paint an old diff onto new data);
+  // the textual table alternative is rendered always, and removals — which
+  // by definition have no node to highlight — appear only there.
+  (function changeMode() {
+    var q = new URL(window.location.href).searchParams;
+    if (q.get("mode") !== "changes") return;
+    var from = q.get("from"), to = q.get("to");
+    if (!from || !to) return;
+    function grab(u) { return fetch(u).then(function (r) { return r.ok ? r.json() : null; }); }
+    Promise.all([
+      grab("/data/dossier/snapshots/" + encodeURIComponent(from) + "/objects.json"),
+      grab("/data/dossier/snapshots/" + encodeURIComponent(to) + "/objects.json"),
+      grab("/data/dossier/snapshots/current.json"),
+    ]).then(function (res) {
+      var A = res[0], B = res[1], cur = res[2];
+      var wrap = host.closest(".gw-root") || host;
+      var banner = document.createElement("div");
+      banner.setAttribute("role", "region");
+      banner.setAttribute("aria-label", "Porovnání snapshotů v grafu");
+      banner.style.cssText = "border:1px solid rgba(212,175,55,.4);background:rgba(212,175,55,.06);border-radius:.5rem;padding:.8rem 1rem;margin:0 0 .8rem;font-size:.85rem;color:#e5e7eb";
+      if (!A || !B) {
+        banner.innerHTML = "<strong>Porovnání snapshotů se nepodařilo načíst.</strong> Zkontrolujte ID: " + esc(from) + " → " + esc(to) + ". <a href='" + location.pathname + "' style='color:" + CHAMPAGNE + ";text-decoration:underline'>Zpět na běžný graf</a>";
+        wrap.parentNode.insertBefore(banner, wrap);
+        return;
+      }
+      function indexOf(objs) {
+        var m = {};
+        objs.objects.forEach(function (o) {
+          if (o.object_type === "entity" || o.object_type === "relationship") m[o.object_type + ":" + o.object_id] = o;
+        });
+        return m;
+      }
+      var ia = indexOf(A), ib = indexOf(B);
+      var added = [], removed = [], changed = [];
+      Object.keys(ib).forEach(function (k) {
+        if (!ia[k]) added.push(ib[k]);
+        else if (ia[k].content_hash !== ib[k].content_hash) changed.push(ib[k]);
+      });
+      Object.keys(ia).forEach(function (k) { if (!ib[k]) removed.push(ia[k]); });
+      var gid = function (o) { return o.object_id.replace(/^(ENT|REL)-/, ""); };
+      var visual = cur && cur.snapshot_id === to;
+      if (visual) {
+        cy.elements().addClass("gw-faded");
+        added.forEach(function (o) { cy.getElementById(gid(o)).removeClass("gw-faded").addClass("chg-added"); });
+        changed.forEach(function (o) { cy.getElementById(gid(o)).removeClass("gw-faded").addClass("chg-changed"); });
+      }
+      var lbl = function (o) { return esc(o.payload.label || o.object_id); };
+      function rows(list, tag) {
+        return list.map(function (o) {
+          return "<tr><td style='padding:.2rem .6rem .2rem 0;white-space:nowrap;font-family:ui-monospace,monospace;font-size:.72rem;color:rgba(255,255,255,.55)'>" + tag + "</td>" +
+            "<td style='padding:.2rem .6rem .2rem 0;font-family:ui-monospace,monospace;font-size:.72rem;color:rgba(255,255,255,.55)'>" + esc(o.object_type) + "</td>" +
+            "<td style='padding:.2rem 0'>" + lbl(o) + "</td></tr>";
+        }).join("");
+      }
+      banner.innerHTML =
+        "<strong>Režim porovnání snapshotů:</strong> <span style='font-family:ui-monospace,monospace;font-size:.78rem'>" + esc(from) + "</span> → <span style='font-family:ui-monospace,monospace;font-size:.78rem;color:" + CHAMPAGNE + "'>" + esc(to) + "</span>. " +
+        "Přidáno " + added.length + " · změněno " + changed.length + " · odebráno " + removed.length + " (entity a vztahy). " +
+        (visual ? "Přidané prvky mají dvojitý světlý okraj, změněné zlatý čárkovaný; ostatní jsou ztlumené. Odebrané prvky v aktuálním grafu nejsou — viz tabulka níže. "
+                : "Cílový snapshot není aktuálně vykreslený stav grafu, proto se rozdíl zobrazuje pouze tabulkou (nic se nepředstírá). ") +
+        "<a href='" + location.pathname + "' style='color:" + CHAMPAGNE + ";text-decoration:underline;text-underline-offset:2px'>Ukončit porovnání</a>" +
+        "<details style='margin-top:.5rem'><summary style='cursor:pointer;font-size:.78rem;color:rgba(255,255,255,.6)'>Tabulková alternativa (přístupná verze diffu)</summary>" +
+        "<table style='margin-top:.4rem;border-collapse:collapse;font-size:.8rem'><caption style='text-align:left;font-size:.7rem;color:rgba(255,255,255,.4);padding-bottom:.3rem'>Rozdíl grafové vrstvy mezi snapshoty</caption>" +
+        "<thead><tr><th scope='col' style='text-align:left;padding-right:.6rem;color:rgba(255,255,255,.5);font-weight:500'>Změna</th><th scope='col' style='text-align:left;padding-right:.6rem;color:rgba(255,255,255,.5);font-weight:500'>Typ</th><th scope='col' style='text-align:left;color:rgba(255,255,255,.5);font-weight:500'>Záznam</th></tr></thead>" +
+        "<tbody>" + rows(added, "přidáno") + rows(changed, "změněno") + rows(removed, "odebráno") + "</tbody></table></details>";
+      wrap.parentNode.insertBefore(banner, wrap);
+    }).catch(function () { /* comparison is an enhancement; the base graph stays intact */ });
+  })();
 })();

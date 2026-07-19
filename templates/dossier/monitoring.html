@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{#- Plán monitoringu — poctivě označený jako PLÁN. Žádná běžící infrastruktura
+    se nepředstírá; poslední kontroly jsou doložené v provider-runs.ndjson. -#}
+
+{% block content %}
+{%- set mon = load_data(path=page.extra.monitoring_path) -%}
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
+  <div class="mx-auto max-w-4xl">
+    <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
+      <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
+      <span class="px-1 text-white/30">/</span><span class="text-white/80">Monitoring</span>
+    </nav>
+
+    <h1 class="mt-6 font-sans text-3xl font-black">Plán monitoringu</h1>
+    <div class="mt-4 rounded border border-[#d4af37]/30 bg-[#d4af37]/5 px-4 py-3 text-sm text-white/85">
+      {{ mon.wording_note }}
+    </div>
+
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Sledované subjekty</h2>
+    <ul class="mt-3 space-y-2 text-sm">
+      {%- for e in mon.monitored_entities %}
+      <li class="rounded border border-white/10 bg-white/5 px-3 py-2">
+        <span class="text-white/90">{{ e.name }}</span>
+        <span class="ml-2 text-xs text-white/50">— {{ e.why }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Poskytovatelé a kadence</h2>
+    <div class="mt-3 overflow-x-auto">
+      <table class="w-full border-collapse text-left text-sm">
+        <caption class="sr-only">Plán kontrol podle poskytovatelů</caption>
+        <thead>
+          <tr class="border-b border-white/20 text-white/60">
+            <th scope="col" class="py-2 pr-3 font-medium">Politika</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Poskytovatel</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Kadence</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Poslední dokončená kontrola</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Další doporučená</th>
+            <th scope="col" class="py-2 pr-3 font-medium">Stav</th>
+            <th scope="col" class="py-2 font-medium">Záznamů</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for p in mon.providers %}
+          <tr class="border-b border-white/10 align-top">
+            <td class="py-2 pr-3 font-mono text-xs text-white/70">{{ p.policy_id }}</td>
+            <td class="py-2 pr-3 text-white/85">{{ p.provider }}</td>
+            <td class="py-2 pr-3 font-mono text-xs text-white/70">{% if p.cadence_days %}{{ p.cadence_days }} dní{% else %}—{% endif %}</td>
+            <td class="py-2 pr-3 font-mono text-xs text-white/70">{{ p.last_completed_check | default(value="—") }}</td>
+            <td class="py-2 pr-3 font-mono text-xs text-white/70">{{ p.next_recommended_check | default(value="—") }}</td>
+            <td class="py-2 pr-3 font-mono text-xs {% if p.status == 'BLOCKED' %}text-[#d4af37] font-semibold{% elif p.status == 'OK' %}text-[#f3e5c0]{% else %}text-white/70{% endif %}">{{ p.status }}{% if p.open_failures > 0 %} <span class="text-white/45">({{ p.open_failures }} selhání)</span>{% endif %}</td>
+            <td class="py-2 font-mono text-xs text-white/70">{{ p.monitored_records }}</td>
+          </tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-3 text-xs text-white/45">Důvody kadencí: {% for p in mon.providers %}<span class="text-white/60">{{ p.policy_id }}</span> — {{ p.why }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+
+    <p class="mt-10 text-xs text-white/30">
+      Data: <a class="underline decoration-white/30 underline-offset-2" href="/data/dossier/revalidation/monitoring.json">monitoring.json</a> ·
+      fronta: <a class="underline decoration-white/30 underline-offset-2" href="{{ get_url(path='@/dossier/revalidation.md') | safe }}">/dossier/revalidation/</a>
+    </p>
+  </div>
+</main>
+{% endblock content %}

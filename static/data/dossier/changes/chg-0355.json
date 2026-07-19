@@ -1,0 +1,90 @@
+{
+  "id": "CHG-0355",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r05",
+  "change_kind": "changed",
+  "change_type": "STATUS_CHANGED",
+  "object_type": "relationship",
+  "object_id": "REL-e46",
+  "old_revision_id": "REL-e46@802c71f8c1150def",
+  "new_revision_id": "REL-e46@8b3acc09f3f99019",
+  "field_changes": [
+    {
+      "field": "confidence",
+      "kind": "value",
+      "previous": "medium",
+      "current": "high"
+    },
+    {
+      "field": "label",
+      "kind": "value",
+      "previous": "jednatel + společník (Jun 2022–Feb 2024)",
+      "current": "jednatel + 30% (Jun 2022 – Feb 2024)"
+    },
+    {
+      "field": "lastObserved",
+      "kind": "value",
+      "previous": null,
+      "current": "2024-02-23"
+    },
+    {
+      "field": "predicate",
+      "kind": "value",
+      "previous": null,
+      "current": "SHAREHOLDER_OF"
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12",
+        "SRC-13"
+      ],
+      "removed": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "CORROBORATED",
+      "current": "VERIFIED_PRIMARY"
+    },
+    {
+      "field": "why",
+      "kind": "value",
+      "previous": "Register mirror shows Lukáš Oslzla as Blackfish jednatel/co-owner from Jun 2022, removed Feb 2024 — about 17 months before Able's acquisition. No public source explains the departure.",
+      "current": "The primary VR record shows Oslzla as Blackfish jednatel 8 Jun 2022–22 Feb 2024 and 30% shareholder 9 Jun 2022–23 Feb 2024. Media had him as ~30% owner already in 2021 — see CON-03."
+    }
+  ],
+  "effective_at": "2022-06-08",
+  "effective_time_precision": "EXACT_DATE",
+  "effective_time_source": "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)",
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T08:09:53+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "REL-e46: stav evidence CORROBORATED → VERIFIED_PRIMARY.",
+  "technical_summary": "changed relationship REL-e46 fields=[confidence,label,lastObserved,predicate,sources,status,why]",
+  "source_ids": [
+    "SRC-12",
+    "SRC-13"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/#graph"
+  ],
+  "public_route": "/dossier/changes/chg-0355/"
+}

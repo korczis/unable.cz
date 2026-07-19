@@ -1,0 +1,42 @@
+{
+  "id": "CHG-0182",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "added",
+  "change_type": "FINANCIAL_PERIOD_ADDED",
+  "object_type": "financial_fact",
+  "object_id": "FIN-VERIFIED-purchased-services-a-3-sluzby-fy2024-fy2023",
+  "old_revision_id": null,
+  "new_revision_id": "FIN-VERIFIED-purchased-services-a-3-sluzby-fy2024-fy2023@36f12528f62e0931",
+  "field_changes": [],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "Finanční údaj (verified): Purchased services — 'A.3 Služby' (FY2024 / FY2023) = 38,734 / 40,612 tis. CZK.",
+  "technical_summary": "added financial_fact FIN-VERIFIED-purchased-services-a-3-sluzby-fy2024-fy2023",
+  "source_ids": [
+    "SRC-15"
+  ],
+  "evidence_ids": [
+    "EVD-SL68-SERVICES"
+  ],
+  "affected_claim_ids": [],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/finance/"
+  ],
+  "public_route": "/dossier/changes/chg-0182/"
+}

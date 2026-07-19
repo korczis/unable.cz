@@ -82,3 +82,13 @@ live under `static/data/able-cz/evidence/` and are verified at build time
 `CON-01` — court file: **C 85424** (company GDPR page, S-03) vs **C 85425**
 (register, S-01). The register is authoritative; the discrepancy is recorded, not
 silently normalized.
+
+## Snapshot provenance (added 2026-07-19)
+
+Every published dossier state is provenance-tracked: snapshot manifests carry
+the publishing git commit, evidence cutoff, generator version and SHA-256
+semantic content hash; the bootstrapped history (r01–r07) reconstructs the
+actually-deployed states from git, including the 2026-07-17 withdrawal and
+re-publication (recorded as publication events, not smoothed over). The
+`current.json` pointer plus the snapshot id/hash rendered on /dossier/ let
+anyone verify what production publishes against the canonical data.

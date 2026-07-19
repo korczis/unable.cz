@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{#- Detail jedné změny: staré vs. nové hodnoty jsou označeny TEXTEM
+    („Předchozí hodnota" / „Aktuální hodnota", „přidáno" / „odebráno"),
+    nikdy jen barvou. Časové osy jsou důsledně oddělené. -#}
+
+{% block content %}
+{%- set c = load_data(path=page.extra.data_path) -%}
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
+  <div class="mx-auto max-w-3xl">
+    <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
+      <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
+      <span class="px-1 text-white/30">/</span>
+      <a href="{{ get_url(path='@/dossier/changes/_index.md') | safe }}" class="hover:text-white/90">Změny</a>
+      <span class="px-1 text-white/30">/</span><span class="text-white/80">{{ c.id }}</span>
+    </nav>
+
+    <p class="mt-6 flex flex-wrap gap-2 text-xs">
+      <span class="rounded border border-white/20 px-2 py-0.5 font-mono {% if c.materiality == 'HIGH' or c.materiality == 'CRITICAL' %}border-[#d4af37]/60 text-[#d4af37]{% elif c.materiality == 'MEDIUM' %}text-[#f3e5c0]{% else %}text-white/60{% endif %}">materialita: {{ c.materiality }}</span>
+      <span class="rounded border border-white/20 px-2 py-0.5 font-mono text-white/60">{{ c.change_type }}</span>
+      <span class="rounded border border-white/20 px-2 py-0.5 font-mono text-white/60">dopad: {{ c.epistemic_impact }}</span>
+      <span class="rounded border border-white/20 px-2 py-0.5 font-mono text-white/60">{% if c.category == 'WORLD_CHANGE' %}změna ve světě{% elif c.category == 'KNOWLEDGE_CHANGE' %}změna našeho poznání{% elif c.category == 'CORRECTION' %}oprava{% else %}publikační změna{% endif %}</span>
+    </p>
+
+    <h1 class="mt-4 font-sans text-2xl font-black sm:text-3xl">{{ c.id }}</h1>
+    <p class="mt-3 text-base text-white/90">{{ c.public_summary }}</p>
+    {%- if c.category == 'KNOWLEDGE_CHANGE' %}
+    <p class="mt-2 text-sm text-white/55">Pozor na časové osy: jde o změnu <em>našeho poznání</em> — skutečnost mohla platit už dříve; datum objevu není datem události.</p>
+    {%- endif %}
+
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Časové osy</h2>
+    <dl class="mt-3 grid grid-cols-1 gap-x-6 gap-y-2 border-y border-white/10 py-4 text-sm sm:grid-cols-2">
+      <div><dt class="text-white/45">Účinné ve světě (valid time)</dt>
+        <dd class="font-mono text-white/90">{% if c.effective_at %}{{ c.effective_at }} <span class="text-xs text-white/40">(přesnost: {{ c.effective_time_precision }})</span>{% else %}neznámé — kanonická data účinnost neuvádějí (poctivé null){% endif %}</dd>
+        {%- if c.effective_time_source %}<dd class="mt-0.5 text-xs text-white/40">zdroj pole: {{ c.effective_time_source }}</dd>{%- endif %}
+      </div>
+      <div><dt class="text-white/45">Pozorováno (system time)</dt>
+        <dd class="font-mono text-white/90">{% if c.observed_at %}{{ c.observed_at }}{% else %}—{% endif %}</dd>
+        {%- if c.observed_at_basis %}<dd class="mt-0.5 text-xs text-white/40">{{ c.observed_at_basis }}</dd>{%- endif %}
+      </div>
+      <div><dt class="text-white/45">Nejpozději pozorováno</dt><dd class="font-mono text-white/90">{{ c.observed_no_later_than }}</dd></div>
+      <div><dt class="text-white/45">Publikováno ve snapshotu</dt><dd class="font-mono text-white/90">{{ c.published_at }}</dd></div>
+    </dl>
+
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Mezi snapshoty</h2>
+    <p class="mt-2 text-sm text-white/70">
+      <a class="font-mono text-xs underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/snapshots/' ~ c.from_snapshot_id ~ '.md') | safe }}">{{ c.from_snapshot_id }}</a>
+      <span class="px-1 text-white/40" aria-hidden="true">→</span><span class="sr-only">na</span>
+      <a class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/snapshots/' ~ c.to_snapshot_id ~ '.md') | safe }}">{{ c.to_snapshot_id }}</a>
+    </p>
+    <dl class="mt-2 text-xs text-white/50">
+      <div><dt class="inline">Revize objektu {{ c.object_type }}:{{ c.object_id }}: </dt>
+        <dd class="inline font-mono">{% if c.old_revision_id %}{{ c.old_revision_id }}{% else %}(nová){% endif %} → {% if c.new_revision_id %}{{ c.new_revision_id }}{% else %}(odebráno z publikace){% endif %}</dd></div>
+      {%- if c.successor_object_id %}<div class="mt-1"><dt class="inline">Nástupce: </dt><dd class="inline font-mono">{{ c.successor_object_id }}</dd></div>{%- endif %}
+      {%- if c.predecessor_object_id %}<div class="mt-1"><dt class="inline">Předchůdce: </dt><dd class="inline font-mono">{{ c.predecessor_object_id }}</dd></div>{%- endif %}
+      {%- if c.resolved_by %}<div class="mt-1"><dt class="inline">Vyřešeno záznamem: </dt><dd class="inline font-mono">{{ c.resolved_by }}</dd></div>{%- endif %}
+    </dl>
+
+    {%- if c.field_changes | length > 0 %}
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Změny polí</h2>
+    <div class="mt-3 space-y-4">
+      {%- for fc in c.field_changes %}
+      <div class="rounded border border-white/10 bg-white/5 p-3">
+        <h3 class="font-mono text-sm text-[#f3e5c0]">{{ fc.field }}</h3>
+        {%- if fc.kind == "value" %}
+        <dl class="mt-2 grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
+          <div><dt class="text-xs uppercase tracking-wide text-white/45">Předchozí hodnota</dt>
+            <dd class="mt-1 whitespace-pre-wrap break-words font-mono text-xs text-white/70">{% if fc.previous is string %}{{ fc.previous }}{% else %}{{ fc.previous | json_encode(pretty=true) }}{% endif %}</dd></div>
+          <div><dt class="text-xs uppercase tracking-wide text-white/45">Aktuální hodnota</dt>
+            <dd class="mt-1 whitespace-pre-wrap break-words font-mono text-xs text-white/95">{% if fc.current is string %}{{ fc.current }}{% else %}{{ fc.current | json_encode(pretty=true) }}{% endif %}</dd></div>
+        </dl>
+        {%- else %}
+        <dl class="mt-2 grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
+          <div><dt class="text-xs uppercase tracking-wide text-white/45">Přidáno</dt>
+            <dd class="mt-1 font-mono text-xs text-white/95">{% if fc.added | length > 0 %}{% for a in fc.added %}{% if a is string %}{{ a }}{% else %}{{ a | json_encode }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% else %}—{% endif %}</dd></div>
+          <div><dt class="text-xs uppercase tracking-wide text-white/45">Odebráno</dt>
+            <dd class="mt-1 font-mono text-xs text-white/70">{% if fc.removed | length > 0 %}{% for r in fc.removed %}{% if r is string %}{{ r }}{% else %}{{ r | json_encode }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% else %}—{% endif %}</dd></div>
+        </dl>
+        {%- endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+
+    {%- if c.source_ids | length > 0 or c.affected_claim_ids | length > 0 %}
+    <h2 class="mt-8 font-sans text-lg font-bold text-white/90">Evidence a dotčené záznamy</h2>
+    <dl class="mt-3 space-y-2 text-sm">
+      {%- if c.source_ids | length > 0 %}
+      <div><dt class="text-white/45">Zdroje způsobující změnu</dt>
+        <dd class="mt-1 font-mono text-xs text-white/80">{{ c.source_ids | join(sep=", ") }} <span class="text-white/40">(detail v <a class="underline decoration-white/30 underline-offset-2" href="{{ get_url(path='@/dossier.md') | safe }}#evidence">evidenční vrstvě dossieru</a>)</span></dd></div>
+      {%- endif %}
+      {%- if c.evidence_ids | length > 0 %}
+      <div><dt class="text-white/45">Evidenční záznamy</dt><dd class="mt-1 font-mono text-xs text-white/80">{{ c.evidence_ids | join(sep=", ") }}</dd></div>
+      {%- endif %}
+      {%- if c.affected_claim_ids | length > 0 %}
+      <div><dt class="text-white/45">Dotčená tvrzení</dt>
+        <dd class="mt-1 text-xs">{% for cl in c.affected_claim_ids %}{% set clslug = cl | lower %}<a class="font-mono text-[#f3e5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/claims/' ~ clslug ~ '.md') | safe }}">{{ cl }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>
+      {%- endif %}
+      <div><dt class="text-white/45">Vyžaduje revalidaci</dt><dd class="mt-1 text-xs text-white/80">{% if c.requires_revalidation %}ano — viz <a class="underline decoration-white/30 underline-offset-2" href="{{ get_url(path='@/dossier/revalidation.md') | safe }}">revalidace</a>{% else %}ne{% endif %}</dd></div>
+    </dl>
+    {%- endif %}
+
+    <p class="mt-10 text-xs text-white/30">
+      technický souhrn: <span class="font-mono">{{ c.technical_summary }}</span> ·
+      <a class="underline decoration-white/30 underline-offset-2" href="/data/dossier/changes/{{ c.id | lower }}.json">JSON záznam</a>
+    </p>
+  </div>
+</main>
+{% endblock content %}

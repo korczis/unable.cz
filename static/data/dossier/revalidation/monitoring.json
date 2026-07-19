@@ -1,0 +1,109 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "monitoring-plan",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "snapshotId": "able-cz-public-2026-07-18-r07",
+    "evidenceCutoff": "2026-07-18",
+    "asOf": "2026-07-18",
+    "asOfNote": "Stav vyhodnocen k meznímu datu evidence (deterministicky). Prohlížeč navíc porovnává next_due_at s aktuálním datem klienta — označeno v UI.",
+    "generatedAt": "2026-07-18"
+  },
+  "wording_note": "Toto je PLÁN monitoringu, ne tvrzení o běžící infrastruktuře. Žádný proces na pozadí neběží; kontroly se provádějí ručně spuštěním evidence:fetch a jsou doložené v provider-runs.ndjson.",
+  "monitored_entities": [
+    {
+      "id": "able",
+      "name": "Able.cz s.r.o. (IČO 24278815)",
+      "why": "subjekt šetření"
+    },
+    {
+      "id": "blackfish",
+      "name": "Blackfish & Co. s.r.o. (IČO 06526411)",
+      "why": "100% dceřiná společnost od 07/2025"
+    },
+    {
+      "id": "zenx",
+      "name": "ZenX Capital, a.s. (IČO 09289127)",
+      "why": "největší společník (~45,8 %)"
+    }
+  ],
+  "providers": [
+    {
+      "policy_id": "ownership-statutory",
+      "provider": "ARES / Veřejný rejstřík (SRC-12)",
+      "cadence_days": 30,
+      "why": "Vlastnická struktura a statutární orgán se mohou změnit zápisem do rejstříku kdykoli; nejvyšší materialita.",
+      "last_completed_check": "2026-07-18",
+      "next_recommended_check": "2026-08-17",
+      "status": "OK",
+      "open_failures": 0,
+      "monitored_records": 45
+    },
+    {
+      "policy_id": "corporate-identity",
+      "provider": "ARES / Veřejný rejstřík (SRC-12)",
+      "cadence_days": 90,
+      "why": "Identifikační údaje (sídlo, kapitál, spisová značka) se mění zřídka.",
+      "last_completed_check": "2026-07-18",
+      "next_recommended_check": "2026-10-15",
+      "status": "OK",
+      "open_failures": 0,
+      "monitored_records": 19
+    },
+    {
+      "policy_id": "financial-filings",
+      "provider": "Sbírka listin (justice.cz)",
+      "cadence_days": 90,
+      "why": "Účetní závěrka FY2025 se očekává v průběhu roku 2026; kontrola po kvartálech.",
+      "last_completed_check": "2026-07-18",
+      "next_recommended_check": "2026-10-15",
+      "status": "OK",
+      "open_failures": 0,
+      "monitored_records": 11
+    },
+    {
+      "policy_id": "insolvency",
+      "provider": "ISIR (SRC-21)",
+      "cadence_days": 7,
+      "why": "Autoritativní registr byl při posledních pokusech BLOCKED (HTTP 500); dokud se dotaz nepodaří, je screening neuzavřený.",
+      "last_completed_check": "2026-07-18",
+      "next_recommended_check": "2026-07-25",
+      "status": "BLOCKED",
+      "open_failures": 2,
+      "monitored_records": 2
+    },
+    {
+      "policy_id": "dns-tls",
+      "provider": "DNS / crt.sh (SRC-07, SRC-09)",
+      "cadence_days": 30,
+      "why": "Provozní infrastruktura; certifikáty mají vlastní expirační cyklus.",
+      "last_completed_check": "2026-07-18",
+      "next_recommended_check": "2026-08-16",
+      "status": "BLOCKED",
+      "open_failures": 1,
+      "monitored_records": 3
+    },
+    {
+      "policy_id": "contracts-register",
+      "provider": "Registr smluv (SRC-20)",
+      "cadence_days": 90,
+      "why": "Nové veřejné zakázky se objevují průběžně.",
+      "last_completed_check": "2026-07-18",
+      "next_recommended_check": "2026-10-16",
+      "status": "OK",
+      "open_failures": 2,
+      "monitored_records": 1
+    },
+    {
+      "policy_id": "web-media",
+      "provider": "web + archivace",
+      "cadence_days": 180,
+      "why": "Publikované články jsou nemenné artefakty; hlídá se jen dostupnost URL — zachovaná evidence zůstává platná i při výpadku zdroje.",
+      "last_completed_check": "2026-07-18",
+      "next_recommended_check": "2027-01-13",
+      "status": "BLOCKED",
+      "open_failures": 2,
+      "monitored_records": 8
+    }
+  ]
+}

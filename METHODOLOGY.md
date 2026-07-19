@@ -77,3 +77,14 @@ and fails the build on any mismatch. See
 See [docs/dossier/11-open-questions.md](docs/dossier/11-open-questions.md) and
 the per-source notes in [DATA_PROVENANCE.md](DATA_PROVENANCE.md). This review
 asserts no insolvency or wrongdoing — none was found.
+
+## Temporal integrity (added 2026-07-19)
+
+Valid time (when a fact applied in the world) and system time (when this
+investigation knew it) are recorded separately end-to-end; discovery dates are
+never presented as event dates. All previously published states are preserved
+as immutable snapshots and every material difference between them is an
+auditable change record linking to the evidence that caused it. Freshness is
+policy-based: evidence quality never decays, currentness does; BLOCKED
+providers stay BLOCKED until a query actually succeeds. See
+docs/dossier/temporal/.

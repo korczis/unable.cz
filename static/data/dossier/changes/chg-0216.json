@@ -1,0 +1,72 @@
+{
+  "id": "CHG-0216",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "STATUS_CHANGED",
+  "object_type": "claim",
+  "object_id": "CLM-19",
+  "old_revision_id": "CLM-19@1760e9240f3de29e",
+  "new_revision_id": "CLM-19@da0c0db9a7265d7b",
+  "field_changes": [
+    {
+      "field": "note",
+      "kind": "value",
+      "previous": "The precise stake split and dates among the three are disputed — see CON-02.",
+      "current": "The stake split was disputed between two mirror passes (CON-02) — resolved 2026-07-18 from the preserved ARES VR record for IČO 02474727."
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "CORROBORATED",
+      "current": "VERIFIED_PRIMARY"
+    },
+    {
+      "field": "text",
+      "kind": "value",
+      "previous": "Radek Juhaňák and Jakub Kaman are both shareholders of Able.cz s.r.o. and co-own one label s.r.o. (IČO 02474727, Znojmo); a third person, Ondřej Kaman, also holds a stake and statutory role there.",
+      "current": "Radek Juhaňák and Jakub Kaman are both shareholders of Able.cz s.r.o. and co-own one label s.r.o. (IČO 02474727, Znojmo) together with Ondřej Kaman. Per the primary register: Jakub Kaman 36 % (jednatel since 2 Jan 2014; sole founder, 100 % until 2017), Ondřej Kaman 34 % (jednatel since 23 Feb 2022; 49 % during 2017–2022), Radek Juhaňák 30 % (jednatel since 23 Feb 2022)."
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "CLM-19: stav evidence CORROBORATED → VERIFIED_PRIMARY.",
+  "technical_summary": "changed claim CLM-19 fields=[note,sources,status,text]",
+  "source_ids": [
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-19"
+  ],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/claims/clm-19/"
+  ],
+  "public_route": "/dossier/changes/chg-0216/"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "CHG-0361",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r05",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r06",
+  "change_kind": "changed",
+  "change_type": "SOURCE_AVAILABILITY_CHANGED",
+  "object_type": "source",
+  "object_id": "SRC-22",
+  "old_revision_id": "SRC-22@33ee0ce9ea94546c",
+  "new_revision_id": "SRC-22@ebdda08db61cf7ef",
+  "field_changes": [
+    {
+      "field": "kind",
+      "kind": "value",
+      "previous": "media (referenced; exact URL lost by the earlier pass — facts sourced to it are flagged accordingly. A 2026-07-18 attempt to corroborate via Point FM's own site found the page JS-rendered with no readable portfolio content in the preserved HTML — recorded as a failed corroboration in provider-runs, not used as evidence)",
+      "current": "media (the 2026-07-17 pass cited it only via a LinkedIn summary; its URL was recovered from DATA_PROVENANCE.md during the 2026-07-18 adversarial audit, re-fetched and hash-preserved — the live page names Point FM, Kříž, the 80M valuation and the five-percent stake. A parallel attempt to corroborate via Point FM's own site failed: JS-rendered page, no readable content — recorded in provider-runs, not used as evidence)"
+    },
+    {
+      "field": "retrievedAt",
+      "kind": "value",
+      "previous": "2026-07-17",
+      "current": "2026-07-18"
+    },
+    {
+      "field": "title",
+      "kind": "value",
+      "previous": "CzechCrunch — 2023 investment coverage (Point FM / Marek Kříž ~5% at 80M CZK valuation). Retrieved in the 2026-07-17 pass (collection log item 6) but its URL was not recorded then; registered 2026-07-18 to fix that source gap, URL re-resolution pending",
+      "current": "CzechCrunch (2023-12-20) — Able.cz investment coverage: Point FM / Marek Kříž ~5% at 80M CZK valuation"
+    },
+    {
+      "field": "url",
+      "kind": "value",
+      "previous": null,
+      "current": "https://cc.cz/od-hrani-her-pres-slevove-portaly-k-vyvojarske-agenture-s-valuaci-80-milionu-able-ma-ted-noveho-investora/"
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-18",
+  "observed_at_basis": "source.retrievedAt",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T08:43:03+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "NO_EPISTEMIC_CHANGE",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": true,
+  "public_summary": "Zdroj SRC-22: změna dostupnosti/URL.",
+  "technical_summary": "changed source SRC-22 fields=[kind,retrievedAt,title,url]",
+  "source_ids": [],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-56"
+  ],
+  "affected_routes": [
+    "/dossier/changes/"
+  ],
+  "public_route": "/dossier/changes/chg-0361/"
+}

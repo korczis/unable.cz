@@ -104,3 +104,17 @@ npm run dev           # compile CSS/JS then run `zola serve`
 ## Deployment
 
 The built `./public` directory is published to the `gh-pages` branch, which GitHub Pages serves under the custom domain configured in `static/CNAME`.
+
+## Temporal layer (snapshots, changes, revalidation)
+
+The dossier is a *versioned* publication. Every published state is an immutable
+snapshot (`static/data/dossier/snapshots/<id>/` — manifest + full frozen object
+revisions); semantic differences between adjacent snapshots are first-class
+change objects with materiality, epistemic impact and separated time axes
+(effective vs observed vs published). Public routes: `/dossier/changes/`,
+`/dossier/snapshots/`, `/dossier/history/`, `/dossier/revalidation/`,
+`/dossier/monitoring/`. Pipeline: `npm run temporal:build` (no-op aware —
+rebuilding an unchanged state never mints a snapshot), gated by
+`npm run temporal:validate` inside `npm run verify`. Production proof:
+`node scripts/dossier/temporal/production-proof.mjs` →
+`reports/dossier-snapshot-proof.json`. Design docs: `docs/dossier/temporal/`.

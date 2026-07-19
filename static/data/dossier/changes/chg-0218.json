@@ -1,0 +1,74 @@
+{
+  "id": "CHG-0218",
+  "schema_version": "1.0.0",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "from_snapshot_id": "able-cz-public-2026-07-17-r03",
+  "to_snapshot_id": "able-cz-public-2026-07-17-r04",
+  "change_kind": "changed",
+  "change_type": "STATUS_CHANGED",
+  "object_type": "claim",
+  "object_id": "CLM-21",
+  "old_revision_id": "CLM-21@bf1be5bf6ad4a1c2",
+  "new_revision_id": "CLM-21@8f288acee0e8a883",
+  "field_changes": [
+    {
+      "field": "note",
+      "kind": "value",
+      "previous": "Strengthens CLM-14 with register-level (not just media) corroboration.",
+      "current": "Corrects the earlier mirror-based wording that Schlesinger held 100% continuously until the sale; the full ownership history is in the preserved VR record. Strengthens CLM-14."
+    },
+    {
+      "field": "sources",
+      "kind": "collection",
+      "added": [
+        "SRC-12"
+      ],
+      "removed": [
+        "SRC-10",
+        "SRC-11"
+      ]
+    },
+    {
+      "field": "status",
+      "kind": "value",
+      "previous": "CORROBORATED",
+      "current": "VERIFIED_PRIMARY"
+    },
+    {
+      "field": "text",
+      "kind": "value",
+      "previous": "Blackfish & Co. s.r.o. (IČO 06526411) was 100% owned by founder Vít Schlesinger until 29 July 2025, when Able.cz s.r.o. registered as its sole shareholder — confirming, via the commercial register and not only media, the acquisition reported by Forbes.cz and CzechCrunch. Václav Faraga was concurrently added as a second jednatel of Blackfish.",
+      "current": "Able.cz s.r.o. is registered as the 100% shareholder of Blackfish & Co. s.r.o. (IČO 06526411) since 29 July 2025, with Václav Faraga added as a second jednatel on 28 July 2025 — confirming the media-reported acquisition at register level. Ownership before the deal: founder Vít Schlesinger held 100% at founding (2017, then named Black Fish Digital s.r.o.), one-third alongside Lukáš Caldr and David Veteška 2018–2020, 100% again 2020–2022, 70% during Lukáš Oslzla's 30% co-ownership 2022–2024, and 100% from 23 Feb 2024 until the sale."
+    }
+  ],
+  "effective_at": null,
+  "effective_time_precision": "UNKNOWN",
+  "effective_time_source": null,
+  "observed_at": "2026-07-17",
+  "observed_at_basis": "retrievedAt nejstaršího citovaného zdroje (horní odhad — samotné pozorování mohlo být dřívější)",
+  "observed_no_later_than": "2026-07-17",
+  "published_at": "2026-07-18T07:59:27+02:00",
+  "materiality": "MEDIUM",
+  "epistemic_impact": "STRENGTHENED",
+  "category": "KNOWLEDGE_CHANGE",
+  "resolved_by": null,
+  "successor_object_id": null,
+  "predecessor_object_id": null,
+  "requires_revalidation": false,
+  "public_summary": "CLM-21: stav evidence CORROBORATED → VERIFIED_PRIMARY.",
+  "technical_summary": "changed claim CLM-21 fields=[note,sources,status,text]",
+  "source_ids": [
+    "SRC-04",
+    "SRC-05",
+    "SRC-12"
+  ],
+  "evidence_ids": [],
+  "affected_claim_ids": [
+    "CLM-21"
+  ],
+  "affected_routes": [
+    "/dossier/changes/",
+    "/dossier/claims/clm-21/"
+  ],
+  "public_route": "/dossier/changes/chg-0218/"
+}

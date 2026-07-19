@@ -46,9 +46,13 @@
   }
 
   // ---- collect events ------------------------------------------------------
+  // Lanes keep the timestamp axes honest (§27 PROMPT-09): a 2025 acquisition
+  // (lane "realita" — real-world effective date) is never mixed with the 2026
+  // date we retrieved the evidence (lane "zdroje") or published the snapshot
+  // (lane "publikace"). Every event carries its lane visibly.
   var events = [];
   (D.timeline || []).forEach(function (t, i) {
-    events.push({ date: t.date, y: yr(t.date), kind: "milestone", status: t.status, text: t.event, sources: t.sources || [], entity: findEntity(t.event), key: "m" + i });
+    events.push({ date: t.date, y: yr(t.date), kind: "milestone", lane: "realita", status: t.status, text: t.event, sources: t.sources || [], entity: findEntity(t.event), key: "m" + i });
   });
   // relationship start-dates, deduped against milestone dates
   var mDates = {}; events.forEach(function (e) { mDates[e.date] = true; });
@@ -56,10 +60,18 @@
     if (!e.firstObserved || mDates[e.firstObserved]) return;
     var s = nodeById[e.source], t = nodeById[e.target];
     events.push({
-      date: e.firstObserved, y: yr(e.firstObserved), kind: "rel", status: e.status,
+      date: e.firstObserved, y: yr(e.firstObserved), kind: "rel", lane: "realita", status: e.status,
       text: (s ? s.label : e.source) + " — " + e.label + " → " + (t ? t.label : e.target),
       sources: e.sources || [], entity: e.source, key: "e" + e.id,
     });
+  });
+  // evidence observations: when each source was actually retrieved (system time)
+  var seenRetrieval = {};
+  (D.sources || []).forEach(function (s) {
+    if (!s.retrievedAt) return;
+    var k = s.retrievedAt + "|" + s.id;
+    if (seenRetrieval[k]) return; seenRetrieval[k] = true;
+    events.push({ date: s.retrievedAt, y: yr(s.retrievedAt), kind: "obs", lane: "zdroje", status: null, text: s.id + " dotázán a uchován: " + (s.title || ""), sources: [s.id], entity: null, key: "s" + s.id });
   });
   if (events.length < 3) return;
   events.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
@@ -76,6 +88,9 @@
     '<div class="tl-controls js-only" role="group" aria-label="Filtr časové osy">' +
       '<button class="tl-b is-on" data-tl-scope="all" aria-pressed="true">Vše</button>' +
       '<button class="tl-b" data-tl-scope="milestone" aria-pressed="false">Jen milníky</button>' +
+      '<button class="tl-b" data-tl-lane="realita" aria-pressed="false">Realita</button>' +
+      '<button class="tl-b" data-tl-lane="zdroje" aria-pressed="false">Zdroje</button>' +
+      '<button class="tl-b" data-tl-lane="publikace" aria-pressed="false">Publikace</button>' +
       '<span class="tl-sep" aria-hidden="true"></span>' +
       '<label class="tl-yl">Rok <select class="tl-year" aria-label="Filtr podle roku"><option value="">vše</option>' +
         years.map(function (y) { return '<option value="' + y + '">' + y + "</option>"; }).join("") + "</select></label>" +
@@ -85,12 +100,29 @@
   anchor.parentNode.insertBefore(sec, anchor.nextSibling);
 
   var listEl = sec.querySelector("#tl-list"), countEl = sec.querySelector("#tl-count");
-  var scope = "all", yearFilter = null;
+  var scope = "all", laneFilter = null, yearFilter = null;
+
+  // publication lane: snapshot publication dates from the immutable index
+  fetch("/data/dossier/snapshots/index.json").then(function (r) { return r.ok ? r.json() : null; }).then(function (idx) {
+    if (!idx || !idx.snapshots) return;
+    idx.snapshots.forEach(function (s) {
+      var d = String(s.generated_at || "").slice(0, 10);
+      if (!d) return;
+      events.push({ date: d, y: yr(d), kind: "pub", lane: "publikace", status: null, text: "Publikován snapshot " + s.snapshot_id + (s.note ? " — " + s.note : ""), sources: [], entity: null, key: "p" + s.snapshot_id });
+    });
+    (idx.publication_events || []).forEach(function (e) {
+      var d = String(e.at || "").slice(0, 10);
+      events.push({ date: d, y: yr(d), kind: "pub", lane: "publikace", status: null, text: (e.event === "WITHDRAWN" ? "Publikace dočasně stažena" : "Publikace obnovena") + " — " + (e.note || ""), sources: [], entity: null, key: "pe" + e.commit });
+    });
+    events.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
+    render();
+  }).catch(function () { /* lane simply stays absent — nothing is faked */ });
 
   function statusClass(s) { return s === "VERIFIED_PRIMARY" || s === "CORROBORATED" ? "tl-good" : s === "CONTRADICTED" ? "tl-warn" : "tl-muted"; }
   function render() {
     var shown = events.filter(function (e) {
       if (scope === "milestone" && e.kind !== "milestone") return false;
+      if (laneFilter && e.lane !== laneFilter) return false;
       if (yearFilter != null && e.y !== yearFilter) return false;
       return true;
     });
@@ -101,7 +133,7 @@
         '<div class="tl-date"><time datetime="' + esc(e.date) + '">' + esc(e.date) + "</time>" +
           '<span class="tl-dot ' + statusClass(e.status) + '" aria-hidden="true"></span></div>' +
         '<div class="tl-body"><p class="tl-text">' + esc(e.text) + "</p>" +
-          '<div class="tl-meta">' + (e.kind === "rel" ? '<span class="tl-tag">vztah zapsán</span> ' : "") + srcBtns + " " + focus + "</div></div></li>";
+          '<div class="tl-meta"><span class="tl-tag">' + (e.lane === "zdroje" ? "pozorování evidence" : e.lane === "publikace" ? "publikace dossieru" : e.kind === "rel" ? "vztah zapsán (účinnost)" : "událost ve světě") + "</span> " + srcBtns + " " + focus + "</div></div></li>";
     }).join("");
     countEl.textContent = shown.length + " z " + events.length + " událostí";
   }
@@ -110,8 +142,16 @@
     var b = e.target.closest("[data-tl-scope]");
     if (b) {
       scope = b.getAttribute("data-tl-scope");
-      sec.querySelectorAll("[data-tl-scope]").forEach(function (x) { var on = x === b; x.classList.toggle("is-on", on); x.setAttribute("aria-pressed", String(on)); });
-      render();
+      laneFilter = null;
+      sec.querySelectorAll("[data-tl-scope],[data-tl-lane]").forEach(function (x) { var on = x === b; x.classList.toggle("is-on", on); x.setAttribute("aria-pressed", String(on)); });
+      syncLaneParam(); render();
+    }
+    var lb = e.target.closest("[data-tl-lane]");
+    if (lb) {
+      laneFilter = lb.getAttribute("data-tl-lane");
+      scope = "all";
+      sec.querySelectorAll("[data-tl-scope],[data-tl-lane]").forEach(function (x) { var on = x === lb; x.classList.toggle("is-on", on); x.setAttribute("aria-pressed", String(on)); });
+      syncLaneParam(); render();
     }
     var f = e.target.closest("[data-tl-focus]");
     if (f) {
@@ -127,10 +167,24 @@
     render();
   });
 
+  function syncLaneParam() {
+    var u = new URL(window.location.href);
+    if (laneFilter) u.searchParams.set("lane", laneFilter); else u.searchParams.delete("lane");
+    history.replaceState({}, "", u);
+  }
+
   injectStyle();
-  // deep-link ?tl=2025 → preselect the year
+  // deep-links: ?tl=2025 preselects the year, ?lane=zdroje preselects a lane
   var initial = new URL(window.location.href).searchParams.get("tl");
   if (initial && years.indexOf(+initial) !== -1) { yearFilter = +initial; sec.querySelector(".tl-year").value = initial; }
+  var initialLane = new URL(window.location.href).searchParams.get("lane");
+  if (initialLane && ["realita", "zdroje", "publikace"].indexOf(initialLane) !== -1) {
+    laneFilter = initialLane;
+    sec.querySelectorAll("[data-tl-scope],[data-tl-lane]").forEach(function (x) {
+      var on = x.getAttribute("data-tl-lane") === initialLane;
+      x.classList.toggle("is-on", on); x.setAttribute("aria-pressed", String(on));
+    });
+  }
   render();
 
   function injectStyle() {
