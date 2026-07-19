@@ -1,0 +1,21 @@
+{
+  "latestRunState": "NO_CHANGE",
+  "dueState": {
+    "lastRunAt": "2026-07-19T12:00:00Z",
+    "nextDueAt": "2026-08-18T12:00:00.000Z",
+    "failureCount": 0
+  },
+  "runs": [
+    {
+      "id": "run:sub:able-cz:corporate-identity:2026-07-19T12:00:00Z",
+      "startedAt": "2026-07-19T12:00:00Z",
+      "state": "NO_CHANGE",
+      "providerExecutions": {
+        "count": 2,
+        "providers": [],
+        "failures": 0
+      },
+      "candidateId": null
+    }
+  ]
+}

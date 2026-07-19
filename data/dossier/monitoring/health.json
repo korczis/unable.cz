@@ -1,0 +1,18 @@
+[
+  {
+    "provider": null,
+    "providerId": "cz-ares",
+    "ok": true,
+    "status": "OK",
+    "at": "2026-07-19T12:00:00Z",
+    "failureCount": 0
+  },
+  {
+    "provider": null,
+    "providerId": "cz-justice-or",
+    "ok": true,
+    "status": "OK",
+    "at": "2026-07-19T12:00:00Z",
+    "failureCount": 0
+  }
+]
