@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "EXEC-07",
+  "text": "Rozpor v čísle spisu (CON-01) zůstává viditelný; CON-02 byl vyřešen primárním záznamem; přibyl CON-03 (mediální vs. rejstříkové datum Oslzlova vlastnictví Blackfish).",
+  "narrativeSection": "Souhrn",
+  "supports": [
+    {
+      "ref": "CON-01",
+      "role": "supports",
+      "kind": "conflict",
+      "label": "Court file number (spisová značka)"
+    },
+    {
+      "ref": "CON-02",
+      "role": "supports",
+      "kind": "conflict",
+      "label": "one label s.r.o. (IČO 02474727, Znojmo) — jednatel roles, stakes and dates for its three co-owners"
+    },
+    {
+      "ref": "CON-03",
+      "role": "supports",
+      "kind": "conflict",
+      "label": "When Lukáš Oslzla became a Blackfish & Co. owner"
+    }
+  ],
+  "reasoning": "INF-R-05",
+  "uncertainty": [
+    "CON-01 a CON-03 zůstávají otevřené (rejstřík autoritativní, ale druhá strana neopravila)."
+  ],
+  "diversity": {
+    "source_count": 1,
+    "sources": [
+      "SRC-12"
+    ],
+    "evidence_count": 1,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 1,
+    "upstream_families": [
+      "cz_register"
+    ],
+    "upstream_family_count": 1,
+    "jurisdictions": [
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-18",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": true,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "reasoningRoute": "/dossier/reasoning/inf-r-05/",
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

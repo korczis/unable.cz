@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-R-02",
+  "kind": "conclusion",
+  "produces": "R-02",
+  "producesText": "Filed revenue declining and far below the media-reported combined target",
+  "canonicalPath": "/dossier/reasoning/inf-r-02/",
+  "premises": [
+    {
+      "ref": "FIN-ASSESS-01",
+      "role": "supports",
+      "kind": "assessment",
+      "label": "Filed revenue declined ~14.8 % year-on-year and is well below the ~100M CZK combined (Able+Blackfish) self-reported media target."
+    },
+    {
+      "ref": "FIN-ASSESS-02",
+      "role": "supports",
+      "kind": "assessment",
+      "label": "Profitable both years, but the net margin is thin (under 2 % of revenue) and shrinking."
+    },
+    {
+      "ref": "FIN-ASSESS-03",
+      "role": "supports",
+      "kind": "assessment",
+      "label": "Liabilities grew faster than equity year-on-year; shareholder loans more than tripled (3.1M → 10.0M CZK)."
+    },
+    {
+      "ref": "CLM-45",
+      "role": "supports",
+      "kind": "assessment",
+      "label": "The filed FY2024 trajectory (36.3M CZK revenue, declining; net margin under 2 % and shrinking) is far below the ~100M CZK combined Able+Blackfish revenue target attributed to Vít S"
+    }
+  ],
+  "steps": [
+    "Kombinace tří finančních assessmentů: klesající tržby, tenčící se marže, trojnásobné společnické půjčky.",
+    "Proti tomu mediální růstová narace (CLM-45).",
+    "Riziko: finanční realita zaostává za veřejným příběhem."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-01",
+      "text": "Podaná účetní závěrka (Sbírka listin) věrně zachycuje účetnictví subjektu tak, jak bylo podáno; nezávislý audit nebyl k dispozici."
+    },
+    {
+      "id": "ASM-04",
+      "text": "Mediální články citované jako SRC-04/SRC-05/SRC-22 přisuzují výroky uvedeným osobám správně."
+    }
+  ],
+  "primaryExplanation": "Podaná čísla nepodporují růstovou naraci — substantivní finanční riziko percepce.",
+  "alternatives": [
+    {
+      "text": "FY2025 obrat trend otočí (akviziční synergie).",
+      "distinguishingEvidence": "FY2025 závěrky Able i Blackfish."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "FY2025 růst řádu desítek % s posílenou marží"
+    ],
+    "strengthen": [
+      "FY2025 pokračující pokles / další zadlužování"
+    ],
+    "weaken": [
+      "Doložené výnosy v sesterských entitách"
+    ]
+  },
+  "uncertainty": [
+    "Jednoletá trajektorie; konsolidace neexistuje."
+  ],
+  "diversity": {
+    "source_count": 5,
+    "sources": [
+      "SRC-04",
+      "SRC-05",
+      "SRC-15",
+      "SRC-18",
+      "SRC-19"
+    ],
+    "evidence_count": 10,
+    "document_count": 3,
+    "documents": [
+      "sbirka-listin/2024-ucetni-zaverka-SL68.txt",
+      "sbirka-listin/blackfish/2024-ucetni-zaverka-SL21.txt",
+      "sbirka-listin/blackfish/2025-ucetni-zaverka-SL23.txt"
+    ],
+    "provider_run_backed_sources": 2,
+    "upstream_families": [
+      "cz_register",
+      "czechcrunch",
+      "forbes"
+    ],
+    "upstream_family_count": 3,
+    "jurisdictions": [
+      "CZ — média",
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-17"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "FIN-ASSESS-01",
+      "FIN-ASSESS-02",
+      "FIN-ASSESS-03",
+      "CLM-45"
+    ],
+    "contradicting": [],
+    "contextualizing": [],
+    "alternatives": 1,
+    "unknown": [
+      "Jednoletá trajektorie; konsolidace neexistuje."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

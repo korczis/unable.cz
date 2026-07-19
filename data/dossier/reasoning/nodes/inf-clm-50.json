@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-CLM-50",
+  "kind": "assessment",
+  "produces": "CLM-50",
+  "producesText": "Blackfish is financially small next to Able.cz (filed total assets 6.7–8.3M vs 71.9M CZK): most of the scale implied by the self-reported 'combined ~60 people, ~100M CZK' framing evidently comes from Able.cz itself.",
+  "canonicalPath": "/dossier/reasoning/inf-clm-50/",
+  "premises": [
+    {
+      "ref": "CLM-49",
+      "role": "supports",
+      "note": "Blackfish aktiva 6,7–8,3M CZK (mikro jednotka)",
+      "kind": "claim",
+      "label": "Blackfish & Co. s.r.o.'s filed balance sheets (micro accounting unit — abbreviated, no P&L) show: FY2024 total assets 6,747 tis. CZK, equity 2,665 tis. CZK; FY2025 total assets 8,2"
+    },
+    {
+      "ref": "EVD-SL21-ASSETS",
+      "role": "supports",
+      "kind": "evidence",
+      "label": "AKTIVA CELKEM 6957 210 6747 5966"
+    },
+    {
+      "ref": "EVD-SL23-ASSETS",
+      "role": "supports",
+      "kind": "evidence",
+      "label": "AKTIVA CELKEM 8477 224 8253 6747"
+    },
+    {
+      "ref": "EVD-SL68-ASSETS",
+      "role": "supports",
+      "note": "Able aktiva 71,9M CZK",
+      "kind": "evidence",
+      "label": "AKTIVA CELKEM 100016 28136 71880 59386"
+    },
+    {
+      "ref": "SRC-04",
+      "role": "contextualizes",
+      "note": "'~60 lidí, ~100M' framing",
+      "kind": "source",
+      "label": "Forbes.cz — Able acquires Blackfish studio"
+    }
+  ],
+  "steps": [
+    "Podaná aktiva: Blackfish 6,7–8,3M vs. Able 71,9M CZK (poměr ~1:9 až 1:11).",
+    "Blackfish jako mikro jednotka nepodává P&L → tržby přímo nesrovnatelné, aktiva jsou nejlepší dostupný můstek.",
+    "Většina 'kombinované' škály z mediálního framingu tedy evidentně připadá na Able.cz."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-01",
+      "text": "Podaná účetní závěrka (Sbírka listin) věrně zachycuje účetnictví subjektu tak, jak bylo podáno; nezávislý audit nebyl k dispozici."
+    }
+  ],
+  "primaryExplanation": "Kombinovaný framing opticky zvětšuje akvírovanou část; finančně dominantní je Able.",
+  "alternatives": [
+    {
+      "text": "Hodnota Blackfish je v lidech/značce, ne v rozvaze (asset-light studio).",
+      "distinguishingEvidence": "P&L Blackfish (nepodává se), personální data, ceník/klientská báze."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Doložené tržby Blackfish řádu desítek milionů CZK."
+    ],
+    "strengthen": [
+      "FY2025 rozvaha Blackfish potvrzující řádový rozdíl."
+    ],
+    "weaken": [
+      "Důkaz významného výnosového příspěvku Blackfish po akvizici."
+    ]
+  },
+  "uncertainty": [
+    "Bez P&L Blackfish je srovnání založeno na rozvaze, ne na tržbách."
+  ],
+  "diversity": {
+    "source_count": 4,
+    "sources": [
+      "SRC-04",
+      "SRC-15",
+      "SRC-18",
+      "SRC-19"
+    ],
+    "evidence_count": 4,
+    "document_count": 3,
+    "documents": [
+      "sbirka-listin/2024-ucetni-zaverka-SL68.txt",
+      "sbirka-listin/blackfish/2024-ucetni-zaverka-SL21.txt",
+      "sbirka-listin/blackfish/2025-ucetni-zaverka-SL23.txt"
+    ],
+    "provider_run_backed_sources": 1,
+    "upstream_families": [
+      "cz_register",
+      "forbes"
+    ],
+    "upstream_family_count": 2,
+    "jurisdictions": [
+      "CZ — média",
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-17"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CLM-49",
+      "EVD-SL21-ASSETS",
+      "EVD-SL23-ASSETS",
+      "EVD-SL68-ASSETS"
+    ],
+    "contradicting": [],
+    "contextualizing": [
+      "SRC-04"
+    ],
+    "alternatives": 1,
+    "unknown": [
+      "Bez P&L Blackfish je srovnání založeno na rozvaze, ne na tržbách."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

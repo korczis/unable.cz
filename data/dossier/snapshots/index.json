@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "case_id": "DD-Able-CZ-2026-07-17",
   "publication_profile": "public",
-  "snapshot_count": 7,
+  "snapshot_count": 8,
   "publication_events": [
     {
       "at": "2026-07-17T19:43:43+02:00",
@@ -137,6 +137,23 @@
         "relationships": 60
       },
       "note": "Konvergence mezního data evidence na 2026-07-18."
+    },
+    {
+      "snapshot_id": "able-cz-public-2026-07-18-r08",
+      "snapshot_sequence": 8,
+      "previous_snapshot_id": "able-cz-public-2026-07-18-r07",
+      "evidence_cutoff": "2026-07-18",
+      "generated_at": "2026-07-18",
+      "unable_commit": null,
+      "content_hash": "3661838cbb7355c77b1f7adcdffef007e52f31a6933a1f651c271f66d0433390",
+      "counts": {
+        "claims_live": 49,
+        "claims_superseded": 9,
+        "sources": 22,
+        "entities": 43,
+        "relationships": 60
+      },
+      "note": "Nový sémantický stav zjištěný při buildu (data:build)."
     }
   ]
 }

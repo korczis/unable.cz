@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-CLM-48",
+  "kind": "assessment",
+  "produces": "CLM-48",
+  "producesText": "A 9,327.14 CZK debt to the Prague public-transport operator is consistent in scale with an escalated unpaid-fare claim, but the filed documents do not state the debt's origin. The matter was personal, small, and resolved by payment within ~9 weeks; no enforcement directed at Able.cz s.r.o. itself was found in the preserved filings. Company-level insolvency could NOT be checked: the insolvency register was BLOCKED (ISIR returned HTTP 500 on both attempts).",
+  "canonicalPath": "/dossier/reasoning/inf-clm-48/",
+  "premises": [
+    {
+      "ref": "CLM-46",
+      "role": "supports",
+      "note": "exekuční příkaz 19. 1. 2026, 9 327,14 CZK, DPP",
+      "kind": "claim",
+      "label": "On 19 January 2026 soudní exekutor Mgr. Jakub Effenberger (Exekutorský úřad Kolín; case 219 EX 00241/26) issued execution orders against Tomáš Melichárek personally for a debt of 9"
+    },
+    {
+      "ref": "EVD-SL69-AMOUNT",
+      "role": "supports",
+      "kind": "evidence",
+      "label": "12 celkem ke dni vydání exekučního příkazu (řádky 4 + 11) v Kč 9 327,14 Kč"
+    },
+    {
+      "ref": "EVD-SL69-CREDITOR",
+      "role": "supports",
+      "note": "věřitel: Dopravní podnik hl. m. Prahy",
+      "kind": "evidence",
+      "label": "Dopravní podnik hl. m. Prahy, akciová společnost se sídlem"
+    },
+    {
+      "ref": "EVD-SL70-CLOSED",
+      "role": "supports",
+      "note": "ukončeno zaplacením do ~9 týdnů",
+      "kind": "evidence",
+      "label": "exekuce byla dne 24.03.2026  skončena vymožením."
+    },
+    {
+      "ref": "CLM-58",
+      "role": "contextualizes",
+      "note": "firemní insolvenci nešlo prověřit (BLOCKED)",
+      "kind": "claim",
+      "label": "Insolvency status for Able.cz s.r.o. could not be determined: the official insolvency register (ISIR) returned HTTP 500 to subject-search requests on both 2026-07-17 and 2026-07-18"
+    }
+  ],
+  "steps": [
+    "Částka 9 327,14 CZK a věřitel DPP odpovídají řádově eskalované pohledávce z jízdného (typizovaný profil).",
+    "Podané dokumenty původ dluhu výslovně neuvádějí → formulace 'konzistentní s', ne fakt.",
+    "Věc byla osobní (podíl T. M.), malá a uhrazena do ~9 týdnů (EVD-SL70-CLOSED).",
+    "Na Able.cz s.r.o. samotnou žádná exekuce v zachovaných podáních nesměřuje; firemní ISIR však byl BLOCKED (ASM-05)."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-02",
+      "text": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární."
+    },
+    {
+      "id": "ASM-05",
+      "text": "Absence záznamu ve veřejném zdroji není důkazem absence ve skutečnosti (NOT_FOUND ≠ negativní fakt; BLOCKED ≠ NOT_FOUND)."
+    }
+  ],
+  "primaryExplanation": "Drobný osobní dluh (nejspíše z jízdného) eskalovaný do exekuce a rychle uhrazený.",
+  "alternatives": [
+    {
+      "text": "Jiný typ pohledávky DPP (např. smluvní pokuta, škoda).",
+      "distinguishingEvidence": "Exekuční titul (rozsudek/EPR) — není ve sbírce listin; spis exekutora."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Exekuční titul dokládající jiný původ pohledávky."
+    ],
+    "strengthen": [
+      "EPR/rozsudek potvrzující jízdné; úspěšná ISIR lustrace bez firemních záznamů."
+    ],
+    "weaken": [
+      "Další exekuce téže osoby v okolním období (vzorec platební nekázně)."
+    ]
+  },
+  "uncertainty": [
+    "Původ dluhu není doložen; firemní insolvenční screening zůstává BLOCKED (CLM-58)."
+  ],
+  "diversity": {
+    "source_count": 3,
+    "sources": [
+      "SRC-16",
+      "SRC-17",
+      "SRC-21"
+    ],
+    "evidence_count": 5,
+    "document_count": 2,
+    "documents": [
+      "sbirka-listin/2026-01-21-exekucni-prikaz-podil-SL69.txt",
+      "sbirka-listin/2026-04-08-skonceni-exekuce-SL70.txt"
+    ],
+    "provider_run_backed_sources": 1,
+    "upstream_families": [
+      "cz_register",
+      "isir"
+    ],
+    "upstream_family_count": 2,
+    "jurisdictions": [
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CLM-46",
+      "EVD-SL69-AMOUNT",
+      "EVD-SL69-CREDITOR",
+      "EVD-SL70-CLOSED"
+    ],
+    "contradicting": [],
+    "contextualizing": [
+      "CLM-58"
+    ],
+    "alternatives": 1,
+    "unknown": [
+      "Původ dluhu není doložen; firemní insolvenční screening zůstává BLOCKED (CLM-58)."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

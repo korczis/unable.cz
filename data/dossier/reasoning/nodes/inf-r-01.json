@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-R-01",
+  "kind": "conclusion",
+  "produces": "R-01",
+  "producesText": "Marketing titles are not statutory offices",
+  "canonicalPath": "/dossier/reasoning/inf-r-01/",
+  "premises": [
+    {
+      "ref": "CLM-38",
+      "role": "supports",
+      "kind": "assessment",
+      "label": "Lukáš Grolig appears nowhere in Able.cz s.r.o.'s register record (statutory body, supervisory board, or any shareholder configuration 2012–2026). His marketed CTO title is a market"
+    },
+    {
+      "ref": "EVD-ARES-ABLE-OFFICERS",
+      "role": "supports",
+      "kind": "assertion",
+      "label": "EVD-ARES-ABLE-OFFICERS"
+    },
+    {
+      "ref": "EVD-WEB-CLIENTS",
+      "role": "contextualizes",
+      "kind": "evidence",
+      "label": "Named clients on able.cz/en: AAA Auto, Aures Holdings a.s., Arkadia Labs, Encall, Taste Town"
+    }
+  ],
+  "steps": [
+    "Web marketuje čtyři C-level role; rejstřík potvrzuje dva jednatele.",
+    "Marketovaný CTO nemá žádnou rejstříkovou stopu u Able.cz (CLM-38).",
+    "Riziko: čtenář veřejné prezentace přecení formální governance."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-02",
+      "text": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární."
+    }
+  ],
+  "primaryExplanation": "Marketingové tituly ≠ statutární funkce; riziko mispercepce, ne protiprávnosti.",
+  "alternatives": [
+    {
+      "text": "Interní governance odpovídá titulům (jen bez zápisu).",
+      "distinguishingEvidence": "Organizační řád, pověření, prokura — neveřejné."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Zápis marketovaných rolí do rejstříku"
+    ],
+    "strengthen": [
+      "Další marketované role bez stopy"
+    ],
+    "weaken": [
+      "Zveřejněná pověření/prokury"
+    ]
+  },
+  "uncertainty": [
+    "Interní rozdělení pravomocí není veřejně zjistitelné."
+  ],
+  "diversity": {
+    "source_count": 2,
+    "sources": [
+      "SRC-02",
+      "SRC-12"
+    ],
+    "evidence_count": 6,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 2,
+    "upstream_families": [
+      "able_cz",
+      "cz_register"
+    ],
+    "upstream_family_count": 2,
+    "jurisdictions": [
+      "CZ — úřední registr",
+      "subjekt sám"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CLM-38",
+      "EVD-ARES-ABLE-OFFICERS"
+    ],
+    "contradicting": [],
+    "contextualizing": [
+      "EVD-WEB-CLIENTS"
+    ],
+    "alternatives": 1,
+    "unknown": [
+      "Interní rozdělení pravomocí není veřejně zjistitelné."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

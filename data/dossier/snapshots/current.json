@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "snapshot_id": "able-cz-public-2026-07-18-r07",
-  "snapshot_sequence": 7,
+  "snapshot_id": "able-cz-public-2026-07-18-r08",
+  "snapshot_sequence": 8,
   "evidence_cutoff": "2026-07-18",
-  "generated_at": "2026-07-18T21:32:38+02:00",
-  "content_hash": "5a2646a179cbc66fbc27f1be4d0e541814315442f91e75165e018bb38cad4292",
-  "previous_snapshot_id": "able-cz-public-2026-07-17-r06"
+  "generated_at": "2026-07-18",
+  "content_hash": "3661838cbb7355c77b1f7adcdffef007e52f31a6933a1f651c271f66d0433390",
+  "previous_snapshot_id": "able-cz-public-2026-07-18-r07"
 }

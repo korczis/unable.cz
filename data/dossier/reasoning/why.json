@@ -1,0 +1,5671 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "why-index",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "evidenceCutoff": "2026-07-18",
+    "generatedAt": "2026-07-18",
+    "source": "data/dossier/able/reasoning.json + evidence.json + dossier.json",
+    "note": "Pro každý objekt: co ho podpírá, co mu odporuje, který úsudek ho vytvořil, kdo ho používá, jaké předpoklady a nejistoty nese."
+  },
+  "why": {
+    "SRC-01": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-13",
+          "role": "contextualizes",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-01": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-02": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-02": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-03": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-03": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-04": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-14",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-21",
+          "role": "contextualizes",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-40",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "CLM-45",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "CLM-51",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-40",
+          "role": "contradicts",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-CLM-45",
+          "role": "contradicts",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-CLM-50",
+          "role": "contextualizes",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-CLM-51",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-CLM-53",
+          "role": "contradicts",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-FIN-ASSESS-01",
+          "role": "contradicts",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-04": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-05": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-14",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-21",
+          "role": "contextualizes",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-40",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "CLM-45",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "CLM-51",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-40",
+          "role": "contradicts",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-CLM-45",
+          "role": "contradicts",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-CLM-51",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-CLM-53",
+          "role": "contradicts",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-FIN-ASSESS-01",
+          "role": "contradicts",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-05": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-06": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-06": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-07": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-07": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-08": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-08": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-09": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-09": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-10": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-10": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-11": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-11": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-12": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-01",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-12": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-13": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-13": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-14": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-14": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-15": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-15": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-16": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-16": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-17": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-17": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-18": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-18": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-19": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-19": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-20": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-57",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-57",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-20": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-21": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-21": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "SRC-22": {
+      "kind": "source",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-56",
+          "role": "contextualizes",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "OBS-SRC-22": {
+      "kind": "observation",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL68-REVENUE": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-15",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-44",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-45",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-45",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-FIN-ASSESS-01",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-FIN-ASSESS-02",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL68-TURNOVER": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-15",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-44",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL68-RESULT": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-15",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-44",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "INF-CLM-45",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-FIN-ASSESS-02",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL68-ASSETS": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-15",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-50",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-50",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL68-EQUITY": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-15",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-FIN-ASSESS-03",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL68-LIABILITIES": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-15",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-FIN-ASSESS-03",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL68-PERSONNEL": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-15",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-FIN-ASSESS-04",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL68-SERVICES": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-15",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-FIN-ASSESS-04",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL68-SUBSIDIARY": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-15",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-28",
+          "role": "contextualizes",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL68-SHAREHOLDER-DEBT": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-15",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-FIN-ASSESS-03",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL21-ASSETS": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-18",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-49",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-50",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-50",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL21-EQUITY": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-18",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-49",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL23-ASSETS": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-19",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-49",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-50",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-50",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL69-ORDER": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-16",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-46",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL69-AMOUNT": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-16",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-46",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-48",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-48",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL69-CREDITOR": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-16",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-46",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-48",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-48",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL70-CLOSED": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-17",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-46",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-48",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-48",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-SL70-INSTRUMENTS": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-17",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-46",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-WEB-AGENTS": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-02",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-R-03",
+          "role": "contextualizes",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-05",
+          "role": "contextualizes",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-WEB-ROI": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-02",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-R-03",
+          "role": "contextualizes",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-05",
+          "role": "contextualizes",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-WEB-MANDAYS": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-02",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-WEB-WEEKS": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-02",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-WEB-ERROR": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-02",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-WEB-600ROI": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-02",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-WEB-AAA": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-02",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-WEB-SECURITY": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-02",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-WEB-NDA": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-02",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-WEB-CLIENTS": {
+      "kind": "evidence",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-02",
+          "kind": "observation",
+          "via": "evidence.json spans"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-38",
+          "role": "contextualizes",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-R-01",
+          "role": "contextualizes",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-CAPITAL": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-54",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-ABLE-NAMES": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-01",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-ABLE-COURT": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-R-05",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-01",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-ABLE-OFFICERS": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-34",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-35",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "CLM-38",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-35",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-CLM-38",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-R-01",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-ABLE-SHAREHOLDERS": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-19",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-22",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-34",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-36",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-38",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "CLM-47",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-51",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "CLM-52",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-53",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "CLM-54",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-55",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "INF-CLM-38",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-CLM-53",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-CLM-56",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-ABLE-BOARD": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-BLACKFISH": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-14",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-21",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-41",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-42",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-43",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-43",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-ONELABEL": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-19",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-MINDEE": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-28",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-ERA25": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-29",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-VERZUZ": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-30",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-FAME-LOGISTICS": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-31",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-35",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "CLM-47",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "INF-CLM-35",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-FAME-TRADE": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-32",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-47",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "INF-CLM-35",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-FAMA-MEDIA": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-MMPLAN": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-33",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-47",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-VENTOUX": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-39",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-40",
+          "role": "contextualizes",
+          "kind": "assessment"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-SCHLESINGER-SRO": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-ARTSTAY": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-42",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-43",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-43",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-MYSASY": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-BGO": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-37",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-USPORIX": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-37",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-VERASTO": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-37",
+          "role": "supports",
+          "kind": "claim"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-ZENX": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-52",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "INF-R-06",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EVD-ARES-5326G": {
+      "kind": "assertion",
+      "supporting": [
+        {
+          "ref": "OBS-SRC-12",
+          "kind": "observation",
+          "via": "extraction/ares-assertions.json"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "CLM-55",
+          "role": "supports",
+          "kind": "claim"
+        },
+        {
+          "ref": "CLM-56",
+          "role": "contextualizes",
+          "kind": "assessment"
+        },
+        {
+          "ref": "INF-CLM-56",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-01": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-02": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-03": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-04": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-05": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-06": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-07": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-08": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-09": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-10": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-11": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-12": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-13": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "SRC-01",
+          "kind": "source"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-14": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "via": "evidence.json claimEvidence (source-level)"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "via": "evidence.json claimEvidence (source-level)"
+        },
+        {
+          "ref": "EVD-ARES-BLACKFISH",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-15": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-16": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-10",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-11",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-17": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-10",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-18": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-10",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-11",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-14",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-19": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ONELABEL",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-20": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-10",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-21": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-BLACKFISH",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "SRC-04",
+          "kind": "source"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-40",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-22": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-40",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-CLM-51",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-23": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-10",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-11",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-24": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-10",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-11",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-13",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-25": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-15",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-26": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-16",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-17",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-27": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-18",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-19",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-28": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-MINDEE",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-SL68-SUBSIDIARY",
+          "kind": "evidence"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-04",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-29": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ERA25",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-30": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-VERZUZ",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-04",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-31": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-FAME-LOGISTICS",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-32": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-FAME-TRADE",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-04",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-33": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-MMPLAN",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-34": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-OFFICERS",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-35",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-03",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-35": {
+      "kind": "assessment",
+      "supporting": [
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-10",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-ARES-FAME-LOGISTICS",
+          "kind": "assertion"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-OFFICERS",
+          "kind": "assertion"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": "INF-CLM-35",
+      "used_by": [],
+      "assumptions": [
+        "ASM-02",
+        "ASM-05"
+      ],
+      "uncertainty": [
+        "Vztah není doložen žádným záznamem; hodnocení stojí jen na konvergenci nepřímých indicií."
+      ],
+      "alternatives": [
+        {
+          "text": "Shoda příjmení bez příbuznosti — obchodní partneři ze stejného regionu.",
+          "distinguishingEvidence": "Matriční/veřejné prohlášení rodiny, rozhovor, parte, nebo dokument jmenující vztah."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Veřejné prohlášení kterékoli strany, že příbuzní nejsou."
+        ],
+        "strengthen": [
+          "Jakýkoli primární dokument jmenující vztah (např. dědické řízení, čestné prohlášení ve sbírce listin)."
+        ],
+        "weaken": [
+          "Zjištění, že znojemské adresy jsou pouze sídla firem bez rezidenční vazby."
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-clm-35/"
+    },
+    "CLM-36": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-37": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-VERASTO",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-ARES-BGO",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-ARES-USPORIX",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-38",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-38": {
+      "kind": "assessment",
+      "supporting": [
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-02",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-ARES-ABLE-OFFICERS",
+          "kind": "assertion"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": "INF-CLM-38",
+      "used_by": [
+        {
+          "ref": "INF-R-01",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [
+        "ASM-02",
+        "ASM-03"
+      ],
+      "uncertainty": [
+        "Neveřejné smluvní vztahy (ESOP, opce) veřejná evidence nezachycuje (ASM-05)."
+      ],
+      "alternatives": [
+        {
+          "text": "Grolig drží podíl nepřímo (přes jinou entitu) nebo má smluvní opci, která do rejstříku nevstupuje.",
+          "distinguishingEvidence": "Smlouvy/cap-table mimo veřejné zdroje; prohlášení firmy; budoucí zápis."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Zápis Groliga do orgánů či podílů Able.cz v jakémkoli období (nový VR výpis)."
+        ],
+        "strengthen": [
+          "Další úplné výpisy potvrzující absenci i v dceřiných firmách."
+        ],
+        "weaken": [
+          "Důkaz nepřímého podílu přes prostředníka."
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-clm-38/"
+    },
+    "CLM-39": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-VENTOUX",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-40",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-40": {
+      "kind": "assessment",
+      "supporting": [
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-ARES-VENTOUX",
+          "kind": "assertion"
+        },
+        {
+          "ref": "SRC-04",
+          "kind": "source"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": "INF-CLM-40",
+      "used_by": [],
+      "assumptions": [
+        "ASM-02",
+        "ASM-04"
+      ],
+      "uncertainty": [
+        "Motivace nezveřejnění není z veřejných zdrojů zjistitelná."
+      ],
+      "alternatives": [
+        {
+          "text": "Novináři o podílech věděli, ale nepovažovali je za podstatné pro text.",
+          "distinguishingEvidence": "Dotaz redakcím / follow-up články; úplné znění tiskové zprávy firmy."
+        },
+        {
+          "text": "Ventoux je nesouvisející osobní projekt bez vazby na akvizici.",
+          "distinguishingEvidence": "Předmět podnikání, klienti a tok peněz Ventoux; společníci a jejich vazby na Able."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Dohledaný veřejný text z doby akvizice, který oba podíly popisuje."
+        ],
+        "strengthen": [
+          "Další nezveřejněné souběžné angažmá téže osoby v rejstříku."
+        ],
+        "weaken": [
+          "Veřejné vysvětlení firmy, proč reciproční podíl nebyl součástí komunikace."
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-clm-40/"
+    },
+    "CLM-41": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-BLACKFISH",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-43",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-42": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ARTSTAY",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-ARES-BLACKFISH",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-43",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-43": {
+      "kind": "assessment",
+      "supporting": [
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-ARES-ARTSTAY",
+          "kind": "assertion"
+        },
+        {
+          "ref": "EVD-ARES-BLACKFISH",
+          "kind": "assertion"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": "INF-CLM-43",
+      "used_by": [],
+      "assumptions": [
+        "ASM-02",
+        "ASM-05"
+      ],
+      "uncertainty": [
+        "Důvod rozdělení (CLM-24→CLM-41 kontext: proč Oslzla odešel 17 měsíců před akvizicí) zůstává otevřenou otázkou."
+      ],
+      "alternatives": [
+        {
+          "text": "Nesouvisející transakce, které se časově potkaly (např. prodej za hotovost bez výměny).",
+          "distinguishingEvidence": "Smlouvy o převodu podílů ve sbírce listin (ceny, vzájemné odkazy), výpověď aktérů."
+        },
+        {
+          "text": "Konflikt/vytěsnění, ne dohoda.",
+          "distinguishingEvidence": "Soudní spory, mediální výpovědi, tonalita následné spolupráce (Oslzla u Able po akvizici nefiguruje)."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Doložené smlouvy ukazující nezávislé transakce bez vzájemné vazby."
+        ],
+        "strengthen": [
+          "Převodní smlouvy odkazující jedna na druhou; shodné datum podpisu."
+        ],
+        "weaken": [
+          "Důkaz sporu mezi aktéry v témže období."
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-clm-43/"
+    },
+    "CLM-44": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-SL68-REVENUE",
+          "kind": "evidence",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-SL68-TURNOVER",
+          "kind": "evidence",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-SL68-RESULT",
+          "kind": "evidence",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-15",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-45",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-FIN-ASSESS-01",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-06",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-45": {
+      "kind": "assessment",
+      "supporting": [
+        {
+          "ref": "SRC-15",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-SL68-REVENUE",
+          "kind": "evidence"
+        },
+        {
+          "ref": "SRC-04",
+          "kind": "source"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": "INF-CLM-45",
+      "used_by": [
+        {
+          "ref": "INF-R-02",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-06",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [
+        "ASM-01",
+        "ASM-04"
+      ],
+      "uncertainty": [
+        "FY2025 dosud nepodána; konsolidovaná čísla neexistují (každá entita podává zvlášť)."
+      ],
+      "alternatives": [
+        {
+          "text": "FY2025 přinesla skokový růst, který FY2024 závěrka z podstaty nemůže ukázat (cíl se týkal budoucnosti).",
+          "distinguishingEvidence": "FY2025 závěrka ve Sbírce listin (očekávána v průběhu 2026) — viz revalidační fronta."
+        },
+        {
+          "text": "Část výnosů teče mimo Able.cz s.r.o. (jiné entity skupiny: Mindee, Verzuz, ERA25).",
+          "distinguishingEvidence": "Závěrky dceřiných a sesterských entit; konsolidovaný pohled neexistuje (FIN gap)."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "FY2025 filing s tržbami řádu 100M CZK (kombinovaně s Blackfish)."
+        ],
+        "strengthen": [
+          "FY2025 filing potvrzující pokračující pokles; absence růstu i u dceřiných entit."
+        ],
+        "weaken": [
+          "Doložené významné výnosy v jiných entitách skupiny za totéž období."
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-clm-45/"
+    },
+    "CLM-46": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-SL69-ORDER",
+          "kind": "evidence",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-SL69-AMOUNT",
+          "kind": "evidence",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-SL69-CREDITOR",
+          "kind": "evidence",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-SL70-CLOSED",
+          "kind": "evidence",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-SL70-INSTRUMENTS",
+          "kind": "evidence",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-16",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-17",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-48",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-47": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-ARES-MMPLAN",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-ARES-FAME-LOGISTICS",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-ARES-FAME-TRADE",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-48": {
+      "kind": "assessment",
+      "supporting": [
+        {
+          "ref": "SRC-16",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-17",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-21",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-SL69-AMOUNT",
+          "kind": "evidence"
+        },
+        {
+          "ref": "EVD-SL69-CREDITOR",
+          "kind": "evidence"
+        },
+        {
+          "ref": "EVD-SL70-CLOSED",
+          "kind": "evidence"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": "INF-CLM-48",
+      "used_by": [
+        {
+          "ref": "INF-R-04",
+          "role": "contextualizes",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [
+        "ASM-02",
+        "ASM-05"
+      ],
+      "uncertainty": [
+        "Původ dluhu není doložen; firemní insolvenční screening zůstává BLOCKED (CLM-58)."
+      ],
+      "alternatives": [
+        {
+          "text": "Jiný typ pohledávky DPP (např. smluvní pokuta, škoda).",
+          "distinguishingEvidence": "Exekuční titul (rozsudek/EPR) — není ve sbírce listin; spis exekutora."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Exekuční titul dokládající jiný původ pohledávky."
+        ],
+        "strengthen": [
+          "EPR/rozsudek potvrzující jízdné; úspěšná ISIR lustrace bez firemních záznamů."
+        ],
+        "weaken": [
+          "Další exekuce téže osoby v okolním období (vzorec platební nekázně)."
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-clm-48/"
+    },
+    "CLM-49": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-SL21-ASSETS",
+          "kind": "evidence",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-SL21-EQUITY",
+          "kind": "evidence",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-SL23-ASSETS",
+          "kind": "evidence",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-18",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-19",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-50",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-50": {
+      "kind": "assessment",
+      "supporting": [
+        {
+          "ref": "SRC-15",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-18",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-19",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-SL21-ASSETS",
+          "kind": "evidence"
+        },
+        {
+          "ref": "EVD-SL23-ASSETS",
+          "kind": "evidence"
+        },
+        {
+          "ref": "EVD-SL68-ASSETS",
+          "kind": "evidence"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": "INF-CLM-50",
+      "used_by": [
+        {
+          "ref": "INF-CLM-45",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [
+        "ASM-01"
+      ],
+      "uncertainty": [
+        "Bez P&L Blackfish je srovnání založeno na rozvaze, ne na tržbách."
+      ],
+      "alternatives": [
+        {
+          "text": "Hodnota Blackfish je v lidech/značce, ne v rozvaze (asset-light studio).",
+          "distinguishingEvidence": "P&L Blackfish (nepodává se), personální data, ceník/klientská báze."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Doložené tržby Blackfish řádu desítek milionů CZK."
+        ],
+        "strengthen": [
+          "FY2025 rozvaha Blackfish potvrzující řádový rozdíl."
+        ],
+        "weaken": [
+          "Důkaz významného výnosového příspěvku Blackfish po akvizici."
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-clm-50/"
+    },
+    "CLM-51": {
+      "kind": "assessment",
+      "supporting": [
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion"
+        },
+        {
+          "ref": "SRC-04",
+          "kind": "source"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": "INF-CLM-51",
+      "used_by": [
+        {
+          "ref": "INF-CLM-40",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [
+        "ASM-03",
+        "ASM-05"
+      ],
+      "uncertainty": [
+        "Pokrytí rešerše: 2 hlavní outlety, ne úplný mediální korpus."
+      ],
+      "alternatives": [
+        {
+          "text": "Jiný, nepřezkoumaný text jej zmínil.",
+          "distinguishingEvidence": "Širší mediální rešerše (další outlety, tiskové zprávy)."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Dohledaný text z doby akvizice zmiňující 5% recipročku."
+        ],
+        "strengthen": [
+          "Rozšíření rešerše na další outlety se stejným výsledkem."
+        ],
+        "weaken": [
+          "—"
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-clm-51/"
+    },
+    "CLM-52": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-ARES-ZENX",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-53",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-R-06",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-02",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-53": {
+      "kind": "assessment",
+      "supporting": [
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": "INF-CLM-53",
+      "used_by": [
+        {
+          "ref": "INF-R-06",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-02",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [
+        "ASM-02",
+        "ASM-04"
+      ],
+      "uncertainty": [
+        "Skutečné rozhodovací poměry (vs. zapsané podíly) veřejná evidence neukazuje; beneficiální vlastnictví ZenX není rejstříkově viditelné (R-06)."
+      ],
+      "alternatives": [
+        {
+          "text": "Zakladatelé drží kontrolu jinak než podílem (hlasovací dohody, práva ze společenské smlouvy).",
+          "distinguishingEvidence": "Společenská smlouva ve sbírce listin; akcionářské dohody (neveřejné)."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Doložená dohoda dávající zakladatelům rozhodovací kontrolu nezávisle na podílech."
+        ],
+        "strengthen": [
+          "Zápisy z valných hromad ukazující ZenX jako rozhodujícího hlasujícího."
+        ],
+        "weaken": [
+          "Veřejné vyjádření ZenX o čistě pasivní roli."
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-clm-53/"
+    },
+    "CLM-54": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-ARES-CAPITAL",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-55": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-5326G",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion",
+          "via": "evidence.json claimEvidence"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-56",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-56": {
+      "kind": "assessment",
+      "supporting": [
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-22",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        },
+        {
+          "ref": "SRC-06",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-ARES-5326G",
+          "kind": "assertion"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": "INF-CLM-56",
+      "used_by": [],
+      "assumptions": [
+        "ASM-02",
+        "ASM-04"
+      ],
+      "uncertainty": [
+        "Valuace 80M CZK je jednozdrojová (SRC-22) a nezávisle neověřená."
+      ],
+      "alternatives": [
+        {
+          "text": "Kříž investoval jinak (osobně/jinou entitou) a 5326G vstoupilo nezávisle.",
+          "distinguishingEvidence": "Převodní smlouva ve sbírce listin; prohlášení Kříže; valuace v účetnictví 5326G."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Doklad, že mediální investici provedla jiná entita než 5326G."
+        ],
+        "strengthen": [
+          "Smlouva o převodu podílu jmenující 5326G a kupní cenu ~4M CZK."
+        ],
+        "weaken": [
+          "Rozpor mezi podílem 5326G a mediálně uváděnými ~5 %."
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-clm-56/"
+    },
+    "CLM-57": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-20",
+          "kind": "source",
+          "via": "evidence.json claimEvidence (source-level)"
+        },
+        {
+          "ref": "SRC-20",
+          "kind": "source",
+          "via": "evidence.json claimEvidence (source-level)"
+        },
+        {
+          "ref": "SRC-20",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-R-03",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-05",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CLM-58": {
+      "kind": "claim",
+      "supporting": [
+        {
+          "ref": "SRC-21",
+          "kind": "source",
+          "via": "dossier.json claims.sources"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-CLM-48",
+          "role": "contextualizes",
+          "kind": "inference"
+        },
+        {
+          "ref": "INF-R-04",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-08",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "FIN-ASSESS-01": {
+      "kind": "assessment",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": "INF-FIN-ASSESS-01",
+      "used_by": [
+        {
+          "ref": "INF-R-02",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-06",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [
+        "ASM-01",
+        "ASM-04"
+      ],
+      "uncertainty": [
+        "FY2025 nepodána."
+      ],
+      "alternatives": [
+        {
+          "text": "Cíl se vztahoval k FY2025+, kterou závěrka nepokrývá.",
+          "distinguishingEvidence": "FY2025 závěrka (revalidační fronta: financial-filings)."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "FY2025 tržby ~100M kombinovaně"
+        ],
+        "strengthen": [
+          "FY2025 potvrzující pokles"
+        ],
+        "weaken": [
+          "Významné výnosy v jiných entitách skupiny"
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-fin-assess-01/"
+    },
+    "FIN-ASSESS-02": {
+      "kind": "assessment",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": "INF-FIN-ASSESS-02",
+      "used_by": [
+        {
+          "ref": "INF-R-02",
+          "role": "supports",
+          "kind": "inference"
+        }
+      ],
+      "assumptions": [
+        "ASM-01"
+      ],
+      "uncertainty": [
+        "Bez rozpadu nákladů nelze říct, zda je nízká marže strukturální, nebo řízená."
+      ],
+      "alternatives": [
+        {
+          "text": "Marže je řízená (odměny/služby spřízněným subjektům snižují zisk záměrně).",
+          "distinguishingEvidence": "Struktura nákladů 'Služby' po protistranách — veřejně nedostupné."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Oprava závěrky s odlišným výsledkem"
+        ],
+        "strengthen": [
+          "FY2025 se stejným vzorcem"
+        ],
+        "weaken": [
+          "Důkaz mimořádných jednorázových nákladů vysvětlujících pokles marže"
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-fin-assess-02/"
+    },
+    "FIN-ASSESS-03": {
+      "kind": "assessment",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": "INF-FIN-ASSESS-03",
+      "used_by": [
+        {
+          "ref": "INF-R-02",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-06",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [
+        "ASM-01"
+      ],
+      "uncertainty": [
+        "Účel půjček z rozvahy nevyplývá; akvizice je časově blízká, ale kauzalita nedoložená."
+      ],
+      "alternatives": [
+        {
+          "text": "Půjčky financují jednorázovou investici (např. akvizici Blackfish), ne provoz.",
+          "distinguishingEvidence": "Časová vazba půjček na 07/2025 akvizici; příloha závěrky FY2025; smlouvy o půjčkách."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Doklad o splacení půjček krátce po rozvahovém dni"
+        ],
+        "strengthen": [
+          "FY2025 s dalším růstem společnických závazků"
+        ],
+        "weaken": [
+          "Prokázaná vazba na akviziční CAPEX"
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-fin-assess-03/"
+    },
+    "FIN-ASSESS-04": {
+      "kind": "assessment",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": "INF-FIN-ASSESS-04",
+      "used_by": [],
+      "assumptions": [
+        "ASM-01"
+      ],
+      "uncertainty": [
+        "Řádek 'Služby' je agregát; jeho složení není veřejné."
+      ],
+      "alternatives": [
+        {
+          "text": "Přesun zaměstnanců do jiné entity skupiny (payroll jinde, práce stejná).",
+          "distinguishingEvidence": "Závěrky/ohlášky ostatních entit skupiny; ČSSZ data (neveřejná)."
+        },
+        {
+          "text": "'Služby' zahrnují převážně ne-personální subdodávky (cloud, licence).",
+          "distinguishingEvidence": "Rozpad řádku Služby — veřejně nedostupný."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Rozpad Služeb ukazující převahu ne-personálních položek"
+        ],
+        "strengthen": [
+          "FY2025 se stejným vzorcem; inzeráty na kontraktory"
+        ],
+        "weaken": [
+          "Doklad o převodu zaměstnanců do sesterské entity"
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-fin-assess-04/"
+    },
+    "R-01": {
+      "kind": "conclusion",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": "INF-R-01",
+      "used_by": [],
+      "assumptions": [
+        "ASM-02"
+      ],
+      "uncertainty": [
+        "Interní rozdělení pravomocí není veřejně zjistitelné."
+      ],
+      "alternatives": [
+        {
+          "text": "Interní governance odpovídá titulům (jen bez zápisu).",
+          "distinguishingEvidence": "Organizační řád, pověření, prokura — neveřejné."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Zápis marketovaných rolí do rejstříku"
+        ],
+        "strengthen": [
+          "Další marketované role bez stopy"
+        ],
+        "weaken": [
+          "Zveřejněná pověření/prokury"
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-r-01/"
+    },
+    "R-02": {
+      "kind": "conclusion",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": "INF-R-02",
+      "used_by": [],
+      "assumptions": [
+        "ASM-01",
+        "ASM-04"
+      ],
+      "uncertainty": [
+        "Jednoletá trajektorie; konsolidace neexistuje."
+      ],
+      "alternatives": [
+        {
+          "text": "FY2025 obrat trend otočí (akviziční synergie).",
+          "distinguishingEvidence": "FY2025 závěrky Able i Blackfish."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "FY2025 růst řádu desítek % s posílenou marží"
+        ],
+        "strengthen": [
+          "FY2025 pokračující pokles / další zadlužování"
+        ],
+        "weaken": [
+          "Doložené výnosy v sesterských entitách"
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-r-02/"
+    },
+    "R-03": {
+      "kind": "conclusion",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": "INF-R-03",
+      "used_by": [],
+      "assumptions": [
+        "ASM-05"
+      ],
+      "uncertainty": [
+        "Soukromé zakázky veřejná evidence nezachytí (ASM-05) — absence není negativum."
+      ],
+      "alternatives": [
+        {
+          "text": "Klienti jsou soukromoprávní → absence v registru smluv je očekávatelná a nic neříká.",
+          "distinguishingEvidence": "Klientské reference s čísly; case studies podepsané klientem."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "—"
+        ],
+        "strengthen": [
+          "Neúspěšné pokusy o klientskou korroboraci"
+        ],
+        "weaken": [
+          "Nezávislé klientské potvrzení ROI čísel"
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-r-03/"
+    },
+    "R-04": {
+      "kind": "conclusion",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": "INF-R-04",
+      "used_by": [
+        {
+          "ref": "EXEC-08",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [
+        "ASM-05"
+      ],
+      "uncertainty": [
+        "Celé riziko JE nejistota: BLOCKED ≠ prověřeno."
+      ],
+      "alternatives": [
+        {
+          "text": "Žádné insolvenční řízení neexistuje (nejpravděpodobnější, ale nedoložené).",
+          "distinguishingEvidence": "Úspěšná ISIR lustrace (revalidační fronta, priorita 1)."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Úspěšná lustrace s nálezem řízení"
+        ],
+        "strengthen": [
+          "Úspěšná lustrace bez nálezu (riziko se uzavře)"
+        ],
+        "weaken": [
+          "—"
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-r-04/"
+    },
+    "R-05": {
+      "kind": "conclusion",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": "INF-R-05",
+      "used_by": [],
+      "assumptions": [
+        "ASM-02"
+      ],
+      "uncertainty": [
+        "Původ chybného čísla (proč právě −1) není zjistitelný."
+      ],
+      "alternatives": [
+        {
+          "text": "Stránka odkazuje na starší/pražský spis (firma byla přeregistrována z Prahy).",
+          "distinguishingEvidence": "Historický spis C 200323/MSPH vs. C 85425/KSBR — pražská značka je ale jiná než C 85424, takže tato alternativa je slabá."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Doklad, že C 85424 kdy patřil Able.cz"
+        ],
+        "strengthen": [
+          "Oprava webu firmy na C 85425"
+        ],
+        "weaken": [
+          "—"
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-r-05/"
+    },
+    "R-06": {
+      "kind": "conclusion",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": "INF-R-06",
+      "used_by": [],
+      "assumptions": [
+        "ASM-02"
+      ],
+      "uncertainty": [
+        "Konečné vlastnictví ZenX zůstává neprověřené (evidence skutečných majitelů má omezený veřejný přístup)."
+      ],
+      "alternatives": [
+        {
+          "text": "ZenX je pasivní finanční investor bez výkonu kontroly.",
+          "distinguishingEvidence": "Evidence skutečných majitelů (částečně neveřejná), zápisy z VH, jednání ZenX navenek."
+        }
+      ],
+      "counterfactuals": {
+        "falsify": [
+          "Doklad o pasivitě ZenX (dohody, prohlášení)"
+        ],
+        "strengthen": [
+          "Zjištění konečných vlastníků ZenX s dalšími vazbami"
+        ],
+        "weaken": [
+          "Zveřejnění beneficiálních vlastníků bez pozoruhodných vazeb"
+        ]
+      },
+      "reasoning_route": "/dossier/reasoning/inf-r-06/"
+    },
+    "CON-01": {
+      "kind": "conflict",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [
+        {
+          "ref": "SRC-01",
+          "kind": "source",
+          "side": "conflict_side_a"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "side": "conflict_side_b"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-COURT",
+          "kind": "assertion",
+          "side": "conflict_side_b"
+        }
+      ],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "INF-R-05",
+          "role": "supports",
+          "kind": "inference"
+        },
+        {
+          "ref": "EXEC-07",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CON-02": {
+      "kind": "conflict",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [
+        {
+          "ref": "SRC-10",
+          "kind": "source",
+          "side": "conflict_side_a"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "side": "conflict_side_b"
+        },
+        {
+          "ref": "EVD-ARES-ONELABEL",
+          "kind": "assertion",
+          "side": "conflict_side_b"
+        }
+      ],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-07",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "CON-03": {
+      "kind": "conflict",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "side": "conflict_side_a"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "side": "conflict_side_b"
+        },
+        {
+          "ref": "EVD-ARES-BLACKFISH",
+          "kind": "assertion",
+          "side": "conflict_side_b"
+        },
+        {
+          "ref": "CLM-41",
+          "kind": "claim",
+          "side": "conflict_side_b"
+        }
+      ],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-07",
+          "role": "supports",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "ASM-01": {
+      "kind": "assumption",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "ASM-02": {
+      "kind": "assumption",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "ASM-03": {
+      "kind": "assumption",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "ASM-04": {
+      "kind": "assumption",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "ASM-05": {
+      "kind": "assumption",
+      "supporting": [],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-CLM-35": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ABLE-OFFICERS",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "CLM-34",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-ARES-FAME-LOGISTICS",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-ARES-FAME-TRADE",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-CLM-38": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ABLE-OFFICERS",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "CLM-37",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-WEB-CLIENTS",
+          "kind": "evidence"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-CLM-40": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-39",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "CLM-22",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "CLM-21",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "CLM-51",
+          "kind": "assessment",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "side": "contradicts"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "side": "contradicts"
+        }
+      ],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-CLM-43": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-41",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "CLM-42",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-ARES-BLACKFISH",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-ARES-ARTSTAY",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-CLM-45": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-44",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL68-REVENUE",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL68-RESULT",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "CLM-50",
+          "kind": "assessment",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "side": "contradicts"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "side": "contradicts"
+        }
+      ],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-06",
+          "role": "reasoned_by",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-CLM-48": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-46",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL69-AMOUNT",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL69-CREDITOR",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL70-CLOSED",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "CLM-58",
+          "kind": "claim"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-CLM-50": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-49",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL21-ASSETS",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL23-ASSETS",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL68-ASSETS",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "SRC-04",
+          "kind": "source"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-CLM-51": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-22",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-CLM-53": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-52",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "side": "contradicts"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "side": "contradicts"
+        }
+      ],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-02",
+          "role": "reasoned_by",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-CLM-56": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-55",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-ARES-5326G",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "SRC-22",
+          "kind": "source"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-FIN-ASSESS-01": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "EVD-SL68-REVENUE",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "CLM-44",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [
+        {
+          "ref": "SRC-04",
+          "kind": "source",
+          "side": "contradicts"
+        },
+        {
+          "ref": "SRC-05",
+          "kind": "source",
+          "side": "contradicts"
+        }
+      ],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-FIN-ASSESS-02": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "EVD-SL68-RESULT",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL68-REVENUE",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-FIN-ASSESS-03": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "EVD-SL68-LIABILITIES",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL68-EQUITY",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL68-SHAREHOLDER-DEBT",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-FIN-ASSESS-04": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "EVD-SL68-PERSONNEL",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-SL68-SERVICES",
+          "kind": "evidence",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-R-01": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-38",
+          "kind": "assessment",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-OFFICERS",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-WEB-CLIENTS",
+          "kind": "evidence"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-R-02": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "FIN-ASSESS-01",
+          "kind": "assessment",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "FIN-ASSESS-02",
+          "kind": "assessment",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "FIN-ASSESS-03",
+          "kind": "assessment",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "CLM-45",
+          "kind": "assessment",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-R-03": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-57",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-WEB-ROI",
+          "kind": "evidence"
+        },
+        {
+          "ref": "EVD-WEB-AGENTS",
+          "kind": "evidence"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-05",
+          "role": "reasoned_by",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-R-04": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-58",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "CLM-48",
+          "kind": "assessment"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-08",
+          "role": "reasoned_by",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-R-05": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CON-01",
+          "kind": "conflict",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-COURT",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [
+        {
+          "ref": "EXEC-07",
+          "role": "reasoned_by",
+          "kind": "executive_finding"
+        }
+      ],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "INF-R-06": {
+      "kind": "inference",
+      "supporting": [
+        {
+          "ref": "CLM-52",
+          "kind": "claim",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "CLM-53",
+          "kind": "assessment",
+          "via": "reasoning.json premises"
+        },
+        {
+          "ref": "EVD-ARES-ZENX",
+          "kind": "assertion",
+          "via": "reasoning.json premises"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EXEC-01": {
+      "kind": "executive_finding",
+      "supporting": [
+        {
+          "ref": "EVD-ARES-ABLE-NAMES",
+          "kind": "assertion",
+          "via": "reasoning.json executiveFindings"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-COURT",
+          "kind": "assertion",
+          "via": "reasoning.json executiveFindings"
+        },
+        {
+          "ref": "SRC-12",
+          "kind": "source",
+          "via": "reasoning.json executiveFindings"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EXEC-02": {
+      "kind": "executive_finding",
+      "supporting": [
+        {
+          "ref": "CLM-52",
+          "kind": "claim",
+          "via": "reasoning.json executiveFindings"
+        },
+        {
+          "ref": "CLM-53",
+          "kind": "assessment",
+          "via": "reasoning.json executiveFindings"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EXEC-03": {
+      "kind": "executive_finding",
+      "supporting": [
+        {
+          "ref": "CLM-34",
+          "kind": "claim",
+          "via": "reasoning.json executiveFindings"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EXEC-04": {
+      "kind": "executive_finding",
+      "supporting": [
+        {
+          "ref": "CLM-28",
+          "kind": "claim",
+          "via": "reasoning.json executiveFindings"
+        },
+        {
+          "ref": "CLM-30",
+          "kind": "claim",
+          "via": "reasoning.json executiveFindings"
+        },
+        {
+          "ref": "CLM-32",
+          "kind": "claim",
+          "via": "reasoning.json executiveFindings"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EXEC-05": {
+      "kind": "executive_finding",
+      "supporting": [
+        {
+          "ref": "CLM-57",
+          "kind": "claim",
+          "via": "reasoning.json executiveFindings"
+        }
+      ],
+      "contextualizing": [
+        {
+          "ref": "EVD-WEB-ROI",
+          "kind": "evidence"
+        },
+        {
+          "ref": "EVD-WEB-AGENTS",
+          "kind": "evidence"
+        }
+      ],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EXEC-06": {
+      "kind": "executive_finding",
+      "supporting": [
+        {
+          "ref": "CLM-44",
+          "kind": "claim",
+          "via": "reasoning.json executiveFindings"
+        },
+        {
+          "ref": "CLM-45",
+          "kind": "assessment",
+          "via": "reasoning.json executiveFindings"
+        },
+        {
+          "ref": "FIN-ASSESS-01",
+          "kind": "assessment",
+          "via": "reasoning.json executiveFindings"
+        },
+        {
+          "ref": "FIN-ASSESS-03",
+          "kind": "assessment",
+          "via": "reasoning.json executiveFindings"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EXEC-07": {
+      "kind": "executive_finding",
+      "supporting": [
+        {
+          "ref": "CON-01",
+          "kind": "conflict",
+          "via": "reasoning.json executiveFindings"
+        },
+        {
+          "ref": "CON-02",
+          "kind": "conflict",
+          "via": "reasoning.json executiveFindings"
+        },
+        {
+          "ref": "CON-03",
+          "kind": "conflict",
+          "via": "reasoning.json executiveFindings"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    },
+    "EXEC-08": {
+      "kind": "executive_finding",
+      "supporting": [
+        {
+          "ref": "CLM-58",
+          "kind": "claim",
+          "via": "reasoning.json executiveFindings"
+        },
+        {
+          "ref": "R-04",
+          "kind": "conclusion",
+          "via": "reasoning.json executiveFindings"
+        }
+      ],
+      "contextualizing": [],
+      "contradicting": [],
+      "produced_by_inference": null,
+      "used_by": [],
+      "assumptions": [],
+      "uncertainty": [],
+      "alternatives": [],
+      "counterfactuals": null,
+      "reasoning_route": null
+    }
+  }
+}

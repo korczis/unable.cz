@@ -436,15 +436,19 @@
       else if (sid) { e.preventDefault(); open("source", sid); }
     });
 
-    // Inline citations: turn [CLM-xx]/[SRC-xx] tokens in the prose into
-    // evidence buttons, so every marked statement opens its chain in place.
+    // Inline citations: turn [SRC-xx] tokens in the prose into evidence
+    // buttons that open the retrieval chain in place. CLM tokens are OWNED by
+    // claims-link.js (each claim has a full page with evidence, "why" and
+    // history — a real navigable link beats a modal chip, and two enhancers
+    // fighting over one token produced order-dependent DOM). The old
+    // stateful `re.test` (global-flag lastIndex parity bug) is gone with it.
     (function citeify() {
       var prose = document.querySelectorAll("main .prose, main article, main [data-cites]");
-      var re = /\[(CLM-\d+|SRC-\d+)\]/g;
+      var re = /\[(SRC-\d+)\]/g;
       prose.forEach(function (container) {
         var walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null);
         var nodes = [];
-        while (walker.nextNode()) if (re.test(walker.currentNode.nodeValue)) nodes.push(walker.currentNode);
+        while (walker.nextNode()) if (walker.currentNode.nodeValue.indexOf("[SRC-") !== -1) nodes.push(walker.currentNode);
         nodes.forEach(function (node) {
           var frag = document.createDocumentFragment();
           var rest = node.nodeValue, m;
@@ -454,7 +458,7 @@
             frag.appendChild(document.createTextNode(rest.slice(last, m.index)));
             var btn = el("button", "align-super font-mono text-[10px] text-[#d4af37] underline decoration-dotted underline-offset-2 hover:text-[#f3e5c0]", m[1]);
             btn.type = "button";
-            btn.setAttribute(m[1].indexOf("CLM-") === 0 ? "data-evd-claim" : "data-evd-source", m[1]);
+            btn.setAttribute("data-evd-source", m[1]);
             btn.setAttribute("aria-label", "Zobrazit důkaz " + m[1]);
             frag.appendChild(btn);
             last = m.index + m[0].length;

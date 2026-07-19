@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-CLM-53",
+  "kind": "assessment",
+  "produces": "CLM-53",
+  "producesText": "Able.cz has been investor-plurality-owned for most of the period covered by the reviewed media narrative, which consistently frames it as the founders' company; the founders' combined registered stake (35.3 %) has been smaller than ZenX Capital's alone since at least November 2024.",
+  "canonicalPath": "/dossier/reasoning/inf-clm-53/",
+  "premises": [
+    {
+      "ref": "CLM-52",
+      "role": "supports",
+      "note": "ZenX 45,8–50 % od 10/2020 (primární cap table)",
+      "kind": "claim",
+      "label": "ZenX Capital, a.s. (IČO 09289127; Zdeněk Sluka is a member of its správní rada since 2020 per the primary register) has been Able.cz s.r.o.'s largest shareholder since 14 October 2"
+    },
+    {
+      "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "role": "supports",
+      "note": "úplná historie podílů",
+      "kind": "assertion",
+      "label": "EVD-ARES-ABLE-SHAREHOLDERS"
+    },
+    {
+      "ref": "SRC-04",
+      "role": "contradicts",
+      "note": "média rámují firmu jako zakladatelskou",
+      "kind": "source",
+      "label": "Forbes.cz — Able acquires Blackfish studio"
+    },
+    {
+      "ref": "SRC-05",
+      "role": "contradicts",
+      "kind": "source",
+      "label": "CzechCrunch — Able buys Blackfish"
+    }
+  ],
+  "steps": [
+    "Primární historie podílů: ZenX drží 45,8–50 % nepřetržitě od října 2020.",
+    "Zakladatelé drží kombinovaně 35,3 % (2× 17,63 %) — méně než ZenX sám, nejpozději od listopadu 2024.",
+    "Mediální narace v témže období konzistentně rámuje Able jako firmu zakladatelů.",
+    "Závěr: většinu období pokrytého narací je firma vlastnicky pluralitně investorská."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-02",
+      "text": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární."
+    },
+    {
+      "id": "ASM-04",
+      "text": "Mediální články citované jako SRC-04/SRC-05/SRC-22 přisuzují výroky uvedeným osobám správně."
+    }
+  ],
+  "primaryExplanation": "Veřejná narace nedrží krok s vlastnickou realitou zapsanou v rejstříku.",
+  "alternatives": [
+    {
+      "text": "Zakladatelé drží kontrolu jinak než podílem (hlasovací dohody, práva ze společenské smlouvy).",
+      "distinguishingEvidence": "Společenská smlouva ve sbírce listin; akcionářské dohody (neveřejné)."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Doložená dohoda dávající zakladatelům rozhodovací kontrolu nezávisle na podílech."
+    ],
+    "strengthen": [
+      "Zápisy z valných hromad ukazující ZenX jako rozhodujícího hlasujícího."
+    ],
+    "weaken": [
+      "Veřejné vyjádření ZenX o čistě pasivní roli."
+    ]
+  },
+  "uncertainty": [
+    "Skutečné rozhodovací poměry (vs. zapsané podíly) veřejná evidence neukazuje; beneficiální vlastnictví ZenX není rejstříkově viditelné (R-06)."
+  ],
+  "diversity": {
+    "source_count": 3,
+    "sources": [
+      "SRC-04",
+      "SRC-05",
+      "SRC-12"
+    ],
+    "evidence_count": 2,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 3,
+    "upstream_families": [
+      "cz_register",
+      "czechcrunch",
+      "forbes"
+    ],
+    "upstream_family_count": 3,
+    "jurisdictions": [
+      "CZ — média",
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CLM-52",
+      "EVD-ARES-ABLE-SHAREHOLDERS"
+    ],
+    "contradicting": [
+      "SRC-04",
+      "SRC-05"
+    ],
+    "contextualizing": [],
+    "alternatives": 1,
+    "unknown": [
+      "Skutečné rozhodovací poměry (vs. zapsané podíly) veřejná evidence neukazuje; beneficiální vlastnictví ZenX není rejstříkově viditelné (R-06)."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

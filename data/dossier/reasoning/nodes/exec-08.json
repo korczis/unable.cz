@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "EXEC-08",
+  "text": "Důvěra je střední: vysoká u identity a vlastnictví (primárně ověřené), nízká u výkonnostních tvrzení; insolvenční screening zůstává BLOCKED (ISIR HTTP 500) — neuzavřený, ne negativní.",
+  "narrativeSection": "Souhrn",
+  "supports": [
+    {
+      "ref": "CLM-58",
+      "role": "supports",
+      "kind": "claim",
+      "label": "Insolvency status for Able.cz s.r.o. could not be determined: the official insolvency register (ISIR) returned HTTP 500 to subject-search requests on both 2026-"
+    },
+    {
+      "ref": "R-04",
+      "role": "supports",
+      "kind": "conclusion",
+      "label": "Insolvency not conclusively screened"
+    }
+  ],
+  "reasoning": "INF-R-04",
+  "uncertainty": [
+    "Celý bod je výrok o nejistotě; uzavře ho jen úspěšná ISIR lustrace (revalidační priorita 1)."
+  ],
+  "diversity": {
+    "source_count": 3,
+    "sources": [
+      "SRC-16",
+      "SRC-17",
+      "SRC-21"
+    ],
+    "evidence_count": 5,
+    "document_count": 2,
+    "documents": [
+      "sbirka-listin/2026-01-21-exekucni-prikaz-podil-SL69.txt",
+      "sbirka-listin/2026-04-08-skonceni-exekuce-SL70.txt"
+    ],
+    "provider_run_backed_sources": 1,
+    "upstream_families": [
+      "cz_register",
+      "isir"
+    ],
+    "upstream_family_count": 2,
+    "jurisdictions": [
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "reasoningRoute": "/dossier/reasoning/inf-r-04/",
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

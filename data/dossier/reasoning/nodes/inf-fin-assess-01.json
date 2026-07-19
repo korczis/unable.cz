@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-FIN-ASSESS-01",
+  "kind": "assessment",
+  "produces": "FIN-ASSESS-01",
+  "producesText": "Filed revenue declined ~14.8 % year-on-year and is well below the ~100M CZK combined (Able+Blackfish) self-reported media target.",
+  "canonicalPath": "/dossier/reasoning/inf-fin-assess-01/",
+  "premises": [
+    {
+      "ref": "EVD-SL68-REVENUE",
+      "role": "supports",
+      "kind": "evidence",
+      "label": "I. Tržby z prodeje výrobků a služeb 36319 42642"
+    },
+    {
+      "ref": "CLM-44",
+      "role": "supports",
+      "kind": "claim",
+      "label": "Able.cz s.r.o.'s filed FY2024 statement (Sbírka listin C 85425/SL68/KSBR, filed 5 Dec 2025) shows: revenue from products and services 36,319 tis. CZK (FY2023: 42,642), net turnover"
+    },
+    {
+      "ref": "SRC-04",
+      "role": "contradicts",
+      "note": "mediální cíl",
+      "kind": "source",
+      "label": "Forbes.cz — Able acquires Blackfish studio"
+    },
+    {
+      "ref": "SRC-05",
+      "role": "contradicts",
+      "kind": "source",
+      "label": "CzechCrunch — Able buys Blackfish"
+    }
+  ],
+  "steps": [
+    "Tržby z výrobků a služeb: 42 642 → 36 319 tis. CZK = −14,83 % YoY (přímý výpočet z řádku I.).",
+    "Mediální kombinovaný cíl ~100M CZK je ~2,75× podaných tržeb FY2024."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-01",
+      "text": "Podaná účetní závěrka (Sbírka listin) věrně zachycuje účetnictví subjektu tak, jak bylo podáno; nezávislý audit nebyl k dispozici."
+    },
+    {
+      "id": "ASM-04",
+      "text": "Mediální články citované jako SRC-04/SRC-05/SRC-22 přisuzují výroky uvedeným osobám správně."
+    }
+  ],
+  "primaryExplanation": "Skutečná podaná trajektorie klesá; cíl byl aspirační.",
+  "alternatives": [
+    {
+      "text": "Cíl se vztahoval k FY2025+, kterou závěrka nepokrývá.",
+      "distinguishingEvidence": "FY2025 závěrka (revalidační fronta: financial-filings)."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "FY2025 tržby ~100M kombinovaně"
+    ],
+    "strengthen": [
+      "FY2025 potvrzující pokles"
+    ],
+    "weaken": [
+      "Významné výnosy v jiných entitách skupiny"
+    ]
+  },
+  "uncertainty": [
+    "FY2025 nepodána."
+  ],
+  "diversity": {
+    "source_count": 1,
+    "sources": [
+      "SRC-15"
+    ],
+    "evidence_count": 3,
+    "document_count": 1,
+    "documents": [
+      "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    ],
+    "provider_run_backed_sources": 0,
+    "upstream_families": [
+      "cz_register"
+    ],
+    "upstream_family_count": 1,
+    "jurisdictions": [
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-17"
+    },
+    "monoculture": true,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "EVD-SL68-REVENUE",
+      "CLM-44"
+    ],
+    "contradicting": [
+      "SRC-04",
+      "SRC-05"
+    ],
+    "contextualizing": [],
+    "alternatives": 1,
+    "unknown": [
+      "FY2025 nepodána."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

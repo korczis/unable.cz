@@ -1,0 +1,4558 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "reasoning-graph",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "evidenceCutoff": "2026-07-18",
+    "generatedAt": "2026-07-18",
+    "source": "data/dossier/able/reasoning.json + evidence.json + dossier.json",
+    "note": "Vrstvy: 0 zdroje/pozorování · 1 evidence · 2 asercie · 3 tvrzení · 4 assessmenty/úsudky/předpoklady/rozpory · 5 závěry · 6 exekutivní zjištění."
+  },
+  "layers": [
+    "source/observation",
+    "evidence",
+    "assertion",
+    "claim",
+    "assessment/inference",
+    "conclusion",
+    "executive_finding"
+  ],
+  "node_count": 200,
+  "edge_count": 463,
+  "nodes": [
+    {
+      "id": "SRC-01",
+      "kind": "source",
+      "label": "Able.cz — GDPR / legal notice",
+      "layer": 0,
+      "tier": 2,
+      "upstream": "able_cz"
+    },
+    {
+      "id": "OBS-SRC-01",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-01 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-01",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [
+        "run-20260718-a-039",
+        "run-20260718-b-043"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-02",
+      "kind": "source",
+      "label": "Able.cz — English site (services, claims, leadership)",
+      "layer": 0,
+      "tier": 2,
+      "upstream": "able_cz"
+    },
+    {
+      "id": "OBS-SRC-02",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-02 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-02",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [
+        "run-20260718-a-037",
+        "run-20260718-a-038",
+        "run-20260718-b-041",
+        "run-20260718-b-042"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-03",
+      "kind": "source",
+      "label": "Company-register mirrors, first identity pass (kurzy.cz, penize.cz, podnikatel.cz — republishing or.justice.cz data)",
+      "layer": 0,
+      "tier": 2,
+      "upstream": "cz_register"
+    },
+    {
+      "id": "OBS-SRC-03",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-03 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-03",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [],
+      "note": "Retrieval předchází evidenční vrstvě; provider run nezaznamenán (první pass)."
+    },
+    {
+      "id": "SRC-04",
+      "kind": "source",
+      "label": "Forbes.cz — Able acquires Blackfish studio",
+      "layer": 0,
+      "tier": 3,
+      "upstream": "forbes"
+    },
+    {
+      "id": "OBS-SRC-04",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-04 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-04",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [
+        "run-20260718-a-047",
+        "run-20260718-b-051"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-05",
+      "kind": "source",
+      "label": "CzechCrunch — Able buys Blackfish",
+      "layer": 0,
+      "tier": 3,
+      "upstream": "czechcrunch"
+    },
+    {
+      "id": "OBS-SRC-05",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-05 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-05",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [
+        "run-20260718-a-048",
+        "run-20260718-b-052"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-06",
+      "kind": "source",
+      "label": "LinkedIn — Václav Faraga, Able.cz s.r.o.",
+      "layer": 0,
+      "tier": 3,
+      "upstream": "linkedin"
+    },
+    {
+      "id": "OBS-SRC-06",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-06 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-06",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [
+        "run-20260718-a-skip-linkedin",
+        "run-20260718-b-skip-linkedin"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-07",
+      "kind": "source",
+      "label": "Google Public DNS (dns.google) — A/MX/NS for able.cz",
+      "layer": 0,
+      "tier": 1,
+      "upstream": "dns"
+    },
+    {
+      "id": "OBS-SRC-07",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-07 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-07",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [
+        "run-20260718-a-040",
+        "run-20260718-a-041",
+        "run-20260718-a-042",
+        "run-20260718-b-044",
+        "run-20260718-b-045",
+        "run-20260718-b-046"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-08",
+      "kind": "source",
+      "label": "EU VIES VAT validation — CZ24278815",
+      "layer": 0,
+      "tier": 1,
+      "upstream": "vies"
+    },
+    {
+      "id": "OBS-SRC-08",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-08 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-08",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [
+        "run-20260718-a-044",
+        "run-20260718-b-048"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-09",
+      "kind": "source",
+      "label": "crt.sh certificate transparency — able.cz",
+      "layer": 0,
+      "tier": 1,
+      "upstream": "crtsh"
+    },
+    {
+      "id": "OBS-SRC-09",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-09 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-09",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [
+        "run-20260718-a-043",
+        "run-20260718-b-047"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-10",
+      "kind": "source",
+      "label": "Czech commercial register — aggregator mirror search (kurzy.cz, rejstrik-firem)",
+      "layer": 0,
+      "tier": 2,
+      "upstream": "cz_register"
+    },
+    {
+      "id": "OBS-SRC-10",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-10 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-10",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [],
+      "note": "Retrieval předchází evidenční vrstvě; provider run nezaznamenán (první pass)."
+    },
+    {
+      "id": "SRC-11",
+      "kind": "source",
+      "label": "Hlídač státu — osoba/subjekt ownership-graph records",
+      "layer": 0,
+      "tier": 2,
+      "upstream": "cz_register"
+    },
+    {
+      "id": "OBS-SRC-11",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-11 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-11",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [],
+      "note": "Retrieval předchází evidenční vrstvě; provider run nezaznamenán (první pass)."
+    },
+    {
+      "id": "SRC-12",
+      "kind": "source",
+      "label": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed (cases/DD-Able-CZ-2026-07-17/artifacts/)",
+      "layer": 0,
+      "tier": 1,
+      "upstream": "cz_register"
+    },
+    {
+      "id": "OBS-SRC-12",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-12 (2026-07-18)",
+      "layer": 0,
+      "sourceId": "SRC-12",
+      "retrievedAt": "2026-07-18",
+      "providerRuns": [
+        "run-20260718-a-001",
+        "run-20260718-a-002",
+        "run-20260718-a-003",
+        "run-20260718-a-004",
+        "run-20260718-a-005",
+        "run-20260718-a-006",
+        "run-20260718-a-007",
+        "run-20260718-a-008",
+        "run-20260718-a-009",
+        "run-20260718-a-010",
+        "run-20260718-a-011",
+        "run-20260718-a-012",
+        "run-20260718-a-013",
+        "run-20260718-a-014",
+        "run-20260718-a-015",
+        "run-20260718-a-016",
+        "run-20260718-a-017",
+        "run-20260718-a-018",
+        "run-20260718-a-019",
+        "run-20260718-a-020",
+        "run-20260718-a-021",
+        "run-20260718-a-022",
+        "run-20260718-a-023",
+        "run-20260718-a-024",
+        "run-20260718-a-025",
+        "run-20260718-a-026",
+        "run-20260718-a-027",
+        "run-20260718-a-028",
+        "run-20260718-a-029",
+        "run-20260718-a-030",
+        "run-20260718-a-031",
+        "run-20260718-a-032",
+        "run-20260718-a-033",
+        "run-20260718-a-034",
+        "run-20260718-a-035",
+        "run-20260718-a-036",
+        "run-20260718-b-001",
+        "run-20260718-b-002",
+        "run-20260718-b-003",
+        "run-20260718-b-004",
+        "run-20260718-b-005",
+        "run-20260718-b-006",
+        "run-20260718-b-007",
+        "run-20260718-b-008",
+        "run-20260718-b-009",
+        "run-20260718-b-010",
+        "run-20260718-b-011",
+        "run-20260718-b-012",
+        "run-20260718-b-013",
+        "run-20260718-b-014",
+        "run-20260718-b-015",
+        "run-20260718-b-016",
+        "run-20260718-b-017",
+        "run-20260718-b-018",
+        "run-20260718-b-019",
+        "run-20260718-b-020",
+        "run-20260718-b-021",
+        "run-20260718-b-022",
+        "run-20260718-b-023",
+        "run-20260718-b-024",
+        "run-20260718-b-025",
+        "run-20260718-b-026",
+        "run-20260718-b-027",
+        "run-20260718-b-028",
+        "run-20260718-b-029",
+        "run-20260718-b-030",
+        "run-20260718-b-031",
+        "run-20260718-b-032",
+        "run-20260718-b-033",
+        "run-20260718-b-034",
+        "run-20260718-b-035",
+        "run-20260718-b-036",
+        "run-20260718-b-037",
+        "run-20260718-b-038",
+        "run-20260718-b-039",
+        "run-20260718-b-040"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-13",
+      "kind": "source",
+      "label": "CzechCrunch — Blackfish's 2021 Denmark expansion (names Oslzla as ~30% owner)",
+      "layer": 0,
+      "tier": 3,
+      "upstream": "czechcrunch"
+    },
+    {
+      "id": "OBS-SRC-13",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-13 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-13",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [
+        "run-20260718-a-049",
+        "run-20260718-b-053"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-14",
+      "kind": "source",
+      "label": "Northdata — Petr Faraga entity profile (Znojmo)",
+      "layer": 0,
+      "tier": 3,
+      "upstream": "cz_register"
+    },
+    {
+      "id": "OBS-SRC-14",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-14 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-14",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [],
+      "note": "Retrieval předchází evidenční vrstvě; provider run nezaznamenán (první pass)."
+    },
+    {
+      "id": "SRC-15",
+      "kind": "source",
+      "label": "Sbírka listin (or.justice.cz) — Able.cz s.r.o., účetní závěrka 2024 (C 85425/SL68/KSBR)",
+      "layer": 0,
+      "tier": 1,
+      "upstream": "cz_register"
+    },
+    {
+      "id": "OBS-SRC-15",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-15 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-15",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [],
+      "note": "Retrieval předchází evidenční vrstvě; provider run nezaznamenán (první pass)."
+    },
+    {
+      "id": "SRC-16",
+      "kind": "source",
+      "label": "Sbírka listin (or.justice.cz) — exekuční příkaz postižením obchodního podílu, T. Melichárek (C 85425/SL69/KSBR)",
+      "layer": 0,
+      "tier": 1,
+      "upstream": "cz_register"
+    },
+    {
+      "id": "OBS-SRC-16",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-16 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-16",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [],
+      "note": "Retrieval předchází evidenční vrstvě; provider run nezaznamenán (první pass)."
+    },
+    {
+      "id": "SRC-17",
+      "kind": "source",
+      "label": "Sbírka listin (or.justice.cz) — oznámení o skončení exekuce, T. Melichárek (C 85425/SL70/KSBR)",
+      "layer": 0,
+      "tier": 1,
+      "upstream": "cz_register"
+    },
+    {
+      "id": "OBS-SRC-17",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-17 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-17",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [],
+      "note": "Retrieval předchází evidenční vrstvě; provider run nezaznamenán (první pass)."
+    },
+    {
+      "id": "SRC-18",
+      "kind": "source",
+      "label": "Sbírka listin (or.justice.cz) — Blackfish & Co. s.r.o., účetní závěrka 2024 (C 283664/SL21/MSPH)",
+      "layer": 0,
+      "tier": 1,
+      "upstream": "cz_register"
+    },
+    {
+      "id": "OBS-SRC-18",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-18 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-18",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [],
+      "note": "Retrieval předchází evidenční vrstvě; provider run nezaznamenán (první pass)."
+    },
+    {
+      "id": "SRC-19",
+      "kind": "source",
+      "label": "Sbírka listin (or.justice.cz) — Blackfish & Co. s.r.o., účetní závěrka 2025 (C 283664/SL23/MSPH)",
+      "layer": 0,
+      "tier": 1,
+      "upstream": "cz_register"
+    },
+    {
+      "id": "OBS-SRC-19",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-19 (2026-07-17)",
+      "layer": 0,
+      "sourceId": "SRC-19",
+      "retrievedAt": "2026-07-17",
+      "providerRuns": [],
+      "note": "Retrieval předchází evidenční vrstvě; provider run nezaznamenán (první pass)."
+    },
+    {
+      "id": "SRC-20",
+      "kind": "source",
+      "label": "Registr smluv (smlouvy.gov.cz) — party search by IČO 24278815 and 06526411 (result pages preserved)",
+      "layer": 0,
+      "tier": 1,
+      "upstream": "contracts_register"
+    },
+    {
+      "id": "OBS-SRC-20",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-20 (2026-07-18)",
+      "layer": 0,
+      "sourceId": "SRC-20",
+      "retrievedAt": "2026-07-18",
+      "providerRuns": [
+        "run-20260718-a-045",
+        "run-20260718-a-046",
+        "run-20260718-b-049",
+        "run-20260718-b-050"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-21",
+      "kind": "source",
+      "label": "ISIR — insolvenční rejstřík (subject lustrace, isir.justice.cz)",
+      "layer": 0,
+      "tier": 1,
+      "upstream": "isir"
+    },
+    {
+      "id": "OBS-SRC-21",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-21 (2026-07-18)",
+      "layer": 0,
+      "sourceId": "SRC-21",
+      "retrievedAt": "2026-07-18",
+      "providerRuns": [
+        "run-20260718-a-050",
+        "run-20260718-b-054"
+      ],
+      "note": null
+    },
+    {
+      "id": "SRC-22",
+      "kind": "source",
+      "label": "CzechCrunch (2023-12-20) — Able.cz investment coverage: Point FM / Marek Kříž ~5% at 80M CZK valuation",
+      "layer": 0,
+      "tier": 3,
+      "upstream": "media_unknown"
+    },
+    {
+      "id": "OBS-SRC-22",
+      "kind": "observation",
+      "label": "Stažení a uchování SRC-22 (2026-07-18)",
+      "layer": 0,
+      "sourceId": "SRC-22",
+      "retrievedAt": "2026-07-18",
+      "providerRuns": [
+        "run-20260718-d-001"
+      ],
+      "note": null
+    },
+    {
+      "id": "EVD-SL68-REVENUE",
+      "kind": "evidence",
+      "label": "I. Tržby z prodeje výrobků a služeb 36319 42642",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-15",
+      "file": "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    },
+    {
+      "id": "EVD-SL68-TURNOVER",
+      "kind": "evidence",
+      "label": "* Čistý obrat za účetní období 36319 43079",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-15",
+      "file": "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    },
+    {
+      "id": "EVD-SL68-RESULT",
+      "kind": "evidence",
+      "label": "** Výsledek hospodaření po zdanění (+/-) 631 844",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-15",
+      "file": "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    },
+    {
+      "id": "EVD-SL68-ASSETS",
+      "kind": "evidence",
+      "label": "AKTIVA CELKEM 100016 28136 71880 59386",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-15",
+      "file": "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    },
+    {
+      "id": "EVD-SL68-EQUITY",
+      "kind": "evidence",
+      "label": "A. Vlastní kapitál 26592 25849",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-15",
+      "file": "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    },
+    {
+      "id": "EVD-SL68-LIABILITIES",
+      "kind": "evidence",
+      "label": "B.+C. Cizí zdroje 45183 33406",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-15",
+      "file": "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    },
+    {
+      "id": "EVD-SL68-PERSONNEL",
+      "kind": "evidence",
+      "label": "D. Osobní náklady 2926 4964",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-15",
+      "file": "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    },
+    {
+      "id": "EVD-SL68-SERVICES",
+      "kind": "evidence",
+      "label": "A.3 Služby 38734 40612",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-15",
+      "file": "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    },
+    {
+      "id": "EVD-SL68-SUBSIDIARY",
+      "kind": "evidence",
+      "label": "B.III.1. Podíly - ovládaná nebo ovládající osoba 1430 1430 1430",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-15",
+      "file": "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    },
+    {
+      "id": "EVD-SL68-SHAREHOLDER-DEBT",
+      "kind": "evidence",
+      "label": "C.I.9.1. Závazky ke společníkům 9754 2935",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-15",
+      "file": "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    },
+    {
+      "id": "EVD-SL21-ASSETS",
+      "kind": "evidence",
+      "label": "AKTIVA CELKEM 6957 210 6747 5966",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-18",
+      "file": "sbirka-listin/blackfish/2024-ucetni-zaverka-SL21.txt"
+    },
+    {
+      "id": "EVD-SL21-EQUITY",
+      "kind": "evidence",
+      "label": "A. Vlastní kapitál 2665 2581",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-18",
+      "file": "sbirka-listin/blackfish/2024-ucetni-zaverka-SL21.txt"
+    },
+    {
+      "id": "EVD-SL23-ASSETS",
+      "kind": "evidence",
+      "label": "AKTIVA CELKEM 8477 224 8253 6747",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-19",
+      "file": "sbirka-listin/blackfish/2025-ucetni-zaverka-SL23.txt"
+    },
+    {
+      "id": "EVD-SL69-ORDER",
+      "kind": "evidence",
+      "label": "I. Soudní exekutor Mgr. Jakub Effenberger rozhodl o provedení exekuce postižením účasti",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-16",
+      "file": "sbirka-listin/2026-01-21-exekucni-prikaz-podil-SL69.txt"
+    },
+    {
+      "id": "EVD-SL69-AMOUNT",
+      "kind": "evidence",
+      "label": "12 celkem ke dni vydání exekučního příkazu (řádky 4 + 11) v Kč 9 327,14 Kč",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-16",
+      "file": "sbirka-listin/2026-01-21-exekucni-prikaz-podil-SL69.txt"
+    },
+    {
+      "id": "EVD-SL69-CREDITOR",
+      "kind": "evidence",
+      "label": "Dopravní podnik hl. m. Prahy, akciová společnost se sídlem",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-16",
+      "file": "sbirka-listin/2026-01-21-exekucni-prikaz-podil-SL69.txt"
+    },
+    {
+      "id": "EVD-SL70-CLOSED",
+      "kind": "evidence",
+      "label": "exekuce byla dne 24.03.2026  skončena vymožením.",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-17",
+      "file": "sbirka-listin/2026-04-08-skonceni-exekuce-SL70.txt"
+    },
+    {
+      "id": "EVD-SL70-INSTRUMENTS",
+      "kind": "evidence",
+      "label": "2. Exekuční příkaz - obchodní podíl č.j. 219 EX 00241/26-032, ze dne 19.01.2026,",
+      "layer": 1,
+      "evidenceKind": "document_span",
+      "sourceId": "SRC-17",
+      "file": "sbirka-listin/2026-04-08-skonceni-exekuce-SL70.txt"
+    },
+    {
+      "id": "EVD-WEB-AGENTS",
+      "kind": "evidence",
+      "label": "AI-driven software built on 150+ in-house AI agents.",
+      "layer": 1,
+      "evidenceKind": "web_span",
+      "sourceId": "SRC-02",
+      "file": "web-snapshot:able-cz-en"
+    },
+    {
+      "id": "EVD-WEB-ROI",
+      "kind": "evidence",
+      "label": "300% — Average client-side ROI",
+      "layer": 1,
+      "evidenceKind": "web_span",
+      "sourceId": "SRC-02",
+      "file": "web-snapshot:able-cz-en"
+    },
+    {
+      "id": "EVD-WEB-MANDAYS",
+      "kind": "evidence",
+      "label": "Hundreds — Man-days saved",
+      "layer": 1,
+      "evidenceKind": "web_span",
+      "sourceId": "SRC-02",
+      "file": "web-snapshot:able-cz-en"
+    },
+    {
+      "id": "EVD-WEB-WEEKS",
+      "kind": "evidence",
+      "label": "Delivery in weeks, not months",
+      "layer": 1,
+      "evidenceKind": "web_span",
+      "sourceId": "SRC-02",
+      "file": "web-snapshot:able-cz-en"
+    },
+    {
+      "id": "EVD-WEB-ERROR",
+      "kind": "evidence",
+      "label": ">90% — Reduction in error rate",
+      "layer": 1,
+      "evidenceKind": "web_span",
+      "sourceId": "SRC-02",
+      "file": "web-snapshot:able-cz-en"
+    },
+    {
+      "id": "EVD-WEB-600ROI",
+      "kind": "evidence",
+      "label": "“With Able, we developed a platform with a 600% ROI.” (Arkadia Labs testimonial)",
+      "layer": 1,
+      "evidenceKind": "web_span",
+      "sourceId": "SRC-02",
+      "file": "web-snapshot:able-cz-en"
+    },
+    {
+      "id": "EVD-WEB-AAA",
+      "kind": "evidence",
+      "label": "…helped AAA Auto close 30% more insurance policies while speeding up the process by 50% and saving 3,500 person-days.",
+      "layer": 1,
+      "evidenceKind": "web_span",
+      "sourceId": "SRC-02",
+      "file": "web-snapshot:able-cz-en"
+    },
+    {
+      "id": "EVD-WEB-SECURITY",
+      "kind": "evidence",
+      "label": "AI agents run in an isolated environment, client data is never used to train external LLMs, and the code remains under your control.",
+      "layer": 1,
+      "evidenceKind": "web_span",
+      "sourceId": "SRC-02",
+      "file": "web-snapshot:able-cz-en"
+    },
+    {
+      "id": "EVD-WEB-NDA",
+      "kind": "evidence",
+      "label": "We work in compliance with GDPR and sign both an NDA and a DPA on every project. Data never leaves the EU.",
+      "layer": 1,
+      "evidenceKind": "web_span",
+      "sourceId": "SRC-02",
+      "file": "web-snapshot:able-cz-en"
+    },
+    {
+      "id": "EVD-WEB-CLIENTS",
+      "kind": "evidence",
+      "label": "Named clients on able.cz/en: AAA Auto, Aures Holdings a.s., Arkadia Labs, Encall, Taste Town",
+      "layer": 1,
+      "evidenceKind": "web_span",
+      "sourceId": "SRC-02",
+      "file": "web-snapshot:able-cz-en"
+    },
+    {
+      "id": "EVD-ARES-CAPITAL",
+      "kind": "assertion",
+      "label": "EVD-ARES-CAPITAL",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-ABLE-NAMES",
+      "kind": "assertion",
+      "label": "EVD-ARES-ABLE-NAMES",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-ABLE-COURT",
+      "kind": "assertion",
+      "label": "EVD-ARES-ABLE-COURT",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-ABLE-OFFICERS",
+      "kind": "assertion",
+      "label": "EVD-ARES-ABLE-OFFICERS",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "kind": "assertion",
+      "label": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-ABLE-BOARD",
+      "kind": "assertion",
+      "label": "EVD-ARES-ABLE-BOARD",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-BLACKFISH",
+      "kind": "assertion",
+      "label": "EVD-ARES-BLACKFISH",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-ONELABEL",
+      "kind": "assertion",
+      "label": "EVD-ARES-ONELABEL",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-MINDEE",
+      "kind": "assertion",
+      "label": "EVD-ARES-MINDEE",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-ERA25",
+      "kind": "assertion",
+      "label": "EVD-ARES-ERA25",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-VERZUZ",
+      "kind": "assertion",
+      "label": "EVD-ARES-VERZUZ",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-FAME-LOGISTICS",
+      "kind": "assertion",
+      "label": "EVD-ARES-FAME-LOGISTICS",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-FAME-TRADE",
+      "kind": "assertion",
+      "label": "EVD-ARES-FAME-TRADE",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-FAMA-MEDIA",
+      "kind": "assertion",
+      "label": "EVD-ARES-FAMA-MEDIA",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-MMPLAN",
+      "kind": "assertion",
+      "label": "EVD-ARES-MMPLAN",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-VENTOUX",
+      "kind": "assertion",
+      "label": "EVD-ARES-VENTOUX",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-SCHLESINGER-SRO",
+      "kind": "assertion",
+      "label": "EVD-ARES-SCHLESINGER-SRO",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-ARTSTAY",
+      "kind": "assertion",
+      "label": "EVD-ARES-ARTSTAY",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-MYSASY",
+      "kind": "assertion",
+      "label": "EVD-ARES-MYSASY",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-BGO",
+      "kind": "assertion",
+      "label": "EVD-ARES-BGO",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-USPORIX",
+      "kind": "assertion",
+      "label": "EVD-ARES-USPORIX",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-VERASTO",
+      "kind": "assertion",
+      "label": "EVD-ARES-VERASTO",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-ZENX",
+      "kind": "assertion",
+      "label": "EVD-ARES-ZENX",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "EVD-ARES-5326G",
+      "kind": "assertion",
+      "label": "EVD-ARES-5326G",
+      "layer": 2,
+      "sourceId": "SRC-12"
+    },
+    {
+      "id": "CLM-01",
+      "kind": "claim",
+      "label": "150+ in-house AI agents",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-02",
+      "kind": "claim",
+      "label": "300% average client-side ROI",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-03",
+      "kind": "claim",
+      "label": "Hundreds of man-days saved",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-04",
+      "kind": "claim",
+      "label": "Delivery in weeks, not months",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-05",
+      "kind": "claim",
+      "label": ">90% reduction in error rate",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-06",
+      "kind": "claim",
+      "label": "600% ROI (Arkadia Labs case)",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-07",
+      "kind": "claim",
+      "label": "3,500 person-days saved (AAA Auto case)",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-08",
+      "kind": "claim",
+      "label": "50% faster process (AAA Auto case)",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-09",
+      "kind": "claim",
+      "label": "Client data never used to train external LLMs",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-10",
+      "kind": "claim",
+      "label": "AI agents run in an isolated environment",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-11",
+      "kind": "claim",
+      "label": "Code remains under client control",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-12",
+      "kind": "claim",
+      "label": "NDA and DPA signed on every project",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-13",
+      "kind": "claim",
+      "label": "Data never leaves the EU",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-14",
+      "kind": "claim",
+      "label": "Acquired 100% of product studio Blackfish; founder Vít Schlesinger stayed to lead business strategy",
+      "layer": 3,
+      "status": "CORROBORATED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-15",
+      "kind": "claim",
+      "label": "Named clients incl. AAA Auto, Aures Holdings, Arkadia, Encall, Taste Town",
+      "layer": 3,
+      "status": "SELF_REPORTED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-16",
+      "kind": "claim",
+      "label": "Václav Faraga holds statutory and/or ownership roles in at least five other companies beyond Able.cz — Mindee app s.r.o. (IČO 06437877), Blackfish & Co. s.r.o. ",
+      "layer": 3,
+      "status": "CORROBORATED",
+      "superseded": true
+    },
+    {
+      "id": "CLM-17",
+      "kind": "claim",
+      "label": "Tomáš Melichárek is sole owner and jednatel of M&M plan s.r.o. (IČO 01812840) since 2013, and co-jednatel of FaMe logistics s.r.o. v likvidaci alongside Václav ",
+      "layer": 3,
+      "status": "CORROBORATED",
+      "superseded": true
+    },
+    {
+      "id": "CLM-18",
+      "kind": "claim",
+      "label": "Petr Faraga (b. 1966) — sharing the Znojmo address cluster and co-officer history with Václav Faraga (b. 1989) across FaMe logistics and FaMe trade — became a s",
+      "layer": 3,
+      "status": "CORROBORATED",
+      "superseded": true
+    },
+    {
+      "id": "CLM-19",
+      "kind": "claim",
+      "label": "Radek Juhaňák and Jakub Kaman are both shareholders of Able.cz s.r.o. and co-own one label s.r.o. (IČO 02474727, Znojmo) together with Ondřej Kaman. Per the pri",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-20",
+      "kind": "claim",
+      "label": "Independent research found no register or address overlap between Lukáš Grolig (Able's marketed CTO) and the Able.cz/Znojmo cluster in any of his own companies ",
+      "layer": 3,
+      "status": "CORROBORATED",
+      "superseded": true
+    },
+    {
+      "id": "CLM-21",
+      "kind": "claim",
+      "label": "Able.cz s.r.o. is registered as the 100% shareholder of Blackfish & Co. s.r.o. (IČO 06526411) since 29 July 2025, with Václav Faraga added as a second jednatel ",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-22",
+      "kind": "claim",
+      "label": "As part of the acquisition, Vít Schlesinger became a shareholder of Able.cz s.r.o. itself — exactly 5.00 % (vklad 12,185.75 CZK), registered 29 July 2025.",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-23",
+      "kind": "claim",
+      "label": "Vít Schlesinger holds an undisclosed concurrent shareholding in Ventoux Studio s.r.o. (IČO 23749636), registered since 22 September 2025 — about two months afte",
+      "layer": 3,
+      "status": "CORROBORATED",
+      "superseded": true
+    },
+    {
+      "id": "CLM-24",
+      "kind": "claim",
+      "label": "Lukáš Oslzla was jednatel and co-owner of Blackfish & Co. s.r.o. from June 2022, exiting in February 2024 — about 17 months before Able.cz's 2025 acquisition. N",
+      "layer": 3,
+      "status": "CORROBORATED",
+      "superseded": true
+    },
+    {
+      "id": "CLM-25",
+      "kind": "claim",
+      "label": "Able.cz s.r.o.'s filed FY2024 financial statement (Sbírka listin, C 85425/SL68/KSBR) shows revenue of 36.3M CZK, down from 43.1M CZK in FY2023 — a decline, and ",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": true
+    },
+    {
+      "id": "CLM-26",
+      "kind": "claim",
+      "label": "In January 2026, a court exekutor ordered execution against Tomáš Melichárek's personal ownership stake (podíl) in Able.cz s.r.o., to satisfy a 9,327.14 CZK deb",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": true
+    },
+    {
+      "id": "CLM-27",
+      "kind": "claim",
+      "label": "Blackfish & Co. s.r.o.'s own filed balance sheets (as a micro accounting unit, no P&L required) show total assets of only 6.75M CZK (FY2024) and 8.25M CZK (FY20",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": true
+    },
+    {
+      "id": "CLM-28",
+      "kind": "claim",
+      "label": "Mindee app s.r.o. (IČO 06437877) is a majority-owned subsidiary of Able.cz s.r.o.: Able.cz held 50 % at its 2017 founding, 47.5 % during 2019–2024, and 95 % sin",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-29",
+      "kind": "claim",
+      "label": "ERA25 s.r.o. (IČO 23630051, founded 23 Aug 2025) is co-owned by both Able.cz founders and an Able.cz shareholder: Václav Faraga 39.5 % + jednatel, Tomáš Melichá",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-30",
+      "kind": "claim",
+      "label": "Verzuz.com s.r.o. (IČO 24094323, founded 22 Dec 2025) is a 100 % subsidiary of Able.cz s.r.o.; Václav Faraga and Tomáš Melichárek are its jednatelé.",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-31",
+      "kind": "claim",
+      "label": "FaMe logistics s.r.o. v likvidaci (IČO 02019396; founded 2013 as FaMe group s.r.o., renamed 2015) is co-owned by Václav Faraga (33 %), Petr Faraga (34 %) and To",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-32",
+      "kind": "claim",
+      "label": "FaMe trade s.r.o. (IČO 29292859, founded 2011) is ACTIVE, and Václav Faraga currently holds 50 % (since 14 Dec 2020) and remains a jednatel, alongside Tomáš Mel",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-33",
+      "kind": "claim",
+      "label": "Tomáš Melichárek is sole owner (100 %) and jednatel of M&M plan s.r.o. (IČO 01812840) since 4 July 2013 (Martin Havlík held 66 % and a jednatel role during 2014",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-34",
+      "kind": "claim",
+      "label": "Petr Faraga (b. 1966) was a co-founder of Able.cz s.r.o. (then BIT CONSULTING s.r.o.): a founding 1/3 shareholder from 3 Oct 2012 and a jednatel from 3 Oct 2012",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-35",
+      "kind": "assessment",
+      "label": "A family relationship between Václav Faraga (b. 1989) and Petr Faraga (b. 1966) is plausible — shared surname, shared Znojmo address cluster, co-founding of Abl",
+      "layer": 4,
+      "status": "ASSESSED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-36",
+      "kind": "claim",
+      "label": "Ondřej Kaman directly holds 1.50 % of Able.cz s.r.o. (vklad 3,655.73 CZK) since 29 July 2025.",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-37",
+      "kind": "claim",
+      "label": "Lukáš Grolig's own register footprint: VERASTO s.r.o. (IČO 06116159) — sole owner and jednatel since 18 May 2017; BGO s.r.o. (IČO 19173661) — 1/3 shareholder an",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-38",
+      "kind": "assessment",
+      "label": "Lukáš Grolig appears nowhere in Able.cz s.r.o.'s register record (statutory body, supervisory board, or any shareholder configuration 2012–2026). His marketed C",
+      "layer": 4,
+      "status": "ASSESSED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-39",
+      "kind": "claim",
+      "label": "Vít Schlesinger holds 30 % of Ventoux Studio s.r.o. (IČO 23749636) since its founding on 22 September 2025, alongside Andrea Naštická (35 %, jednatelka) and Nat",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-40",
+      "kind": "assessment",
+      "label": "Schlesinger's concurrent Ventoux Studio stake — registered about two months after the Blackfish acquisition closed — and his reciprocal 5 % Able.cz stake (CLM-2",
+      "layer": 4,
+      "status": "ASSESSED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-41",
+      "kind": "claim",
+      "label": "Lukáš Oslzla was a Blackfish & Co. jednatel from 8 June 2022 to 22 February 2024 and a 30 % shareholder from 9 June 2022 to 23 February 2024, when Vít Schlesing",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-42",
+      "kind": "claim",
+      "label": "Lovs & Co. s.r.o. (IČO 10847031, founded 14 May 2021) was co-owned 50/50 by Vít Schlesinger and Lukáš Oslzla, both jednatelé. On 13 February 2024 the company wa",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-43",
+      "kind": "assessment",
+      "label": "The mirrored February 2024 exits — Schlesinger taking 100 % of Blackfish while Oslzla took 100 % of Artstay/Lovs — are consistent with a negotiated separation d",
+      "layer": 4,
+      "status": "ASSESSED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-44",
+      "kind": "claim",
+      "label": "Able.cz s.r.o.'s filed FY2024 statement (Sbírka listin C 85425/SL68/KSBR, filed 5 Dec 2025) shows: revenue from products and services 36,319 tis. CZK (FY2023: 4",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-45",
+      "kind": "assessment",
+      "label": "The filed FY2024 trajectory (36.3M CZK revenue, declining; net margin under 2 % and shrinking) is far below the ~100M CZK combined Able+Blackfish revenue target",
+      "layer": 4,
+      "status": "ASSESSED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-46",
+      "kind": "claim",
+      "label": "On 19 January 2026 soudní exekutor Mgr. Jakub Effenberger (Exekutorský úřad Kolín; case 219 EX 00241/26) issued execution orders against Tomáš Melichárek person",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-47",
+      "kind": "claim",
+      "label": "During the execution window, Melichárek's shareholding records show re-registrations across four companies: Able.cz s.r.o. (20 Jan 2026, cleared by 2 Apr 2026),",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-48",
+      "kind": "assessment",
+      "label": "A 9,327.14 CZK debt to the Prague public-transport operator is consistent in scale with an escalated unpaid-fare claim, but the filed documents do not state the",
+      "layer": 4,
+      "status": "ASSESSED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-49",
+      "kind": "claim",
+      "label": "Blackfish & Co. s.r.o.'s filed balance sheets (micro accounting unit — abbreviated, no P&L) show: FY2024 total assets 6,747 tis. CZK, equity 2,665 tis. CZK; FY2",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-50",
+      "kind": "assessment",
+      "label": "Blackfish is financially small next to Able.cz (filed total assets 6.7–8.3M vs 71.9M CZK): most of the scale implied by the self-reported 'combined ~60 people, ",
+      "layer": 4,
+      "status": "ASSESSED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-51",
+      "kind": "assessment",
+      "label": "Neither Forbes.cz nor CzechCrunch mentioned Schlesinger's reciprocal 5 % Able.cz stake in their acquisition coverage, which described only Able acquiring Blackf",
+      "layer": 4,
+      "status": "ASSESSED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-52",
+      "kind": "claim",
+      "label": "ZenX Capital, a.s. (IČO 09289127; Zdeněk Sluka is a member of its správní rada since 2020 per the primary register) has been Able.cz s.r.o.'s largest shareholde",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-53",
+      "kind": "assessment",
+      "label": "Able.cz has been investor-plurality-owned for most of the period covered by the reviewed media narrative, which consistently frames it as the founders' company;",
+      "layer": 4,
+      "status": "ASSESSED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-54",
+      "kind": "claim",
+      "label": "Able.cz s.r.o.'s registered capital was increased from 210,000 to 243,715 CZK on 14 November 2024, and the 29 July 2025 restructuring registered seven incoming ",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-55",
+      "kind": "claim",
+      "label": "5326G s.r.o. (IČO 19540051, founded 19 July 2023) — owned 51 % by Marek Kříž (jednatel) and 49 % by David Jopek — has held an Able.cz stake since 28 August 2023",
+      "layer": 3,
+      "status": "VERIFIED_PRIMARY",
+      "superseded": false
+    },
+    {
+      "id": "CLM-56",
+      "kind": "assessment",
+      "label": "The 2023 media report that 'Marek Kříž (Point FM) took ~5 % of Able.cz for 4M CZK at an 80M CZK valuation' aligns in person, timing and approximate size with 53",
+      "layer": 4,
+      "status": "ASSESSED",
+      "superseded": false
+    },
+    {
+      "id": "CLM-57",
+      "kind": "claim",
+      "label": "The Registr smluv (official contracts register) returns zero published contracts for IČO 24278815 (Able.cz) and zero for IČO 06526411 (Blackfish & Co.) — search",
+      "layer": 3,
+      "status": "NOT_FOUND",
+      "superseded": false
+    },
+    {
+      "id": "CLM-58",
+      "kind": "claim",
+      "label": "Insolvency status for Able.cz s.r.o. could not be determined: the official insolvency register (ISIR) returned HTTP 500 to subject-search requests on both 2026-",
+      "layer": 3,
+      "status": "BLOCKED",
+      "superseded": false
+    },
+    {
+      "id": "FIN-ASSESS-01",
+      "kind": "assessment",
+      "label": "Filed revenue declined ~14.8 % year-on-year and is well below the ~100M CZK combined (Able+Blackfish) self-reported media target.",
+      "layer": 4,
+      "status": "ASSESSED"
+    },
+    {
+      "id": "FIN-ASSESS-02",
+      "kind": "assessment",
+      "label": "Profitable both years, but the net margin is thin (under 2 % of revenue) and shrinking.",
+      "layer": 4,
+      "status": "ASSESSED"
+    },
+    {
+      "id": "FIN-ASSESS-03",
+      "kind": "assessment",
+      "label": "Liabilities grew faster than equity year-on-year; shareholder loans more than tripled (3.1M → 10.0M CZK).",
+      "layer": 4,
+      "status": "ASSESSED"
+    },
+    {
+      "id": "FIN-ASSESS-04",
+      "kind": "assessment",
+      "label": "Personnel costs fell ~41 % while purchased services ('Služby', 38.7M CZK) is by far the largest cost line — a cost structure consistent with contractor-heavy de",
+      "layer": 4,
+      "status": "ASSESSED"
+    },
+    {
+      "id": "R-01",
+      "kind": "conclusion",
+      "label": "Marketing titles are not statutory offices",
+      "layer": 5,
+      "category": "governance",
+      "probability": "moderate",
+      "impact": "low"
+    },
+    {
+      "id": "R-02",
+      "kind": "conclusion",
+      "label": "Filed revenue declining and far below the media-reported combined target",
+      "layer": 5,
+      "category": "financial",
+      "probability": "high",
+      "impact": "moderate"
+    },
+    {
+      "id": "R-03",
+      "kind": "conclusion",
+      "label": "Performance claims are self-reported",
+      "layer": 5,
+      "category": "reputational",
+      "probability": "moderate",
+      "impact": "moderate"
+    },
+    {
+      "id": "R-04",
+      "kind": "conclusion",
+      "label": "Insolvency not conclusively screened",
+      "layer": 5,
+      "category": "legal",
+      "probability": "unknown",
+      "impact": "high"
+    },
+    {
+      "id": "R-05",
+      "kind": "conclusion",
+      "label": "Public court-file discrepancy",
+      "layer": 5,
+      "category": "governance",
+      "probability": "high",
+      "impact": "low"
+    },
+    {
+      "id": "R-06",
+      "kind": "conclusion",
+      "label": "Control concentration outside the founders",
+      "layer": 5,
+      "category": "ownership",
+      "probability": "high",
+      "impact": "moderate"
+    },
+    {
+      "id": "CON-01",
+      "kind": "conflict",
+      "label": "Court file number (spisová značka)",
+      "layer": 4,
+      "status": "CONTRADICTED"
+    },
+    {
+      "id": "CON-02",
+      "kind": "conflict",
+      "label": "one label s.r.o. (IČO 02474727, Znojmo) — jednatel roles, stakes and dates for its three co-owners",
+      "layer": 4,
+      "status": "RESOLVED"
+    },
+    {
+      "id": "CON-03",
+      "kind": "conflict",
+      "label": "When Lukáš Oslzla became a Blackfish & Co. owner",
+      "layer": 4,
+      "status": "CONTRADICTED"
+    },
+    {
+      "id": "ASM-01",
+      "kind": "assumption",
+      "label": "Podaná účetní závěrka (Sbírka listin) věrně zachycuje účetnictví subjektu tak, jak bylo podáno; nezávislý audit nebyl k dispozici.",
+      "layer": 4,
+      "basis": "SL68 je závěrka malé účetní jednotky bez povinného auditu."
+    },
+    {
+      "id": "ASM-02",
+      "kind": "assumption",
+      "label": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární.",
+      "layer": 4,
+      "basis": "Zákonná domněnka správnosti zápisu; použito při řešení CON-01 a CON-03."
+    },
+    {
+      "id": "ASM-03",
+      "kind": "assumption",
+      "label": "Zachované artefakty (SHA-256, provider-runs) reprezentují stav zdroje v okamžiku stažení.",
+      "layer": 4,
+      "basis": "Obsahově adresované úložiště případu; ověřováno při každém buildu."
+    },
+    {
+      "id": "ASM-04",
+      "kind": "assumption",
+      "label": "Mediální články citované jako SRC-04/SRC-05/SRC-22 přisuzují výroky uvedeným osobám správně.",
+      "layer": 4,
+      "basis": "Bez přístupu k původním rozhovorům nelze ověřit; artefakty článků jsou uchovány."
+    },
+    {
+      "id": "ASM-05",
+      "kind": "assumption",
+      "label": "Absence záznamu ve veřejném zdroji není důkazem absence ve skutečnosti (NOT_FOUND ≠ negativní fakt; BLOCKED ≠ NOT_FOUND).",
+      "layer": 4,
+      "basis": "Metodika případu; řídí CLM-57, CLM-58 a všechna negativní zjištění."
+    },
+    {
+      "id": "INF-CLM-35",
+      "kind": "inference",
+      "label": "Úsudek → CLM-35",
+      "layer": 4,
+      "produces": "CLM-35",
+      "steps": 4
+    },
+    {
+      "id": "INF-CLM-38",
+      "kind": "inference",
+      "label": "Úsudek → CLM-38",
+      "layer": 4,
+      "produces": "CLM-38",
+      "steps": 3
+    },
+    {
+      "id": "INF-CLM-40",
+      "kind": "inference",
+      "label": "Úsudek → CLM-40",
+      "layer": 4,
+      "produces": "CLM-40",
+      "steps": 4
+    },
+    {
+      "id": "INF-CLM-43",
+      "kind": "inference",
+      "label": "Úsudek → CLM-43",
+      "layer": 4,
+      "produces": "CLM-43",
+      "steps": 3
+    },
+    {
+      "id": "INF-CLM-45",
+      "kind": "inference",
+      "label": "Úsudek → CLM-45",
+      "layer": 4,
+      "produces": "CLM-45",
+      "steps": 5
+    },
+    {
+      "id": "INF-CLM-48",
+      "kind": "inference",
+      "label": "Úsudek → CLM-48",
+      "layer": 4,
+      "produces": "CLM-48",
+      "steps": 4
+    },
+    {
+      "id": "INF-CLM-50",
+      "kind": "inference",
+      "label": "Úsudek → CLM-50",
+      "layer": 4,
+      "produces": "CLM-50",
+      "steps": 3
+    },
+    {
+      "id": "INF-CLM-51",
+      "kind": "inference",
+      "label": "Úsudek → CLM-51",
+      "layer": 4,
+      "produces": "CLM-51",
+      "steps": 3
+    },
+    {
+      "id": "INF-CLM-53",
+      "kind": "inference",
+      "label": "Úsudek → CLM-53",
+      "layer": 4,
+      "produces": "CLM-53",
+      "steps": 4
+    },
+    {
+      "id": "INF-CLM-56",
+      "kind": "inference",
+      "label": "Úsudek → CLM-56",
+      "layer": 4,
+      "produces": "CLM-56",
+      "steps": 3
+    },
+    {
+      "id": "INF-FIN-ASSESS-01",
+      "kind": "inference",
+      "label": "Úsudek → FIN-ASSESS-01",
+      "layer": 4,
+      "produces": "FIN-ASSESS-01",
+      "steps": 2
+    },
+    {
+      "id": "INF-FIN-ASSESS-02",
+      "kind": "inference",
+      "label": "Úsudek → FIN-ASSESS-02",
+      "layer": 4,
+      "produces": "FIN-ASSESS-02",
+      "steps": 1
+    },
+    {
+      "id": "INF-FIN-ASSESS-03",
+      "kind": "inference",
+      "label": "Úsudek → FIN-ASSESS-03",
+      "layer": 4,
+      "produces": "FIN-ASSESS-03",
+      "steps": 2
+    },
+    {
+      "id": "INF-FIN-ASSESS-04",
+      "kind": "inference",
+      "label": "Úsudek → FIN-ASSESS-04",
+      "layer": 4,
+      "produces": "FIN-ASSESS-04",
+      "steps": 3
+    },
+    {
+      "id": "INF-R-01",
+      "kind": "inference",
+      "label": "Úsudek → R-01",
+      "layer": 4,
+      "produces": "R-01",
+      "steps": 3
+    },
+    {
+      "id": "INF-R-02",
+      "kind": "inference",
+      "label": "Úsudek → R-02",
+      "layer": 4,
+      "produces": "R-02",
+      "steps": 3
+    },
+    {
+      "id": "INF-R-03",
+      "kind": "inference",
+      "label": "Úsudek → R-03",
+      "layer": 4,
+      "produces": "R-03",
+      "steps": 3
+    },
+    {
+      "id": "INF-R-04",
+      "kind": "inference",
+      "label": "Úsudek → R-04",
+      "layer": 4,
+      "produces": "R-04",
+      "steps": 3
+    },
+    {
+      "id": "INF-R-05",
+      "kind": "inference",
+      "label": "Úsudek → R-05",
+      "layer": 4,
+      "produces": "R-05",
+      "steps": 3
+    },
+    {
+      "id": "INF-R-06",
+      "kind": "inference",
+      "label": "Úsudek → R-06",
+      "layer": 4,
+      "produces": "R-06",
+      "steps": 4
+    },
+    {
+      "id": "EXEC-01",
+      "kind": "executive_finding",
+      "label": "Identita firmy je ověřena primárně proti úředním artefaktům; primární průchod přinesl podstatné korekce — mj. původní jméno BIT CONSULTING s.r.o. (2012–2016) a ",
+      "layer": 6,
+      "narrativeSection": "Souhrn"
+    },
+    {
+      "id": "EXEC-02",
+      "kind": "executive_finding",
+      "label": "Největším společníkem není zakladatelská dvojice, ale ZenX Capital, a.s. — od října 2020 drží 45,8–50 %, víc než oba zakladatelé dohromady; veřejná narace to ne",
+      "layer": 6,
+      "narrativeSection": "Souhrn"
+    },
+    {
+      "id": "EXEC-03",
+      "kind": "executive_finding",
+      "label": "Petr Faraga nebyl 'nově příchozí drobný společník', ale spoluzakladatel s třetinovým podílem a jednatel 2012–2020.",
+      "layer": 6,
+      "narrativeSection": "Souhrn"
+    },
+    {
+      "id": "EXEC-04",
+      "kind": "executive_finding",
+      "label": "Able.cz má rejstříkově doložené dceřiné společnosti (Mindee app 95 %, Verzuz.com 100 %) a FaMe trade je aktivní s Václavem Faragou jako 50% společníkem — dřívěj",
+      "layer": 6,
+      "narrativeSection": "Souhrn"
+    },
+    {
+      "id": "EXEC-05",
+      "kind": "executive_finding",
+      "label": "Většina marketingových a výkonnostních tvrzení zůstává tvrzením firmy bez nezávislého potvrzení; oficiální registr smluv nevrací pro Able.cz ani Blackfish žádno",
+      "layer": 6,
+      "narrativeSection": "Souhrn"
+    },
+    {
+      "id": "EXEC-06",
+      "kind": "executive_finding",
+      "label": "Podaná finanční trajektorie (tržby −14,8 % YoY, marže pod 2 %, společnické půjčky 3,1→10,0M CZK) je hluboko pod mediální růstovou narací ~100M CZK.",
+      "layer": 6,
+      "narrativeSection": "Finanční profil"
+    },
+    {
+      "id": "EXEC-07",
+      "kind": "executive_finding",
+      "label": "Rozpor v čísle spisu (CON-01) zůstává viditelný; CON-02 byl vyřešen primárním záznamem; přibyl CON-03 (mediální vs. rejstříkové datum Oslzlova vlastnictví Black",
+      "layer": 6,
+      "narrativeSection": "Souhrn"
+    },
+    {
+      "id": "EXEC-08",
+      "kind": "executive_finding",
+      "label": "Důvěra je střední: vysoká u identity a vlastnictví (primárně ověřené), nízká u výkonnostních tvrzení; insolvenční screening zůstává BLOCKED (ISIR HTTP 500) — ne",
+      "layer": 6,
+      "narrativeSection": "Souhrn"
+    }
+  ],
+  "edges": [
+    {
+      "from": "SRC-01",
+      "to": "OBS-SRC-01",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-02",
+      "to": "OBS-SRC-02",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-03",
+      "to": "OBS-SRC-03",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-04",
+      "to": "OBS-SRC-04",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-05",
+      "to": "OBS-SRC-05",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-06",
+      "to": "OBS-SRC-06",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-07",
+      "to": "OBS-SRC-07",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-08",
+      "to": "OBS-SRC-08",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-09",
+      "to": "OBS-SRC-09",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-10",
+      "to": "OBS-SRC-10",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-11",
+      "to": "OBS-SRC-11",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-12",
+      "to": "OBS-SRC-12",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-13",
+      "to": "OBS-SRC-13",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-14",
+      "to": "OBS-SRC-14",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-15",
+      "to": "OBS-SRC-15",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-16",
+      "to": "OBS-SRC-16",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-17",
+      "to": "OBS-SRC-17",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-18",
+      "to": "OBS-SRC-18",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-19",
+      "to": "OBS-SRC-19",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-20",
+      "to": "OBS-SRC-20",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-21",
+      "to": "OBS-SRC-21",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "SRC-22",
+      "to": "OBS-SRC-22",
+      "role": "observed_via",
+      "via": "sources.retrievedAt/provider-runs.ndjson"
+    },
+    {
+      "from": "OBS-SRC-15",
+      "to": "EVD-SL68-REVENUE",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL68-REVENUE",
+      "to": "SRC-15",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-15",
+      "to": "EVD-SL68-TURNOVER",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL68-TURNOVER",
+      "to": "SRC-15",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-15",
+      "to": "EVD-SL68-RESULT",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL68-RESULT",
+      "to": "SRC-15",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-15",
+      "to": "EVD-SL68-ASSETS",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL68-ASSETS",
+      "to": "SRC-15",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-15",
+      "to": "EVD-SL68-EQUITY",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL68-EQUITY",
+      "to": "SRC-15",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-15",
+      "to": "EVD-SL68-LIABILITIES",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL68-LIABILITIES",
+      "to": "SRC-15",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-15",
+      "to": "EVD-SL68-PERSONNEL",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL68-PERSONNEL",
+      "to": "SRC-15",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-15",
+      "to": "EVD-SL68-SERVICES",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL68-SERVICES",
+      "to": "SRC-15",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-15",
+      "to": "EVD-SL68-SUBSIDIARY",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL68-SUBSIDIARY",
+      "to": "SRC-15",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-15",
+      "to": "EVD-SL68-SHAREHOLDER-DEBT",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL68-SHAREHOLDER-DEBT",
+      "to": "SRC-15",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-18",
+      "to": "EVD-SL21-ASSETS",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL21-ASSETS",
+      "to": "SRC-18",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-18",
+      "to": "EVD-SL21-EQUITY",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL21-EQUITY",
+      "to": "SRC-18",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-19",
+      "to": "EVD-SL23-ASSETS",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL23-ASSETS",
+      "to": "SRC-19",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-16",
+      "to": "EVD-SL69-ORDER",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL69-ORDER",
+      "to": "SRC-16",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-16",
+      "to": "EVD-SL69-AMOUNT",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL69-AMOUNT",
+      "to": "SRC-16",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-16",
+      "to": "EVD-SL69-CREDITOR",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL69-CREDITOR",
+      "to": "SRC-16",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-17",
+      "to": "EVD-SL70-CLOSED",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL70-CLOSED",
+      "to": "SRC-17",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-17",
+      "to": "EVD-SL70-INSTRUMENTS",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-SL70-INSTRUMENTS",
+      "to": "SRC-17",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-02",
+      "to": "EVD-WEB-AGENTS",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-WEB-AGENTS",
+      "to": "SRC-02",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-02",
+      "to": "EVD-WEB-ROI",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-WEB-ROI",
+      "to": "SRC-02",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-02",
+      "to": "EVD-WEB-MANDAYS",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-WEB-MANDAYS",
+      "to": "SRC-02",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-02",
+      "to": "EVD-WEB-WEEKS",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-WEB-WEEKS",
+      "to": "SRC-02",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-02",
+      "to": "EVD-WEB-ERROR",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-WEB-ERROR",
+      "to": "SRC-02",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-02",
+      "to": "EVD-WEB-600ROI",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-WEB-600ROI",
+      "to": "SRC-02",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-02",
+      "to": "EVD-WEB-AAA",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-WEB-AAA",
+      "to": "SRC-02",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-02",
+      "to": "EVD-WEB-SECURITY",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-WEB-SECURITY",
+      "to": "SRC-02",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-02",
+      "to": "EVD-WEB-NDA",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-WEB-NDA",
+      "to": "SRC-02",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-02",
+      "to": "EVD-WEB-CLIENTS",
+      "role": "preserved_in",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "EVD-WEB-CLIENTS",
+      "to": "SRC-02",
+      "role": "from_source",
+      "via": "evidence.json spans"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-CAPITAL",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-CAPITAL",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-ABLE-NAMES",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-ABLE-NAMES",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-ABLE-COURT",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-ABLE-COURT",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-ABLE-OFFICERS",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-ABLE-OFFICERS",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-ABLE-BOARD",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-ABLE-BOARD",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-BLACKFISH",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-BLACKFISH",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-ONELABEL",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-ONELABEL",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-MINDEE",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-MINDEE",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-ERA25",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-ERA25",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-VERZUZ",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-VERZUZ",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-FAME-LOGISTICS",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-FAME-LOGISTICS",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-FAME-TRADE",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-FAME-TRADE",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-FAMA-MEDIA",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-FAMA-MEDIA",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-MMPLAN",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-MMPLAN",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-VENTOUX",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-VENTOUX",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-SCHLESINGER-SRO",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-SCHLESINGER-SRO",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-ARTSTAY",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-ARTSTAY",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-MYSASY",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-MYSASY",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-BGO",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-BGO",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-USPORIX",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-USPORIX",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-VERASTO",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-VERASTO",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-ZENX",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-ZENX",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "OBS-SRC-12",
+      "to": "EVD-ARES-5326G",
+      "role": "extracted_from",
+      "via": "extraction/ares-assertions.json"
+    },
+    {
+      "from": "EVD-ARES-5326G",
+      "to": "SRC-12",
+      "role": "from_source",
+      "via": "evidence.json assertionSelectors"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-01",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-01",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-02",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-02",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-03",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-03",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-04",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-04",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-05",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-05",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-06",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-06",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-07",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-07",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-08",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-08",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-09",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-09",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-10",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-10",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-11",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-11",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-12",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-12",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-13",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-01",
+      "to": "CLM-13",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-13",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-04",
+      "to": "CLM-14",
+      "role": "supports",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CLM-14",
+      "role": "supports",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "EVD-ARES-BLACKFISH",
+      "to": "CLM-14",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-04",
+      "to": "CLM-14",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CLM-14",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-15",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-15",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-10",
+      "to": "CLM-16",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-11",
+      "to": "CLM-16",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-10",
+      "to": "CLM-17",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-10",
+      "to": "CLM-18",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-11",
+      "to": "CLM-18",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-14",
+      "to": "CLM-18",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ONELABEL",
+      "to": "CLM-19",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "CLM-19",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-19",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-10",
+      "to": "CLM-20",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-BLACKFISH",
+      "to": "CLM-21",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-04",
+      "to": "CLM-21",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CLM-21",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-21",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-04",
+      "to": "CLM-21",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CLM-21",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "CLM-22",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-22",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-10",
+      "to": "CLM-23",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-11",
+      "to": "CLM-23",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-10",
+      "to": "CLM-24",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-11",
+      "to": "CLM-24",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-13",
+      "to": "CLM-24",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-15",
+      "to": "CLM-25",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-16",
+      "to": "CLM-26",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-17",
+      "to": "CLM-26",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-18",
+      "to": "CLM-27",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-19",
+      "to": "CLM-27",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-MINDEE",
+      "to": "CLM-28",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL68-SUBSIDIARY",
+      "to": "CLM-28",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-28",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ERA25",
+      "to": "CLM-29",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-29",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-VERZUZ",
+      "to": "CLM-30",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-30",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-FAME-LOGISTICS",
+      "to": "CLM-31",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-31",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-FAME-TRADE",
+      "to": "CLM-32",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-32",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-MMPLAN",
+      "to": "CLM-33",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-33",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "CLM-34",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-ABLE-OFFICERS",
+      "to": "CLM-34",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-34",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-FAME-LOGISTICS",
+      "to": "CLM-35",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-ABLE-OFFICERS",
+      "to": "CLM-35",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-35",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-10",
+      "to": "CLM-35",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "CLM-36",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-36",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-VERASTO",
+      "to": "CLM-37",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-BGO",
+      "to": "CLM-37",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-USPORIX",
+      "to": "CLM-37",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-37",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ABLE-OFFICERS",
+      "to": "CLM-38",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "CLM-38",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-38",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-38",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-02",
+      "to": "CLM-38",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-VENTOUX",
+      "to": "CLM-39",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-39",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-VENTOUX",
+      "to": "CLM-40",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-04",
+      "to": "CLM-40",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CLM-40",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-40",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-04",
+      "to": "CLM-40",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CLM-40",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-BLACKFISH",
+      "to": "CLM-41",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-41",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ARTSTAY",
+      "to": "CLM-42",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-BLACKFISH",
+      "to": "CLM-42",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-42",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ARTSTAY",
+      "to": "CLM-43",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-BLACKFISH",
+      "to": "CLM-43",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-43",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-SL68-REVENUE",
+      "to": "CLM-44",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL68-TURNOVER",
+      "to": "CLM-44",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL68-RESULT",
+      "to": "CLM-44",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-15",
+      "to": "CLM-44",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-SL68-REVENUE",
+      "to": "CLM-45",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-04",
+      "to": "CLM-45",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CLM-45",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-15",
+      "to": "CLM-45",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-04",
+      "to": "CLM-45",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CLM-45",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-SL69-ORDER",
+      "to": "CLM-46",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL69-AMOUNT",
+      "to": "CLM-46",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL69-CREDITOR",
+      "to": "CLM-46",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL70-CLOSED",
+      "to": "CLM-46",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL70-INSTRUMENTS",
+      "to": "CLM-46",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-16",
+      "to": "CLM-46",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-17",
+      "to": "CLM-46",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "CLM-47",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-MMPLAN",
+      "to": "CLM-47",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-FAME-LOGISTICS",
+      "to": "CLM-47",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-FAME-TRADE",
+      "to": "CLM-47",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-47",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-SL69-AMOUNT",
+      "to": "CLM-48",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL69-CREDITOR",
+      "to": "CLM-48",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL70-CLOSED",
+      "to": "CLM-48",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-16",
+      "to": "CLM-48",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-17",
+      "to": "CLM-48",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-21",
+      "to": "CLM-48",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-SL21-ASSETS",
+      "to": "CLM-49",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL21-EQUITY",
+      "to": "CLM-49",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL23-ASSETS",
+      "to": "CLM-49",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-18",
+      "to": "CLM-49",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-19",
+      "to": "CLM-49",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-SL21-ASSETS",
+      "to": "CLM-50",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL23-ASSETS",
+      "to": "CLM-50",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-SL68-ASSETS",
+      "to": "CLM-50",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-15",
+      "to": "CLM-50",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-18",
+      "to": "CLM-50",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-19",
+      "to": "CLM-50",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "CLM-51",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-04",
+      "to": "CLM-51",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CLM-51",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-04",
+      "to": "CLM-51",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CLM-51",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-51",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "CLM-52",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-ZENX",
+      "to": "CLM-52",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-52",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "CLM-53",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-53",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-04",
+      "to": "CLM-53",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CLM-53",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "CLM-54",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-CAPITAL",
+      "to": "CLM-54",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-54",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-5326G",
+      "to": "CLM-55",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "CLM-55",
+      "role": "supports",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-55",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-5326G",
+      "to": "CLM-56",
+      "role": "contextualizes",
+      "via": "evidence.json claimEvidence"
+    },
+    {
+      "from": "SRC-22",
+      "to": "CLM-56",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CLM-56",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-22",
+      "to": "CLM-56",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-06",
+      "to": "CLM-56",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-20",
+      "to": "CLM-57",
+      "role": "supports",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-20",
+      "to": "CLM-57",
+      "role": "supports",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-20",
+      "to": "CLM-57",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "SRC-21",
+      "to": "CLM-58",
+      "role": "source_of_assertion",
+      "via": "evidence.json claimEvidence (source-level)"
+    },
+    {
+      "from": "SRC-21",
+      "to": "CLM-58",
+      "role": "cited_by_claim",
+      "via": "dossier.json claims.sources"
+    },
+    {
+      "from": "EVD-ARES-ABLE-OFFICERS",
+      "to": "INF-CLM-35",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-34",
+      "to": "INF-CLM-35",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-ARES-FAME-LOGISTICS",
+      "to": "INF-CLM-35",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-ARES-FAME-TRADE",
+      "to": "INF-CLM-35",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-CLM-35",
+      "to": "CLM-35",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-02",
+      "to": "INF-CLM-35",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "ASM-05",
+      "to": "INF-CLM-35",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "EVD-ARES-ABLE-OFFICERS",
+      "to": "INF-CLM-38",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "INF-CLM-38",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-WEB-CLIENTS",
+      "to": "INF-CLM-38",
+      "role": "contextualizes",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-37",
+      "to": "INF-CLM-38",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-CLM-38",
+      "to": "CLM-38",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-02",
+      "to": "INF-CLM-38",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "ASM-03",
+      "to": "INF-CLM-38",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CLM-39",
+      "to": "INF-CLM-40",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-22",
+      "to": "INF-CLM-40",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-21",
+      "to": "INF-CLM-40",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-51",
+      "to": "INF-CLM-40",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-04",
+      "to": "INF-CLM-40",
+      "role": "contradicts",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-05",
+      "to": "INF-CLM-40",
+      "role": "contradicts",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-CLM-40",
+      "to": "CLM-40",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-02",
+      "to": "INF-CLM-40",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "ASM-04",
+      "to": "INF-CLM-40",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CLM-41",
+      "to": "INF-CLM-43",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-42",
+      "to": "INF-CLM-43",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-ARES-BLACKFISH",
+      "to": "INF-CLM-43",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-ARES-ARTSTAY",
+      "to": "INF-CLM-43",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-CLM-43",
+      "to": "CLM-43",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-02",
+      "to": "INF-CLM-43",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "ASM-05",
+      "to": "INF-CLM-43",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CLM-44",
+      "to": "INF-CLM-45",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL68-REVENUE",
+      "to": "INF-CLM-45",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL68-RESULT",
+      "to": "INF-CLM-45",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-04",
+      "to": "INF-CLM-45",
+      "role": "contradicts",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-05",
+      "to": "INF-CLM-45",
+      "role": "contradicts",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-50",
+      "to": "INF-CLM-45",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-CLM-45",
+      "to": "CLM-45",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-01",
+      "to": "INF-CLM-45",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "ASM-04",
+      "to": "INF-CLM-45",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CLM-46",
+      "to": "INF-CLM-48",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL69-AMOUNT",
+      "to": "INF-CLM-48",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL69-CREDITOR",
+      "to": "INF-CLM-48",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL70-CLOSED",
+      "to": "INF-CLM-48",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-58",
+      "to": "INF-CLM-48",
+      "role": "contextualizes",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-CLM-48",
+      "to": "CLM-48",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-02",
+      "to": "INF-CLM-48",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "ASM-05",
+      "to": "INF-CLM-48",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CLM-49",
+      "to": "INF-CLM-50",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL21-ASSETS",
+      "to": "INF-CLM-50",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL23-ASSETS",
+      "to": "INF-CLM-50",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL68-ASSETS",
+      "to": "INF-CLM-50",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-04",
+      "to": "INF-CLM-50",
+      "role": "contextualizes",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-CLM-50",
+      "to": "CLM-50",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-01",
+      "to": "INF-CLM-50",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CLM-22",
+      "to": "INF-CLM-51",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-04",
+      "to": "INF-CLM-51",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-05",
+      "to": "INF-CLM-51",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-CLM-51",
+      "to": "CLM-51",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-03",
+      "to": "INF-CLM-51",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "ASM-05",
+      "to": "INF-CLM-51",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CLM-52",
+      "to": "INF-CLM-53",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "INF-CLM-53",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-04",
+      "to": "INF-CLM-53",
+      "role": "contradicts",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-05",
+      "to": "INF-CLM-53",
+      "role": "contradicts",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-CLM-53",
+      "to": "CLM-53",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-02",
+      "to": "INF-CLM-53",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "ASM-04",
+      "to": "INF-CLM-53",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CLM-55",
+      "to": "INF-CLM-56",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-ARES-5326G",
+      "to": "INF-CLM-56",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-22",
+      "to": "INF-CLM-56",
+      "role": "contextualizes",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "to": "INF-CLM-56",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-CLM-56",
+      "to": "CLM-56",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-02",
+      "to": "INF-CLM-56",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "ASM-04",
+      "to": "INF-CLM-56",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "EVD-SL68-REVENUE",
+      "to": "INF-FIN-ASSESS-01",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-44",
+      "to": "INF-FIN-ASSESS-01",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-04",
+      "to": "INF-FIN-ASSESS-01",
+      "role": "contradicts",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "SRC-05",
+      "to": "INF-FIN-ASSESS-01",
+      "role": "contradicts",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-FIN-ASSESS-01",
+      "to": "FIN-ASSESS-01",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-01",
+      "to": "INF-FIN-ASSESS-01",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "ASM-04",
+      "to": "INF-FIN-ASSESS-01",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "EVD-SL68-RESULT",
+      "to": "INF-FIN-ASSESS-02",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL68-REVENUE",
+      "to": "INF-FIN-ASSESS-02",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-FIN-ASSESS-02",
+      "to": "FIN-ASSESS-02",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-01",
+      "to": "INF-FIN-ASSESS-02",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "EVD-SL68-LIABILITIES",
+      "to": "INF-FIN-ASSESS-03",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL68-EQUITY",
+      "to": "INF-FIN-ASSESS-03",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL68-SHAREHOLDER-DEBT",
+      "to": "INF-FIN-ASSESS-03",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-FIN-ASSESS-03",
+      "to": "FIN-ASSESS-03",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-01",
+      "to": "INF-FIN-ASSESS-03",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "EVD-SL68-PERSONNEL",
+      "to": "INF-FIN-ASSESS-04",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-SL68-SERVICES",
+      "to": "INF-FIN-ASSESS-04",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-FIN-ASSESS-04",
+      "to": "FIN-ASSESS-04",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-01",
+      "to": "INF-FIN-ASSESS-04",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CLM-38",
+      "to": "INF-R-01",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-ARES-ABLE-OFFICERS",
+      "to": "INF-R-01",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-WEB-CLIENTS",
+      "to": "INF-R-01",
+      "role": "contextualizes",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-R-01",
+      "to": "R-01",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-02",
+      "to": "INF-R-01",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "FIN-ASSESS-01",
+      "to": "INF-R-02",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "FIN-ASSESS-02",
+      "to": "INF-R-02",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "FIN-ASSESS-03",
+      "to": "INF-R-02",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-45",
+      "to": "INF-R-02",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-R-02",
+      "to": "R-02",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-01",
+      "to": "INF-R-02",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "ASM-04",
+      "to": "INF-R-02",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "EVD-WEB-ROI",
+      "to": "INF-R-03",
+      "role": "contextualizes",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-WEB-AGENTS",
+      "to": "INF-R-03",
+      "role": "contextualizes",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-57",
+      "to": "INF-R-03",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-R-03",
+      "to": "R-03",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-05",
+      "to": "INF-R-03",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CLM-58",
+      "to": "INF-R-04",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-48",
+      "to": "INF-R-04",
+      "role": "contextualizes",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-R-04",
+      "to": "R-04",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-05",
+      "to": "INF-R-04",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CON-01",
+      "to": "INF-R-05",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-ARES-ABLE-COURT",
+      "to": "INF-R-05",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-R-05",
+      "to": "R-05",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-02",
+      "to": "INF-R-05",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "CLM-52",
+      "to": "INF-R-06",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "CLM-53",
+      "to": "INF-R-06",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "EVD-ARES-ZENX",
+      "to": "INF-R-06",
+      "role": "supports",
+      "via": "reasoning.json premises"
+    },
+    {
+      "from": "INF-R-06",
+      "to": "R-06",
+      "role": "produces",
+      "via": "reasoning.json"
+    },
+    {
+      "from": "ASM-02",
+      "to": "INF-R-06",
+      "role": "assumes",
+      "via": "reasoning.json assumptions"
+    },
+    {
+      "from": "EVD-ARES-ABLE-NAMES",
+      "to": "EXEC-01",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "EVD-ARES-ABLE-COURT",
+      "to": "EXEC-01",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "SRC-12",
+      "to": "EXEC-01",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CLM-52",
+      "to": "EXEC-02",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CLM-53",
+      "to": "EXEC-02",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "INF-CLM-53",
+      "to": "EXEC-02",
+      "role": "reasoned_by",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CLM-34",
+      "to": "EXEC-03",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CLM-28",
+      "to": "EXEC-04",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CLM-30",
+      "to": "EXEC-04",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CLM-32",
+      "to": "EXEC-04",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CLM-57",
+      "to": "EXEC-05",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "EVD-WEB-ROI",
+      "to": "EXEC-05",
+      "role": "contextualizes",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "EVD-WEB-AGENTS",
+      "to": "EXEC-05",
+      "role": "contextualizes",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "INF-R-03",
+      "to": "EXEC-05",
+      "role": "reasoned_by",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CLM-44",
+      "to": "EXEC-06",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CLM-45",
+      "to": "EXEC-06",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "FIN-ASSESS-01",
+      "to": "EXEC-06",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "FIN-ASSESS-03",
+      "to": "EXEC-06",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "INF-CLM-45",
+      "to": "EXEC-06",
+      "role": "reasoned_by",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CON-01",
+      "to": "EXEC-07",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CON-02",
+      "to": "EXEC-07",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CON-03",
+      "to": "EXEC-07",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "INF-R-05",
+      "to": "EXEC-07",
+      "role": "reasoned_by",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "CLM-58",
+      "to": "EXEC-08",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "R-04",
+      "to": "EXEC-08",
+      "role": "supports",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "INF-R-04",
+      "to": "EXEC-08",
+      "role": "reasoned_by",
+      "via": "reasoning.json executiveFindings"
+    },
+    {
+      "from": "SRC-01",
+      "to": "CON-01",
+      "role": "conflict_side_a",
+      "via": "reasoning.json conflicts"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CON-01",
+      "role": "conflict_side_b",
+      "via": "reasoning.json conflicts"
+    },
+    {
+      "from": "EVD-ARES-ABLE-COURT",
+      "to": "CON-01",
+      "role": "conflict_side_b",
+      "via": "reasoning.json conflicts"
+    },
+    {
+      "from": "SRC-10",
+      "to": "CON-02",
+      "role": "conflict_side_a",
+      "via": "reasoning.json conflicts"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CON-02",
+      "role": "conflict_side_b",
+      "via": "reasoning.json conflicts"
+    },
+    {
+      "from": "EVD-ARES-ONELABEL",
+      "to": "CON-02",
+      "role": "conflict_side_b",
+      "via": "reasoning.json conflicts"
+    },
+    {
+      "from": "SRC-05",
+      "to": "CON-03",
+      "role": "conflict_side_a",
+      "via": "reasoning.json conflicts"
+    },
+    {
+      "from": "SRC-12",
+      "to": "CON-03",
+      "role": "conflict_side_b",
+      "via": "reasoning.json conflicts"
+    },
+    {
+      "from": "EVD-ARES-BLACKFISH",
+      "to": "CON-03",
+      "role": "conflict_side_b",
+      "via": "reasoning.json conflicts"
+    },
+    {
+      "from": "CLM-41",
+      "to": "CON-03",
+      "role": "conflict_side_b",
+      "via": "reasoning.json conflicts"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-CLM-56",
+  "kind": "assessment",
+  "produces": "CLM-56",
+  "producesText": "The 2023 media report that 'Marek Kříž (Point FM) took ~5 % of Able.cz for 4M CZK at an 80M CZK valuation' aligns in person, timing and approximate size with 5326G s.r.o.'s register entry (Kříž-majority vehicle, in from 28 Aug 2023) — but Point FM and 5326G are distinct legal entities and no public source states that 5326G executed that specific investment.",
+  "canonicalPath": "/dossier/reasoning/inf-clm-56/",
+  "premises": [
+    {
+      "ref": "CLM-55",
+      "role": "supports",
+      "note": "5326G: Kříž 51 %, vstup od 28. 8. 2023",
+      "kind": "claim",
+      "label": "5326G s.r.o. (IČO 19540051, founded 19 July 2023) — owned 51 % by Marek Kříž (jednatel) and 49 % by David Jopek — has held an Able.cz stake since 28 August 2023, currently 4.09 %."
+    },
+    {
+      "ref": "EVD-ARES-5326G",
+      "role": "supports",
+      "kind": "assertion",
+      "label": "EVD-ARES-5326G"
+    },
+    {
+      "ref": "SRC-22",
+      "role": "contextualizes",
+      "note": "mediální zpráva o ~5 % za 4M CZK při valuaci 80M",
+      "kind": "source",
+      "label": "CzechCrunch (2023-12-20) — Able.cz investment coverage: Point FM / Marek Kříž ~5% at 80M CZK valuation"
+    },
+    {
+      "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "role": "supports",
+      "note": "vstup 5326G do cap table Able",
+      "kind": "assertion",
+      "label": "EVD-ARES-ABLE-SHAREHOLDERS"
+    }
+  ],
+  "steps": [
+    "Mediální zpráva (2023): Kříž ~5 % Able za 4M CZK při 80M valuaci.",
+    "Rejstřík: Křížem majoritně vlastněné vozidlo 5326G vstupuje do Able.cz od 28. 8. 2023 s podílem odpovídající velikosti.",
+    "Shoda v osobě, čase i řádové velikosti → alignment; žádný zdroj ale výslovně nespojuje 5326G s onou konkrétní investicí a Point FM ≠ 5326G právně."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-02",
+      "text": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární."
+    },
+    {
+      "id": "ASM-04",
+      "text": "Mediální články citované jako SRC-04/SRC-05/SRC-22 přisuzují výroky uvedeným osobám správně."
+    }
+  ],
+  "primaryExplanation": "5326G je s vysokou pravděpodobností vehikl, kterým Kříž investici provedl.",
+  "alternatives": [
+    {
+      "text": "Kříž investoval jinak (osobně/jinou entitou) a 5326G vstoupilo nezávisle.",
+      "distinguishingEvidence": "Převodní smlouva ve sbírce listin; prohlášení Kříže; valuace v účetnictví 5326G."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Doklad, že mediální investici provedla jiná entita než 5326G."
+    ],
+    "strengthen": [
+      "Smlouva o převodu podílu jmenující 5326G a kupní cenu ~4M CZK."
+    ],
+    "weaken": [
+      "Rozpor mezi podílem 5326G a mediálně uváděnými ~5 %."
+    ]
+  },
+  "uncertainty": [
+    "Valuace 80M CZK je jednozdrojová (SRC-22) a nezávisle neověřená."
+  ],
+  "diversity": {
+    "source_count": 3,
+    "sources": [
+      "SRC-06",
+      "SRC-12",
+      "SRC-22"
+    ],
+    "evidence_count": 2,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 3,
+    "upstream_families": [
+      "cz_register",
+      "linkedin",
+      "media_unknown"
+    ],
+    "upstream_family_count": 3,
+    "jurisdictions": [
+      "CZ — média",
+      "CZ — úřední registr",
+      "sociální síť"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CLM-55",
+      "EVD-ARES-5326G",
+      "EVD-ARES-ABLE-SHAREHOLDERS"
+    ],
+    "contradicting": [],
+    "contextualizing": [
+      "SRC-22"
+    ],
+    "alternatives": 1,
+    "unknown": [
+      "Valuace 80M CZK je jednozdrojová (SRC-22) a nezávisle neověřená."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

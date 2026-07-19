@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-R-05",
+  "kind": "conclusion",
+  "produces": "R-05",
+  "producesText": "Public court-file discrepancy",
+  "canonicalPath": "/dossier/reasoning/inf-r-05/",
+  "premises": [
+    {
+      "ref": "CON-01",
+      "role": "supports",
+      "kind": "conflict",
+      "label": "Court file number (spisová značka)"
+    },
+    {
+      "ref": "EVD-ARES-ABLE-COURT",
+      "role": "supports",
+      "note": "rejstřík: C 85425",
+      "kind": "assertion",
+      "label": "EVD-ARES-ABLE-COURT"
+    }
+  ],
+  "steps": [
+    "Firemní GDPR stránka uvádí C 85424; rejstřík C 85425.",
+    "Rejstřík je autoritativní (ASM-02); nejpravděpodobněji překlep/zastaralá kopie na webu.",
+    "Zaznamenáno jako viditelný rozpor — ne mlčky normalizováno."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-02",
+      "text": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární."
+    }
+  ],
+  "primaryExplanation": "Transkripční chyba na firemní stránce.",
+  "alternatives": [
+    {
+      "text": "Stránka odkazuje na starší/pražský spis (firma byla přeregistrována z Prahy).",
+      "distinguishingEvidence": "Historický spis C 200323/MSPH vs. C 85425/KSBR — pražská značka je ale jiná než C 85424, takže tato alternativa je slabá."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Doklad, že C 85424 kdy patřil Able.cz"
+    ],
+    "strengthen": [
+      "Oprava webu firmy na C 85425"
+    ],
+    "weaken": [
+      "—"
+    ]
+  },
+  "uncertainty": [
+    "Původ chybného čísla (proč právě −1) není zjistitelný."
+  ],
+  "diversity": {
+    "source_count": 1,
+    "sources": [
+      "SRC-12"
+    ],
+    "evidence_count": 1,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 1,
+    "upstream_families": [
+      "cz_register"
+    ],
+    "upstream_family_count": 1,
+    "jurisdictions": [
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-18",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": true,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CON-01",
+      "EVD-ARES-ABLE-COURT"
+    ],
+    "contradicting": [],
+    "contextualizing": [],
+    "alternatives": 1,
+    "unknown": [
+      "Původ chybného čísla (proč právě −1) není zjistitelný."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

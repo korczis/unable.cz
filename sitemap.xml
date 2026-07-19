@@ -383,6 +383,30 @@
         <loc>https://unable.cz/dossier/changes/chg-0361/</loc>
     </url>
     <url>
+        <loc>https://unable.cz/dossier/changes/chg-0366/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/changes/chg-0367/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/changes/chg-0368/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/changes/chg-0369/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/changes/chg-0370/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/changes/chg-0371/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/changes/chg-0372/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/changes/chg-0373/</loc>
+    </url>
+    <url>
         <loc>https://unable.cz/dossier/claims/</loc>
     </url>
     <url>
@@ -570,6 +594,93 @@
         <loc>https://unable.cz/dossier/monitoring/</loc>
     </url>
     <url>
+        <loc>https://unable.cz/dossier/reasoning/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/exec-01/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/exec-02/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/exec-03/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/exec-04/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/exec-05/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/exec-06/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/exec-07/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/exec-08/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-clm-35/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-clm-38/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-clm-40/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-clm-43/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-clm-45/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-clm-48/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-clm-50/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-clm-51/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-clm-53/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-clm-56/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-fin-assess-01/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-fin-assess-02/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-fin-assess-03/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-fin-assess-04/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-r-01/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-r-02/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-r-03/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-r-04/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-r-05/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/reasoning/inf-r-06/</loc>
+    </url>
+    <url>
         <loc>https://unable.cz/dossier/revalidation/</loc>
     </url>
     <url>
@@ -595,5 +706,8 @@
     </url>
     <url>
         <loc>https://unable.cz/dossier/snapshots/able-cz-public-2026-07-18-r07/</loc>
+    </url>
+    <url>
+        <loc>https://unable.cz/dossier/snapshots/able-cz-public-2026-07-18-r08/</loc>
     </url>
 </urlset>

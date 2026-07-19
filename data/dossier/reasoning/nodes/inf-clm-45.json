@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-CLM-45",
+  "kind": "assessment",
+  "produces": "CLM-45",
+  "producesText": "The filed FY2024 trajectory (36.3M CZK revenue, declining; net margin under 2 % and shrinking) is far below the ~100M CZK combined Able+Blackfish revenue target attributed to Vít Schlesinger in 2025 media coverage.",
+  "canonicalPath": "/dossier/reasoning/inf-clm-45/",
+  "premises": [
+    {
+      "ref": "CLM-44",
+      "role": "supports",
+      "note": "podaná FY2024 čísla, řádek po řádku",
+      "kind": "claim",
+      "label": "Able.cz s.r.o.'s filed FY2024 statement (Sbírka listin C 85425/SL68/KSBR, filed 5 Dec 2025) shows: revenue from products and services 36,319 tis. CZK (FY2023: 42,642), net turnover"
+    },
+    {
+      "ref": "EVD-SL68-REVENUE",
+      "role": "supports",
+      "note": "tržby 36 319 tis. (FY2024) / 42 642 tis. (FY2023)",
+      "kind": "evidence",
+      "label": "I. Tržby z prodeje výrobků a služeb 36319 42642"
+    },
+    {
+      "ref": "EVD-SL68-RESULT",
+      "role": "supports",
+      "note": "výsledek po zdanění",
+      "kind": "evidence",
+      "label": "** Výsledek hospodaření po zdanění (+/-) 631 844"
+    },
+    {
+      "ref": "SRC-04",
+      "role": "contradicts",
+      "note": "mediální cíl ~100M CZK kombinovaně",
+      "kind": "source",
+      "label": "Forbes.cz — Able acquires Blackfish studio"
+    },
+    {
+      "ref": "SRC-05",
+      "role": "contradicts",
+      "note": "dtto",
+      "kind": "source",
+      "label": "CzechCrunch — Able buys Blackfish"
+    },
+    {
+      "ref": "CLM-50",
+      "role": "supports",
+      "note": "Blackfish rozdíl nevysvětlí (aktiva 6,7–8,3M)",
+      "kind": "assessment",
+      "label": "Blackfish is financially small next to Able.cz (filed total assets 6.7–8.3M vs 71.9M CZK): most of the scale implied by the self-reported 'combined ~60 people, ~100M CZK' framing e"
+    }
+  ],
+  "steps": [
+    "Podané tržby FY2024: 36,3M CZK; FY2023: 42,6M CZK → meziroční pokles ~14,8 % (EVD-SL68-REVENUE).",
+    "Čistá marže pod 2 % a klesá (EVD-SL68-RESULT vs. REVENUE).",
+    "Mediální narace 2025 přisuzuje Schlesingerovi cíl ~100M CZK kombinovaných tržeb (SRC-04/05).",
+    "Blackfish je řádově menší (CLM-50), takže kombinace mezeru nezaplní.",
+    "Závěr: podaná trajektorie je hluboko pod mediální narací — rozpor čísel, ne obvinění."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-01",
+      "text": "Podaná účetní závěrka (Sbírka listin) věrně zachycuje účetnictví subjektu tak, jak bylo podáno; nezávislý audit nebyl k dispozici."
+    },
+    {
+      "id": "ASM-04",
+      "text": "Mediální články citované jako SRC-04/SRC-05/SRC-22 přisuzují výroky uvedeným osobám správně."
+    }
+  ],
+  "primaryExplanation": "Mediální cíl byl aspirační výrok, který podaná čísla (zatím) nenaplňují.",
+  "alternatives": [
+    {
+      "text": "FY2025 přinesla skokový růst, který FY2024 závěrka z podstaty nemůže ukázat (cíl se týkal budoucnosti).",
+      "distinguishingEvidence": "FY2025 závěrka ve Sbírce listin (očekávána v průběhu 2026) — viz revalidační fronta."
+    },
+    {
+      "text": "Část výnosů teče mimo Able.cz s.r.o. (jiné entity skupiny: Mindee, Verzuz, ERA25).",
+      "distinguishingEvidence": "Závěrky dceřiných a sesterských entit; konsolidovaný pohled neexistuje (FIN gap)."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "FY2025 filing s tržbami řádu 100M CZK (kombinovaně s Blackfish)."
+    ],
+    "strengthen": [
+      "FY2025 filing potvrzující pokračující pokles; absence růstu i u dceřiných entit."
+    ],
+    "weaken": [
+      "Doložené významné výnosy v jiných entitách skupiny za totéž období."
+    ]
+  },
+  "uncertainty": [
+    "FY2025 dosud nepodána; konsolidovaná čísla neexistují (každá entita podává zvlášť)."
+  ],
+  "diversity": {
+    "source_count": 5,
+    "sources": [
+      "SRC-04",
+      "SRC-05",
+      "SRC-15",
+      "SRC-18",
+      "SRC-19"
+    ],
+    "evidence_count": 7,
+    "document_count": 3,
+    "documents": [
+      "sbirka-listin/2024-ucetni-zaverka-SL68.txt",
+      "sbirka-listin/blackfish/2024-ucetni-zaverka-SL21.txt",
+      "sbirka-listin/blackfish/2025-ucetni-zaverka-SL23.txt"
+    ],
+    "provider_run_backed_sources": 2,
+    "upstream_families": [
+      "cz_register",
+      "czechcrunch",
+      "forbes"
+    ],
+    "upstream_family_count": 3,
+    "jurisdictions": [
+      "CZ — média",
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-17"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CLM-44",
+      "EVD-SL68-REVENUE",
+      "EVD-SL68-RESULT",
+      "CLM-50"
+    ],
+    "contradicting": [
+      "SRC-04",
+      "SRC-05"
+    ],
+    "contextualizing": [],
+    "alternatives": 2,
+    "unknown": [
+      "FY2025 dosud nepodána; konsolidovaná čísla neexistují (každá entita podává zvlášť)."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

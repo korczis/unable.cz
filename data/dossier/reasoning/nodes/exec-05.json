@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "EXEC-05",
+  "text": "Většina marketingových a výkonnostních tvrzení zůstává tvrzením firmy bez nezávislého potvrzení; oficiální registr smluv nevrací pro Able.cz ani Blackfish žádnou zveřejněnou smlouvu.",
+  "narrativeSection": "Souhrn",
+  "supports": [
+    {
+      "ref": "CLM-57",
+      "role": "supports",
+      "kind": "claim",
+      "label": "The Registr smluv (official contracts register) returns zero published contracts for IČO 24278815 (Able.cz) and zero for IČO 06526411 (Blackfish & Co.) — search"
+    },
+    {
+      "ref": "EVD-WEB-ROI",
+      "role": "contextualizes",
+      "kind": "evidence",
+      "label": "300% — Average client-side ROI"
+    },
+    {
+      "ref": "EVD-WEB-AGENTS",
+      "role": "contextualizes",
+      "kind": "evidence",
+      "label": "AI-driven software built on 150+ in-house AI agents."
+    }
+  ],
+  "reasoning": "INF-R-03",
+  "uncertainty": [
+    "Soukromé zakázky veřejná evidence nezachytí — absence v registru smluv není negativní fakt (ASM-05)."
+  ],
+  "diversity": {
+    "source_count": 2,
+    "sources": [
+      "SRC-02",
+      "SRC-20"
+    ],
+    "evidence_count": 2,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 2,
+    "upstream_families": [
+      "able_cz",
+      "contracts_register"
+    ],
+    "upstream_family_count": 2,
+    "jurisdictions": [
+      "CZ — úřední registr",
+      "subjekt sám"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "reasoningRoute": "/dossier/reasoning/inf-r-03/",
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

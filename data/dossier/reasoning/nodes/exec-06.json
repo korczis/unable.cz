@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "EXEC-06",
+  "text": "Podaná finanční trajektorie (tržby −14,8 % YoY, marže pod 2 %, společnické půjčky 3,1→10,0M CZK) je hluboko pod mediální růstovou narací ~100M CZK.",
+  "narrativeSection": "Finanční profil",
+  "supports": [
+    {
+      "ref": "CLM-44",
+      "role": "supports",
+      "kind": "claim",
+      "label": "Able.cz s.r.o.'s filed FY2024 statement (Sbírka listin C 85425/SL68/KSBR, filed 5 Dec 2025) shows: revenue from products and services 36,319 tis. CZK (FY2023: 4"
+    },
+    {
+      "ref": "CLM-45",
+      "role": "supports",
+      "kind": "assessment",
+      "label": "The filed FY2024 trajectory (36.3M CZK revenue, declining; net margin under 2 % and shrinking) is far below the ~100M CZK combined Able+Blackfish revenue target"
+    },
+    {
+      "ref": "FIN-ASSESS-01",
+      "role": "supports",
+      "kind": "assessment",
+      "label": "Filed revenue declined ~14.8 % year-on-year and is well below the ~100M CZK combined (Able+Blackfish) self-reported media target."
+    },
+    {
+      "ref": "FIN-ASSESS-03",
+      "role": "supports",
+      "kind": "assessment",
+      "label": "Liabilities grew faster than equity year-on-year; shareholder loans more than tripled (3.1M → 10.0M CZK)."
+    }
+  ],
+  "reasoning": "INF-CLM-45",
+  "uncertainty": [
+    "FY2025 dosud nepodána; konsolidovaný pohled neexistuje."
+  ],
+  "diversity": {
+    "source_count": 5,
+    "sources": [
+      "SRC-04",
+      "SRC-05",
+      "SRC-15",
+      "SRC-18",
+      "SRC-19"
+    ],
+    "evidence_count": 10,
+    "document_count": 3,
+    "documents": [
+      "sbirka-listin/2024-ucetni-zaverka-SL68.txt",
+      "sbirka-listin/blackfish/2024-ucetni-zaverka-SL21.txt",
+      "sbirka-listin/blackfish/2025-ucetni-zaverka-SL23.txt"
+    ],
+    "provider_run_backed_sources": 2,
+    "upstream_families": [
+      "cz_register",
+      "czechcrunch",
+      "forbes"
+    ],
+    "upstream_family_count": 3,
+    "jurisdictions": [
+      "CZ — média",
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-17"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "reasoningRoute": "/dossier/reasoning/inf-clm-45/",
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

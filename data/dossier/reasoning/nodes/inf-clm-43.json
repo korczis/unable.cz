@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-CLM-43",
+  "kind": "assessment",
+  "produces": "CLM-43",
+  "producesText": "The mirrored February 2024 exits — Schlesinger taking 100 % of Blackfish while Oslzla took 100 % of Artstay/Lovs — are consistent with a negotiated separation dividing the two ventures between the two men. No public source states the reason for the split.",
+  "canonicalPath": "/dossier/reasoning/inf-clm-43/",
+  "premises": [
+    {
+      "ref": "CLM-41",
+      "role": "supports",
+      "note": "Oslzlův odchod z Blackfish 2/2024 (primární data)",
+      "kind": "claim",
+      "label": "Lukáš Oslzla was a Blackfish & Co. jednatel from 8 June 2022 to 22 February 2024 and a 30 % shareholder from 9 June 2022 to 23 February 2024, when Vít Schlesinger returned to 100 %"
+    },
+    {
+      "ref": "CLM-42",
+      "role": "supports",
+      "note": "zrcadlový přesun Artstay/Lovs na Oslzlu",
+      "kind": "claim",
+      "label": "Lovs & Co. s.r.o. (IČO 10847031, founded 14 May 2021) was co-owned 50/50 by Vít Schlesinger and Lukáš Oslzla, both jednatelé. On 13 February 2024 the company was renamed Artstay s."
+    },
+    {
+      "ref": "EVD-ARES-BLACKFISH",
+      "role": "supports",
+      "kind": "assertion",
+      "label": "EVD-ARES-BLACKFISH"
+    },
+    {
+      "ref": "EVD-ARES-ARTSTAY",
+      "role": "supports",
+      "kind": "assertion",
+      "label": "EVD-ARES-ARTSTAY"
+    }
+  ],
+  "steps": [
+    "Ve stejném měsíci (únor 2024) Schlesinger konsoliduje 100 % Blackfish a Oslzla 100 % Artstay/Lovs.",
+    "Zrcadlová symetrie dvou převodů mezi týmiž dvěma muži konzistentní s dohodnutým rozdělením podniků.",
+    "Žádný veřejný zdroj důvod rozchodu neuvádí → kvalifikace 'konzistentní s', ne fakt."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-02",
+      "text": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární."
+    },
+    {
+      "id": "ASM-05",
+      "text": "Absence záznamu ve veřejném zdroji není důkazem absence ve skutečnosti (NOT_FOUND ≠ negativní fakt; BLOCKED ≠ NOT_FOUND)."
+    }
+  ],
+  "primaryExplanation": "Dohodnutá separace: každý si odnesl jeden venture.",
+  "alternatives": [
+    {
+      "text": "Nesouvisející transakce, které se časově potkaly (např. prodej za hotovost bez výměny).",
+      "distinguishingEvidence": "Smlouvy o převodu podílů ve sbírce listin (ceny, vzájemné odkazy), výpověď aktérů."
+    },
+    {
+      "text": "Konflikt/vytěsnění, ne dohoda.",
+      "distinguishingEvidence": "Soudní spory, mediální výpovědi, tonalita následné spolupráce (Oslzla u Able po akvizici nefiguruje)."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Doložené smlouvy ukazující nezávislé transakce bez vzájemné vazby."
+    ],
+    "strengthen": [
+      "Převodní smlouvy odkazující jedna na druhou; shodné datum podpisu."
+    ],
+    "weaken": [
+      "Důkaz sporu mezi aktéry v témže období."
+    ]
+  },
+  "uncertainty": [
+    "Důvod rozdělení (CLM-24→CLM-41 kontext: proč Oslzla odešel 17 měsíců před akvizicí) zůstává otevřenou otázkou."
+  ],
+  "diversity": {
+    "source_count": 1,
+    "sources": [
+      "SRC-12"
+    ],
+    "evidence_count": 2,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 1,
+    "upstream_families": [
+      "cz_register"
+    ],
+    "upstream_family_count": 1,
+    "jurisdictions": [
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-18",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": true,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CLM-41",
+      "CLM-42",
+      "EVD-ARES-BLACKFISH",
+      "EVD-ARES-ARTSTAY"
+    ],
+    "contradicting": [],
+    "contextualizing": [],
+    "alternatives": 2,
+    "unknown": [
+      "Důvod rozdělení (CLM-24→CLM-41 kontext: proč Oslzla odešel 17 měsíců před akvizicí) zůstává otevřenou otázkou."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}
