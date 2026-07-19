@@ -118,3 +118,17 @@ rebuilding an unchanged state never mints a snapshot), gated by
 `npm run temporal:validate` inside `npm run verify`. Production proof:
 `node scripts/dossier/temporal/production-proof.mjs` →
 `reports/dossier-snapshot-proof.json`. Design docs: `docs/dossier/temporal/`.
+
+## Reasoning layer (why believe any of it)
+
+Every conclusion in the dossier is the product of an explicit, validated
+reasoning chain (observation → evidence → assertion → claim → assessment →
+conclusion → executive finding). The analytical content lives in
+`data/dossier/able/reasoning.json` (inference steps, assumptions, alternative
+explanations, counterfactuals, conflict resolutions, executive findings); the
+rest of the graph is derived from the evidence layer. Public surface:
+`/dossier/reasoning/` + a "Proč tomu věřit?" section on every claim page.
+Gates: `node scripts/dossier/reasoning/reasoning-validate.mjs` (in `verify`) —
+no assessment without evidence, no conclusion without reasoning, no executive
+bullet without support, no single-explanation output, no hidden assumptions.
+Docs: `docs/dossier/reasoning/`.

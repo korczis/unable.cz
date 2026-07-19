@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-R-04",
+  "kind": "conclusion",
+  "produces": "R-04",
+  "producesText": "Insolvency not conclusively screened",
+  "canonicalPath": "/dossier/reasoning/inf-r-04/",
+  "premises": [
+    {
+      "ref": "CLM-58",
+      "role": "supports",
+      "note": "ISIR BLOCKED (HTTP 500, oba pokusy)",
+      "kind": "claim",
+      "label": "Insolvency status for Able.cz s.r.o. could not be determined: the official insolvency register (ISIR) returned HTTP 500 to subject-search requests on both 2026-07-17 and 2026-07-18"
+    },
+    {
+      "ref": "CLM-48",
+      "role": "contextualizes",
+      "note": "osobní exekuce vyřešena; firemní nescreenováno",
+      "kind": "assessment",
+      "label": "A 9,327.14 CZK debt to the Prague public-transport operator is consistent in scale with an escalated unpaid-fare claim, but the filed documents do not state the debt's origin. The "
+    }
+  ],
+  "steps": [
+    "Autoritativní insolvenční registr nešlo dotázat (dva pokusy, HTTP 500).",
+    "Nikde jinde insolvence nalezena nebyla — ale absence bez autoritativního dotazu nic neuzavírá (ASM-05).",
+    "Riziko zůstává otevřené s vysokým potenciálním dopadem a neznámou pravděpodobností."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-05",
+      "text": "Absence záznamu ve veřejném zdroji není důkazem absence ve skutečnosti (NOT_FOUND ≠ negativní fakt; BLOCKED ≠ NOT_FOUND)."
+    }
+  ],
+  "primaryExplanation": "Screening je neuzavřený kvůli selhání poskytovatele — ne kvůli nálezu.",
+  "alternatives": [
+    {
+      "text": "Žádné insolvenční řízení neexistuje (nejpravděpodobnější, ale nedoložené).",
+      "distinguishingEvidence": "Úspěšná ISIR lustrace (revalidační fronta, priorita 1)."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Úspěšná lustrace s nálezem řízení"
+    ],
+    "strengthen": [
+      "Úspěšná lustrace bez nálezu (riziko se uzavře)"
+    ],
+    "weaken": [
+      "—"
+    ]
+  },
+  "uncertainty": [
+    "Celé riziko JE nejistota: BLOCKED ≠ prověřeno."
+  ],
+  "diversity": {
+    "source_count": 3,
+    "sources": [
+      "SRC-16",
+      "SRC-17",
+      "SRC-21"
+    ],
+    "evidence_count": 5,
+    "document_count": 2,
+    "documents": [
+      "sbirka-listin/2026-01-21-exekucni-prikaz-podil-SL69.txt",
+      "sbirka-listin/2026-04-08-skonceni-exekuce-SL70.txt"
+    ],
+    "provider_run_backed_sources": 1,
+    "upstream_families": [
+      "cz_register",
+      "isir"
+    ],
+    "upstream_family_count": 2,
+    "jurisdictions": [
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CLM-58"
+    ],
+    "contradicting": [],
+    "contextualizing": [
+      "CLM-48"
+    ],
+    "alternatives": 1,
+    "unknown": [
+      "Celé riziko JE nejistota: BLOCKED ≠ prověřeno."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

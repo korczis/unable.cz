@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-CLM-40",
+  "kind": "assessment",
+  "produces": "CLM-40",
+  "producesText": "Schlesinger's concurrent Ventoux Studio stake — registered about two months after the Blackfish acquisition closed — and his reciprocal 5 % Able.cz stake (CLM-22) are both absent from every public account of the deal reviewed (Forbes.cz, CzechCrunch). A disclosure gap, not evidence of wrongdoing.",
+  "canonicalPath": "/dossier/reasoning/inf-clm-40/",
+  "premises": [
+    {
+      "ref": "CLM-39",
+      "role": "supports",
+      "note": "Ventoux 30 % od 22. 9. 2025 (primární zápis)",
+      "kind": "claim",
+      "label": "Vít Schlesinger holds 30 % of Ventoux Studio s.r.o. (IČO 23749636) since its founding on 22 September 2025, alongside Andrea Naštická (35 %, jednatelka) and Nathalie Gabrielle Peyr"
+    },
+    {
+      "ref": "CLM-22",
+      "role": "supports",
+      "note": "reciproční 5% podíl Schlesingera v Able.cz",
+      "kind": "claim",
+      "label": "As part of the acquisition, Vít Schlesinger became a shareholder of Able.cz s.r.o. itself — exactly 5.00 % (vklad 12,185.75 CZK), registered 29 July 2025."
+    },
+    {
+      "ref": "CLM-21",
+      "role": "supports",
+      "note": "akvizice účinná 29. 7. 2025",
+      "kind": "claim",
+      "label": "Able.cz s.r.o. is registered as the 100% shareholder of Blackfish & Co. s.r.o. (IČO 06526411) since 29 July 2025, with Václav Faraga added as a second jednatel on 28 July 2025 — co"
+    },
+    {
+      "ref": "CLM-51",
+      "role": "supports",
+      "note": "média reciproční podíl nezmiňují",
+      "kind": "assessment",
+      "label": "Neither Forbes.cz nor CzechCrunch mentioned Schlesinger's reciprocal 5 % Able.cz stake in their acquisition coverage, which described only Able acquiring Blackfish."
+    },
+    {
+      "ref": "SRC-04",
+      "role": "contradicts",
+      "note": "mediální líčení deal popisuje jen jednosměrně",
+      "kind": "source",
+      "label": "Forbes.cz — Able acquires Blackfish studio"
+    },
+    {
+      "ref": "SRC-05",
+      "role": "contradicts",
+      "note": "dtto CzechCrunch",
+      "kind": "source",
+      "label": "CzechCrunch — Able buys Blackfish"
+    }
+  ],
+  "steps": [
+    "Rejstřík: Ventoux Studio zapsáno ~2 měsíce po uzavření akvizice; Schlesinger drží 30 %.",
+    "Rejstřík: Schlesinger současně drží 5 % přímo v Able.cz (CLM-22).",
+    "Žádný z obou přezkoumávaných mediálních textů ani jedno z toho nezmiňuje.",
+    "Závěr: mezera ve zveřejnění (disclosure gap) — nikoli důkaz protiprávnosti."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-02",
+      "text": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární."
+    },
+    {
+      "id": "ASM-04",
+      "text": "Mediální články citované jako SRC-04/SRC-05/SRC-22 přisuzují výroky uvedeným osobám správně."
+    }
+  ],
+  "primaryExplanation": "Deal měl reciproční a souběžné prvky, které veřejná narace nepokryla.",
+  "alternatives": [
+    {
+      "text": "Novináři o podílech věděli, ale nepovažovali je za podstatné pro text.",
+      "distinguishingEvidence": "Dotaz redakcím / follow-up články; úplné znění tiskové zprávy firmy."
+    },
+    {
+      "text": "Ventoux je nesouvisející osobní projekt bez vazby na akvizici.",
+      "distinguishingEvidence": "Předmět podnikání, klienti a tok peněz Ventoux; společníci a jejich vazby na Able."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Dohledaný veřejný text z doby akvizice, který oba podíly popisuje."
+    ],
+    "strengthen": [
+      "Další nezveřejněné souběžné angažmá téže osoby v rejstříku."
+    ],
+    "weaken": [
+      "Veřejné vysvětlení firmy, proč reciproční podíl nebyl součástí komunikace."
+    ]
+  },
+  "uncertainty": [
+    "Motivace nezveřejnění není z veřejných zdrojů zjistitelná."
+  ],
+  "diversity": {
+    "source_count": 3,
+    "sources": [
+      "SRC-04",
+      "SRC-05",
+      "SRC-12"
+    ],
+    "evidence_count": 3,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 3,
+    "upstream_families": [
+      "cz_register",
+      "czechcrunch",
+      "forbes"
+    ],
+    "upstream_family_count": 3,
+    "jurisdictions": [
+      "CZ — média",
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CLM-39",
+      "CLM-22",
+      "CLM-21",
+      "CLM-51"
+    ],
+    "contradicting": [
+      "SRC-04",
+      "SRC-05"
+    ],
+    "contextualizing": [],
+    "alternatives": 2,
+    "unknown": [
+      "Motivace nezveřejnění není z veřejných zdrojů zjistitelná."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

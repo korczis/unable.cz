@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-R-06",
+  "kind": "conclusion",
+  "produces": "R-06",
+  "producesText": "Control concentration outside the founders",
+  "canonicalPath": "/dossier/reasoning/inf-r-06/",
+  "premises": [
+    {
+      "ref": "CLM-52",
+      "role": "supports",
+      "kind": "claim",
+      "label": "ZenX Capital, a.s. (IČO 09289127; Zdeněk Sluka is a member of its správní rada since 2020 per the primary register) has been Able.cz s.r.o.'s largest shareholder since 14 October 2"
+    },
+    {
+      "ref": "CLM-53",
+      "role": "supports",
+      "kind": "assessment",
+      "label": "Able.cz has been investor-plurality-owned for most of the period covered by the reviewed media narrative, which consistently frames it as the founders' company; the founders' combi"
+    },
+    {
+      "ref": "EVD-ARES-ZENX",
+      "role": "supports",
+      "note": "ZenX vlastní záznam; beneficiální vlastnictví neviditelné",
+      "kind": "assertion",
+      "label": "EVD-ARES-ZENX"
+    }
+  ],
+  "steps": [
+    "ZenX drží 45,8–50 % od 10/2020 — víc než oba zakladatelé dohromady.",
+    "Beneficiální vlastnictví ZenX (a.s.) není z rejstříku viditelné.",
+    "Veřejná narace koncentraci nereflektuje (CLM-53).",
+    "Riziko: skutečné kontrolní poměry jsou pro protistrany hůř čitelné, než narace naznačuje."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-02",
+      "text": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární."
+    }
+  ],
+  "primaryExplanation": "Koncentrace kontroly mimo zakladatele, s omezenou průhledností konečných vlastníků.",
+  "alternatives": [
+    {
+      "text": "ZenX je pasivní finanční investor bez výkonu kontroly.",
+      "distinguishingEvidence": "Evidence skutečných majitelů (částečně neveřejná), zápisy z VH, jednání ZenX navenek."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Doklad o pasivitě ZenX (dohody, prohlášení)"
+    ],
+    "strengthen": [
+      "Zjištění konečných vlastníků ZenX s dalšími vazbami"
+    ],
+    "weaken": [
+      "Zveřejnění beneficiálních vlastníků bez pozoruhodných vazeb"
+    ]
+  },
+  "uncertainty": [
+    "Konečné vlastnictví ZenX zůstává neprověřené (evidence skutečných majitelů má omezený veřejný přístup)."
+  ],
+  "diversity": {
+    "source_count": 3,
+    "sources": [
+      "SRC-04",
+      "SRC-05",
+      "SRC-12"
+    ],
+    "evidence_count": 2,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 3,
+    "upstream_families": [
+      "cz_register",
+      "czechcrunch",
+      "forbes"
+    ],
+    "upstream_family_count": 3,
+    "jurisdictions": [
+      "CZ — média",
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CLM-52",
+      "CLM-53",
+      "EVD-ARES-ZENX"
+    ],
+    "contradicting": [],
+    "contextualizing": [],
+    "alternatives": 1,
+    "unknown": [
+      "Konečné vlastnictví ZenX zůstává neprověřené (evidence skutečných majitelů má omezený veřejný přístup)."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

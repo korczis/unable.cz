@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-FIN-ASSESS-03",
+  "kind": "assessment",
+  "produces": "FIN-ASSESS-03",
+  "producesText": "Liabilities grew faster than equity year-on-year; shareholder loans more than tripled (3.1M → 10.0M CZK).",
+  "canonicalPath": "/dossier/reasoning/inf-fin-assess-03/",
+  "premises": [
+    {
+      "ref": "EVD-SL68-LIABILITIES",
+      "role": "supports",
+      "kind": "evidence",
+      "label": "B.+C. Cizí zdroje 45183 33406"
+    },
+    {
+      "ref": "EVD-SL68-EQUITY",
+      "role": "supports",
+      "kind": "evidence",
+      "label": "A. Vlastní kapitál 26592 25849"
+    },
+    {
+      "ref": "EVD-SL68-SHAREHOLDER-DEBT",
+      "role": "supports",
+      "note": "závazky ke společníkům 3,1M → 10,0M",
+      "kind": "evidence",
+      "label": "C.I.9.1. Závazky ke společníkům 9754 2935"
+    }
+  ],
+  "steps": [
+    "Cizí zdroje rostou rychleji než vlastní kapitál (podané řádky).",
+    "Závazky ke společníkům se ztrojnásobily (3,1 → 10,0M CZK) — společníci firmu financují úvěrem, ne vkladem."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-01",
+      "text": "Podaná účetní závěrka (Sbírka listin) věrně zachycuje účetnictví subjektu tak, jak bylo podáno; nezávislý audit nebyl k dispozici."
+    }
+  ],
+  "primaryExplanation": "Rostoucí financování společnickými půjčkami při klesajících tržbách.",
+  "alternatives": [
+    {
+      "text": "Půjčky financují jednorázovou investici (např. akvizici Blackfish), ne provoz.",
+      "distinguishingEvidence": "Časová vazba půjček na 07/2025 akvizici; příloha závěrky FY2025; smlouvy o půjčkách."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Doklad o splacení půjček krátce po rozvahovém dni"
+    ],
+    "strengthen": [
+      "FY2025 s dalším růstem společnických závazků"
+    ],
+    "weaken": [
+      "Prokázaná vazba na akviziční CAPEX"
+    ]
+  },
+  "uncertainty": [
+    "Účel půjček z rozvahy nevyplývá; akvizice je časově blízká, ale kauzalita nedoložená."
+  ],
+  "diversity": {
+    "source_count": 1,
+    "sources": [
+      "SRC-15"
+    ],
+    "evidence_count": 3,
+    "document_count": 1,
+    "documents": [
+      "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+    ],
+    "provider_run_backed_sources": 0,
+    "upstream_families": [
+      "cz_register"
+    ],
+    "upstream_family_count": 1,
+    "jurisdictions": [
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-17"
+    },
+    "monoculture": true,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "EVD-SL68-LIABILITIES",
+      "EVD-SL68-EQUITY",
+      "EVD-SL68-SHAREHOLDER-DEBT"
+    ],
+    "contradicting": [],
+    "contextualizing": [],
+    "alternatives": 1,
+    "unknown": [
+      "Účel půjček z rozvahy nevyplývá; akvizice je časově blízká, ale kauzalita nedoložená."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

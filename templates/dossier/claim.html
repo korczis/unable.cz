@@ -79,6 +79,41 @@
       </ul>
     </section>
 
+    {#- „Proč tomu věřit?" (PROMPT-10): odpověď derivovaná z úsudkového grafu —
+        co tvrzení podpírá, co mu odporuje, který úsudek ho vytvořil a kdo ho
+        používá dál. -#}
+    {%- set why_all = load_data(path="static/data/dossier/reasoning/why.json") -%}
+    {%- set w = why_all.why | get(key=c.id) -%}
+    <section class="mt-8" aria-labelledby="why-h">
+      <h2 id="why-h" class="text-xs uppercase tracking-wide text-white/45">Proč tomu věřit?</h2>
+      {%- if w.supporting | length > 0 %}
+      <p class="mt-2 text-sm text-white/70">Podpírá:
+        {% for s in w.supporting %}<span class="font-mono text-xs text-[#9ec5c0]">{{ s.ref }}</span> <span class="font-mono text-[10px] text-white/35">({{ s.kind }})</span>{% if not loop.last %}, {% endif %}{% endfor %}
+      </p>
+      {%- endif %}
+      {%- if w.contextualizing | length > 0 %}
+      <p class="mt-1 text-sm text-white/60">Kontext: {% for s in w.contextualizing %}<span class="font-mono text-xs text-white/60">{{ s.ref }}</span>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+      {%- endif %}
+      {%- if w.contradicting | length > 0 %}
+      <p class="mt-1 text-sm text-[#d4af37]">Odporuje / rozpor: {% for s in w.contradicting %}<span class="font-mono text-xs">{{ s.ref }}</span>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+      {%- endif %}
+      {%- if w.produced_by_inference %}
+      {%- set wslug = w.produced_by_inference | lower %}
+      <p class="mt-2 text-sm text-white/80">Toto je analytický závěr — vytvořil ho úsudek
+        <a class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 hover:decoration-white/80" href="{{ get_url(path='@/dossier/reasoning/' ~ wslug ~ '.md') | safe }}">{{ w.produced_by_inference }}</a>
+        (premisy, kroky, alternativní vysvětlení, kontrafaktuály a nejistota tamtéž).</p>
+      {%- endif %}
+      {%- if w.used_by | length > 0 %}
+      <p class="mt-1 text-sm text-white/60">Dál mě používají:
+        {% for u in w.used_by %}{% if u.ref is starting_with("INF-") or u.ref is starting_with("EXEC-") %}{% set uslug = u.ref | lower %}<a class="font-mono text-xs text-[#9ec5c0] underline decoration-white/30 underline-offset-2" href="{{ get_url(path='@/dossier/reasoning/' ~ uslug ~ '.md') | safe }}">{{ u.ref }}</a>{% else %}<span class="font-mono text-xs text-white/60">{{ u.ref }}</span>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
+      </p>
+      {%- endif %}
+      {%- if w.uncertainty | length > 0 %}
+      <p class="mt-1 text-xs text-white/50">Nejistota: {{ w.uncertainty | join(sep=" · ") }}</p>
+      {%- endif %}
+      <p class="mt-2 text-xs text-white/40">Úplný úsudkový graf: <a class="underline decoration-white/30 underline-offset-2" href="{{ get_url(path='@/dossier/reasoning/_index.md') | safe }}">/dossier/reasoning/</a></p>
+    </section>
+
     {#- Historie tvrzení napříč publikovanými snapshoty (PROMPT-09 §21–22):
         revizní řetězec + změnové záznamy z neměnného snapshot diffu. -#}
     {%- set hist_all = load_data(path="static/data/dossier/history/objects.json") -%}

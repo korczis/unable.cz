@@ -40,6 +40,10 @@ const ROUTES = [
   { path: "/dossier/history/", key: "table" },
   { path: "/dossier/revalidation/", key: "h1" },
   { path: "/dossier/monitoring/", key: "table" },
+  // reasoning layer (PROMPT-10)
+  { path: "/dossier/reasoning/", key: "table" },
+  { path: "/dossier/reasoning/inf-clm-45/", key: "h1" },
+  { path: "/dossier/reasoning/exec-06/", key: "h1" },
 ];
 
 for (const vp of VIEWPORTS) {
@@ -71,7 +75,9 @@ for (const vp of VIEWPORTS) {
 test("320px narrative claim anchor is sized and navigates to its route", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 568 });
   await page.goto("/dossier/", { waitUntil: "networkidle" });
-  const anchor = page.locator("main article a.claim-ref").first();
+  // Deliberately the anchor in narrative prose (p), not the 10px record-chip
+  // buttons other enhancers may wrap around CLM tokens first.
+  const anchor = page.locator("main article p a.claim-ref").first();
   await expect(anchor).toBeVisible();
   const box = await anchor.boundingBox();
   expect(box.height).toBeGreaterThanOrEqual(14);
@@ -174,4 +180,38 @@ test("timeline lanes separate reality from evidence observation (keyboard reacha
   const tags = await page.locator("#tl-list .tl-tag").allTextContents();
   expect(tags.length).toBeGreaterThan(0);
   for (const t of tags) expect(t).toBe("pozorování evidence");
+});
+
+// ---- reasoning layer interaction proofs (PROMPT-10) -----------------------
+
+test("assessed claim answers 'why' and links its producing inference", async ({ page }) => {
+  await page.goto("/dossier/claims/clm-45/", { waitUntil: "networkidle" });
+  const why = page.locator("section[aria-labelledby='why-h']");
+  await expect(why).toContainText("Proč tomu věřit?");
+  const infLink = why.locator("a", { hasText: "INF-CLM-45" });
+  await expect(infLink).toBeVisible();
+  await infLink.click();
+  await expect(page.locator("h1")).toContainText("INF-CLM-45");
+  await expect(page.locator("main")).toContainText("Kroky úsudku");
+  await expect(page.locator("main")).toContainText("Kontrafaktuály");
+  await expect(page.locator("main")).toContainText("Alternativa");
+});
+
+test("executive finding exposes full trace and diversity vector", async ({ page }) => {
+  await page.goto("/dossier/reasoning/exec-06/", { waitUntil: "networkidle" });
+  await expect(page.locator("main")).toContainText("Úplná stopa");
+  await expect(page.locator("main")).toContainText("CLM-44");
+  await expect(page.locator("main")).toContainText("Diverzita opory");
+  await expect(page.locator("main")).toContainText("Nezávislé rodiny");
+});
+
+test("reasoning index shows method transparency, conflicts with both sides, and the DAG canvas", async ({ page }) => {
+  await page.goto("/dossier/reasoning/", { waitUntil: "networkidle" });
+  await expect(page.locator("#method-h")).toContainText("Transparentnost metody");
+  await expect(page.locator("main")).toContainText("Strana A");
+  await expect(page.locator("main")).toContainText("Strana B");
+  await expect(page.locator(".rg-canvas")).toBeVisible();
+  // Executive trace links resolve.
+  await page.getByRole("link", { name: "EXEC-02" }).first().click();
+  await expect(page.locator("h1")).toContainText("EXEC-02");
 });

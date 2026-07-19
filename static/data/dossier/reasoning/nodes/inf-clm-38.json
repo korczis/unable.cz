@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-CLM-38",
+  "kind": "assessment",
+  "produces": "CLM-38",
+  "producesText": "Lukáš Grolig appears nowhere in Able.cz s.r.o.'s register record (statutory body, supervisory board, or any shareholder configuration 2012–2026). His marketed CTO title is a marketing role, not a registered office.",
+  "canonicalPath": "/dossier/reasoning/inf-clm-38/",
+  "premises": [
+    {
+      "ref": "EVD-ARES-ABLE-OFFICERS",
+      "role": "supports",
+      "note": "úplná historie statutárního orgánu 2012–2026 bez Groliga",
+      "kind": "assertion",
+      "label": "EVD-ARES-ABLE-OFFICERS"
+    },
+    {
+      "ref": "EVD-ARES-ABLE-SHAREHOLDERS",
+      "role": "supports",
+      "note": "úplná historie podílů bez Groliga",
+      "kind": "assertion",
+      "label": "EVD-ARES-ABLE-SHAREHOLDERS"
+    },
+    {
+      "ref": "EVD-WEB-CLIENTS",
+      "role": "contextualizes",
+      "note": "web firmy marketuje vedení vč. CTO",
+      "kind": "evidence",
+      "label": "Named clients on able.cz/en: AAA Auto, Aures Holdings a.s., Arkadia Labs, Encall, Taste Town"
+    },
+    {
+      "ref": "CLM-37",
+      "role": "supports",
+      "note": "Groligův vlastní rejstříkový otisk (VERASTO) existuje — osoba je v rejstříku dohledatelná",
+      "kind": "claim",
+      "label": "Lukáš Grolig's own register footprint: VERASTO s.r.o. (IČO 06116159) — sole owner and jednatel since 18 May 2017; BGO s.r.o. (IČO 19173661) — 1/3 shareholder and jednatel from 22 M"
+    }
+  ],
+  "steps": [
+    "Primární záznam VR obsahuje ÚPLNOU historii orgánů a podílů Able.cz 2012–2026 (zachovaný artefakt).",
+    "Grolig se v ní nevyskytuje v žádné konfiguraci; přitom jeho vlastní firmy v rejstříku dohledatelné jsou (CLM-37) — negativní nález tedy není artefaktem špatného hledání.",
+    "Web firmy ho současně marketuje jako CTO → titul je marketingová role, ne zapsaná funkce."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-02",
+      "text": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární."
+    },
+    {
+      "id": "ASM-03",
+      "text": "Zachované artefakty (SHA-256, provider-runs) reprezentují stav zdroje v okamžiku stažení."
+    }
+  ],
+  "primaryExplanation": "CTO je interní/marketingový titul bez statutární či vlastnické stopy.",
+  "alternatives": [
+    {
+      "text": "Grolig drží podíl nepřímo (přes jinou entitu) nebo má smluvní opci, která do rejstříku nevstupuje.",
+      "distinguishingEvidence": "Smlouvy/cap-table mimo veřejné zdroje; prohlášení firmy; budoucí zápis."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Zápis Groliga do orgánů či podílů Able.cz v jakémkoli období (nový VR výpis)."
+    ],
+    "strengthen": [
+      "Další úplné výpisy potvrzující absenci i v dceřiných firmách."
+    ],
+    "weaken": [
+      "Důkaz nepřímého podílu přes prostředníka."
+    ]
+  },
+  "uncertainty": [
+    "Neveřejné smluvní vztahy (ESOP, opce) veřejná evidence nezachycuje (ASM-05)."
+  ],
+  "diversity": {
+    "source_count": 2,
+    "sources": [
+      "SRC-02",
+      "SRC-12"
+    ],
+    "evidence_count": 6,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 2,
+    "upstream_families": [
+      "able_cz",
+      "cz_register"
+    ],
+    "upstream_family_count": 2,
+    "jurisdictions": [
+      "CZ — úřední registr",
+      "subjekt sám"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "EVD-ARES-ABLE-OFFICERS",
+      "EVD-ARES-ABLE-SHAREHOLDERS",
+      "CLM-37"
+    ],
+    "contradicting": [],
+    "contextualizing": [
+      "EVD-WEB-CLIENTS"
+    ],
+    "alternatives": 1,
+    "unknown": [
+      "Neveřejné smluvní vztahy (ESOP, opce) veřejná evidence nezachycuje (ASM-05)."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

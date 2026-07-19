@@ -139,10 +139,11 @@ test("snapshots: chain, hashes and immutability hold over real data (non-vacuous
   }
 });
 
-test("no-op guarantee: current canonical equals the latest snapshot exactly", () => {
+test("no-op guarantee: current canonical (incl. reasoning layer) equals the latest snapshot exactly", () => {
   const doc = J("data/dossier/able/dossier.json");
+  const reasoning = J("data/dossier/able/reasoning.json");
   const last = index.snapshots[index.snapshots.length - 1];
-  assert.equal(snapshotContentHash(extractObjects(doc)), last.content_hash);
+  assert.equal(snapshotContentHash(extractObjects(doc, reasoning)), last.content_hash);
 });
 
 test("changes: every adjacent pair reconciles against the frozen objects", () => {
@@ -158,9 +159,10 @@ test("changes: every adjacent pair reconciles against the frozen objects", () =>
 });
 
 test("fixture 13 (real): the r06→r07 cutoff move is publication metadata, not intelligence", () => {
-  const lastPair = CHG.pairs[CHG.pairs.length - 1];
-  assert.equal(lastPair.material_change_count, 0);
-  const metaChanges = CHG.changes.filter((c) => c.to_snapshot_id === lastPair.to_snapshot_id);
+  const pair = CHG.pairs.find((p) => p.to_snapshot_id === "able-cz-public-2026-07-18-r07");
+  assert.ok(pair, "r06→r07 pair must exist");
+  assert.equal(pair.material_change_count, 0);
+  const metaChanges = CHG.changes.filter((c) => c.to_snapshot_id === pair.to_snapshot_id);
   assert.ok(metaChanges.every((c) => c.materiality === "INFORMATIONAL" || materialityRank(c.materiality) > materialityRank("MEDIUM")));
 });
 

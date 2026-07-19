@@ -86,7 +86,9 @@ const current = J(join(SNAP_DIR, "current.json"));
 const last = index.snapshots[index.snapshots.length - 1];
 if (current.snapshot_id !== last.snapshot_id || current.content_hash !== last.content_hash) err("current.json does not match the last snapshot in index.json");
 const canonicalDoc = J(join(ROOT, "data/dossier/able/dossier.json"));
-const liveHash = snapshotContentHash(extractObjects(canonicalDoc));
+const reasoningPath = join(ROOT, "data/dossier/able/reasoning.json");
+const canonicalReasoning = existsSync(reasoningPath) ? J(reasoningPath) : null;
+const liveHash = snapshotContentHash(extractObjects(canonicalDoc, canonicalReasoning));
 if (liveHash !== last.content_hash) err(`canonical drift: data/dossier/able/dossier.json (hash ${liveHash.slice(0, 12)}…) does not equal latest snapshot ${last.snapshot_id} (${last.content_hash.slice(0, 12)}…). Run snapshots.mjs + changes-gen.mjs and commit.`);
 
 /* ------------------------------------------------- diff reconciliation */

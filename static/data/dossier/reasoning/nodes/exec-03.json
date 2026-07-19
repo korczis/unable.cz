@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "EXEC-03",
+  "text": "Petr Faraga nebyl 'nově příchozí drobný společník', ale spoluzakladatel s třetinovým podílem a jednatel 2012–2020.",
+  "narrativeSection": "Souhrn",
+  "supports": [
+    {
+      "ref": "CLM-34",
+      "role": "supports",
+      "kind": "claim",
+      "label": "Petr Faraga (b. 1966) was a co-founder of Able.cz s.r.o. (then BIT CONSULTING s.r.o.): a founding 1/3 shareholder from 3 Oct 2012 and a jednatel from 3 Oct 2012"
+    }
+  ],
+  "reasoning": null,
+  "uncertainty": [],
+  "diversity": {
+    "source_count": 1,
+    "sources": [
+      "SRC-12"
+    ],
+    "evidence_count": 2,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 1,
+    "upstream_families": [
+      "cz_register"
+    ],
+    "upstream_family_count": 1,
+    "jurisdictions": [
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-18",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": true,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "reasoningRoute": null,
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

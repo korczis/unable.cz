@@ -1,0 +1,441 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "executive-trace",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "evidenceCutoff": "2026-07-18",
+    "generatedAt": "2026-07-18",
+    "source": "data/dossier/able/reasoning.json + evidence.json + dossier.json",
+    "note": "Vrstvy: 0 zdroje/pozorování · 1 evidence · 2 asercie · 3 tvrzení · 4 assessmenty/úsudky/předpoklady/rozpory · 5 závěry · 6 exekutivní zjištění."
+  },
+  "findings": [
+    {
+      "id": "EXEC-01",
+      "text": "Identita firmy je ověřena primárně proti úředním artefaktům; primární průchod přinesl podstatné korekce — mj. původní jméno BIT CONSULTING s.r.o. (2012–2016) a původní pražskou registraci, které žádné zrcadlo nezachytilo.",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        {
+          "ref": "EVD-ARES-ABLE-NAMES",
+          "role": "supports",
+          "kind": "assertion",
+          "label": "EVD-ARES-ABLE-NAMES"
+        },
+        {
+          "ref": "EVD-ARES-ABLE-COURT",
+          "role": "supports",
+          "kind": "assertion",
+          "label": "EVD-ARES-ABLE-COURT"
+        },
+        {
+          "ref": "SRC-12",
+          "role": "supports",
+          "kind": "source",
+          "label": "ARES — official REST API, basic + full public-register (VR) records for all 19 in-scope entities, preserved and hashed (cases/DD-Able-CZ-2026-07-17/artifacts/)"
+        }
+      ],
+      "reasoning": null,
+      "uncertainty": [],
+      "diversity": {
+        "source_count": 1,
+        "sources": [
+          "SRC-12"
+        ],
+        "evidence_count": 2,
+        "document_count": 0,
+        "documents": [],
+        "provider_run_backed_sources": 1,
+        "upstream_families": [
+          "cz_register"
+        ],
+        "upstream_family_count": 1,
+        "jurisdictions": [
+          "CZ — úřední registr"
+        ],
+        "time_span": {
+          "first_retrieved": "2026-07-18",
+          "last_retrieved": "2026-07-18"
+        },
+        "monoculture": true,
+        "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+      },
+      "reasoningRoute": null
+    },
+    {
+      "id": "EXEC-02",
+      "text": "Největším společníkem není zakladatelská dvojice, ale ZenX Capital, a.s. — od října 2020 drží 45,8–50 %, víc než oba zakladatelé dohromady; veřejná narace to nereflektuje.",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        {
+          "ref": "CLM-52",
+          "role": "supports",
+          "kind": "claim",
+          "label": "ZenX Capital, a.s. (IČO 09289127; Zdeněk Sluka is a member of its správní rada since 2020 per the primary register) has been Able.cz s.r.o.'s largest shareholde"
+        },
+        {
+          "ref": "CLM-53",
+          "role": "supports",
+          "kind": "assessment",
+          "label": "Able.cz has been investor-plurality-owned for most of the period covered by the reviewed media narrative, which consistently frames it as the founders' company;"
+        }
+      ],
+      "reasoning": "INF-CLM-53",
+      "uncertainty": [
+        "Beneficiální vlastnictví ZenX není rejstříkově viditelné (R-06)."
+      ],
+      "diversity": {
+        "source_count": 3,
+        "sources": [
+          "SRC-04",
+          "SRC-05",
+          "SRC-12"
+        ],
+        "evidence_count": 2,
+        "document_count": 0,
+        "documents": [],
+        "provider_run_backed_sources": 3,
+        "upstream_families": [
+          "cz_register",
+          "czechcrunch",
+          "forbes"
+        ],
+        "upstream_family_count": 3,
+        "jurisdictions": [
+          "CZ — média",
+          "CZ — úřední registr"
+        ],
+        "time_span": {
+          "first_retrieved": "2026-07-17",
+          "last_retrieved": "2026-07-18"
+        },
+        "monoculture": false,
+        "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+      },
+      "reasoningRoute": "/dossier/reasoning/inf-clm-53/"
+    },
+    {
+      "id": "EXEC-03",
+      "text": "Petr Faraga nebyl 'nově příchozí drobný společník', ale spoluzakladatel s třetinovým podílem a jednatel 2012–2020.",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        {
+          "ref": "CLM-34",
+          "role": "supports",
+          "kind": "claim",
+          "label": "Petr Faraga (b. 1966) was a co-founder of Able.cz s.r.o. (then BIT CONSULTING s.r.o.): a founding 1/3 shareholder from 3 Oct 2012 and a jednatel from 3 Oct 2012"
+        }
+      ],
+      "reasoning": null,
+      "uncertainty": [],
+      "diversity": {
+        "source_count": 1,
+        "sources": [
+          "SRC-12"
+        ],
+        "evidence_count": 2,
+        "document_count": 0,
+        "documents": [],
+        "provider_run_backed_sources": 1,
+        "upstream_families": [
+          "cz_register"
+        ],
+        "upstream_family_count": 1,
+        "jurisdictions": [
+          "CZ — úřední registr"
+        ],
+        "time_span": {
+          "first_retrieved": "2026-07-18",
+          "last_retrieved": "2026-07-18"
+        },
+        "monoculture": true,
+        "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+      },
+      "reasoningRoute": null
+    },
+    {
+      "id": "EXEC-04",
+      "text": "Able.cz má rejstříkově doložené dceřiné společnosti (Mindee app 95 %, Verzuz.com 100 %) a FaMe trade je aktivní s Václavem Faragou jako 50% společníkem — dřívější zrcadlový záznam o 'ukončené' firmě byl chybný.",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        {
+          "ref": "CLM-28",
+          "role": "supports",
+          "kind": "claim",
+          "label": "Mindee app s.r.o. (IČO 06437877) is a majority-owned subsidiary of Able.cz s.r.o.: Able.cz held 50 % at its 2017 founding, 47.5 % during 2019–2024, and 95 % sin"
+        },
+        {
+          "ref": "CLM-30",
+          "role": "supports",
+          "kind": "claim",
+          "label": "Verzuz.com s.r.o. (IČO 24094323, founded 22 Dec 2025) is a 100 % subsidiary of Able.cz s.r.o.; Václav Faraga and Tomáš Melichárek are its jednatelé."
+        },
+        {
+          "ref": "CLM-32",
+          "role": "supports",
+          "kind": "claim",
+          "label": "FaMe trade s.r.o. (IČO 29292859, founded 2011) is ACTIVE, and Václav Faraga currently holds 50 % (since 14 Dec 2020) and remains a jednatel, alongside Tomáš Mel"
+        }
+      ],
+      "reasoning": null,
+      "uncertainty": [],
+      "diversity": {
+        "source_count": 2,
+        "sources": [
+          "SRC-12",
+          "SRC-15"
+        ],
+        "evidence_count": 4,
+        "document_count": 1,
+        "documents": [
+          "sbirka-listin/2024-ucetni-zaverka-SL68.txt"
+        ],
+        "provider_run_backed_sources": 1,
+        "upstream_families": [
+          "cz_register"
+        ],
+        "upstream_family_count": 1,
+        "jurisdictions": [
+          "CZ — úřední registr"
+        ],
+        "time_span": {
+          "first_retrieved": "2026-07-17",
+          "last_retrieved": "2026-07-18"
+        },
+        "monoculture": true,
+        "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+      },
+      "reasoningRoute": null
+    },
+    {
+      "id": "EXEC-05",
+      "text": "Většina marketingových a výkonnostních tvrzení zůstává tvrzením firmy bez nezávislého potvrzení; oficiální registr smluv nevrací pro Able.cz ani Blackfish žádnou zveřejněnou smlouvu.",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        {
+          "ref": "CLM-57",
+          "role": "supports",
+          "kind": "claim",
+          "label": "The Registr smluv (official contracts register) returns zero published contracts for IČO 24278815 (Able.cz) and zero for IČO 06526411 (Blackfish & Co.) — search"
+        },
+        {
+          "ref": "EVD-WEB-ROI",
+          "role": "contextualizes",
+          "kind": "evidence",
+          "label": "300% — Average client-side ROI"
+        },
+        {
+          "ref": "EVD-WEB-AGENTS",
+          "role": "contextualizes",
+          "kind": "evidence",
+          "label": "AI-driven software built on 150+ in-house AI agents."
+        }
+      ],
+      "reasoning": "INF-R-03",
+      "uncertainty": [
+        "Soukromé zakázky veřejná evidence nezachytí — absence v registru smluv není negativní fakt (ASM-05)."
+      ],
+      "diversity": {
+        "source_count": 2,
+        "sources": [
+          "SRC-02",
+          "SRC-20"
+        ],
+        "evidence_count": 2,
+        "document_count": 0,
+        "documents": [],
+        "provider_run_backed_sources": 2,
+        "upstream_families": [
+          "able_cz",
+          "contracts_register"
+        ],
+        "upstream_family_count": 2,
+        "jurisdictions": [
+          "CZ — úřední registr",
+          "subjekt sám"
+        ],
+        "time_span": {
+          "first_retrieved": "2026-07-17",
+          "last_retrieved": "2026-07-18"
+        },
+        "monoculture": false,
+        "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+      },
+      "reasoningRoute": "/dossier/reasoning/inf-r-03/"
+    },
+    {
+      "id": "EXEC-06",
+      "text": "Podaná finanční trajektorie (tržby −14,8 % YoY, marže pod 2 %, společnické půjčky 3,1→10,0M CZK) je hluboko pod mediální růstovou narací ~100M CZK.",
+      "narrativeSection": "Finanční profil",
+      "supports": [
+        {
+          "ref": "CLM-44",
+          "role": "supports",
+          "kind": "claim",
+          "label": "Able.cz s.r.o.'s filed FY2024 statement (Sbírka listin C 85425/SL68/KSBR, filed 5 Dec 2025) shows: revenue from products and services 36,319 tis. CZK (FY2023: 4"
+        },
+        {
+          "ref": "CLM-45",
+          "role": "supports",
+          "kind": "assessment",
+          "label": "The filed FY2024 trajectory (36.3M CZK revenue, declining; net margin under 2 % and shrinking) is far below the ~100M CZK combined Able+Blackfish revenue target"
+        },
+        {
+          "ref": "FIN-ASSESS-01",
+          "role": "supports",
+          "kind": "assessment",
+          "label": "Filed revenue declined ~14.8 % year-on-year and is well below the ~100M CZK combined (Able+Blackfish) self-reported media target."
+        },
+        {
+          "ref": "FIN-ASSESS-03",
+          "role": "supports",
+          "kind": "assessment",
+          "label": "Liabilities grew faster than equity year-on-year; shareholder loans more than tripled (3.1M → 10.0M CZK)."
+        }
+      ],
+      "reasoning": "INF-CLM-45",
+      "uncertainty": [
+        "FY2025 dosud nepodána; konsolidovaný pohled neexistuje."
+      ],
+      "diversity": {
+        "source_count": 5,
+        "sources": [
+          "SRC-04",
+          "SRC-05",
+          "SRC-15",
+          "SRC-18",
+          "SRC-19"
+        ],
+        "evidence_count": 10,
+        "document_count": 3,
+        "documents": [
+          "sbirka-listin/2024-ucetni-zaverka-SL68.txt",
+          "sbirka-listin/blackfish/2024-ucetni-zaverka-SL21.txt",
+          "sbirka-listin/blackfish/2025-ucetni-zaverka-SL23.txt"
+        ],
+        "provider_run_backed_sources": 2,
+        "upstream_families": [
+          "cz_register",
+          "czechcrunch",
+          "forbes"
+        ],
+        "upstream_family_count": 3,
+        "jurisdictions": [
+          "CZ — média",
+          "CZ — úřední registr"
+        ],
+        "time_span": {
+          "first_retrieved": "2026-07-17",
+          "last_retrieved": "2026-07-17"
+        },
+        "monoculture": false,
+        "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+      },
+      "reasoningRoute": "/dossier/reasoning/inf-clm-45/"
+    },
+    {
+      "id": "EXEC-07",
+      "text": "Rozpor v čísle spisu (CON-01) zůstává viditelný; CON-02 byl vyřešen primárním záznamem; přibyl CON-03 (mediální vs. rejstříkové datum Oslzlova vlastnictví Blackfish).",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        {
+          "ref": "CON-01",
+          "role": "supports",
+          "kind": "conflict",
+          "label": "Court file number (spisová značka)"
+        },
+        {
+          "ref": "CON-02",
+          "role": "supports",
+          "kind": "conflict",
+          "label": "one label s.r.o. (IČO 02474727, Znojmo) — jednatel roles, stakes and dates for its three co-owners"
+        },
+        {
+          "ref": "CON-03",
+          "role": "supports",
+          "kind": "conflict",
+          "label": "When Lukáš Oslzla became a Blackfish & Co. owner"
+        }
+      ],
+      "reasoning": "INF-R-05",
+      "uncertainty": [
+        "CON-01 a CON-03 zůstávají otevřené (rejstřík autoritativní, ale druhá strana neopravila)."
+      ],
+      "diversity": {
+        "source_count": 1,
+        "sources": [
+          "SRC-12"
+        ],
+        "evidence_count": 1,
+        "document_count": 0,
+        "documents": [],
+        "provider_run_backed_sources": 1,
+        "upstream_families": [
+          "cz_register"
+        ],
+        "upstream_family_count": 1,
+        "jurisdictions": [
+          "CZ — úřední registr"
+        ],
+        "time_span": {
+          "first_retrieved": "2026-07-18",
+          "last_retrieved": "2026-07-18"
+        },
+        "monoculture": true,
+        "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+      },
+      "reasoningRoute": "/dossier/reasoning/inf-r-05/"
+    },
+    {
+      "id": "EXEC-08",
+      "text": "Důvěra je střední: vysoká u identity a vlastnictví (primárně ověřené), nízká u výkonnostních tvrzení; insolvenční screening zůstává BLOCKED (ISIR HTTP 500) — neuzavřený, ne negativní.",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        {
+          "ref": "CLM-58",
+          "role": "supports",
+          "kind": "claim",
+          "label": "Insolvency status for Able.cz s.r.o. could not be determined: the official insolvency register (ISIR) returned HTTP 500 to subject-search requests on both 2026-"
+        },
+        {
+          "ref": "R-04",
+          "role": "supports",
+          "kind": "conclusion",
+          "label": "Insolvency not conclusively screened"
+        }
+      ],
+      "reasoning": "INF-R-04",
+      "uncertainty": [
+        "Celý bod je výrok o nejistotě; uzavře ho jen úspěšná ISIR lustrace (revalidační priorita 1)."
+      ],
+      "diversity": {
+        "source_count": 3,
+        "sources": [
+          "SRC-16",
+          "SRC-17",
+          "SRC-21"
+        ],
+        "evidence_count": 5,
+        "document_count": 2,
+        "documents": [
+          "sbirka-listin/2026-01-21-exekucni-prikaz-podil-SL69.txt",
+          "sbirka-listin/2026-04-08-skonceni-exekuce-SL70.txt"
+        ],
+        "provider_run_backed_sources": 1,
+        "upstream_families": [
+          "cz_register",
+          "isir"
+        ],
+        "upstream_family_count": 2,
+        "jurisdictions": [
+          "CZ — úřední registr"
+        ],
+        "time_span": {
+          "first_retrieved": "2026-07-17",
+          "last_retrieved": "2026-07-18"
+        },
+        "monoculture": false,
+        "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+      },
+      "reasoningRoute": "/dossier/reasoning/inf-r-04/"
+    }
+  ]
+}

@@ -32,6 +32,7 @@ import {
 
 const ROOT = fileURLToPath(new URL("../../..", import.meta.url));
 const CANONICAL = "data/dossier/able/dossier.json";
+const REASONING = "data/dossier/able/reasoning.json";
 const STATIC_OUT = join(ROOT, "static/data/dossier/snapshots");
 const GEN_OUT = join(ROOT, "generated/dossier/snapshots");
 const GENERATOR_VERSION = "temporal-1.0.0";
@@ -66,6 +67,15 @@ function readDocAtCommit(commit) {
   return JSON.parse(raw);
 }
 
+function readReasoningAtCommit(commit) {
+  // The reasoning layer (PROMPT-10) postdates the bootstrapped history —
+  // absent file means the snapshot honestly has no reasoning objects.
+  try {
+    const raw = execFileSync("git", ["show", `${commit}:${REASONING}`], { cwd: ROOT, maxBuffer: 64 * 1024 * 1024, stdio: ["ignore", "pipe", "ignore"] }).toString("utf8");
+    return JSON.parse(raw);
+  } catch { return null; }
+}
+
 function writeJson(relPath, value) {
   for (const base of [STATIC_OUT, GEN_OUT]) {
     const p = join(base, relPath);
@@ -87,8 +97,8 @@ function hashIfExists(rel) {
   return sha256(readFileSync(p, "utf8"));
 }
 
-function buildSnapshot({ doc, seq, previousId, generatedAt, commit, note, routeLayer }) {
-  const objects = extractObjects(doc);
+function buildSnapshot({ doc, reasoning, seq, previousId, generatedAt, commit, note, routeLayer }) {
+  const objects = extractObjects(doc, reasoning);
   objects.sort((a, b) => (a.objectType + ":" + a.objectId).localeCompare(b.objectType + ":" + b.objectId));
   const cutoff = doc.meta?.evidenceCutoff || null;
   const id = snapshotId(cutoff, seq);
@@ -229,7 +239,7 @@ if (mode === "bootstrap") {
   for (const spec of BOOTSTRAP) {
     const doc = readDocAtCommit(spec.commit);
     const isLast = spec.seq === BOOTSTRAP.length;
-    const snap = buildSnapshot({ doc, seq: spec.seq, previousId: prevId, generatedAt: spec.generatedAt, commit: spec.commit, note: spec.note, routeLayer: isLast });
+    const snap = buildSnapshot({ doc, reasoning: readReasoningAtCommit(spec.commit), seq: spec.seq, previousId: prevId, generatedAt: spec.generatedAt, commit: spec.commit, note: spec.note, routeLayer: isLast });
     const created = persistSnapshot(snap);
     entries.push(indexEntry(snap.manifest));
     console.log((created ? "created " : "kept    ") + snap.id + "  hash=" + snap.contentHash.slice(0, 12) + "  objects=" + snap.objectsFile.object_count);
@@ -244,7 +254,9 @@ if (mode === "bootstrap") {
     process.exit(1);
   }
   const doc = JSON.parse(readFileSync(join(ROOT, CANONICAL), "utf8"));
-  const objects = extractObjects(doc);
+  const reasoningPath = join(ROOT, REASONING);
+  const reasoning = existsSync(reasoningPath) ? JSON.parse(readFileSync(reasoningPath, "utf8")) : null;
+  const objects = extractObjects(doc, reasoning);
   const currentHash = snapshotContentHash(objects);
   const last = index.snapshots[index.snapshots.length - 1];
   if (currentHash === last.content_hash) {
@@ -252,10 +264,15 @@ if (mode === "bootstrap") {
     process.exit(0);
   }
   let commit = null;
-  try { commit = execFileSync("git", ["rev-parse", "--short", "HEAD"], { cwd: ROOT }).toString().trim(); } catch { /* not a git checkout */ }
+  try {
+    const dirty = execFileSync("git", ["status", "--porcelain", "--", "data/dossier"], { cwd: ROOT }).toString().trim();
+    // Only record HEAD when the canonical inputs are actually committed at it —
+    // a dirty tree would attribute the snapshot to a commit that lacks it.
+    commit = dirty ? null : execFileSync("git", ["rev-parse", "--short", "HEAD"], { cwd: ROOT }).toString().trim();
+  } catch { /* not a git checkout */ }
   const seq = last.snapshot_sequence + 1;
   const snap = buildSnapshot({
-    doc, seq, previousId: last.snapshot_id,
+    doc, reasoning, seq, previousId: last.snapshot_id,
     // Deterministic: a new semantic state is stamped to its evidence cutoff,
     // never to wall-clock build time (repo convention; docs/dossier/temporal/04).
     generatedAt: doc.meta?.evidenceCutoff || null,

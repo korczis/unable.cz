@@ -1,0 +1,599 @@
+{
+  "_comment": "Kanonická úsudková vrstva (PROMPT-10). Autorsky psaná je POUZE analytická část: kroky úsudku, předpoklady, alternativní vysvětlení, kontrafaktuály a exekutivní zjištění. Nižší patra grafu (pozorování → evidence → asercie → tvrzení) se derivují z evidence.json + extraction/ + provider-runs a NIKDY se sem neopisují. Každý ref musí existovat (vynucuje reasoning-validate.mjs); úsudek se nikdy neopírá o nahrazené (superseded) tvrzení. Prose česky dle jazykové politiky; enum hodnoty a ID zůstávají.",
+  "meta": {
+    "case": "DD-Able-CZ-2026-07-17",
+    "reasoningVersion": "1.0.0",
+    "promptVersion": "PROMPT-10",
+    "method": {
+      "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+      "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+      "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+      "limitations": [
+        "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+        "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+        "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+      ]
+    }
+  },
+  "assumptions": [
+    { "id": "ASM-01", "text": "Podaná účetní závěrka (Sbírka listin) věrně zachycuje účetnictví subjektu tak, jak bylo podáno; nezávislý audit nebyl k dispozici.", "basis": "SL68 je závěrka malé účetní jednotky bez povinného auditu." },
+    { "id": "ASM-02", "text": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární.", "basis": "Zákonná domněnka správnosti zápisu; použito při řešení CON-01 a CON-03." },
+    { "id": "ASM-03", "text": "Zachované artefakty (SHA-256, provider-runs) reprezentují stav zdroje v okamžiku stažení.", "basis": "Obsahově adresované úložiště případu; ověřováno při každém buildu." },
+    { "id": "ASM-04", "text": "Mediální články citované jako SRC-04/SRC-05/SRC-22 přisuzují výroky uvedeným osobám správně.", "basis": "Bez přístupu k původním rozhovorům nelze ověřit; artefakty článků jsou uchovány." },
+    { "id": "ASM-05", "text": "Absence záznamu ve veřejném zdroji není důkazem absence ve skutečnosti (NOT_FOUND ≠ negativní fakt; BLOCKED ≠ NOT_FOUND).", "basis": "Metodika případu; řídí CLM-57, CLM-58 a všechna negativní zjištění." }
+  ],
+  "inferences": [
+    {
+      "id": "INF-CLM-35",
+      "kind": "assessment",
+      "produces": "CLM-35",
+      "premises": [
+        { "ref": "EVD-ARES-ABLE-OFFICERS", "role": "supports", "note": "spolu-založení a jednatelské funkce 2012" },
+        { "ref": "CLM-34", "role": "supports", "note": "Petr Faraga zakládající 1/3 společník a jednatel 2012–2020" },
+        { "ref": "EVD-ARES-FAME-LOGISTICS", "role": "supports", "note": "společné podíly FaMe logistics" },
+        { "ref": "EVD-ARES-FAME-TRADE", "role": "supports", "note": "společné podíly FaMe trade" }
+      ],
+      "steps": [
+        "Sdílené příjmení Faraga + sdílený znojemský adresní klastr (rejstříkové adresy).",
+        "Spoluzaložení BIT CONSULTING/Able.cz 2012 a souběžné podíly ve dvou FaMe firmách.",
+        "Věkový rozdíl 23 let (nar. 1966 vs. 1989) odpovídá generačnímu vztahu.",
+        "Žádný veřejný zdroj vztah výslovně neuvádí → závěr zůstává 'plauzibilní', ne fakt."
+      ],
+      "assumptions": ["ASM-02", "ASM-05"],
+      "primaryExplanation": "Rodinný (pravděpodobně otec–syn) vztah mezi Petrem a Václavem Faragou.",
+      "alternatives": [
+        { "text": "Shoda příjmení bez příbuznosti — obchodní partneři ze stejného regionu.", "distinguishingEvidence": "Matriční/veřejné prohlášení rodiny, rozhovor, parte, nebo dokument jmenující vztah." }
+      ],
+      "counterfactuals": {
+        "falsify": ["Veřejné prohlášení kterékoli strany, že příbuzní nejsou."],
+        "strengthen": ["Jakýkoli primární dokument jmenující vztah (např. dědické řízení, čestné prohlášení ve sbírce listin)."],
+        "weaken": ["Zjištění, že znojemské adresy jsou pouze sídla firem bez rezidenční vazby."]
+      },
+      "uncertainty": ["Vztah není doložen žádným záznamem; hodnocení stojí jen na konvergenci nepřímých indicií."]
+    },
+    {
+      "id": "INF-CLM-38",
+      "kind": "assessment",
+      "produces": "CLM-38",
+      "premises": [
+        { "ref": "EVD-ARES-ABLE-OFFICERS", "role": "supports", "note": "úplná historie statutárního orgánu 2012–2026 bez Groliga" },
+        { "ref": "EVD-ARES-ABLE-SHAREHOLDERS", "role": "supports", "note": "úplná historie podílů bez Groliga" },
+        { "ref": "EVD-WEB-CLIENTS", "role": "contextualizes", "note": "web firmy marketuje vedení vč. CTO" },
+        { "ref": "CLM-37", "role": "supports", "note": "Groligův vlastní rejstříkový otisk (VERASTO) existuje — osoba je v rejstříku dohledatelná" }
+      ],
+      "steps": [
+        "Primární záznam VR obsahuje ÚPLNOU historii orgánů a podílů Able.cz 2012–2026 (zachovaný artefakt).",
+        "Grolig se v ní nevyskytuje v žádné konfiguraci; přitom jeho vlastní firmy v rejstříku dohledatelné jsou (CLM-37) — negativní nález tedy není artefaktem špatného hledání.",
+        "Web firmy ho současně marketuje jako CTO → titul je marketingová role, ne zapsaná funkce."
+      ],
+      "assumptions": ["ASM-02", "ASM-03"],
+      "primaryExplanation": "CTO je interní/marketingový titul bez statutární či vlastnické stopy.",
+      "alternatives": [
+        { "text": "Grolig drží podíl nepřímo (přes jinou entitu) nebo má smluvní opci, která do rejstříku nevstupuje.", "distinguishingEvidence": "Smlouvy/cap-table mimo veřejné zdroje; prohlášení firmy; budoucí zápis." }
+      ],
+      "counterfactuals": {
+        "falsify": ["Zápis Groliga do orgánů či podílů Able.cz v jakémkoli období (nový VR výpis)."],
+        "strengthen": ["Další úplné výpisy potvrzující absenci i v dceřiných firmách."],
+        "weaken": ["Důkaz nepřímého podílu přes prostředníka."]
+      },
+      "uncertainty": ["Neveřejné smluvní vztahy (ESOP, opce) veřejná evidence nezachycuje (ASM-05)."]
+    },
+    {
+      "id": "INF-CLM-40",
+      "kind": "assessment",
+      "produces": "CLM-40",
+      "premises": [
+        { "ref": "CLM-39", "role": "supports", "note": "Ventoux 30 % od 22. 9. 2025 (primární zápis)" },
+        { "ref": "CLM-22", "role": "supports", "note": "reciproční 5% podíl Schlesingera v Able.cz" },
+        { "ref": "CLM-21", "role": "supports", "note": "akvizice účinná 29. 7. 2025" },
+        { "ref": "CLM-51", "role": "supports", "note": "média reciproční podíl nezmiňují" },
+        { "ref": "SRC-04", "role": "contradicts", "note": "mediální líčení deal popisuje jen jednosměrně" },
+        { "ref": "SRC-05", "role": "contradicts", "note": "dtto CzechCrunch" }
+      ],
+      "steps": [
+        "Rejstřík: Ventoux Studio zapsáno ~2 měsíce po uzavření akvizice; Schlesinger drží 30 %.",
+        "Rejstřík: Schlesinger současně drží 5 % přímo v Able.cz (CLM-22).",
+        "Žádný z obou přezkoumávaných mediálních textů ani jedno z toho nezmiňuje.",
+        "Závěr: mezera ve zveřejnění (disclosure gap) — nikoli důkaz protiprávnosti."
+      ],
+      "assumptions": ["ASM-02", "ASM-04"],
+      "primaryExplanation": "Deal měl reciproční a souběžné prvky, které veřejná narace nepokryla.",
+      "alternatives": [
+        { "text": "Novináři o podílech věděli, ale nepovažovali je za podstatné pro text.", "distinguishingEvidence": "Dotaz redakcím / follow-up články; úplné znění tiskové zprávy firmy." },
+        { "text": "Ventoux je nesouvisející osobní projekt bez vazby na akvizici.", "distinguishingEvidence": "Předmět podnikání, klienti a tok peněz Ventoux; společníci a jejich vazby na Able." }
+      ],
+      "counterfactuals": {
+        "falsify": ["Dohledaný veřejný text z doby akvizice, který oba podíly popisuje."],
+        "strengthen": ["Další nezveřejněné souběžné angažmá téže osoby v rejstříku."],
+        "weaken": ["Veřejné vysvětlení firmy, proč reciproční podíl nebyl součástí komunikace."]
+      },
+      "uncertainty": ["Motivace nezveřejnění není z veřejných zdrojů zjistitelná."]
+    },
+    {
+      "id": "INF-CLM-43",
+      "kind": "assessment",
+      "produces": "CLM-43",
+      "premises": [
+        { "ref": "CLM-41", "role": "supports", "note": "Oslzlův odchod z Blackfish 2/2024 (primární data)" },
+        { "ref": "CLM-42", "role": "supports", "note": "zrcadlový přesun Artstay/Lovs na Oslzlu" },
+        { "ref": "EVD-ARES-BLACKFISH", "role": "supports" },
+        { "ref": "EVD-ARES-ARTSTAY", "role": "supports" }
+      ],
+      "steps": [
+        "Ve stejném měsíci (únor 2024) Schlesinger konsoliduje 100 % Blackfish a Oslzla 100 % Artstay/Lovs.",
+        "Zrcadlová symetrie dvou převodů mezi týmiž dvěma muži konzistentní s dohodnutým rozdělením podniků.",
+        "Žádný veřejný zdroj důvod rozchodu neuvádí → kvalifikace 'konzistentní s', ne fakt."
+      ],
+      "assumptions": ["ASM-02", "ASM-05"],
+      "primaryExplanation": "Dohodnutá separace: každý si odnesl jeden venture.",
+      "alternatives": [
+        { "text": "Nesouvisející transakce, které se časově potkaly (např. prodej za hotovost bez výměny).", "distinguishingEvidence": "Smlouvy o převodu podílů ve sbírce listin (ceny, vzájemné odkazy), výpověď aktérů." },
+        { "text": "Konflikt/vytěsnění, ne dohoda.", "distinguishingEvidence": "Soudní spory, mediální výpovědi, tonalita následné spolupráce (Oslzla u Able po akvizici nefiguruje)." }
+      ],
+      "counterfactuals": {
+        "falsify": ["Doložené smlouvy ukazující nezávislé transakce bez vzájemné vazby."],
+        "strengthen": ["Převodní smlouvy odkazující jedna na druhou; shodné datum podpisu."],
+        "weaken": ["Důkaz sporu mezi aktéry v témže období."]
+      },
+      "uncertainty": ["Důvod rozdělení (CLM-24→CLM-41 kontext: proč Oslzla odešel 17 měsíců před akvizicí) zůstává otevřenou otázkou."]
+    },
+    {
+      "id": "INF-CLM-45",
+      "kind": "assessment",
+      "produces": "CLM-45",
+      "premises": [
+        { "ref": "CLM-44", "role": "supports", "note": "podaná FY2024 čísla, řádek po řádku" },
+        { "ref": "EVD-SL68-REVENUE", "role": "supports", "note": "tržby 36 319 tis. (FY2024) / 42 642 tis. (FY2023)" },
+        { "ref": "EVD-SL68-RESULT", "role": "supports", "note": "výsledek po zdanění" },
+        { "ref": "SRC-04", "role": "contradicts", "note": "mediální cíl ~100M CZK kombinovaně" },
+        { "ref": "SRC-05", "role": "contradicts", "note": "dtto" },
+        { "ref": "CLM-50", "role": "supports", "note": "Blackfish rozdíl nevysvětlí (aktiva 6,7–8,3M)" }
+      ],
+      "steps": [
+        "Podané tržby FY2024: 36,3M CZK; FY2023: 42,6M CZK → meziroční pokles ~14,8 % (EVD-SL68-REVENUE).",
+        "Čistá marže pod 2 % a klesá (EVD-SL68-RESULT vs. REVENUE).",
+        "Mediální narace 2025 přisuzuje Schlesingerovi cíl ~100M CZK kombinovaných tržeb (SRC-04/05).",
+        "Blackfish je řádově menší (CLM-50), takže kombinace mezeru nezaplní.",
+        "Závěr: podaná trajektorie je hluboko pod mediální narací — rozpor čísel, ne obvinění."
+      ],
+      "assumptions": ["ASM-01", "ASM-04"],
+      "primaryExplanation": "Mediální cíl byl aspirační výrok, který podaná čísla (zatím) nenaplňují.",
+      "alternatives": [
+        { "text": "FY2025 přinesla skokový růst, který FY2024 závěrka z podstaty nemůže ukázat (cíl se týkal budoucnosti).", "distinguishingEvidence": "FY2025 závěrka ve Sbírce listin (očekávána v průběhu 2026) — viz revalidační fronta." },
+        { "text": "Část výnosů teče mimo Able.cz s.r.o. (jiné entity skupiny: Mindee, Verzuz, ERA25).", "distinguishingEvidence": "Závěrky dceřiných a sesterských entit; konsolidovaný pohled neexistuje (FIN gap)." }
+      ],
+      "counterfactuals": {
+        "falsify": ["FY2025 filing s tržbami řádu 100M CZK (kombinovaně s Blackfish)."],
+        "strengthen": ["FY2025 filing potvrzující pokračující pokles; absence růstu i u dceřiných entit."],
+        "weaken": ["Doložené významné výnosy v jiných entitách skupiny za totéž období."]
+      },
+      "uncertainty": ["FY2025 dosud nepodána; konsolidovaná čísla neexistují (každá entita podává zvlášť)."]
+    },
+    {
+      "id": "INF-CLM-48",
+      "kind": "assessment",
+      "produces": "CLM-48",
+      "premises": [
+        { "ref": "CLM-46", "role": "supports", "note": "exekuční příkaz 19. 1. 2026, 9 327,14 CZK, DPP" },
+        { "ref": "EVD-SL69-AMOUNT", "role": "supports" },
+        { "ref": "EVD-SL69-CREDITOR", "role": "supports", "note": "věřitel: Dopravní podnik hl. m. Prahy" },
+        { "ref": "EVD-SL70-CLOSED", "role": "supports", "note": "ukončeno zaplacením do ~9 týdnů" },
+        { "ref": "CLM-58", "role": "contextualizes", "note": "firemní insolvenci nešlo prověřit (BLOCKED)" }
+      ],
+      "steps": [
+        "Částka 9 327,14 CZK a věřitel DPP odpovídají řádově eskalované pohledávce z jízdného (typizovaný profil).",
+        "Podané dokumenty původ dluhu výslovně neuvádějí → formulace 'konzistentní s', ne fakt.",
+        "Věc byla osobní (podíl T. M.), malá a uhrazena do ~9 týdnů (EVD-SL70-CLOSED).",
+        "Na Able.cz s.r.o. samotnou žádná exekuce v zachovaných podáních nesměřuje; firemní ISIR však byl BLOCKED (ASM-05)."
+      ],
+      "assumptions": ["ASM-02", "ASM-05"],
+      "primaryExplanation": "Drobný osobní dluh (nejspíše z jízdného) eskalovaný do exekuce a rychle uhrazený.",
+      "alternatives": [
+        { "text": "Jiný typ pohledávky DPP (např. smluvní pokuta, škoda).", "distinguishingEvidence": "Exekuční titul (rozsudek/EPR) — není ve sbírce listin; spis exekutora." }
+      ],
+      "counterfactuals": {
+        "falsify": ["Exekuční titul dokládající jiný původ pohledávky."],
+        "strengthen": ["EPR/rozsudek potvrzující jízdné; úspěšná ISIR lustrace bez firemních záznamů."],
+        "weaken": ["Další exekuce téže osoby v okolním období (vzorec platební nekázně)."]
+      },
+      "uncertainty": ["Původ dluhu není doložen; firemní insolvenční screening zůstává BLOCKED (CLM-58)."]
+    },
+    {
+      "id": "INF-CLM-50",
+      "kind": "assessment",
+      "produces": "CLM-50",
+      "premises": [
+        { "ref": "CLM-49", "role": "supports", "note": "Blackfish aktiva 6,7–8,3M CZK (mikro jednotka)" },
+        { "ref": "EVD-SL21-ASSETS", "role": "supports" },
+        { "ref": "EVD-SL23-ASSETS", "role": "supports" },
+        { "ref": "EVD-SL68-ASSETS", "role": "supports", "note": "Able aktiva 71,9M CZK" },
+        { "ref": "SRC-04", "role": "contextualizes", "note": "'~60 lidí, ~100M' framing" }
+      ],
+      "steps": [
+        "Podaná aktiva: Blackfish 6,7–8,3M vs. Able 71,9M CZK (poměr ~1:9 až 1:11).",
+        "Blackfish jako mikro jednotka nepodává P&L → tržby přímo nesrovnatelné, aktiva jsou nejlepší dostupný můstek.",
+        "Většina 'kombinované' škály z mediálního framingu tedy evidentně připadá na Able.cz."
+      ],
+      "assumptions": ["ASM-01"],
+      "primaryExplanation": "Kombinovaný framing opticky zvětšuje akvírovanou část; finančně dominantní je Able.",
+      "alternatives": [
+        { "text": "Hodnota Blackfish je v lidech/značce, ne v rozvaze (asset-light studio).", "distinguishingEvidence": "P&L Blackfish (nepodává se), personální data, ceník/klientská báze." }
+      ],
+      "counterfactuals": {
+        "falsify": ["Doložené tržby Blackfish řádu desítek milionů CZK."],
+        "strengthen": ["FY2025 rozvaha Blackfish potvrzující řádový rozdíl."],
+        "weaken": ["Důkaz významného výnosového příspěvku Blackfish po akvizici."]
+      },
+      "uncertainty": ["Bez P&L Blackfish je srovnání založeno na rozvaze, ne na tržbách."]
+    },
+    {
+      "id": "INF-CLM-51",
+      "kind": "assessment",
+      "produces": "CLM-51",
+      "premises": [
+        { "ref": "CLM-22", "role": "supports", "note": "reciproční 5 % je primárně doloženo" },
+        { "ref": "SRC-04", "role": "supports", "note": "text článku recipročku nezmiňuje (zachovaný artefakt)" },
+        { "ref": "SRC-05", "role": "supports", "note": "dtto" }
+      ],
+      "steps": [
+        "Primární rejstřík dokládá reciproční 5% podíl (CLM-22).",
+        "Oba zachované mediální artefakty popisují pouze 'Able kupuje Blackfish'.",
+        "Negativní tvrzení je omezeno na PŘEZKOUMANÉ texty — ne na veškerá média (ASM-05)."
+      ],
+      "assumptions": ["ASM-03", "ASM-05"],
+      "primaryExplanation": "Reciproční prvek dealu nebyl součástí mediální komunikace.",
+      "alternatives": [
+        { "text": "Jiný, nepřezkoumaný text jej zmínil.", "distinguishingEvidence": "Širší mediální rešerše (další outlety, tiskové zprávy)." }
+      ],
+      "counterfactuals": {
+        "falsify": ["Dohledaný text z doby akvizice zmiňující 5% recipročku."],
+        "strengthen": ["Rozšíření rešerše na další outlety se stejným výsledkem."],
+        "weaken": ["—"]
+      },
+      "uncertainty": ["Pokrytí rešerše: 2 hlavní outlety, ne úplný mediální korpus."]
+    },
+    {
+      "id": "INF-CLM-53",
+      "kind": "assessment",
+      "produces": "CLM-53",
+      "premises": [
+        { "ref": "CLM-52", "role": "supports", "note": "ZenX 45,8–50 % od 10/2020 (primární cap table)" },
+        { "ref": "EVD-ARES-ABLE-SHAREHOLDERS", "role": "supports", "note": "úplná historie podílů" },
+        { "ref": "SRC-04", "role": "contradicts", "note": "média rámují firmu jako zakladatelskou" },
+        { "ref": "SRC-05", "role": "contradicts" }
+      ],
+      "steps": [
+        "Primární historie podílů: ZenX drží 45,8–50 % nepřetržitě od října 2020.",
+        "Zakladatelé drží kombinovaně 35,3 % (2× 17,63 %) — méně než ZenX sám, nejpozději od listopadu 2024.",
+        "Mediální narace v témže období konzistentně rámuje Able jako firmu zakladatelů.",
+        "Závěr: většinu období pokrytého narací je firma vlastnicky pluralitně investorská."
+      ],
+      "assumptions": ["ASM-02", "ASM-04"],
+      "primaryExplanation": "Veřejná narace nedrží krok s vlastnickou realitou zapsanou v rejstříku.",
+      "alternatives": [
+        { "text": "Zakladatelé drží kontrolu jinak než podílem (hlasovací dohody, práva ze společenské smlouvy).", "distinguishingEvidence": "Společenská smlouva ve sbírce listin; akcionářské dohody (neveřejné)." }
+      ],
+      "counterfactuals": {
+        "falsify": ["Doložená dohoda dávající zakladatelům rozhodovací kontrolu nezávisle na podílech."],
+        "strengthen": ["Zápisy z valných hromad ukazující ZenX jako rozhodujícího hlasujícího."],
+        "weaken": ["Veřejné vyjádření ZenX o čistě pasivní roli."]
+      },
+      "uncertainty": ["Skutečné rozhodovací poměry (vs. zapsané podíly) veřejná evidence neukazuje; beneficiální vlastnictví ZenX není rejstříkově viditelné (R-06)."]
+    },
+    {
+      "id": "INF-CLM-56",
+      "kind": "assessment",
+      "produces": "CLM-56",
+      "premises": [
+        { "ref": "CLM-55", "role": "supports", "note": "5326G: Kříž 51 %, vstup od 28. 8. 2023" },
+        { "ref": "EVD-ARES-5326G", "role": "supports" },
+        { "ref": "SRC-22", "role": "contextualizes", "note": "mediální zpráva o ~5 % za 4M CZK při valuaci 80M" },
+        { "ref": "EVD-ARES-ABLE-SHAREHOLDERS", "role": "supports", "note": "vstup 5326G do cap table Able" }
+      ],
+      "steps": [
+        "Mediální zpráva (2023): Kříž ~5 % Able za 4M CZK při 80M valuaci.",
+        "Rejstřík: Křížem majoritně vlastněné vozidlo 5326G vstupuje do Able.cz od 28. 8. 2023 s podílem odpovídající velikosti.",
+        "Shoda v osobě, čase i řádové velikosti → alignment; žádný zdroj ale výslovně nespojuje 5326G s onou konkrétní investicí a Point FM ≠ 5326G právně."
+      ],
+      "assumptions": ["ASM-02", "ASM-04"],
+      "primaryExplanation": "5326G je s vysokou pravděpodobností vehikl, kterým Kříž investici provedl.",
+      "alternatives": [
+        { "text": "Kříž investoval jinak (osobně/jinou entitou) a 5326G vstoupilo nezávisle.", "distinguishingEvidence": "Převodní smlouva ve sbírce listin; prohlášení Kříže; valuace v účetnictví 5326G." }
+      ],
+      "counterfactuals": {
+        "falsify": ["Doklad, že mediální investici provedla jiná entita než 5326G."],
+        "strengthen": ["Smlouva o převodu podílu jmenující 5326G a kupní cenu ~4M CZK."],
+        "weaken": ["Rozpor mezi podílem 5326G a mediálně uváděnými ~5 %."]
+      },
+      "uncertainty": ["Valuace 80M CZK je jednozdrojová (SRC-22) a nezávisle neověřená."]
+    },
+    {
+      "id": "INF-FIN-ASSESS-01",
+      "kind": "assessment",
+      "produces": "FIN-ASSESS-01",
+      "premises": [
+        { "ref": "EVD-SL68-REVENUE", "role": "supports" },
+        { "ref": "CLM-44", "role": "supports" },
+        { "ref": "SRC-04", "role": "contradicts", "note": "mediální cíl" },
+        { "ref": "SRC-05", "role": "contradicts" }
+      ],
+      "steps": ["Tržby z výrobků a služeb: 42 642 → 36 319 tis. CZK = −14,83 % YoY (přímý výpočet z řádku I.).", "Mediální kombinovaný cíl ~100M CZK je ~2,75× podaných tržeb FY2024."],
+      "assumptions": ["ASM-01", "ASM-04"],
+      "primaryExplanation": "Skutečná podaná trajektorie klesá; cíl byl aspirační.",
+      "alternatives": [{ "text": "Cíl se vztahoval k FY2025+, kterou závěrka nepokrývá.", "distinguishingEvidence": "FY2025 závěrka (revalidační fronta: financial-filings)." }],
+      "counterfactuals": { "falsify": ["FY2025 tržby ~100M kombinovaně"], "strengthen": ["FY2025 potvrzující pokles"], "weaken": ["Významné výnosy v jiných entitách skupiny"] },
+      "uncertainty": ["FY2025 nepodána."]
+    },
+    {
+      "id": "INF-FIN-ASSESS-02",
+      "kind": "assessment",
+      "produces": "FIN-ASSESS-02",
+      "premises": [
+        { "ref": "EVD-SL68-RESULT", "role": "supports" },
+        { "ref": "EVD-SL68-REVENUE", "role": "supports" }
+      ],
+      "steps": ["Výsledek po zdanění / tržby: pod 2 % v obou letech, meziročně nižší (přímý poměr dvou podaných řádků)."],
+      "assumptions": ["ASM-01"],
+      "primaryExplanation": "Ziskovost je reálná, ale tenká a klesající.",
+      "alternatives": [{ "text": "Marže je řízená (odměny/služby spřízněným subjektům snižují zisk záměrně).", "distinguishingEvidence": "Struktura nákladů 'Služby' po protistranách — veřejně nedostupné." }],
+      "counterfactuals": { "falsify": ["Oprava závěrky s odlišným výsledkem"], "strengthen": ["FY2025 se stejným vzorcem"], "weaken": ["Důkaz mimořádných jednorázových nákladů vysvětlujících pokles marže"] },
+      "uncertainty": ["Bez rozpadu nákladů nelze říct, zda je nízká marže strukturální, nebo řízená."]
+    },
+    {
+      "id": "INF-FIN-ASSESS-03",
+      "kind": "assessment",
+      "produces": "FIN-ASSESS-03",
+      "premises": [
+        { "ref": "EVD-SL68-LIABILITIES", "role": "supports" },
+        { "ref": "EVD-SL68-EQUITY", "role": "supports" },
+        { "ref": "EVD-SL68-SHAREHOLDER-DEBT", "role": "supports", "note": "závazky ke společníkům 3,1M → 10,0M" }
+      ],
+      "steps": ["Cizí zdroje rostou rychleji než vlastní kapitál (podané řádky).", "Závazky ke společníkům se ztrojnásobily (3,1 → 10,0M CZK) — společníci firmu financují úvěrem, ne vkladem."],
+      "assumptions": ["ASM-01"],
+      "primaryExplanation": "Rostoucí financování společnickými půjčkami při klesajících tržbách.",
+      "alternatives": [{ "text": "Půjčky financují jednorázovou investici (např. akvizici Blackfish), ne provoz.", "distinguishingEvidence": "Časová vazba půjček na 07/2025 akvizici; příloha závěrky FY2025; smlouvy o půjčkách." }],
+      "counterfactuals": { "falsify": ["Doklad o splacení půjček krátce po rozvahovém dni"], "strengthen": ["FY2025 s dalším růstem společnických závazků"], "weaken": ["Prokázaná vazba na akviziční CAPEX"] },
+      "uncertainty": ["Účel půjček z rozvahy nevyplývá; akvizice je časově blízká, ale kauzalita nedoložená."]
+    },
+    {
+      "id": "INF-FIN-ASSESS-04",
+      "kind": "assessment",
+      "produces": "FIN-ASSESS-04",
+      "premises": [
+        { "ref": "EVD-SL68-PERSONNEL", "role": "supports", "note": "osobní náklady −41 % YoY" },
+        { "ref": "EVD-SL68-SERVICES", "role": "supports", "note": "Služby 38,7M — největší nákladová linie" }
+      ],
+      "steps": ["Osobní náklady klesly ~41 % YoY, zatímco 'Služby' (38,7M) dominují nákladům.", "Vzorec konzistentní s dodávkou přes kontraktory spíše než růstem kmenových zaměstnanců.", "Headcount se z toho NEODVOZUJE (výslovná mez analytiky)."],
+      "assumptions": ["ASM-01"],
+      "primaryExplanation": "Model dodávky posunut ke kontraktorům/subdodávkám.",
+      "alternatives": [
+        { "text": "Přesun zaměstnanců do jiné entity skupiny (payroll jinde, práce stejná).", "distinguishingEvidence": "Závěrky/ohlášky ostatních entit skupiny; ČSSZ data (neveřejná)." },
+        { "text": "'Služby' zahrnují převážně ne-personální subdodávky (cloud, licence).", "distinguishingEvidence": "Rozpad řádku Služby — veřejně nedostupný." }
+      ],
+      "counterfactuals": { "falsify": ["Rozpad Služeb ukazující převahu ne-personálních položek"], "strengthen": ["FY2025 se stejným vzorcem; inzeráty na kontraktory"], "weaken": ["Doklad o převodu zaměstnanců do sesterské entity"] },
+      "uncertainty": ["Řádek 'Služby' je agregát; jeho složení není veřejné."]
+    }
+  ],
+  "conclusions": [
+    {
+      "id": "INF-R-01",
+      "kind": "conclusion",
+      "produces": "R-01",
+      "premises": [
+        { "ref": "CLM-38", "role": "supports" },
+        { "ref": "EVD-ARES-ABLE-OFFICERS", "role": "supports" },
+        { "ref": "EVD-WEB-CLIENTS", "role": "contextualizes" }
+      ],
+      "steps": ["Web marketuje čtyři C-level role; rejstřík potvrzuje dva jednatele.", "Marketovaný CTO nemá žádnou rejstříkovou stopu u Able.cz (CLM-38).", "Riziko: čtenář veřejné prezentace přecení formální governance."],
+      "assumptions": ["ASM-02"],
+      "primaryExplanation": "Marketingové tituly ≠ statutární funkce; riziko mispercepce, ne protiprávnosti.",
+      "alternatives": [{ "text": "Interní governance odpovídá titulům (jen bez zápisu).", "distinguishingEvidence": "Organizační řád, pověření, prokura — neveřejné." }],
+      "counterfactuals": { "falsify": ["Zápis marketovaných rolí do rejstříku"], "strengthen": ["Další marketované role bez stopy"], "weaken": ["Zveřejněná pověření/prokury"] },
+      "uncertainty": ["Interní rozdělení pravomocí není veřejně zjistitelné."]
+    },
+    {
+      "id": "INF-R-02",
+      "kind": "conclusion",
+      "produces": "R-02",
+      "premises": [
+        { "ref": "FIN-ASSESS-01", "role": "supports" },
+        { "ref": "FIN-ASSESS-02", "role": "supports" },
+        { "ref": "FIN-ASSESS-03", "role": "supports" },
+        { "ref": "CLM-45", "role": "supports" }
+      ],
+      "steps": ["Kombinace tří finančních assessmentů: klesající tržby, tenčící se marže, trojnásobné společnické půjčky.", "Proti tomu mediální růstová narace (CLM-45).", "Riziko: finanční realita zaostává za veřejným příběhem."],
+      "assumptions": ["ASM-01", "ASM-04"],
+      "primaryExplanation": "Podaná čísla nepodporují růstovou naraci — substantivní finanční riziko percepce.",
+      "alternatives": [{ "text": "FY2025 obrat trend otočí (akviziční synergie).", "distinguishingEvidence": "FY2025 závěrky Able i Blackfish." }],
+      "counterfactuals": { "falsify": ["FY2025 růst řádu desítek % s posílenou marží"], "strengthen": ["FY2025 pokračující pokles / další zadlužování"], "weaken": ["Doložené výnosy v sesterských entitách"] },
+      "uncertainty": ["Jednoletá trajektorie; konsolidace neexistuje."]
+    },
+    {
+      "id": "INF-R-03",
+      "kind": "conclusion",
+      "produces": "R-03",
+      "premises": [
+        { "ref": "EVD-WEB-ROI", "role": "contextualizes" },
+        { "ref": "EVD-WEB-AGENTS", "role": "contextualizes" },
+        { "ref": "CLM-57", "role": "supports", "note": "registr smluv: nula veřejných zakázek k ukotvení" }
+      ],
+      "steps": ["14 z 49 živých tvrzení je SELF_REPORTED (výkonnostní marketing).", "Registr smluv nevrací žádnou smlouvu, o kterou by šlo výkonnost opřít (CLM-57).", "Riziko: reputační — tvrzení čekají na nezávislé potvrzení."],
+      "assumptions": ["ASM-05"],
+      "primaryExplanation": "Výkonnostní narativ je zatím jednostranný (firemní).",
+      "alternatives": [{ "text": "Klienti jsou soukromoprávní → absence v registru smluv je očekávatelná a nic neříká.", "distinguishingEvidence": "Klientské reference s čísly; case studies podepsané klientem." }],
+      "counterfactuals": { "falsify": ["—"], "strengthen": ["Neúspěšné pokusy o klientskou korroboraci"], "weaken": ["Nezávislé klientské potvrzení ROI čísel"] },
+      "uncertainty": ["Soukromé zakázky veřejná evidence nezachytí (ASM-05) — absence není negativum."]
+    },
+    {
+      "id": "INF-R-04",
+      "kind": "conclusion",
+      "produces": "R-04",
+      "premises": [
+        { "ref": "CLM-58", "role": "supports", "note": "ISIR BLOCKED (HTTP 500, oba pokusy)" },
+        { "ref": "CLM-48", "role": "contextualizes", "note": "osobní exekuce vyřešena; firemní nescreenováno" }
+      ],
+      "steps": ["Autoritativní insolvenční registr nešlo dotázat (dva pokusy, HTTP 500).", "Nikde jinde insolvence nalezena nebyla — ale absence bez autoritativního dotazu nic neuzavírá (ASM-05).", "Riziko zůstává otevřené s vysokým potenciálním dopadem a neznámou pravděpodobností."],
+      "assumptions": ["ASM-05"],
+      "primaryExplanation": "Screening je neuzavřený kvůli selhání poskytovatele — ne kvůli nálezu.",
+      "alternatives": [{ "text": "Žádné insolvenční řízení neexistuje (nejpravděpodobnější, ale nedoložené).", "distinguishingEvidence": "Úspěšná ISIR lustrace (revalidační fronta, priorita 1)." }],
+      "counterfactuals": { "falsify": ["Úspěšná lustrace s nálezem řízení"], "strengthen": ["Úspěšná lustrace bez nálezu (riziko se uzavře)"], "weaken": ["—"] },
+      "uncertainty": ["Celé riziko JE nejistota: BLOCKED ≠ prověřeno."]
+    },
+    {
+      "id": "INF-R-05",
+      "kind": "conclusion",
+      "produces": "R-05",
+      "premises": [
+        { "ref": "CON-01", "role": "supports" },
+        { "ref": "EVD-ARES-ABLE-COURT", "role": "supports", "note": "rejstřík: C 85425" }
+      ],
+      "steps": ["Firemní GDPR stránka uvádí C 85424; rejstřík C 85425.", "Rejstřík je autoritativní (ASM-02); nejpravděpodobněji překlep/zastaralá kopie na webu.", "Zaznamenáno jako viditelný rozpor — ne mlčky normalizováno."],
+      "assumptions": ["ASM-02"],
+      "primaryExplanation": "Transkripční chyba na firemní stránce.",
+      "alternatives": [{ "text": "Stránka odkazuje na starší/pražský spis (firma byla přeregistrována z Prahy).", "distinguishingEvidence": "Historický spis C 200323/MSPH vs. C 85425/KSBR — pražská značka je ale jiná než C 85424, takže tato alternativa je slabá." }],
+      "counterfactuals": { "falsify": ["Doklad, že C 85424 kdy patřil Able.cz"], "strengthen": ["Oprava webu firmy na C 85425"], "weaken": ["—"] },
+      "uncertainty": ["Původ chybného čísla (proč právě −1) není zjistitelný."]
+    },
+    {
+      "id": "INF-R-06",
+      "kind": "conclusion",
+      "produces": "R-06",
+      "premises": [
+        { "ref": "CLM-52", "role": "supports" },
+        { "ref": "CLM-53", "role": "supports" },
+        { "ref": "EVD-ARES-ZENX", "role": "supports", "note": "ZenX vlastní záznam; beneficiální vlastnictví neviditelné" }
+      ],
+      "steps": ["ZenX drží 45,8–50 % od 10/2020 — víc než oba zakladatelé dohromady.", "Beneficiální vlastnictví ZenX (a.s.) není z rejstříku viditelné.", "Veřejná narace koncentraci nereflektuje (CLM-53).", "Riziko: skutečné kontrolní poměry jsou pro protistrany hůř čitelné, než narace naznačuje."],
+      "assumptions": ["ASM-02"],
+      "primaryExplanation": "Koncentrace kontroly mimo zakladatele, s omezenou průhledností konečných vlastníků.",
+      "alternatives": [{ "text": "ZenX je pasivní finanční investor bez výkonu kontroly.", "distinguishingEvidence": "Evidence skutečných majitelů (částečně neveřejná), zápisy z VH, jednání ZenX navenek." }],
+      "counterfactuals": { "falsify": ["Doklad o pasivitě ZenX (dohody, prohlášení)"], "strengthen": ["Zjištění konečných vlastníků ZenX s dalšími vazbami"], "weaken": ["Zveřejnění beneficiálních vlastníků bez pozoruhodných vazeb"] },
+      "uncertainty": ["Konečné vlastnictví ZenX zůstává neprověřené (evidence skutečných majitelů má omezený veřejný přístup)."]
+    }
+  ],
+  "executiveFindings": [
+    {
+      "id": "EXEC-01",
+      "text": "Identita firmy je ověřena primárně proti úředním artefaktům; primární průchod přinesl podstatné korekce — mj. původní jméno BIT CONSULTING s.r.o. (2012–2016) a původní pražskou registraci, které žádné zrcadlo nezachytilo.",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        { "ref": "EVD-ARES-ABLE-NAMES", "role": "supports" },
+        { "ref": "EVD-ARES-ABLE-COURT", "role": "supports" },
+        { "ref": "SRC-12", "role": "supports" }
+      ],
+      "reasoning": null,
+      "uncertainty": []
+    },
+    {
+      "id": "EXEC-02",
+      "text": "Největším společníkem není zakladatelská dvojice, ale ZenX Capital, a.s. — od října 2020 drží 45,8–50 %, víc než oba zakladatelé dohromady; veřejná narace to nereflektuje.",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        { "ref": "CLM-52", "role": "supports" },
+        { "ref": "CLM-53", "role": "supports" }
+      ],
+      "reasoning": "INF-CLM-53",
+      "uncertainty": ["Beneficiální vlastnictví ZenX není rejstříkově viditelné (R-06)."]
+    },
+    {
+      "id": "EXEC-03",
+      "text": "Petr Faraga nebyl 'nově příchozí drobný společník', ale spoluzakladatel s třetinovým podílem a jednatel 2012–2020.",
+      "narrativeSection": "Souhrn",
+      "supports": [{ "ref": "CLM-34", "role": "supports" }],
+      "reasoning": null,
+      "uncertainty": []
+    },
+    {
+      "id": "EXEC-04",
+      "text": "Able.cz má rejstříkově doložené dceřiné společnosti (Mindee app 95 %, Verzuz.com 100 %) a FaMe trade je aktivní s Václavem Faragou jako 50% společníkem — dřívější zrcadlový záznam o 'ukončené' firmě byl chybný.",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        { "ref": "CLM-28", "role": "supports" },
+        { "ref": "CLM-30", "role": "supports" },
+        { "ref": "CLM-32", "role": "supports" }
+      ],
+      "reasoning": null,
+      "uncertainty": []
+    },
+    {
+      "id": "EXEC-05",
+      "text": "Většina marketingových a výkonnostních tvrzení zůstává tvrzením firmy bez nezávislého potvrzení; oficiální registr smluv nevrací pro Able.cz ani Blackfish žádnou zveřejněnou smlouvu.",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        { "ref": "CLM-57", "role": "supports" },
+        { "ref": "EVD-WEB-ROI", "role": "contextualizes" },
+        { "ref": "EVD-WEB-AGENTS", "role": "contextualizes" }
+      ],
+      "reasoning": "INF-R-03",
+      "uncertainty": ["Soukromé zakázky veřejná evidence nezachytí — absence v registru smluv není negativní fakt (ASM-05)."]
+    },
+    {
+      "id": "EXEC-06",
+      "text": "Podaná finanční trajektorie (tržby −14,8 % YoY, marže pod 2 %, společnické půjčky 3,1→10,0M CZK) je hluboko pod mediální růstovou narací ~100M CZK.",
+      "narrativeSection": "Finanční profil",
+      "supports": [
+        { "ref": "CLM-44", "role": "supports" },
+        { "ref": "CLM-45", "role": "supports" },
+        { "ref": "FIN-ASSESS-01", "role": "supports" },
+        { "ref": "FIN-ASSESS-03", "role": "supports" }
+      ],
+      "reasoning": "INF-CLM-45",
+      "uncertainty": ["FY2025 dosud nepodána; konsolidovaný pohled neexistuje."]
+    },
+    {
+      "id": "EXEC-07",
+      "text": "Rozpor v čísle spisu (CON-01) zůstává viditelný; CON-02 byl vyřešen primárním záznamem; přibyl CON-03 (mediální vs. rejstříkové datum Oslzlova vlastnictví Blackfish).",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        { "ref": "CON-01", "role": "supports" },
+        { "ref": "CON-02", "role": "supports" },
+        { "ref": "CON-03", "role": "supports" }
+      ],
+      "reasoning": "INF-R-05",
+      "uncertainty": ["CON-01 a CON-03 zůstávají otevřené (rejstřík autoritativní, ale druhá strana neopravila)."]
+    },
+    {
+      "id": "EXEC-08",
+      "text": "Důvěra je střední: vysoká u identity a vlastnictví (primárně ověřené), nízká u výkonnostních tvrzení; insolvenční screening zůstává BLOCKED (ISIR HTTP 500) — neuzavřený, ne negativní.",
+      "narrativeSection": "Souhrn",
+      "supports": [
+        { "ref": "CLM-58", "role": "supports" },
+        { "ref": "R-04", "role": "supports" }
+      ],
+      "reasoning": "INF-R-04",
+      "uncertainty": ["Celý bod je výrok o nejistotě; uzavře ho jen úspěšná ISIR lustrace (revalidační priorita 1)."]
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "CFL-CON-01",
+      "conflict": "CON-01",
+      "sideA": { "text": "C 85424 (firemní GDPR stránka)", "refs": ["SRC-01"] },
+      "sideB": { "text": "C 85425 (veřejný rejstřík)", "refs": ["SRC-12", "EVD-ARES-ABLE-COURT"] },
+      "resolution": "Rejstřík je autoritativní (ASM-02); hodnota firmy je nejspíš překlep/zastaralá kopie. Rozpor se ponechává viditelný, dokud firma web neopraví.",
+      "resolutionState": "AUTHORITY_RESOLVED_DISCREPANCY_VISIBLE",
+      "distinguishingEvidence": "Oprava firemního webu, nebo historický doklad, že C 85424 kdy Able.cz patřil.",
+      "remainingUncertainty": "Původ chybné hodnoty."
+    },
+    {
+      "id": "CFL-CON-02",
+      "conflict": "CON-02",
+      "sideA": { "text": "Zrcadlové údaje o one label s.r.o. (role/podíly tří spoluvlastníků)", "refs": ["SRC-10"] },
+      "sideB": { "text": "Primární VR záznam IČO 02474727", "refs": ["SRC-12", "EVD-ARES-ONELABEL"] },
+      "resolution": "Vyřešeno 2026-07-18 primárním záznamem; zrcadlová verze nahrazena.",
+      "resolutionState": "RESOLVED_BY_PRIMARY",
+      "distinguishingEvidence": "—",
+      "remainingUncertainty": "Žádná podstatná."
+    },
+    {
+      "id": "CFL-CON-03",
+      "conflict": "CON-03",
+      "sideA": { "text": "Mediální líčení počátku Oslzlova vlastnictví Blackfish", "refs": ["SRC-05"] },
+      "sideB": { "text": "Rejstříkové datum zápisu podílu", "refs": ["SRC-12", "EVD-ARES-BLACKFISH", "CLM-41"] },
+      "resolution": "Pro právní vlastnictví je autoritativní rejstřík (ASM-02); mediální datum může popisovat neformální zapojení před zápisem.",
+      "resolutionState": "AUTHORITY_RESOLVED_DISCREPANCY_VISIBLE",
+      "distinguishingEvidence": "Převodní smlouva ve sbírce listin Blackfish; výpověď aktérů.",
+      "remainingUncertainty": "Zda mediální datum popisuje faktickou (nezapsanou) roli."
+    }
+  ]
+}

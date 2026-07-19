@@ -70,6 +70,12 @@ function publicSummary(chg, oldP, newP) {
       return fc ? `Mezní datum evidence posunuto: ${fc.previous} → ${fc.current}.` : "Změna publikačních metadat případu.";
     }
     case "OBJECT_REMOVED_FROM_PUBLICATION": return `Záznam ${chg.object_id} (${chg.object_type}) již není součástí veřejného snapshotu.`;
+    case "REASONING_ADDED":
+      if (chg.object_type === "executive_finding") return `Nové exekutivní zjištění ${chg.object_id}: ${short(P.text, 140)}`;
+      if (chg.object_type === "reasoning_inference") return `Nový úsudkový řetězec ${chg.object_id} → ${P.produces}.`;
+      if (chg.object_type === "conflict_resolution") return `Explicitní řešení rozporu ${P.conflict} (${chg.object_id}).`;
+      return `Deklarovaný předpoklad ${chg.object_id}: ${short(P.text, 120)}`;
+    case "REASONING_CHANGED": return `Změněn úsudek ${chg.object_id} (${chg.object_type}): ${chg.field_changes.map((f) => f.field).join(", ")} — viz „proč se úsudek změnil" na stránce změny.`;
     case "OBJECT_CORRECTED":
       if (chg.successor_object_id) return `Záznam ${chg.object_id} (${chg.object_type}) přeformulován; nástupce ${chg.successor_object_id}.`;
       return `Opraven záznam ${chg.object_id} (${chg.object_type}): ${chg.field_changes.map((f) => f.field).join(", ")}.`;

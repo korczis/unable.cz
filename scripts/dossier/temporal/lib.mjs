@@ -99,7 +99,7 @@ export function parseValidTime(raw) {
  * documented consequence: editing their text is represented as
  * remove+add, never as a silent in-place mutation.
  */
-export function extractObjects(doc) {
+export function extractObjects(doc, reasoning = null) {
   const out = [];
   const push = (objectType, objectId, payload, valid = {}) => {
     out.push({
@@ -272,6 +272,49 @@ export function extractObjects(doc) {
       { id: d.id, source: d.source ?? null, target: d.target ?? null, label: d.label ?? null, status: d.status ?? null, cat: d.cat ?? null, predicate: d.predicate ?? null, why: d.why ?? null, confidence: d.confidence ?? null, firstObserved: d.firstObserved ?? null, lastObserved: d.lastObserved ?? null, sources: [...(d.sources || [])].sort() },
       { from: vf.value, to: vt.value, precision: vf.precision, source: "graph.edge.firstObserved (field name conflates observation with effect — see temporal audit)" }
     );
+  }
+
+  // Reasoning layer (PROMPT-10) — authored analytical objects become
+  // first-class snapshot members, so a changed inference/conclusion/executive
+  // finding is auditable history ("why did reasoning change"), never a silent
+  // rewrite. Historical snapshots predate the layer: reasoning=null there.
+  if (reasoning) {
+    for (const a of reasoning.assumptions || []) {
+      push("reasoning_assumption", a.id, { text: a.text ?? null, basis: a.basis ?? null });
+    }
+    for (const inf of [...(reasoning.inferences || []), ...(reasoning.conclusions || [])]) {
+      push("reasoning_inference", inf.id, {
+        kind: inf.kind ?? null,
+        produces: inf.produces ?? null,
+        premises: (inf.premises || []).map((p) => ({ ref: p.ref, role: p.role })).sort((a, b) => (a.ref + a.role).localeCompare(b.ref + b.role)),
+        steps: inf.steps || [],
+        assumptions: [...(inf.assumptions || [])].sort(),
+        primaryExplanation: inf.primaryExplanation ?? null,
+        alternatives: inf.alternatives || [],
+        counterfactuals: inf.counterfactuals ?? null,
+        uncertainty: inf.uncertainty || [],
+      });
+    }
+    for (const ex of reasoning.executiveFindings || []) {
+      push("executive_finding", ex.id, {
+        text: ex.text ?? null,
+        narrativeSection: ex.narrativeSection ?? null,
+        supports: (ex.supports || []).map((s) => ({ ref: s.ref, role: s.role })).sort((a, b) => (a.ref + a.role).localeCompare(b.ref + b.role)),
+        reasoning: ex.reasoning ?? null,
+        uncertainty: ex.uncertainty || [],
+      });
+    }
+    for (const cf of reasoning.conflicts || []) {
+      push("conflict_resolution", cf.id, {
+        conflict: cf.conflict ?? null,
+        sideA: cf.sideA ?? null,
+        sideB: cf.sideB ?? null,
+        resolution: cf.resolution ?? null,
+        resolutionState: cf.resolutionState ?? null,
+        distinguishingEvidence: cf.distinguishingEvidence ?? null,
+        remainingUncertainty: cf.remainingUncertainty ?? null,
+      });
+    }
   }
 
   return out;

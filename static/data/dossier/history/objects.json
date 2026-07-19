@@ -26,7 +26,9 @@
           "snapshot_sequence": 7,
           "revision_id": "META@b1793fa6c7d6ba67",
           "content_hash": "b1793fa6c7d6ba67",
-          "revision_number": 2
+          "revision_number": 2,
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -43,8 +45,8 @@
           "revision_id": "CLM-01@24c221e2e2646111",
           "content_hash": "24c221e2e2646111",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -59,8 +61,8 @@
           "revision_id": "CLM-02@0d0158815d5d03ef",
           "content_hash": "0d0158815d5d03ef",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -75,8 +77,8 @@
           "revision_id": "CLM-03@6896b153ba9faac6",
           "content_hash": "6896b153ba9faac6",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -91,8 +93,8 @@
           "revision_id": "CLM-04@7c96e99da25f07f0",
           "content_hash": "7c96e99da25f07f0",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -107,8 +109,8 @@
           "revision_id": "CLM-05@19df38c0da11107a",
           "content_hash": "19df38c0da11107a",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -123,8 +125,8 @@
           "revision_id": "CLM-06@41996c3d426bc8b6",
           "content_hash": "41996c3d426bc8b6",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -139,8 +141,8 @@
           "revision_id": "CLM-07@d4fb4ce77e629958",
           "content_hash": "d4fb4ce77e629958",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -155,8 +157,8 @@
           "revision_id": "CLM-08@7037e4d37538849c",
           "content_hash": "7037e4d37538849c",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -171,8 +173,8 @@
           "revision_id": "CLM-09@ac12cd1b4ee1da41",
           "content_hash": "ac12cd1b4ee1da41",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -187,8 +189,8 @@
           "revision_id": "CLM-10@5241571660b46791",
           "content_hash": "5241571660b46791",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -203,8 +205,8 @@
           "revision_id": "CLM-11@9e6273f5c921233a",
           "content_hash": "9e6273f5c921233a",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -219,8 +221,8 @@
           "revision_id": "CLM-12@4effb0299bcf5e4f",
           "content_hash": "4effb0299bcf5e4f",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -235,8 +237,8 @@
           "revision_id": "CLM-13@aeed14164369f387",
           "content_hash": "aeed14164369f387",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -251,8 +253,8 @@
           "revision_id": "CLM-14@53224158420c2810",
           "content_hash": "53224158420c2810",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -267,8 +269,8 @@
           "revision_id": "CLM-15@5d3b9a772206459c",
           "content_hash": "5d3b9a772206459c",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -283,8 +285,8 @@
           "revision_id": "CON-01@eadad89b082296c8",
           "content_hash": "eadad89b082296c8",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -306,8 +308,8 @@
           "revision_id": "ENT-aaa@9b2ff2002ccece30",
           "content_hash": "9b2ff2002ccece30",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -331,8 +333,8 @@
           "revision_id": "ENT-able@1cf298fc73b14e97",
           "content_hash": "1cf298fc73b14e97",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -356,8 +358,8 @@
           "revision_id": "ENT-arkadia@e4fd450f217878c6",
           "content_hash": "e4fd450f217878c6",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -381,8 +383,8 @@
           "revision_id": "ENT-aures@600d881a3832ab71",
           "content_hash": "600d881a3832ab71",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -422,8 +424,8 @@
           "revision_id": "ENT-blackfish@2601e96ca10abf2c",
           "content_hash": "2601e96ca10abf2c",
           "revision_number": 4,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -449,8 +451,8 @@
           "revision_id": "ENT-encall@520bc2d059276e67",
           "content_hash": "520bc2d059276e67",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -483,8 +485,8 @@
           "revision_id": "ENT-faraga@342c48413452486b",
           "content_hash": "342c48413452486b",
           "revision_number": 3,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -509,8 +511,8 @@
           "revision_id": "ENT-grolig@fa19cbf6ed83a760",
           "content_hash": "fa19cbf6ed83a760",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -543,8 +545,8 @@
           "revision_id": "ENT-juhanak@ddd83161e9c91821",
           "content_hash": "ddd83161e9c91821",
           "revision_number": 3,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -578,8 +580,8 @@
           "revision_id": "ENT-melicharek@65c7fec9cb615fe4",
           "content_hash": "65c7fec9cb615fe4",
           "revision_number": 3,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -613,8 +615,8 @@
           "revision_id": "ENT-schlesinger@1be43ff3b775ffcf",
           "content_hash": "1be43ff3b775ffcf",
           "revision_number": 3,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -639,8 +641,8 @@
           "revision_id": "ENT-tastetown@0904b467e8a2894a",
           "content_hash": "0904b467e8a2894a",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -657,8 +659,8 @@
           "revision_id": "FIN-NOTFOUND-auditor-s-report@7051c4701862cdc8",
           "content_hash": "7051c4701862cdc8",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -709,8 +711,8 @@
           "revision_id": "FIN-NOTFOUND-going-concern-language@8340abcf3d0a2b10",
           "content_hash": "8340abcf3d0a2b10",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -779,8 +781,8 @@
           "revision_id": "FIN-SELFREPORTED-combined-contract-value-of-those-tenders@30c2eb3588acc893",
           "content_hash": "30c2eb3588acc893",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -795,8 +797,8 @@
           "revision_id": "FIN-SELFREPORTED-combined-headcount-able-blackfish@505c633616b0343f",
           "content_hash": "505c633616b0343f",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -820,8 +822,8 @@
           "revision_id": "FIN-SELFREPORTED-combined-revenue-target-able-blackfish-stated-year@be249053ead67091",
           "content_hash": "be249053ead67091",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -838,8 +840,8 @@
           "revision_id": "FIN-SELFREPORTED-tenders-won-in-the-stated-year-combined@599021b9eeef0976",
           "content_hash": "599021b9eeef0976",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -863,8 +865,8 @@
           "revision_id": "FIN-VERIFIED-registered-capital@7e62e10617bae95e",
           "content_hash": "7e62e10617bae95e",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -890,8 +892,8 @@
           "revision_id": "GOV-SIGNING@95e5091dc89cb658",
           "content_hash": "95e5091dc89cb658",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -917,8 +919,8 @@
           "revision_id": "ID-court@dda3e0dc1ec50a5a",
           "content_hash": "dda3e0dc1ec50a5a",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -944,8 +946,8 @@
           "revision_id": "ID-dic-vat@d1d5cbd8f812c695",
           "content_hash": "d1d5cbd8f812c695",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -971,8 +973,8 @@
           "revision_id": "ID-ico@f36a09d3bdb5e0df",
           "content_hash": "f36a09d3bdb5e0df",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -998,8 +1000,8 @@
           "revision_id": "ID-incorporated@cc4abb20bd0468a1",
           "content_hash": "cc4abb20bd0468a1",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1025,8 +1027,8 @@
           "revision_id": "ID-last-register-change-observed@93b91bdad20247fb",
           "content_hash": "93b91bdad20247fb",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1052,8 +1054,8 @@
           "revision_id": "ID-legal-form@e85453bcfacb05a9",
           "content_hash": "e85453bcfacb05a9",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1079,8 +1081,8 @@
           "revision_id": "ID-legal-name@bfc33adad623ac2b",
           "content_hash": "bfc33adad623ac2b",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1106,8 +1108,8 @@
           "revision_id": "ID-registered-capital@c2c66f7a5a2c1078",
           "content_hash": "c2c66f7a5a2c1078",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1133,8 +1135,8 @@
           "revision_id": "ID-registered-office@918bec47288529d9",
           "content_hash": "918bec47288529d9",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1151,8 +1153,8 @@
           "revision_id": "MKT-lukas-grolig@c58bd7acad55688e",
           "content_hash": "c58bd7acad55688e",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -1167,8 +1169,8 @@
           "revision_id": "MKT-radek-juhanak@8e9668cd50a2d148",
           "content_hash": "8e9668cd50a2d148",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -1183,8 +1185,8 @@
           "revision_id": "MKT-tomas-melicharek@57f4b3413f1ee82b",
           "content_hash": "57f4b3413f1ee82b",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -1199,8 +1201,8 @@
           "revision_id": "MKT-vaclav-faraga@d4f523a6f71150bc",
           "content_hash": "d4f523a6f71150bc",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -1321,8 +1323,8 @@
           "revision_id": "REL-e1@ffc20a9742a871bd",
           "content_hash": "ffc20a9742a871bd",
           "revision_number": 3,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1347,8 +1349,8 @@
           "revision_id": "REL-e10@26a0ed61c3c5fe33",
           "content_hash": "26a0ed61c3c5fe33",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1372,8 +1374,8 @@
           "revision_id": "REL-e11@7812c5927c449f9f",
           "content_hash": "7812c5927c449f9f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1397,8 +1399,8 @@
           "revision_id": "REL-e12@65634750b53a3b57",
           "content_hash": "65634750b53a3b57",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1431,8 +1433,8 @@
           "revision_id": "REL-e2@5b59e877a743c5d8",
           "content_hash": "5b59e877a743c5d8",
           "revision_number": 3,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1466,8 +1468,8 @@
           "revision_id": "REL-e3@0dbdbbd31ad0f9ca",
           "content_hash": "0dbdbbd31ad0f9ca",
           "revision_number": 3,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1492,8 +1494,8 @@
           "revision_id": "REL-e4@a21dbc8e860f1d66",
           "content_hash": "a21dbc8e860f1d66",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1526,8 +1528,8 @@
           "revision_id": "REL-e5@e65b2cb328bf6ac7",
           "content_hash": "e65b2cb328bf6ac7",
           "revision_number": 3,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1552,8 +1554,8 @@
           "revision_id": "REL-e6@d2bd9d1a92b0ad83",
           "content_hash": "d2bd9d1a92b0ad83",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1577,8 +1579,8 @@
           "revision_id": "REL-e7@4feacdda282f19b7",
           "content_hash": "4feacdda282f19b7",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1602,8 +1604,8 @@
           "revision_id": "REL-e8@88caadbffbd2ebe8",
           "content_hash": "88caadbffbd2ebe8",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1627,8 +1629,8 @@
           "revision_id": "REL-e9@a3a3b235875b9097",
           "content_hash": "a3a3b235875b9097",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1661,8 +1663,8 @@
           "revision_id": "SHARE-radek-juhanak@e0bcb01a20b12832",
           "content_hash": "e0bcb01a20b12832",
           "revision_number": 3,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1689,8 +1691,8 @@
           "revision_id": "SHARE-tomas-melicharek@81bb1e19022ad60f",
           "content_hash": "81bb1e19022ad60f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1716,8 +1718,8 @@
           "revision_id": "SHARE-vaclav-faraga@2b73f062a4abc296",
           "content_hash": "2b73f062a4abc296",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1734,8 +1736,8 @@
           "revision_id": "SRC-01@df5a8698287bee04",
           "content_hash": "df5a8698287bee04",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -1750,8 +1752,8 @@
           "revision_id": "SRC-02@e1ce06aa5f0f70e5",
           "content_hash": "e1ce06aa5f0f70e5",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -1775,8 +1777,8 @@
           "revision_id": "SRC-03@0a715283887c33f1",
           "content_hash": "0a715283887c33f1",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1793,8 +1795,8 @@
           "revision_id": "SRC-04@24bd4adeeda01241",
           "content_hash": "24bd4adeeda01241",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -1809,8 +1811,8 @@
           "revision_id": "SRC-05@dbc030246dd0586d",
           "content_hash": "dbc030246dd0586d",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -1825,8 +1827,8 @@
           "revision_id": "SRC-06@304c8bed1f08bc72",
           "content_hash": "304c8bed1f08bc72",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": []
@@ -1850,8 +1852,8 @@
           "revision_id": "ROLE-tomas-melicharek-17b19cba@5d56b0878168a88b",
           "content_hash": "5d56b0878168a88b",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1877,8 +1879,8 @@
           "revision_id": "ROLE-vaclav-faraga-17b19cba@be073eb1a795687f",
           "content_hash": "be073eb1a795687f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1949,8 +1951,8 @@
           "revision_id": "ENT-domain@ae97558b460e6ed4",
           "content_hash": "ae97558b460e6ed4",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1976,8 +1978,8 @@
           "revision_id": "ENT-g5326@ea47706a2fb97fe5",
           "content_hash": "ea47706a2fb97fe5",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -1995,8 +1997,8 @@
           "revision_id": "ENT-gwork@c7756f1e2191d3cd",
           "content_hash": "c7756f1e2191d3cd",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2013,8 +2015,8 @@
           "revision_id": "ENT-hosting@a5926a72c20dd78a",
           "content_hash": "a5926a72c20dd78a",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2040,8 +2042,8 @@
           "revision_id": "ENT-ksbr@a508f4a9d6255d1f",
           "content_hash": "a508f4a9d6255d1f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2068,8 +2070,8 @@
           "revision_id": "ENT-pointfm@432c10c6c6cf1a0c",
           "content_hash": "432c10c6c6cf1a0c",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2096,8 +2098,8 @@
           "revision_id": "ENT-polansky@d254920e3cf3cfbd",
           "content_hash": "d254920e3cf3cfbd",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2115,8 +2117,8 @@
           "revision_id": "ENT-tls@0d306ecd6bd19407",
           "content_hash": "0d306ecd6bd19407",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2142,8 +2144,8 @@
           "revision_id": "ENT-zenx@5a9c977fa7a0fc47",
           "content_hash": "5a9c977fa7a0fc47",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2161,8 +2163,8 @@
           "revision_id": "ID-vat-status-eu-vies@28425a892655105f",
           "content_hash": "28425a892655105f",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2188,8 +2190,8 @@
           "revision_id": "REL-e13@97570bd31a9f96c9",
           "content_hash": "97570bd31a9f96c9",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2216,8 +2218,8 @@
           "revision_id": "REL-e14@97a7c102d7f817e1",
           "content_hash": "97a7c102d7f817e1",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2244,8 +2246,8 @@
           "revision_id": "REL-e15@01212101550400ae",
           "content_hash": "01212101550400ae",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2272,8 +2274,8 @@
           "revision_id": "REL-e16@785bebf17a5d7649",
           "content_hash": "785bebf17a5d7649",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2291,8 +2293,8 @@
           "revision_id": "REL-e17@8cd1e14a82dbdddc",
           "content_hash": "8cd1e14a82dbdddc",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2318,8 +2320,8 @@
           "revision_id": "REL-e18@ff6133ef6a073f49",
           "content_hash": "ff6133ef6a073f49",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2337,8 +2339,8 @@
           "revision_id": "REL-e19@6fecf13e25ebc0ff",
           "content_hash": "6fecf13e25ebc0ff",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2355,8 +2357,8 @@
           "revision_id": "REL-e20@db8832d59c8d89a3",
           "content_hash": "db8832d59c8d89a3",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2373,8 +2375,8 @@
           "revision_id": "REL-e21@ea9e6a273d670add",
           "content_hash": "ea9e6a273d670add",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2391,8 +2393,8 @@
           "revision_id": "SRC-07@7aaaa05e1784eb71",
           "content_hash": "7aaaa05e1784eb71",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2409,8 +2411,8 @@
           "revision_id": "SRC-08@a701c46632c3f611",
           "content_hash": "a701c46632c3f611",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2427,8 +2429,8 @@
           "revision_id": "SRC-09@faff29a6d8f993a3",
           "content_hash": "faff29a6d8f993a3",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2452,8 +2454,8 @@
           "revision_id": "CLM-16@380f3e7e4347518f",
           "content_hash": "380f3e7e4347518f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2478,8 +2480,8 @@
           "revision_id": "CLM-17@d01551db775ea2d1",
           "content_hash": "d01551db775ea2d1",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2504,8 +2506,8 @@
           "revision_id": "CLM-18@7caa74c9d85c6e73",
           "content_hash": "7caa74c9d85c6e73",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2530,8 +2532,8 @@
           "revision_id": "CLM-19@da0c0db9a7265d7b",
           "content_hash": "da0c0db9a7265d7b",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2556,8 +2558,8 @@
           "revision_id": "CLM-20@c0d697d7f8bff84b",
           "content_hash": "c0d697d7f8bff84b",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2582,8 +2584,8 @@
           "revision_id": "CLM-21@8f288acee0e8a883",
           "content_hash": "8f288acee0e8a883",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2608,8 +2610,8 @@
           "revision_id": "CLM-22@75c75a9710410cf3",
           "content_hash": "75c75a9710410cf3",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2634,8 +2636,8 @@
           "revision_id": "CLM-23@115f68d42681bf6f",
           "content_hash": "115f68d42681bf6f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2660,8 +2662,8 @@
           "revision_id": "CLM-24@4d9d993e5ac38cb0",
           "content_hash": "4d9d993e5ac38cb0",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2686,8 +2688,8 @@
           "revision_id": "CLM-25@a8b53b3e34393fd6",
           "content_hash": "a8b53b3e34393fd6",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2712,8 +2714,8 @@
           "revision_id": "CLM-26@b623112e6747f2e8",
           "content_hash": "b623112e6747f2e8",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2738,8 +2740,8 @@
           "revision_id": "CLM-27@209c9d44b8e155fd",
           "content_hash": "209c9d44b8e155fd",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2764,8 +2766,8 @@
           "revision_id": "CON-02@9c9e1ad816078f4b",
           "content_hash": "9c9e1ad816078f4b",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2792,8 +2794,8 @@
           "revision_id": "ENT-artstay_lovs@fd7c0f581d32c30f",
           "content_hash": "fd7c0f581d32c30f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2820,8 +2822,8 @@
           "revision_id": "ENT-bgo@9ecd6af42408ae5c",
           "content_hash": "9ecd6af42408ae5c",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2848,8 +2850,8 @@
           "revision_id": "ENT-era25@cd6e51a32c3d3ca1",
           "content_hash": "cd6e51a32c3d3ca1",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2876,8 +2878,8 @@
           "revision_id": "ENT-exekuce-melicharek@ca9bef789d1f29be",
           "content_hash": "ca9bef789d1f29be",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2904,8 +2906,8 @@
           "revision_id": "ENT-fama_media@c09cb26d5e6d898c",
           "content_hash": "c09cb26d5e6d898c",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2932,8 +2934,8 @@
           "revision_id": "ENT-fame_logistics@c5a51d15b1ef307f",
           "content_hash": "c5a51d15b1ef307f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2960,8 +2962,8 @@
           "revision_id": "ENT-fame_trade@21889440a158f628",
           "content_hash": "21889440a158f628",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -2988,8 +2990,8 @@
           "revision_id": "ENT-jakub_kaman@24d525e98e372031",
           "content_hash": "24d525e98e372031",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3016,8 +3018,8 @@
           "revision_id": "ENT-mindee@df7b19410c05d053",
           "content_hash": "df7b19410c05d053",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3044,8 +3046,8 @@
           "revision_id": "ENT-mmplan@6c00f97a91dfbcee",
           "content_hash": "6c00f97a91dfbcee",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3072,8 +3074,8 @@
           "revision_id": "ENT-mysasy@a37641ebbe2fe7d2",
           "content_hash": "a37641ebbe2fe7d2",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3100,8 +3102,8 @@
           "revision_id": "ENT-ondrej_kaman@ac1ed101c192d06b",
           "content_hash": "ac1ed101c192d06b",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3128,8 +3130,8 @@
           "revision_id": "ENT-onelabel@52994d182cf8e4ce",
           "content_hash": "52994d182cf8e4ce",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3156,8 +3158,8 @@
           "revision_id": "ENT-oslzla@b781283c0c13326e",
           "content_hash": "b781283c0c13326e",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3184,8 +3186,8 @@
           "revision_id": "ENT-petr_faraga@cb9f669ad9f39353",
           "content_hash": "cb9f669ad9f39353",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3212,8 +3214,8 @@
           "revision_id": "ENT-schlesinger_sro@7affb8f65831ed1d",
           "content_hash": "7affb8f65831ed1d",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3240,8 +3242,8 @@
           "revision_id": "ENT-usporix@76f5adbb2d6d5690",
           "content_hash": "76f5adbb2d6d5690",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3268,8 +3270,8 @@
           "revision_id": "ENT-ventoux@8069bff5ef164b83",
           "content_hash": "8069bff5ef164b83",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3296,8 +3298,8 @@
           "revision_id": "ENT-verasto@d39c85cce9ed428e",
           "content_hash": "d39c85cce9ed428e",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3324,8 +3326,8 @@
           "revision_id": "ENT-verzuz@27321761c48d5d41",
           "content_hash": "27321761c48d5d41",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3343,8 +3345,8 @@
           "revision_id": "FIN-NOTFOUND-consolidated-able-blackfish-combined-financials-each-entity-files-separately@347847e17e3033b0",
           "content_hash": "347847e17e3033b0",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3361,8 +3363,8 @@
           "revision_id": "FIN-NOTFOUND-employee-count-filed-not-a-line-item-in-this-rozvaha-vykaz-filing@707c3eb64a4fdc08",
           "content_hash": "707c3eb64a4fdc08",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3386,8 +3388,8 @@
           "revision_id": "FIN-VERIFIED-equity-fy2024-fy2023@b6617320742fb99d",
           "content_hash": "b6617320742fb99d",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3412,8 +3414,8 @@
           "revision_id": "FIN-VERIFIED-liabilities-fy2024-fy2023@2cbb3e3bf9e30710",
           "content_hash": "2cbb3e3bf9e30710",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3438,8 +3440,8 @@
           "revision_id": "FIN-VERIFIED-net-result-for-the-period-after-tax-fy2024-fy2023@06e4b75f091e7694",
           "content_hash": "06e4b75f091e7694",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3464,8 +3466,8 @@
           "revision_id": "FIN-VERIFIED-net-turnover-fy2024-fy2023@a52ae9441e19ae25",
           "content_hash": "a52ae9441e19ae25",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3490,8 +3492,8 @@
           "revision_id": "FIN-VERIFIED-personnel-costs-fy2024-fy2023@e3dd8baa00db8581",
           "content_hash": "e3dd8baa00db8581",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3516,8 +3518,8 @@
           "revision_id": "FIN-VERIFIED-revenue-from-sale-of-products-services-fy2024-fy2023@62ddc6fabe8946ed",
           "content_hash": "62ddc6fabe8946ed",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3542,8 +3544,8 @@
           "revision_id": "FIN-VERIFIED-total-assets-fy2024-fy2023@22174b87fd22829d",
           "content_hash": "22174b87fd22829d",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3684,8 +3686,8 @@
           "revision_id": "REL-e22@c802a615a7682376",
           "content_hash": "c802a615a7682376",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3712,8 +3714,8 @@
           "revision_id": "REL-e23@f34ddbd4a240ddc5",
           "content_hash": "f34ddbd4a240ddc5",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3740,8 +3742,8 @@
           "revision_id": "REL-e24@4c6e7b081bf66a6c",
           "content_hash": "4c6e7b081bf66a6c",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3768,8 +3770,8 @@
           "revision_id": "REL-e25@0ec24492d6ef294f",
           "content_hash": "0ec24492d6ef294f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3796,8 +3798,8 @@
           "revision_id": "REL-e26@02ecbf4acff9225d",
           "content_hash": "02ecbf4acff9225d",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3824,8 +3826,8 @@
           "revision_id": "REL-e27@1aa2a3c9f3b90a5a",
           "content_hash": "1aa2a3c9f3b90a5a",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3852,8 +3854,8 @@
           "revision_id": "REL-e28@8483ca251b4d5ff6",
           "content_hash": "8483ca251b4d5ff6",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3880,8 +3882,8 @@
           "revision_id": "REL-e29@496c387b1df4ea39",
           "content_hash": "496c387b1df4ea39",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3908,8 +3910,8 @@
           "revision_id": "REL-e30@cf1f3baadde9d1ca",
           "content_hash": "cf1f3baadde9d1ca",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3936,8 +3938,8 @@
           "revision_id": "REL-e31@7f0375c49c7a9dad",
           "content_hash": "7f0375c49c7a9dad",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3964,8 +3966,8 @@
           "revision_id": "REL-e32@830bddbed0f0bd0b",
           "content_hash": "830bddbed0f0bd0b",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -3992,8 +3994,8 @@
           "revision_id": "REL-e33@0a027aa396f0f43a",
           "content_hash": "0a027aa396f0f43a",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4020,8 +4022,8 @@
           "revision_id": "REL-e34@adfda240bba50cf3",
           "content_hash": "adfda240bba50cf3",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4048,8 +4050,8 @@
           "revision_id": "REL-e35@cc3f23be5d19abd5",
           "content_hash": "cc3f23be5d19abd5",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4076,8 +4078,8 @@
           "revision_id": "REL-e36@18adefc1b99c5235",
           "content_hash": "18adefc1b99c5235",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4104,8 +4106,8 @@
           "revision_id": "REL-e37@ba304a950bbfb59e",
           "content_hash": "ba304a950bbfb59e",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4132,8 +4134,8 @@
           "revision_id": "REL-e38@0f16c492227b0640",
           "content_hash": "0f16c492227b0640",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4160,8 +4162,8 @@
           "revision_id": "REL-e39@5d0a203d8aa1d6da",
           "content_hash": "5d0a203d8aa1d6da",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4188,8 +4190,8 @@
           "revision_id": "REL-e40@cb0e8541e824ca76",
           "content_hash": "cb0e8541e824ca76",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4216,8 +4218,8 @@
           "revision_id": "REL-e41@8f4c7dd03243e11f",
           "content_hash": "8f4c7dd03243e11f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4244,8 +4246,8 @@
           "revision_id": "REL-e42@fd2e7c1521937a24",
           "content_hash": "fd2e7c1521937a24",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4272,8 +4274,8 @@
           "revision_id": "REL-e43@c9eebd102e0ef097",
           "content_hash": "c9eebd102e0ef097",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4300,8 +4302,8 @@
           "revision_id": "REL-e44@e4a6c3e26f38276f",
           "content_hash": "e4a6c3e26f38276f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4328,8 +4330,8 @@
           "revision_id": "REL-e45@38dd92f952512bba",
           "content_hash": "38dd92f952512bba",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4356,8 +4358,8 @@
           "revision_id": "REL-e46@8b3acc09f3f99019",
           "content_hash": "8b3acc09f3f99019",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4384,8 +4386,8 @@
           "revision_id": "REL-e47@f1b912cbc0134d93",
           "content_hash": "f1b912cbc0134d93",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4403,8 +4405,8 @@
           "revision_id": "REL-e48@8c59924c5b00e9b9",
           "content_hash": "8c59924c5b00e9b9",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4428,8 +4430,8 @@
           "revision_id": "SHARE-jakub-kaman@906abdc249afda2c",
           "content_hash": "906abdc249afda2c",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4454,8 +4456,8 @@
           "revision_id": "SHARE-petr-faraga@7e39ad8ab7589e18",
           "content_hash": "7e39ad8ab7589e18",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4473,8 +4475,8 @@
           "revision_id": "SRC-10@1e888c004c138c4a",
           "content_hash": "1e888c004c138c4a",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4491,8 +4493,8 @@
           "revision_id": "SRC-11@1e26e5198ca6f670",
           "content_hash": "1e26e5198ca6f670",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4516,8 +4518,8 @@
           "revision_id": "SRC-12@ba6698b613afb56c",
           "content_hash": "ba6698b613afb56c",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4535,8 +4537,8 @@
           "revision_id": "SRC-13@356802dd4f4e21fd",
           "content_hash": "356802dd4f4e21fd",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4553,8 +4555,8 @@
           "revision_id": "SRC-14@637db7b852b90546",
           "content_hash": "637db7b852b90546",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4571,8 +4573,8 @@
           "revision_id": "SRC-15@3de2216e00be8c1c",
           "content_hash": "3de2216e00be8c1c",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4589,8 +4591,8 @@
           "revision_id": "SRC-16@f771f8470b466e71",
           "content_hash": "f771f8470b466e71",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4607,8 +4609,8 @@
           "revision_id": "SRC-17@423cf476e03406d2",
           "content_hash": "423cf476e03406d2",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4625,8 +4627,8 @@
           "revision_id": "SRC-18@2ed3c2ec2476be24",
           "content_hash": "2ed3c2ec2476be24",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4643,8 +4645,8 @@
           "revision_id": "SRC-19@78c7f5075af638e3",
           "content_hash": "78c7f5075af638e3",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4695,8 +4697,8 @@
           "revision_id": "CLM-28@1e84a20a745d7c13",
           "content_hash": "1e84a20a745d7c13",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4713,8 +4715,8 @@
           "revision_id": "CLM-29@8889fb0cc6a33688",
           "content_hash": "8889fb0cc6a33688",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4731,8 +4733,8 @@
           "revision_id": "CLM-30@033c6da71cd6bc30",
           "content_hash": "033c6da71cd6bc30",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4749,8 +4751,8 @@
           "revision_id": "CLM-31@3a0c11844bc77d96",
           "content_hash": "3a0c11844bc77d96",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4767,8 +4769,8 @@
           "revision_id": "CLM-32@6c9319736ac6424e",
           "content_hash": "6c9319736ac6424e",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4785,8 +4787,8 @@
           "revision_id": "CLM-33@4aeb276bcb1f6364",
           "content_hash": "4aeb276bcb1f6364",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4803,8 +4805,8 @@
           "revision_id": "CLM-34@415198f8557a8d12",
           "content_hash": "415198f8557a8d12",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4821,8 +4823,8 @@
           "revision_id": "CLM-35@3d2890644838f0b3",
           "content_hash": "3d2890644838f0b3",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4839,8 +4841,8 @@
           "revision_id": "CLM-36@41a517834254fd8a",
           "content_hash": "41a517834254fd8a",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4857,8 +4859,8 @@
           "revision_id": "CLM-37@28d7ac0c6ca28197",
           "content_hash": "28d7ac0c6ca28197",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4875,8 +4877,8 @@
           "revision_id": "CLM-38@d3358f9227e9090f",
           "content_hash": "d3358f9227e9090f",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4893,8 +4895,8 @@
           "revision_id": "CLM-39@80dae02e38d86d09",
           "content_hash": "80dae02e38d86d09",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4911,8 +4913,8 @@
           "revision_id": "CLM-40@57bac1932b38c2b2",
           "content_hash": "57bac1932b38c2b2",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4929,8 +4931,8 @@
           "revision_id": "CLM-41@2144c347fe17621b",
           "content_hash": "2144c347fe17621b",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4947,8 +4949,8 @@
           "revision_id": "CLM-42@91729248aa40db49",
           "content_hash": "91729248aa40db49",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4965,8 +4967,8 @@
           "revision_id": "CLM-43@8aeb76fb9c4d9cba",
           "content_hash": "8aeb76fb9c4d9cba",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -4983,8 +4985,8 @@
           "revision_id": "CLM-44@a1b05dcc928cd660",
           "content_hash": "a1b05dcc928cd660",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5001,8 +5003,8 @@
           "revision_id": "CLM-45@834f5e410a4ccce2",
           "content_hash": "834f5e410a4ccce2",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5019,8 +5021,8 @@
           "revision_id": "CLM-46@af60eebb906bd0c2",
           "content_hash": "af60eebb906bd0c2",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5037,8 +5039,8 @@
           "revision_id": "CLM-47@e75ab557887a6c26",
           "content_hash": "e75ab557887a6c26",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5055,8 +5057,8 @@
           "revision_id": "CLM-48@1b6e86db5d6b36f0",
           "content_hash": "1b6e86db5d6b36f0",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5073,8 +5075,8 @@
           "revision_id": "CLM-49@f3a6aa05898139b6",
           "content_hash": "f3a6aa05898139b6",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5091,8 +5093,8 @@
           "revision_id": "CLM-50@5d1faf8bc435a6b4",
           "content_hash": "5d1faf8bc435a6b4",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5109,8 +5111,8 @@
           "revision_id": "CLM-51@e9e026ea8d426bd0",
           "content_hash": "e9e026ea8d426bd0",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5127,8 +5129,8 @@
           "revision_id": "CLM-52@4a26abdd5c2be764",
           "content_hash": "4a26abdd5c2be764",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5145,8 +5147,8 @@
           "revision_id": "CLM-53@0203bcffb60adc8d",
           "content_hash": "0203bcffb60adc8d",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5163,8 +5165,8 @@
           "revision_id": "CLM-54@f197a9338a5b7532",
           "content_hash": "f197a9338a5b7532",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5181,8 +5183,8 @@
           "revision_id": "CLM-55@8f23319491da9cd7",
           "content_hash": "8f23319491da9cd7",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5208,8 +5210,8 @@
           "revision_id": "CLM-56@c922cc188816513f",
           "content_hash": "c922cc188816513f",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5227,8 +5229,8 @@
           "revision_id": "CLM-57@bb0a3431ca4b8515",
           "content_hash": "bb0a3431ca4b8515",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5245,8 +5247,8 @@
           "revision_id": "CLM-58@8e6e2a2947800c44",
           "content_hash": "8e6e2a2947800c44",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5263,8 +5265,8 @@
           "revision_id": "CON-03@49913ccf3db7f25d",
           "content_hash": "49913ccf3db7f25d",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5281,8 +5283,8 @@
           "revision_id": "FIN-ASSESSED-basis-src-15-id-fin-assess-02-status-assessed-text-profitable-both-years-but-the-net-margin-is-thin-under-2-of-revenue-and-shrinking@b774c22f7d0587b4",
           "content_hash": "b774c22f7d0587b4",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5299,8 +5301,8 @@
           "revision_id": "FIN-ASSESSED-basis-src-15-id-fin-assess-03-status-assessed-text-liabilities-grew-faster-than-equity-year-on-year-shareholder-loans-more-than-tripled-3-1m-10-0m-czk@b774c22f7d0587b4",
           "content_hash": "b774c22f7d0587b4",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5317,8 +5319,8 @@
           "revision_id": "FIN-ASSESSED-basis-src-15-id-fin-assess-04-status-assessed-text-personnel-costs-fell-41-while-purchased-services-sluzby-38-7m-czk-is-by-far-the-largest-cost-line-a-cost-structure-consistent-with-contractor-heavy-delivery-rather-than-headcount-growth-this-is-an-analytical-reading-of-the-cost-lines-not-a-filed-fact-headcount-is-not-inferred-from-it@b774c22f7d0587b4",
           "content_hash": "b774c22f7d0587b4",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5335,8 +5337,8 @@
           "revision_id": "FIN-ASSESSED-basis-src-15-src-04-src-05-id-fin-assess-01-status-assessed-text-filed-revenue-declined-14-8-year-on-year-and-is-well-below-the-100m-czk-combined-able-blackfish-self-reported-media-target@b774c22f7d0587b4",
           "content_hash": "b774c22f7d0587b4",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5353,8 +5355,8 @@
           "revision_id": "FIN-VERIFIED-liabilities-to-shareholders-c-i-9-1-c-ii-8-1-zavazky-ke-spolecnikum-fy2024-fy2023@2f58577a897d79f8",
           "content_hash": "2f58577a897d79f8",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5371,8 +5373,8 @@
           "revision_id": "FIN-VERIFIED-purchased-services-a-3-sluzby-fy2024-fy2023@36f12528f62e0931",
           "content_hash": "36f12528f62e0931",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5389,8 +5391,8 @@
           "revision_id": "FIN-VERIFIED-stakes-in-controlled-entities-b-iii-1-podily-ovladana-nebo-ovladajici-osoba-fy2024-fy2023@6a1242951a11f8f0",
           "content_hash": "6a1242951a11f8f0",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5407,8 +5409,8 @@
           "revision_id": "ID-previous-legal-name@408a61a3c3532158",
           "content_hash": "408a61a3c3532158",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5425,8 +5427,8 @@
           "revision_id": "SHARE-5326g-s-r-o@3ed7c36a7abba735",
           "content_hash": "3ed7c36a7abba735",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5443,8 +5445,8 @@
           "revision_id": "SHARE-frantisek-juren@fd3a81f590e28b43",
           "content_hash": "fd3a81f590e28b43",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5461,8 +5463,8 @@
           "revision_id": "SHARE-martin-nakladal@d8e4e5797645ea50",
           "content_hash": "d8e4e5797645ea50",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5479,8 +5481,8 @@
           "revision_id": "SHARE-ondrej-kaman@36bae3c7fcbf14a3",
           "content_hash": "36bae3c7fcbf14a3",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5497,8 +5499,8 @@
           "revision_id": "SHARE-tomas-korensky@afe0e751e9794263",
           "content_hash": "afe0e751e9794263",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5515,8 +5517,8 @@
           "revision_id": "SHARE-vit-schlesinger@f335de70e8815e8f",
           "content_hash": "f335de70e8815e8f",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5533,8 +5535,8 @@
           "revision_id": "SHARE-zenx-capital-a-s@05eb1872201b54ad",
           "content_hash": "05eb1872201b54ad",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5551,8 +5553,8 @@
           "revision_id": "SRC-20@e9b936e48b7aabed",
           "content_hash": "e9b936e48b7aabed",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5569,8 +5571,8 @@
           "revision_id": "SRC-21@09b4356f2535aa4a",
           "content_hash": "09b4356f2535aa4a",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5596,8 +5598,8 @@
           "revision_id": "SRC-22@ebdda08db61cf7ef",
           "content_hash": "ebdda08db61cf7ef",
           "revision_number": 2,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5615,8 +5617,8 @@
           "revision_id": "ROLE-petr-faraga-ac78cf96@36709f5dcf1f2efb",
           "content_hash": "36709f5dcf1f2efb",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5633,8 +5635,8 @@
           "revision_id": "TLE-086b0f37@6722e5f8f4bfcfc5",
           "content_hash": "6722e5f8f4bfcfc5",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5651,8 +5653,8 @@
           "revision_id": "TLE-4c53a680@00a86cc5aa980198",
           "content_hash": "00a86cc5aa980198",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5669,8 +5671,8 @@
           "revision_id": "TLE-6412a328@c72d1945fc6a6903",
           "content_hash": "c72d1945fc6a6903",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5687,8 +5689,8 @@
           "revision_id": "TLE-66814d48@69b44470ddf6aeab",
           "content_hash": "69b44470ddf6aeab",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5705,8 +5707,8 @@
           "revision_id": "TLE-6d275c67@5dca1aeed97e5633",
           "content_hash": "5dca1aeed97e5633",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5723,8 +5725,8 @@
           "revision_id": "TLE-891790e6@4b5189717344d119",
           "content_hash": "4b5189717344d119",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5741,8 +5743,8 @@
           "revision_id": "TLE-8bb3734b@19ee6b3e2e8d9379",
           "content_hash": "19ee6b3e2e8d9379",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5759,8 +5761,8 @@
           "revision_id": "TLE-a671323f@d5adec558e36e630",
           "content_hash": "d5adec558e36e630",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5777,8 +5779,8 @@
           "revision_id": "TLE-b8504813@ceabc8ce1512da15",
           "content_hash": "ceabc8ce1512da15",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5795,8 +5797,8 @@
           "revision_id": "TLE-e4a1eb5c@7cbd42344f45e466",
           "content_hash": "7cbd42344f45e466",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5813,8 +5815,8 @@
           "revision_id": "TLE-eb2c86e6@7968c040720c59b3",
           "content_hash": "7968c040720c59b3",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5831,8 +5833,8 @@
           "revision_id": "TXN-able-blackfish-2025@6a3773893592b80b",
           "content_hash": "6a3773893592b80b",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5849,8 +5851,8 @@
           "revision_id": "ENT-juren@0d832d786ca65c9e",
           "content_hash": "0d832d786ca65c9e",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5867,8 +5869,8 @@
           "revision_id": "ENT-sluka@467dba7512ea5bab",
           "content_hash": "467dba7512ea5bab",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5885,8 +5887,8 @@
           "revision_id": "OQ-1b181782@094702fa4424b76f",
           "content_hash": "094702fa4424b76f",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5903,8 +5905,8 @@
           "revision_id": "OQ-1c325493@56fb3bdbe8941cc6",
           "content_hash": "56fb3bdbe8941cc6",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5921,8 +5923,8 @@
           "revision_id": "OQ-26877042@04570aa6e1ac5c03",
           "content_hash": "04570aa6e1ac5c03",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5939,8 +5941,8 @@
           "revision_id": "OQ-5b8487c6@cd7b9a641f83e582",
           "content_hash": "cd7b9a641f83e582",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5957,8 +5959,8 @@
           "revision_id": "OQ-5d7efbd8@fc9d4cf520ce9939",
           "content_hash": "fc9d4cf520ce9939",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5975,8 +5977,8 @@
           "revision_id": "OQ-6b2ceeed@ee5281ab5dc5d324",
           "content_hash": "ee5281ab5dc5d324",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -5993,8 +5995,8 @@
           "revision_id": "OQ-72dd6b78@33a0c77046802ddf",
           "content_hash": "33a0c77046802ddf",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6011,8 +6013,8 @@
           "revision_id": "OQ-b3415011@a77750b622b98b0c",
           "content_hash": "a77750b622b98b0c",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6029,8 +6031,8 @@
           "revision_id": "OQ-bce47e44@178af5484605aee8",
           "content_hash": "178af5484605aee8",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6064,8 +6066,8 @@
           "revision_id": "OQ-ed6fc580@74c0a0c9946fb01a",
           "content_hash": "74c0a0c9946fb01a",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6082,8 +6084,8 @@
           "revision_id": "OQ-edce108c@881c243809eaf30e",
           "content_hash": "881c243809eaf30e",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6100,8 +6102,8 @@
           "revision_id": "REL-e49@c452b2f6f2564210",
           "content_hash": "c452b2f6f2564210",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6118,8 +6120,8 @@
           "revision_id": "REL-e50@5e3b7059aaa39cef",
           "content_hash": "5e3b7059aaa39cef",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6136,8 +6138,8 @@
           "revision_id": "REL-e51@b47457aecb09120c",
           "content_hash": "b47457aecb09120c",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6154,8 +6156,8 @@
           "revision_id": "REL-e52@a350a58b9155af91",
           "content_hash": "a350a58b9155af91",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6172,8 +6174,8 @@
           "revision_id": "REL-e53@4f284cce6010c20f",
           "content_hash": "4f284cce6010c20f",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6190,8 +6192,8 @@
           "revision_id": "REL-e54@151f79aa2d15fb85",
           "content_hash": "151f79aa2d15fb85",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6208,8 +6210,8 @@
           "revision_id": "REL-e55@3a6b85ec67cdabbe",
           "content_hash": "3a6b85ec67cdabbe",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6226,8 +6228,8 @@
           "revision_id": "REL-e56@bc427e95859e82d7",
           "content_hash": "bc427e95859e82d7",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6244,8 +6246,8 @@
           "revision_id": "REL-e57@96f0c69524b54662",
           "content_hash": "96f0c69524b54662",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6262,8 +6264,8 @@
           "revision_id": "REL-e58@9417f9b23fa8e053",
           "content_hash": "9417f9b23fa8e053",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6280,8 +6282,8 @@
           "revision_id": "REL-e59@1146c254e7024dbd",
           "content_hash": "1146c254e7024dbd",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6298,8 +6300,8 @@
           "revision_id": "REL-e60@3af104ac0af70682",
           "content_hash": "3af104ac0af70682",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6316,8 +6318,8 @@
           "revision_id": "RQ-01@bd5ce330e9be6d09",
           "content_hash": "bd5ce330e9be6d09",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6334,8 +6336,8 @@
           "revision_id": "RQ-02@75f507aec31c19eb",
           "content_hash": "75f507aec31c19eb",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6352,8 +6354,8 @@
           "revision_id": "RQ-03@4f441b49f08a9a21",
           "content_hash": "4f441b49f08a9a21",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6370,8 +6372,8 @@
           "revision_id": "RQ-04@40f1bc77d5167eee",
           "content_hash": "40f1bc77d5167eee",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
@@ -6388,12 +6390,588 @@
           "revision_id": "OQ-5eba22c5@fc7c454a71ccb962",
           "content_hash": "fc7c454a71ccb962",
           "revision_number": 1,
-          "last_snapshot_id": "able-cz-public-2026-07-18-r07",
-          "last_snapshot_sequence": 7
+          "last_snapshot_id": "able-cz-public-2026-07-18-r08",
+          "last_snapshot_sequence": 8
         }
       ],
       "change_ids": [
         "CHG-0358"
+      ]
+    },
+    "conflict_resolution:CFL-CON-01": {
+      "object_type": "conflict_resolution",
+      "object_id": "CFL-CON-01",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "CFL-CON-01@3cc2c50eb499eb85",
+          "content_hash": "3cc2c50eb499eb85",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0363"
+      ]
+    },
+    "conflict_resolution:CFL-CON-02": {
+      "object_type": "conflict_resolution",
+      "object_id": "CFL-CON-02",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "CFL-CON-02@19cfa311db7caa11",
+          "content_hash": "19cfa311db7caa11",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0364"
+      ]
+    },
+    "conflict_resolution:CFL-CON-03": {
+      "object_type": "conflict_resolution",
+      "object_id": "CFL-CON-03",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "CFL-CON-03@beed97ef68628d5b",
+          "content_hash": "beed97ef68628d5b",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0365"
+      ]
+    },
+    "executive_finding:EXEC-01": {
+      "object_type": "executive_finding",
+      "object_id": "EXEC-01",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "EXEC-01@890f6cecd1efc7ec",
+          "content_hash": "890f6cecd1efc7ec",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0366"
+      ]
+    },
+    "executive_finding:EXEC-02": {
+      "object_type": "executive_finding",
+      "object_id": "EXEC-02",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "EXEC-02@5a567bf7f8dce310",
+          "content_hash": "5a567bf7f8dce310",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0367"
+      ]
+    },
+    "executive_finding:EXEC-03": {
+      "object_type": "executive_finding",
+      "object_id": "EXEC-03",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "EXEC-03@de8388511a87978f",
+          "content_hash": "de8388511a87978f",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0368"
+      ]
+    },
+    "executive_finding:EXEC-04": {
+      "object_type": "executive_finding",
+      "object_id": "EXEC-04",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "EXEC-04@921e87410c1d964c",
+          "content_hash": "921e87410c1d964c",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0369"
+      ]
+    },
+    "executive_finding:EXEC-05": {
+      "object_type": "executive_finding",
+      "object_id": "EXEC-05",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "EXEC-05@fba018d9c5594c81",
+          "content_hash": "fba018d9c5594c81",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0370"
+      ]
+    },
+    "executive_finding:EXEC-06": {
+      "object_type": "executive_finding",
+      "object_id": "EXEC-06",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "EXEC-06@431203ed78c2b7e7",
+          "content_hash": "431203ed78c2b7e7",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0371"
+      ]
+    },
+    "executive_finding:EXEC-07": {
+      "object_type": "executive_finding",
+      "object_id": "EXEC-07",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "EXEC-07@f2763be916f77754",
+          "content_hash": "f2763be916f77754",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0372"
+      ]
+    },
+    "executive_finding:EXEC-08": {
+      "object_type": "executive_finding",
+      "object_id": "EXEC-08",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "EXEC-08@9673d81a28d86d9e",
+          "content_hash": "9673d81a28d86d9e",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0373"
+      ]
+    },
+    "reasoning_assumption:ASM-01": {
+      "object_type": "reasoning_assumption",
+      "object_id": "ASM-01",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "ASM-01@acb9fac89575089a",
+          "content_hash": "acb9fac89575089a",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0374"
+      ]
+    },
+    "reasoning_assumption:ASM-02": {
+      "object_type": "reasoning_assumption",
+      "object_id": "ASM-02",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "ASM-02@a0b3146e7d52f2c9",
+          "content_hash": "a0b3146e7d52f2c9",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0375"
+      ]
+    },
+    "reasoning_assumption:ASM-03": {
+      "object_type": "reasoning_assumption",
+      "object_id": "ASM-03",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "ASM-03@4c41db603af58c52",
+          "content_hash": "4c41db603af58c52",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0376"
+      ]
+    },
+    "reasoning_assumption:ASM-04": {
+      "object_type": "reasoning_assumption",
+      "object_id": "ASM-04",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "ASM-04@f79ef376d95208cf",
+          "content_hash": "f79ef376d95208cf",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0377"
+      ]
+    },
+    "reasoning_assumption:ASM-05": {
+      "object_type": "reasoning_assumption",
+      "object_id": "ASM-05",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "ASM-05@54e043454b01ecfd",
+          "content_hash": "54e043454b01ecfd",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0378"
+      ]
+    },
+    "reasoning_inference:INF-CLM-35": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-CLM-35",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-CLM-35@9e777cce77d8631a",
+          "content_hash": "9e777cce77d8631a",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0379"
+      ]
+    },
+    "reasoning_inference:INF-CLM-38": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-CLM-38",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-CLM-38@39c830b6ff00e948",
+          "content_hash": "39c830b6ff00e948",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0380"
+      ]
+    },
+    "reasoning_inference:INF-CLM-40": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-CLM-40",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-CLM-40@3a6006ad9006cce9",
+          "content_hash": "3a6006ad9006cce9",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0381"
+      ]
+    },
+    "reasoning_inference:INF-CLM-43": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-CLM-43",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-CLM-43@48829a56c1228c44",
+          "content_hash": "48829a56c1228c44",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0382"
+      ]
+    },
+    "reasoning_inference:INF-CLM-45": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-CLM-45",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-CLM-45@560b2d5e6c0d7646",
+          "content_hash": "560b2d5e6c0d7646",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0383"
+      ]
+    },
+    "reasoning_inference:INF-CLM-48": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-CLM-48",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-CLM-48@69d59b3ecdc0ed85",
+          "content_hash": "69d59b3ecdc0ed85",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0384"
+      ]
+    },
+    "reasoning_inference:INF-CLM-50": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-CLM-50",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-CLM-50@84619e85386ffd31",
+          "content_hash": "84619e85386ffd31",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0385"
+      ]
+    },
+    "reasoning_inference:INF-CLM-51": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-CLM-51",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-CLM-51@99ebdf4b9358b036",
+          "content_hash": "99ebdf4b9358b036",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0386"
+      ]
+    },
+    "reasoning_inference:INF-CLM-53": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-CLM-53",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-CLM-53@91fe1ab6f27d56e7",
+          "content_hash": "91fe1ab6f27d56e7",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0387"
+      ]
+    },
+    "reasoning_inference:INF-CLM-56": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-CLM-56",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-CLM-56@95363eab7562f40a",
+          "content_hash": "95363eab7562f40a",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0388"
+      ]
+    },
+    "reasoning_inference:INF-FIN-ASSESS-01": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-FIN-ASSESS-01",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-FIN-ASSESS-01@31f59460e5db0e64",
+          "content_hash": "31f59460e5db0e64",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0389"
+      ]
+    },
+    "reasoning_inference:INF-FIN-ASSESS-02": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-FIN-ASSESS-02",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-FIN-ASSESS-02@e119cb736f4db6f0",
+          "content_hash": "e119cb736f4db6f0",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0390"
+      ]
+    },
+    "reasoning_inference:INF-FIN-ASSESS-03": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-FIN-ASSESS-03",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-FIN-ASSESS-03@d34cac1f4254a9ef",
+          "content_hash": "d34cac1f4254a9ef",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0391"
+      ]
+    },
+    "reasoning_inference:INF-FIN-ASSESS-04": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-FIN-ASSESS-04",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-FIN-ASSESS-04@b19d9b9767bb4978",
+          "content_hash": "b19d9b9767bb4978",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0392"
+      ]
+    },
+    "reasoning_inference:INF-R-01": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-R-01",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-R-01@6c18bbe86185dd15",
+          "content_hash": "6c18bbe86185dd15",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0393"
+      ]
+    },
+    "reasoning_inference:INF-R-02": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-R-02",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-R-02@f1a6e57f378cea43",
+          "content_hash": "f1a6e57f378cea43",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0394"
+      ]
+    },
+    "reasoning_inference:INF-R-03": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-R-03",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-R-03@f684abc0e3f49398",
+          "content_hash": "f684abc0e3f49398",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0395"
+      ]
+    },
+    "reasoning_inference:INF-R-04": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-R-04",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-R-04@850faeccebb2e12d",
+          "content_hash": "850faeccebb2e12d",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0396"
+      ]
+    },
+    "reasoning_inference:INF-R-05": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-R-05",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-R-05@091724d5ea4b10be",
+          "content_hash": "091724d5ea4b10be",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0397"
+      ]
+    },
+    "reasoning_inference:INF-R-06": {
+      "object_type": "reasoning_inference",
+      "object_id": "INF-R-06",
+      "revisions": [
+        {
+          "snapshot_id": "able-cz-public-2026-07-18-r08",
+          "snapshot_sequence": 8,
+          "revision_id": "INF-R-06@f283928de81833fa",
+          "content_hash": "f283928de81833fa",
+          "revision_number": 1
+        }
+      ],
+      "change_ids": [
+        "CHG-0398"
       ]
     }
   }

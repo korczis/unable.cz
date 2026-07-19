@@ -3,7 +3,7 @@
     "schemaVersion": "1.0.0",
     "kind": "monitoring-plan",
     "caseId": "DD-Able-CZ-2026-07-17",
-    "snapshotId": "able-cz-public-2026-07-18-r07",
+    "snapshotId": "able-cz-public-2026-07-18-r08",
     "evidenceCutoff": "2026-07-18",
     "asOf": "2026-07-18",
     "asOfNote": "Stav vyhodnocen k meznímu datu evidence (deterministicky). Prohlížeč navíc porovnává next_due_at s aktuálním datem klienta — označeno v UI.",

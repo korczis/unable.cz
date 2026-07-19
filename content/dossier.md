@@ -60,6 +60,11 @@ ověřené), nízká u výkonnostních tvrzení, s reálnými mezerami vyznačen
 textem — včetně stavu **BLOCKED** tam, kde úřední zdroj selhal (insolvenční
 rejstřík, HTTP 500) [CLM-58].
 
+Každý bod tohoto souhrnu je exekutivní zjištění s **úplnou, rozklikatelnou
+stopou** — tvrzení, evidence, kroky úsudku, alternativní vysvětlení,
+kontrafaktuály i zbývající nejistota jsou vypsané v
+[úsudkové vrstvě dossieru](@/dossier/reasoning/_index.md).
+
 ## Rozsah, metodologie a politika oprav
 
 Evidence je označena stavem: **VERIFIED_PRIMARY** (přímý primární zdroj),

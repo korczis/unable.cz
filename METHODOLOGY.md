@@ -88,3 +88,16 @@ auditable change record linking to the evidence that caused it. Freshness is
 policy-based: evidence quality never decays, currentness does; BLOCKED
 providers stay BLOCKED until a query actually succeeds. See
 docs/dossier/temporal/.
+
+## Explicit reasoning (added 2026-07-19, PROMPT-10)
+
+Analytical judgments (ASSESSED claims, financial assessments, risks) are no
+longer terminal labels: each carries a published inference record with
+premises, steps, declared assumptions, at least one alternative explanation
+with the evidence needed to distinguish it, counterfactuals (what would
+falsify/strengthen/weaken), and remaining uncertainty. Confidence is expressed
+as a six-dimensional diversity vector (sources, evidence, documents, upstream
+families, jurisdictions, time span) with an explicit monoculture flag — never
+a single number. Conflicting sources are represented two-sided with a named
+resolution state. The reasoning objects are snapshot-tracked, so changed
+reasoning is auditable history.

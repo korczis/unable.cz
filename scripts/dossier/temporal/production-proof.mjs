@@ -20,7 +20,10 @@ const ROOT = fileURLToPath(new URL("../../..", import.meta.url));
 const baseUrl = (readFileSync(join(ROOT, "config.toml"), "utf8").match(/^base_url\s*=\s*"([^"]+)"/m) || [])[1];
 if (!baseUrl) { console.error("config.toml base_url not found"); process.exit(1); }
 
-const canonicalHash = snapshotContentHash(extractObjects(JSON.parse(readFileSync(join(ROOT, "data/dossier/able/dossier.json"), "utf8"))));
+const canonicalHash = snapshotContentHash(extractObjects(
+  JSON.parse(readFileSync(join(ROOT, "data/dossier/able/dossier.json"), "utf8")),
+  existsSync(join(ROOT, "data/dossier/able/reasoning.json")) ? JSON.parse(readFileSync(join(ROOT, "data/dossier/able/reasoning.json"), "utf8")) : null
+));
 const layer = (p) => (existsSync(join(ROOT, p)) ? JSON.parse(readFileSync(join(ROOT, p), "utf8")) : null);
 const generated = layer("generated/dossier/snapshots/current.json");
 const built = layer("public/data/dossier/snapshots/current.json");

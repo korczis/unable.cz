@@ -1,0 +1,198 @@
+{
+  "_export": {
+    "schemaVersion": "1.0.0",
+    "kind": "reasoning-graph",
+    "caseId": "DD-Able-CZ-2026-07-17",
+    "evidenceCutoff": "2026-07-18",
+    "generatedAt": "2026-07-18",
+    "source": "data/dossier/able/reasoning.json + evidence.json + dossier.json",
+    "note": "Vrstvy: 0 zdroje/pozorování · 1 evidence · 2 asercie · 3 tvrzení · 4 assessmenty/úsudky/předpoklady/rozpory · 5 závěry · 6 exekutivní zjištění."
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "reasoningVersion": "1.0.0",
+  "promptVersion": "PROMPT-10",
+  "counts": {
+    "source": 22,
+    "observation": 22,
+    "evidence": 28,
+    "assertion": 24,
+    "claim": 48,
+    "assessment": 14,
+    "conclusion": 6,
+    "conflict": 3,
+    "assumption": 5,
+    "inference": 20,
+    "executive_finding": 8,
+    "inference_records": 20,
+    "executive_findings": 8,
+    "conflicts": 3,
+    "assumptions": 5
+  },
+  "assumptions": [
+    {
+      "id": "ASM-01",
+      "text": "Podaná účetní závěrka (Sbírka listin) věrně zachycuje účetnictví subjektu tak, jak bylo podáno; nezávislý audit nebyl k dispozici.",
+      "basis": "SL68 je závěrka malé účetní jednotky bez povinného auditu."
+    },
+    {
+      "id": "ASM-02",
+      "text": "Veřejný rejstřík (VR/ARES) je autoritativní pro právní skutečnosti (vlastnictví, funkce, data zápisu); mediální líčení je sekundární.",
+      "basis": "Zákonná domněnka správnosti zápisu; použito při řešení CON-01 a CON-03."
+    },
+    {
+      "id": "ASM-03",
+      "text": "Zachované artefakty (SHA-256, provider-runs) reprezentují stav zdroje v okamžiku stažení.",
+      "basis": "Obsahově adresované úložiště případu; ověřováno při každém buildu."
+    },
+    {
+      "id": "ASM-04",
+      "text": "Mediální články citované jako SRC-04/SRC-05/SRC-22 přisuzují výroky uvedeným osobám správně.",
+      "basis": "Bez přístupu k původním rozhovorům nelze ověřit; artefakty článků jsou uchovány."
+    },
+    {
+      "id": "ASM-05",
+      "text": "Absence záznamu ve veřejném zdroji není důkazem absence ve skutečnosti (NOT_FOUND ≠ negativní fakt; BLOCKED ≠ NOT_FOUND).",
+      "basis": "Metodika případu; řídí CLM-57, CLM-58 a všechna negativní zjištění."
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "CFL-CON-01",
+      "conflict": "CON-01",
+      "sideA": {
+        "text": "C 85424 (firemní GDPR stránka)",
+        "refs": [
+          "SRC-01"
+        ]
+      },
+      "sideB": {
+        "text": "C 85425 (veřejný rejstřík)",
+        "refs": [
+          "SRC-12",
+          "EVD-ARES-ABLE-COURT"
+        ]
+      },
+      "resolution": "Rejstřík je autoritativní (ASM-02); hodnota firmy je nejspíš překlep/zastaralá kopie. Rozpor se ponechává viditelný, dokud firma web neopraví.",
+      "resolutionState": "AUTHORITY_RESOLVED_DISCREPANCY_VISIBLE",
+      "distinguishingEvidence": "Oprava firemního webu, nebo historický doklad, že C 85424 kdy Able.cz patřil.",
+      "remainingUncertainty": "Původ chybné hodnoty.",
+      "status": "CONTRADICTED"
+    },
+    {
+      "id": "CFL-CON-02",
+      "conflict": "CON-02",
+      "sideA": {
+        "text": "Zrcadlové údaje o one label s.r.o. (role/podíly tří spoluvlastníků)",
+        "refs": [
+          "SRC-10"
+        ]
+      },
+      "sideB": {
+        "text": "Primární VR záznam IČO 02474727",
+        "refs": [
+          "SRC-12",
+          "EVD-ARES-ONELABEL"
+        ]
+      },
+      "resolution": "Vyřešeno 2026-07-18 primárním záznamem; zrcadlová verze nahrazena.",
+      "resolutionState": "RESOLVED_BY_PRIMARY",
+      "distinguishingEvidence": "—",
+      "remainingUncertainty": "Žádná podstatná.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "CFL-CON-03",
+      "conflict": "CON-03",
+      "sideA": {
+        "text": "Mediální líčení počátku Oslzlova vlastnictví Blackfish",
+        "refs": [
+          "SRC-05"
+        ]
+      },
+      "sideB": {
+        "text": "Rejstříkové datum zápisu podílu",
+        "refs": [
+          "SRC-12",
+          "EVD-ARES-BLACKFISH",
+          "CLM-41"
+        ]
+      },
+      "resolution": "Pro právní vlastnictví je autoritativní rejstřík (ASM-02); mediální datum může popisovat neformální zapojení před zápisem.",
+      "resolutionState": "AUTHORITY_RESOLVED_DISCREPANCY_VISIBLE",
+      "distinguishingEvidence": "Převodní smlouva ve sbírce listin Blackfish; výpověď aktérů.",
+      "remainingUncertainty": "Zda mediální datum popisuje faktickou (nezapsanou) roli.",
+      "status": "CONTRADICTED"
+    }
+  ],
+  "inference_ids": [
+    "INF-CLM-35",
+    "INF-CLM-38",
+    "INF-CLM-40",
+    "INF-CLM-43",
+    "INF-CLM-45",
+    "INF-CLM-48",
+    "INF-CLM-50",
+    "INF-CLM-51",
+    "INF-CLM-53",
+    "INF-CLM-56",
+    "INF-FIN-ASSESS-01",
+    "INF-FIN-ASSESS-02",
+    "INF-FIN-ASSESS-03",
+    "INF-FIN-ASSESS-04",
+    "INF-R-01",
+    "INF-R-02",
+    "INF-R-03",
+    "INF-R-04",
+    "INF-R-05",
+    "INF-R-06"
+  ],
+  "executive_ids": [
+    "EXEC-01",
+    "EXEC-02",
+    "EXEC-03",
+    "EXEC-04",
+    "EXEC-05",
+    "EXEC-06",
+    "EXEC-07",
+    "EXEC-08"
+  ],
+  "routes": [
+    "/dossier/reasoning/inf-clm-35/",
+    "/dossier/reasoning/inf-clm-38/",
+    "/dossier/reasoning/inf-clm-40/",
+    "/dossier/reasoning/inf-clm-43/",
+    "/dossier/reasoning/inf-clm-45/",
+    "/dossier/reasoning/inf-clm-48/",
+    "/dossier/reasoning/inf-clm-50/",
+    "/dossier/reasoning/inf-clm-51/",
+    "/dossier/reasoning/inf-clm-53/",
+    "/dossier/reasoning/inf-clm-56/",
+    "/dossier/reasoning/inf-fin-assess-01/",
+    "/dossier/reasoning/inf-fin-assess-02/",
+    "/dossier/reasoning/inf-fin-assess-03/",
+    "/dossier/reasoning/inf-fin-assess-04/",
+    "/dossier/reasoning/inf-r-01/",
+    "/dossier/reasoning/inf-r-02/",
+    "/dossier/reasoning/inf-r-03/",
+    "/dossier/reasoning/inf-r-04/",
+    "/dossier/reasoning/inf-r-05/",
+    "/dossier/reasoning/inf-r-06/",
+    "/dossier/reasoning/exec-01/",
+    "/dossier/reasoning/exec-02/",
+    "/dossier/reasoning/exec-03/",
+    "/dossier/reasoning/exec-04/",
+    "/dossier/reasoning/exec-05/",
+    "/dossier/reasoning/exec-06/",
+    "/dossier/reasoning/exec-07/",
+    "/dossier/reasoning/exec-08/"
+  ]
+}

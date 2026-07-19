@@ -44,7 +44,7 @@
       var p = n.parentNode;
       while (p && p !== scope) {
         var tag = p.nodeName;
-        if (tag === "A" || tag === "CODE" || tag === "PRE") return NodeFilter.FILTER_REJECT;
+        if (tag === "A" || tag === "CODE" || tag === "PRE" || tag === "BUTTON") return NodeFilter.FILTER_REJECT;
         p = p.parentNode;
       }
       return NodeFilter.FILTER_ACCEPT;

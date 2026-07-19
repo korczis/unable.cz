@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "INF-CLM-51",
+  "kind": "assessment",
+  "produces": "CLM-51",
+  "producesText": "Neither Forbes.cz nor CzechCrunch mentioned Schlesinger's reciprocal 5 % Able.cz stake in their acquisition coverage, which described only Able acquiring Blackfish.",
+  "canonicalPath": "/dossier/reasoning/inf-clm-51/",
+  "premises": [
+    {
+      "ref": "CLM-22",
+      "role": "supports",
+      "note": "reciproční 5 % je primárně doloženo",
+      "kind": "claim",
+      "label": "As part of the acquisition, Vít Schlesinger became a shareholder of Able.cz s.r.o. itself — exactly 5.00 % (vklad 12,185.75 CZK), registered 29 July 2025."
+    },
+    {
+      "ref": "SRC-04",
+      "role": "supports",
+      "note": "text článku recipročku nezmiňuje (zachovaný artefakt)",
+      "kind": "source",
+      "label": "Forbes.cz — Able acquires Blackfish studio"
+    },
+    {
+      "ref": "SRC-05",
+      "role": "supports",
+      "note": "dtto",
+      "kind": "source",
+      "label": "CzechCrunch — Able buys Blackfish"
+    }
+  ],
+  "steps": [
+    "Primární rejstřík dokládá reciproční 5% podíl (CLM-22).",
+    "Oba zachované mediální artefakty popisují pouze 'Able kupuje Blackfish'.",
+    "Negativní tvrzení je omezeno na PŘEZKOUMANÉ texty — ne na veškerá média (ASM-05)."
+  ],
+  "assumptions": [
+    {
+      "id": "ASM-03",
+      "text": "Zachované artefakty (SHA-256, provider-runs) reprezentují stav zdroje v okamžiku stažení."
+    },
+    {
+      "id": "ASM-05",
+      "text": "Absence záznamu ve veřejném zdroji není důkazem absence ve skutečnosti (NOT_FOUND ≠ negativní fakt; BLOCKED ≠ NOT_FOUND)."
+    }
+  ],
+  "primaryExplanation": "Reciproční prvek dealu nebyl součástí mediální komunikace.",
+  "alternatives": [
+    {
+      "text": "Jiný, nepřezkoumaný text jej zmínil.",
+      "distinguishingEvidence": "Širší mediální rešerše (další outlety, tiskové zprávy)."
+    }
+  ],
+  "counterfactuals": {
+    "falsify": [
+      "Dohledaný text z doby akvizice zmiňující 5% recipročku."
+    ],
+    "strengthen": [
+      "Rozšíření rešerše na další outlety se stejným výsledkem."
+    ],
+    "weaken": [
+      "—"
+    ]
+  },
+  "uncertainty": [
+    "Pokrytí rešerše: 2 hlavní outlety, ne úplný mediální korpus."
+  ],
+  "diversity": {
+    "source_count": 3,
+    "sources": [
+      "SRC-04",
+      "SRC-05",
+      "SRC-12"
+    ],
+    "evidence_count": 1,
+    "document_count": 0,
+    "documents": [],
+    "provider_run_backed_sources": 3,
+    "upstream_families": [
+      "cz_register",
+      "czechcrunch",
+      "forbes"
+    ],
+    "upstream_family_count": 3,
+    "jurisdictions": [
+      "CZ — média",
+      "CZ — úřední registr"
+    ],
+    "time_span": {
+      "first_retrieved": "2026-07-17",
+      "last_retrieved": "2026-07-18"
+    },
+    "monoculture": false,
+    "note": "Šest rozměrů záměrně NEsloučených do jednoho čísla — jednočíselná 'confidence' by zakryla, KDE je opora slabá."
+  },
+  "trust": {
+    "supporting": [
+      "CLM-22",
+      "SRC-04",
+      "SRC-05"
+    ],
+    "contradicting": [],
+    "contextualizing": [],
+    "alternatives": 1,
+    "unknown": [
+      "Pokrytí rešerše: 2 hlavní outlety, ne úplný mediální korpus."
+    ]
+  },
+  "method": {
+    "authoredBy": "analytik + Claude (Fable 5) — asistovaná investigace; žádný krok není skrytý model, každý úsudek je vypsán níže",
+    "producedIn": "Assessmenty vznikly v průchodech PROMPT-02–07 (jsou v dossier.json jako status ASSESSED / FIN-ASSESS / R-*); tato vrstva je v PROMPT-10 činí explicitními a přezkoumatelnými.",
+    "inputs": "Výhradně záznamy tohoto případu: tvrzení (CLM-*), evidenční pasáže (EVD-*), zdroje (SRC-*), rozpory (CON-*), rizika (R-*), finanční assessmenty (FIN-ASSESS-*).",
+    "limitations": [
+      "Analytický úsudek nad veřejnou evidencí — žádný přístup k interním datům subjektu.",
+      "Kroky úsudku jsou deterministický text, ne výstup skrytého runtime; změna úsudku = nová revize v snapshot ledgeru.",
+      "Jazykové modely použité při investigaci negenerují žádné tvrzení bez citované evidence; každý assessment níže vypisuje své premisy."
+    ]
+  },
+  "evidenceCutoff": "2026-07-18",
+  "generatedAt": "2026-07-18"
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "able-cz-public-2026-07-18-r08",
+  "case_id": "DD-Able-CZ-2026-07-17",
+  "case_slug": "able-cz",
+  "publication_profile": "public",
+  "snapshot_sequence": 8,
+  "previous_snapshot_id": "able-cz-public-2026-07-18-r07",
+  "generated_at": "2026-07-18",
+  "evidence_cutoff": "2026-07-18",
+  "approved_at": "2026-07-18",
+  "approval_state": "PUBLISHED",
+  "canonical_case_revision": null,
+  "prismatic_commit": null,
+  "prismatic_note": "Prismatic má koncepty (fact-row valid-time, content-hash lifecycle), ale žádný dossier-snapshot příkaz; kanonický případ žije v tomto repozitáři. Viz docs/dossier/temporal/00.",
+  "unable_commit": null,
+  "generator_version": "temporal-1.0.0",
+  "content_hash": "3661838cbb7355c77b1f7adcdffef007e52f31a6933a1f651c271f66d0433390",
+  "object_manifest_hash": "16c63878885897da56660782bb75e0f66aae9ad64c52e40ce14ba3ed36a9b281",
+  "route_manifest_hash": "a02a4535f25cc13ea300bfc52661b6bf990256d0d0005ec2ee391e1d6c6bd741",
+  "finance_manifest_hash": "535b9d9e5d64448dd329c497969c42dce9c97f16b54e23047de471e580103eb9",
+  "graph_manifest_hash": "69c82221e12d74906d389c76cba401828d97d5efe5e6ca6f168ba98c227a50ac",
+  "search_index_hash": null,
+  "route_layer_note": "Route-layer hashe odpovídají derivovaným manifestům commitnutým spolu s tímto snapshotem.",
+  "counts": {
+    "by_type": {
+      "case_meta": 1,
+      "claim": 58,
+      "conflict_resolution": 3,
+      "contradiction": 3,
+      "entity": 43,
+      "executive_finding": 8,
+      "financial_fact": 23,
+      "governance_rule": 1,
+      "identity_field": 11,
+      "marketing_role": 4,
+      "open_question": 12,
+      "reasoning_assumption": 5,
+      "reasoning_inference": 20,
+      "relationship": 60,
+      "resolved_question": 4,
+      "shareholding": 12,
+      "source": 22,
+      "statutory_role": 3,
+      "timeline_event": 11,
+      "transaction": 1
+    },
+    "entity_count": 43,
+    "relationship_count": 60,
+    "claim_live_count": 49,
+    "claim_superseded_count": 9,
+    "source_count": 22,
+    "contradiction_open_count": 2,
+    "contradiction_resolved_count": 1,
+    "gap_open_count": 12,
+    "gap_resolved_count": 4,
+    "timeline_event_count": 11,
+    "financial_fact_count": 23,
+    "transaction_count": 1
+  },
+  "state_distributions": {
+    "claim_states": {
+      "SELF_REPORTED": 14,
+      "CORROBORATED": 7,
+      "VERIFIED_PRIMARY": 25,
+      "ASSESSED": 10,
+      "NOT_FOUND": 1,
+      "BLOCKED": 1
+    },
+    "relationship_states": {
+      "VERIFIED_PRIMARY": 50,
+      "SELF_REPORTED": 7,
+      "CONTRADICTED": 1,
+      "CORROBORATED": 2
+    },
+    "identity_states": {
+      "VERIFIED_PRIMARY": 11
+    }
+  },
+  "production_url": "/dossier/snapshots/able-cz-public-2026-07-18-r08/",
+  "note": "Nový sémantický stav zjištěný při buildu (data:build)."
+}

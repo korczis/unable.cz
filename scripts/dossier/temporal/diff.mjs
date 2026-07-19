@@ -88,6 +88,11 @@ export function classify(objectType, kind, oldP, newP, fieldChanges = []) {
       case "identity_field":
         return { changeType: "OBJECT_ENRICHED", materiality: "LOW", epistemicImpact: P.status === "VERIFIED_PRIMARY" ? "STRENGTHENED" : "NO_EPISTEMIC_CHANGE" };
       case "entity": case "timeline_event": return { changeType: "OBJECT_ADDED", materiality: "LOW", epistemicImpact: "NO_EPISTEMIC_CHANGE" };
+      // Reasoning layer (PROMPT-10): publishing a new executive finding is a
+      // material act; supporting reasoning machinery is not intelligence per se.
+      case "executive_finding": return { changeType: "REASONING_ADDED", materiality: "MEDIUM", epistemicImpact: "NO_EPISTEMIC_CHANGE" };
+      case "reasoning_inference": return { changeType: "REASONING_ADDED", materiality: "LOW", epistemicImpact: "NO_EPISTEMIC_CHANGE" };
+      case "reasoning_assumption": case "conflict_resolution": return { changeType: "REASONING_ADDED", materiality: "INFORMATIONAL", epistemicImpact: "NO_EPISTEMIC_CHANGE" };
       case "case_meta": return { changeType: "OBJECT_ADDED", materiality: "INFORMATIONAL", epistemicImpact: "NO_EPISTEMIC_CHANGE" };
       default: return { changeType: "OBJECT_ADDED", materiality: "INFORMATIONAL", epistemicImpact: "NO_EPISTEMIC_CHANGE" };
     }
@@ -146,6 +151,12 @@ export function classify(objectType, kind, oldP, newP, fieldChanges = []) {
       return { changeType: "PUBLICATION_METADATA_CHANGED", materiality: "INFORMATIONAL", epistemicImpact: "NO_EPISTEMIC_CHANGE" };
     case "timeline_event": case "transaction":
       return { changeType: "OBJECT_CORRECTED", materiality: "MEDIUM", epistemicImpact: "CORRECTED" };
+    case "reasoning_inference": case "executive_finding":
+      // "Why did reasoning change?" — a changed chain or finding is a
+      // first-class, reviewable event, never a silent rewrite.
+      return { changeType: "REASONING_CHANGED", materiality: "MEDIUM", epistemicImpact: "CORRECTED" };
+    case "reasoning_assumption": case "conflict_resolution":
+      return { changeType: "REASONING_CHANGED", materiality: "LOW", epistemicImpact: "NO_EPISTEMIC_CHANGE" };
     default:
       return { changeType: "OBJECT_ENRICHED", materiality: "LOW", epistemicImpact: "NO_EPISTEMIC_CHANGE" };
   }

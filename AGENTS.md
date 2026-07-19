@@ -188,6 +188,25 @@ The dossier is versioned. Working rules (details: `docs/dossier/temporal/`):
 - The monitoring page describes a *plan*; do not add wording implying live
   background monitoring unless such infrastructure actually exists.
 
+## Reasoning layer (why-pages)
+
+`data/dossier/able/reasoning.json` is canonical ANALYTICAL content: inference
+chains for every ASSESSED claim / FIN-ASSESS / risk, executive findings,
+conflict resolutions, declared assumptions. Rules:
+
+- Never add an assessment/risk without adding its inference record — the
+  reasoning gate fails the build (`reasoning-validate.mjs` in `verify`).
+- Premises may reference only existing records and never superseded claims.
+- Every chain must keep ≥1 alternative explanation (with distinguishing
+  evidence), counterfactuals and uncertainty — single-explanation output is a
+  build error, not a style issue.
+- Executive findings must cite claims actually anchored in the narrative.
+- Reasoning objects are snapshot members: editing reasoning.json requires the
+  same `npm run data:build` + `npm run verify` flow as dossier.json (a new
+  snapshot + REASONING_CHANGED records are created — that is the point).
+- Generated outputs under `static/data/dossier/reasoning/` and
+  `content/dossier/reasoning/` are never hand-edited.
+
 ## Adding a page
 
 ```bash

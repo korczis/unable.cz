@@ -27,6 +27,10 @@ The short version, if you read nothing else:
   a provider failure is `BLOCKED`, never `NOT_FOUND`; mirrors of one upstream
   never count as independent corroboration. See `docs/dossier/evidence/`.
 - Never bump `reviewed_at` without actually re-checking the sources.
+- Every analytical conclusion must have an inference record in
+  `data/dossier/able/reasoning.json` (premises from real records, alternatives,
+  counterfactuals, uncertainty) — the reasoning gate in `npm run verify` fails
+  otherwise. See docs/dossier/reasoning/.
 - The dossier is **versioned**: immutable snapshots under
   `static/data/dossier/snapshots/` (never hand-edit), first-class change
   objects, and a canonical-drift gate — editing `dossier.json` requires
