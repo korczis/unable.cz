@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{#- Provozní monitorovací vrstva: co bylo kdy zkontrolováno, se kterými
+    poskytovateli, a jaké materiální změny čekají na lidské schválení.
+    Vše čitelné bez JavaScriptu — stránka je statická projekce publikovaného
+    monitorovacího snapshotu. Selhání poskytovatele je zdravotní událost,
+    NIKDY negativní zjištění. Materiální změny (vlastníci, statutární orgán)
+    se zveřejní až po lidském schválení. -#}
+
+{% block content %}
+{%- set mf = load_data(path=page.extra.manifest_path) -%}
+{%- set sm = load_data(path=page.extra.summary_path) -%}
+{%- set runs = load_data(path=page.extra.runs_path) -%}
+{%- set cands = load_data(path=page.extra.candidates_path) -%}
+{%- set health = load_data(path=page.extra.health_path) -%}
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
+  <div class="mx-auto max-w-4xl">
+    <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
+      <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
+      <span class="px-1 text-white/30">/</span><span class="text-white/80">Monitoring — běhy a změny</span>
+    </nav>
+
+    <h1 class="mt-6 font-sans text-3xl font-black">{{ page.title }}</h1>
+    <p class="mt-2 max-w-3xl text-sm text-white/60">{{ mf.note }}</p>
+
+    <dl class="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 border-y border-white/10 py-4 text-sm sm:grid-cols-4">
+      <div><dt class="text-white/45">Poslední stav</dt><dd class="font-mono text-lg text-[#f3e5c0]">{{ sm.latestRunState }}</dd></div>
+      <div><dt class="text-white/45">Běhů</dt><dd class="font-mono text-lg text-white/90">{{ mf.counts.runs }}</dd></div>
+      <div><dt class="text-white/45">Zveřejněných změn</dt><dd class="font-mono text-lg text-white/90">{{ mf.counts.publishedCandidates }}</dd></div>
+      <div><dt class="text-white/45">Čeká na schválení</dt><dd class="font-mono text-lg text-white/90">{{ mf.counts.pendingReview }}</dd></div>
+    </dl>
+
+    <section class="mt-8 rounded border border-white/15 bg-white/5 px-4 py-4" aria-labelledby="due-h">
+      <h2 id="due-h" class="font-sans text-lg font-bold text-white/90">Stav kadence</h2>
+      <dl class="mt-2 space-y-1 text-sm text-white/75">
+        <div><dt class="inline text-white/45">Cíl: </dt><dd class="inline font-mono text-xs">{{ mf.target }} · {{ mf.policyId }}</dd></div>
+        <div><dt class="inline text-white/45">Poslední běh: </dt><dd class="inline font-mono text-xs">{{ sm.dueState.lastRunAt }}</dd></div>
+        <div><dt class="inline text-white/45">Příští kontrola: </dt><dd class="inline font-mono text-xs">{{ sm.dueState.nextDueAt }}</dd></div>
+        <div><dt class="inline text-white/45">Neúspěšných v řadě: </dt><dd class="inline font-mono text-xs">{{ sm.dueState.failureCount }}</dd></div>
+      </dl>
+    </section>
+
+    <section class="mt-8" aria-labelledby="health-h">
+      <h2 id="health-h" class="font-sans text-lg font-bold text-white/90">Zdraví poskytovatelů</h2>
+      <p class="mt-1 text-xs text-white/50">Nedostupnost poskytovatele je zdravotní událost, nikoli změna dat.</p>
+      <table class="mt-3 w-full border-collapse text-sm">
+        <thead><tr class="border-b border-white/15 text-left text-white/45">
+          <th class="py-1 pr-4 font-medium">Poskytovatel</th><th class="py-1 pr-4 font-medium">Stav</th><th class="py-1 font-medium">Naposledy</th>
+        </tr></thead>
+        <tbody>
+        {%- for h in health %}
+          <tr class="border-b border-white/5">
+            <td class="py-1 pr-4 font-mono text-xs">{{ h.providerId }}</td>
+            <td class="py-1 pr-4 font-mono text-xs {% if h.ok %}text-emerald-300/90{% else %}text-amber-300/90{% endif %}">{{ h.status }}</td>
+            <td class="py-1 font-mono text-xs text-white/60">{{ h.at }}</td>
+          </tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </section>
+
+    <section class="mt-8" aria-labelledby="cand-h">
+      <h2 id="cand-h" class="font-sans text-lg font-bold text-white/90">Zveřejněné změny</h2>
+      {%- if cands | length == 0 %}
+      <p class="mt-2 text-sm text-white/60">Žádné zveřejněné změny. Materiální změny (vlastníci, statutární orgán) se zobrazí až po lidském schválení; {{ mf.counts.pendingReview }} čeká na přezkum.</p>
+      {%- else %}
+      <ul class="mt-3 space-y-2">
+        {%- for c in cands %}
+        <li class="rounded border border-white/10 bg-white/5 px-3 py-2 text-sm">
+          <span class="font-mono text-xs text-white/50">{{ c.field }}</span>
+          <span class="text-white/50"> · </span><span class="font-mono text-xs text-white/80">{{ c.status }}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </section>
+
+    <section class="mt-8" aria-labelledby="runs-h">
+      <h2 id="runs-h" class="font-sans text-lg font-bold text-white/90">Poslední běhy</h2>
+      <table class="mt-3 w-full border-collapse text-sm">
+        <thead><tr class="border-b border-white/15 text-left text-white/45">
+          <th class="py-1 pr-4 font-medium">Zahájeno</th><th class="py-1 pr-4 font-medium">Stav</th><th class="py-1 font-medium">Poskytovatelé (OK/selhání)</th>
+        </tr></thead>
+        <tbody>
+        {%- for r in runs %}
+          <tr class="border-b border-white/5">
+            <td class="py-1 pr-4 font-mono text-xs text-white/60">{{ r.startedAt }}</td>
+            <td class="py-1 pr-4 font-mono text-xs text-white/80">{{ r.state }}</td>
+            <td class="py-1 font-mono text-xs text-white/60">{{ r.providerExecutions.count }} / {{ r.providerExecutions.failures }}</td>
+          </tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </section>
+
+    <div class="mt-10 border-t border-white/10 pt-6 text-sm text-white/70 [&_a]:text-[#f3e5c0] [&_a:hover]:underline">
+      {{ page.content | safe }}
+    </div>
+  </div>
+</main>
+{% endblock content %}

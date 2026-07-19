@@ -1,0 +1,10 @@
+{
+  "id": "sub:able-cz:corporate-identity",
+  "target": "able-cz",
+  "policyId": "corporate-identity",
+  "createdAt": "2026-07-19T12:00:00Z",
+  "lastRunAt": "2026-07-19T12:00:00Z",
+  "nextDueAt": "2026-08-18T12:00:00.000Z",
+  "failureCount": 0,
+  "state": "IDLE"
+}

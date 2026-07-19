@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-07-19T12:00:00Z",
+  "target": "able-cz",
+  "policyId": "corporate-identity",
+  "counts": {
+    "runs": 1,
+    "candidates": 0,
+    "publishedCandidates": 0,
+    "pendingReview": 0,
+    "health": 2
+  },
+  "note": "Data shown represents the latest published monitoring snapshot."
+}

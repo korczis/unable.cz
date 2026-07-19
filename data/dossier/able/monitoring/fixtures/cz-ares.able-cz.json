@@ -1,0 +1,31 @@
+{
+  "provider": "cz-ares",
+  "target": "able-cz",
+  "capturedAt": "2026-07-19T00:00:00Z",
+  "status": "OK",
+  "fields": {
+    "legalName": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "statutoryBody": [
+      "Václav Faraga",
+      "Tomáš Melichárek"
+    ],
+    "owners": [
+      "ZenX Capital, a.s.",
+      "Václav Faraga",
+      "Tomáš Melichárek",
+      "Vít Schlesinger",
+      "5326G s.r.o.",
+      "František Juren",
+      "Radek Juhaňák",
+      "Ondřej Kaman",
+      "Jakub Kaman",
+      "Martin Nakládal",
+      "Tomáš Kořenský",
+      "Petr Faraga"
+    ],
+    "address": "Vlněna 526/5, Trnitá, 602 00 Brno",
+    "status": "active"
+  },
+  "_note": "Every value traces to data/dossier/able/dossier.json (source SRC-12, ARES primary VR record). legalName ← identity 'Legal name' (VERIFIED_PRIMARY). ico ← identity 'IČO'. address ← identity 'Registered office'. statutoryBody ← governance.statutoryBody, CURRENT jednatels only (Petr Faraga excluded — 'until 13 October 2020', historical). owners ← governance.shareholders current capitalization table (12 holders summing to 100.00%); order preserved as listed in the dossier. NOT DERIVABLE AS AN EXPLICIT FIELD: 'status':'active' — the dossier has no literal active/dissolved lifecycle flag; 'active' is an evidence-backed inference from EU VIES VAT 'Valid' (SRC-08), ongoing register activity (last register change observed 2 April 2026, SRC-12) and no dissolution/insolvency on record (ISIR lookup was BLOCKED, not negative). It is the current published-state baseline, not a fabricated register value."
+}

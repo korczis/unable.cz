@@ -1,0 +1,31 @@
+{
+  "provider": "cz-justice-or",
+  "target": "able-cz",
+  "capturedAt": "2026-07-19T00:00:00Z",
+  "status": "OK",
+  "fields": {
+    "legalName": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "statutoryBody": [
+      "Václav Faraga",
+      "Tomáš Melichárek"
+    ],
+    "owners": [
+      "ZenX Capital, a.s.",
+      "Václav Faraga",
+      "Tomáš Melichárek",
+      "Vít Schlesinger",
+      "5326G s.r.o.",
+      "František Juren",
+      "Radek Juhaňák",
+      "Ondřej Kaman",
+      "Jakub Kaman",
+      "Martin Nakládal",
+      "Tomáš Kořenský",
+      "Petr Faraga"
+    ],
+    "address": "Vlněna 526/5, Trnitá, 602 00 Brno",
+    "status": "active"
+  },
+  "_note": "Justice.cz OR (Commercial Register) view of the same registered facts held in data/dossier/able/dossier.json. legalName ← identity 'Legal name'. ico ← identity 'IČO'. address ← identity 'Registered office'; the register file is Krajský soud v Brně, C 85425 (identity 'Court'). statutoryBody ← governance.statutoryBody, CURRENT jednatels only (Petr Faraga's 2012–2020 jednatel role is historical and excluded). owners ← governance.shareholders current capitalization table (12 holders, 100.00%), order as listed in the dossier. NOT DERIVABLE AS AN EXPLICIT FIELD: 'status':'active' — no literal lifecycle flag exists in the dossier; 'active' is inferred from ongoing register activity (last observed change 2 April 2026) and the absence of any dissolution/insolvency record (ISIR was BLOCKED, i.e. unresolved, never a clear/negative finding). Invented nothing: every value is provenance-backed or explicitly flagged as inferred here."
+}

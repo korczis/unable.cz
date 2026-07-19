@@ -1,0 +1,27 @@
+{
+  "fields": {
+    "legalName": "Able.cz s.r.o.",
+    "ico": "24278815",
+    "statutoryBody": [
+      "Václav Faraga",
+      "Tomáš Melichárek"
+    ],
+    "owners": [
+      "ZenX Capital, a.s.",
+      "Václav Faraga",
+      "Tomáš Melichárek",
+      "Vít Schlesinger",
+      "5326G s.r.o.",
+      "František Juren",
+      "Radek Juhaňák",
+      "Ondřej Kaman",
+      "Jakub Kaman",
+      "Martin Nakládal",
+      "Tomáš Kořenský",
+      "Petr Faraga"
+    ],
+    "address": "Vlněna 526/5, Trnitá, 602 00 Brno",
+    "status": "active"
+  },
+  "updatedAt": "2026-07-19T12:00:00Z"
+}

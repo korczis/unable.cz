@@ -1,0 +1,131 @@
+[
+  {
+    "id": "run:sub:able-cz:corporate-identity:2026-07-19T12:00:00Z",
+    "subscriptionId": "sub:able-cz:corporate-identity",
+    "target": "able-cz",
+    "policyId": "corporate-identity",
+    "startedAt": "2026-07-19T12:00:00Z",
+    "state": "NO_CHANGE",
+    "providerExecutions": [
+      {
+        "providerId": "cz-ares",
+        "ok": true,
+        "status": "OK",
+        "fetchedAt": "2026-07-19T12:00:00Z",
+        "observation": {
+          "providerId": "cz-ares",
+          "fields": {
+            "legalName": "Able.cz s.r.o.",
+            "ico": "24278815",
+            "statutoryBody": [
+              "Václav Faraga",
+              "Tomáš Melichárek"
+            ],
+            "owners": [
+              "ZenX Capital, a.s.",
+              "Václav Faraga",
+              "Tomáš Melichárek",
+              "Vít Schlesinger",
+              "5326G s.r.o.",
+              "František Juren",
+              "Radek Juhaňák",
+              "Ondřej Kaman",
+              "Jakub Kaman",
+              "Martin Nakládal",
+              "Tomáš Kořenský",
+              "Petr Faraga"
+            ],
+            "address": "Vlněna 526/5, Trnitá, 602 00 Brno",
+            "status": "active"
+          }
+        },
+        "error": null
+      },
+      {
+        "providerId": "cz-justice-or",
+        "ok": true,
+        "status": "OK",
+        "fetchedAt": "2026-07-19T12:00:00Z",
+        "observation": {
+          "providerId": "cz-justice-or",
+          "fields": {
+            "legalName": "Able.cz s.r.o.",
+            "ico": "24278815",
+            "statutoryBody": [
+              "Václav Faraga",
+              "Tomáš Melichárek"
+            ],
+            "owners": [
+              "ZenX Capital, a.s.",
+              "Václav Faraga",
+              "Tomáš Melichárek",
+              "Vít Schlesinger",
+              "5326G s.r.o.",
+              "František Juren",
+              "Radek Juhaňák",
+              "Ondřej Kaman",
+              "Jakub Kaman",
+              "Martin Nakládal",
+              "Tomáš Kořenský",
+              "Petr Faraga"
+            ],
+            "address": "Vlněna 526/5, Trnitá, 602 00 Brno",
+            "status": "active"
+          }
+        },
+        "error": null
+      }
+    ],
+    "observation": {
+      "fields": {
+        "legalName": "Able.cz s.r.o.",
+        "ico": "24278815",
+        "statutoryBody": [
+          "Václav Faraga",
+          "Tomáš Melichárek"
+        ],
+        "owners": [
+          "ZenX Capital, a.s.",
+          "Václav Faraga",
+          "Tomáš Melichárek",
+          "Vít Schlesinger",
+          "5326G s.r.o.",
+          "František Juren",
+          "Radek Juhaňák",
+          "Ondřej Kaman",
+          "Jakub Kaman",
+          "Martin Nakládal",
+          "Tomáš Kořenský",
+          "Petr Faraga"
+        ],
+        "address": "Vlněna 526/5, Trnitá, 602 00 Brno",
+        "status": "active"
+      },
+      "sources": {
+        "legalName": "cz-justice-or",
+        "ico": "cz-justice-or",
+        "statutoryBody": "cz-justice-or",
+        "owners": "cz-justice-or",
+        "address": "cz-justice-or",
+        "status": "cz-justice-or"
+      }
+    },
+    "candidateId": null,
+    "health": [
+      {
+        "providerId": "cz-ares",
+        "ok": true,
+        "status": "OK",
+        "at": "2026-07-19T12:00:00Z"
+      },
+      {
+        "providerId": "cz-justice-or",
+        "ok": true,
+        "status": "OK",
+        "at": "2026-07-19T12:00:00Z"
+      }
+    ],
+    "stopReason": null,
+    "endedAt": "2026-07-19T12:00:00Z"
+  }
+]

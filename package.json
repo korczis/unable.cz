@@ -14,7 +14,7 @@
     "evidence:fetch": "node scripts/dossier/fetch-evidence.mjs",
     "evidence:parse": "node scripts/dossier/parse-ares.mjs",
     "evidence:build": "node scripts/dossier/evidence.mjs",
-    "data:validate": "node scripts/dossier/validate.mjs && node scripts/dossier/claims-validate.mjs && node scripts/dossier/finance-validate.mjs && node scripts/dossier/reasoning/reasoning-validate.mjs && npm run temporal:validate",
+    "data:validate": "node scripts/dossier/validate.mjs && node scripts/dossier/claims-validate.mjs && node scripts/dossier/finance-validate.mjs && node scripts/dossier/reasoning/reasoning-validate.mjs && npm run temporal:validate && npm run monitor:validate",
     "dev": "npm run css:build && npm run js:build && npm run data:build && zola serve",
     "build": "npm run css:build && npm run js:build && npm run data:build && zola build",
     "seo:validate": "node scripts/seo-validate.mjs",
@@ -22,7 +22,10 @@
     "seo:validate:json": "node scripts/seo-validate.mjs --json",
     "test": "node --test --test-concurrency=1 'scripts/*.test.mjs'",
     "verify": "npm run build && npm run data:validate && npm run seo:validate && npm test",
-    "test:responsive": "npm run build && playwright test"
+    "test:responsive": "npm run build && playwright test",
+    "monitor:run": "node scripts/dossier/monitoring/run.mjs",
+    "monitor:validate": "node scripts/dossier/monitoring/monitoring-validate.mjs",
+    "monitor:build": "npm run monitor:run && npm run monitor:validate"
   },
   "devDependencies": {
     "@playwright/test": "^1.61.1",
