@@ -2,6 +2,12 @@
 
 Snapshot taken 2026-07-17, before implementing the Able.cz dossier.
 
+> **Superseded 2026-10-29** by the Flowbite Pro migration: `flowbite` 4.0.2 and Tailwind
+> 4.3.3, configured CSS-first in `tailwind/input.css` (`@plugin "flowbite/plugin"`,
+> `@source` on `node_modules/flowbite`, `templates`, `content`, `scripts/dossier`); there
+> is no `tailwind.config.js`. Alpine.js is removed. Flowbite JS is loaded in `base.html`
+> and drives the navbar collapse. The rest of this page records the state on its own date.
+
 ## Stack
 - **Zola 0.22.1** static site generator; single content page + homepage section.
 - **Tailwind 3.4.17** (compiled locally/CI), **Flowbite 2.5.2** + Flowbite

@@ -4,7 +4,7 @@
 | Command | Does |
 |---|---|
 | `npm run css:build` | Tailwind → `static/css/main.css` |
-| `npm run js:build` | Copies Alpine, Flowbite, Chart.js, Cytoscape, **p5**, and `client.js` → `static/js/` |
+| `npm run js:build` | Copies Flowbite, Chart.js, Cytoscape, **p5**, and the dossier scripts → `static/js/` |
 | `npm run data:build` | `node scripts/dossier/export.mjs` → `static/data/able-cz/*.json` |
 | `npm run build` | css + js + data + `zola build` → `./public` |
 | `npm run seo:validate` | Validates built `public/` (errors fail) |

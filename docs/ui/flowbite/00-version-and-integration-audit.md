@@ -3,6 +3,12 @@
 **Date:** 2026-07-18. Honest audit against the installed versions and the actual
 code — not against the mission's assumption that Flowbite is integral.
 
+> **Superseded 2026-10-29** by the Flowbite Pro migration: `flowbite` 4.0.2 and Tailwind
+> 4.3.3, configured CSS-first in `tailwind/input.css` (`@plugin "flowbite/plugin"`,
+> `@source` on `node_modules/flowbite`, `templates`, `content`, `scripts/dossier`); there
+> is no `tailwind.config.js`. Alpine.js is removed. Flowbite JS is loaded in `base.html`
+> and drives the navbar collapse. The rest of this page records the state on its own date.
+
 ## Installed versions
 
 | Package | Version | Role in this repo |
