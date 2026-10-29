@@ -10,6 +10,7 @@
 -#}
 
 {%- import "macros/seo.html" as seo -%}
+{%- import "macros/site.html" as site -%}
 
 {#- Normalization: unify page / section / neither (the 404) into one node.
     `config` is the fallback node because it carries .title, .description and
@@ -127,13 +128,93 @@
 
   <link rel="stylesheet" href="{{ get_url(path='css/main.css', cachebust=true) | safe }}" />
 </head>
-<body class="min-h-screen w-full bg-black text-white antialiased" x-data>
+<body class="min-h-screen w-full bg-gray-50 text-gray-900 antialiased dark:bg-gray-900 dark:text-white">
+  {#- Site chrome: the Flowbite marketing navbar and footer, on every
+      /dossier/* page. The landing page and the 404 are full-bleed hero posters
+      whose only way in is the deliberately unannounced UNABLE link, so they
+      carry no chrome: a navbar there would announce what the hero hides. The
+      chrome is Czech, like everything under /dossier/ (see AGENTS.md). -#}
+  {%- set here = current_path | default(value="") -%}
+  {%- set chrome = "/dossier/" in here -%}
+  {%- set u_home = get_url(path='@/_index.md') -%}
+  {%- set u_dossier = get_url(path='@/dossier.md') -%}
+  {%- set u_claims = get_url(path='@/dossier/claims/_index.md') -%}
+  {%- set u_changes = get_url(path='@/dossier/changes/_index.md') -%}
+  {%- set u_reasoning = get_url(path='@/dossier/reasoning/_index.md') -%}
+  {%- set u_snapshots = get_url(path='@/dossier/snapshots/_index.md') -%}
+  {%- set u_monitoring = get_url(path='@/dossier/monitoring.md') -%}
+  {%- set nav_home = "Úvod" -%}
+  {%- set nav_dossier = "Dossier" -%}
+  {%- set nav_claims = "Tvrzení" -%}
+  {%- set nav_changes = "Změny" -%}
+  {%- set nav_reasoning = "Úsudek" -%}
+  {%- set nav_snapshots = "Snapshoty" -%}
+  {%- set nav_monitoring = "Monitoring" -%}
+  {%- if chrome %}
+  <header>
+    <nav class="border-b border-gray-200 bg-white px-4 py-2.5 lg:px-6 dark:border-gray-700 dark:bg-gray-800"
+         aria-label="Hlavní navigace">
+      <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
+        <a href="{{ u_home | safe }}" class="flex items-center gap-2 rounded-lg focus:outline-hidden focus-visible:ring-4 focus-visible:ring-primary-500/40">
+          <span class="self-center whitespace-nowrap font-sans text-xl font-black tracking-tight text-gray-900 dark:text-white">UNABLE</span>
+        </a>
+        <div class="flex items-center lg:order-2">
+          <a href="{{ u_dossier | safe }}"
+             class="mr-2 hidden rounded-lg bg-primary-500 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-primary-400 focus:outline-hidden focus:ring-4 focus:ring-primary-300 sm:inline-block lg:px-5 lg:py-2.5 dark:focus:ring-primary-800">Dossier Able.cz</a>
+          <button data-collapse-toggle="site-menu" type="button"
+                  class="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-hidden focus:ring-2 focus:ring-gray-200 lg:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                  aria-controls="site-menu" aria-expanded="false">
+            <span class="sr-only">Otevřít menu</span>
+            <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+        <div class="hidden w-full items-center justify-between lg:order-1 lg:flex lg:w-auto" id="site-menu">
+          <ul class="mt-4 flex flex-col text-sm font-medium lg:mt-0 lg:flex-row lg:space-x-8">
+            {{ site::nav_link(href=u_home, path="/", label=nav_home, here=here, exact=true) }}
+            {{ site::nav_link(href=u_dossier, path="/dossier/", label=nav_dossier, here=here, exact=true) }}
+            {{ site::nav_link(href=u_claims, path="/dossier/claims/", label=nav_claims, here=here, exact=false) }}
+            {{ site::nav_link(href=u_changes, path="/dossier/changes/", label=nav_changes, here=here, exact=false) }}
+            {{ site::nav_link(href=u_reasoning, path="/dossier/reasoning/", label=nav_reasoning, here=here, exact=false) }}
+            {{ site::nav_link(href=u_snapshots, path="/dossier/snapshots/", label=nav_snapshots, here=here, exact=false) }}
+            {{ site::nav_link(href=u_monitoring, path="/dossier/monitoring/", label=nav_monitoring, here=here, exact=false) }}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  {%- endif %}
+
   {% block content %}{% endblock content %}
 
-  {#- flowbite.min.js was loaded but entirely unused (no initFlowbite / data-*
-      components anywhere) — removed as dead weight. flowbite-typography (the
-      Tailwind plugin, for prose) stays. See docs/ui/flowbite/00. -#}
-  <script src="{{ get_url(path='js/alpine.min.js', cachebust=true) | safe }}" defer></script>
+  {%- if chrome %}
+  <footer class="border-t border-gray-200 bg-white p-4 md:p-8 lg:p-10 dark:border-gray-700 dark:bg-gray-800">
+    <div class="mx-auto max-w-screen-xl text-center">
+      <a href="{{ u_home | safe }}" class="flex items-center justify-center font-sans text-2xl font-black tracking-tight text-gray-900 dark:text-white">UNABLE</a>
+      <p class="my-6 text-gray-500 dark:text-gray-400">{{ config.description }}</p>
+      <ul class="mb-6 flex flex-wrap items-center justify-center gap-y-2 text-sm text-gray-900 dark:text-white">
+        <li><a href="{{ u_home | safe }}" class="mr-4 hover:underline md:mr-6">{{ nav_home }}</a></li>
+        <li><a href="{{ u_dossier | safe }}" class="mr-4 hover:underline md:mr-6">{{ nav_dossier }}</a></li>
+        <li><a href="{{ u_claims | safe }}" class="mr-4 hover:underline md:mr-6">{{ nav_claims }}</a></li>
+        <li><a href="{{ u_changes | safe }}" class="mr-4 hover:underline md:mr-6">{{ nav_changes }}</a></li>
+        <li><a href="{{ u_reasoning | safe }}" class="mr-4 hover:underline md:mr-6">{{ nav_reasoning }}</a></li>
+        <li><a href="{{ u_snapshots | safe }}" class="mr-4 hover:underline md:mr-6">{{ nav_snapshots }}</a></li>
+        <li><a href="{{ u_monitoring | safe }}" class="mr-4 hover:underline md:mr-6">{{ nav_monitoring }}</a></li>
+      </ul>
+      <span class="text-sm text-gray-500 dark:text-gray-400">&copy; {{ now() | date(format="%Y") }} {{ publisher }}</span>
+    </div>
+  </footer>
+  {%- endif %}
+
+  {#- Flowbite JS drives the navbar collapse (data-collapse-toggle) and any
+      other data-* component; nothing re-implements it. The URL is written out
+      (directory + file + content hash) rather than get_url(cachebust=true) so
+      the file it loads is legible in the template; the ?h= hash busts caches
+      the same way. get_url drops a trailing slash unless trailing_slash=true,
+      which would glue the file onto the directory (/jsflowbite.min.js, a 404);
+      e2e/responsive.spec.mjs asserts the script is served. -#}
+  {%- set js_dir = get_url(path="js/", trailing_slash=true) -%}
+  {%- set flowbite_hash = get_hash(path="js/flowbite.min.js", sha_type=256, base64=false) -%}
+  <script src="{{ js_dir | safe }}flowbite.min.js?h={{ flowbite_hash }}" defer></script>
   {% block scripts %}{% endblock scripts %}
 </body>
 </html>

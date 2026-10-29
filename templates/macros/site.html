@@ -1,0 +1,23 @@
+{#-
+  Site chrome helpers for the Flowbite navbar and footer in base.html.
+
+  `nav_link` renders one navbar item. `here` is the current path ("" on the
+  404); `href` is the resolved URL and `path` its site-relative path. `exact`
+  marks a link active only on that path (home, the dossier overview); any other
+  link is active on its whole section.
+-#}
+
+{%- macro nav_link(href, path, label, here, exact=false) -%}
+{#- Every route under a section contains that section's path, and no other
+    route does, so containment is the section test. -#}
+{%- set active = (exact and here == path) or (not exact and path in here) -%}
+<li>
+  {%- if active %}
+  <a href="{{ href | safe }}" aria-current="page"
+     class="block rounded-lg bg-primary-500 px-3 py-2 text-gray-900 lg:bg-transparent lg:p-0 lg:text-primary-500 dark:lg:text-primary-200">{{ label }}</a>
+  {%- else %}
+  <a href="{{ href | safe }}"
+     class="block border-b border-gray-200 px-3 py-2 text-gray-700 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-primary-600 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent lg:dark:hover:text-white">{{ label }}</a>
+  {%- endif %}
+</li>
+{%- endmacro nav_link -%}

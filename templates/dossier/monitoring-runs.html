@@ -30,7 +30,7 @@
       <div><dt class="text-white/45">Čeká na schválení</dt><dd class="font-mono text-lg text-white/90">{{ mf.counts.pendingReview }}</dd></div>
     </dl>
 
-    <section class="mt-8 rounded border border-white/15 bg-white/5 px-4 py-4" aria-labelledby="due-h">
+    <section class="mt-8 rounded-sm border border-white/15 bg-white/5 px-4 py-4" aria-labelledby="due-h">
       <h2 id="due-h" class="font-sans text-lg font-bold text-white/90">Stav kadence</h2>
       <dl class="mt-2 space-y-1 text-sm text-white/75">
         <div><dt class="inline text-white/45">Cíl: </dt><dd class="inline font-mono text-xs">{{ mf.target }} · {{ mf.policyId }}</dd></div>
@@ -66,7 +66,7 @@
       {%- else %}
       <ul class="mt-3 space-y-2">
         {%- for c in cands %}
-        <li class="rounded border border-white/10 bg-white/5 px-3 py-2 text-sm">
+        <li class="rounded-sm border border-white/10 bg-white/5 px-3 py-2 text-sm">
           <span class="font-mono text-xs text-white/50">{{ c.field }}</span>
           <span class="text-white/50"> · </span><span class="font-mono text-xs text-white/80">{{ c.status }}</span>
         </li>

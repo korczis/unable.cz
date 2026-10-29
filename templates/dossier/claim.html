@@ -22,8 +22,8 @@
     <header class="mt-6 border-b border-white/10 pb-5">
       <div class="flex flex-wrap items-center gap-3">
         <h1 class="font-mono text-2xl font-black text-white">{{ c.id }}</h1>
-        <span class="rounded px-2 py-0.5 text-xs font-semibold {% if good %}bg-[#f3e5c0]/15 text-[#f3e5c0]{% elif disputed %}bg-[#d4af37]/20 text-[#d4af37]{% else %}bg-white/10 text-white/60{% endif %}">{{ c.status }}</span>
-        {% if c.superseded %}<span class="rounded bg-white/10 px-2 py-0.5 text-xs text-white/50">nahrazeno</span>{% else %}<span class="rounded bg-white/5 px-2 py-0.5 text-xs text-white/40">živé</span>{% endif %}
+        <span class="rounded-sm px-2 py-0.5 text-xs font-semibold {% if good %}bg-[#f3e5c0]/15 text-[#f3e5c0]{% elif disputed %}bg-[#d4af37]/20 text-[#d4af37]{% else %}bg-white/10 text-white/60{% endif %}">{{ c.status }}</span>
+        {% if c.superseded %}<span class="rounded-sm bg-white/10 px-2 py-0.5 text-xs text-white/50">nahrazeno</span>{% else %}<span class="rounded-sm bg-white/5 px-2 py-0.5 text-xs text-white/40">živé</span>{% endif %}
       </div>
       <p class="mt-2 text-sm text-white/50">Due diligence {{ c.caseId }} · mezní datum evidence {{ c.evidenceCutoff }} · naposledy ověřeno {{ c.lastVerifiedAt }}</p>
     </header>

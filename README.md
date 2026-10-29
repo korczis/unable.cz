@@ -1,13 +1,12 @@
 # unable.cz
 
-Minimalist static site built with **[Zola](https://www.getzola.org/)**, styled with **Tailwind CSS**, **[Flowbite](https://flowbite.com/)** + **Flowbite Typography**, and **[Alpine.js](https://alpinejs.dev/)**.
+Minimalist static site built with **[Zola](https://www.getzola.org/)**, styled with **Tailwind CSS v4**, **[Flowbite](https://flowbite.com/)** + **Flowbite Typography**.
 
 ## Stack
 
 - **[Zola](https://www.getzola.org/)** — static site generator (single Rust binary)
-- **[Tailwind CSS](https://tailwindcss.com/)** — utility-first CSS, compiled locally / in CI
-- **[Flowbite](https://flowbite.com/)** + **Flowbite Typography** — component/typography plugins for Tailwind
-- **[Alpine.js](https://alpinejs.dev/)** — lightweight JS runtime
+- **[Tailwind CSS](https://tailwindcss.com/)** v4 — utility-first CSS, compiled locally / in CI (`@tailwindcss/cli`)
+- **[Flowbite](https://flowbite.com/)** + **Flowbite Typography** — the UI system: the navbar and footer of every `/dossier/*` page are Flowbite marketing blocks, and Flowbite JS (`static/js/flowbite.min.js`) drives their `data-*` components
 - **[Chart.js](https://www.chartjs.org/)**, **[Cytoscape.js](https://js.cytoscape.org/)**, **[p5.js](https://p5js.org/)** — dossier figures only, loaded on `/dossier/` and nowhere else
 
 ## Project layout
@@ -17,7 +16,9 @@ config.toml              # Zola configuration + [extra] SEO defaults
 content/_index.md        # Homepage content (front matter)
 content/dossier.md       # /dossier/ — public-source DD of Able.cz s.r.o., linked from the hero
 templates/
-  base.html              # Base layout + all SEO metadata (title/OG/JSON-LD) — the only place it's rendered
+  base.html              # Base layout + all SEO metadata (title/OG/JSON-LD) — the only place it's rendered;
+                         # also the Flowbite navbar + footer on /dossier/* pages
+  macros/site.html       # navbar link helper used by base.html
   index.html             # Homepage (the hero UNABLE link)
   dossier.html           # /dossier/ layout: prose + tables + Chart.js/Cytoscape/p5 figures
   404.html               # Not-found page
@@ -29,8 +30,7 @@ scripts/dossier/
 static/data/able-cz/      # Normalized, downloadable exports (generated)
 cases/DD-Able-CZ-2026-07-17/  # Reproducible case artifacts (Prismatic-style layout)
 docs/dossier/             # Audit, tooling inventory, data model, source policy, guardrails
-tailwind/input.css        # Tailwind entry + typographic scale
-tailwind.config.js        # Tailwind + Flowbite + Flowbite Typography config
+tailwind/input.css        # Tailwind v4 entry: Flowbite + Flowbite Typography plugins, @source, theme, typographic scale
 scripts/
   seo-validate.mjs       # Validates ./public: titles, canonicals, OG, JSON-LD, sitemap, no hardcoded hosts
   seo-validate.test.mjs  # Unit tests for the validator + regression tests for the UNABLE link
@@ -95,7 +95,7 @@ always-present data table, so the page is fully usable with JavaScript off.
 Prerequisites: [Zola](https://www.getzola.org/documentation/getting-started/installation/) and Node.js 24+.
 
 ```bash
-npm install          # install Tailwind, Flowbite, Alpine.js
+npm install          # install Tailwind, Flowbite
 
 npm run build        # compile CSS/JS then run `zola build` -> ./public
 npm run dev           # compile CSS/JS then run `zola serve`

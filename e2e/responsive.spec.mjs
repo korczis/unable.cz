@@ -52,8 +52,22 @@ for (const vp of VIEWPORTS) {
       const errors = [];
       page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
       page.on("pageerror", (e) => errors.push(String(e)));
+      // The console filter below drops "Failed to load resource", so a missing
+      // script or stylesheet is caught here, on the network, instead.
+      const broken = [];
+      page.on("response", (res) => {
+        const type = res.request().resourceType();
+        if ((type === "script" || type === "stylesheet") && res.status() >= 400) {
+          broken.push(`${res.status()} ${res.url()}`);
+        }
+      });
+      page.on("requestfailed", (req) => {
+        const type = req.resourceType();
+        if (type === "script" || type === "stylesheet") broken.push(`failed ${req.url()}`);
+      });
       await page.setViewportSize({ width: vp.width, height: vp.height });
       await page.goto(r.path, { waitUntil: "networkidle" });
+      expect(broken, `${r.path}@${vp.name}: broken assets ${JSON.stringify(broken)}`).toEqual([]);
 
       const { scrollW, clientW } = await page.evaluate(() => ({
         scrollW: document.documentElement.scrollWidth,
@@ -71,6 +85,24 @@ for (const vp of VIEWPORTS) {
     });
   }
 }
+
+test("Flowbite JS is served and drives the mobile navbar collapse", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  const flowbite = page.waitForResponse((res) => /\/js\/flowbite\.min\.js(\?|$)/.test(res.url()));
+  await page.goto("/dossier/", { waitUntil: "networkidle" });
+  const res = await flowbite;
+  expect(res.status(), `flowbite.min.js: ${res.url()}`).toBe(200);
+
+  const toggle = page.locator('[data-collapse-toggle="site-menu"]');
+  const menu = page.locator("#site-menu");
+  await expect(toggle).toBeVisible();
+  await expect(menu).toBeHidden();
+  await toggle.click();
+  await expect(menu).toBeVisible();
+  await expect(toggle).toHaveAttribute("aria-expanded", "true");
+  await toggle.click();
+  await expect(menu).toBeHidden();
+});
 
 test("320px narrative claim anchor is sized and navigates to its route", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 568 });

@@ -66,7 +66,7 @@
       <p class="mt-1 text-sm text-white/60">Vypočítané z podaných faktů — každý se svým vzorcem. <strong>Nejsou to podaná fakta.</strong></p>
       <div class="mt-4 space-y-3">
         {%- for m in metrics.metrics %}
-        <div class="rounded border border-white/10 bg-white/[0.02] p-3">
+        <div class="rounded-sm border border-white/10 bg-white/[0.02] p-3">
           <div class="flex flex-wrap items-baseline justify-between gap-2">
             <span class="text-sm text-white/85">{{ m.name }}</span>
             <span class="font-mono text-base font-bold text-[#f3e5c0]">{{ m.value }}{% if m.unit == "percent" %} %{% endif %}</span>
@@ -132,7 +132,7 @@
       <h2 id="cvf-h" class="font-sans text-2xl font-black text-white">Veřejná tvrzení vs. podané výkazy</h2>
       <div class="mt-4 space-y-3">
         {%- for c in cvf.comparisons %}
-        <div class="rounded border border-white/10 bg-white/[0.02] p-3">
+        <div class="rounded-sm border border-white/10 bg-white/[0.02] p-3">
           <div class="flex flex-wrap items-baseline justify-between gap-2">
             <span class="text-sm text-white/85">{{ c.claim }}</span>
             <span class="whitespace-nowrap text-xs text-white/50">{{ c.classification }}</span>
