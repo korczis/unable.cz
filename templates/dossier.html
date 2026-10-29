@@ -12,7 +12,7 @@
 {%- set age_days = ((now(timestamp=true) - reviewed_ts) / 86400) | round(method="floor") | int -%}
 {%- set stale = age_days > ev.review_interval_days -%}
 
-<main class="relative min-h-screen w-full bg-gray-50 dark:bg-gray-900 px-4 py-16 text-white">
+<main class="relative min-h-screen w-full bg-black px-4 py-16 text-white">
   <div class="mx-auto max-w-3xl">
     <p class="mb-8">
       <a href="{{ get_url(path='@/_index.md') | safe }}"
@@ -47,7 +47,7 @@
         ze snapshot diffu; při nulové sémantické změně se aktivita nevymýšlí. -#}
     {%- set chg = load_data(path="static/data/dossier/changes/manifest.json") -%}
     {%- set last_pair = chg.pairs | last %}
-    <section class="mt-6 rounded border border-white/15 bg-white/5 px-4 py-4" aria-labelledby="zmeny-heading">
+    <section class="mt-6 rounded-sm border border-white/15 bg-white/5 px-4 py-4" aria-labelledby="zmeny-heading">
       <h2 id="zmeny-heading" class="font-sans text-lg font-bold text-white/90">Co se změnilo od poslední verze</h2>
       <p class="mt-1 text-xs text-white/50">
         <span class="font-mono">{{ last_pair.from_snapshot_id }}</span>
@@ -78,7 +78,7 @@
         podpory — každé zjištění vede na stránku se svými tvrzeními, evidencí,
         úsudkem, diverzitou opory a nejistotou. -#}
     {%- set exec = load_data(path="static/data/dossier/reasoning/executive.json") -%}
-    <section class="mt-6 rounded border border-white/15 bg-white/5 px-4 py-4" aria-labelledby="exec-trace-h">
+    <section class="mt-6 rounded-sm border border-white/15 bg-white/5 px-4 py-4" aria-labelledby="exec-trace-h">
       <h2 id="exec-trace-h" class="font-sans text-lg font-bold text-white/90">Exekutivní zjištění — s úplnou stopou</h2>
       <p class="mt-1 text-xs text-white/50">Každý bod souhrnu níže má vlastní stránku s odpovědí „proč tomu věřit": tvrzení, evidence, úsudek, alternativy, nejistota.</p>
       <ol class="mt-3 grid grid-cols-1 gap-x-6 gap-y-1 text-sm sm:grid-cols-2">
@@ -107,7 +107,7 @@
         Každé posouzené věcné tvrzení, podle stavu ověření. Graf vychází
         z tvrzení níže — stejné záznamy, jen spočítané.
       </p>
-      <div class="js-only mx-auto mt-6 max-w-sm rounded border border-white/10 bg-white/[0.02] p-4">
+      <div class="js-only mx-auto mt-6 max-w-sm rounded-sm border border-white/10 bg-white/[0.02] p-4">
         <canvas id="status-chart" height="240" aria-hidden="true"></canvas>
       </div>
 
@@ -128,7 +128,7 @@
               <td class="py-2 pr-4 font-mono text-white/40">{{ c.id }}</td>
               <td class="py-2 pr-4 text-white/90">{{ c.text }}</td>
               <td class="py-2 pr-4 whitespace-nowrap {% if c.status == 'CORROBORATED' or c.status == 'VERIFIED_PRIMARY' %}text-[#f3e5c0]{% elif c.status == 'CONTRADICTED' %}text-[#d4af37]{% else %}text-white/50{% endif %}">{{ c.status }}</td>
-              <td class="py-2 whitespace-nowrap"><button type="button" data-evd-claim="{{ c.id }}" class="rounded border border-white/20 px-2 py-0.5 text-xs text-white/70 hover:border-[#d4af37] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#d4af37]">důkaz</button></td>
+              <td class="py-2 whitespace-nowrap"><button type="button" data-evd-claim="{{ c.id }}" class="rounded-sm border border-white/20 px-2 py-0.5 text-xs text-white/70 hover:border-[#d4af37] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#d4af37]">důkaz</button></td>
             </tr>
             {%- endif %}{%- endfor %}
           </tbody>
@@ -145,7 +145,7 @@
         vypsaná v tabulce níže.
       </p>
       <div class="js-only mt-6">
-        <div id="rel-graph" class="h-[440px] w-full rounded border border-white/10 bg-white/[0.02]"
+        <div id="rel-graph" class="h-[440px] w-full rounded-sm border border-white/10 bg-white/[0.02]"
              role="img" aria-label="Graf vztahů. Všechny vazby jsou vypsané v tabulce níže."></div>
       </div>
 
@@ -186,7 +186,7 @@
         je poctivý stav veřejné evidence.
       </p>
       <div class="js-only mt-6">
-        <div id="evidence-field" class="h-64 w-full overflow-hidden rounded border border-white/10 bg-white/[0.02]"
+        <div id="evidence-field" class="h-64 w-full overflow-hidden rounded-sm border border-white/10 bg-white/[0.02]"
              role="img" aria-label="Pole značek, jedna na tvrzení, obarvené podle stavu ověření. Počty jsou uvedeny v popisku a v tabulce tvrzení výše."></div>
       </div>
       <p id="evidence-field-caption" class="mt-3 text-xs text-white/40"></p>
@@ -233,7 +233,7 @@
       <p class="mt-2 text-sm text-white/60">{{ d.financials.note }}</p>
       <p class="mt-3">
         <a href="{{ get_url(path='@/dossier/finance.md') | safe }}"
-           class="inline-flex items-center gap-1 rounded border border-[#d4af37]/40 bg-[#d4af37]/10 px-3 py-1.5 text-sm font-semibold text-[#f3e5c0] hover:border-[#d4af37] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]"
+           class="inline-flex items-center gap-1 rounded-sm border border-[#d4af37]/40 bg-[#d4af37]/10 px-3 py-1.5 text-sm font-semibold text-[#f3e5c0] hover:border-[#d4af37] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]"
           >Otevřít úplnou finanční analýzu →</a>
         <span class="ml-2 text-xs text-white/40">podaná fakta · odvozené ukazatele s vzorci · veřejná tvrzení vs. výkazy</span>
       </p>
@@ -288,7 +288,7 @@
         firma v této dimenzi doložena. „Chybí" znamená, že dimenze nebyla v tomto
         průchodu dotázána (viz mezera), nikoli že tam nic není.
       </p>
-      <div class="js-only mx-auto mt-6 max-w-2xl rounded border border-white/10 bg-white/[0.02] p-4">
+      <div class="js-only mx-auto mt-6 max-w-2xl rounded-sm border border-white/10 bg-white/[0.02] p-4">
         <canvas id="coverage-chart" height="220" aria-hidden="true"></canvas>
       </div>
       <div class="mt-6 overflow-x-auto">
@@ -365,7 +365,7 @@
       </p>
       <div class="mt-6 space-y-4">
         {%- for h in hyps.hypotheses %}
-        <div class="rounded border border-white/10 bg-white/[0.02] p-4">
+        <div class="rounded-sm border border-white/10 bg-white/[0.02] p-4">
           <div class="flex flex-wrap items-baseline justify-between gap-2">
             <span class="font-mono text-xs text-white/40">{{ h.id }}</span>
             <span class="whitespace-nowrap text-xs {% if h.state == 'contradicted' or h.state == 'rejected' %}text-[#d4af37]{% elif h.state == 'plausible' or h.state == 'supported' %}text-[#f3e5c0]{% else %}text-white/50{% endif %}">stav: {{ h.state }}</span>
@@ -560,10 +560,10 @@
         nikdy nepočítají jako nezávislé potvrzení.
       </p>
       <dl class="mt-6 grid grid-cols-2 gap-4 text-sm sm:grid-cols-4">
-        <div class="rounded border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Artefakty (ověřené otisky)</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.artifacts }}</dd></div>
-        <div class="rounded border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Přesné pasáže</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.spans }}</dd></div>
-        <div class="rounded border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Rejstříková tvrzení</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.assertions }}</dd></div>
-        <div class="rounded border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Provider runs</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.providerRuns }}</dd></div>
+        <div class="rounded-sm border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Artefakty (ověřené otisky)</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.artifacts }}</dd></div>
+        <div class="rounded-sm border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Přesné pasáže</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.spans }}</dd></div>
+        <div class="rounded-sm border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Rejstříková tvrzení</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.assertions }}</dd></div>
+        <div class="rounded-sm border border-white/10 bg-white/[0.02] p-4"><dt class="text-white/50">Provider runs</dt><dd class="mt-1 font-mono text-2xl text-[#f3e5c0]">{{ evman.counts.providerRuns }}</dd></div>
       </dl>
       <div class="mt-6 overflow-x-auto">
         <table class="w-full border-collapse text-left text-sm">
@@ -623,7 +623,7 @@
       <p class="mt-3 max-w-prose text-sm text-white/60">Dříve otevřené mezery, které pozdější sběr důkazů uzavřel. Každá nese odkaz na důkaz, který ji vyřešil — mezera nikdy nezmizí mlčky.</p>
       <ul class="mt-4 space-y-3 text-sm text-white/80">
         {%- for rq in d.resolvedQuestions %}
-        <li class="rounded border border-white/10 bg-white/[0.02] p-3">
+        <li class="rounded-sm border border-white/10 bg-white/[0.02] p-3">
           <span class="font-mono text-white/40">{{ rq.id }}</span> · <s class="text-white/50">{{ rq.question }}</s>
           <p class="mt-1 text-white/80">{{ rq.resolution }}</p>
           <p class="mt-1 text-xs text-white/40">Vyřešeno {{ rq.resolvedAt | date(format="%e %B %Y") | trim }} · {{ rq.resolvedBy | join(sep=", ") }}</p>
@@ -684,7 +684,7 @@
     <div class="relative m-0 flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden rounded-t-lg border border-white/20 bg-[#0a0a0a] sm:m-4 sm:rounded-lg">
       <div class="flex items-center justify-between gap-4 border-b border-white/10 px-4 py-3">
         <h3 id="evd-inspector-title" class="font-mono text-sm text-[#f3e5c0]">Důkaz</h3>
-        <button type="button" id="evd-inspector-close" class="rounded border border-white/20 px-2 py-1 text-xs text-white/70 hover:border-[#d4af37] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#d4af37]">zavřít (Esc)</button>
+        <button type="button" id="evd-inspector-close" class="rounded-sm border border-white/20 px-2 py-1 text-xs text-white/70 hover:border-[#d4af37] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#d4af37]">zavřít (Esc)</button>
       </div>
       <div id="evd-inspector-body" class="overflow-y-auto p-4 text-sm text-white/80"></div>
     </div>

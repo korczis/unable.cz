@@ -9,7 +9,7 @@
 {%- set m = load_data(path=page.extra.manifest_path) -%}
 {%- set idx = load_data(path=page.extra.index_path) -%}
 {%- set chg = load_data(path=page.extra.changes_path) -%}
-<main class="relative min-h-[100dvh] w-full bg-gray-50 dark:bg-gray-900 px-4 py-12 text-white">
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
   <div class="mx-auto max-w-3xl">
     <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
       <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
@@ -21,18 +21,18 @@
     <h1 class="mt-6 break-all font-sans text-2xl font-black sm:text-3xl">{{ m.snapshot_id }}</h1>
     {%- if m.note %}<p class="mt-2 text-sm text-white/70">{{ m.note }}</p>{%- endif %}
     {%- if m.snapshot_id == chg.current_snapshot_id %}
-    <p class="mt-2 inline-block rounded border border-[#d4af37]/40 bg-[#d4af37]/10 px-2 py-0.5 text-xs text-[#f3e5c0]">Aktuální publikovaný snapshot</p>
+    <p class="mt-2 inline-block rounded-sm border border-[#d4af37]/40 bg-[#d4af37]/10 px-2 py-0.5 text-xs text-[#f3e5c0]">Aktuální publikovaný snapshot</p>
     {%- endif %}
 
     <div class="mt-6 flex flex-wrap gap-2 text-sm">
       {%- if m.previous_snapshot_id %}
-      <a class="rounded border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="{{ get_url(path='@/dossier/changes/_index.md') | safe }}?from={{ m.previous_snapshot_id }}&to={{ m.snapshot_id }}">Porovnat s předchozím</a>
+      <a class="rounded-sm border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="{{ get_url(path='@/dossier/changes/_index.md') | safe }}?from={{ m.previous_snapshot_id }}&to={{ m.snapshot_id }}">Porovnat s předchozím</a>
       {%- endif %}
       {%- if m.snapshot_id != chg.current_snapshot_id %}
-      <a class="rounded border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="{{ get_url(path='@/dossier/changes/_index.md') | safe }}?from={{ m.snapshot_id }}&to={{ chg.current_snapshot_id }}">Porovnat s aktuálním</a>
+      <a class="rounded-sm border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="{{ get_url(path='@/dossier/changes/_index.md') | safe }}?from={{ m.snapshot_id }}&to={{ chg.current_snapshot_id }}">Porovnat s aktuálním</a>
       {%- endif %}
-      <a class="rounded border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="/data/dossier/snapshots/{{ m.snapshot_id }}/objects.json">Otevřít dossier v tomto snapshotu (objektová vrstva)</a>
-      <button type="button" id="copy-link" class="rounded border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" hidden>Kopírovat stabilní odkaz</button>
+      <a class="rounded-sm border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" href="/data/dossier/snapshots/{{ m.snapshot_id }}/objects.json">Otevřít dossier v tomto snapshotu (objektová vrstva)</a>
+      <button type="button" id="copy-link" class="rounded-sm border border-white/25 px-3 py-1.5 text-white/85 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d4af37]" hidden>Kopírovat stabilní odkaz</button>
     </div>
     <p id="copy-state" class="mt-2 text-xs text-white/50" aria-live="polite"></p>
     <p class="mt-2 text-xs text-white/45">{{ m.route_layer_note }}</p>

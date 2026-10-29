@@ -7,7 +7,7 @@
 {% block content %}
 {%- set hist = load_data(path=page.extra.histories_path) -%}
 {%- set idx = load_data(path=page.extra.index_path) -%}
-<main class="relative min-h-[100dvh] w-full bg-gray-50 dark:bg-gray-900 px-4 py-12 text-white">
+<main class="relative min-h-[100dvh] w-full bg-black px-4 py-12 text-white">
   <div class="mx-auto max-w-4xl">
     <nav class="text-sm text-white/50" aria-label="Drobečková navigace">
       <a href="{{ get_url(path='@/dossier.md') | safe }}" class="hover:text-white/90">Dossier</a>
@@ -35,7 +35,7 @@
     <label class="mt-6 block text-xs text-white/60" for="hist-search" hidden id="hist-search-label">Hledat objekt (ID nebo typ)
     </label>
     <input id="hist-search" type="search" hidden
-      class="mt-1 w-full max-w-md rounded border border-white/20 bg-black px-3 py-2 text-sm text-white placeholder-white/30"
+      class="mt-1 w-full max-w-md rounded-sm border border-white/20 bg-black px-3 py-2 text-sm text-white placeholder-white/30"
       placeholder="např. CLM-44, shareholding, SRC-12" />
     <p id="hist-search-state" class="mt-1 text-xs text-white/40" aria-live="polite"></p>
 
