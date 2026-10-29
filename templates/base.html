@@ -155,14 +155,14 @@
     <nav class="border-b border-gray-200 bg-white px-4 py-2.5 lg:px-6 dark:border-gray-700 dark:bg-gray-800"
          aria-label="Hlavní navigace">
       <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
-        <a href="{{ u_home | safe }}" class="flex items-center gap-2 rounded-lg focus:outline-none focus-visible:ring-4 focus-visible:ring-primary-500/40">
+        <a href="{{ u_home | safe }}" class="flex items-center gap-2 rounded-lg focus:outline-hidden focus-visible:ring-4 focus-visible:ring-primary-500/40">
           <span class="self-center whitespace-nowrap font-sans text-xl font-black tracking-tight text-gray-900 dark:text-white">UNABLE</span>
         </a>
         <div class="flex items-center lg:order-2">
           <a href="{{ u_dossier | safe }}"
-             class="mr-2 hidden rounded-lg bg-primary-500 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-primary-400 focus:outline-none focus:ring-4 focus:ring-primary-300 sm:inline-block lg:px-5 lg:py-2.5 dark:focus:ring-primary-800">Dossier Able.cz</a>
+             class="mr-2 hidden rounded-lg bg-primary-500 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-primary-400 focus:outline-hidden focus:ring-4 focus:ring-primary-300 sm:inline-block lg:px-5 lg:py-2.5 dark:focus:ring-primary-800">Dossier Able.cz</a>
           <button data-collapse-toggle="site-menu" type="button"
-                  class="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 lg:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                  class="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-hidden focus:ring-2 focus:ring-gray-200 lg:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                   aria-controls="site-menu" aria-expanded="false">
             <span class="sr-only">Otevřít menu</span>
             <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -209,8 +209,10 @@
       other data-* component; nothing re-implements it. The URL is written out
       (directory + file + content hash) rather than get_url(cachebust=true) so
       the file it loads is legible in the template; the ?h= hash busts caches
-      the same way. -#}
-  {%- set js_dir = get_url(path="js/") -%}
+      the same way. get_url drops a trailing slash unless trailing_slash=true,
+      which would glue the file onto the directory (/jsflowbite.min.js, a 404);
+      e2e/responsive.spec.mjs asserts the script is served. -#}
+  {%- set js_dir = get_url(path="js/", trailing_slash=true) -%}
   {%- set flowbite_hash = get_hash(path="js/flowbite.min.js", sha_type=256, base64=false) -%}
   <script src="{{ js_dir | safe }}flowbite.min.js?h={{ flowbite_hash }}" defer></script>
   {% block scripts %}{% endblock scripts %}
